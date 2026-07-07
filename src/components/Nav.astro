@@ -1,0 +1,274 @@
+---
+import { metiers } from '../data/site';
+
+const links = [
+  { href: '/#metiers', label: 'Savoir-faire' },
+  { href: '/#realisations', label: 'Réalisations' },
+  { href: '/#demarche', label: 'Démarche' },
+  { href: '/#atelier', label: "L'atelier" },
+];
+---
+
+<header class="nav" data-nav>
+  <div class="nav__inner wrap">
+    <a class="mark" href="/" aria-label="L'Esprit Bois — accueil">
+      <svg class="mark__glyph" viewBox="0 0 46 32" aria-hidden="true">
+        <g stroke="var(--cuivre)" stroke-width="2" fill="none" stroke-linecap="square">
+          <line x1="4" y1="11" x2="4" y2="27" />
+          <line x1="8.5" y1="8.5" x2="8.5" y2="27" />
+          <line x1="13" y1="11" x2="13" y2="27" />
+        </g>
+        <path d="M19 27 L19 8 L29 12 L29 27" fill="none" stroke="var(--ivoire)" stroke-width="2" stroke-linejoin="round" />
+        <path d="M24 20 L33 22 M33 22 L33 27" fill="none" stroke="var(--cuivre)" stroke-width="1.6" opacity="0.75" />
+        <g fill="var(--olivier)">
+          <circle cx="40" cy="10" r="1.5" /><circle cx="43" cy="11.5" r="1.4" /><circle cx="41.5" cy="8" r="1.3" />
+          <circle cx="38.5" cy="12.5" r="1.3" /><circle cx="42" cy="14" r="1.2" />
+        </g>
+        <line x1="40.5" y1="15" x2="40.5" y2="27" stroke="var(--olivier)" stroke-width="1.4" opacity="0.8" />
+        <line x1="2" y1="27" x2="44" y2="27" stroke="var(--cuivre)" stroke-width="1.5" opacity="0.6" />
+      </svg>
+      <span class="mark__word">
+        <span class="mark__esprit">L'ESPRIT</span><span class="mark__bois">BOIS</span>
+      </span>
+    </a>
+
+    <nav class="nav__menu" aria-label="Navigation principale">
+      {links.map((l) => (
+        <a class="nav__link" href={l.href}>{l.label}</a>
+      ))}
+    </nav>
+
+    <a class="btn nav__cta" href="/contact">Demander un devis</a>
+
+    <button class="nav__burger" data-burger aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Menu plein écran (mobile) -->
+  <div class="drawer" data-drawer hidden>
+    <nav class="drawer__nav" aria-label="Menu">
+      <span class="drawer__eyebrow eyebrow">Savoir-faire</span>
+      {metiers.map((m) => (
+        <a class="drawer__metier" href={`/savoir-faire/${m.slug}`}>{m.nom}</a>
+      ))}
+      <div class="drawer__links">
+        {links.slice(1).map((l) => (
+          <a class="drawer__link" href={l.href}>{l.label}</a>
+        ))}
+        <a class="drawer__link" href="/contact">Contact</a>
+      </div>
+      <a class="btn drawer__cta" href="/contact">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+    transition: background 0.4s var(--ease), backdrop-filter 0.4s var(--ease),
+      border-color 0.4s var(--ease);
+    border-bottom: 1px solid transparent;
+  }
+  .nav.is-stuck {
+    background: rgba(11, 11, 12, 0.82);
+    backdrop-filter: blur(14px) saturate(1.2);
+    border-bottom-color: var(--ligne);
+  }
+  .nav__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    height: 5rem;
+  }
+
+  /* — Wordmark — */
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-right: auto;
+  }
+  .mark__glyph {
+    width: 2.75rem;
+    height: 1.9rem;
+    flex: none;
+    transition: transform 0.6s var(--ease-out);
+  }
+  .mark:hover .mark__glyph {
+    transform: translateY(-2px);
+  }
+  .mark__word {
+    font-family: var(--font-label);
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    font-size: var(--text-sm);
+    display: inline-flex;
+    gap: 0.5em;
+    white-space: nowrap;
+  }
+  .mark__esprit {
+    color: var(--ivoire);
+  }
+  .mark__bois {
+    color: var(--cuivre);
+  }
+
+  /* — Menu desktop — */
+  .nav__menu {
+    display: flex;
+    gap: clamp(1rem, 2vw, 2.4rem);
+  }
+  .nav__link {
+    position: relative;
+    font-family: var(--font-label);
+    font-size: var(--text-xs);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--texte-doux);
+    padding: 0.5rem 0;
+    transition: color 0.3s var(--ease);
+  }
+  .nav__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--cuivre);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s var(--ease-out);
+  }
+  .nav__link:hover {
+    color: var(--ivoire);
+  }
+  .nav__link:hover::after {
+    transform: scaleX(1);
+  }
+  .nav__cta {
+    padding: 0.7rem 1.25rem;
+  }
+
+  .nav__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .nav__burger span {
+    height: 1.5px;
+    width: 1.6rem;
+    background: var(--ivoire);
+    transition: transform 0.35s var(--ease-out), opacity 0.2s var(--ease);
+  }
+  .nav.is-open .nav__burger span:first-child {
+    transform: translateY(3.75px) rotate(45deg);
+  }
+  .nav.is-open .nav__burger span:last-child {
+    transform: translateY(-3.75px) rotate(-45deg);
+  }
+
+  /* — Tiroir mobile — */
+  .drawer {
+    position: fixed;
+    inset: 5rem 0 0 0;
+    background: rgba(11, 11, 12, 0.97);
+    backdrop-filter: blur(16px);
+    padding: var(--space-lg) var(--gutter) var(--space-xl);
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.35s var(--ease), transform 0.35s var(--ease-out);
+  }
+  .drawer[hidden] {
+    display: none;
+  }
+  .drawer.is-shown {
+    opacity: 1;
+    transform: none;
+  }
+  .drawer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-width: 30rem;
+  }
+  .drawer__eyebrow {
+    margin-bottom: 1rem;
+  }
+  .drawer__metier {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    padding: 0.35rem 0;
+    color: var(--ivoire);
+    transition: color 0.3s var(--ease), padding-left 0.3s var(--ease-out);
+  }
+  .drawer__metier:hover {
+    color: var(--cuivre-lumiere);
+    padding-left: 0.5rem;
+  }
+  .drawer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 1.75rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--ligne);
+  }
+  .drawer__link {
+    font-family: var(--font-label);
+    font-size: var(--text-xs);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--texte-doux);
+  }
+  .drawer__cta {
+    align-self: flex-start;
+  }
+
+  @media (max-width: 900px) {
+    .nav__menu,
+    .nav__cta {
+      display: none;
+    }
+    .nav__burger {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+  const nav = document.querySelector('[data-nav]');
+  const burger = document.querySelector('[data-burger]');
+  const drawer = document.querySelector('[data-drawer]') as HTMLElement | null;
+
+  // fond au scroll
+  const onScroll = () => nav?.classList.toggle('is-stuck', window.scrollY > 24);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // menu mobile
+  const setOpen = (open: boolean) => {
+    nav?.classList.toggle('is-open', open);
+    burger?.setAttribute('aria-expanded', String(open));
+    burger?.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    if (!drawer) return;
+    if (open) {
+      drawer.hidden = false;
+      requestAnimationFrame(() => drawer.classList.add('is-shown'));
+      document.body.style.overflow = 'hidden';
+    } else {
+      drawer.classList.remove('is-shown');
+      document.body.style.overflow = '';
+      setTimeout(() => (drawer.hidden = true), 350);
+    }
+  };
+  burger?.addEventListener('click', () => setOpen(!nav?.classList.contains('is-open')));
+  drawer?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+</script>

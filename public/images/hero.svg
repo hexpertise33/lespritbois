@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(155 0.5 0.5)">
+      <stop offset="0" stop-color="#0B0B0C"/>
+      <stop offset="0.55" stop-color="#17140F"/>
+      <stop offset="1" stop-color="#221B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.68" cy="0.26" r="0.75">
+      <stop offset="0" stop-color="#C67C3D" stop-opacity="0.6"/>
+      <stop offset="0.4" stop-color="#C67C3D" stop-opacity="0.21"/>
+      <stop offset="1" stop-color="#C67C3D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <line x1="120" y1="250" x2="120" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.30"/><line x1="160" y1="250" x2="160" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.46"/><line x1="200" y1="250" x2="200" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.62"/><line x1="240" y1="250" x2="240" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.30"/><line x1="280" y1="250" x2="280" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.46"/><line x1="320" y1="250" x2="320" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.62"/><line x1="360" y1="250" x2="360" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.30"/><line x1="400" y1="250" x2="400" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.46"/><line x1="440" y1="250" x2="440" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.62"/><line x1="480" y1="250" x2="480" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.30"/><line x1="520" y1="250" x2="520" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.46"/><line x1="560" y1="250" x2="560" y2="720" fill="none" stroke="#C67C3D" stroke-width="8" opacity="0.62"/>
+     <path d="M640 720 L640 250 L900 300 L900 720" fill="none" stroke="#C67C3D" stroke-width="2" stroke-linecap="square" opacity="0.85"/>
+     <path d="M900 470 L1160 520 L1160 720 L900 720" fill="none" stroke="#C67C3D" stroke-width="2" stroke-linecap="square" opacity="0.6"/>
+     <line x1="80" y1="720" x2="1520" y2="720" fill="none" stroke="#C67C3D" stroke-width="2" stroke-linecap="square" opacity="0.4"/>
+     <line x1="1300" y1="760" x2="1300" y2="470" stroke="#93B23F" stroke-width="3" opacity="0.7"/><circle cx="1370" cy="440" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1389" cy="458" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1401" cy="482" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1402" cy="512" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1340" cy="486" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1333" cy="509" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1314" cy="531" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1284" cy="548" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1275" cy="492" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1248" cy="501" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1215" cy="500" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1180" cy="491" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1232" cy="453" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1208" cy="440" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1189" cy="418" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1180" cy="389" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1248" cy="403" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1248" cy="379" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1260" cy="355" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1284" cy="332" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1308" cy="384" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1333" cy="371" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1365" cy="365" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1402" cy="368" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1362" cy="414" r="7" fill="#93B23F" opacity="0.55"/><circle cx="1389" cy="422" r="7" fill="#93B23F" opacity="0.55"/>
+  <rect width="1600" height="1000" fill="url(#vig)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity="0.05"/>
+</svg>

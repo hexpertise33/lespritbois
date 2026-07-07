@@ -1,0 +1,167 @@
+---
+import { contact, metiers, site } from '../data/site';
+const annee = 2026;
+---
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <a class="foot__lockup" href="/" aria-label="L'Esprit Bois — accueil">
+        <img class="foot__logo" src="/logo-mark.svg" alt="" width="260" height="150" />
+        <span class="foot__mark">
+          <span class="foot__esprit">L'ESPRIT</span> <span class="foot__bois">BOIS</span>
+        </span>
+      </a>
+      <p class="foot__baseline">{site.baseline}</p>
+      <p class="foot__pitch">{site.slogan}</p>
+    </div>
+
+    <nav class="foot__col" aria-label="Savoir-faire">
+      <h3 class="foot__h">Savoir-faire</h3>
+      <ul>
+        {metiers.map((m) => (
+          <li><a href={`/savoir-faire/${m.slug}`}>{m.nom}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <nav class="foot__col" aria-label="Le site">
+      <h3 class="foot__h">Le site</h3>
+      <ul>
+        <li><a href="/#realisations">Réalisations</a></li>
+        <li><a href="/#demarche">Démarche</a></li>
+        <li><a href="/#atelier">L'atelier</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <address class="foot__col foot__contact">
+      <h3 class="foot__h">Contact</h3>
+      <ul>
+        <li><a href={contact.telephoneHref}>{contact.telephone}</a></li>
+        <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+        <li>{contact.adresse}</li>
+        <li>{contact.codePostal} {contact.ville}</li>
+        <li class="foot__zone">{contact.zone}</li>
+        <li class="foot__zone">{contact.horaires}</li>
+      </ul>
+    </address>
+  </div>
+
+  <div class="wrap foot__bottom">
+    <p>© {annee} {site.nom} — Tous droits réservés.</p>
+    <p class="foot__legal">
+      <a href="/mentions-legales">Mentions légales</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .foot {
+    border-top: 1px solid var(--ligne);
+    padding-top: var(--space-xl);
+    background: var(--noir);
+  }
+  .foot__grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    padding-bottom: var(--space-lg);
+  }
+  .foot__lockup {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: flex-start;
+  }
+  .foot__logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.6s var(--ease-out);
+  }
+  .foot__lockup:hover .foot__logo {
+    transform: translateY(-3px);
+  }
+  .foot__mark {
+    font-family: var(--font-label);
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    font-size: var(--text-base);
+  }
+  .foot__esprit { color: var(--ivoire); }
+  .foot__bois { color: var(--cuivre); }
+  .foot__baseline {
+    font-family: var(--font-label);
+    font-size: var(--text-2xs);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--texte-faible);
+    margin-top: 0.7rem;
+  }
+  .foot__pitch {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--text-lg);
+    color: var(--texte-doux);
+    margin-top: 1.2rem;
+    max-width: 20rem;
+  }
+
+  .foot__h {
+    font-family: var(--font-label);
+    font-size: var(--text-2xs);
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cuivre);
+    margin-bottom: 1.1rem;
+  }
+  .foot__col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .foot__col a,
+  .foot__contact li {
+    font-size: var(--text-sm);
+    color: var(--texte-doux);
+    transition: color 0.3s var(--ease);
+  }
+  .foot__col a:hover {
+    color: var(--cuivre-lumiere);
+  }
+  .foot__contact {
+    font-style: normal;
+  }
+  .foot__zone {
+    color: var(--texte-faible) !important;
+    font-size: var(--text-xs) !important;
+  }
+
+  .foot__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-block: 1.6rem;
+    margin-top: var(--space-md);
+    border-top: 1px solid var(--ligne);
+    font-size: var(--text-xs);
+    color: var(--texte-faible);
+  }
+  .foot__legal a:hover { color: var(--cuivre-lumiere); }
+
+  @media (max-width: 820px) {
+    .foot__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+    .foot__brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 480px) {
+    .foot__grid { grid-template-columns: 1fr; }
+  }
+</style>

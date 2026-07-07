@@ -1,0 +1,202 @@
+---
+import { metiers, site } from '../data/site';
+const SLATS = 14;
+---
+
+<section class="hero">
+  <div class="hero__media">
+    <img src="/images/hero.svg" alt="" fetchpriority="high" width="1600" height="1000" />
+  </div>
+  <div class="hero__veil"></div>
+
+  <!-- Signature : la trame qui s'ouvre à l'ouverture de la page -->
+  <div class="hero__slats" aria-hidden="true">
+    {Array.from({ length: SLATS }).map((_, i) => (
+      <span class="hero__slat" style={`--i:${i}`}></span>
+    ))}
+  </div>
+
+  <div class="hero__content wrap">
+    <p class="eyebrow hero__eyebrow">{site.baseline}</p>
+    <h1 class="hero__title">
+      Le bois qui <em>prolonge</em><br />la maison vers l'extérieur.
+    </h1>
+    <p class="lede hero__lede">
+      Terrasses, pergolas, carports, bardages et constructions bois. En Gironde,
+      nous dessinons et bâtissons des espaces extérieurs sur mesure — pensés pour durer.
+    </p>
+    <div class="hero__cta">
+      <a class="btn" href="/#realisations">
+        Voir nos réalisations
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" />
+        </svg>
+      </a>
+      <a class="btn btn--ghost" href="/contact">Parler de votre projet</a>
+    </div>
+
+    <ul class="hero__metiers">
+      {metiers.map((m) => (
+        <li><a href={`/savoir-faire/${m.slug}`}>{m.nom}</a></li>
+      ))}
+    </ul>
+  </div>
+
+  <a class="hero__scroll" href="#metiers" aria-label="Découvrir">
+    <span>Découvrir</span>
+    <span class="hero__scroll-line"></span>
+  </a>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    padding-block: 8rem var(--space-xl);
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+  }
+  .hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: hero-zoom 18s var(--ease) forwards;
+  }
+  @keyframes hero-zoom {
+    from { transform: scale(1.08); }
+    to { transform: scale(1); }
+  }
+
+  .hero__veil {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:
+      linear-gradient(to top, var(--noir) 4%, rgba(11, 11, 12, 0.25) 45%, rgba(11, 11, 12, 0.55) 100%),
+      linear-gradient(to right, rgba(11, 11, 12, 0.85) 0%, rgba(11, 11, 12, 0.1) 60%);
+  }
+
+  /* — Trame — */
+  .hero__slats {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: flex;
+    pointer-events: none;
+  }
+  .hero__slat {
+    flex: 1;
+    background: var(--noir);
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: slat-close 0.01s linear forwards, slat-open 1.15s var(--ease-out) forwards;
+    animation-delay: 0s, calc(var(--i) * 55ms + 250ms);
+    box-shadow: 1px 0 0 rgba(198, 124, 61, 0.14);
+  }
+  @keyframes slat-close { to { transform: scaleY(1); } }
+  @keyframes slat-open { from { transform: scaleY(1); } to { transform: scaleY(0); } }
+
+  /* — Contenu — */
+  .hero__content {
+    position: relative;
+    max-width: 62rem;
+  }
+  .hero__content > * {
+    opacity: 0;
+    animation: rise 1s var(--ease-out) forwards;
+  }
+  .hero__eyebrow { animation-delay: 1s; }
+  .hero__title { animation-delay: 1.12s; }
+  .hero__lede { animation-delay: 1.26s; }
+  .hero__cta { animation-delay: 1.4s; }
+  .hero__metiers { animation-delay: 1.54s; }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(26px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  .hero__title {
+    font-size: var(--text-hero);
+    font-weight: 340;
+    letter-spacing: -0.02em;
+    margin: 1.4rem 0 1.6rem;
+  }
+  .hero__lede {
+    max-width: 40rem;
+  }
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 2.2rem;
+  }
+
+  .hero__metiers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--ligne);
+  }
+  .hero__metiers a {
+    font-family: var(--font-label);
+    font-size: var(--text-xs);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--texte-doux);
+    transition: color 0.3s var(--ease);
+  }
+  .hero__metiers a:hover { color: var(--cuivre-lumiere); }
+
+  /* — Indice de scroll — */
+  .hero__scroll {
+    position: absolute;
+    right: var(--gutter);
+    bottom: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: var(--font-label);
+    font-size: var(--text-2xs);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--texte-faible);
+    writing-mode: vertical-rl;
+    opacity: 0;
+    animation: rise 1s var(--ease-out) 1.7s forwards;
+  }
+  .hero__scroll-line {
+    width: 1px;
+    height: 3.5rem;
+    background: linear-gradient(var(--cuivre), transparent);
+    animation: scroll-pulse 2.4s var(--ease) infinite;
+  }
+  @keyframes scroll-pulse {
+    0%, 100% { transform: scaleY(0.5); opacity: 0.4; transform-origin: top; }
+    50% { transform: scaleY(1); opacity: 1; transform-origin: top; }
+  }
+
+  @media (max-width: 720px) {
+    .hero__scroll { display: none; }
+    .hero { padding-top: 7rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__slat { animation: none; transform: scaleY(0); }
+    .hero__content > *,
+    .hero__scroll { opacity: 1; animation: none; }
+    .hero__media img { animation: none; transform: none; }
+  }
+</style>

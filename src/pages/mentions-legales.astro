@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import { contact, site } from '../data/site';
+---
+
+<Base title="Mentions légales" description="Mentions légales du site L'Esprit Bois.">
+  <section class="legal">
+    <div class="wrap">
+      <p class="eyebrow">Informations</p>
+      <h1 class="legal__title">Mentions légales</h1>
+
+      <div class="legal__body">
+        <h2>Éditeur</h2>
+        <p>
+          {site.nom} — {site.baseline}.<br />
+          {contact.adresse}, {contact.codePostal} {contact.ville}.<br />
+          Téléphone : {contact.telephone} — Email : {contact.email}.
+        </p>
+        <p class="legal__todo">
+          À compléter : forme juridique, SIRET, capital, TVA intracommunautaire,
+          nom du responsable de publication et assurance décennale.
+        </p>
+
+        <h2>Hébergement</h2>
+        <p>
+          Site hébergé sur Cloudflare Pages — Cloudflare, Inc., 101 Townsend St,
+          San Francisco, CA 94107, USA.
+        </p>
+
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          L'ensemble des contenus (textes, visuels, logo) est la propriété de
+          {' '}{site.nom}, sauf mention contraire. Toute reproduction est soumise
+          à autorisation.
+        </p>
+
+        <h2>Données personnelles</h2>
+        <p>
+          Les informations transmises via le formulaire de contact servent
+          uniquement à répondre à votre demande et ne sont ni cédées ni revendues.
+          Vous disposez d'un droit d'accès et de suppression sur simple demande.
+        </p>
+      </div>
+
+      <a class="btn btn--ghost legal__back" href="/">Retour à l'accueil</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .legal {
+    padding-block: 9rem var(--space-2xl);
+  }
+  .legal__title {
+    font-size: var(--text-3xl);
+    margin: 1rem 0 var(--space-lg);
+  }
+  .legal__body {
+    max-width: 44rem;
+    display: grid;
+    gap: 0.9rem;
+  }
+  .legal__body h2 {
+    font-size: var(--text-lg);
+    color: var(--cuivre);
+    margin-top: 1.8rem;
+  }
+  .legal__body p {
+    color: var(--texte-doux);
+  }
+  .legal__todo {
+    font-size: var(--text-sm);
+    padding: 1rem 1.2rem;
+    border-left: 2px solid var(--cuivre);
+    background: var(--surface);
+    color: var(--texte-faible) !important;
+  }
+  .legal__back { margin-top: var(--space-lg); }
+</style>

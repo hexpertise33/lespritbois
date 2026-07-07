@@ -1,0 +1,194 @@
+---
+import Base from '../../layouts/Base.astro';
+import ContactCta from '../../components/ContactCta.astro';
+import { metiers } from '../../data/site';
+
+export function getStaticPaths() {
+  return metiers.map((m) => ({
+    params: { slug: m.slug },
+    props: { metier: m },
+  }));
+}
+
+const { metier } = Astro.props;
+const autres = metiers.filter((m) => m.slug !== metier.slug);
+---
+
+<Base title={metier.nom} description={metier.accroche} image={metier.image}>
+  <article class="mp">
+    <header class="mp__hero">
+      <div class="mp__hero-media">
+        <img src={metier.image} alt={`${metier.nom} — L'Esprit Bois`} width="1600" height="1000" fetchpriority="high" />
+      </div>
+      <div class="mp__hero-veil"></div>
+      <div class="wrap mp__hero-inner">
+        <nav class="mp__crumb" aria-label="Fil d'ariane">
+          <a href="/">Accueil</a><span>/</span><a href="/#metiers">Savoir-faire</a><span>/</span>
+          <span aria-current="page">{metier.nom}</span>
+        </nav>
+        <p class="eyebrow">Savoir-faire</p>
+        <h1 class="mp__title">{metier.nom}</h1>
+        <p class="mp__accroche">{metier.accroche}</p>
+      </div>
+    </header>
+
+    <div class="wrap mp__body">
+      <div class="mp__lead" data-reveal>
+        <p class="lede">{metier.description}</p>
+      </div>
+
+      <div class="mp__detail" data-reveal>
+        <h2 class="mp__h2">Ce que nous réalisons</h2>
+        <ul class="mp__points">
+          {metier.points.map((p) => (
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M3 9.5l3.5 3.5L15 5" stroke="var(--cuivre)" stroke-width="1.6" />
+              </svg>
+              <span>{p}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <nav class="mp__autres wrap" aria-label="Autres savoir-faire">
+      <p class="eyebrow">Continuer la visite</p>
+      <ul>
+        {autres.map((m) => (
+          <li>
+            <a href={`/savoir-faire/${m.slug}`}>
+              <span class="mp__autres-name">{m.nom}</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </article>
+
+  <ContactCta />
+</Base>
+
+<style>
+  .mp__hero {
+    position: relative;
+    min-height: 72svh;
+    display: flex;
+    align-items: flex-end;
+    padding-block: 9rem var(--space-lg);
+    overflow: hidden;
+  }
+  .mp__hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+  }
+  .mp__hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mp__hero-veil {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to top, var(--noir) 5%, rgba(11, 11, 12, 0.3) 60%, rgba(11, 11, 12, 0.55));
+  }
+  .mp__crumb {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    font-family: var(--font-label);
+    font-size: var(--text-2xs);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--texte-faible);
+    margin-bottom: 1.5rem;
+  }
+  .mp__crumb a:hover { color: var(--cuivre-lumiere); }
+  .mp__crumb span[aria-current] { color: var(--texte-doux); }
+  .mp__title {
+    font-size: var(--text-3xl);
+    margin: 1rem 0 1rem;
+  }
+  .mp__accroche {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--text-xl);
+    color: var(--texte-doux);
+    max-width: 34rem;
+  }
+
+  .mp__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    padding-block: var(--space-2xl);
+    align-items: start;
+  }
+  .mp__lead .lede {
+    font-size: var(--text-xl);
+    color: var(--texte);
+    line-height: 1.4;
+  }
+  .mp__h2 {
+    font-size: var(--text-lg);
+    color: var(--cuivre);
+    font-family: var(--font-label);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+  }
+  .mp__points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .mp__points li {
+    display: flex;
+    gap: 0.9rem;
+    align-items: baseline;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--ligne);
+  }
+  .mp__points svg { flex: none; transform: translateY(3px); }
+
+  .mp__autres {
+    padding-bottom: var(--space-2xl);
+  }
+  .mp__autres > .eyebrow { margin-bottom: 1.5rem; }
+  .mp__autres ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--ligne);
+  }
+  .mp__autres a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 0.5rem 1.4rem 0;
+    border-bottom: 1px solid var(--ligne);
+    color: var(--texte-doux);
+    transition: color 0.3s var(--ease), padding-left 0.4s var(--ease-out);
+  }
+  .mp__autres a:hover {
+    color: var(--cuivre-lumiere);
+    padding-left: 1rem;
+  }
+  .mp__autres-name {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+  }
+
+  @media (max-width: 780px) {
+    .mp__body { grid-template-columns: 1fr; }
+  }
+</style>

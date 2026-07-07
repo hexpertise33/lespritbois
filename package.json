@@ -1,0 +1,21 @@
+{
+  "name": "lespritbois",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "L'Esprit Bois — créateur d'espaces extérieurs. Site vitrine immersif.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@fontsource-variable/archivo": "^5.2.8",
+    "@fontsource-variable/fraunces": "^5.2.9",
+    "@fontsource-variable/hanken-grotesk": "^5.2.8",
+    "astro": "^7.0.6"
+  }
+}

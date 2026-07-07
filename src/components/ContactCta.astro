@@ -1,0 +1,69 @@
+---
+import { contact } from '../data/site';
+---
+
+<section class="cta-band">
+  <div class="cta-band__slats" aria-hidden="true"></div>
+  <div class="wrap cta-band__inner" data-reveal>
+    <p class="eyebrow eyebrow--center">Votre projet</p>
+    <h2 class="cta-band__title">
+      Parlons de votre<br /><em>espace extérieur</em>.
+    </h2>
+    <p class="cta-band__lede lede">
+      Un projet, une idée, un croquis sur un coin de table ? Décrivez-nous
+      l'envie — on vous répond avec des vraies pistes.
+    </p>
+    <div class="cta-band__actions">
+      <a class="btn" href="/contact">Demander un devis gratuit</a>
+      <a class="btn btn--ghost" href={contact.telephoneHref}>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 3.5c0 5 4.5 9.5 9.5 9.5v-2.3l-2.6-1-1.2 1.2A7.7 7.7 0 0 1 5.1 5.3L6.3 4 5.3 1.5H3v2Z" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        {contact.telephone}
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-band {
+    position: relative;
+    overflow: hidden;
+    padding-block: var(--space-2xl);
+    background:
+      radial-gradient(90% 120% at 50% 120%, rgba(198, 124, 61, 0.16), transparent 60%),
+      var(--brun-noir);
+    border-top: 1px solid var(--ligne);
+    text-align: center;
+  }
+  .cta-band__slats {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      to right,
+      rgba(198, 124, 61, 0.05) 0 1px,
+      transparent 1px 46px
+    );
+    mask-image: linear-gradient(to bottom, transparent, black 40%, black 60%, transparent);
+  }
+  .cta-band__inner {
+    position: relative;
+    max-width: 46rem;
+  }
+  .cta-band__title {
+    font-size: var(--text-3xl);
+    margin: 1.3rem 0 1.4rem;
+  }
+  .cta-band__lede {
+    margin-inline: auto;
+    max-width: 34rem;
+  }
+  .cta-band__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    justify-content: center;
+    margin-top: 2.2rem;
+  }
+</style>

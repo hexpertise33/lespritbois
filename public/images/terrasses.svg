@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(155 0.5 0.5)">
+      <stop offset="0" stop-color="#0B0B0C"/>
+      <stop offset="0.55" stop-color="#17140F"/>
+      <stop offset="1" stop-color="#221B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.64" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#C67C3D" stop-opacity="0.55"/>
+      <stop offset="0.4" stop-color="#C67C3D" stop-opacity="0.1925"/>
+      <stop offset="1" stop-color="#C67C3D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <line x1="80" y1="560" x2="1520" y2="560" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="80" y1="599.5" x2="1520" y2="599.5" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="80" y1="650" x2="1520" y2="650" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="80" y1="711.5" x2="1520" y2="711.5" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="80" y1="784" x2="1520" y2="784" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="80" y1="867.5" x2="1520" y2="867.5" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="80" y1="962" x2="1520" y2="962" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="-100" y1="560" x2="-1668" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="50" y1="560" x2="-1308" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="200" y1="560" x2="-948" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="350" y1="560" x2="-588" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="500" y1="560" x2="-228" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="650" y1="560" x2="132" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="800" y1="560" x2="492" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="950" y1="560" x2="852" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="1100" y1="560" x2="1212" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="1250" y1="560" x2="1572" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="1400" y1="560" x2="1932" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="1550" y1="560" x2="2292" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/><line x1="1700" y1="560" x2="2652" y2="1000" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/>
+     <line x1="0" y1="558" x2="1600" y2="558" fill="none" stroke="#C67C3D" stroke-width="2" stroke-linecap="square" opacity="0.5"/>
+     <circle cx="1020" cy="300" r="150" fill="url(#glow)"/>
+  <rect width="1600" height="1000" fill="url(#vig)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity="0.05"/>
+</svg>

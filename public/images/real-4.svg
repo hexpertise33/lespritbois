@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(155 0.5 0.5)">
+      <stop offset="0" stop-color="#0B0B0C"/>
+      <stop offset="0.55" stop-color="#17140F"/>
+      <stop offset="1" stop-color="#221B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.24" r="0.75">
+      <stop offset="0" stop-color="#C67C3D" stop-opacity="0.55"/>
+      <stop offset="0.4" stop-color="#C67C3D" stop-opacity="0.1925"/>
+      <stop offset="1" stop-color="#C67C3D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <path d="M420 910 L420 470 L800 250 L1180 470 L1180 910" fill="none" stroke="#C67C3D" stroke-width="2" stroke-linecap="square" opacity="0.85"/>
+     <path d="M560 910 L560 560 L800 400 L1040 560 L1040 910" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/>
+     <line x1="800" y1="250" x2="800" y2="910" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/>
+     <line x1="300" y1="910" x2="1300" y2="910" fill="none" stroke="#C67C3D" stroke-width="2" stroke-linecap="square" opacity="0.5"/>
+     <rect x="720" y="720" width="160" height="190" fill="none" stroke="#F3EEE4" stroke-width="1.5" opacity="0.28"/>
+  <rect width="1600" height="1000" fill="url(#vig)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity="0.05"/>
+</svg>

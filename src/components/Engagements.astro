@@ -1,0 +1,100 @@
+---
+import { engagements } from '../data/site';
+
+const icones: Record<string, string> = {
+  'sur-mesure': '<path d="M4 20L20 4M9 4h11v11" /><path d="M4 12v8h8" />',
+  bois: '<path d="M12 3c4 3 4 9 0 18C8 12 8 6 12 3Z" /><path d="M12 8v13" />',
+  main: '<path d="M6 11V6a2 2 0 0 1 4 0v5m0-1V4a2 2 0 0 1 4 0v6m0-2a2 2 0 0 1 4 0v6a7 7 0 0 1-7 7h-1a6 6 0 0 1-5-3l-2-3.5a2 2 0 0 1 3.2-2.3L10 14" />',
+  garantie: '<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z" /><path d="M9 12l2 2 4-4" />',
+};
+---
+
+<section class="eng" id="engagements">
+  <div class="wrap">
+    <header class="eng__head" data-reveal>
+      <p class="eyebrow">Nos engagements</p>
+      <h2 class="section-title">Ce sur quoi vous<br /><em>pouvez compter</em>.</h2>
+    </header>
+
+    <ul class="eng__grid">
+      {engagements.map((e, i) => (
+        <li class="promesse" data-reveal style={`--reveal-delay:${i * 0.08}s`}>
+          <span class="promesse__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round" set:html={icones[e.icone]} />
+          </span>
+          <h3 class="promesse__titre">{e.titre}</h3>
+          <p class="promesse__texte">{e.texte}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .eng {
+    padding-block: var(--space-xl);
+  }
+  .eng__head {
+    max-width: 40rem;
+    margin-bottom: var(--space-lg);
+  }
+  .eng__head .section-title {
+    margin-top: 1.1rem;
+  }
+
+  .eng__grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--ligne);
+    border: 1px solid var(--ligne);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .promesse {
+    background: var(--noir);
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: background 0.45s var(--ease);
+  }
+  .promesse:hover {
+    background: var(--brun-noir);
+  }
+  .promesse__ico {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--ligne-cuivre);
+    border-radius: 50%;
+    color: var(--cuivre);
+    margin-bottom: 0.4rem;
+    transition: color 0.4s var(--ease), border-color 0.4s var(--ease), transform 0.5s var(--ease-out);
+  }
+  .promesse__ico svg { width: 1.4rem; height: 1.4rem; }
+  .promesse:hover .promesse__ico {
+    color: var(--cuivre-lumiere);
+    border-color: var(--cuivre);
+    transform: translateY(-2px);
+  }
+  .promesse__titre {
+    font-size: var(--text-lg);
+  }
+  .promesse__texte {
+    font-size: var(--text-sm);
+    color: var(--texte-doux);
+  }
+
+  @media (max-width: 860px) {
+    .eng__grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 460px) {
+    .eng__grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,94 @@
+---
+import { demarche } from '../data/site';
+---
+
+<section class="demarche" id="demarche">
+  <div class="wrap">
+    <header class="demarche__head" data-reveal>
+      <p class="eyebrow">Notre démarche</p>
+      <h2 class="section-title">Du terrain à la <em>livraison</em>.</h2>
+    </header>
+
+    <ol class="demarche__steps">
+      {demarche.map((step, i) => (
+        <li class="step" data-reveal style={`--reveal-delay:${i * 0.08}s`}>
+          <span class="step__num">{String(i + 1).padStart(2, '0')}</span>
+          <span class="step__bar" aria-hidden="true"></span>
+          <h3 class="step__titre">{step.titre}</h3>
+          <p class="step__texte">{step.texte}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .demarche {
+    padding-block: var(--space-2xl);
+    background:
+      radial-gradient(120% 80% at 80% 0%, rgba(198, 124, 61, 0.06), transparent 60%),
+      var(--brun-noir);
+    border-block: 1px solid var(--ligne);
+  }
+  .demarche__head {
+    max-width: 40rem;
+    margin-bottom: var(--space-xl);
+  }
+  .demarche__head .section-title {
+    margin-top: 1.1rem;
+  }
+
+  .demarche__steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
+  .step {
+    position: relative;
+  }
+  .step__num {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    color: var(--cuivre);
+    line-height: 1;
+  }
+  .step__bar {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 1.3rem 0 1.4rem;
+    background: var(--ligne);
+    position: relative;
+    overflow: hidden;
+  }
+  .step__bar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 2.5rem;
+    background: var(--cuivre);
+  }
+  .step__titre {
+    font-size: var(--text-lg);
+    margin-bottom: 0.6rem;
+  }
+  .step__texte {
+    color: var(--texte-doux);
+    font-size: var(--text-sm);
+  }
+
+  @media (max-width: 860px) {
+    .demarche__steps {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem 1.5rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .demarche__steps {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

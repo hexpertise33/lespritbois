@@ -25,6 +25,15 @@ export const CONTACT = {
   horaires: 'Lun – Ven · 8h – 17h',
 } as const;
 
+/** Réseaux sociaux officiels. Servent au footer ET au `sameAs` de schema.org,
+ *  qui aide Google à relier le site à la page Facebook (Knowledge Graph). */
+export const RESEAUX = {
+  facebook: 'https://www.facebook.com/Eprisbois33',
+} as const;
+
+/** Profils à déclarer dans les données structurées. */
+export const SAME_AS: string[] = Object.values(RESEAUX);
+
 export type Onglet = { cle: string; titre: string; url: string };
 
 /** Onglets de la barre de navigation, dans l'ordre d'affichage. */

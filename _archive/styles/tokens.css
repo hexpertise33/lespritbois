@@ -1,0 +1,88 @@
+/* =========================================================================
+   L'ESPRIT BOIS — jetons de design
+   Direction « luxe nocturne » (design system Stitch) :
+   écrin noir profond, accent bronze/or, sérif éditoriale Bodoni Moda.
+   ========================================================================= */
+:root {
+  /* — Surfaces sombres (brun-espresso chaud, pas de gris froid) — */
+  --noir: #17110b; /* surface / arrière-plan principal (espresso) */
+  --noir-profond: #100b06; /* footer, sections les plus basses */
+  --brun-noir: #241811; /* cartes, formulaires */
+  --brun-noir-2: #2c1d12; /* conteneurs */
+  --surface-haute: #38271a; /* survols, éléments surélevés */
+  --surface-vive: #4a3423;
+
+  /* — Surfaces claires (sections lumineuses, alternance) — */
+  --parchemin: #efe7d6; /* fond clair chaud */
+  --parchemin-2: #e6dbc4;
+  --encre: #241a10; /* texte sur fond clair */
+  --encre-doux: rgba(36, 26, 16, 0.72);
+
+  /* — Accent bronze / or (échantillonné dans le logo) — */
+  --cuivre: #f9bb71; /* primary */
+  --cuivre-lumiere: #ffd89a; /* survols, éclats */
+  --cuivre-sombre: #c58d48; /* primary-container */
+  --cuivre-fonce: #9a5a24; /* accent lisible sur fond clair */
+  --or: #ffd89a; /* éclat doré */
+  --sur-cuivre: #3a2100; /* texte sur fond bronze */
+
+  /* — Neutres chauds — */
+  --ivoire: #f6efe2; /* texte clair */
+  --olivier: #a7c34e; /* accent végétal vivant */
+  --olivier-sombre: #6f8a2e;
+
+  /* — Texte (sur fond sombre) — */
+  --texte: var(--ivoire);
+  --texte-doux: #e4d3bf; /* beige chaud, plus contrasté */
+  --texte-faible: rgba(230, 215, 196, 0.55);
+
+  /* — Lignes filaires (esprit calque d'architecte) — */
+  --ligne: rgba(255, 240, 220, 0.12);
+  --ligne-forte: rgba(255, 240, 220, 0.2);
+  --ligne-cuivre: rgba(249, 187, 113, 0.5);
+  --surface: rgba(255, 240, 220, 0.035);
+  --surface-2: rgba(255, 240, 220, 0.06);
+
+  /* — Typographies — */
+  --font-display: 'Bodoni Moda Variable', 'Bodoni Moda', 'Didot', 'Bodoni MT',
+    Georgia, serif;
+  --font-body: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui,
+    -apple-system, sans-serif;
+  --font-label: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif;
+
+  /* — Échelle typographique fluide — */
+  --text-2xs: clamp(0.68rem, 0.66rem + 0.1vw, 0.74rem);
+  --text-xs: clamp(0.72rem, 0.7rem + 0.12vw, 0.78rem);
+  --text-sm: clamp(0.88rem, 0.85rem + 0.18vw, 0.98rem);
+  --text-base: clamp(1rem, 0.95rem + 0.26vw, 1.12rem);
+  --text-lg: clamp(1.18rem, 1.06rem + 0.5vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.3vw, 2rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2.6vw, 3rem);
+  --text-3xl: clamp(2.6rem, 1.6rem + 4.6vw, 4.5rem);
+  --text-hero: clamp(2.9rem, 1.4rem + 6.6vw, 5.4rem);
+
+  /* — Rythme / espacement (unité 8px) — */
+  --space-3xs: 0.375rem;
+  --space-2xs: 0.625rem;
+  --space-xs: 0.9rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3.25rem;
+  --space-xl: clamp(4rem, 3rem + 4vw, 7rem);
+  --space-2xl: clamp(6rem, 4rem + 8vw, 10rem); /* section-gap ≈ 160px */
+
+  /* — Structure — */
+  --page-max: 1440px; /* container-max Stitch */
+  --gutter: clamp(1.5rem, 0.5rem + 4vw, 5rem); /* margin 24 → 80px */
+  --radius: 0px; /* coins droits — esprit « poutre / structure » */
+  --radius-lg: 0px;
+
+  /* — Mouvement — */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 0.5s;
+
+  /* — Lueurs — */
+  --glow-cuivre: 0 0 52px -6px rgba(249, 187, 113, 0.6);
+  --shadow-card: 0 30px 60px -28px rgba(0, 0, 0, 0.8);
+}

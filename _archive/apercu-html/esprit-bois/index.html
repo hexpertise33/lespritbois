@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Esprit Bois | Créateur d'espaces extérieurs — Libourne, Gironde</title>
+<meta name="description" content="L'Esprit Bois conçoit et réalise terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Bois et aluminium, de l'étude à la pose."/>
+<!-- Typography — charte L'Esprit Bois : Bodoni Moda (display) + Hanken Grotesk (texte) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,600;1,6..96,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            "colors": {
+                    "espresso": "#17110b",
+                    "espresso-deep": "#100b06",
+                    "card": "#241811",
+                    "card-2": "#2c1d12",
+                    "surface-high": "#38271a",
+                    "parchemin": "#efe7d6",
+                    "parchemin-2": "#e6dbc4",
+                    "blanc": "#fffdf8",
+                    "encre": "#241a10",
+                    "cuivre": "#f9bb71",
+                    "cuivre-clair": "#ffd89a",
+                    "cuivre-sombre": "#c58d48",
+                    "cuivre-fonce": "#9a5a24",
+                    "sur-cuivre": "#3a2100",
+                    "olivier": "#a7c34e",
+                    "olivier-sombre": "#6f8a2e",
+                    "ivoire": "#f6efe2",
+                    "texte-doux": "#e4d3bf",
+                    "texte-faible": "rgba(230,215,196,0.55)",
+                    "ligne": "rgba(255,240,220,0.14)",
+                    "ligne-forte": "rgba(255,240,220,0.24)"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "section-padding-mobile": "64px",
+                    "section-padding": "120px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-md": ["Bodoni Moda"],
+                    "display-lg-mobile": ["Bodoni Moda"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-sm": ["Bodoni Moda"],
+                    "display-lg": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["34px", {"lineHeight": "42px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "46px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["13px", {"lineHeight": "20px", "letterSpacing": "0.14em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["66px", {"lineHeight": "70px", "letterSpacing": "-0.015em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .backdrop-blur-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(16,11,6,0.92) 0%, rgba(16,11,6,0.55) 52%, rgba(16,11,6,0.15) 100%);
+        }
+        .hero-vignette {
+            background: linear-gradient(to top, rgba(16,11,6,0.85) 0%, rgba(16,11,6,0) 45%);
+        }
+        .shimmer-effect { position: relative; overflow: hidden; }
+        .shimmer-effect::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.18), transparent);
+            transform: rotate(45deg);
+            transition: 0.8s;
+            pointer-events: none;
+        }
+        .shimmer-effect:hover::after { left: 120%; top: 120%; }
+        .champ {
+            width: 100%;
+            border: 0 !important;
+            border-bottom: 2px solid rgba(255,240,220,0.22) !important;
+            border-radius: 0 !important;
+            background-color: transparent !important;
+            padding: 12px 0 !important;
+            color: #f6efe2 !important;
+            outline: none;
+            box-shadow: none !important;
+            transition: border-color .3s ease;
+        }
+        .champ:focus { border-color: #f9bb71 !important; }
+        .champ::placeholder { color: rgba(230,215,196,0.4); }
+        .champ option { color: #241a10; }
+    </style>
+</head>
+<body class="bg-espresso font-body-md text-texte-doux antialiased">
+<!-- Barre de navigation -->
+<nav class="fixed top-0 w-full z-50 bg-espresso/70 backdrop-blur-nav border-b border-ligne">
+<div class="flex justify-between items-center px-6 md:px-16 py-6 max-w-container-max mx-auto">
+<a href="#" class="font-display-lg text-headline-sm uppercase tracking-[0.18em] text-ivoire">
+                L'Esprit Bois
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-cuivre border-b-2 border-cuivre pb-1" href="#realisations">Réalisations</a>
+<a class="font-label-md text-label-md text-texte-doux hover:text-cuivre transition-colors" href="#solutions">Terrasses</a>
+<a class="font-label-md text-label-md text-texte-doux hover:text-cuivre transition-colors" href="#solutions">Pergolas</a>
+<a class="font-label-md text-label-md text-texte-doux hover:text-cuivre transition-colors" href="#solutions">Carports</a>
+<a class="font-label-md text-label-md text-texte-doux hover:text-cuivre transition-colors" href="#solutions">Bardages</a>
+<a class="font-label-md text-label-md text-texte-doux hover:text-cuivre transition-colors" href="#quote">Contact</a>
+</div>
+<a class="hidden md:inline-flex bg-cuivre text-sur-cuivre px-6 py-3 rounded-xl font-label-md text-label-md hover:bg-cuivre-clair transition-all active:scale-95 shadow-lg" href="#quote">
+                Demander un devis gratuit
+            </a>
+<button class="md:hidden text-ivoire" aria-label="Menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero -->
+<header class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" alt="Maison en A à ossature bois réalisée par L'Esprit Bois" src="/images/source-adefrance/mais-en-a-accueil.webp"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="absolute inset-0 hero-vignette"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-6 md:px-16 w-full">
+<div class="max-w-2xl text-ivoire">
+<span class="inline-block px-4 py-1.5 bg-cuivre/15 backdrop-blur-md rounded-full text-label-md font-label-md mb-6 border border-cuivre/30 text-cuivre-clair">
+                    Bois &amp; aluminium · Libourne, Gironde
+                </span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">Le bois qui <span class="italic text-cuivre font-semibold">prolonge la maison</span> vers l'extérieur.</h1>
+<p class="font-body-lg text-body-lg mb-10 text-ivoire/85 leading-relaxed">
+                    De l'étude à la pose, nous concevons terrasses, pergolas, carports, bardages et constructions bois sur mesure — en bois comme en aluminium, à Libourne et dans toute la Gironde.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-cuivre text-sur-cuivre px-8 py-5 rounded-xl font-label-md text-label-md text-center hover:shadow-2xl hover:-translate-y-1 transition-all active:scale-95 shimmer-effect" href="#quote">
+                        Demander mon étude gratuite
+                    </a>
+<a class="bg-ivoire/5 backdrop-blur-md border border-ivoire/25 text-ivoire px-8 py-5 rounded-xl font-label-md text-label-md text-center hover:bg-ivoire/15 transition-all" href="#solutions">
+                        Découvrir nos savoir-faire
+                    </a>
+</div>
+<div class="mt-16 flex items-center gap-12 opacity-90">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-ivoire">10 ans</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-texte-doux">Expertise du bois</span>
+</div>
+<div class="h-10 w-[1px] bg-ivoire/25"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-ivoire">5 métiers</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-texte-doux">Du sol au toit</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Nos savoir-faire (section claire) -->
+<section class="py-section-padding bg-parchemin" id="solutions">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="font-label-md text-label-md uppercase tracking-widest text-cuivre-fonce">Du sol au toit</span>
+<h2 class="font-headline-md text-headline-md text-encre mt-4 mb-6">Nos savoir-faire</h2>
+<p class="font-body-md text-body-md text-encre/70">Terrasses, pergolas, carports, bardages et constructions bois — conçus, fabriqués et posés sur mesure, en bois comme en aluminium.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+<!-- Carte 1 : Carports -->
+<div class="group bg-blanc rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-parchemin-2">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('/images/source-adefrance/carport-accueil.webp')"></div>
+<div class="absolute bottom-4 left-4 bg-blanc/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-encre">
+                            Bois &amp; aluminium
+                        </div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-encre mb-4">Carports</h3>
+<p class="font-body-md text-body-md text-encre/70 mb-6">L'élégance durable pour votre véhicule, adossée à la maison ou entièrement indépendante.</p>
+<ul class="space-y-3 mb-8 text-encre/80">
+<li class="flex items-center gap-2 text-body-md">
+<span class="material-symbols-outlined text-cuivre-fonce text-[20px]">check_circle</span>
+                                Structures bois ou aluminium haut de gamme
+                            </li>
+<li class="flex items-center gap-2 text-body-md">
+<span class="material-symbols-outlined text-cuivre-fonce text-[20px]">check_circle</span>
+                                Toiture plate ou en pente, sur mesure
+                            </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-cuivre-fonce font-label-md hover:gap-4 transition-all" href="#quote">
+                            Configurer mon carport <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Carte 2 : Pergolas (mise en avant) -->
+<div class="group bg-blanc rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-cuivre/40 md:scale-105 z-10">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('/images/source-adefrance/Pergolas-aluminium-Libourne-1.webp')"></div>
+<div class="absolute bottom-4 left-4 bg-cuivre text-sur-cuivre px-3 py-1 rounded text-label-md font-label-md shadow-lg">
+                            Bioclimatique
+                        </div>
+</div>
+<div class="p-8">
+<div class="inline-block px-2 py-0.5 bg-cuivre/20 text-cuivre-fonce text-[10px] uppercase font-bold tracking-widest rounded mb-2">Le plus demandé</div>
+<h3 class="font-headline-sm text-headline-sm text-encre mb-4">Pergolas &amp; Terrasses</h3>
+<p class="font-body-md text-body-md text-encre/70 mb-6">Créez votre nouvel espace de vie extérieur, ombragé et ventilé naturellement.</p>
+<ul class="space-y-3 mb-8 text-encre/80">
+<li class="flex items-center gap-2 text-body-md">
+<span class="material-symbols-outlined text-cuivre-fonce text-[20px]">check_circle</span>
+                                Bois massif ou alu bioclimatique à lames orientables
+                            </li>
+<li class="flex items-center gap-2 text-body-md">
+<span class="material-symbols-outlined text-cuivre-fonce text-[20px]">check_circle</span>
+                                Éclairage LED intégré, adossée ou autoportée
+                            </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-cuivre-fonce font-label-md hover:gap-4 transition-all" href="#quote">
+                            En savoir plus <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Carte 3 : Constructions bois -->
+<div class="group bg-blanc rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-parchemin-2">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('/images/source-adefrance/aggrandissement-accueil.webp')"></div>
+<div class="absolute bottom-4 left-4 bg-blanc/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-encre">
+                            Sur mesure
+                        </div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-encre mb-4">Constructions bois</h3>
+<p class="font-body-md text-body-md text-encre/70 mb-6">L'ossature bois, de l'extension à la maison en A : agrandir vite, sain et durable.</p>
+<ul class="space-y-3 mb-8 text-encre/80">
+<li class="flex items-center gap-2 text-body-md">
+<span class="material-symbols-outlined text-cuivre-fonce text-[20px]">check_circle</span>
+                                Extensions, surélévations &amp; pool houses
+                            </li>
+<li class="flex items-center gap-2 text-body-md">
+<span class="material-symbols-outlined text-cuivre-fonce text-[20px]">check_circle</span>
+                                Isolation fibre de bois, performance RE2020
+                            </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-cuivre-fonce font-label-md hover:gap-4 transition-all" href="#quote">
+                            Étudier mon projet <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Savoir-faire intégré (section sombre) -->
+<section class="py-section-padding bg-espresso text-ivoire overflow-hidden border-y border-ligne">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-cuivre">Notre méthode</span>
+<h2 class="font-headline-md text-headline-md mt-4 mb-8">Un savoir-faire intégré, du premier croquis à la dernière lame.</h2>
+<p class="font-body-lg text-body-lg text-texte-doux mb-12">Nous ne sommes pas de simples revendeurs. Nous concevons, fabriquons et posons nous-mêmes — un dialogue permanent entre l'ingénierie moderne et la matière vivante.</p>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<div class="w-16 h-16 flex-shrink-0 bg-ivoire/8 rounded-full flex items-center justify-center group-hover:bg-cuivre transition-colors duration-300">
+<span class="material-symbols-outlined text-cuivre group-hover:text-sur-cuivre text-3xl transition-colors">design_services</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2 text-cuivre-clair">Tout sur mesure</h4>
+<p class="text-texte-doux text-body-md">Aucun projet standard : on dessine à partir de votre lieu, de vos usages et de votre budget.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="w-16 h-16 flex-shrink-0 bg-ivoire/8 rounded-full flex items-center justify-center group-hover:bg-cuivre transition-colors duration-300">
+<span class="material-symbols-outlined text-cuivre group-hover:text-sur-cuivre text-3xl transition-colors">handshake</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2 text-cuivre-clair">Un seul interlocuteur</h4>
+<p class="text-texte-doux text-body-md">De l'étude à la pose, un accompagnement de A à Z, sans intermédiaire ni sous-traitance.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="w-16 h-16 flex-shrink-0 bg-ivoire/8 rounded-full flex items-center justify-center group-hover:bg-cuivre transition-colors duration-300">
+<span class="material-symbols-outlined text-cuivre group-hover:text-sur-cuivre text-3xl transition-colors">forest</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2 text-cuivre-clair">Des matériaux durables</h4>
+<p class="text-texte-doux text-body-md">Essences sélectionnées — douglas, mélèze, red cedar, chêne — et sources responsables.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('/images/source-adefrance/IMG-20250129-WA0077.jpg')"></div>
+<div class="absolute inset-0 bg-espresso/20"></div>
+</div>
+<!-- Badge flottant -->
+<div class="absolute -bottom-10 -left-10 bg-parchemin text-encre p-8 rounded-2xl shadow-2xl hidden md:block max-w-xs">
+<span class="material-symbols-outlined text-cuivre-fonce text-5xl mb-4">verified</span>
+<p class="font-headline-sm text-headline-sm text-[20px] mb-2 leading-tight">Performance RE2020</p>
+<p class="text-encre/70 text-body-md italic">Ossature et isolation en fibre de bois, pensées pour traverser les décennies.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Réalisations (galerie bento) -->
+<section class="py-section-padding bg-parchemin-2" id="realisations">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-cuivre-fonce">Nos chantiers</span>
+<h2 class="font-headline-md text-headline-md text-encre mt-4 mb-4">Réalisations récentes</h2>
+<p class="font-body-md text-body-md text-encre/70 italic">Parcourez nos derniers chantiers en Gironde et laissez-vous inspirer par nos créations sur mesure.</p>
+</div>
+<a class="font-label-md text-label-md text-encre border-b border-encre pb-1 hover:text-cuivre-fonce hover:border-cuivre-fonce transition-colors" href="#">Voir toute la galerie</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[800px]">
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('/images/source-adefrance/construction-pool-house-bois-libourne.webp')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-espresso/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+<div>
+<h4 class="text-ivoire font-headline-sm text-headline-sm">Pool house &amp; terrasse bois — Libourne</h4>
+<p class="text-ivoire/80 font-body-md">Ossature bois et platelage, un lieu de vie prolongé jusqu'au bassin.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('/images/source-adefrance/Pergolas-bois-Libourne.webp')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-espresso/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<h4 class="text-ivoire font-headline-sm text-headline-sm text-[18px]">Pergola bois massif — Gironde</h4>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('/images/source-adefrance/Carport-bois-Libourne-1.webp')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-espresso/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<h4 class="text-ivoire font-headline-sm text-headline-sm text-[18px]">Carport bois — Libourne</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact / demande d'étude -->
+<section class="py-section-padding bg-espresso" id="quote">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-card rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-ligne">
+<div class="lg:w-2/5 bg-espresso-deep p-12 text-ivoire flex flex-col justify-between border-r border-ligne">
+<div>
+<h2 class="font-headline-md text-headline-md mb-6 leading-tight">Parlons de votre projet</h2>
+<p class="font-body-md text-body-md text-texte-doux mb-8">Remplissez ce formulaire : nous revenons vers vous sous 48h avec une première estimation et les prochaines étapes.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 hover:text-cuivre transition-colors" href="tel:+33557406580">
+<span class="material-symbols-outlined text-cuivre">phone_in_talk</span>
+<span class="font-label-md">05 57 40 65 80</span>
+</a>
+<a class="flex items-center gap-4 hover:text-cuivre transition-colors" href="mailto:contact@lespritbois.fr">
+<span class="material-symbols-outlined text-cuivre">mail</span>
+<span class="font-label-md">contact@lespritbois.fr</span>
+</a>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-cuivre">location_on</span>
+<span class="font-label-md">1 Aux Pradasses, 33500 Les Billaux</span>
+</div>
+</div>
+</div>
+<div class="mt-12 p-6 bg-ivoire/5 rounded-xl border border-ligne italic text-texte-doux text-sm">
+                        « Une équipe qui ne se contente pas de construire : elle conçoit un lieu de vie. Un seul interlocuteur, du premier croquis à la dernière lame. » — Client, Libourne
+                    </div>
+</div>
+<div class="lg:w-3/5 p-12">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-cuivre-clair">Votre projet</label>
+<select class="champ">
+<option>Terrasse</option>
+<option>Pergola</option>
+<option>Carport</option>
+<option>Bardage</option>
+<option>Construction bois</option>
+<option>Autre</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-cuivre-clair">Budget estimé</label>
+<select class="champ">
+<option>&lt; 5 000 €</option>
+<option>5 000 € – 15 000 €</option>
+<option>15 000 € – 50 000 €</option>
+<option>+ 50 000 €</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-cuivre-clair">Nom &amp; Prénom</label>
+<input class="champ" placeholder="Jean Dupont" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-cuivre-clair">Téléphone</label>
+<input class="champ" placeholder="06 00 00 00 00" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-cuivre-clair">Dites-nous en plus</label>
+<textarea class="champ resize-none" placeholder="Dimensions, essence de bois souhaitée, localisation…" rows="4"></textarea>
+</div>
+<button class="w-full bg-cuivre text-sur-cuivre py-5 rounded-xl font-label-md text-label-md shadow-lg hover:bg-cuivre-clair hover:-translate-y-1 transition-all" type="submit">
+                            Envoyer ma demande d'étude gratuite
+                        </button>
+<p class="text-center text-xs text-texte-faible">Vos données sont sécurisées et ne seront jamais partagées. Conformité RGPD assurée.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-section-padding pb-gutter bg-espresso-deep border-t border-ligne">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 md:px-16 max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-display-lg text-headline-md text-ivoire mb-6 uppercase tracking-wider">L'Esprit Bois</div>
+<p class="text-texte-doux font-body-md text-body-md leading-relaxed">
+                    Créateur d'espaces extérieurs à Libourne. Terrasses, pergolas, carports, bardages et constructions bois sur mesure — en bois et aluminium.
+                </p>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-cuivre mb-6 uppercase tracking-widest">Savoir-faire</h4>
+<ul class="space-y-4">
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#solutions">Terrasses</a></li>
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#solutions">Pergolas</a></li>
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#solutions">Carports</a></li>
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#solutions">Bardages</a></li>
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#solutions">Constructions bois</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-cuivre mb-6 uppercase tracking-widest">L'entreprise</h4>
+<ul class="space-y-4">
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#realisations">Réalisations</a></li>
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#solutions">Notre méthode</a></li>
+<li><a class="text-texte-doux hover:text-cuivre hover:translate-x-1 transition-all duration-200 inline-block" href="#quote">Demander un devis</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-cuivre mb-6 uppercase tracking-widest">Contact</h4>
+<ul class="space-y-4 text-texte-doux">
+<li><a class="hover:text-cuivre transition-colors" href="tel:+33557406580">05 57 40 65 80</a></li>
+<li><a class="hover:text-cuivre transition-colors" href="mailto:contact@lespritbois.fr">contact@lespritbois.fr</a></li>
+<li>1 Aux Pradasses, 33500 Les Billaux</li>
+<li>Lun – Ven · 8h – 17h</li>
+</ul>
+<div class="mt-8 flex gap-4">
+<a class="w-10 h-10 rounded-full border border-ligne-forte flex items-center justify-center text-cuivre hover:bg-cuivre hover:text-sur-cuivre transition-all" href="#" aria-label="Facebook"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-10 h-10 rounded-full border border-ligne-forte flex items-center justify-center text-cuivre hover:bg-cuivre hover:text-sur-cuivre transition-all" href="#" aria-label="Instagram"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-6 md:px-16 mt-20 pt-8 border-t border-ligne flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-texte-faible font-body-md text-sm">© 2026 L'Esprit Bois — Créateur d'espaces extérieurs en Gironde.</p>
+<div class="flex gap-6 text-sm">
+<a class="text-texte-faible hover:text-cuivre transition-colors" href="#">Mentions légales</a>
+<a class="text-texte-faible hover:text-cuivre transition-colors" href="#">Politique de confidentialité</a>
+</div>
+</div>
+</footer>
+<script>
+        // Densification de la barre au scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4', 'bg-espresso/95');
+                nav.classList.remove('py-6', 'bg-espresso/70');
+            } else {
+                nav.classList.add('py-6', 'bg-espresso/70');
+                nav.classList.remove('py-4', 'bg-espresso/95');
+            }
+        });
+    </script>
+</body></html>

@@ -8,9 +8,7 @@ const annee = 2026;
     <div class="foot__brand">
       <a class="foot__lockup" href="/" aria-label="L'Esprit Bois — accueil">
         <img class="foot__logo" src="/logo-mark.svg" alt="" width="260" height="150" />
-        <span class="foot__mark">
-          <span class="foot__esprit">L'ESPRIT</span> <span class="foot__bois">BOIS</span>
-        </span>
+        <span class="foot__mark">L'Esprit Bois</span>
       </a>
       <p class="foot__baseline">{site.baseline}</p>
       <p class="foot__pitch">{site.slogan}</p>
@@ -60,7 +58,7 @@ const annee = 2026;
   .foot {
     border-top: 1px solid var(--ligne);
     padding-top: var(--space-xl);
-    background: var(--noir);
+    background: var(--noir-profond);
   }
   .foot__grid {
     display: grid;
@@ -83,13 +81,12 @@ const annee = 2026;
     transform: translateY(-3px);
   }
   .foot__mark {
-    font-family: var(--font-label);
+    font-family: var(--font-display);
     font-weight: 500;
-    letter-spacing: 0.22em;
-    font-size: var(--text-base);
+    letter-spacing: 0.01em;
+    font-size: var(--text-xl);
+    color: var(--cuivre);
   }
-  .foot__esprit { color: var(--ivoire); }
-  .foot__bois { color: var(--cuivre); }
   .foot__baseline {
     font-family: var(--font-label);
     font-size: var(--text-2xs);

@@ -1,0 +1,141 @@
+---
+import { matiere } from '../data/site';
+const lignes = matiere.titre.split('\n');
+---
+
+<section class="mat" id="matiere">
+  <div class="wrap mat__grid">
+    <figure class="mat__visual" data-reveal>
+      <span class="mat__frame" aria-hidden="true"></span>
+      <img src="/images/source-adefrance/IMG-20240712-WA0039.jpg" alt="Bardage bois travaillé — L'Esprit Bois" loading="lazy" width="1200" height="1500" />
+      <figcaption class="mat__stat">
+        <span class="mat__stat-val">{matiere.statValeur}</span>
+        <span class="mat__stat-label">{matiere.statLabel}</span>
+      </figcaption>
+    </figure>
+
+    <div class="mat__body" data-reveal>
+      <p class="eyebrow">{matiere.eyebrow}</p>
+      <h2 class="mat__title">
+        {lignes.map((l, i) => (
+          <>{l}{i < lignes.length - 1 && <br />}</>
+        ))}
+      </h2>
+      <p class="lede mat__text">{matiere.texte}</p>
+      <div class="mat__atouts">
+        {matiere.atouts.map((a) => (
+          <div class="atout">
+            <h3 class="atout__titre">{a.titre}</h3>
+            <p class="atout__texte">{a.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mat {
+    padding-block: var(--space-2xl);
+    background:
+      radial-gradient(120% 80% at 85% 15%, rgba(255, 216, 154, 0.35), transparent 55%),
+      var(--parchemin);
+    color: var(--encre);
+    overflow: hidden;
+  }
+  /* Section claire : on force les accents lisibles sur parchemin */
+  .mat :global(.eyebrow) { color: var(--cuivre-fonce); }
+  .mat :global(.eyebrow)::before { background: var(--cuivre-fonce); }
+  .mat__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2.5rem, 6vw, 6rem);
+    align-items: center;
+  }
+
+  /* — Visuel + cadre + statistique — */
+  .mat__visual {
+    position: relative;
+    margin: 0;
+  }
+  .mat__frame {
+    position: absolute;
+    top: -2.5rem;
+    left: -2.5rem;
+    width: 60%;
+    height: 60%;
+    border: 1px solid var(--cuivre-fonce);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .mat__visual img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    filter: saturate(1.08) contrast(1.03);
+    transition: transform 1s var(--ease-out);
+  }
+  .mat__visual:hover img { transform: scale(1.02); }
+  .mat__stat {
+    position: absolute;
+    right: -1.5rem;
+    bottom: -1.5rem;
+    padding: clamp(1.5rem, 2.5vw, 2.5rem);
+    background: var(--noir);
+    border: 1px solid var(--ligne);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 14rem;
+  }
+  .mat__stat-val {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    color: var(--cuivre);
+    line-height: 1;
+  }
+  .mat__stat-label {
+    font-family: var(--font-label);
+    font-size: var(--text-2xs);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--texte-doux);
+  }
+
+  /* — Corps — */
+  .mat__title {
+    font-size: var(--text-2xl);
+    margin: 1.2rem 0 1.6rem;
+    line-height: 1.08;
+  }
+  .mat__text {
+    margin-bottom: 2.5rem;
+    max-width: 34rem;
+    color: var(--encre-doux);
+  }
+  .mat__atouts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
+  .atout__titre {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--text-xl);
+    color: var(--cuivre-fonce);
+    margin-bottom: 0.5rem;
+  }
+  .atout__texte {
+    color: var(--encre-doux);
+    font-size: var(--text-sm);
+  }
+
+  @media (max-width: 860px) {
+    .mat__grid { grid-template-columns: 1fr; }
+    .mat__visual { max-width: 26rem; }
+  }
+  @media (max-width: 460px) {
+    .mat__atouts { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,7 +1,7 @@
 /**
  * Génère des visuels placeholder « de marque » pour L'Esprit Bois.
- * Croquis architectural en trait, sur fond bois chaud + grain, aux couleurs du logo.
- * Ces SVG sont pensés pour être remplacés par de vraies photos (mêmes noms, dossier public/images/).
+ * Version chaude & lumineuse (heure dorée) : bois texturé, glow doré, une teinte par métier.
+ * Pensés pour être remplacés par de vraies photos (mêmes noms, dossier public/images/).
  *
  *   node scripts/gen-placeholders.mjs
  */
@@ -14,158 +14,192 @@ const OUT = join(__dirname, '..', 'public', 'images');
 mkdirSync(OUT, { recursive: true });
 
 const C = {
-  noir: '#0B0B0C',
-  brun: '#17140F',
-  brun2: '#221B12',
-  cuivre: '#C67C3D',
-  cuivreClair: '#E4A566',
-  ivoire: '#F3EEE4',
-  olivier: '#93B23F',
+  espresso: '#20130a',
+  cacao: '#3a2411',
+  bois: '#6d4322',
+  caramel: '#a86a31',
+  miel: '#e6a24e',
+  cuivre: '#f9bb71',
+  or: '#ffd89a',
+  ivoire: '#f6efe2',
+  olivier: '#a7c34e',
+  ciel: '#4a6068',
+  seam: '#160c04',
 };
 
 const W = 1600;
 const H = 1000;
 
-/** Enveloppe commune : dégradé, halo cuivre, grain, vignette. */
-function frame(inner, { glowX = 0.7, glowY = 0.28, glow = 0.55, angle = 155 } = {}) {
+/** Enveloppe : dégradé bois chaud + soleil doré + texture + vignette légère + grain. */
+function frame(inner, { tint = C.miel, glowX = 0.72, glowY = 0.28, angle = 150, sun = 0.95 } = {}) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
   <defs>
     <linearGradient id="bg" gradientTransform="rotate(${angle} 0.5 0.5)">
-      <stop offset="0" stop-color="${C.noir}"/>
-      <stop offset="0.55" stop-color="${C.brun}"/>
-      <stop offset="1" stop-color="${C.brun2}"/>
+      <stop offset="0" stop-color="${C.espresso}"/>
+      <stop offset="0.45" stop-color="${C.cacao}"/>
+      <stop offset="0.8" stop-color="${C.bois}"/>
+      <stop offset="1" stop-color="${tint}"/>
     </linearGradient>
-    <radialGradient id="glow" cx="${glowX}" cy="${glowY}" r="0.75">
-      <stop offset="0" stop-color="${C.cuivre}" stop-opacity="${glow}"/>
-      <stop offset="0.4" stop-color="${C.cuivre}" stop-opacity="${glow * 0.35}"/>
+    <radialGradient id="sun" cx="${glowX}" cy="${glowY}" r="0.62">
+      <stop offset="0" stop-color="${C.or}" stop-opacity="${sun}"/>
+      <stop offset="0.26" stop-color="${C.miel}" stop-opacity="${(sun * 0.55).toFixed(2)}"/>
+      <stop offset="0.65" stop-color="${C.cuivre}" stop-opacity="0.14"/>
       <stop offset="1" stop-color="${C.cuivre}" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
-      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0.6"/>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.82">
+      <stop offset="0.52" stop-color="${C.espresso}" stop-opacity="0"/>
+      <stop offset="1" stop-color="#100802" stop-opacity="0.5"/>
     </radialGradient>
     <filter id="grain">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0"/>
     </filter>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  <rect width="${W}" height="${H}" fill="url(#glow)"/>
   ${inner}
+  <rect width="${W}" height="${H}" fill="url(#sun)"/>
   <rect width="${W}" height="${H}" fill="url(#vig)"/>
-  <rect width="${W}" height="${H}" filter="url(#grain)" opacity="0.05"/>
+  <rect width="${W}" height="${H}" filter="url(#grain)" opacity="0.06"/>
 </svg>`;
 }
 
-// opacité paramétrable (jamais dupliquée : XML interdit un attribut redéfini)
-const stroke = ({ o = 0.85, w = 2 } = {}) =>
-  `fill="none" stroke="${C.cuivre}" stroke-width="${w}" stroke-linecap="square" opacity="${o}"`;
-const strokeSoft = ({ o = 0.28, w = 1.5 } = {}) =>
-  `fill="none" stroke="${C.ivoire}" stroke-width="${w}" opacity="${o}"`;
+// Opacité toujours paramétrable (jamais dupliquée : XML interdit un attribut redéfini).
+const stroke = ({ o = 0.92, w = 2.5, c = C.or } = {}) =>
+  `fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="square" opacity="${o}"`;
+const soft = ({ o = 0.42, w = 1.6, c = C.ivoire } = {}) =>
+  `fill="none" stroke="${c}" stroke-width="${w}" opacity="${o}"`;
 
-/* — Terrasses : lames en perspective vers un horizon — */
+/* Texture : planches de bois horizontales (chaudes, avec joints & reflets). */
+function planks({ y0 = 0, y1 = H, n = 9, a = 0.5 } = {}) {
+  let s = '';
+  const step = (y1 - y0) / n;
+  for (let i = 0; i < n; i++) {
+    const y = y0 + i * step;
+    const band = i % 2 ? C.bois : C.caramel;
+    s += `<rect x="0" y="${y.toFixed(1)}" width="${W}" height="${step.toFixed(1)}" fill="${band}" opacity="${a}"/>`;
+    s += `<line x1="0" y1="${y.toFixed(1)}" x2="${W}" y2="${y.toFixed(1)}" stroke="${C.seam}" stroke-width="2.5" opacity="0.55"/>`;
+    s += `<line x1="0" y1="${(y + 3).toFixed(1)}" x2="${W}" y2="${(y + 3).toFixed(1)}" stroke="${C.or}" stroke-width="1" opacity="0.22"/>`;
+  }
+  return s;
+}
+
+/* Texture : tasseaux verticaux (motif signature « la trame »). */
+function slats({ x0 = 40, x1 = W - 40, n = 26, a = 0.55, gap = 0.72 } = {}) {
+  let s = '';
+  const step = (x1 - x0) / n;
+  for (let i = 0; i < n; i++) {
+    const x = x0 + i * step;
+    const shade = i % 2 ? C.caramel : C.bois;
+    s += `<rect x="${x.toFixed(1)}" y="0" width="${(step * gap).toFixed(1)}" height="${H}" fill="${shade}" opacity="${a}"/>`;
+    s += `<rect x="${x.toFixed(1)}" y="0" width="2.5" height="${H}" fill="${C.or}" opacity="0.16"/>`;
+    s += `<rect x="${(x + step * gap - 2).toFixed(1)}" y="0" width="2" height="${H}" fill="${C.seam}" opacity="0.4"/>`;
+  }
+  return s;
+}
+
+/* — Terrasses : platelage bois en perspective vers un soleil bas — */
 function terrasses() {
-  const vpX = 1020, vpY = 300;
-  let boards = '';
-  for (let i = 0; i <= 16; i++) {
-    const y = 560 + i * (34 + i * 5.5);
-    if (y > H + 40) break;
-    boards += `<line x1="80" y1="${y}" x2="${W - 80}" y2="${y}" ${strokeSoft()}/>`;
-  }
+  const vpX = 1040;
   let ribs = '';
-  for (let i = -6; i <= 6; i++) {
-    const x = 800 + i * 150;
-    ribs += `<line x1="${x}" y1="560" x2="${vpX + (x - vpX) * 2.4}" y2="${H}" ${strokeSoft()}/>`;
+  for (let i = -7; i <= 7; i++) {
+    const x = 800 + i * 140;
+    ribs += `<line x1="${x}" y1="540" x2="${vpX + (x - vpX) * 2.6}" y2="${H}" ${soft({ o: 0.22 })}/>`;
+  }
+  let boards = '';
+  for (let i = 0; i <= 15; i++) {
+    const y = 545 + i * (26 + i * 5.2);
+    if (y > H + 40) break;
+    boards += `<line x1="0" y1="${y.toFixed(0)}" x2="${W}" y2="${y.toFixed(0)}" ${soft({ o: 0.3, c: C.or })}/>`;
   }
   return frame(
-    `${boards}${ribs}
-     <line x1="0" y1="558" x2="${W}" y2="558" ${stroke({ o: 0.5 })}/>
-     <circle cx="${vpX}" cy="${vpY}" r="150" fill="url(#glow)"/>`,
-    { glowX: 0.64, glowY: 0.3 }
+    `<rect x="0" y="0" width="${W}" height="540" fill="${C.miel}" opacity="0.1"/>
+     ${planks({ y0: 545, y1: H, n: 7, a: 0.6 })}
+     ${boards}${ribs}
+     <line x1="0" y1="543" x2="${W}" y2="543" ${stroke({ o: 0.55 })}/>`,
+    { tint: C.miel, glowX: 0.62, glowY: 0.34, angle: 165 }
   );
 }
 
-/* — Pergolas : lames supérieures + poteaux, ombres portées — */
+/* — Pergolas : lames hautes + poteaux, lumière filtrée — */
 function pergolas() {
-  let slats = '';
-  for (let i = 0; i < 22; i++) {
-    const x = 180 + i * 62;
-    slats += `<line x1="${x}" y1="230" x2="${x - 40}" y2="330" ${stroke({ o: 0.75 })}/>`;
+  let over = '';
+  for (let i = 0; i < 24; i++) {
+    const x = 150 + i * 58;
+    over += `<line x1="${x}" y1="210" x2="${x - 44}" y2="320" ${stroke({ o: 0.7, w: 6, c: C.caramel })}/>`;
+    over += `<line x1="${x - 8}" y1="320" x2="${x - 8}" y2="${H - 70}" ${soft({ o: 0.12, c: C.or, w: 3 })}/>`;
   }
-  const posts = [260, 1340];
-  let p = '';
-  for (const x of posts) p += `<line x1="${x}" y1="330" x2="${x}" y2="${H - 60}" ${stroke()}/>`;
+  let posts = '';
+  for (const x of [250, 1350]) posts += `<line x1="${x}" y1="320" x2="${x}" y2="${H - 60}" ${stroke({ w: 9 })}/>`;
   return frame(
-    `<line x1="140" y1="230" x2="1460" y2="230" ${stroke()}/>
-     <line x1="100" y1="330" x2="1420" y2="330" ${stroke()}/>
-     ${slats}${p}
-     <line x1="120" y1="${H - 60}" x2="${W - 120}" y2="${H - 60}" ${strokeSoft()}/>`,
-    { glowX: 0.5, glowY: 0.18 }
+    `<line x1="120" y1="210" x2="1480" y2="210" ${stroke({ w: 7 })}/>
+     <line x1="90" y1="320" x2="1430" y2="320" ${stroke({ o: 0.85, w: 6 })}/>
+     ${over}${posts}
+     ${planks({ y0: H - 60, y1: H, n: 1, a: 0.5 })}
+     <line x1="90" y1="${H - 60}" x2="${W - 90}" y2="${H - 60}" ${soft({ o: 0.3 })}/>`,
+    { tint: C.or, glowX: 0.5, glowY: 0.14, angle: 135, sun: 1 }
   );
 }
 
-/* — Constructions bois : silhouette maison / ossature en A — */
+/* — Constructions bois : ossature maison en A, baie vitrée dorée — */
 function constructions() {
   return frame(
-    `<path d="M420 ${H - 90} L420 470 L800 250 L1180 470 L1180 ${H - 90}" ${stroke()}/>
-     <path d="M560 ${H - 90} L560 560 L800 400 L1040 560 L1040 ${H - 90}" ${strokeSoft()}/>
-     <line x1="800" y1="250" x2="800" y2="${H - 90}" ${strokeSoft()}/>
-     <line x1="300" y1="${H - 90}" x2="1300" y2="${H - 90}" ${stroke({ o: 0.5 })}/>
-     <rect x="720" y="720" width="160" height="${H - 90 - 720}" ${strokeSoft()}/>`,
-    { glowX: 0.5, glowY: 0.24 }
+    `${planks({ y0: H - 150, y1: H, n: 2, a: 0.55 })}
+     <path d="M420 ${H - 120} L420 460 L800 235 L1180 460 L1180 ${H - 120}" ${stroke({ w: 3.5 })}/>
+     <path d="M560 ${H - 120} L560 555 L800 400 L1040 555 L1040 ${H - 120}" ${soft({ o: 0.5, c: C.or })}/>
+     <rect x="690" y="640" width="220" height="${H - 120 - 640}" fill="${C.or}" opacity="0.16"/>
+     <rect x="690" y="640" width="220" height="${H - 120 - 640}" ${soft({ o: 0.55, c: C.or })}/>
+     <line x1="800" y1="235" x2="800" y2="${H - 120}" ${soft({ o: 0.35 })}/>
+     <line x1="260" y1="${H - 120}" x2="1340" y2="${H - 120}" ${stroke({ o: 0.5 })}/>`,
+    { tint: C.caramel, glowX: 0.5, glowY: 0.22, angle: 150 }
   );
 }
 
-/* — Carports : structure toit plat + voiture stylisée — */
+/* — Carports : toit plat + poteaux + voiture stylisée — */
 function carports() {
   return frame(
-    `<line x1="240" y1="360" x2="1360" y2="360" ${stroke()}/>
-     <line x1="240" y1="392" x2="1360" y2="392" ${strokeSoft()}/>
-     <line x1="300" y1="392" x2="300" y2="${H - 80}" ${stroke()}/>
-     <line x1="1300" y1="392" x2="1300" y2="${H - 80}" ${stroke()}/>
-     <line x1="800" y1="392" x2="800" y2="${H - 80}" ${strokeSoft()}/>
-     <line x1="240" y1="${H - 80}" x2="1360" y2="${H - 80}" ${strokeSoft()}/>
-     <path d="M560 ${H - 150} q60 -110 200 -110 h180 q120 0 170 110" ${strokeSoft()}/>
-     <circle cx="660" cy="${H - 150}" r="34" ${strokeSoft()}/>
-     <circle cx="980" cy="${H - 150}" r="34" ${strokeSoft()}/>`,
-    { glowX: 0.5, glowY: 0.2 }
+    `${planks({ y0: H - 90, y1: H, n: 1, a: 0.5 })}
+     <rect x="240" y="345" width="1120" height="30" fill="${C.caramel}" opacity="0.6"/>
+     <line x1="240" y1="345" x2="1360" y2="345" ${stroke({ w: 3 })}/>
+     <line x1="240" y1="375" x2="1360" y2="375" ${soft({ o: 0.4, c: C.or })}/>
+     <line x1="300" y1="375" x2="300" y2="${H - 82}" ${stroke({ w: 9 })}/>
+     <line x1="1300" y1="375" x2="1300" y2="${H - 82}" ${stroke({ w: 9 })}/>
+     <line x1="800" y1="375" x2="800" y2="${H - 82}" ${soft({ o: 0.3, w: 4 })}/>
+     <path d="M560 ${H - 150} q60 -110 200 -110 h180 q120 0 170 110" ${soft({ o: 0.5, c: C.or })}/>
+     <circle cx="660" cy="${H - 150}" r="34" ${soft({ o: 0.5, c: C.or })}/>
+     <circle cx="980" cy="${H - 150}" r="34" ${soft({ o: 0.5, c: C.or })}/>`,
+    { tint: C.cuivre, glowX: 0.52, glowY: 0.2, angle: 150 }
   );
 }
 
-/* — Bardages : la trame, tasseaux verticaux (motif signature) — */
+/* — Bardages : la trame plein cadre, tasseaux chauds + joints d'or — */
 function bardages() {
-  let battens = '';
-  for (let i = 0; i < 34; i++) {
-    const x = 90 + i * 42;
-    const op = 0.35 + ((i * 7) % 5) * 0.13;
-    battens += `<line x1="${x}" y1="120" x2="${x}" y2="${H - 120}" fill="none" stroke="${C.cuivre}" stroke-width="10" opacity="${op.toFixed(2)}"/>`;
-  }
-  return frame(battens, { glowX: 0.8, glowY: 0.35, glow: 0.5, angle: 120 });
+  return frame(`${slats({ n: 28, a: 0.62, gap: 0.66 })}`, {
+    tint: C.miel,
+    glowX: 0.78,
+    glowY: 0.32,
+    angle: 118,
+    sun: 0.85,
+  });
 }
 
-/* — Héro : structure moderne + trame + note végétale verte — */
+/* — Héro : structure moderne + trame + arbre olivier lumineux — */
 function hero() {
-  let slats = '';
-  for (let i = 0; i < 12; i++) {
-    const x = 120 + i * 40;
-    slats += `<line x1="${x}" y1="250" x2="${x}" y2="720" fill="none" stroke="${C.cuivre}" stroke-width="8" opacity="${(0.3 + (i % 3) * 0.16).toFixed(2)}"/>`;
-  }
-  // arbre stylisé (rappel du logo), en vert olive
-  let tree = `<line x1="1300" y1="760" x2="1300" y2="470" stroke="${C.olivier}" stroke-width="3" opacity="0.7"/>`;
-  for (let i = 0; i < 26; i++) {
-    const a = (i / 26) * Math.PI * 2;
-    const r = 70 + (i % 4) * 22;
+  let tree = `<line x1="1300" y1="770" x2="1300" y2="470" stroke="${C.olivier}" stroke-width="4" opacity="0.85"/>`;
+  for (let i = 0; i < 30; i++) {
+    const a = (i / 30) * Math.PI * 2;
+    const r = 66 + (i % 4) * 24;
     const cx = 1300 + Math.cos(a) * r;
     const cy = 440 + Math.sin(a) * r * 0.8;
-    tree += `<circle cx="${cx.toFixed(0)}" cy="${cy.toFixed(0)}" r="7" fill="${C.olivier}" opacity="0.55"/>`;
+    tree += `<circle cx="${cx.toFixed(0)}" cy="${cy.toFixed(0)}" r="8" fill="${C.olivier}" opacity="0.7"/>`;
   }
   return frame(
-    `${slats}
-     <path d="M640 720 L640 250 L900 300 L900 720" ${stroke()}/>
-     <path d="M900 470 L1160 520 L1160 720 L900 720" ${stroke({ o: 0.6 })}/>
-     <line x1="80" y1="720" x2="1520" y2="720" ${stroke({ o: 0.4 })}/>
+    `${slats({ x0: 90, x1: 640, n: 11, a: 0.5, gap: 0.6 })}
+     <path d="M660 730 L660 250 L920 300 L920 730" ${stroke({ w: 3.5 })}/>
+     <path d="M920 470 L1180 520 L1180 730 L920 730" ${stroke({ o: 0.6, w: 3 })}/>
+     <rect x="700" y="430" width="150" height="300" fill="${C.or}" opacity="0.18"/>
+     <line x1="60" y1="730" x2="1540" y2="730" ${stroke({ o: 0.45 })}/>
      ${tree}`,
-    { glowX: 0.68, glowY: 0.26, glow: 0.6 }
+    { tint: C.or, glowX: 0.7, glowY: 0.24, angle: 155, sun: 1 }
   );
 }
 
@@ -183,7 +217,7 @@ for (const [name, fn] of Object.entries(scenes)) {
   console.log('✓', `${name}.svg`);
 }
 
-// Quelques variantes pour la galerie (réutilisent les scènes avec un cadrage/halo différent).
+// Galerie : réutilise les scènes.
 const gallery = [
   ['real-1', terrasses],
   ['real-2', pergolas],
@@ -197,4 +231,4 @@ for (const [name, fn] of gallery) {
   console.log('✓', `${name}.svg`);
 }
 
-console.log('\nPlaceholders générés dans public/images/');
+console.log('\nPlaceholders (chauds & lumineux) générés dans public/images/');

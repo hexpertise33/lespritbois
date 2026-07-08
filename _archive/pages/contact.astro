@@ -8,27 +8,26 @@ import { contact, metiers } from '../data/site';
   description="Parlons de votre projet d'espace extérieur en bois. Devis gratuit — L'Esprit Bois, Gironde."
 >
   <section class="ct">
+    <header class="wrap ct__head" data-reveal>
+      <p class="eyebrow">Mise en relation</p>
+      <h1 class="ct__title">Parlons de <em>votre projet</em>.</h1>
+      <span class="ct__rule" aria-hidden="true"></span>
+    </header>
+
     <div class="wrap ct__grid">
       <!-- Colonne infos -->
       <aside class="ct__aside" data-reveal>
-        <p class="eyebrow">Contact</p>
-        <h1 class="ct__title">Parlons de<br /><em>votre projet</em>.</h1>
-        <p class="ct__intro">
-          Décrivez votre envie en quelques mots. On revient vers vous avec des
-          pistes concrètes et, si vous le souhaitez, une visite sur place.
-        </p>
-
         <dl class="ct__coords">
           <div>
-            <dt>Téléphone</dt>
+            <dt>Nous appeler</dt>
             <dd><a href={contact.telephoneHref}>{contact.telephone}</a></dd>
           </div>
           <div>
-            <dt>Email</dt>
+            <dt>Email direct</dt>
             <dd><a href={`mailto:${contact.email}`}>{contact.email}</a></dd>
           </div>
           <div>
-            <dt>Atelier</dt>
+            <dt>L'atelier</dt>
             <dd>{contact.adresse}<br />{contact.codePostal} {contact.ville}</dd>
           </div>
           <div>
@@ -40,17 +39,21 @@ import { contact, metiers } from '../data/site';
             <dd>{contact.horaires}</dd>
           </div>
         </dl>
+        <p class="ct__quote">
+          « Chaque ouvrage en bois est une pièce d'orfèvrerie. On prend le temps
+          d'écouter votre vision pour la transformer en une réalité durable. »
+        </p>
       </aside>
 
       <!-- Formulaire -->
       <form class="ct__form" data-reveal data-contact-form>
         <div class="field">
-          <label for="nom">Nom</label>
+          <label for="nom">Nom complet</label>
           <input id="nom" name="nom" type="text" autocomplete="name" required />
         </div>
         <div class="field-row">
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email">Adresse email</label>
             <input id="email" name="email" type="email" autocomplete="email" required />
           </div>
           <div class="field">
@@ -59,15 +62,15 @@ import { contact, metiers } from '../data/site';
           </div>
         </div>
         <div class="field">
-          <label for="projet">Votre projet</label>
+          <label for="projet">Nature du projet</label>
           <select id="projet" name="projet">
-            <option value="">Choisir…</option>
+            <option value="">Sélectionnez une option…</option>
             {metiers.map((m) => <option value={m.nom}>{m.nom}</option>)}
             <option value="Plusieurs / autre">Plusieurs / autre</option>
           </select>
         </div>
         <div class="field">
-          <label for="message">Message</label>
+          <label for="message">Détails du projet</label>
           <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet, le lieu, vos envies…" required></textarea>
         </div>
         <button class="btn ct__submit" type="submit">
@@ -77,8 +80,8 @@ import { contact, metiers } from '../data/site';
           </svg>
         </button>
         <p class="ct__note" data-form-note>
-          Réponse sous 48h ouvrées. En envoyant, votre logiciel de messagerie s'ouvre —
-          un formulaire connecté sera activé à la mise en ligne.
+          Réponse sous 48h ouvrées. En envoyant, votre logiciel de messagerie
+          s'ouvre — un formulaire connecté sera activé à la mise en ligne.
         </p>
       </form>
     </div>
@@ -107,64 +110,86 @@ import { contact, metiers } from '../data/site';
   .ct {
     padding-block: 9rem var(--space-2xl);
   }
-  .ct__grid {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: clamp(2rem, 6vw, 6rem);
-    align-items: start;
+  .ct__head {
+    max-width: 60rem;
+    margin-bottom: var(--space-xl);
   }
   .ct__title {
     font-size: var(--text-3xl);
-    margin: 1rem 0 1.4rem;
+    margin: 1rem 0 0;
   }
-  .ct__intro {
-    color: var(--texte-doux);
-    max-width: 26rem;
-    margin-bottom: 2.5rem;
+  .ct__rule {
+    display: block;
+    width: 6rem;
+    height: 2px;
+    margin-top: 2rem;
+    background: var(--cuivre);
   }
+
+  .ct__grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: start;
+  }
+
+  /* — Colonne infos — */
   .ct__coords {
     display: grid;
-    gap: 1.4rem;
-    border-top: 1px solid var(--ligne);
-    padding-top: 2rem;
+    gap: 1.6rem;
+    margin: 0;
+  }
+  .ct__coords > div {
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--ligne);
   }
   .ct__coords dt {
     font-family: var(--font-label);
     font-size: var(--text-2xs);
-    letter-spacing: 0.18em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--cuivre);
-    margin-bottom: 0.35rem;
+    color: var(--texte-doux);
+    margin-bottom: 0.5rem;
   }
   .ct__coords dd {
     margin: 0;
     color: var(--texte);
-    font-size: var(--text-sm);
+    font-size: var(--text-lg);
+    font-weight: 350;
   }
-  .ct__coords a:hover { color: var(--cuivre-lumiere); }
+  .ct__coords a:hover { color: var(--cuivre); }
+  .ct__quote {
+    margin-top: 2rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--text-lg);
+    line-height: 1.4;
+    color: var(--texte-doux);
+  }
 
-  /* — Formulaire — */
+  /* — Formulaire (conteneur surélevé) — */
   .ct__form {
     display: grid;
-    gap: 1.3rem;
-    padding: clamp(1.5rem, 3vw, 2.5rem);
+    gap: 1.5rem;
+    padding: clamp(1.75rem, 3.5vw, 3.5rem);
     background: var(--brun-noir);
     border: 1px solid var(--ligne);
-    border-radius: var(--radius-lg);
   }
   .field-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.3rem;
+    gap: 1.5rem;
   }
   .field {
     display: grid;
-    gap: 0.5rem;
+    gap: 0.55rem;
   }
   .field label {
     font-family: var(--font-label);
     font-size: var(--text-2xs);
-    letter-spacing: 0.14em;
+    font-weight: 600;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--texte-doux);
   }
@@ -174,22 +199,28 @@ import { contact, metiers } from '../data/site';
     font-family: var(--font-body);
     font-size: var(--text-base);
     color: var(--ivoire);
-    background: var(--noir);
-    border: 1px solid var(--ligne);
-    border-radius: var(--radius);
-    padding: 0.85rem 1rem;
-    transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--ligne-forte);
+    border-radius: 0;
+    padding: 0.7rem 0;
+    transition: border-color 0.4s var(--ease);
     width: 100%;
   }
   .field textarea { resize: vertical; }
+  .field input::placeholder,
+  .field textarea::placeholder { color: var(--texte-faible); }
   .field input:focus,
   .field select:focus,
   .field textarea:focus {
     outline: none;
-    border-color: var(--cuivre);
-    box-shadow: 0 0 0 3px rgba(198, 124, 61, 0.15);
+    border-bottom-color: var(--cuivre);
   }
-  .field select { appearance: none; cursor: pointer; }
+  .field select {
+    appearance: none;
+    cursor: pointer;
+  }
+  .field select option { background: var(--noir); color: var(--ivoire); }
   .ct__submit {
     justify-self: start;
     margin-top: 0.5rem;

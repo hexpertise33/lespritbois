@@ -1,0 +1,482 @@
+---
+import Site from '../layouts/Site.astro';
+
+const jsonld = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://lespritbois.fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Constructions bois",
+        "item": "https://lespritbois.fr/constructions-bois"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Construction à ossature bois livrée hors d'eau hors d'air",
+    "name": "Construction bois à Libourne et en Gironde",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Libourne"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Gironde"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Nouvelle-Aquitaine"
+      }
+    ],
+    "provider": {
+      "@type": "GeneralContractor",
+      "name": "L'Esprit Bois",
+      "description": "Constructeur bois : maisons à ossature bois, maisons en A, pool houses, abris et dépendances, livrés hors d'eau hors d'air. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
+      "telephone": "+33557406580",
+      "email": "contact@lespritbois.fr",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "Qualibat"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Aux Pradasses",
+        "postalCode": "33500",
+        "addressLocality": "Les Billaux",
+        "addressRegion": "Gironde",
+        "addressCountry": "FR"
+      }
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Nos constructions bois",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Maison à ossature bois"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Maison en A"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Pool house bois ou aluminium"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Abri de jardin et dépendance"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Livraison hors d'eau hors d'air"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce qu'une maison à ossature bois ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une construction dont la structure porteuse est faite de montants en bois, contreventés par des panneaux, et remplis d'isolant. Les murs sont préfabriqués en atelier puis levés sur site. Le chantier est sec, rapide, et les murs sont fins à performance égale — ce qui laisse davantage de surface habitable pour une même emprise au sol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce qu'une maison en A ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une construction dont les murs et la toiture ne font qu'un : la charpente descend jusqu'au sol et dessine un A. Cette géométrie évacue naturellement l'eau, réduit les surfaces de façade exposées, et crée un volume intérieur à double hauteur. C'est une construction bois par excellence, et l'une de nos spécialités."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jusqu'où va votre intervention ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous livrons votre construction hors d'eau, hors d'air : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Notre intervention s'arrête là. Nous ne réalisons pas le second œuvre — cloisons, électricité, plomberie, chauffage, revêtements et peinture — que vous confiez aux artisans de votre choix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il un permis de construire pour un pool house ou un abri ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le plus souvent une autorisation est nécessaire, car ces constructions créent de l'emprise au sol. Selon la surface, il s'agit d'une déclaration préalable de travaux ou d'un permis de construire, et un secteur protégé change la donne. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces, puis nous montons le dossier et suivons l'instruction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Une construction en bois dure-t-elle vraiment ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, à condition d'être bien conçue. Le bois ne craint pas l'humidité de l'air, il craint l'eau qui stagne. Tout se joue donc dans la conception : pieds de structure décollés du sol, pare-pluie, lame d'air ventilée derrière le bardage, débords de toiture, évacuation des eaux maîtrisée. Des ouvrages bois centenaires tiennent debout partout en France."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Êtes-vous certifiés et assurés ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier."
+        }
+      }
+    ]
+  }
+];
+---
+<Site
+  title="Construction bois & maison en A à Libourne | L'Esprit Bois"
+  description="Maison à ossature bois, maison en A, pool house et abri, livrés hors d'eau hors d'air. Conception, permis et pose par L'Esprit Bois, à Libourne et en Gironde."
+  keywords="construction bois Libourne, maison ossature bois Gironde, maison en A, pool house Libourne, abri de jardin bois"
+  page="constructions-bois"
+  ogImage="/images/source-adefrance/mais-en-a-accueil.webp"
+  ogTitle="Maison ossature bois & maison en A à Libourne"
+  ville="Libourne"
+  jsonld={jsonld}
+>
+<!-- Hero -->
+<header class="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img width="768" height="512" fetchpriority="high" decoding="async" class="w-full h-full object-cover" src="/images/source-adefrance/mais-en-a-accueil.webp" alt="Maison en A à ossature bois construite par L'Esprit Bois en Gironde"/>
+<div class="absolute inset-0 hero-interne"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
+<p class="font-label-md text-label-md text-white/60 mb-6">
+<a href="/" class="hover:text-secondary-fixed transition-colors">Accueil</a>
+<span class="mx-2 text-secondary">/</span>
+<span class="text-secondary-fixed">Constructions bois</span>
+</p>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Ossature &amp; Habitat</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6">Construction bois à Libourne et en Gironde</h1>
+<p class="font-body-lg text-body-lg text-white/85 max-w-2xl">Maison à ossature bois, maison en A, pool house ou dépendance — bâtis sur mesure et livrés <strong class="text-white font-semibold">hors d'eau, hors d'air</strong>.</p>
+</div>
+</header>
+
+<!-- Bandeau de confiance -->
+<section class="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
+<div class="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+<div>
+<p class="font-label-md text-label-md text-primary uppercase tracking-widest">Certifiés Qualibat</p>
+<p class="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+<div>
+<p class="font-label-md text-label-md text-primary uppercase tracking-widest">Garantie décennale</p>
+<p class="text-on-surface-variant text-body-md">Vos ouvrages couverts pendant 10 ans</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+<div>
+<p class="font-label-md text-label-md text-primary uppercase tracking-widest">Un seul interlocuteur</p>
+<p class="text-on-surface-variant text-body-md">De l'étude à la mise hors d'air</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Chapô -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="max-w-3xl">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Notre approche</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Construire en bois, du croquis au hors d'air</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Le bois est le seul matériau de structure qui pousse. Il construit vite et sec, il stocke du carbone pendant toute la vie du bâtiment, et il pardonne mal l'improvisation — ce qui convient parfaitement à des charpentiers.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Installés aux Billaux, à quelques minutes de <strong class="text-primary font-semibold">Libourne</strong>, nous bâtissons dans toute la <strong class="text-primary font-semibold">Gironde</strong> : <strong class="text-primary font-semibold">maisons à ossature bois</strong>, <strong class="text-primary font-semibold">maisons en A</strong>, <strong class="text-primary font-semibold">pool houses</strong> en bois ou en aluminium, abris et dépendances. Nous concevons, nous fabriquons, nous posons nous-mêmes la structure — sans sous-traitance.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Entreprise <strong class="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons chaque ouvrage par notre <strong class="text-primary font-semibold">garantie décennale</strong>, et nous montons pour vous le dossier d'urbanisme — <a href="/a-propos" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">un seul interlocuteur</a>, de l'étude à la mise hors d'air.</p>
+</div>
+</div>
+</section>
+
+<!-- Ce que nous construisons -->
+<section class="py-section-padding bg-surface-container-low" id="nos-constructions">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="max-w-3xl mb-14">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Nos ouvrages</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Ce que nous construisons</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">De la dépendance de jardin à la maison d'habitation, la même ossature et la même exigence — seule l'échelle change.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">home_work</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Maison ossature bois</h3>
+<p class="text-on-surface-variant text-body-md">Des murs préfabriqués en atelier, levés en quelques jours. Chantier sec, murs fins à performance égale, plus de surface habitable pour une même emprise.</p>
+</article>
+<article class="relative bg-white rounded-xl p-8 border border-secondary/40 shadow-sm hover:shadow-xl transition-shadow duration-500">
+<div class="absolute top-6 right-6 px-2 py-0.5 bg-primary-fixed text-secondary-dark text-[10px] uppercase font-bold tracking-widest rounded">Notre signature</div>
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">cabin</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Maison en A</h3>
+<p class="text-on-surface-variant text-body-md">Murs et toiture ne font qu'un. L'eau s'évacue d'elle-même, le volume intérieur monte en double hauteur. Une silhouette qu'on n'oublie pas.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">pool</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Pool house</h3>
+<p class="text-on-surface-variant text-body-md">Bois ou aluminium, adossé ou indépendant. L'annexe qui transforme un bassin en véritable espace de vie, été comme arrière-saison.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">cottage</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Abri &amp; dépendance</h3>
+<p class="text-on-surface-variant text-body-md">Atelier, bureau de jardin, remise, garage. Une petite construction se rate aussi facilement qu'une grande : même méthode, même soin.</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Périmètre : hors d'eau hors d'air -->
+<section class="py-section-padding bg-primary text-white" id="hors-eau-hors-air">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="max-w-3xl mb-14">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Notre spécialité</span>
+<h2 class="font-headline-md text-headline-md mt-4 mb-6">Hors d'eau, hors d'air : ce que nous livrons</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container">Nous vous remettons une construction close, couverte et étanche à l'air. Le dire avant le devis évite les malentendus à la réception.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+<div class="border-t-2 border-secondary pt-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary text-4xl">umbrella</span>
+<h3 class="font-headline-sm text-headline-sm text-secondary-fixed">Hors d'eau</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Fondations adaptées au terrain</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Ossature, contreventement, charpente</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Couverture et évacuation des eaux pluviales</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Pare-pluie, lame d'air ventilée, bardage</span></li>
+</ul>
+</div>
+<div class="border-t-2 border-secondary pt-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary text-4xl">air</span>
+<h3 class="font-headline-sm text-headline-sm text-secondary-fixed">Hors d'air</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Menuiseries extérieures posées et vitrées</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Isolation en fibre de bois</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Frein-vapeur continu, adhésifs et manchons</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span><span class="text-on-primary-container text-body-md">Portes extérieures et seuils</span></li>
+</ul>
+</div>
+</div>
+
+<div class="bg-white/5 border-l-2 border-secondary rounded-r-xl p-8">
+<h3 class="font-headline-sm text-headline-sm text-white mb-3">Notre intervention s'arrête là</h3>
+<p class="text-on-primary-container text-body-md mb-4"><strong class="text-white font-semibold">Nous ne réalisons pas le second œuvre</strong> : cloisons et doublages, électricité, plomberie, chauffage et ventilation, revêtements de sol et de mur, peinture. Ces lots sont confiés aux artisans de votre choix.</p>
+<p class="text-on-primary-container text-body-md">C'est un choix, pas une lacune. Nous préférons exceller sur la coquille — celle qui tient cinquante ans et qu'on ne reprend pas.</p>
+</div>
+</div>
+</section>
+
+<!-- Pourquoi l'ossature bois -->
+<section class="py-section-padding bg-surface" id="pourquoi-le-bois">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
+<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover" src="/images/source-adefrance/construction-pool-house-bois-libourne.webp" alt="Pool house à ossature bois construit à Libourne"/>
+</div>
+<div class="order-1 lg:order-2">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Pourquoi le bois</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Un matériau de structure qui pousse</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">On choisit souvent le bois pour de mauvaises raisons — parce que c'est joli — et on le garde pour de bonnes. Il est léger, donc il autorise des fondations plus légères. Il se travaille sec, donc le chantier ne sèche pas pendant des mois. Il se préfabrique, donc la précision se joue en atelier, à l'abri.</p>
+<ul class="space-y-4 mb-6">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span><span class="text-body-md">Structure préfabriquée en atelier, levée en chantier <strong class="text-primary font-semibold">sec</strong></span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span><span class="text-body-md">Isolation en <strong class="text-primary font-semibold">fibre de bois</strong>, appréciée pour le confort d'été</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span><span class="text-body-md">Murs fins à performance égale : plus de surface habitable</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span><span class="text-body-md">Matériau renouvelable, qui stocke du carbone durant toute la vie du bâtiment</span></li>
+</ul>
+<p class="text-on-surface-variant text-body-md italic">Essences, sections, épaisseurs d'isolant et performances visées sont arrêtées lors du rendez-vous, au vu de votre terrain, et détaillées dans le devis.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Notre méthode -->
+<section class="py-section-padding bg-surface-container-low" id="methode">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="max-w-3xl mb-14">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Notre méthode</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Du terrain à la mise hors d'air</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Quatre étapes, un seul interlocuteur. Vous savez à chaque instant qui appeler.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+<div class="border-t-2 border-secondary pt-6">
+<p class="wordmark text-[12px] text-secondary-dark mb-3">Étape 01</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Terrain &amp; faisabilité</h3>
+<p class="text-on-surface-variant text-body-md">Orientation, accès, nature du sol, règlement d'urbanisme. Ce que le terrain permet décide de ce qu'on dessine — jamais l'inverse.</p>
+</div>
+<div class="border-t-2 border-surface-variant pt-6">
+<p class="wordmark text-[12px] text-secondary-dark mb-3">Étape 02</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Conception &amp; permis</h3>
+<p class="text-on-surface-variant text-body-md">Plans, choix des essences, devis détaillé. Nous montons le dossier d'urbanisme et suivons l'instruction jusqu'à l'autorisation.</p>
+</div>
+<div class="border-t-2 border-surface-variant pt-6">
+<p class="wordmark text-[12px] text-secondary-dark mb-3">Étape 03</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Fabrication en atelier</h3>
+<p class="text-on-surface-variant text-body-md">L'ossature est débitée et assemblée à l'abri, aux tolérances de l'atelier. C'est là que se gagne la précision du chantier.</p>
+</div>
+<div class="border-t-2 border-surface-variant pt-6">
+<p class="wordmark text-[12px] text-secondary-dark mb-3">Étape 04</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Levage &amp; mise hors d'air</h3>
+<p class="text-on-surface-variant text-body-md">Levage, couverture, bardage, menuiseries, étanchéité à l'air. Nous vous remettons la coquille, close et couverte.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Galerie -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Nos chantiers</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-12">Constructions réalisées à Libourne et en Gironde</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/mais-en-a-accueil.webp" alt="Maison en A à ossature bois construite aux Billaux"/>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/construction-pool-house-aluminium-libourne.webp" alt="Pool house en aluminium réalisé à Libourne"/>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+<img width="1200" height="800" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/construction-pool-house-aluminium-libourne-2.webp" alt="Pool house aluminium avec bar extérieur, Libournais"/>
+</div>
+</div>
+<p class="mt-8 text-on-surface-variant text-body-md italic">Uniquement des chantiers réels : les images de synthèse de nos modèles ne figurent pas dans cette galerie.</p>
+<p class="mt-10 text-on-surface-variant text-body-md">Découvrez aussi <a href="/realisations" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">l'ensemble de nos réalisations</a>, nos <a href="/extensions" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">extensions</a> et nos <a href="/carports" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">carports</a>.</p>
+</div>
+</section>
+
+<!-- Zone d'intervention -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Zone d'intervention</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Votre construction bois à Libourne et dans tout le Libournais</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Notre atelier est basé au <strong class="text-primary font-semibold">1 Aux Pradasses, 33500 Les Billaux</strong>, à cinq minutes de Libourne. C'est là que votre ossature est fabriquée, avant d'être levée chez vous.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Nous intervenons dans tout le Libournais et plus largement en Gironde, jusqu'à la métropole bordelaise.</p>
+</div>
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">Communes desservies</h3>
+<ul class="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Libourne</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Les Billaux</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Saint-Émilion</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Coutras</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Fronsac</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Vayres</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Izon</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Saint-Denis-de-Pile</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Castillon-la-Bataille</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Guîtres</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Branne</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>Bordeaux</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-4xl mx-auto px-6 md:px-16">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Questions fréquentes</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-12">Ce qu'on nous demande avant de construire</h2>
+
+<div class="space-y-4">
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow" open>
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Qu'est-ce qu'une maison à ossature bois ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Une construction dont la structure porteuse est faite de <strong class="text-primary font-semibold">montants en bois</strong>, contreventés par des panneaux, et remplis d'isolant. Les murs sont préfabriqués en atelier puis levés sur site. Le chantier est sec, rapide, et les murs sont fins à performance égale — ce qui laisse davantage de surface habitable pour une même emprise au sol.</p>
+</details>
+
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Qu'est-ce qu'une maison en A ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Une construction dont les murs et la toiture ne font qu'un : la charpente descend jusqu'au sol et dessine un <strong class="text-primary font-semibold">A</strong>. Cette géométrie évacue naturellement l'eau, réduit les surfaces de façade exposées, et crée un volume intérieur à double hauteur. C'est une construction bois par excellence, et l'une de nos spécialités.</p>
+</details>
+
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Jusqu'où va votre intervention ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Nous livrons votre construction <strong class="text-primary font-semibold">hors d'eau, hors d'air</strong> : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. <strong class="text-primary font-semibold">Notre intervention s'arrête là.</strong> Nous ne réalisons pas le second œuvre — cloisons, électricité, plomberie, chauffage, revêtements et peinture — que vous confiez aux artisans de votre choix.</p>
+</details>
+
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Faut-il un permis de construire pour un pool house ou un abri ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Le plus souvent une autorisation est nécessaire, car ces constructions créent de l'emprise au sol. Selon la surface, il s'agit d'une <strong class="text-primary font-semibold">déclaration préalable de travaux</strong> ou d'un <strong class="text-primary font-semibold">permis de construire</strong>, et un secteur protégé change la donne. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces, puis nous montons le dossier et suivons l'instruction.</p>
+</details>
+
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Une construction en bois dure-t-elle vraiment ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Oui, à condition d'être bien conçue. Le bois ne craint pas l'humidité de l'air, il craint <strong class="text-primary font-semibold">l'eau qui stagne</strong>. Tout se joue donc dans la conception : pieds de structure décollés du sol, pare-pluie, lame d'air ventilée derrière le bardage, débords de toiture, évacuation des eaux maîtrisée. Des ouvrages bois centenaires tiennent debout partout en France.</p>
+</details>
+
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Êtes-vous certifiés et assurés ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Oui. L'Esprit Bois est une entreprise <strong class="text-primary font-semibold">certifiée Qualibat</strong>, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre <strong class="text-primary font-semibold">garantie décennale</strong> : la structure que nous posons est garantie dix ans à compter de la réception du chantier.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-section-padding bg-primary text-white">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Parlons-en</span>
+<h2 class="font-headline-md text-headline-md mt-4 mb-6">Un projet de construction bois à Libourne ou en Gironde ?</h2>
+<p class="text-on-primary-container font-body-lg text-body-lg mb-10">Terrain, surface, usage : nous étudions la faisabilité, vérifions le PLU et vous répondons sous 48h.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="/#quote" class="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect">Demander mon étude gratuite</a>
+<a href="tel:+33557406580" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all">05 57 40 65 80</a>
+</div>
+</div>
+</section>
+</Site>

@@ -1,120 +1,101 @@
----
-import Site from '../layouts/Site.astro';
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+<link rel="canonical" href="https://lespritbois.fr/"/>
 
-const jsonld = [
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "L'Esprit Bois",
-    "url": "https://lespritbois.fr/",
-    "inLanguage": "fr-FR"
+<title>L'Esprit Bois | Créateur d'espaces extérieurs à Libourne</title>
+<meta name="description" content="Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Entreprise certifiée Qualibat, garantie décennale."/>
+<meta name="keywords" content="L'Esprit Bois, carport Libourne, pergola Gironde, extension bois Libourne, construction bois Gironde, charpentier Libourne"/>
+<meta name="geo.region" content="FR-33"/>
+<meta name="geo.placename" content="Les Billaux"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:site_name" content="L'Esprit Bois"/>
+<meta property="og:title" content="L'Esprit Bois | Créateur d'espaces extérieurs à Libourne"/>
+<meta property="og:description" content="Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde."/>
+<meta property="og:image" content="https://lespritbois.fr/images/source-adefrance/aggrandissement-accueil.webp"/>
+<meta property="og:url" content="https://lespritbois.fr/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="L'Esprit Bois | Créateur d'espaces extérieurs à Libourne"/>
+<meta name="twitter:description" content="Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde."/>
+<meta name="twitter:image" content="https://lespritbois.fr/images/source-adefrance/aggrandissement-accueil.webp"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&amp;family=Manrope:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="theme.js"></script>
+<link rel="stylesheet" href="theme.css"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "L'Esprit Bois",
+  "url": "https://lespritbois.fr/",
+  "inLanguage": "fr-FR"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "L'Esprit Bois",
+  "description": "Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
+  "url": "https://lespritbois.fr/",
+  "telephone": "+33557406580",
+  "email": "contact@lespritbois.fr",
+  "image": "https://lespritbois.fr/images/source-adefrance/aggrandissement-accueil.webp",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "certification",
+    "name": "Qualibat"
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "GeneralContractor",
-    "name": "L'Esprit Bois",
-    "description": "Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
-    "url": "https://lespritbois.fr/",
-    "telephone": "+33557406580",
-    "email": "contact@lespritbois.fr",
-    "image": "https://lespritbois.fr/images/source-adefrance/aggrandissement-accueil.webp",
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "certification",
-      "name": "Qualibat"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1 Aux Pradasses",
-      "postalCode": "33500",
-      "addressLocality": "Les Billaux",
-      "addressRegion": "Gironde",
-      "addressCountry": "FR"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Libourne"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Gironde"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Nouvelle-Aquitaine"
-      }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Nos savoir-faire",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Terrasses bois"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Pergolas bois et bioclimatiques"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Carports bois, aluminium et solaires"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Bardages bois"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Extensions et constructions bois, hors d'eau hors d'air"
-          }
-        }
-      ]
-    }
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Aux Pradasses",
+    "postalCode": "33500",
+    "addressLocality": "Les Billaux",
+    "addressRegion": "Gironde",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Libourne" },
+    { "@type": "AdministrativeArea", "name": "Gironde" },
+    { "@type": "AdministrativeArea", "name": "Nouvelle-Aquitaine" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nos savoir-faire",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Terrasses bois" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pergolas bois et bioclimatiques" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carports bois, aluminium et solaires" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bardages bois" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Extensions et constructions bois, hors d'eau hors d'air" } }
+    ]
   }
-];
----
-<Site
-  title="L'Esprit Bois | Créateur d'espaces extérieurs à Libourne"
-  description="Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Entreprise certifiée Qualibat, garantie décennale."
-  keywords="L'Esprit Bois, carport Libourne, pergola Gironde, extension bois Libourne, construction bois Gironde, charpentier Libourne"
-  page="accueil"
-  ogImage="/images/source-adefrance/aggrandissement-accueil.webp"
-  ogTitle="L'Esprit Bois | Créateur d'espaces extérieurs à Libourne"
-  ville="Les Billaux"
-  jsonld={jsonld}
->
+}
+</script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased" data-page="accueil">
+<div id="site-nav"></div>
+
 <!-- Hero -->
 <header class="relative min-h-screen flex items-center pt-24 overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img width="768" height="512" fetchpriority="high" decoding="async" class="w-full h-full object-cover" src="/images/source-adefrance/aggrandissement-accueil.webp" alt="Extension bardée bois adossée à une maison en pierre, réalisée par L'Esprit Bois en Gironde"/>
+<img fetchpriority="high" decoding="async" class="w-full h-full object-cover" src="/images/source-adefrance/aggrandissement-accueil.webp" alt="Extension bardée bois adossée à une maison en pierre, réalisée par L'Esprit Bois en Gironde"/>
 <div class="absolute inset-0 hero-gradient"></div>
 <div class="absolute inset-0 hero-vignette"></div>
 </div>
@@ -189,50 +170,50 @@ const jsonld = [
 
 <article class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-surface-variant flex flex-col">
 <div class="h-64 overflow-hidden relative">
-<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/carport-accueil.webp" alt="Carport aluminium contemporain abritant deux véhicules, Gironde"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/carport-accueil.webp" alt="Carport aluminium contemporain abritant deux véhicules, Gironde"/>
 <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">Bois &amp; aluminium</div>
 </div>
 <div class="p-8 flex flex-col flex-1">
 <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Carports</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">L'élégance durable pour votre véhicule. Toiture plate, bac acier ou tuile — et jusqu'au carport solaire.</p>
-<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="/carports">Découvrir <span class="material-symbols-outlined">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="carports.html">Découvrir <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 </article>
 
 <article class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-secondary/40 xl:scale-105 z-10 flex flex-col">
 <div class="h-64 overflow-hidden relative">
-<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/Pergolas-aluminium-Libourne-4.webp" alt="Pergola bioclimatique en aluminium au bord d'une piscine, Libourne"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/Pergolas-aluminium-Libourne-4.webp" alt="Pergola bioclimatique en aluminium au bord d'une piscine, Libourne"/>
 <div class="absolute bottom-4 left-4 bg-secondary text-primary px-3 py-1 rounded text-label-md font-label-md shadow-lg">Bioclimatique</div>
 </div>
 <div class="p-8 flex flex-col flex-1">
 <div class="inline-block self-start px-2 py-0.5 bg-primary-fixed text-secondary-dark text-[10px] uppercase font-bold tracking-widest rounded mb-2">Le plus demandé</div>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Pergolas</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">Bois massif ou aluminium à lames orientables. L'ombre choisie, la lumière maîtrisée.</p>
-<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="/pergolas">En savoir plus <span class="material-symbols-outlined">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="pergolas.html">En savoir plus <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 </article>
 
 <article class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-surface-variant flex flex-col">
 <div class="h-64 overflow-hidden relative">
-<img width="1200" height="1600" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/IMG-20240712-WA0039.jpg" alt="Extension bardée bois avec baie vitrée, chantier en Gironde"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/IMG-20240712-WA0039.jpg" alt="Extension bardée bois avec baie vitrée, chantier en Gironde"/>
 <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">Hors d'eau hors d'air</div>
 </div>
 <div class="p-8 flex flex-col flex-1">
 <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Extensions</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">Agrandir sans déménager. Extensions et surélévations en ossature bois, intégrées à l'existant.</p>
-<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="/extensions">Étudier mon projet <span class="material-symbols-outlined">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="extensions.html">Étudier mon projet <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 </article>
 
 <article class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-surface-variant flex flex-col">
 <div class="h-64 overflow-hidden relative">
-<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/mais-en-a-accueil.webp" alt="Maison en A à ossature bois construite aux Billaux"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/images/source-adefrance/mais-en-a-accueil.webp" alt="Maison en A à ossature bois construite aux Billaux"/>
 <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">Sur mesure</div>
 </div>
 <div class="p-8 flex flex-col flex-1">
 <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Constructions bois</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">Maisons ossature bois, maisons en A et pool houses, livrées hors d'eau hors d'air.</p>
-<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="/constructions-bois">Découvrir nos constructions <span class="material-symbols-outlined">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all" href="constructions-bois.html">Découvrir nos constructions <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 </article>
 
@@ -280,7 +261,7 @@ const jsonld = [
 </div>
 <div class="relative">
 <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
-<img width="1536" height="2048" loading="lazy" decoding="async" class="w-full h-full object-cover" src="/images/source-adefrance/IMG-20250129-WA0077.jpg" alt="Construction bois bardée, menuiseries posées, mise hors d'air"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover" src="/images/source-adefrance/IMG-20250129-WA0077.jpg" alt="Construction bois bardée, menuiseries posées, mise hors d'air"/>
 <div class="absolute inset-0 bg-primary/15"></div>
 </div>
 <div class="absolute -bottom-10 -left-10 bg-surface text-primary p-8 rounded-2xl shadow-2xl hidden md:block max-w-xs border-t-2 border-secondary">
@@ -302,12 +283,12 @@ const jsonld = [
 <h2 class="font-headline-md text-headline-md text-primary mt-4 mb-4">Réalisations récentes</h2>
 <p class="font-body-md text-body-md text-on-surface-variant italic">Des chantiers réels, menés en Gironde. Aucune image de synthèse.</p>
 </div>
-<a class="font-label-md text-label-md text-primary border-b border-secondary pb-1 hover:text-secondary-dark transition-colors" href="/realisations">Voir toute la galerie</a>
+<a class="font-label-md text-label-md text-primary border-b border-secondary pb-1 hover:text-secondary-dark transition-colors" href="realisations.html">Voir toute la galerie</a>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[800px]">
 <figure class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-2xl">
-<img width="768" height="512" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/construction-pool-house-bois-libourne.webp" alt="Pool house et terrasse bois réalisés à Libourne"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/construction-pool-house-bois-libourne.webp" alt="Pool house et terrasse bois réalisés à Libourne"/>
 <figcaption class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
 <div>
 <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-fixed">Constructions bois</span>
@@ -317,7 +298,7 @@ const jsonld = [
 </figcaption>
 </figure>
 <figure class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-2xl">
-<img width="1200" height="646" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/Carport-bois-Libourne-1.webp" alt="Carport bois réalisé à Libourne"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/Carport-bois-Libourne-1.webp" alt="Carport bois réalisé à Libourne"/>
 <figcaption class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
 <div>
 <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-fixed">Carports</span>
@@ -326,7 +307,7 @@ const jsonld = [
 </figcaption>
 </figure>
 <figure class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-2xl">
-<img width="900" height="990" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/Pergolas-bois-Libourne.webp" alt="Pergola en bois massif réalisée en Gironde"/>
+<img loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/source-adefrance/Pergolas-bois-Libourne.webp" alt="Pergola en bois massif réalisée en Gironde"/>
 <figcaption class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
 <div>
 <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-fixed">Pergolas</span>
@@ -414,4 +395,7 @@ const jsonld = [
 </div>
 </div>
 </section>
-</Site>
+
+<div id="site-footer"></div>
+<script src="layout.js"></script>
+</body></html>

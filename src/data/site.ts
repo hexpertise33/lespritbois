@@ -1,5 +1,6 @@
 // =========================================================================
 // L'ESPRIT BOIS — contenu du site (source unique de vérité)
+// Textes & photos repris du site historique a-defrance.fr (Les Billaux, Gironde).
 // Modifie ce fichier pour mettre à jour textes, coordonnées et réalisations.
 // =========================================================================
 
@@ -8,7 +9,7 @@ export const site = {
   baseline: "Créateur d'espaces extérieurs",
   slogan: "Le bois qui prolonge la maison vers l'extérieur.",
   description:
-    "L'Esprit Bois conçoit et réalise terrasses, pergolas, carports, bardages et constructions bois en Gironde. Des espaces extérieurs sur mesure, durables et dessinés pour durer.",
+    "L'Esprit Bois conçoit et réalise terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Bois et aluminium, de l'étude à la pose — des espaces extérieurs durables, pensés pour durer.",
   url: 'https://lespritbois.fr',
 };
 
@@ -29,9 +30,12 @@ export const contact = {
   },
 };
 
+const IMG = '/images/source-adefrance';
+
 export type Metier = {
   slug: string;
   nom: string;
+  categorie: string;
   accroche: string;
   intro: string;
   description: string;
@@ -43,77 +47,82 @@ export const metiers: Metier[] = [
   {
     slug: 'terrasses',
     nom: 'Terrasses',
+    categorie: 'Sol & Plein Air',
     accroche: 'Le prolongement naturel de votre salon, à ciel ouvert.',
-    intro: 'Bois exotique, résineux traité ou composite — posées pour durer.',
+    intro: 'Platelage bois posé pour durer, au plus près de votre maison.',
     description:
-      "Une terrasse bien pensée efface la frontière entre l'intérieur et le jardin. Nous étudions l'orientation, l'écoulement de l'eau et le sens des lames pour créer un espace qui vieillit bien et se vit toute l'année.",
+      "Une terrasse bien pensée efface la frontière entre l'intérieur et le jardin. Nous étudions l'orientation, l'écoulement de l'eau et le sens des lames pour créer un espace de vie extérieur qui vieillit bien et se vit toute l'année.",
     points: [
-      'Bois exotique (ipé, cumaru), résineux classe 4 ou composite',
-      'Structure ventilée sur plots ou lambourdes',
-      'Fixations invisibles et finitions soignées',
-      'Étude de la pente et de l’évacuation des eaux',
+      'Platelage bois sur structure ventilée (plots ou lambourdes)',
+      'Essences sélectionnées pour leur résistance et leur longévité',
+      'Fixations soignées et finitions durables',
+      "Étude de la pente et de l'évacuation des eaux",
     ],
-    image: '/images/terrasses.svg',
+    image: `${IMG}/Pergolas-bois-Libourne.webp`,
   },
   {
     slug: 'pergolas',
     nom: 'Pergolas',
-    accroche: 'Maîtriser la lumière, prolonger les belles soirées.',
-    intro: 'Bois ou aluminium, bioclimatiques ou à lames fixes.',
+    categorie: 'Lumière & Ombre',
+    accroche: 'Créez votre nouvel espace de vie extérieur.',
+    intro: 'Bois ou aluminium, classiques ou bioclimatiques à lames orientables.',
     description:
-      "La pergola dessine l'ombre. Adossée à la maison ou autoportée, elle structure la terrasse et filtre le soleil. Nous concevons des ouvrages à la géométrie juste, du poteau à la lame.",
+      "Véritable extension de la maison, la pergola allie esthétisme, durabilité et fonctionnalité pour transformer votre extérieur en lieu de détente. En bois massif pour la chaleur, ou en aluminium bioclimatique pour maîtriser l'ensoleillement — nous concevons et posons l'ouvrage, du poteau à la lame.",
     points: [
-      'Pergolas bois massif ou aluminium',
-      'Versions bioclimatiques à lames orientables',
-      'Adossée, autoportée ou sur mesure',
-      'Intégration éclairage, stores et brise-soleil',
+      'Pergola bois massif : chaleur et authenticité naturelle',
+      'Pergola aluminium bioclimatique à lames orientables',
+      'Adossée à la maison ou autoportée, sur mesure',
+      "Solutions haut de gamme via notre partenaire Li-Su des Temps",
     ],
-    image: '/images/pergolas.svg',
+    image: `${IMG}/Pergolas-aluminium-Libourne-1.webp`,
   },
   {
     slug: 'constructions-bois',
     nom: 'Constructions bois',
-    accroche: "L'ossature bois, du studio de jardin à l'extension.",
-    intro: 'Ossature bois, extensions, abris et pool houses.',
+    categorie: 'Espace & Extension',
+    accroche: "L'ossature bois, de l'extension à la maison en A.",
+    intro: 'Extensions, surélévations, pool houses et maisons en A.',
     description:
-      "Le bois construit vite, sain et durable. Extension de vie, studio indépendant, pool house ou abri : nous menons le projet de l'étude à la pose, dans les règles de l'art.",
+      "Le bois construit vite, sain et durable. Extension pour agrandir, surélévation pour gagner sans emprise au sol, pool house, abri ou maison en A : l'ossature bois s'adapte à tous les styles. Nous menons le projet de l'étude au permis de construire jusqu'à la pose, dans les règles de l'art.",
     points: [
       'Extensions et surélévations en ossature bois',
-      'Studios de jardin et bureaux indépendants',
-      'Pool houses et abris techniques',
-      'Isolation performante et bardage assorti',
+      'Pool houses, abris de jardin et maisons en A',
+      'Isolation fibre de bois, performance RE2020',
+      'Permis de construire et coordination de chantier',
     ],
-    image: '/images/constructions-bois.svg',
+    image: `${IMG}/aggrandissement-accueil.webp`,
   },
   {
     slug: 'carports',
     nom: 'Carports',
-    accroche: "Abriter la voiture avec l'élégance d'une architecture.",
-    intro: 'Simple, double ou adossé — bois et aluminium.',
+    categorie: 'Structure & Protection',
+    accroche: "L'élégance durable pour votre véhicule.",
+    intro: 'Bois ou aluminium, simple, double ou adossé.',
     description:
-      "Un carport protège sans enfermer. Ligne épurée, toiture plate ou monopente, intégration parfaite à la maison : l'abri devient un élément d'architecture à part entière.",
+      "Un carport protège votre véhicule tout en valorisant votre extérieur. Chaleur naturelle du bois ou technicité de l'aluminium, toiture plate ou en pente : l'abri devient un élément d'architecture qui s'intègre à votre maison.",
     points: [
-      'Simple, double ou adossé à la façade',
-      'Toiture plate, monopente ou végétalisée',
-      'Structure bois lamellé-collé ou aluminium',
-      'Option bornes de recharge et rangement',
+      'Structures bois sélectionné ou aluminium haut de gamme',
+      'Toiture plate ou en pente, couverture bac acier ou tuiles',
+      'Adossé à la façade ou entièrement indépendant',
+      'Conception et installation sur mesure',
     ],
-    image: '/images/carports.svg',
+    image: `${IMG}/Carport-bois-Libourne-1.webp`,
   },
   {
     slug: 'bardages',
     nom: 'Bardages',
+    categorie: 'Peau & Façade',
     accroche: 'Habiller la façade, donner du caractère au bâti.',
-    intro: 'Claire-voie, à recouvrement, bois brûlé ou composite.',
+    intro: 'Bois, métallique ou fibrociment — la finition qui signe la maison.',
     description:
-      "Le bardage protège et signe l'identité d'une maison. Pose claire-voie, lames verticales ou horizontales, bois pré-grisé ou brûlé : la peau de bois qui change tout.",
+      "Le bardage protège et signe l'identité d'une maison. Sur une extension bois ou une façade à rénover, nous posons des peaux de bois en claire-voie ou à recouvrement, ainsi que des solutions métalliques ou fibrociment, sur ossature ventilée.",
     points: [
-      'Claire-voie, à recouvrement ou emboîté',
-      'Douglas, mélèze, red cedar ou bois brûlé (Yakisugi)',
-      'Bardage composite sans entretien',
+      'Bardage bois : douglas, mélèze, red cedar',
+      'Pose claire-voie, à recouvrement ou emboîté',
+      'Alternatives bardage métallique ou fibrociment',
       'Ossature ventilée et pare-pluie',
     ],
-    image: '/images/bardages.svg',
+    image: `${IMG}/IMG-20250129-WA0077.jpg`,
   },
 ];
 
@@ -125,32 +134,59 @@ export type Realisation = {
   format: 'large' | 'haut' | 'standard';
 };
 
-// Réalisations — à remplacer par de vraies photos (public/images/…).
+// Réalisations — photos de chantiers réels (a-defrance.fr).
 export const realisations: Realisation[] = [
-  { titre: 'Terrasse en ipé & garde-corps', metier: 'Terrasses', lieu: 'Libourne', image: '/images/real-1.svg', format: 'large' },
-  { titre: 'Pergola bioclimatique adossée', metier: 'Pergolas', lieu: 'Saint-Émilion', image: '/images/real-2.svg', format: 'haut' },
-  { titre: 'Bardage claire-voie mélèze', metier: 'Bardages', lieu: 'Les Billaux', image: '/images/real-3.svg', format: 'standard' },
-  { titre: 'Extension ossature bois', metier: 'Constructions bois', lieu: 'Pomerol', image: '/images/real-4.svg', format: 'standard' },
-  { titre: 'Carport double toit plat', metier: 'Carports', lieu: 'Fronsac', image: '/images/real-5.svg', format: 'haut' },
-  { titre: 'Terrasse & pergola sur mesure', metier: 'Ensemble', lieu: 'Coutras', image: '/images/real-6.svg', format: 'large' },
+  { titre: 'Carport aluminium contemporain', metier: 'Carports', lieu: 'Gironde', image: `${IMG}/carport-accueil.webp`, format: 'large' },
+  { titre: 'Extension bardée bois sur maison en pierre', metier: 'Constructions bois', lieu: 'Gironde', image: `${IMG}/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d.jpg`, format: 'haut' },
+  { titre: 'Pool house & terrasse bois', metier: 'Constructions bois', lieu: 'Libourne', image: `${IMG}/construction-pool-house-bois-libourne.webp`, format: 'standard' },
+  { titre: 'Maison en A sur mesure', metier: 'Constructions bois', lieu: 'Les Billaux', image: `${IMG}/mais-en-a-accueil.webp`, format: 'standard' },
+  { titre: 'Bardage red cedar claire-voie', metier: 'Bardages', lieu: 'Gironde', image: `${IMG}/IMG-20250129-WA0077.jpg`, format: 'haut' },
+  { titre: 'Pergola aluminium bioclimatique', metier: 'Pergolas', lieu: 'Libourne', image: `${IMG}/Pergolas-aluminium-Libourne-1.webp`, format: 'large' },
 ];
+
+// Section « L'excellence du matériau » (home)
+export const matiere = {
+  eyebrow: 'L’excellence du matériau',
+  titre: 'La noblesse du bois,\nl’exigence du design.',
+  texte:
+    "Nous choisissons chaque essence — douglas, mélèze, red cedar, chêne — pour sa durabilité naturelle et sa beauté. Ossature bois, isolation en fibre de bois et normes RE2020 : chaque projet est un dialogue entre l'ingénierie moderne et la matière vivante.",
+  statValeur: '10 ans',
+  statLabel: 'd’expertise de la construction bois',
+  atouts: [
+    {
+      titre: 'Précision',
+      texte: 'Débit et assemblages étudiés en atelier, plans d’exécution soignés, pour des ouvrages qui tombent juste.',
+    },
+    {
+      titre: 'Durabilité',
+      texte: 'Essences sélectionnées, ossatures ventilées, isolation performante : conçues pour traverser les décennies.',
+    },
+  ],
+};
+
+// Témoignage — à remplacer par un vrai avis client à la mise en ligne.
+export const temoignage = {
+  citation:
+    "Une équipe qui ne se contente pas de construire : elle conçoit un lieu de vie. Un seul interlocuteur, du premier croquis à la dernière lame, et un vrai souci du détail.",
+  auteur: 'Client — Libourne',
+};
 
 export const demarche = [
   {
     titre: 'Écoute & étude',
-    texte: "On visite le lieu, on comprend l'usage, l'orientation et vos envies. Chaque projet commence par le terrain.",
+    texte: "On comprend vos besoins, vos envies et vos contraintes de budget. Chaque projet commence par le terrain et son orientation.",
   },
   {
-    titre: 'Conception & devis',
-    texte: 'Plans, choix des essences, calepinage et devis détaillé. Vous savez exactement ce qui sera construit.',
+    titre: 'Conception & permis',
+    texte: 'Plans, choix des essences, devis détaillé, et si besoin dossier de permis de construire monté et suivi par nos soins.',
   },
   {
-    titre: 'Fabrication',
-    texte: "Débit et préparation en atelier, sélection des bois. Le soin de fabrication fait la longévité de l'ouvrage.",
+    titre: 'Fabrication & pose',
+    texte: "Préparation en atelier ou montage sur site, ossature bois et aluminium. Un chantier propre mené par nos équipes.",
   },
   {
-    titre: 'Pose & finitions',
-    texte: 'Chantier propre, pose maîtrisée, finitions vérifiées. On livre un espace prêt à vivre.',
+    titre: 'Suivi',
+    texte: 'Finitions vérifiées et équipe disponible après la livraison pour tout ajustement. On répond de ce qu’on pose.',
   },
 ];
 
@@ -162,23 +198,23 @@ export const engagements = [
   },
   {
     icone: 'bois',
-    titre: 'Des bois qui durent',
-    texte: 'Essences sélectionnées, classées et traitées pour résister au temps et aux saisons.',
+    titre: 'Des matériaux durables',
+    texte: 'Essences sélectionnées et sources responsables, pour des ouvrages solides et pérennes.',
   },
   {
     icone: 'main',
     titre: 'Un seul interlocuteur',
-    texte: "De l'étude à la pose, c'est le même artisan. Pas de sous-traitance en cascade.",
+    texte: "De l'étude à la pose, un accompagnement de A à Z, sans intermédiaire. Communication directe.",
   },
   {
     icone: 'garantie',
-    titre: 'Un travail garanti',
-    texte: 'Chantier propre, finitions vérifiées et garanties couvertes. On répond de ce qu’on pose.',
+    titre: 'Transparence & délais',
+    texte: 'Transparence des coûts, respect des délais annoncés et finitions vérifiées.',
   },
 ];
 
 export const chiffres = [
-  { valeur: '15', unite: 'ans', label: "d'expérience du bois" },
+  { valeur: '10', unite: 'ans', label: "d'expérience du bois" },
   { valeur: '100', unite: '%', label: 'sur mesure' },
   { valeur: '33', unite: '', label: 'Gironde & alentours' },
   { valeur: '5', unite: 'métiers', label: 'du sol au toit' },

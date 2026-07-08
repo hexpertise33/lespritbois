@@ -1,0 +1,101 @@
+---
+import '../styles/site.css';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { SITE } from '../data/navigation';
+
+export interface Props {
+  title: string;
+  description: string;
+  keywords?: string;
+  /** Clé de la page (souligne l'onglet actif). */
+  page?: string;
+  /** Chemin absolu de l'image de partage, ex. /images/x.webp */
+  ogImage?: string;
+  /** Titre court pour Open Graph, sinon `title` est réutilisé. */
+  ogTitle?: string;
+  /** Ville pour geo.placename. */
+  ville?: string;
+  /** Blocs schema.org sérialisés tels quels. */
+  jsonld?: unknown[];
+}
+
+const {
+  title,
+  description,
+  keywords,
+  page = '',
+  ogImage = '/images/source-adefrance/mais-en-a-accueil.webp',
+  ogTitle,
+  ville = 'Libourne',
+  jsonld = [],
+} = Astro.props;
+
+// Astro.site est défini dans astro.config.mjs. On force l'absence de slash final
+// pour que canonical, og:url et le sitemap racontent tous la même histoire.
+const base = (Astro.site ?? new URL(SITE.url)).origin;
+const chemin = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const canonical = base + chemin;
+const imageAbsolue = new URL(ogImage, base).href;
+---
+
+<!doctype html>
+<html class="scroll-smooth" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    <meta name="geo.region" content="FR-33" />
+    <meta name="geo.placename" content={ville} />
+    <meta name="theme-color" content="#141414" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content={SITE.nom} />
+    <meta property="og:title" content={ogTitle ?? title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageAbsolue} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle ?? title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageAbsolue} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+
+    {
+      jsonld.map((bloc) => (
+        <script type="application/ld+json" is:inline set:html={JSON.stringify(bloc)} />
+      ))
+    }
+  </head>
+
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <a
+      href="#contenu"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-4 focus:py-2 focus:rounded-lg"
+      >Aller au contenu</a
+    >
+    <SiteNav page={page} />
+    <main id="contenu">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

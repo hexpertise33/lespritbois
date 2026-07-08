@@ -1,0 +1,10 @@
+# L'ESPRIT BOIS — robots.txt
+# ⚠️ À DÉPLOYER À LA RACINE DU DOMAINE : https://lespritbois.fr/robots.txt
+# Un robots.txt placé dans un sous-dossier est ignoré par les moteurs.
+
+User-agent: *
+Allow: /
+
+# Rien à masquer : le site est entièrement public.
+
+Sitemap: https://lespritbois.fr/sitemap.xml

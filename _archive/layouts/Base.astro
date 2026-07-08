@@ -1,7 +1,7 @@
 ---
-import '@fontsource-variable/fraunces';
+import '@fontsource-variable/bodoni-moda/opsz.css';
+import '@fontsource-variable/bodoni-moda/opsz-italic.css';
 import '@fontsource-variable/hanken-grotesk';
-import '@fontsource-variable/archivo';
 import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
@@ -16,7 +16,7 @@ export interface Props {
 const {
   title,
   description = site.description,
-  image = '/images/hero.svg',
+  image = '/images/source-adefrance/mais-en-a-accueil.webp',
 } = Astro.props;
 
 const pageTitle = title ? `${title} — ${site.nom}` : `${site.nom} — ${site.baseline}`;
@@ -34,7 +34,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://lespritbois
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta name="theme-color" content="#0b0b0c" />
+    <meta name="theme-color" content="#131313" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -63,6 +63,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://lespritbois
     })} />
   </head>
   <body>
+    <div class="grain" aria-hidden="true"></div>
     <a class="skip" href="#contenu">Aller au contenu</a>
     <Nav />
     <main id="contenu">

@@ -23,8 +23,8 @@ const jsonld = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Construction à ossature bois livrée hors d'eau hors d'air",
-    "name": "Construction bois à Libourne et en Gironde",
+    "serviceType": "Construction, extension et surélévation à ossature bois livrées hors d'eau hors d'air",
+    "name": "Construction bois et extension à Libourne et en Gironde",
     "areaServed": [
       {
         "@type": "City",
@@ -82,6 +82,20 @@ const jsonld = [
           "itemOffered": {
             "@type": "Service",
             "name": "Pool house bois ou aluminium"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Extension à ossature bois"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Surélévation à ossature bois"
           }
         },
         {
@@ -147,6 +161,30 @@ const jsonld = [
       },
       {
         "@type": "Question",
+        "name": "Comment garantissez-vous l'intégration à la maison existante ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Par un relevé précis de l'existant avant tout dessin : niveaux, alignements d'égout de toit et de faîtage, hauteurs d'allèges. Puis par le traitement des points sensibles : raccord de couverture, désolidarisation structurelle pour absorber les tassements différentiels, continuité de l'isolation et de la membrane d'étanchéité à l'air à la jonction, reprise des eaux pluviales et choix de la peau extérieure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Peut-on surélever n'importe quelle maison ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Une surélévation ajoute des charges : elle suppose une étude de structure vérifiant la capacité des murs porteurs et des fondations existantes. La légèreté de l'ossature bois est précisément ce qui rend l'opération possible là où le béton serait exclu. Le PLU peut par ailleurs limiter la hauteur constructible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mon extension est-elle soumise à la RE2020 ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cela dépend de la surface créée : plus l'extension est grande, plus les exigences se renforcent, jusqu'à l'application complète de la RE2020. Deux principes sont constants : la réglementation ne vise que la partie nouvelle, et les extensions successives d'une même maison se cumulent. Les seuils exacts évoluent — nous vérifions ceux en vigueur pour votre projet et vous les expliquons au rendez-vous."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Êtes-vous certifiés et assurés ?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -158,12 +196,12 @@ const jsonld = [
 ];
 ---
 <Site
-  title="Construction bois & maison en A à Libourne | L'Esprit Bois"
-  description="Maison à ossature bois, maison en A, pool house et abri, livrés hors d'eau hors d'air. Conception, permis et pose par L'Esprit Bois, à Libourne et en Gironde."
-  keywords="construction bois Libourne, maison ossature bois Gironde, maison en A, pool house Libourne, abri de jardin bois"
+  title="Construction bois & extension à Libourne | L'Esprit Bois"
+  description="Maisons ossature bois, maisons en A, extensions, surélévations, pool houses et abris. Livrés hors d'eau hors d'air à Libourne et en Gironde."
+  keywords="construction bois Libourne, extension ossature bois Gironde, surélévation bois, maison en A, pool house, hors d'eau hors d'air"
   page="constructions-bois"
   ogImage="/images/source-adefrance/mais-en-a-accueil.webp"
-  ogTitle="Maison ossature bois & maison en A à Libourne"
+  ogTitle="Construction bois & extension à Libourne (33)"
   ville="Libourne"
   jsonld={jsonld}
 >
@@ -180,8 +218,8 @@ const jsonld = [
 <span class="text-secondary-fixed">Constructions bois</span>
 </p>
 <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Ossature &amp; Habitat</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6">Construction bois à Libourne et en Gironde</h1>
-<p class="font-body-lg text-body-lg text-white/85 max-w-2xl">Maison à ossature bois, maison en A, pool house ou dépendance — bâtis sur mesure et livrés <strong class="text-white font-semibold">hors d'eau, hors d'air</strong>.</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6">Construction bois et extension à Libourne et en Gironde</h1>
+<p class="font-body-lg text-body-lg text-white/85 max-w-2xl">Maison à ossature bois, maison en A, extension, surélévation, pool house ou dépendance — bâtis sur mesure et livrés <strong class="text-white font-semibold">hors d'eau, hors d'air</strong>.</p>
 </div>
 </header>
 
@@ -231,9 +269,9 @@ const jsonld = [
 <div class="max-w-3xl mb-14">
 <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Nos ouvrages</span>
 <h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Ce que nous construisons</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">De la dépendance de jardin à la maison d'habitation, la même ossature et la même exigence — seule l'échelle change.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">De la dépendance de jardin à la maison d'habitation, en neuf comme en greffe sur l'existant : la même ossature et la même exigence — seule l'échelle change.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 <article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
 <span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">home_work</span>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-3">Maison ossature bois</h3>
@@ -254,6 +292,16 @@ const jsonld = [
 <span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">cottage</span>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-3">Abri &amp; dépendance</h3>
 <p class="text-on-surface-variant text-body-md">Atelier, bureau de jardin, remise, garage. Une petite construction se rate aussi facilement qu'une grande : même méthode, même soin.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">add_home</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Extension</h3>
+<p class="text-on-surface-variant text-body-md">Agrandir sans déménager. L'ossature bois se greffe sur l'existant, en chantier sec et rapide — encore faut-il réussir la jonction.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">vertical_align_top</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Surélévation</h3>
+<p class="text-on-surface-variant text-body-md">Gagner un étage sans emprise au sol. La légèreté du bois rend l'opération possible là où le béton serait exclu, après étude de structure.</p>
 </article>
 </div>
 </div>
@@ -303,8 +351,52 @@ const jsonld = [
 </div>
 </section>
 
+<!-- Greffe sur l'existant (repris de l'ancienne page /extensions) -->
+<section class="py-section-padding bg-surface" id="integration">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="max-w-3xl mb-14">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Le point critique</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">L'intégration à l'existant, millimètre par millimètre</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Une extension, ce n'est pas une petite maison posée à côté d'une grande. C'est une <strong class="text-primary font-semibold">jonction</strong> — et une jonction, ça se rate en six endroits. Voici comment nous les traitons.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">straighten</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Le relevé avant le dessin</h3>
+<p class="text-on-surface-variant text-body-md">Niveaux réels, alignement de l'égout de toit et du faîtage, hauteurs d'allèges, aplomb des murs. Une maison ancienne n'est jamais d'équerre : on part de ce qui est, pas de ce qui devrait être.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">roofing</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Le raccord de couverture</h3>
+<p class="text-on-surface-variant text-body-md">Noue, solin, bande de rive : c'est là que l'eau cherche à entrer. Continuité de la couverture, pente respectée, et reprise des eaux pluviales sur le réseau existant.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">linear_scale</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">La désolidarisation</h3>
+<p class="text-on-surface-variant text-body-md">Neuf et ancien ne tassent pas au même rythme. La jonction est conçue pour absorber ces mouvements différentiels, plutôt que de les subir en fissures.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">layers</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">La continuité de l'isolant</h3>
+<p class="text-on-surface-variant text-body-md">Une isolation interrompue à la jonction crée un pont thermique — et de la condensation. L'isolant et le frein-vapeur sont raccordés en continu jusqu'au mur existant.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">air</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">L'étanchéité à l'air</h3>
+<p class="text-on-surface-variant text-body-md">Le hors d'air ne s'arrête pas aux menuiseries : membrane continue, adhésifs, manchons aux traversées. C'est ce qui sépare une extension performante d'une extension qui siffle.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">palette</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">La peau extérieure</h3>
+<p class="text-on-surface-variant text-body-md">Bardage bois, enduit, ou franche rupture assumée. Faire famille avec la maison sans tomber dans le pastiche : c'est un choix de projet, pas un catalogue.</p>
+</article>
+</div>
+</div>
+</section>
+
 <!-- Pourquoi l'ossature bois -->
-<section class="py-section-padding bg-surface" id="pourquoi-le-bois">
+<section class="py-section-padding bg-surface-container-low" id="pourquoi-le-bois">
 <div class="max-w-container-max mx-auto px-6 md:px-16">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
@@ -327,7 +419,7 @@ const jsonld = [
 </section>
 
 <!-- Notre méthode -->
-<section class="py-section-padding bg-surface-container-low" id="methode">
+<section class="py-section-padding bg-surface" id="methode">
 <div class="max-w-container-max mx-auto px-6 md:px-16">
 <div class="max-w-3xl mb-14">
 <span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Notre méthode</span>
@@ -359,6 +451,36 @@ const jsonld = [
 </div>
 </section>
 
+<!-- Urbanisme & RE2020 (repris de l'ancienne page /extensions) -->
+<section class="py-section-padding bg-surface-container-low" id="reglementation">
+<div class="max-w-container-max mx-auto px-6 md:px-16">
+<div class="max-w-3xl mb-14">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">Le cadre légal</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-6">Urbanisme et RE2020 : nous vérifions avant de dessiner</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Selon la surface créée, votre extension relève d'une <strong class="text-primary font-semibold">déclaration préalable de travaux</strong> ou d'un <strong class="text-primary font-semibold">permis de construire</strong>. Au-delà d'une certaine surface de plancher totale, le recours à un architecte devient obligatoire. Et selon l'ampleur du projet, la partie nouvelle peut relever de la <strong class="text-primary font-semibold">RE2020</strong>.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Ces seuils dépendent du PLU de votre commune, de la zone où se trouve votre maison, de l'existant — et ils évoluent. Nous les vérifions au cas par cas, avant tout dessin, et nous vous les expliquons de vive voix lors du rendez-vous. Un tableau générique n'aurait aucune valeur pour votre situation.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">map</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Nous lisons votre PLU</h3>
+<p class="text-on-surface-variant text-body-md">Zone, emprise au sol, hauteur constructible, aspect des façades, secteur protégé : le règlement de votre commune décide de ce qui est possible avant même le premier croquis.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">description</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Nous montons le dossier</h3>
+<p class="text-on-surface-variant text-body-md">Déclaration préalable ou permis de construire : plans, notice, insertion paysagère. Nous constituons le dossier et suivons l'instruction jusqu'à l'autorisation.</p>
+</article>
+<article class="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
+<span class="material-symbols-outlined text-secondary-dark text-4xl mb-4">forum</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Nous en parlons au rendez-vous</h3>
+<p class="text-on-surface-variant text-body-md">Seuils applicables, obligation éventuelle d'architecte, exigences thermiques : nous vous disons ce qui s'applique à <em>votre</em> projet, sur pièces, plutôt qu'une règle générale.</p>
+</article>
+</div>
+</div>
+</section>
+
 <!-- Galerie -->
 <section class="py-section-padding bg-surface">
 <div class="max-w-container-max mx-auto px-6 md:px-16">
@@ -376,7 +498,7 @@ const jsonld = [
 </div>
 </div>
 <p class="mt-8 text-on-surface-variant text-body-md italic">Uniquement des chantiers réels : les images de synthèse de nos modèles ne figurent pas dans cette galerie.</p>
-<p class="mt-10 text-on-surface-variant text-body-md">Découvrez aussi <a href="/realisations" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">l'ensemble de nos réalisations</a>, nos <a href="/extensions" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">extensions</a> et nos <a href="/carports" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">carports</a>.</p>
+<p class="mt-10 text-on-surface-variant text-body-md">Découvrez aussi <a href="/realisations" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">l'ensemble de nos réalisations</a>, nos <a href="/amenagement-exterieur" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">aménagements extérieurs</a> et nos <a href="/carports" class="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">carports</a>.</p>
 </div>
 </section>
 
@@ -456,6 +578,27 @@ const jsonld = [
 <p class="text-on-surface-variant text-body-md mt-4">Oui, à condition d'être bien conçue. Le bois ne craint pas l'humidité de l'air, il craint <strong class="text-primary font-semibold">l'eau qui stagne</strong>. Tout se joue donc dans la conception : pieds de structure décollés du sol, pare-pluie, lame d'air ventilée derrière le bardage, débords de toiture, évacuation des eaux maîtrisée. Des ouvrages bois centenaires tiennent debout partout en France.</p>
 </details>
 
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Comment garantissez-vous l'intégration à la maison existante ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Par un <strong class="text-primary font-semibold">relevé précis de l'existant</strong> avant tout dessin : niveaux, alignements d'égout de toit et de faîtage, hauteurs d'allèges. Puis par le traitement des points sensibles : raccord de couverture, désolidarisation structurelle pour absorber les tassements différentiels, continuité de l'isolation et de la membrane d'étanchéité à l'air à la jonction, reprise des eaux pluviales et choix de la peau extérieure.</p>
+</details>
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Peut-on surélever n'importe quelle maison ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Non. Une surélévation ajoute des charges : elle suppose une <strong class="text-primary font-semibold">étude de structure</strong> vérifiant la capacité des murs porteurs et des fondations existantes. La légèreté de l'ossature bois est précisément ce qui rend l'opération possible là où le béton serait exclu. Le PLU peut par ailleurs limiter la hauteur constructible.</p>
+</details>
+<details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-primary pr-6">Mon extension est-elle soumise à la RE2020 ?</h3>
+<span class="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant text-body-md mt-4">Cela dépend de la surface créée : plus l'extension est grande, plus les exigences se renforcent, jusqu'à l'application complète de la <strong class="text-primary font-semibold">RE2020</strong>. Deux principes sont constants : la réglementation ne vise que la <strong class="text-primary font-semibold">partie nouvelle</strong>, et les extensions successives d'une même maison se cumulent. Les seuils exacts évoluent — nous vérifions ceux en vigueur pour votre projet et vous les expliquons au rendez-vous.</p>
+</details>
 <details class="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
 <summary class="flex justify-between items-center cursor-pointer list-none">
 <h3 class="font-headline-sm text-headline-sm text-primary pr-6">Êtes-vous certifiés et assurés ?</h3>

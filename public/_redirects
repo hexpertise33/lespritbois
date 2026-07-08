@@ -1,0 +1,4 @@
+# Redirections permanentes (Cloudflare Pages).
+# /extensions a été fusionnée dans /constructions-bois : un 301 conserve
+# le référencement acquis et évite un 404 pour les liens déjà en circulation.
+/extensions   /constructions-bois   301

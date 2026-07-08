@@ -60,9 +60,9 @@ export const ONGLETS: Onglet[] = [
   },
   { cle: 'carports', titre: 'Carports', url: '/carports' },
   { cle: 'pergolas', titre: 'Pergolas', url: '/pergolas' },
-  { cle: 'extensions', titre: 'Extensions', url: '/extensions' },
   { cle: 'constructions-bois', titre: 'Constructions bois', url: '/constructions-bois' },
   { cle: 'realisations', titre: 'Réalisations', url: '/realisations' },
+  { cle: 'a-propos', titre: 'À propos', url: '/a-propos' },
 ];
 
 /** Bloc « provider » réutilisé dans toutes les données structurées. */

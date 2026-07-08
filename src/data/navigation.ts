@@ -34,16 +34,35 @@ export const RESEAUX = {
 /** Profils à déclarer dans les données structurées. */
 export const SAME_AS: string[] = Object.values(RESEAUX);
 
-export type Onglet = { cle: string; titre: string; url: string };
+export type Onglet = {
+  cle: string;
+  titre: string;
+  url: string;
+  /** Intitulé complet, quand `titre` est abrégé faute de place dans la barre. */
+  titreLong?: string;
+};
 
-/** Onglets de la barre de navigation, dans l'ordre d'affichage. */
+/** Onglets de la barre de navigation, dans l'ordre d'affichage.
+ *
+ *  Contrainte mesurée : la barre offre 1152 px, dont 233 px pour le lockup
+ *  (logo + wordmark) et 241 px pour le bouton devis. Il reste ~646 px pour les
+ *  onglets. Le libellé « Aménagement extérieur » fait 177 px : à sept onglets,
+ *  le bloc atteignait 779 px et poussait le bouton hors de la barre.
+ *  D'où deux décisions : le libellé est raccourci en « Aménagements » (114 px),
+ *  et « À propos » ne figure plus ici — il reste accessible depuis le footer.
+ */
 export const ONGLETS: Onglet[] = [
+  {
+    cle: 'amenagement-exterieur',
+    titre: 'Aménagements',
+    url: '/amenagement-exterieur',
+    titreLong: 'Aménagement extérieur',
+  },
   { cle: 'carports', titre: 'Carports', url: '/carports' },
   { cle: 'pergolas', titre: 'Pergolas', url: '/pergolas' },
   { cle: 'extensions', titre: 'Extensions', url: '/extensions' },
   { cle: 'constructions-bois', titre: 'Constructions bois', url: '/constructions-bois' },
   { cle: 'realisations', titre: 'Réalisations', url: '/realisations' },
-  { cle: 'a-propos', titre: 'À propos', url: '/a-propos' },
 ];
 
 /** Bloc « provider » réutilisé dans toutes les données structurées. */

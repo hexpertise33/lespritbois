@@ -21,6 +21,9 @@ pnpm-debug.log*
 
 # macOS
 .DS_Store
+# Copies créées par la synchronisation iCloud/Finder : « fichier 2.jpg ».
+# Elles avaient été commitées par erreur (72 fichiers) puis retirées.
+* 2.*
 
 # editor
 .vscode/*

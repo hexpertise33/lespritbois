@@ -52,14 +52,14 @@ export type Onglet = {
  *  et « À propos » ne figure plus ici — il reste accessible depuis le footer.
  */
 export const ONGLETS: Onglet[] = [
+  { cle: 'carports', titre: 'Carports', url: '/carports' },
+  { cle: 'pergolas', titre: 'Pergolas', url: '/pergolas' },
   {
     cle: 'amenagement-exterieur',
     titre: 'Aménagements',
     url: '/amenagement-exterieur',
     titreLong: 'Aménagement extérieur',
   },
-  { cle: 'carports', titre: 'Carports', url: '/carports' },
-  { cle: 'pergolas', titre: 'Pergolas', url: '/pergolas' },
   { cle: 'constructions-bois', titre: 'Constructions bois', url: '/constructions-bois' },
   { cle: 'realisations', titre: 'Réalisations', url: '/realisations' },
   { cle: 'a-propos', titre: 'À propos', url: '/a-propos' },

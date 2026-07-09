@@ -139,13 +139,13 @@ export default function AmenagementExterieurPage() {
         <header className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              width="768"
-              height="512"
+              width="736"
+              height="981"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
-              src="/images/source-adefrance/construction-pool-house-bois-libourne.webp"
-              alt="Vue 3D d'un projet de pool house bois avec terrasse et plage de piscine"
+              src="/images/terrasse-bois-pool-house-libourne.webp"
+              alt="Pool house bois et terrasse en bois au bord d'une piscine, réalisation L'Esprit Bois en Gironde"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>

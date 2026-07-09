@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lespritbois.fr/sitemap-index.xml
+Sitemap: https://lespritbois.fr/sitemap.xml

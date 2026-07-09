@@ -1,6 +1,10 @@
 # build output
 dist/
 .output/
+.next/
+.open-next/
+next-env.d.ts
+.wrangler/
 
 # dependencies
 node_modules/

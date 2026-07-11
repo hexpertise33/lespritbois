@@ -2,6 +2,14 @@
 
 Mémoire de la routine de publication (2 articles/semaine, **mardi & jeudi**).
 
+## Routine planifiée
+
+Tâche planifiée locale `veille-blog-lespritbois` (cron `0 8 * * 2,4` = mardi &
+jeudi 8h, heure locale). Elle exécute le Temps 1 (`/veille-blog`) automatiquement
+et livre 2 propositions par notification + fichier `docs/blog-pipeline/AAAA-MM-JJ.md`.
+Gérable depuis la section « Scheduled » de l'app. Ne publie jamais (pas de
+push/deploy).
+
 ## Workflow
 
 1. **Temps 1 — veille (auto, mardi/jeudi ~8h).** L'agent planifié lance

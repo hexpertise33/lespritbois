@@ -24,8 +24,10 @@ défaut, demande-lui laquelle des propositions du dernier
 5. **Contrôle qualité.** Repasse la « Checklist avant publication » de
    `docs/blog-pipeline/ligne-editoriale.md`. Vérifie qu'il ne reste aucun
    `__IMAGE_A_SOURCER__` ni commentaire `{/* IMAGE: ... */}`.
-6. **Publication.** `git add` (article + blog.ts + images + docs), commit avec un
-   message décrivant l'article, `git push origin main`.
+6. **Publication.** `git add` des fichiers de l'article (page `page.tsx`,
+   `lib/data/blog.ts`, images ajoutées sous `public/images/blog/<slug>/`),
+   commit avec un message décrivant l'article, `git push origin main`. (La mise
+   à jour de `docs/blog-pipeline/README.md` fait l'objet du commit de l'étape 8.)
 7. **Deploy.** Lance `npx opennextjs-cloudflare deploy` (ou `npm run deploy`). Si
    les identifiants manquent, signale-le : l'article reste poussé, à déployer
    manuellement.

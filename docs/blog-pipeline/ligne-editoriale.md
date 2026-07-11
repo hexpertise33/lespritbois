@@ -42,6 +42,10 @@ article calque sa structure, dans l'ordre :
 
 - Ancrage local **Libourne / Gironde** dans le title, la description, le h1
   (quand naturel), au moins une section, la conclusion et le `areaServed`.
+- **Ville SEO :** passer `ville: 'Libourne'` à `buildMetadata` (c'est l'ancre de
+  référencement, comme le gabarit `carport-bois-guide`). Ne PAS utiliser
+  `CONTACT.ville` de `navigation.ts` (= « Les Billaux », commune du siège) pour
+  ce champ ; `navigation.ts` ne sert qu'au téléphone et à l'adresse.
 - `keywords` : requête principale + variantes + « ... Gironde », « ... Libourne ».
 - 1 seul `<h1>` (le titre). Hiérarchie `<h2>`/`<h3>` propre.
 - Slug court, en-tête, sans accent, mots-clés (ex. `terrasse-bois-entretien`).
@@ -54,7 +58,11 @@ article calque sa structure, dans l'ordre :
 - Priorité de source : (1) vraie photo de chantier de `/public/images`
   (voir `public/images/` et `public/images/source-adefrance/`) → (2) photo libre
   de droits (Unsplash/Pexels, licence libre, thème bois) → (3) image IA en
-  dernier recours seulement.
+  dernier recours seulement. Ne jamais laisser un `src` non résolu : si aucune
+  photo chantier ni libre de droits ne convient et qu'aucun outil de génération
+  d'image n'est disponible, **signaler le manque à l'utilisateur** (il fournira
+  une photo ou validera une génération IA) plutôt que de livrer un article avec
+  une image manquante.
 - Chaque image : `alt` descriptif orienté requête + géographie quand pertinent,
   et une `caption` (légende) qui apporte une info, pas une redite.
 - Nouvelles images téléchargées/générées : les déposer dans

@@ -20,7 +20,12 @@ pas le texte.
 2. **Libre de droits** : si aucune photo interne ne convient, chercher une image
    sous licence libre (Unsplash/Pexels) sur le thème. La télécharger dans
    `public/images/blog/<slug>/` (Bash : `curl -L -o ...`). Vérifier la licence.
-3. **IA** : en tout dernier recours seulement, générer un visuel et l'y déposer.
+3. **IA** : en tout dernier recours seulement. Si un outil de génération d'image
+   est disponible (skill DALL-E, agent `seo-image-gen`, ou extension configurée),
+   génère un visuel et dépose-le dans `public/images/blog/<slug>/`. Sinon,
+   **n'invente rien** : signale à l'utilisateur qu'il manque une image à cet
+   endroit (il fournira une photo ou validera une génération). Ne laisse JAMAIS
+   un `src="__IMAGE_A_SOURCER__"` non résolu dans le fichier livré.
 
 ## Ce que tu fais
 - Remplace chaque `src="__IMAGE_A_SOURCER__"` par le chemin réel choisi.

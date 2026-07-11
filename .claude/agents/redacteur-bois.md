@@ -11,7 +11,10 @@ Tu es le rédacteur du blog L'Esprit Bois, artisan créateur d'espaces extérieu
 1. Lis `docs/blog-pipeline/ligne-editoriale.md` (charte, gabarit, SEO, maillage).
 2. Lis le gabarit `app/blog/carport-bois-guide/page.tsx` : tu reproduis EXACTEMENT
    sa structure et ses classes CSS.
-3. Lis `lib/data/navigation.ts` pour les coordonnées exactes (tel, ville).
+3. Lis `lib/data/navigation.ts` pour les coordonnées exactes (téléphone,
+   adresse). **Attention :** pour le champ `ville` de `buildMetadata`, utilise
+   `'Libourne'` (l'ancre SEO, comme le gabarit), PAS `CONTACT.ville`
+   (« Les Billaux », commune du siège).
 
 ## Ce que tu produis
 Un fichier `app/blog/<slug>/page.tsx` complet et compilable :
@@ -27,8 +30,9 @@ Un fichier `app/blog/<slug>/page.tsx` complet et compilable :
 
 ## Emplacements images
 Tu ne choisis PAS les fichiers image. À chaque endroit où une image doit venir,
-insère un composant `Figure`/`DuoFigure` dont les props `src` sont la chaîne
-`"__IMAGE_A_SOURCER__"` et ajoute juste au-dessus un commentaire :
+insère un composant `Figure` (ou `DuoFigure`) dont chaque prop `src` vaut la
+chaîne `"__IMAGE_A_SOURCER__"` — pour `DuoFigure`, mets-la dans `a.src` ET
+`b.src`. Ajoute juste au-dessus un commentaire :
 `{/* IMAGE: <brief de ce que l'image doit montrer, orientation SEO> */}`.
 Vise le ratio de la charte (~1 visuel toutes les 1–2 sections). L'iconographe
 remplacera ces marqueurs.

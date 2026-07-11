@@ -22,6 +22,10 @@ pnpm-debug.log*
 .env
 .env.production
 .env.*.local
+# Secrets locaux Wrangler (ex. RESEND_API_KEY) — ne jamais committer.
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
 
 # macOS
 .DS_Store

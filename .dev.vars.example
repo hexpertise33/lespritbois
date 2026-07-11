@@ -1,0 +1,10 @@
+# Modèle de secrets locaux pour Wrangler / OpenNext.
+# Copier ce fichier en « .dev.vars » (déjà git-ignoré) et y coller les vraies valeurs
+# pour tester le formulaire de contact en local (npm run dev / preview).
+#
+# En PRODUCTION, ce secret n'est PAS lu depuis ce fichier : il est posé sur le
+# Worker Cloudflare avec « npx wrangler secret put RESEND_API_KEY ».
+
+# Clé API Resend (https://resend.com → API Keys). Nécessaire pour l'envoi des
+# demandes du formulaire de contact vers l'adresse définie dans lib/data/navigation.ts.
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

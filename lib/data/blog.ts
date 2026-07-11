@@ -14,6 +14,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'autorisation-urbanisme-abri-carport-pergola-2026',
+    titre: "Abri de jardin, carport, pergola : quelle autorisation d'urbanisme en 2026 ?",
+    extrait:
+      "Emprise au sol, seuils de 5, 20 et 40 m², secteurs protégés et nouveau CERFA n°16702 : le guide 2026 des formalités d'urbanisme pour abriter un véhicule ou aménager son jardin, en Gironde comme ailleurs.",
+    date: '2026-07-11',
+    categorie: 'Guide · Urbanisme',
+    image: '/images/source-adefrance/Carport-bois-Libourne-3.webp',
+  },
+  {
     slug: 'pergola-bois-ou-bioclimatique',
     titre: 'Pergola bois ou pergola bioclimatique : comment choisir ?',
     extrait:

@@ -10,14 +10,14 @@ export const site = {
   slogan: "Le bois qui prolonge la maison vers l'extérieur.",
   description:
     "L'Esprit Bois conçoit et réalise terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Bois et aluminium, de l'étude à la pose — des espaces extérieurs durables, pensés pour durer.",
-  url: 'https://lespritbois.fr',
+  url: 'https://lesprit-bois.fr',
 };
 
 // Coordonnées — reprises du site actuel, à ajuster si besoin.
 export const contact = {
   telephone: '05 57 40 65 80',
   telephoneHref: 'tel:+33557406580',
-  email: 'contact@lespritbois.fr',
+  email: 'lespritbois33@gmail.com',
   emailActuel: 'adefrance033@gmail.com',
   adresse: '1 Aux Pradasses',
   codePostal: '33500',

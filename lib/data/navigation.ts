@@ -6,7 +6,7 @@
 export const SITE = {
   nom: "L'Esprit Bois",
   baseline: "Créateur d'espaces extérieurs",
-  url: 'https://lespritbois.fr',
+  url: 'https://lesprit-bois.fr',
 } as const;
 
 export const CONTACT = {
@@ -16,7 +16,7 @@ export const CONTACT = {
   telHref: 'tel:+33557406580',
   /** Même valeur pour schema.org. */
   telE164: '+33557406580',
-  email: 'contact@lespritbois.fr',
+  email: 'lespritbois33@gmail.com',
   rue: '1 Aux Pradasses',
   codePostal: '33500',
   ville: 'Les Billaux',

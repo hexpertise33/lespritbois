@@ -25,13 +25,13 @@ const jsonld = [
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://lespritbois.fr/',
+        item: 'https://lesprit-bois.fr/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Pergolas',
-        item: 'https://lespritbois.fr/pergolas',
+        item: 'https://lesprit-bois.fr/pergolas',
       },
     ],
   },
@@ -60,7 +60,7 @@ const jsonld = [
       description:
         "Créateur d'espaces extérieurs : pergolas, carports, terrasses, bardages et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
       telephone: '+33557406580',
-      email: 'contact@lespritbois.fr',
+      email: 'lespritbois33@gmail.com',
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'certification',

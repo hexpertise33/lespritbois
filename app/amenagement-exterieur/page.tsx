@@ -21,12 +21,12 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lespritbois.fr/' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lesprit-bois.fr/' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Aménagement extérieur',
-        item: 'https://lespritbois.fr/amenagement-exterieur',
+        item: 'https://lesprit-bois.fr/amenagement-exterieur',
       },
     ],
   },
@@ -46,7 +46,7 @@ const jsonld = [
       description:
         "Créateur d'espaces extérieurs : terrasses, pool houses, abris de jardin, abords de bassin, pergolas et carports. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
       telephone: '+33557406580',
-      email: 'contact@lespritbois.fr',
+      email: 'lespritbois33@gmail.com',
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'certification',

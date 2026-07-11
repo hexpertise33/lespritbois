@@ -25,13 +25,13 @@ const jsonld = [
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: 'https://lespritbois.fr/',
+        item: 'https://lesprit-bois.fr/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Constructions bois',
-        item: 'https://lespritbois.fr/constructions-bois',
+        item: 'https://lesprit-bois.fr/constructions-bois',
       },
     ],
   },
@@ -51,7 +51,7 @@ const jsonld = [
       description:
         "Constructeur bois : maisons à ossature bois, maisons en A, pool houses, abris et dépendances, livrés hors d'eau hors d'air. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
       telephone: '+33557406580',
-      email: 'contact@lespritbois.fr',
+      email: 'lespritbois33@gmail.com',
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'certification',

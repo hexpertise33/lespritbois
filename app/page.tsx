@@ -22,7 +22,7 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: "L'Esprit Bois",
-    url: 'https://lespritbois.fr/',
+    url: 'https://lesprit-bois.fr/',
     inLanguage: 'fr-FR',
   },
   {
@@ -31,10 +31,10 @@ const jsonld = [
     name: "L'Esprit Bois",
     description:
       "Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
-    url: 'https://lespritbois.fr/',
+    url: 'https://lesprit-bois.fr/',
     telephone: '+33557406580',
-    email: 'contact@lespritbois.fr',
-    image: 'https://lespritbois.fr/images/source-adefrance/aggrandissement-accueil.webp',
+    email: 'lespritbois33@gmail.com',
+    image: 'https://lesprit-bois.fr/images/source-adefrance/aggrandissement-accueil.webp',
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'certification',
@@ -529,10 +529,10 @@ export default function HomePage() {
                     </a>
                     <a
                       className="flex items-center gap-4 hover:text-secondary transition-colors"
-                      href="mailto:contact@lespritbois.fr"
+                      href="mailto:lespritbois33@gmail.com"
                     >
                       <span className="material-symbols-outlined text-secondary">mail</span>
-                      <span className="font-label-md">contact@lespritbois.fr</span>
+                      <span className="font-label-md">lespritbois33@gmail.com</span>
                     </a>
                     <div className="flex items-center gap-4">
                       <span className="material-symbols-outlined text-secondary">location_on</span>

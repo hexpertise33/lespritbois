@@ -364,10 +364,10 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                         key={ligne[0]}
                         className={i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low'}
                       >
-                        <td className="px-4 py-3 text-primary font-semibold whitespace-nowrap">{ligne[0]}</td>
-                        <td className="px-4 py-3 text-on-surface-variant">{ligne[1]}</td>
-                        <td className="px-4 py-3 text-on-surface-variant whitespace-nowrap">{ligne[2]}</td>
-                        <td className="px-4 py-3 text-on-surface-variant">{ligne[3]}</td>
+                        <td className="px-4 py-3 text-primary font-semibold align-top min-w-[9rem]">{ligne[0]}</td>
+                        <td className="px-4 py-3 text-on-surface-variant align-top">{ligne[1]}</td>
+                        <td className="px-4 py-3 text-on-surface-variant align-top whitespace-nowrap">{ligne[2]}</td>
+                        <td className="px-4 py-3 text-on-surface-variant align-top">{ligne[3]}</td>
                       </tr>
                     ))}
                   </tbody>

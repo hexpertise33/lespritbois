@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { jost, manrope, playfairDisplay } from '@/lib/fonts';
+import { GADS_ID } from '@/lib/gtag';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://lespritbois.fr'),
+  metadataBase: new URL('https://lesprit-bois.fr'),
 };
 
 export const viewport: Viewport = {
@@ -35,6 +37,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-surface font-body-md text-on-surface antialiased">
+        {/* Balise Google (gtag.js) — suivi des conversions Google Ads */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GADS_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GADS_ID}');`}
+        </Script>
         <a
           href="#contenu"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-4 focus:py-2 focus:rounded-lg"

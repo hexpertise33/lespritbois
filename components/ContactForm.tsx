@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import { reportFormConversion } from '@/lib/gtag';
 
 type Etat = 'idle' | 'loading' | 'success' | 'error';
 
@@ -27,6 +28,8 @@ export default function ContactForm() {
       }
 
       setEtat('success');
+      // Conversion Google Ads : le formulaire a bien été envoyé.
+      reportFormConversion();
     } catch (err) {
       setErreur(err instanceof Error ? err.message : "Une erreur est survenue lors de l'envoi.");
       setEtat('error');

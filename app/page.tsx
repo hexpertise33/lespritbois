@@ -12,7 +12,7 @@ export const metadata: Metadata = buildMetadata({
   keywords:
     "L'Esprit Bois, carport Libourne, pergola Gironde, extension bois Libourne, construction bois Gironde, charpentier Libourne",
   path: '/',
-  ogImage: '/images/source-adefrance/aggrandissement-accueil.webp',
+  ogImage: '/images/pool-house-bois-terrasse-piscine-libourne.webp',
   ogTitle: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
   ville: 'Les Billaux',
 });
@@ -34,7 +34,7 @@ const jsonld = [
     url: 'https://lesprit-bois.fr/',
     telephone: '+33557406580',
     email: 'lespritbois33@gmail.com',
-    image: 'https://lesprit-bois.fr/images/source-adefrance/aggrandissement-accueil.webp',
+    image: 'https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp',
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'certification',

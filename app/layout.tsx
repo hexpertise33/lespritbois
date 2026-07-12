@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { jost, manrope, playfairDisplay } from '@/lib/fonts';
 import { GADS_ID } from '@/lib/gtag';
+import ConsentBanner from '@/components/ConsentBanner';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -45,6 +46,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="gtag-init" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  analytics_storage: 'denied',
+  wait_for_update: 500
+});
 gtag('js', new Date());
 gtag('config', '${GADS_ID}');`}
         </Script>
@@ -55,6 +63,7 @@ gtag('config', '${GADS_ID}');`}
           Aller au contenu
         </a>
         {children}
+        <ConsentBanner />
       </body>
     </html>
   );

@@ -17,6 +17,9 @@ const PAGES_STATIQUES = [
   '/amenagement-exterieur',
   '/realisations',
   '/blog',
+  '/mentions-legales',
+  '/politique-de-confidentialite',
+  '/plan-du-site',
 ];
 
 export function GET() {

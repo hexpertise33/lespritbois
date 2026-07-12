@@ -97,7 +97,19 @@ export default function SiteFooter() {
         <p className="text-on-surface-variant font-body-md text-body-md text-sm">
           © {ANNEE} L'Esprit Bois — Créateur d'espaces extérieurs en Gironde.
         </p>
-        <div className="flex gap-6 text-sm">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+          <a className="text-on-surface-variant hover:text-secondary-dark transition-colors" href="/mentions-legales">
+            Mentions légales
+          </a>
+          <a
+            className="text-on-surface-variant hover:text-secondary-dark transition-colors"
+            href="/politique-de-confidentialite"
+          >
+            Politique de confidentialité
+          </a>
+          <a className="text-on-surface-variant hover:text-secondary-dark transition-colors" href="/plan-du-site">
+            Plan du site
+          </a>
           <a
             className="text-on-surface-variant hover:text-secondary-dark transition-colors"
             href="https://rescuepro.fr"

@@ -29,8 +29,10 @@ export async function POST(request: Request) {
 
   try {
     const { error } = await resend.emails.send({
-      // Placeholder tant que le domaine lespritbois.fr n'est pas vérifié sur Resend.
-      from: "L'Esprit Bois <onboarding@resend.dev>",
+      // Domaine lesprit-bois.fr vérifié sur Resend (DKIM/SPF/DMARC) : envoi depuis
+      // une adresse du domaine, ce qui autorise la livraison vers n'importe quel
+      // destinataire (dont lespritbois33@gmail.com défini dans CONTACT.email).
+      from: "L'Esprit Bois <contact@lesprit-bois.fr>",
       to: CONTACT.email,
       subject: `Nouvelle demande de devis — ${projet ?? 'Projet non précisé'}`,
       text: [

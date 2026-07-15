@@ -84,6 +84,60 @@ const jsonld = [
   },
 ];
 
+const AVIS = [
+  {
+    nom: 'clément Baudon',
+    texte:
+      "Commande faite 2 jours avant les congés. On a pu avoir la totalité de la fourniture pour notre terrasse. Super conseil pour le plan de pose. Énorme avantage : l'expérience du vendeur, pour le rendu esthétique comme la mise en place.",
+  },
+  {
+    nom: 'Damien',
+    texte:
+      "Merci à David et toute son équipe pour leurs conseils. Ils m'ont aidé sur la conception d'une pergola et le résultat est parfait.",
+  },
+  {
+    nom: 'Guillaume Marie-Catherine',
+    texte: 'Malgré un timing ultra serré, le permis de construire a été déposé dans les temps !',
+  },
+  {
+    nom: 'thuy tran',
+    texte:
+      "Merci pour la modélisation 3D des chalets et pour les précieux conseils sur l'architecture, l'optimisation de l'espace et des coûts.",
+  },
+  {
+    nom: 'Georgia Flores',
+    texte:
+      "Merci infiniment à Manon et ses collègues pour le travail sur mes plans d'agrandissement. Projet mené jusqu'à l'obtention du permis. De bons conseils.",
+  },
+  { nom: 'Bérengère Coste', texte: "Entreprise sérieuse et à l'écoute." },
+];
+
+function CarteAvis({ nom, texte }: { nom: string; texte: string }) {
+  return (
+    <figure className="shrink-0 w-[320px] md:w-[380px] mx-3 bg-surface rounded-2xl border border-surface-variant p-8 flex flex-col">
+      <div className="flex items-center gap-1 text-secondary-dark mb-4" aria-hidden="true">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <span key={i} className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+            star
+          </span>
+        ))}
+      </div>
+      <blockquote className="font-body-md text-body-md text-on-surface-variant leading-relaxed flex-1">
+        « {texte} »
+      </blockquote>
+      <figcaption className="mt-6 flex items-center gap-3">
+        <span className="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-md">
+          {nom.charAt(0).toUpperCase()}
+        </span>
+        <span>
+          <span className="block font-label-md text-primary">{nom}</span>
+          <span className="block text-label-md text-on-surface-variant text-sm">Avis Google · 5/5</span>
+        </span>
+      </figcaption>
+    </figure>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
@@ -514,6 +568,35 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Avis clients */}
+        <section className="py-section-padding bg-surface-container-low overflow-hidden" aria-labelledby="avis-titre">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 text-center mb-12">
+            <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-3">
+              Ils nous ont fait confiance
+            </p>
+            <h2 id="avis-titre" className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">
+              5,0 / 5 sur Google
+            </h2>
+            <a
+              href="https://www.google.com/search?q=L%27Esprit+Bois+Les+Billaux"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-3 transition-all"
+            >
+              Voir les avis sur Google <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+            </a>
+          </div>
+          <div className="avis-marquee">
+            <ul className="avis-piste list-none p-0 m-0">
+              {[...AVIS, ...AVIS].map((avis, i) => (
+                <li key={i} aria-hidden={i >= AVIS.length}>
+                  <CarteAvis nom={avis.nom} texte={avis.texte} />
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 

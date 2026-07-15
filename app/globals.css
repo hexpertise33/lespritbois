@@ -166,3 +166,41 @@
   outline: 2px solid #c67c3d;
   outline-offset: 3px;
 }
+
+/* ---------------------------------------------------------------------------
+   Bandeau d'avis clients : défilement horizontal continu.
+   La piste contient DEUX fois la liste des avis ; on la translate de -50 %
+   pour une boucle parfaitement sans couture.
+--------------------------------------------------------------------------- */
+@keyframes avis-defile {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.avis-marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.avis-piste {
+  display: flex;
+  width: max-content;
+  animation: avis-defile 60s linear infinite;
+}
+.avis-marquee:hover .avis-piste {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .avis-piste {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .avis-marquee {
+    -webkit-mask-image: none;
+    mask-image: none;
+    overflow-x: auto;
+  }
+}

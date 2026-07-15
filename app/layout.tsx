@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://lesprit-bois.fr'),
 };
 
+// Cache CDN du HTML : Next/OpenNext posait `s-maxage=31536000` (1 an) sur les
+// pages statiques, obligeant à purger Cloudflare à chaque déploiement. On passe
+// en revalidation courte : le HTML est re-servi frais au plus tard après ce
+// délai (avec stale-while-revalidate), donc un déploiement devient visible tout
+// seul, sans purge manuelle. Les assets hashés gardent leur propre cache.
+export const revalidate = 300;
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,

@@ -487,6 +487,22 @@ export default function HomePage() {
                   <p className="text-on-surface-variant text-body-md italic">
                     Chaque ouvrage que nous posons est couvert pendant dix ans.
                   </p>
+                  <div className="mt-5 pt-4 border-t border-surface-variant">
+                    <span className="block text-[11px] uppercase tracking-widest text-on-surface-variant mb-2">
+                      Assuré par
+                    </span>
+                    <span className="inline-block bg-white rounded-lg px-3 py-2 border border-surface-variant">
+                      <img
+                        src="/logos/sma-btp.webp"
+                        alt="SMA BTP, assureur de L'Esprit Bois"
+                        width="400"
+                        height="233"
+                        loading="lazy"
+                        decoding="async"
+                        className="h-9 w-auto"
+                      />
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

@@ -37,3 +37,7 @@ pnpm-debug.log*
 .vscode/*
 !.vscode/extensions.json
 .idea/
+
+# Artefacts de build / plugins
+tsconfig.tsbuildinfo
+.superpowers/

@@ -74,13 +74,13 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lespritbois.fr/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lespritbois.fr/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lesprit-bois.fr/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lesprit-bois.fr/blog' },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Carport en bois',
-        item: 'https://lespritbois.fr/blog/carport-bois-guide',
+        item: 'https://lesprit-bois.fr/blog/carport-bois-guide',
       },
     ],
   },
@@ -90,7 +90,7 @@ const jsonld = [
     headline: "Carport en bois : bien le choisir et l'intégrer à sa maison",
     description:
       "Carport bois ou garage ? Adossé ou autoportant, essences, toiture, intégration architecturale, autorisation d'urbanisme, budget et entretien : le guide complet pour abriter votre voiture en Gironde.",
-    image: 'https://lespritbois.fr' + COVER,
+    image: 'https://lesprit-bois.fr' + COVER,
     author: {
       '@type': 'Person',
       name: 'David Bertrand',
@@ -100,13 +100,13 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lespritbois.fr/logo-mark.svg' },
+      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
     },
     datePublished: '2026-07-09',
     dateModified: '2026-07-09',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://lespritbois.fr/blog/carport-bois-guide',
+      '@id': 'https://lesprit-bois.fr/blog/carport-bois-guide',
     },
     about: ['carport bois', 'abri voiture', 'aménagement extérieur'],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },

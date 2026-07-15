@@ -4,6 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
+import { SAME_AS } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
@@ -35,6 +36,8 @@ const jsonld = [
     telephone: '+33557406580',
     email: 'lespritbois33@gmail.com',
     image: 'https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp',
+    priceRange: '€€',
+    sameAs: SAME_AS,
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'certification',
@@ -47,6 +50,11 @@ const jsonld = [
       addressLocality: 'Les Billaux',
       addressRegion: 'Gironde',
       addressCountry: 'FR',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 44.9517,
+      longitude: -0.2372,
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -262,7 +270,7 @@ export default function HomePage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    src="/images/terrasse-bois-pool-house-noir.jpg"
+                    src="/images/terrasse-bois-pool-house-noir.webp"
                     alt="Terrasse en bois menant à une piscine, pool house et maison à bardage noir"
                   />
                   <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">
@@ -389,7 +397,7 @@ export default function HomePage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/source-adefrance/IMG-20250129-WA0077-opt.jpg"
+                    src="/images/source-adefrance/IMG-20250129-WA0077-opt.webp"
                     alt="Construction bois bardée, menuiseries posées, mise hors d'air"
                   />
                   <div className="absolute inset-0 bg-primary/15"></div>
@@ -470,7 +478,7 @@ export default function HomePage() {
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover"
-                src="/images/source-adefrance/WhatsApp-Image-2024-08-13-a-15.28.15_3b74f9f0.jpg"
+                src="/images/source-adefrance/WhatsApp-Image-2024-08-13-a-15.28.15_3b74f9f0.webp"
                 alt="Charpentier de L'Esprit Bois posant une ossature bois sur un chantier en Gironde"
               />
             </div>

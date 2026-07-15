@@ -21,8 +21,8 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lespritbois.fr/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lespritbois.fr/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lesprit-bois.fr/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lesprit-bois.fr/blog' },
     ],
   },
   {
@@ -31,7 +31,7 @@ const jsonld = [
     name: "Blog L'Esprit Bois",
     description:
       "Conseils, retours de chantier et actualités autour du bois, des terrasses, pergolas, carports et constructions bois à Libourne et en Gironde.",
-    url: 'https://lespritbois.fr/blog',
+    url: 'https://lesprit-bois.fr/blog',
     publisher: {
       '@type': 'GeneralContractor',
       name: "L'Esprit Bois",

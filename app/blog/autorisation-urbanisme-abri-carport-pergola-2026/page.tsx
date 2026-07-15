@@ -411,7 +411,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             </section>
 
             <Figure
-              src="/images/pergola-bois-massif-terrasse.jpg"
+              src="/images/pergola-bois-massif-terrasse.webp"
               alt="Pergola en bois massif adossée à une maison, extension du bâti existant en zone U d'une commune girondine"
               caption="Adossée à la maison, une pergola ou un carport peut être qualifié d'extension : le seuil de déclaration préalable passe alors à 40 m²."
             />
@@ -448,7 +448,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             </section>
 
             <Figure
-              src="/images/blog/autorisation-urbanisme-abri-carport-pergola-2026/saint-emilion-secteur-protege.jpg"
+              src="/images/blog/autorisation-urbanisme-abri-carport-pergola-2026/saint-emilion-secteur-protege.webp"
               alt="Vue patrimoniale de Saint-Émilion, secteur protégé du Libournais soumis à l'avis de l'Architecte des Bâtiments de France"
               caption="Dans les abords de Saint-Émilion et de nombreux monuments du Libournais, la déclaration préalable est obligatoire dès 5 m² d'emprise au sol."
             />
@@ -484,7 +484,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             </section>
 
             <Figure
-              src="/images/blog/autorisation-urbanisme-abri-carport-pergola-2026/plan-declaration-prealable-cerfa.jpg"
+              src="/images/blog/autorisation-urbanisme-abri-carport-pergola-2026/plan-declaration-prealable-cerfa.webp"
               alt="Plan de masse et élévations d'une construction, pièces jointes à un dossier de déclaration préalable CERFA n°16702"
               caption="Le CERFA n°16702, plan de situation et plan de masse : les pièces clés d'un dossier de déclaration préalable en 2026."
             />
@@ -554,7 +554,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             </section>
 
             <Figure
-              src="/images/source-adefrance/IMG-20240521-WA0011.jpg"
+              src="/images/source-adefrance/IMG-20240521-WA0011.webp"
               alt="Chantier d'extension bois de L'Esprit Bois en Gironde, projet réalisé après validation du dossier d'urbanisme"
               caption="Nous vérifions le PLU et montons le dossier d'urbanisme pour chaque projet, à Libourne et dans toute la Gironde."
             />

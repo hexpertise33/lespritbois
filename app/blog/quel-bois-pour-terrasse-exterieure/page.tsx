@@ -28,13 +28,13 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lespritbois.fr/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lespritbois.fr/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lesprit-bois.fr/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lesprit-bois.fr/blog' },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Quel bois pour une terrasse extérieure ?',
-        item: 'https://lespritbois.fr/blog/quel-bois-pour-terrasse-exterieure',
+        item: 'https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure',
       },
     ],
   },
@@ -44,7 +44,7 @@ const jsonld = [
     headline: 'Quel bois choisir pour une terrasse extérieure ? Le guide par essence',
     description:
       "Douglas, mélèze, red cedar, chêne ou bois exotique : quel bois choisir pour votre terrasse en Gironde ? Comparatif, classe d'emploi, prix et conseils de pose.",
-    image: 'https://lespritbois.fr' + COVER,
+    image: 'https://lesprit-bois.fr' + COVER,
     author: {
       '@type': 'Person',
       name: 'David Bertrand',
@@ -54,13 +54,13 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lespritbois.fr/logo-mark.svg' },
+      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
     },
     datePublished: '2026-07-09',
     dateModified: '2026-07-09',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://lespritbois.fr/blog/quel-bois-pour-terrasse-exterieure',
+      '@id': 'https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure',
     },
     about: ['terrasse bois', 'essences de bois', 'aménagement extérieur'],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },

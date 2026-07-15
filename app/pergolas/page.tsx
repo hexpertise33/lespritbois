@@ -369,7 +369,7 @@ export default function PergolasPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
-                  src="/images/pergola-bioclimatique-lisudestemps.jpg"
+                  src="/images/pergola-bioclimatique-lisudestemps.webp"
                   alt="Pergola bioclimatique aluminium à lames orientables, terrasse bois et spa"
                 />
               </div>
@@ -421,7 +421,7 @@ export default function PergolasPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
-                  src="/images/pergola-bois-massif-terrasse.jpg"
+                  src="/images/pergola-bois-massif-terrasse.webp"
                   alt="Pergola en bois massif à lames sur une terrasse, avec espace repas extérieur"
                 />
               </div>

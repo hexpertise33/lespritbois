@@ -380,7 +380,7 @@ export default function AmenagementExterieurPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
-                  src="/images/terrasse-bois-piscine-exemple-opt.jpg"
+                  src="/images/terrasse-bois-piscine-exemple-opt.webp"
                   alt="Terrasse en bois naturel bordant une piscine, exemple d'aménagement des abords de bassin"
                 />
               </div>
@@ -531,7 +531,7 @@ export default function AmenagementExterieurPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/IMG-20250129-WA0077-opt.jpg"
+                  src="/images/source-adefrance/IMG-20250129-WA0077-opt.webp"
                   alt="Bardage bois en claire-voie servant de brise-vue en Gironde"
                 />
               </div>

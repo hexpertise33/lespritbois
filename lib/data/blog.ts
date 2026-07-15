@@ -29,7 +29,7 @@ export const articles: Article[] = [
       "Pergola en bois chaleureuse et sur mesure, ou bioclimatique aluminium à lames orientables motorisées ? Comparatif honnête, cas d'usage, budget 2025-2026 et entretien pour trancher en Gironde.",
     date: '2026-07-09',
     categorie: 'Guide · Pergolas',
-    image: '/images/pergola-bioclimatique-lisudestemps.jpg',
+    image: '/images/pergola-bioclimatique-lisudestemps.webp',
   },
   {
     slug: 'carport-bois-guide',

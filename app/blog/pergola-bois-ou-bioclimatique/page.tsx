@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/pergola-bioclimatique-lisudestemps.jpg';
+const COVER = '/images/pergola-bioclimatique-lisudestemps.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Pergola bois ou bioclimatique : comment choisir ? | L'Esprit Bois",
@@ -74,13 +74,13 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lespritbois.fr/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lespritbois.fr/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://lesprit-bois.fr/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://lesprit-bois.fr/blog' },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Pergola bois ou bioclimatique',
-        item: 'https://lespritbois.fr/blog/pergola-bois-ou-bioclimatique',
+        item: 'https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique',
       },
     ],
   },
@@ -90,7 +90,7 @@ const jsonld = [
     headline: 'Pergola bois ou pergola bioclimatique : comment choisir ?',
     description:
       "Pergola en bois sur mesure ou pergola bioclimatique aluminium à lames orientables ? Comparatif honnête, cas d'usage, budget 2025-2026 et entretien pour choisir en Gironde.",
-    image: 'https://lespritbois.fr' + COVER,
+    image: 'https://lesprit-bois.fr' + COVER,
     author: {
       '@type': 'Person',
       name: 'David Bertrand',
@@ -100,13 +100,13 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lespritbois.fr/logo-mark.svg' },
+      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
     },
     datePublished: '2026-07-09',
     dateModified: '2026-07-09',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://lespritbois.fr/blog/pergola-bois-ou-bioclimatique',
+      '@id': 'https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique',
     },
     about: ['pergola bois', 'pergola bioclimatique', 'aménagement extérieur'],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
@@ -403,7 +403,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
 
             {/* Image d'illustration */}
             <Figure
-              src="/images/pergola-bois-massif-terrasse.jpg"
+              src="/images/pergola-bois-massif-terrasse.webp"
               alt="Pergola en bois massif prolongeant une terrasse en Gironde"
               caption="Une pergola en bois massif prolonge naturellement une terrasse et se patine avec le temps."
             />

@@ -434,7 +434,7 @@ export default function RealisationsPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.jpg"
+                  src="/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp"
                   alt="Extension bardée bois raccordée à une maison en pierre, Gironde"
                 />
                 <figcaption className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -581,7 +581,7 @@ export default function RealisationsPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/IMG-20240712-WA0039-opt.jpg"
+                  src="/images/source-adefrance/IMG-20240712-WA0039-opt.webp"
                   alt="Extension bardée bois avec baie vitrée, chantier en Gironde"
                 />
                 <figcaption className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -604,7 +604,7 @@ export default function RealisationsPage() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/IMG-20250129-WA0077-opt.jpg"
+                  src="/images/source-adefrance/IMG-20250129-WA0077-opt.webp"
                   alt="Bardage red cedar posé en claire-voie sur une façade, Gironde"
                 />
                 <figcaption className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">

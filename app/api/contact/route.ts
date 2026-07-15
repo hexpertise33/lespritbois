@@ -34,10 +34,10 @@ export async function POST(request: Request) {
       // destinataire (dont lespritbois33@gmail.com défini dans CONTACT.email).
       from: "L'Esprit Bois <contact@lesprit-bois.fr>",
       to: CONTACT.email,
-      subject: `Nouvelle demande de devis — ${projet ?? 'Projet non précisé'}`,
+      subject: `Nouvelle demande de devis : ${projet ?? 'Projet non précisé'}`,
       text: [
-        `Projet : ${projet ?? '—'}`,
-        `Budget estimé : ${budget ?? '—'}`,
+        `Projet : ${projet ?? 'Non précisé'}`,
+        `Budget estimé : ${budget ?? 'Non précisé'}`,
         `Nom : ${nom}`,
         `Téléphone : ${tel}`,
         '',
@@ -45,8 +45,8 @@ export async function POST(request: Request) {
         message,
       ].join('\n'),
       html: `
-        <p><strong>Projet :</strong> ${projet ?? '—'}</p>
-        <p><strong>Budget estimé :</strong> ${budget ?? '—'}</p>
+        <p><strong>Projet :</strong> ${projet ?? 'Non précisé'}</p>
+        <p><strong>Budget estimé :</strong> ${budget ?? 'Non précisé'}</p>
         <p><strong>Nom :</strong> ${nom}</p>
         <p><strong>Téléphone :</strong> ${tel}</p>
         <p><strong>Message :</strong><br/>${message.replace(/\n/g, '<br/>')}</p>

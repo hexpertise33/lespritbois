@@ -114,7 +114,7 @@ const jsonld = [
         name: "Jusqu'où va votre intervention sur un pool house ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Nous livrons le pool house hors d'eau, hors d'air : fondations, ossature, couverture, bardage, menuiseries extérieures posées et étanchéité à l'air traitée. Le second œuvre — cloisons, électricité, plomberie, revêtements — n'est pas compris, et nous le disons avant de signer plutôt qu'à la réception.",
+          text: "Nous livrons le pool house hors d'eau, hors d'air : fondations, ossature, couverture, bardage, menuiseries extérieures posées et étanchéité à l'air traitée. Le second œuvre (cloisons, électricité, plomberie, revêtements) n'est pas compris, et nous le disons avant de signer plutôt qu'à la réception.",
         },
       },
       {
@@ -215,8 +215,8 @@ export default function AmenagementExterieurPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 <strong className="text-primary font-semibold">
-                  Un aménagement extérieur réussi se pense comme un projet unique — terrasse, pool house, abords de
-                  bassin, abri de jardin et cuisine d'été — plutôt que comme une addition d'ouvrages posés au fil des
+                  Un aménagement extérieur réussi se pense comme un projet unique (terrasse, pool house, abords de
+                  bassin, abri de jardin et cuisine d'été) plutôt que comme une addition d'ouvrages posés au fil des
                   années.
                 </strong>{' '}
                 Une terrasse posée un été, un abri l'année suivante, un pool house trois ans plus tard : chacun est
@@ -229,13 +229,13 @@ export default function AmenagementExterieurPage() {
                 un projet unique : <strong className="text-primary font-semibold">terrasse</strong>,{' '}
                 <strong className="text-primary font-semibold">pool house</strong>,{' '}
                 <strong className="text-primary font-semibold">abri de jardin</strong>, abords de bassin et cuisine
-                d'été — puis nous fabriquons et nous posons, dans toute la{' '}
+                d'été, puis nous fabriquons et nous posons, dans toute la{' '}
                 <strong className="text-primary font-semibold">Gironde</strong>.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
                 chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>{' '}
-                —{' '}
+                :{' '}
                 <a
                   href="/#methode"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -341,8 +341,8 @@ export default function AmenagementExterieurPage() {
                 </p>
                 <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                   Nous le livrons <strong className="text-primary font-semibold">hors d'eau, hors d'air</strong> :
-                  fondations, ossature, couverture, bardage et menuiseries extérieures posées. Le second œuvre —
-                  cloisons, électricité, plomberie, revêtements — n'est pas compris, et nous vous le disons avant
+                  fondations, ossature, couverture, bardage et menuiseries extérieures posées. Le second œuvre
+                  (cloisons, électricité, plomberie, revêtements) n'est pas compris, et nous vous le disons avant
                   de signer.
                 </p>
                 <a
@@ -369,8 +369,8 @@ export default function AmenagementExterieurPage() {
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-primary-container">
                   Le bassin relève du métier de pisciniste, et nous n'allons pas prétendre le contraire. En revanche,
-                  ce qui fait qu'une piscine devient un lieu de vie — la plage qui l'entoure, la terrasse qui y
-                  mène, l'ombre qui la surplombe, le local qui la sert — c'est notre métier.
+                  ce qui fait qu'une piscine devient un lieu de vie (la plage qui l'entoure, la terrasse qui y
+                  mène, l'ombre qui la surplombe, le local qui la sert), c'est notre métier.
                 </p>
               </div>
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
@@ -777,7 +777,7 @@ export default function AmenagementExterieurPage() {
                   Nous livrons le pool house{' '}
                   <strong className="text-primary font-semibold">hors d'eau, hors d'air</strong> : fondations,
                   ossature, couverture, bardage, menuiseries extérieures posées et étanchéité à l'air traitée. Le
-                  second œuvre — cloisons, électricité, plomberie, revêtements — n'est pas compris, et nous le
+                  second œuvre (cloisons, électricité, plomberie, revêtements) n'est pas compris, et nous le
                   disons avant de signer plutôt qu'à la réception.
                 </p>
               </details>

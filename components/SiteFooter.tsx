@@ -95,7 +95,7 @@ export default function SiteFooter() {
 
       <div className="max-w-container-max mx-auto px-6 md:px-16 mt-10 pt-8 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-on-surface-variant font-body-md text-body-md text-sm">
-          © {ANNEE} L'Esprit Bois — Créateur d'espaces extérieurs en Gironde.
+          © {ANNEE} L'Esprit Bois, créateur d'espaces extérieurs en Gironde.
         </p>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
           <a className="text-on-surface-variant hover:text-secondary-dark transition-colors" href="/mentions-legales">

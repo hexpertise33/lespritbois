@@ -33,16 +33,16 @@ export default function MentionsLegalesPage() {
             <div>
               <h2 className="font-headline-sm text-headline-sm text-primary mb-3">Éditeur du site</h2>
               <p>
-                <strong className="text-on-surface">{SITE.nom}</strong> — marque commerciale de la société{' '}
+                <strong className="text-on-surface">{SITE.nom}</strong>, marque commerciale de la société{' '}
                 <strong className="text-on-surface">AD FRANCE</strong>, SAS au capital de 1&nbsp;000&nbsp;€.
                 <br />
                 Siège social : {CONTACT.adresseComplete}.
                 <br />
-                SIRET : 980&nbsp;264&nbsp;584&nbsp;00015 — RCS Libourne 980&nbsp;264&nbsp;584.
+                SIRET : 980&nbsp;264&nbsp;584&nbsp;00015 · RCS Libourne 980&nbsp;264&nbsp;584.
                 <br />
                 N° TVA intracommunautaire : FR&nbsp;47&nbsp;980&nbsp;264&nbsp;584.
                 <br />
-                Téléphone : {CONTACT.telAffiche} — Email :{' '}
+                Téléphone : {CONTACT.telAffiche} · Email :{' '}
                 <a className="text-secondary-dark hover:underline" href={`mailto:${CONTACT.email}`}>
                   {CONTACT.email}
                 </a>
@@ -58,7 +58,7 @@ export default function MentionsLegalesPage() {
             <div>
               <h2 className="font-headline-sm text-headline-sm text-primary mb-3">Hébergement</h2>
               <p>
-                Site hébergé par Cloudflare, Inc. — 101 Townsend Street, San Francisco, CA 94107, États-Unis.
+                Site hébergé par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis.
                 <br />
                 <a
                   className="text-secondary-dark hover:underline"

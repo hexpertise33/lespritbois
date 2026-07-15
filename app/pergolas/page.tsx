@@ -150,7 +150,7 @@ const jsonld = [
         name: "Faut-il une autorisation d'urbanisme pour une pergola ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Le plus souvent oui. Une pergola qui crée de l'emprise au sol relève d'une déclaration préalable de travaux, voire d'un permis de construire selon la surface. En secteur protégé — abords d'un monument historique, site classé — une autorisation est requise même pour de petites surfaces. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces et montons le dossier.",
+          text: "Le plus souvent oui. Une pergola qui crée de l'emprise au sol relève d'une déclaration préalable de travaux, voire d'un permis de construire selon la surface. En secteur protégé (abords d'un monument historique, site classé), une autorisation est requise même pour de petites surfaces. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces et montons le dossier.",
         },
       },
       {
@@ -158,7 +158,7 @@ const jsonld = [
         name: "Jusqu'à quelle taille peut-on aller ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'La pergola est fabriquée sur mesure, aux dimensions de votre terrasse. Au-delà d\'une certaine largeur, un poteau intermédiaire devient nécessaire — ce qui change l\'implantation et parfois l\'usage de l\'espace. Nous relevons votre terrasse, puis nous vous disons ce qui est possible et à quel endroit poser les poteaux.',
+          text: 'La pergola est fabriquée sur mesure, aux dimensions de votre terrasse. Au-delà d\'une certaine largeur, un poteau intermédiaire devient nécessaire, ce qui change l\'implantation et parfois l\'usage de l\'espace. Nous relevons votre terrasse, puis nous vous disons ce qui est possible et à quel endroit poser les poteaux.',
         },
       },
       {
@@ -277,7 +277,7 @@ export default function PergolasPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Chaque projet part de l'orientation de votre terrasse, du trajet du soleil et des vents dominants.
-                Nous dessinons, nous posons —{' '}
+                Nous dessinons, nous posons,{' '}
                 <a
                   href="/#methode"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -483,7 +483,7 @@ export default function PergolasPage() {
               </span>
               <h2 className="font-headline-md text-headline-md mt-4 mb-6">Pergola bois ou pergola aluminium ?</h2>
               <p className="font-body-lg text-body-lg text-on-primary-container">
-                Il n'y a pas de bonne réponse dans l'absolu — il y a une bonne réponse pour votre maison, votre
+                Il n'y a pas de bonne réponse dans l'absolu, il y a une bonne réponse pour votre maison, votre
                 terrasse et l'usage que vous en ferez.
               </p>
             </div>
@@ -832,7 +832,7 @@ export default function PergolasPage() {
                   Le plus souvent oui. Une pergola qui crée de l'emprise au sol relève d'une{' '}
                   <strong className="text-primary font-semibold">déclaration préalable de travaux</strong>, voire d'un{' '}
                   <strong className="text-primary font-semibold">permis de construire</strong> selon la surface. En
-                  secteur protégé — abords d'un monument historique, site classé — une autorisation est requise même
+                  secteur protégé (abords d'un monument historique, site classé), une autorisation est requise même
                   pour de petites surfaces. Les seuils dépendent du PLU de votre commune et évoluent : nous les
                   vérifions sur pièces et montons le dossier.
                 </p>
@@ -849,7 +849,7 @@ export default function PergolasPage() {
                 </summary>
                 <p className="text-on-surface-variant text-body-md mt-4">
                   La pergola est fabriquée sur mesure, aux dimensions de votre terrasse. Au-delà d'une certaine
-                  largeur, un poteau intermédiaire devient nécessaire — ce qui change l'implantation et parfois
+                  largeur, un poteau intermédiaire devient nécessaire, ce qui change l'implantation et parfois
                   l'usage de l'espace. Nous relevons votre terrasse, puis nous vous disons ce qui est possible et à
                   quel endroit poser les poteaux.
                 </p>

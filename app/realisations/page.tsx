@@ -66,62 +66,62 @@ const jsonld = [
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Carport aluminium contemporain — Gironde',
+          name: 'Carport aluminium contemporain, Gironde',
         },
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Carport bois adossé — Libourne',
+          name: 'Carport bois adossé, Libourne',
         },
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Pergola bioclimatique — Libourne',
+          name: 'Pergola bioclimatique, Libourne',
         },
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Pergola bois massif — Gironde',
+          name: 'Pergola bois massif, Gironde',
         },
         {
           '@type': 'ListItem',
           position: 5,
-          name: 'Extension bardée bois sur maison en pierre — Gironde',
+          name: 'Extension bardée bois sur maison en pierre, Gironde',
         },
         {
           '@type': 'ListItem',
           position: 6,
-          name: 'Surélévation à ossature bois — Gironde',
+          name: 'Surélévation à ossature bois, Gironde',
         },
         {
           '@type': 'ListItem',
           position: 7,
-          name: 'Extension vitrée sur jardin — Libournais',
+          name: 'Extension vitrée sur jardin, Libournais',
         },
         {
           '@type': 'ListItem',
           position: 8,
-          name: 'Pool house et terrasse bois — Libourne',
+          name: 'Pool house et terrasse bois, Libourne',
         },
         {
           '@type': 'ListItem',
           position: 9,
-          name: 'Pool house aluminium — Libourne',
+          name: 'Pool house aluminium, Libourne',
         },
         {
           '@type': 'ListItem',
           position: 10,
-          name: 'Maison en A sur mesure — Les Billaux',
+          name: 'Maison en A sur mesure, Les Billaux',
         },
         {
           '@type': 'ListItem',
           position: 11,
-          name: 'Extension bardée bois et baie vitrée — Gironde',
+          name: 'Extension bardée bois et baie vitrée, Gironde',
         },
         {
           '@type': 'ListItem',
           position: 12,
-          name: 'Bardage red cedar en claire-voie — Gironde',
+          name: 'Bardage red cedar en claire-voie, Gironde',
         },
       ],
     },
@@ -215,7 +215,7 @@ export default function RealisationsPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un carport à <strong className="text-primary font-semibold">Libourne</strong>, un pool house adossé
                 à un bassin, une maison en A aux Billaux, une extension bardée bois sur une maison en pierre : aucun
-                de ces projets ne ressemble au précédent. Ce qui se répète, c'est la méthode — le relevé avant le
+                de ces projets ne ressemble au précédent. Ce qui se répète, c'est la méthode : le relevé avant le
                 dessin, la fabrication en atelier, la pose par nos équipes.
               </p>
             </div>

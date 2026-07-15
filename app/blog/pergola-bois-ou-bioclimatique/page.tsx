@@ -321,7 +321,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                 Pergola bois, pergola bioclimatique : quelle différence de fond ?
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Les deux ouvrages remplissent la même mission — créer un espace ombragé prolongeant la maison — mais avec
+                Les deux ouvrages remplissent la même mission (créer un espace ombragé prolongeant la maison) mais avec
                 deux philosophies opposées. La <strong className="text-primary font-semibold">pergola en bois</strong>{' '}
                 est une structure massive et fixe : des poteaux et une charpente en{' '}
                 <strong className="text-primary font-semibold">douglas, mélèze ou chêne</strong>, coiffés d&apos;une
@@ -396,7 +396,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                 Chez L&apos;Esprit Bois, notre cœur de métier, c&apos;est la{' '}
                 <strong className="text-primary font-semibold">pergola bois sur mesure</strong> : nous la concevons,
                 l&apos;approvisionnons et la posons pour qu&apos;elle dure sous le climat girondin. Nous vous dirons
-                toujours honnêtement quand une bioclimatique servirait mieux votre usage — c&apos;est ce qui construit
+                toujours honnêtement quand une bioclimatique servirait mieux votre usage, c&apos;est ce qui construit
                 la confiance.
               </p>
             </section>
@@ -448,8 +448,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La bioclimatique gagne dès que le mot d&apos;ordre est{' '}
                 <strong className="text-primary font-semibold">confort piloté</strong>. Ses lames orientables règlent en
-                quelques secondes l&apos;ombre, la lumière et la ventilation, et se ferment pour protéger de l&apos;averse
-                — un vrai atout sous notre climat océanique où la pluie s&apos;invite sans prévenir.
+                quelques secondes l&apos;ombre, la lumière et la ventilation, et se ferment pour protéger de l&apos;averse,
+                un vrai atout sous notre climat océanique où la pluie s&apos;invite sans prévenir.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Elle brille aussi sur une{' '}
@@ -553,7 +553,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Ces repères sont des ordres de grandeur de marché : le juste prix de <em>votre</em> pergola dépend de sa
                 taille, de son équipement et de son implantation. Nous établissons un devis détaillé après avoir relevé
-                les contraintes sur place —{' '}
+                les contraintes sur place,{' '}
                 <strong className="text-primary font-semibold">c&apos;est la seule manière de chiffrer honnêtement.</strong>
               </p>
             </section>
@@ -578,7 +578,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 En résumé : le bois se nourrit, l&apos;aluminium se surveille. Deux entretiens de nature différente, mais
-                aucun des deux n&apos;est contraignant si l&apos;ouvrage a été bien conçu et bien posé au départ — ce qui
+                aucun des deux n&apos;est contraignant si l&apos;ouvrage a été bien conçu et bien posé au départ, ce qui
                 nous ramène toujours à la qualité de la pose, comme pour une{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>terrasse en bois</a>.
               </p>
@@ -627,7 +627,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Il n&apos;y a pas de « meilleure pergola » universelle : il y a celle qui correspond à votre maison, à
               votre usage et à votre budget. Le bois pour la chaleur et l&apos;intégration, la bioclimatique pour le
-              confort modulable — et parfois un mariage des deux. C&apos;est le diagnostic que nous menons chez
+              confort modulable, et parfois un mariage des deux. C&apos;est le diagnostic que nous menons chez
               L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute la Gironde.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

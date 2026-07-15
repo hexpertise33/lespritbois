@@ -122,13 +122,13 @@ const jsonld = [
 ];
 
 const essences = [
-  ['Pin autoclave', 'Résineux traité (classe 4)', '10–15 ans et +', 'Clair, grise vite', 'Économique (~120–150 €/m²)'],
-  ['Douglas', 'Résineux local', '15–20 ans avec entretien', 'Brun rosé, chaleureux', '~95–140 €/m²'],
-  ['Mélèze', 'Résineux local dense', '~20 ans', 'Brun clair, nerveux', '~120–170 €/m²'],
+  ['Pin autoclave', 'Résineux traité (classe 4)', '10 à 15 ans et +', 'Clair, grise vite', 'Économique (~120 à 150 €/m²)'],
+  ['Douglas', 'Résineux local', '15 à 20 ans avec entretien', 'Brun rosé, chaleureux', '~95 à 140 €/m²'],
+  ['Mélèze', 'Résineux local dense', '~20 ans', 'Brun clair, nerveux', '~120 à 170 €/m²'],
   ['Red cedar', 'Résineux nord-américain', '~15 ans', 'Léger, grise en argent', 'Moyen-haut'],
   ['Chêne', 'Feuillu européen', '20 ans et +', 'Brun doré, noble', 'Haut de gamme, sur devis'],
   ['Robinier', 'Feuillu européen très durable', '40 ans et +', 'Jaune-brun', 'Haut de gamme, sur devis'],
-  ['Ipé / cumaru', 'Bois exotique dense', '25–50 ans', 'Brun rouge profond', '~200–280 €/m²'],
+  ['Ipé / cumaru', 'Bois exotique dense', '25 à 50 ans', 'Brun rouge profond', '~200 à 280 €/m²'],
 ];
 
 const faq = [

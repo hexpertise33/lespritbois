@@ -139,7 +139,7 @@ const jsonld = [
 ];
 
 const seuils = [
-  ['Jusqu’à 5 m²', 'Aucune formalité', '—', 'Vérifier tout de même le règlement de lotissement ou un secteur protégé'],
+  ['Jusqu’à 5 m²', 'Aucune formalité', 'Aucun', 'Vérifier tout de même le règlement de lotissement ou un secteur protégé'],
   ['De 5 à 20 m²', 'Déclaration préalable (CERFA 16702)', '1 mois', '2 mois si secteur protégé (avis ABF)'],
   ['Au-delà de 20 m²', 'Permis de construire', '2 à 3 mois', 'Toujours nécessaire, quelle que soit la zone'],
   ['Extension en zone U (PLU), jusqu’à 40 m²', 'Déclaration préalable', '1 mois', 'La mairie doit qualifier l’ouvrage d’extension'],
@@ -273,7 +273,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
               <strong className="text-primary font-semibold">
                 En 2026, c&apos;est l&apos;emprise au sol de votre abri de jardin, carport ou pergola qui déclenche la
                 formalité : aucune démarche jusqu&apos;à 5 m², une déclaration préalable (nouveau formulaire CERFA
-                n°16702) entre 5 et 20 m², et un permis de construire au-delà — avec un seuil relevé à 40 m² si la
+                n°16702) entre 5 et 20 m², et un permis de construire au-delà, avec un seuil relevé à 40 m² si la
                 mairie considère l&apos;ouvrage comme une extension de votre maison en zone U.
               </strong>{' '}
               Autour de Libourne et jusqu&apos;à Saint-Émilion, ces règles se combinent avec le PLU de chaque
@@ -374,8 +374,8 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 </table>
               </div>
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-6">
-                Ces seuils s&apos;appliquent quel que soit l&apos;ouvrage — abri de jardin, carport ou pergola
-                couverte — dès lors que c&apos;est une <strong className="text-primary font-semibold">construction
+                Ces seuils s&apos;appliquent quel que soit l&apos;ouvrage (abri de jardin, carport ou pergola
+                couverte) dès lors que c&apos;est une <strong className="text-primary font-semibold">construction
                 nouvelle</strong>, distincte de la maison. La situation change dès que le projet se rattache au bâti
                 existant : c&apos;est l&apos;objet du seuil suivant.
               </p>
@@ -391,8 +391,8 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 <strong className="text-primary font-semibold">zone U d&apos;une commune couverte par un PLU</strong>{' '}
                 (le cas de la plupart des communes urbaines et périurbaines autour de Libourne) et que la mairie
                 considère votre projet comme une{' '}
-                <strong className="text-primary font-semibold">extension du bâti existant</strong> — un carport
-                adossé, une pergola accolée à la maison, un abri dans le prolongement direct de l&apos;habitation —
+                <strong className="text-primary font-semibold">extension du bâti existant</strong> (un carport
+                adossé, une pergola accolée à la maison, un abri dans le prolongement direct de l&apos;habitation),
                 le seuil de déclaration préalable est relevé : il passe de 20 à{' '}
                 <strong className="text-primary font-semibold">40 m² d&apos;emprise au sol</strong>. Au-delà, un
                 permis de construire reste nécessaire.

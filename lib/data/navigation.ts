@@ -22,7 +22,7 @@ export const CONTACT = {
   ville: 'Les Billaux',
   region: 'Gironde',
   adresseComplete: '1 Aux Pradasses, 33500 Les Billaux',
-  horaires: 'Lun – Ven · 8h – 17h',
+  horaires: 'Lun à Ven · 8h à 17h',
 } as const;
 
 /** Réseaux sociaux officiels. Servent au footer ET au `sameAs` de schema.org,

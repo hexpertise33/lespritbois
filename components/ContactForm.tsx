@@ -80,8 +80,8 @@ export default function ContactForm() {
           >
             <option>Je ne sais pas encore</option>
             <option>&lt; 5 000 €</option>
-            <option>5 000 € – 15 000 €</option>
-            <option>15 000 € – 50 000 €</option>
+            <option>5 000 € à 15 000 €</option>
+            <option>15 000 € à 50 000 €</option>
             <option>+ 50 000 €</option>
           </select>
         </div>

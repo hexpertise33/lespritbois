@@ -165,7 +165,7 @@ const jsonld = [
         name: 'Intervenez-vous en dehors de Libourne ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Oui. Basés aux Billaux, nous intervenons dans tout le Libournais — Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne — et plus largement en Gironde, jusqu\'à la métropole bordelaise.',
+          text: 'Oui. Basés aux Billaux, nous intervenons dans tout le Libournais (Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne) et plus largement en Gironde, jusqu\'à la métropole bordelaise.',
         },
       },
     ],
@@ -259,7 +259,7 @@ export default function CarportsPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 <strong className="text-primary font-semibold">
                   Un carport bois ou aluminium protège votre véhicule de la pluie, du gel et des UV sans les
-                  contraintes de fondation d'un garage — toiture plate, bac acier, tuile ou carport solaire, sur
+                  contraintes de fondation d'un garage : toiture plate, bac acier, tuile ou carport solaire, sur
                   mesure à Libourne et en Gironde.
                 </strong>{' '}
                 Sans l'enfermement d'un garage, bien dessiné, il ne s'ajoute pas à la maison : il la prolonge.
@@ -273,7 +273,7 @@ export default function CarportsPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Chaque projet part du terrain : orientation, pente, accès, style de la façade, règles du PLU de votre
-                commune. Nous dessinons, nous fabriquons, nous posons —{' '}
+                commune. Nous dessinons, nous fabriquons, nous posons,{' '}
                 <a
                   href="/#methode"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -367,7 +367,7 @@ export default function CarportsPage() {
                 <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">home</span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Toiture tuile</h4>
                 <p className="text-on-surface-variant text-body-md mb-4">
-                  La continuité parfaite avec la couverture de la maison — souvent la seule solution acceptée près
+                  La continuité parfaite avec la couverture de la maison, souvent la seule solution acceptée près
                   d'un site classé. Plus lourde, elle demande une charpente dimensionnée en conséquence.
                 </p>
                 <p className="text-on-surface-variant text-body-md italic">
@@ -500,7 +500,7 @@ export default function CarportsPage() {
                 </h3>
                 <p className="text-on-primary-container text-body-md">
                   Chez notre partenaire, c'est la <strong className="text-white font-semibold">toiture elle-même</strong>{' '}
-                  qui assure l'étanchéité — jamais le photovoltaïque. Une fuite ne viendra donc pas de vos panneaux.
+                  qui assure l'étanchéité, jamais le photovoltaïque. Une fuite ne viendra donc pas de vos panneaux.
                 </p>
               </div>
               <div className="border-t-2 border-secondary pt-6">
@@ -510,7 +510,7 @@ export default function CarportsPage() {
                 </h3>
                 <p className="text-on-primary-container text-body-md">
                   Conséquence directe : vous choisissez librement combien de panneaux installer. Les modules
-                  photovoltaïques ne sont pas fournis avec la structure — vous dimensionnez la production avec votre
+                  photovoltaïques ne sont pas fournis avec la structure : vous dimensionnez la production avec votre
                   installateur électricien.
                 </p>
               </div>
@@ -824,8 +824,8 @@ export default function CarportsPage() {
                   </span>
                 </summary>
                 <p className="text-on-surface-variant text-body-md mt-4">
-                  Oui. Basés aux Billaux, nous couvrons tout le Libournais — Saint-Émilion, Coutras, Fronsac, Vayres,
-                  Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne — et plus largement la Gironde,
+                  Oui. Basés aux Billaux, nous couvrons tout le Libournais (Saint-Émilion, Coutras, Fronsac, Vayres,
+                  Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne) et plus largement la Gironde,
                   jusqu'à la métropole bordelaise.
                 </p>
               </details>

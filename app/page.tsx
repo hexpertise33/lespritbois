@@ -293,7 +293,7 @@ export default function HomePage() {
                 <div className="p-8 flex flex-col flex-1">
                   <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Carports</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
-                    L'élégance durable pour votre véhicule. Toiture plate, bac acier ou tuile — et jusqu'au carport
+                    L'élégance durable pour votre véhicule. Toiture plate, bac acier ou tuile, et jusqu'au carport
                     solaire.
                   </p>
                   <a
@@ -415,7 +415,7 @@ export default function HomePage() {
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-primary-container mb-12">
                   Nous ne sommes pas de simples revendeurs. Nous concevons, fabriquons et posons nous-mêmes nos
-                  ouvrages — c'est la seule façon de répondre de ce qu'on pose.
+                  ouvrages : c'est la seule façon de répondre de ce qu'on pose.
                 </p>
                 <div className="space-y-8">
                   <div className="flex gap-6 group">
@@ -506,8 +506,8 @@ export default function HomePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Installés au <strong className="text-primary font-semibold">1 Aux Pradasses, aux Billaux</strong>, à
                 cinq minutes de <strong className="text-primary font-semibold">Libourne</strong>, nous ne sommes pas
-                des revendeurs. Nous concevons, nous fabriquons, nous posons — et nous répondons de ce que nous
-                posons. Chaque essence — douglas, mélèze, red cedar, chêne — est choisie pour sa durabilité naturelle
+                des revendeurs. Nous concevons, nous fabriquons, nous posons, et nous répondons de ce que nous
+                posons. Chaque essence (douglas, mélèze, red cedar, chêne) est choisie pour sa durabilité naturelle
                 et sa beauté.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
@@ -678,7 +678,10 @@ export default function HomePage() {
                 </div>
                 <div className="mt-12 p-6 bg-white/5 rounded-xl border-l-2 border-secondary italic text-on-primary-container text-sm">
                   « Une équipe qui ne se contente pas de construire : elle conçoit un lieu de vie. Un seul
-                  interlocuteur, du premier croquis à la dernière lame. » — Client, Libourne
+                  interlocuteur, du premier croquis à la dernière lame. »
+                  <span className="block mt-3 not-italic text-xs tracking-wide text-secondary-fixed">
+                    Client, Libourne
+                  </span>
                 </div>
               </div>
               <div className="lg:w-3/5 p-12">

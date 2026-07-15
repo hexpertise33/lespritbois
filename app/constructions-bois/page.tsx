@@ -131,7 +131,7 @@ const jsonld = [
         name: "Qu'est-ce qu'une maison à ossature bois ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Une construction dont la structure porteuse est faite de montants en bois, contreventés par des panneaux, et remplis d\'isolant. Les murs sont préfabriqués en atelier puis levés sur site. Le chantier est sec, rapide, et les murs sont fins à performance égale — ce qui laisse davantage de surface habitable pour une même emprise au sol.',
+          text: 'Une construction dont la structure porteuse est faite de montants en bois, contreventés par des panneaux, et remplis d\'isolant. Les murs sont préfabriqués en atelier puis levés sur site. Le chantier est sec, rapide, et les murs sont fins à performance égale, ce qui laisse davantage de surface habitable pour une même emprise au sol.',
         },
       },
       {
@@ -147,7 +147,7 @@ const jsonld = [
         name: "Jusqu'où va votre intervention ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Nous livrons votre construction hors d'eau, hors d'air : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Notre intervention s'arrête là. Nous ne réalisons pas le second œuvre — cloisons, électricité, plomberie, chauffage, revêtements et peinture — que vous confiez aux artisans de votre choix.",
+          text: "Nous livrons votre construction hors d'eau, hors d'air : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Notre intervention s'arrête là. Nous ne réalisons pas le second œuvre (cloisons, électricité, plomberie, chauffage, revêtements et peinture) que vous confiez aux artisans de votre choix.",
         },
       },
       {
@@ -187,7 +187,7 @@ const jsonld = [
         name: 'Mon extension est-elle soumise à la RE2020 ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Cela dépend de la surface créée : plus l'extension est grande, plus les exigences se renforcent, jusqu'à l'application complète de la RE2020. Deux principes sont constants : la réglementation ne vise que la partie nouvelle, et les extensions successives d'une même maison se cumulent. Les seuils exacts évoluent — nous vérifions ceux en vigueur pour votre projet et vous les expliquons au rendez-vous.",
+          text: "Cela dépend de la surface créée : plus l'extension est grande, plus les exigences se renforcent, jusqu'à l'application complète de la RE2020. Deux principes sont constants : la réglementation ne vise que la partie nouvelle, et les extensions successives d'une même maison se cumulent. Les seuils exacts évoluent. Nous vérifions ceux en vigueur pour votre projet et vous les expliquons au rendez-vous.",
         },
       },
       {
@@ -237,7 +237,7 @@ export default function ConstructionsBoisPage() {
               Construction bois et extension à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-              Maison à ossature bois, maison en A, extension, surélévation, pool house ou dépendance — bâtis sur
+              Maison à ossature bois, maison en A, extension, surélévation, pool house ou dépendance, bâtis sur
               mesure et livrés <strong className="text-white font-semibold">hors d'eau, hors d'air</strong>.
             </p>
           </div>
@@ -288,12 +288,12 @@ export default function ConstructionsBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 <strong className="text-primary font-semibold">
-                  Pour agrandir ou construire en bois — extension, surélévation, maison en A ou pool house —, une
+                  Pour agrandir ou construire en bois (extension, surélévation, maison en A ou pool house), une
                   ossature bois livrée hors d'eau hors d'air permet un chantier sec et rapide, avec le second œuvre
                   confié aux artisans de votre choix.
                 </strong>{' '}
                 Le bois est le seul matériau de structure qui pousse. Il construit vite et sec, il stocke du carbone
-                pendant toute la vie du bâtiment, et il pardonne mal l'improvisation — ce qui convient parfaitement
+                pendant toute la vie du bâtiment, et il pardonne mal l'improvisation, ce qui convient parfaitement
                 à des charpentiers.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
@@ -302,13 +302,13 @@ export default function ConstructionsBoisPage() {
                 <strong className="text-primary font-semibold">maisons à ossature bois</strong>,{' '}
                 <strong className="text-primary font-semibold">maisons en A</strong>,{' '}
                 <strong className="text-primary font-semibold">pool houses</strong> en bois ou en aluminium, abris et
-                dépendances. Nous concevons, nous fabriquons, nous posons nous-mêmes la structure — sans
+                dépendances. Nous concevons, nous fabriquons, nous posons nous-mêmes la structure, sans
                 sous-traitance.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
                 chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>,
-                et nous montons pour vous le dossier d'urbanisme —{' '}
+                et nous montons pour vous le dossier d'urbanisme,{' '}
                 <a
                   href="/#methode"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -331,7 +331,7 @@ export default function ConstructionsBoisPage() {
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">Ce que nous construisons</h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 De la dépendance de jardin à la maison d'habitation, en neuf comme en greffe sur l'existant : la
-                même ossature et la même exigence — seule l'échelle change.
+                même ossature et la même exigence, seule l'échelle change.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -374,8 +374,8 @@ export default function ConstructionsBoisPage() {
                 <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">add_home</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Extension</h3>
                 <p className="text-on-surface-variant text-body-md">
-                  Agrandir sans déménager. L'ossature bois se greffe sur l'existant, en chantier sec et rapide —
-                  encore faut-il réussir la jonction.
+                  Agrandir sans déménager. L'ossature bois se greffe sur l'existant, en chantier sec et rapide.
+                  Encore faut-il réussir la jonction.
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
@@ -477,7 +477,7 @@ export default function ConstructionsBoisPage() {
                 mur, peinture. Ces lots sont confiés aux artisans de votre choix.
               </p>
               <p className="text-on-primary-container text-body-md">
-                C'est un choix, pas une lacune. Nous préférons exceller sur la coquille — celle qui tient cinquante
+                C'est un choix, pas une lacune. Nous préférons exceller sur la coquille : celle qui tient cinquante
                 ans et qu'on ne reprend pas.
               </p>
             </div>
@@ -496,7 +496,7 @@ export default function ConstructionsBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Une extension, ce n'est pas une petite maison posée à côté d'une grande. C'est une{' '}
-                <strong className="text-primary font-semibold">jonction</strong> — et une jonction, ça se rate en
+                <strong className="text-primary font-semibold">jonction</strong>, et une jonction, ça se rate en
                 six endroits. Voici comment nous les traitons.
               </p>
             </div>
@@ -530,7 +530,7 @@ export default function ConstructionsBoisPage() {
                 <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">layers</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">La continuité de l'isolant</h3>
                 <p className="text-on-surface-variant text-body-md">
-                  Une isolation interrompue à la jonction crée un pont thermique — et de la condensation. L'isolant
+                  Une isolation interrompue à la jonction crée un pont thermique, et de la condensation. L'isolant
                   et le frein-vapeur sont raccordés en continu jusqu'au mur existant.
                 </p>
               </article>
@@ -577,7 +577,7 @@ export default function ConstructionsBoisPage() {
                   Un matériau de structure qui pousse
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                  On choisit souvent le bois pour de mauvaises raisons — parce que c'est joli — et on le garde pour
+                  On choisit souvent le bois pour de mauvaises raisons (parce que c'est joli) et on le garde pour
                   de bonnes. Il est léger, donc il autorise des fondations plus légères. Il se travaille sec, donc le
                   chantier ne sèche pas pendant des mois. Il se préfabrique, donc la précision se joue en atelier, à
                   l'abri.
@@ -645,7 +645,7 @@ export default function ConstructionsBoisPage() {
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Terrain &amp; faisabilité</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Orientation, accès, nature du sol, règlement d'urbanisme. Ce que le terrain permet décide de ce
-                  qu'on dessine — jamais l'inverse.
+                  qu'on dessine, jamais l'inverse.
                 </p>
               </div>
               <div className="border-t-2 border-surface-variant pt-6">
@@ -694,7 +694,7 @@ export default function ConstructionsBoisPage() {
                 projet, la partie nouvelle peut relever de la <strong className="text-primary font-semibold">RE2020</strong>.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Ces seuils dépendent du PLU de votre commune, de la zone où se trouve votre maison, de l'existant —
+                Ces seuils dépendent du PLU de votre commune, de la zone où se trouve votre maison, de l'existant,
                 et ils évoluent. Nous les vérifions au cas par cas, avant tout dessin, et nous vous les expliquons
                 de vive voix lors du rendez-vous. Un tableau générique n'aurait aucune valeur pour votre situation.
               </p>
@@ -906,7 +906,7 @@ export default function ConstructionsBoisPage() {
                   Une construction dont la structure porteuse est faite de{' '}
                   <strong className="text-primary font-semibold">montants en bois</strong>, contreventés par des
                   panneaux, et remplis d'isolant. Les murs sont préfabriqués en atelier puis levés sur site. Le
-                  chantier est sec, rapide, et les murs sont fins à performance égale — ce qui laisse davantage de
+                  chantier est sec, rapide, et les murs sont fins à performance égale, ce qui laisse davantage de
                   surface habitable pour une même emprise au sol.
                 </p>
               </details>
@@ -942,8 +942,8 @@ export default function ConstructionsBoisPage() {
                   <strong className="text-primary font-semibold">hors d'eau, hors d'air</strong> : fondations,
                   ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à
                   l'air. <strong className="text-primary font-semibold">Notre intervention s'arrête là.</strong>{' '}
-                  Nous ne réalisons pas le second œuvre — cloisons, électricité, plomberie, chauffage, revêtements
-                  et peinture — que vous confiez aux artisans de votre choix.
+                  Nous ne réalisons pas le second œuvre (cloisons, électricité, plomberie, chauffage, revêtements
+                  et peinture) que vous confiez aux artisans de votre choix.
                 </p>
               </details>
 
@@ -1032,7 +1032,7 @@ export default function ConstructionsBoisPage() {
                   jusqu'à l'application complète de la <strong className="text-primary font-semibold">RE2020</strong>.
                   Deux principes sont constants : la réglementation ne vise que la{' '}
                   <strong className="text-primary font-semibold">partie nouvelle</strong>, et les extensions
-                  successives d'une même maison se cumulent. Les seuils exacts évoluent — nous vérifions ceux en
+                  successives d'une même maison se cumulent. Les seuils exacts évoluent. Nous vérifions ceux en
                   vigueur pour votre projet et vous les expliquons au rendez-vous.
                 </p>
               </details>

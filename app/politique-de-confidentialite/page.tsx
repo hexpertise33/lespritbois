@@ -40,9 +40,9 @@ export default function PolitiqueConfidentialitePage() {
             <div>
               <h2 className="font-headline-sm text-headline-sm text-primary mb-3">Responsable du traitement</h2>
               <p>
-                {SITE.nom} — {CONTACT.adresseComplete}.
+                {SITE.nom}, {CONTACT.adresseComplete}.
                 <br />
-                Contact : {CONTACT.telAffiche} —{' '}
+                Contact : {CONTACT.telAffiche} ·{' '}
                 <a className="text-secondary-dark hover:underline" href={`mailto:${CONTACT.email}`}>
                   {CONTACT.email}
                 </a>

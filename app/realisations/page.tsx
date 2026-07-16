@@ -128,6 +128,68 @@ const jsonld = [
   },
 ];
 
+/** Chantier 2026 : pergola aluminium adossée (toiture polycarbonate, stores ZIP)
+ *  et terrasse bois. Les huit photos viennent du même projet ; `cat` doit rester
+ *  aligné sur les `data-filtre` des boutons au-dessus de la grille. */
+const PERGOLA_ALU = [
+  {
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Pergola aluminium adossée',
+    alt: "Pergola aluminium anthracite adossée à une maison, vue en enfilade sur la terrasse bois, réalisée par L'Esprit Bois",
+  },
+  {
+    src: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Pergola avec stores ZIP',
+    alt: 'Vue sous une pergola aluminium avec store ZIP descendu, terrasse bois et mobilier de jardin',
+  },
+  {
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Pergola et terrasse bois',
+    alt: 'Pergola aluminium anthracite fermée par des stores, posée sur une terrasse bois en Gironde',
+  },
+  {
+    src: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-4.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Toiture polycarbonate',
+    alt: 'Pergola aluminium à toiture polycarbonate translucide au-dessus d’une terrasse bois',
+  },
+  {
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-5.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Pergola sur terrasse bois',
+    alt: 'Pergola aluminium et terrasse bois sur plots vues depuis le jardin',
+  },
+  {
+    src: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-6.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Structure et couverture',
+    alt: 'Détail de la couverture polycarbonate d’une pergola aluminium adossée à la façade',
+  },
+  {
+    src: '/images/realisations/terrasse-bois-pergola-aluminium-libourne-7.webp',
+    cat: 'terrasses',
+    categorie: 'Terrasses',
+    titre: 'Terrasse bois sous pergola',
+    alt: 'Terrasse en lames de bois posée sous une pergola aluminium, ouverte sur le jardin',
+  },
+  {
+    src: '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp',
+    cat: 'pergolas',
+    categorie: 'Pergolas',
+    titre: 'Salon sous pergola',
+    alt: 'Salon de jardin installé sous une pergola aluminium avec stores, sur terrasse bois',
+  },
+];
+
 export default function RealisationsPage() {
   return (
     <>
@@ -138,13 +200,13 @@ export default function RealisationsPage() {
         <header className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              width="768"
-              height="512"
+              width="1600"
+              height="900"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
-              src="/images/source-adefrance/construction-pool-house-bois-libourne.webp"
-              alt="Pool house et terrasse bois réalisés par L'Esprit Bois à Libourne"
+              src="/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp"
+              alt="Pergola aluminium adossée à toiture polycarbonate et terrasse bois réalisées par L'Esprit Bois en Gironde"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
@@ -285,10 +347,37 @@ export default function RealisationsPage() {
             </div>
 
             <p className="sr-only" aria-live="polite" id="compteur">
-              14 réalisations affichées
+              22 réalisations affichées
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" id="grille">
+              {PERGOLA_ALU.map((p) => (
+                <figure
+                  key={p.src}
+                  className="projet group relative overflow-hidden rounded-2xl aspect-[4/3]"
+                  data-cat={p.cat}
+                >
+                  <img
+                    width="768"
+                    height="512"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    src={p.src}
+                    alt={p.alt}
+                  />
+                  <figcaption className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                      <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-fixed">
+                        {p.categorie}
+                      </span>
+                      <p className="text-white font-headline-sm text-headline-sm text-[18px] mt-2">{p.titre}</p>
+                      <p className="text-white/70 text-sm">Gironde</p>
+                    </div>
+                  </figcaption>
+                </figure>
+              ))}
+
               <figure className="projet group relative overflow-hidden rounded-2xl aspect-[4/3]" data-cat="carports">
                 <img
                   width="768"

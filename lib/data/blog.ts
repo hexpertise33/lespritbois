@@ -14,6 +14,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'pool-house-bois-guide',
+    titre: 'Pool-house en bois : réglementation, usages et budget 2026',
+    extrait:
+      "Moins de 5 m² sans formalité, déclaration préalable jusqu'à 20 m², permis au-delà : le point sur la réglementation 2026 du pool-house. Usages réels, implantation par rapport au bassin, bois ou aluminium et budget honnête, pour un projet en Gironde.",
+    date: '2026-07-16',
+    categorie: 'Guide · Pool-house',
+    image: '/images/pool-house-bois-terrasse-piscine-libourne.webp',
+  },
+  {
     slug: 'autorisation-urbanisme-abri-carport-pergola-2026',
     titre: "Abri de jardin, carport, pergola : quelle autorisation d'urbanisme en 2026 ?",
     extrait:

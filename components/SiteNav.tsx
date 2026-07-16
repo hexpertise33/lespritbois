@@ -32,7 +32,7 @@ export default function SiteNav({ page = '' }: { page?: string }) {
 
   // Repasser en desktop avec le menu ouvert laisserait un panneau fantôme.
   useEffect(() => {
-    const mq = window.matchMedia('(min-width: 1280px)');
+    const mq = window.matchMedia('(min-width: 1024px)');
     const onChange = (e: MediaQueryListEvent) => {
       if (e.matches) setMenuOuvert(false);
     };
@@ -57,12 +57,12 @@ export default function SiteNav({ page = '' }: { page?: string }) {
       >
         <a href="/" className="flex items-center gap-3 shrink-0" aria-label="L'Esprit Bois, accueil">
           <img src="/logo-mark-nav.svg" alt="" aria-hidden="true" width="98" height="44" className="h-10 md:h-11 w-auto" />
-          <span className="wordmark text-[19px] whitespace-nowrap">
+          <span className="wordmark text-[19px] whitespace-nowrap lg:hidden xl:inline">
             <span className="text-primary">L'Esprit</span> <span className="text-secondary font-normal">Bois</span>
           </span>
         </a>
 
-        <div className="hidden xl:flex gap-4 items-center">
+        <div className="hidden lg:flex gap-3 xl:gap-4 items-center">
           {ONGLETS.map((o) =>
             o.cle === page ? (
               <a key={o.cle} className={actif} href={o.url} aria-current="page" aria-label={o.titreLong}>
@@ -77,17 +77,17 @@ export default function SiteNav({ page = '' }: { page?: string }) {
         </div>
 
         <a
-          className="hidden xl:inline-flex bg-primary text-on-primary px-6 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95 shadow-lg whitespace-nowrap shrink-0"
+          className="hidden lg:inline-flex bg-primary text-on-primary px-5 xl:px-6 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95 shadow-lg whitespace-nowrap shrink-0"
           href="/#quote"
         >
-          Demander un devis gratuit
+          Devis gratuit
         </a>
 
         <button
           ref={boutonRef}
           id="menu-bouton"
           type="button"
-          className="xl:hidden text-primary"
+          className="lg:hidden text-primary"
           aria-label={menuOuvert ? 'Fermer le menu' : 'Ouvrir le menu'}
           aria-expanded={menuOuvert}
           aria-controls="menu-mobile"
@@ -99,8 +99,8 @@ export default function SiteNav({ page = '' }: { page?: string }) {
         </button>
       </div>
 
-      {/* Menu déroulant, en dessous de 1280 px */}
-      <div id="menu-mobile" className={`xl:hidden ${menuOuvert ? '' : 'hidden'} border-t border-surface-variant bg-surface`}>
+      {/* Menu déroulant, en dessous de 1024 px */}
+      <div id="menu-mobile" className={`lg:hidden ${menuOuvert ? '' : 'hidden'} border-t border-surface-variant bg-surface`}>
         <div className="max-w-container-max mx-auto px-6 md:px-16 py-6">
           <ul className="divide-y divide-surface-variant">
             {ONGLETS.map((o) => (

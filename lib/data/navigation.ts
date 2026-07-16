@@ -44,13 +44,14 @@ export type Onglet = {
 
 /** Onglets de la barre de navigation, dans l'ordre d'affichage.
  *
- *  Contrainte mesurée à 1280 px (seuil d'apparition des onglets) : la barre
- *  offre 1152 px utiles, dont 265 px pour le lockup (logo + wordmark) et 241 px
- *  pour le bouton devis. Il reste ~646 px pour les onglets, qui en occupent 619 :
- *  la marge n'est plus que de 27 px. Le libellé « Aménagement extérieur » fait
- *  177 px et poussait le bouton hors de la barre ; il est raccourci en
- *  « Aménagements » (114 px). Tout onglet ajouté ou rallongé ici déborde —
- *  revérifier à 1280 px avant d'y toucher.
+ *  Les onglets apparaissent à partir de 1024 px (`lg:` dans SiteNav) ; en dessous
+ *  ils passent dans le menu burger. Le cas le plus contraint est 1024 px, où la
+ *  barre offre 881 px utiles : le wordmark « L'Esprit Bois » y est masqué (logo
+ *  mark seul, 98 px) et le bouton devis est raccourci en « Devis gratuit »
+ *  (129 px), ce qui laisse 654 px aux onglets, qui en occupent 543. Marge : 111 px.
+ *  Le libellé « Aménagement extérieur » (177 px) est volontairement abrégé en
+ *  « Aménagements » (114 px). Tout onglet ajouté ou rallongé mange cette marge :
+ *  revérifier à 1024 px avant d'y toucher.
  */
 export const ONGLETS: Onglet[] = [
   { cle: 'carports', titre: 'Carports', url: '/carports' },

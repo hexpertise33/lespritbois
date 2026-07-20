@@ -23,6 +23,17 @@ push/deploy).
 
 Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
+## ⏭️ Prochain créneau : mardi 21/07/2026
+
+**Sujet retenu d'avance par l'utilisateur : `proteger-terrasse-bois-canicule-entretien-ete`**
+(proposé le 11/07, jamais rédigé). La veille du 21/07 ne doit **pas** le traiter
+comme un sujet déjà pourvu : elle le remet en proposition n°1, avec de la veille
+fraîche, et ne cherche qu'**une seule** proposition complémentaire.
+
+Sujet saisonnier : il perd sa valeur après l'été, à sortir tant qu'il fait chaud.
+Fiche d'origine : `docs/blog-pipeline/2026-07-11.md` (proposition 2), **dont le plan
+d'images est à refaire** — voir la correction en tête de cette fiche.
+
 ## Sujets
 
 Statuts : `idée` · `proposé` · `publié` · `écarté`.

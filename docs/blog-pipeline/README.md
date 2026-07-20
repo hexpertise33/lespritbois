@@ -25,14 +25,13 @@ Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
 ## ⏭️ Prochain créneau : mardi 21/07/2026
 
-**Sujet retenu d'avance par l'utilisateur : `proteger-terrasse-bois-canicule-entretien-ete`**
-(proposé le 11/07, jamais rédigé). La veille du 21/07 ne doit **pas** le traiter
-comme un sujet déjà pourvu : elle le remet en proposition n°1, avec de la veille
-fraîche, et ne cherche qu'**une seule** proposition complémentaire.
+Le sujet « canicule » qui était réservé pour ce créneau a finalement été **publié
+le 20/07**, en avance. Le créneau du 21/07 est donc **libre** : la veille
+automatique reprend son fonctionnement normal (2 propositions neuves).
 
-Sujet saisonnier : il perd sa valeur après l'été, à sortir tant qu'il fait chaud.
-Fiche d'origine : `docs/blog-pipeline/2026-07-11.md` (proposition 2), **dont le plan
-d'images est à refaire** — voir la correction en tête de cette fiche.
+Reste en réserve, non rédigé : `bardage-bois-re2020-tendances` (proposé le 16/07).
+Son accroche RE2020 s'appuie sur un décret n° 2026-16 **non vérifié** : à confirmer
+sur Légifrance avant toute rédaction, ou à retirer de l'angle.
 
 ## Sujets
 
@@ -44,7 +43,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-09 | publié  | Carport en bois : bien le choisir et l'intégrer          | carport-bois-guide                |
 | 2026-07-09 | publié  | Quel bois choisir pour une terrasse extérieure ?         | quel-bois-pour-terrasse-exterieure|
 | 2026-07-11 | publié  | Abri, carport, pergola : quelle autorisation en 2026 ?   | autorisation-urbanisme-abri-carport-pergola-2026 |
-| 2026-07-11 | proposé | Protéger sa terrasse en bois de la canicule (été)        | proteger-terrasse-bois-canicule-entretien-ete |
+| 2026-07-20 | publié  | Protéger sa terrasse en bois de la canicule (été)        | proteger-terrasse-bois-canicule-entretien-ete |
 | 2026-07-16 | publié  | Pool-house en bois : réglementation, usages et budget 2026 | pool-house-bois-guide           |
 | 2026-07-16 | proposé | Bardage bois en 2026 : essences, tendances et RE2020     | bardage-bois-re2020-tendances     |
 

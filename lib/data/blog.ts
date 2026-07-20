@@ -14,6 +14,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'proteger-terrasse-bois-canicule-entretien-ete',
+    titre: "Protéger sa terrasse en bois de la canicule : le guide d'entretien d'été",
+    extrait:
+      "Ombre, saturateur et nettoyage doux : les trois leviers pour faire traverser l'été à une terrasse en bois, et la règle qu'on enfreint le plus souvent, ne jamais saturer un bois brûlant. Grisaillement, fissures, échauffement et gestes à proscrire, par un artisan en Gironde.",
+    date: '2026-07-20',
+    categorie: 'Guide · Entretien terrasse',
+    image: '/images/terrasse-bois-plots-gironde-2.webp',
+  },
+  {
     slug: 'pool-house-bois-guide',
     titre: 'Pool-house en bois : réglementation, usages et budget 2026',
     extrait:

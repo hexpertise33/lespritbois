@@ -14,6 +14,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'cloture-brise-vue-bois-guide',
+    titre:
+      "Clôture et brise-vue en bois : quelle essence, quelle hauteur autorisée et quel budget en 2026 ?",
+    extrait:
+      "Hauteur plafonnée par le PLU (souvent 1,80–2,00 m), Code civil à défaut et déclaration préalable souvent requise : le point réglementaire pour clôturer sans se tromper. Essences durables, styles claire-voie ou panneau plein, pose et budget au mètre linéaire, par un artisan en Gironde.",
+    date: '2026-07-21',
+    categorie: 'Guide · Clôtures bois',
+    image: '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-horizontales-jardin-gironde.webp',
+  },
+  {
     slug: 'proteger-terrasse-bois-canicule-entretien-ete',
     titre: "Protéger sa terrasse en bois de la canicule : le guide d'entretien d'été",
     extrait:

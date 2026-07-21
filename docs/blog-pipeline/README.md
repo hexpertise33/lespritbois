@@ -23,15 +23,18 @@ push/deploy).
 
 Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
-## ⏭️ Prochain créneau : mardi 21/07/2026
+## ⏭️ Prochain créneau : jeudi 23/07/2026
 
-Le sujet « canicule » qui était réservé pour ce créneau a finalement été **publié
-le 20/07**, en avance. Le créneau du 21/07 est donc **libre** : la veille
-automatique reprend son fonctionnement normal (2 propositions neuves).
+Créneau du mardi 21/07 **consommé** : article « Clôture et brise-vue en bois »
+publié (proposition 2 de la veille du 21/07). La veille automatique reprend son
+fonctionnement normal au prochain créneau (2 propositions neuves).
 
-Reste en réserve, non rédigé : `bardage-bois-re2020-tendances` (proposé le 16/07).
-Son accroche RE2020 s'appuie sur un décret n° 2026-16 **non vérifié** : à confirmer
-sur Légifrance avant toute rédaction, ou à retirer de l'angle.
+Restent en réserve, non rédigés :
+- `poulailler-bois-reglementation-implantation` (proposé le 21/07, proposition 1 —
+  prêt à rédiger, sources dans `docs/blog-pipeline/2026-07-21.md`).
+- `bardage-bois-re2020-tendances` (proposé le 16/07). Son accroche RE2020 s'appuie
+  sur un décret n° 2026-16 **non vérifié** : à confirmer sur Légifrance avant toute
+  rédaction, ou à retirer de l'angle.
 
 ## Sujets
 
@@ -46,6 +49,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-20 | publié  | Protéger sa terrasse en bois de la canicule (été)        | proteger-terrasse-bois-canicule-entretien-ete |
 | 2026-07-16 | publié  | Pool-house en bois : réglementation, usages et budget 2026 | pool-house-bois-guide           |
 | 2026-07-16 | proposé | Bardage bois en 2026 : essences, tendances et RE2020     | bardage-bois-re2020-tendances     |
+| 2026-07-21 | proposé | Poulailler en bois : réglementation 2026, bien-être et implantation | poulailler-bois-reglementation-implantation |
+| 2026-07-21 | publié  | Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | cloture-brise-vue-bois-guide |
 
 ## Idées de sujets en réserve
 

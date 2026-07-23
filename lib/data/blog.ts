@@ -14,6 +14,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'extension-ossature-bois-prix-m2',
+    titre: 'Extension en ossature bois : prix au m², délais et avantages en 2026',
+    extrait:
+      "Comptez 1 700 à 2 500 €/m² pour une extension ossature bois sur mesure en 2026, selon finition et toiture. Légèreté adaptée aux sols argileux du Libournais, chantier court, isolation et bilan carbone RE2020 : le guide pour agrandir plutôt que déménager, en Gironde.",
+    date: '2026-07-23',
+    categorie: 'Guide · Construction bois',
+    image: '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp',
+  },
+  {
     slug: 'cloture-brise-vue-bois-guide',
     titre:
       "Clôture et brise-vue en bois : quelle essence, quelle hauteur autorisée et quel budget en 2026 ?",

@@ -402,6 +402,12 @@ export default function ArticleExtensionOssatureBoisPage() {
               </p>
             </section>
 
+            <Figure
+              src="/images/blog/extension-ossature-bois-prix-m2/interieur-extension-ossature-bois-sejour-lumineux.jpg"
+              alt="Intérieur lumineux d'un séjour d'extension à ossature bois avec grande baie vitrée coulissante et finitions bois clair"
+              caption="Illustration : à isolation performante, l'ossature bois autorise de grandes baies vitrées sans compromettre le confort thermique, pour une pièce de vie baignée de lumière."
+            />
+
             {/* 3. Ce qui fait varier le prix */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">

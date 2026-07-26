@@ -28,13 +28,23 @@ défaut, demande-lui laquelle des propositions du dernier
    `lib/data/blog.ts`, images ajoutées sous `public/images/blog/<slug>/`),
    commit avec un message décrivant l'article, `git push origin main`. (La mise
    à jour de `docs/blog-pipeline/README.md` fait l'objet du commit de l'étape 8.)
-7. **Deploy.** Lance `npx opennextjs-cloudflare deploy` (ou `npm run deploy`). Si
-   les identifiants manquent, signale-le : l'article reste poussé, à déployer
-   manuellement.
-8. **Mémoire.** Passe le sujet à `publié` dans le tableau de
+7. **Deploy.** Lance **`npm run deploy`** (= `opennextjs-cloudflare build &&
+   opennextjs-cloudflare deploy`). ⚠️ N'utilise JAMAIS `npx opennextjs-cloudflare
+   deploy` seul : cette commande NE reconstruit PAS le bundle `.open-next` et
+   expédie un build périmé (les nouvelles pages renvoient alors un 404 en prod
+   même si le déploiement « réussit »). Si les identifiants manquent, signale-le :
+   l'article reste poussé, à déployer manuellement.
+8. **Vérification prod.** Après le deploy, contrôle que la page répond bien 200 :
+   `curl -s -o /dev/null -w "%{http_code}" https://lesprit-bois.fr/blog/<slug>`.
+   Si 404, c'est presque toujours l'erreur de deploy ci-dessus (bundle non
+   reconstruit) ou un cache edge : relance `npm run deploy` et réessaie. Ne
+   déclare l'article publié que sur un 200 confirmé.
+9. **Mémoire.** Passe le sujet à `publié` dans le tableau de
    `docs/blog-pipeline/README.md` et committe cette mise à jour.
 
 ## Garde-fous
 - Ne publie qu'UN article par exécution, sauf demande explicite.
 - Ne push/deploy jamais si le build échoue.
-- Signale à l'utilisateur l'URL finale (`https://lesprit-bois.fr/blog/<slug>`).
+- Déploie toujours via `npm run deploy` (build + deploy), jamais `deploy` seul.
+- Signale à l'utilisateur l'URL finale (`https://lesprit-bois.fr/blog/<slug>`),
+  et seulement après avoir confirmé un HTTP 200 (étape 8).

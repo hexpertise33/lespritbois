@@ -21,7 +21,7 @@ export const articles: Article[] = [
       "Le kit gagne sur le prix et le délai, le sur-mesure sur la durabilité et l'intégration : le comparatif de décision pour choisir sans se tromper. Budget 2026, essence et classes d'emploi, réglementation et implantation en Gironde, par un artisan à Libourne.",
     date: '2026-07-26',
     categorie: 'Guide · Abris de jardin',
-    image: '/images/source-adefrance/aggrandissement-accueil.webp',
+    image: '/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-cover.jpg',
   },
   {
     slug: 'extension-ossature-bois-prix-m2',

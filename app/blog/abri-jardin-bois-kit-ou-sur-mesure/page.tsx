@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/source-adefrance/aggrandissement-accueil.webp';
+const COVER = '/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-cover.jpg';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Abri de jardin bois : kit ou sur-mesure ? Comparatif honnête | L\'Esprit Bois',
@@ -261,7 +261,7 @@ export default function ArticleAbriJardinBoisPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src={COVER}
-              alt="Abri de jardin en bois sur mesure, bardage douglas et toiture tuiles, dans un jardin en Gironde"
+              alt="Abri de jardin en bois avec bardage bois et toiture tuiles, installé dans un jardin arboré"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>

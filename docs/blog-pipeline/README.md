@@ -31,8 +31,6 @@ La veille automatique reprend son fonctionnement normal au prochain créneau
 (2 propositions neuves).
 
 Restent en réserve, non rédigés :
-- `abri-jardin-bois-kit-ou-sur-mesure` (proposé le 23/07, proposition 1 —
-  prêt à rédiger, sources dans `docs/blog-pipeline/2026-07-23.md`).
 - `poulailler-bois-reglementation-implantation` (proposé le 21/07, proposition 1 —
   prêt à rédiger, sources dans `docs/blog-pipeline/2026-07-21.md`).
 - `bardage-bois-re2020-tendances` (proposé le 16/07). Son accroche RE2020 s'appuie
@@ -54,7 +52,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-16 | proposé | Bardage bois en 2026 : essences, tendances et RE2020     | bardage-bois-re2020-tendances     |
 | 2026-07-21 | proposé | Poulailler en bois : réglementation 2026, bien-être et implantation | poulailler-bois-reglementation-implantation |
 | 2026-07-21 | publié  | Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | cloture-brise-vue-bois-guide |
-| 2026-07-23 | proposé | Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête       | abri-jardin-bois-kit-ou-sur-mesure |
+| 2026-07-23 | publié  | Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête       | abri-jardin-bois-kit-ou-sur-mesure |
 | 2026-07-23 | publié  | Extension en ossature bois : prix au m², délais et avantages en 2026     | extension-ossature-bois-prix-m2   |
 
 ## Idées de sujets en réserve

@@ -14,6 +14,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'poulailler-bois-reglementation-implantation',
+    titre:
+      'Poulailler en bois : réglementation 2026, bien-être des poules et bonne implantation',
+    extrait:
+      "Moins de 5 m² sans formalité, déclaration préalable de 5 à 20 m² — et surtout, toute détention de volailles se déclare en mairie, même une seule poule. Dimensionnement au bien-être des poules, essences durables et bonne implantation : le guide du poulailler bois, par un artisan à Libourne (Gironde).",
+    date: '2026-07-26',
+    categorie: 'Guide · Poulailler',
+    image: '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg',
+  },
+  {
     slug: 'abri-jardin-bois-kit-ou-sur-mesure',
     titre:
       'Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête (budget, essence, durée)',

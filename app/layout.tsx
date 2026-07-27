@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { jost, manrope, playfairDisplay } from '@/lib/fonts';
 import { GADS_ID } from '@/lib/gtag';
 import ConsentBanner from '@/components/ConsentBanner';
+import PhoneClickTracker from '@/components/PhoneClickTracker';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -71,6 +72,7 @@ gtag('config', '${GADS_ID}');`}
         </a>
         {children}
         <ConsentBanner />
+        <PhoneClickTracker />
       </body>
     </html>
   );

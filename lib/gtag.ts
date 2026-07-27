@@ -7,6 +7,9 @@ export const GADS_ID = 'AW-18163716378';
 /** Action de conversion « Envoi de formulaire de lead » (send_to de l'extrait d'événement). */
 export const GADS_FORM_CONVERSION = 'AW-18163716378/S0LwCO3xks8cEJqikdVD';
 
+/** Action de conversion « Clic téléphone (site web) » : clic sur un lien tel: du site. */
+export const GADS_PHONE_CONVERSION = 'AW-18163716378/ti05CIv5ldccEJqikdVD';
+
 type GtagFn = (...args: unknown[]) => void;
 
 declare global {
@@ -25,6 +28,20 @@ export function reportFormConversion(): void {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
   window.gtag('event', 'conversion', {
     send_to: GADS_FORM_CONVERSION,
+    value: 1.0,
+    currency: 'EUR',
+  });
+}
+
+/**
+ * Déclenche la conversion Google Ads « clic sur le numéro de téléphone ».
+ * Câblé globalement sur tous les liens tel: du site (voir components/PhoneClickTracker.tsx).
+ * No-op côté serveur ou si la balise n'est pas encore chargée.
+ */
+export function reportPhoneConversion(): void {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'conversion', {
+    send_to: GADS_PHONE_CONVERSION,
     value: 1.0,
     currency: 'EUR',
   });

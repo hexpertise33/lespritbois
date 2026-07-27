@@ -2,33 +2,34 @@
 
 Mémoire de la routine de publication (2 articles/semaine, **mardi & jeudi**).
 
-## Routine planifiée
+## Routine planifiée — publication quotidienne automatique
 
-Tâche planifiée locale `veille-blog-lespritbois` (cron `0 8 * * 2,4` = mardi &
-jeudi 8h, heure locale). Elle exécute le Temps 1 (`/veille-blog`) automatiquement
-et livre 2 propositions par notification + fichier `docs/blog-pipeline/AAAA-MM-JJ.md`.
-Gérable depuis la section « Scheduled » de l'app. Ne publie jamais (pas de
-push/deploy).
+Depuis le 26/07/2026, le blog fonctionne en **auto-publication quotidienne, sans
+relecture**. Tâche planifiée locale `article-quotidien-lespritbois`
+(cron `0 8 * * *` = tous les jours 8h, heure locale) : elle choisit un sujet neuf
+dans la sémantique bois, rédige, illustre, build, commit, push ET déploie en prod
+(`npm run deploy`), vérifie le HTTP 200, puis passe le sujet à `publié` ci-dessous.
+Gérable depuis la section « Scheduled » de l'app.
 
-## Workflow
+L'ancienne veille bihebdomadaire `veille-blog-lespritbois` (Temps 1 sans
+publication) est **désactivée** : l'auto-publication quotidienne la remplace.
 
-1. **Temps 1 — veille (auto, mardi/jeudi ~8h).** L'agent planifié lance
-   `/veille-blog` : veille web, recoupe avec les sujets déjà listés ci-dessous
-   et avec `lib/data/blog.ts`, écrit 2 propositions dans
-   `docs/blog-pipeline/AAAA-MM-JJ.md`, notifie l'utilisateur.
-2. **Temps 2 — publication (avec l'utilisateur).** L'utilisateur choisit/ajuste
-   une proposition, lance `/rediger-article`, qui rédige, source les images,
-   build, puis commit + push + deploy Cloudflare, et marque le sujet `publié`
-   ci-dessous.
+## Workflow (mode quotidien)
 
+Un seul temps, entièrement automatique (routine `article-quotidien-lespritbois`) :
+choix du sujet (réserve ci-dessous → sinon veille web pour un angle neuf, en
+recoupant `lib/data/blog.ts` pour éviter les doublons) → rédaction
+(`redacteur-bois`) → images (`iconographe-bois`) → `npm run build` → commit +
+push → `npm run deploy` → contrôle HTTP 200 → sujet marqué `publié`.
+
+Garde-fous automatiques (pas de relecture humaine) : build bloquant, vérification
+200 après deploy, anti-doublon de slug/angle et de cover, prudence factuelle
+(aucun décret/seuil/chiffre inventé — source vérifiée ou formulation prudente).
+
+Publication manuelle ponctuelle toujours possible via `/rediger-article`.
 Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
-## ⏭️ Prochain créneau : mardi 28/07/2026
-
-Créneau du jeudi 23/07 **consommé** : article « Extension en ossature bois : prix
-au m², délais et avantages en 2026 » publié (proposition 2 de la veille du 23/07).
-La veille automatique reprend son fonctionnement normal au prochain créneau
-(2 propositions neuves).
+## Sujets en réserve prioritaires
 
 Restent en réserve, non rédigés :
 - `poulailler-bois-reglementation-implantation` (proposé le 21/07, proposition 1 —

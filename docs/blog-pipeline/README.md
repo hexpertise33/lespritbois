@@ -32,8 +32,6 @@ Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 ## Sujets en réserve prioritaires
 
 Restent en réserve, non rédigés :
-- `poulailler-bois-reglementation-implantation` (proposé le 21/07, proposition 1 —
-  prêt à rédiger, sources dans `docs/blog-pipeline/2026-07-21.md`).
 - `bardage-bois-re2020-tendances` (proposé le 16/07). Son accroche RE2020 s'appuie
   sur un décret n° 2026-16 **non vérifié** : à confirmer sur Légifrance avant toute
   rédaction, ou à retirer de l'angle.
@@ -51,7 +49,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-20 | publié  | Protéger sa terrasse en bois de la canicule (été)        | proteger-terrasse-bois-canicule-entretien-ete |
 | 2026-07-16 | publié  | Pool-house en bois : réglementation, usages et budget 2026 | pool-house-bois-guide           |
 | 2026-07-16 | proposé | Bardage bois en 2026 : essences, tendances et RE2020     | bardage-bois-re2020-tendances     |
-| 2026-07-21 | proposé | Poulailler en bois : réglementation 2026, bien-être et implantation | poulailler-bois-reglementation-implantation |
+| 2026-07-26 | publié  | Poulailler en bois : réglementation 2026, bien-être et implantation | poulailler-bois-reglementation-implantation |
 | 2026-07-21 | publié  | Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | cloture-brise-vue-bois-guide |
 | 2026-07-23 | publié  | Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête       | abri-jardin-bois-kit-ou-sur-mesure |
 | 2026-07-23 | publié  | Extension en ossature bois : prix au m², délais et avantages en 2026     | extension-ossature-bois-prix-m2   |

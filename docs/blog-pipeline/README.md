@@ -31,10 +31,20 @@ Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
 ## Sujets en réserve prioritaires
 
-Restent en réserve, non rédigés :
-- `bardage-bois-re2020-tendances` (proposé le 16/07). Son accroche RE2020 s'appuie
-  sur un décret n° 2026-16 **non vérifié** : à confirmer sur Légifrance avant toute
-  rédaction, ou à retirer de l'angle.
+Réserve vide au 28/07/2026 : le dernier sujet prioritaire (bardage bois) a été
+publié sous le slug `bardage-bois-facade-essences-pose`. Les prochains articles
+devront partir de la liste « Idées de sujets en réserve » restante ou d'une
+veille web.
+
+**Point réglementaire tranché le 28/07/2026 (à ne pas rouvrir).** L'accroche
+« bardage bois × RE2020 » qui figurait ici s'appuyait sur un décret n° 2026-16
+supposé encadrer le bardage : c'est un faux rattachement. Vérification faite,
+le décret n° 2026-16 du 15 janvier 2026 existe bien (Légifrance,
+JORFTEXT000053378848) mais il élargit le périmètre de la **RE2020 à treize
+catégories de bâtiments tertiaires et industriels**, pour les permis déposés à
+compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
+individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
+**NF DTU 41.2** et sur les règles de déclaration préalable.
 
 ## Sujets
 
@@ -48,7 +58,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-11 | publié  | Abri, carport, pergola : quelle autorisation en 2026 ?   | autorisation-urbanisme-abri-carport-pergola-2026 |
 | 2026-07-20 | publié  | Protéger sa terrasse en bois de la canicule (été)        | proteger-terrasse-bois-canicule-entretien-ete |
 | 2026-07-16 | publié  | Pool-house en bois : réglementation, usages et budget 2026 | pool-house-bois-guide           |
-| 2026-07-16 | proposé | Bardage bois en 2026 : essences, tendances et RE2020     | bardage-bois-re2020-tendances     |
+| 2026-07-16 | écarté  | Bardage bois en 2026 : essences, tendances et RE2020 (angle RE2020 infondé) | bardage-bois-re2020-tendances |
+| 2026-07-28 | publié  | Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ? | bardage-bois-facade-essences-pose |
 | 2026-07-26 | publié  | Poulailler en bois : réglementation 2026, bien-être et implantation | poulailler-bois-reglementation-implantation |
 | 2026-07-21 | publié  | Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | cloture-brise-vue-bois-guide |
 | 2026-07-23 | publié  | Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête       | abri-jardin-bois-kit-ou-sur-mesure |
@@ -58,8 +69,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 
 - Entretien d'une terrasse bois (saturateur, dégrisage) — saisonnier printemps.
 - Poulailler en bois : bien-être animal, essences, implantation.
-- Bardage bois : claire-voie, pré-grisé, entretien, RE2020.
-- Pool-house bois : usages, réglementation piscine, intégration.
-- Abri de jardin sur mesure vs kit.
-- Extension ossature bois : délais, prix au m², avantages vs parpaing.
 - Bois local (douglas, pin maritime) : filière Nouvelle-Aquitaine.
+
+Idées consommées (déjà publiées) : entretien terrasse, poulailler, bardage,
+pool-house, abri de jardin kit vs sur-mesure, extension ossature bois.

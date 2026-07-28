@@ -14,6 +14,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'bardage-bois-facade-essences-pose',
+    titre:
+      'Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ?',
+    extrait:
+      "L'essence décide de l'aspect et du prix, mais c'est la pose qui décide de la durée de vie : une lame d'air ventilée d'au moins 20 mm, entrée basse et sortie haute, comme le prévoit le NF DTU 41.2. Comparatif douglas, mélèze, red cedar et pin traité, classe d'emploi 3, claire-voie ou recouvrement, déclaration préalable et prix au m² posé, par un artisan à Libourne (Gironde).",
+    date: '2026-07-28',
+    categorie: 'Guide · Bardage bois',
+    image: '/images/source-adefrance/IMG-20250303-WA0044-1.jpg',
+  },
+  {
     slug: 'poulailler-bois-reglementation-implantation',
     titre:
       'Poulailler en bois : réglementation 2026, bien-être des poules et bonne implantation',

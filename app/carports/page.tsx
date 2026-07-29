@@ -390,8 +390,8 @@ const ETAPES = [
 const GALERIE = [
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-2.webp',
-    alt: 'Carport bois adossé à la façade, réalisé à Libourne',
-    legende: 'Carport bois adossé à la façade, Libourne',
+    alt: 'Carport bois adossé à la façade au coucher du soleil, charpente apparente, Libourne',
+    legende: 'Charpente adossée, contre-jour de fin de journée',
   },
   {
     src: '/images/source-adefrance/Carport-aluminium-Libourne-1.webp',
@@ -410,8 +410,8 @@ const GALERIE = [
   },
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
-    alt: 'Structure bois d’un abri voiture en Gironde',
-    legende: 'La charpente en cours de montage',
+    alt: 'Carport bois autoporté à toiture plate abritant deux voitures, Gironde',
+    legende: 'Carport bois autoporté, deux véhicules',
   },
   {
     src: '/images/source-adefrance/Carport-aluminium-Libourne-3.webp',
@@ -429,9 +429,9 @@ const GALERIE = [
     legende: 'Carport aluminium double',
   },
   {
-    src: '/images/source-adefrance/Carport-bois-Libourne-3.webp',
-    alt: 'Charpente d’un carport bois autoporté posé à Libourne',
-    legende: 'Détail de charpente, carport autoporté',
+    src: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
+    alt: 'Carport aluminium anthracite abritant deux voitures, vue depuis le jardin',
+    legende: 'Carport aluminium, vue depuis le jardin',
   },
 ];
 
@@ -695,8 +695,8 @@ export default function CarportsPage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/source-adefrance/Carport-bois-Libourne-3.webp"
-                    alt="Charpente d'un carport bois autoporté posé à Libourne par L'Esprit Bois"
+                    src="/images/source-adefrance/Carport-bois-Libourne-6.webp"
+                    alt="Carport bois autoporté à toiture plate abritant deux voitures, posé en Gironde par L'Esprit Bois"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">

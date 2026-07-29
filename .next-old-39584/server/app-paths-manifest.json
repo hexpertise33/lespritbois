@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/amenagement-exterieur/page": "app/amenagement-exterieur/page.js",
+  "/constructions-bois/page": "app/constructions-bois/page.js",
+  "/pergolas/page": "app/pergolas/page.js",
+  "/realisations/page": "app/realisations/page.js"
+}

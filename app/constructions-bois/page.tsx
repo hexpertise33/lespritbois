@@ -202,6 +202,53 @@ const jsonld = [
   },
 ];
 
+/* ---------------------------------------------------------------------------
+   Le catalogue de la page, en tuiles compactes : le visiteur voit les cinq
+   ouvrages avant de lire quoi que ce soit, et saute directement au sien.
+--------------------------------------------------------------------------- */
+const CATALOGUE = [
+  {
+    nom: 'Maison ossature bois',
+    href: '#nos-constructions',
+    src: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
+    alt: "Construction \u00e0 ossature bois bard\u00e9e, menuiseries pos\u00e9es, mise hors d'air",
+    w: 900,
+    h: 1200,
+  },
+  {
+    nom: 'Maison en A',
+    href: '#nos-constructions',
+    src: '/images/source-adefrance/mais-en-a-accueil.webp',
+    alt: 'Maison en A \u00e0 ossature bois construite aux Billaux',
+    w: 768,
+    h: 512,
+  },
+  {
+    nom: 'Extension & sur\u00e9l\u00e9vation',
+    href: '#integration',
+    src: '/images/source-adefrance/aggrandissement-accueil.webp',
+    alt: "Extension bois bard\u00e9e accol\u00e9e \u00e0 un b\u00e2timent en pierre, Gironde",
+    w: 768,
+    h: 512,
+  },
+  {
+    nom: 'Pool house',
+    href: '#nos-constructions',
+    src: '/images/terrasse-bois-pool-house-noir.webp',
+    alt: 'Pool house \u00e0 bardage noir et terrasse bois au bord d\u2019une piscine',
+    w: 736,
+    h: 981,
+  },
+  {
+    nom: 'Abri & d\u00e9pendance',
+    href: '#nos-constructions',
+    src: '/images/bardage-bois-douglas-gironde.webp',
+    alt: 'Abri bois bard\u00e9 en douglas accol\u00e9 \u00e0 une d\u00e9pendance en pierre, Gironde',
+    w: 1000,
+    h: 1333,
+  },
+];
+
 export default function ConstructionsBoisPage() {
   return (
     <>
@@ -236,10 +283,39 @@ export default function ConstructionsBoisPage() {
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6">
               Construction bois et extension à Libourne et en Gironde
             </h1>
-            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
+            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl mb-8">
               Maison à ossature bois, maison en A, extension, surélévation, pool house ou dépendance, bâtis sur
               mesure et livrés <strong className="text-white font-semibold">hors d'eau, hors d'air</strong>.
             </p>
+
+            <ul className="flex flex-wrap gap-3 mb-10">
+              {CATALOGUE.map((c) => (
+                <li key={c.nom}>
+                  <a
+                    href={c.href}
+                    className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/25 text-white px-4 py-2.5 rounded-full font-label-md text-label-md hover:bg-white/20 hover:border-secondary/60 transition-all"
+                  >
+                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]">arrow_downward</span>
+                    {c.nom}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="/#quote"
+                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center"
+              >
+                Demander mon étude gratuite
+              </a>
+              <a
+                href="tel:+33557406580"
+                className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all text-center"
+              >
+                05 57 40 65 80
+              </a>
+            </div>
           </div>
         </header>
 
@@ -276,48 +352,58 @@ export default function ConstructionsBoisPage() {
           </div>
         </section>
 
-        {/* Chapô */}
-        <section className="py-section-padding bg-surface">
+        {/* Le catalogue, tout de suite après les garanties */}
+        <section className="py-20 md:py-24 bg-surface-container-low" id="gamme">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl">
-              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
-                Notre approche
-              </span>
-              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Construire en bois, du croquis au hors d'air
-              </h2>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                <strong className="text-primary font-semibold">
-                  Pour agrandir ou construire en bois (extension, surélévation, maison en A ou pool house), une
-                  ossature bois livrée hors d'eau hors d'air permet un chantier sec et rapide, avec le second œuvre
-                  confié aux artisans de votre choix.
-                </strong>{' '}
-                Le bois est le seul matériau de structure qui pousse. Il construit vite et sec, il stocke du carbone
-                pendant toute la vie du bâtiment, et il pardonne mal l'improvisation, ce qui convient parfaitement
-                à des charpentiers.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                Installés aux Billaux, à quelques minutes de <strong className="text-primary font-semibold">Libourne</strong>,
-                nous bâtissons dans toute la <strong className="text-primary font-semibold">Gironde</strong> :{' '}
-                <strong className="text-primary font-semibold">maisons à ossature bois</strong>,{' '}
-                <strong className="text-primary font-semibold">maisons en A</strong>,{' '}
-                <strong className="text-primary font-semibold">pool houses</strong> en bois ou en aluminium, abris et
-                dépendances. Nous concevons, nous fabriquons, nous posons nous-mêmes la structure, sans
-                sous-traitance.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
-                chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>,
-                et nous montons pour vous le dossier d'urbanisme,{' '}
-                <a
-                  href="/#methode"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  un seul interlocuteur
-                </a>
-                , de l'étude à la mise hors d'air.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+              <div className="max-w-2xl">
+                <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                  Notre gamme
+                </span>
+                <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous construisons</h2>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Cinq ouvrages, tous livrés hors d&apos;eau hors d&apos;air, prêts pour le second œuvre.
+                </p>
+              </div>
+              <a
+                href="/#quote"
+                className="shrink-0 inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
+              >
+                Demander mon étude gratuite
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
             </div>
+
+            <ul className="grid grid-cols-2 lg:grid-cols-5 gap-4 list-none p-0 m-0">
+              {CATALOGUE.map((c) => (
+                <li key={c.nom}>
+                  <a
+                    href={c.href}
+                    className="group relative block aspect-[4/3] rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500"
+                  >
+                    <img
+                      width={c.w}
+                      height={c.h}
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      src={c.src}
+                      alt={c.alt}
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/25 to-transparent group-hover:via-primary/45 transition-colors duration-500"
+                    ></span>
+                    <span className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-between gap-2 text-white">
+                      <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">{c.nom}</span>
+                      <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform">
+                        arrow_forward
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -328,7 +414,9 @@ export default function ConstructionsBoisPage() {
               <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
                 Nos ouvrages
               </span>
-              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">Ce que nous construisons</h2>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
+                Le détail de chaque ouvrage
+              </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 De la dépendance de jardin à la maison d'habitation, en neuf comme en greffe sur l'existant : la
                 même ossature et la même exigence, seule l'échelle change.
@@ -560,13 +648,13 @@ export default function ConstructionsBoisPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
                 <img
-                  width="768"
-                  height="512"
+                  width="1200"
+                  height="900"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
-                  src="/images/source-adefrance/construction-pool-house-bois-libourne.webp"
-                  alt="Pool house à ossature bois construit à Libourne"
+                  src="/images/ossature-bois-isolation-fibre-gironde.webp"
+                  alt="Intérieur d'une ossature bois : murs isolés en fibre de bois et charpente apparente, chantier en Gironde"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -729,6 +817,35 @@ export default function ConstructionsBoisPage() {
           </div>
         </section>
 
+        {/* Relais de conversion */}
+        <section className="bg-surface border-y border-surface-variant">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h2 className="font-headline-sm text-headline-sm text-primary mb-2">
+                Un terrain, une idée, un doute sur la faisabilité ?
+              </h2>
+              <p className="text-on-surface-variant text-body-md">
+                Nous regardons le PLU, l&apos;accès et la nature du sol avant de dessiner quoi que ce soit. C&apos;est
+                gratuit et sans engagement.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+              <a
+                href="/#quote"
+                className="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 text-center"
+              >
+                Demander mon étude gratuite
+              </a>
+              <a
+                href="tel:+33557406580"
+                className="border border-primary/25 text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all text-center"
+              >
+                05 57 40 65 80
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Galerie */}
         <section className="py-section-padding bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
@@ -878,6 +995,51 @@ export default function ConstructionsBoisPage() {
                   Bordeaux
                 </li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Chapô */}
+        <section className="py-section-padding bg-surface">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                Notre approche
+              </span>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
+                Construire en bois, du croquis au hors d'air
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                <strong className="text-primary font-semibold">
+                  Pour agrandir ou construire en bois (extension, surélévation, maison en A ou pool house), une
+                  ossature bois livrée hors d'eau hors d'air permet un chantier sec et rapide, avec le second œuvre
+                  confié aux artisans de votre choix.
+                </strong>{' '}
+                Le bois est le seul matériau de structure qui pousse. Il construit vite et sec, il stocke du carbone
+                pendant toute la vie du bâtiment, et il pardonne mal l'improvisation, ce qui convient parfaitement
+                à des charpentiers.
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                Installés aux Billaux, à quelques minutes de <strong className="text-primary font-semibold">Libourne</strong>,
+                nous bâtissons dans toute la <strong className="text-primary font-semibold">Gironde</strong> :{' '}
+                <strong className="text-primary font-semibold">maisons à ossature bois</strong>,{' '}
+                <strong className="text-primary font-semibold">maisons en A</strong>,{' '}
+                <strong className="text-primary font-semibold">pool houses</strong> en bois ou en aluminium, abris et
+                dépendances. Nous concevons, nous fabriquons, nous posons nous-mêmes la structure, sans
+                sous-traitance.
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
+                chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>,
+                et nous montons pour vous le dossier d'urbanisme,{' '}
+                <a
+                  href="/#methode"
+                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  un seul interlocuteur
+                </a>
+                , de l'étude à la mise hors d'air.
+              </p>
             </div>
           </div>
         </section>

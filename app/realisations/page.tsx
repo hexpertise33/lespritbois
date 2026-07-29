@@ -11,7 +11,7 @@ export const metadata: Metadata = buildMetadata({
   keywords:
     "réalisations L'Esprit Bois, chantiers Libourne, carport Gironde, pergola Libourne, extension bois Gironde, pool house",
   path: '/realisations',
-  ogImage: '/images/source-adefrance/construction-pool-house-bois-libourne.webp',
+  ogImage: '/images/terrasse-bois-pool-house-noir.webp',
   ogTitle: 'Nos réalisations à Libourne et en Gironde',
   ville: 'Libourne',
 });
@@ -590,13 +590,13 @@ export default function RealisationsPage() {
                 data-cat="constructions"
               >
                 <img
-                  width="768"
-                  height="512"
+                  width="736"
+                  height="981"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/construction-pool-house-bois-libourne.webp"
-                  alt="Pool house en bois et terrasse réalisés à Libourne"
+                  src="/images/terrasse-bois-pool-house-noir.webp"
+                  alt="Pool house à bardage noir et terrasse bois au bord d'une piscine, réalisés en Gironde"
                 />
                 <figcaption className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div>

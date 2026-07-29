@@ -129,6 +129,49 @@ const jsonld = [
   },
 ];
 
+/* ---------------------------------------------------------------------------
+   Le catalogue de la page, en tuiles compactes : le visiteur voit les quatre
+   ouvrages avant de lire quoi que ce soit, et saute directement au sien.
+--------------------------------------------------------------------------- */
+const CATALOGUE = [
+  {
+    nom: 'Terrasses bois',
+    href: '#terrasses',
+    src: '/images/terrasse-bois-plots-gironde-1.webp',
+    alt: 'Terrasse en bois sur plots posée le long d\u2019une maison en Gironde',
+    w: 950,
+    h: 1267,
+    pos: 'center 55%',
+  },
+  {
+    nom: 'Pool houses',
+    href: '#pool-house',
+    src: '/images/terrasse-bois-pool-house-libourne.webp',
+    alt: 'Pool house bois et terrasse au bord d\u2019une piscine, Libournais',
+    w: 736,
+    h: 981,
+    pos: 'center 35%',
+  },
+  {
+    nom: 'Abords de bassin',
+    href: '#abords-bassin',
+    src: '/images/terrasse-bois-piscine-exemple-opt.webp',
+    alt: 'Plage de piscine en bois et margelles, r\u00e9alis\u00e9e en Gironde',
+    w: 949,
+    h: 1400,
+    pos: 'center 95%',
+  },
+  {
+    nom: 'Abris & claustras',
+    href: '#abris',
+    src: '/images/bardage-bois-douglas-gironde.webp',
+    alt: 'Abri bois bard\u00e9 en douglas accol\u00e9 \u00e0 une d\u00e9pendance en pierre, Gironde',
+    w: 1000,
+    h: 1333,
+    pos: 'center 35%',
+  },
+];
+
 export default function AmenagementExterieurPage() {
   return (
     <>
@@ -163,10 +206,39 @@ export default function AmenagementExterieurPage() {
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6">
               Aménagement extérieur à Libourne et en Gironde
             </h1>
-            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
+            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl mb-8">
               Terrasses, pool houses, abris de jardin, abords de bassin, cuisines d'été : tout ce qui fait qu'on
               sort de chez soi sans quitter la maison.
             </p>
+
+            <ul className="flex flex-wrap gap-3 mb-10">
+              {CATALOGUE.map((c) => (
+                <li key={c.href}>
+                  <a
+                    href={c.href}
+                    className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/25 text-white px-4 py-2.5 rounded-full font-label-md text-label-md hover:bg-white/20 hover:border-secondary/60 transition-all"
+                  >
+                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]">arrow_downward</span>
+                    {c.nom}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="/#quote"
+                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center"
+              >
+                Demander mon étude gratuite
+              </a>
+              <a
+                href="tel:+33557406580"
+                className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all text-center"
+              >
+                05 57 40 65 80
+              </a>
+            </div>
           </div>
         </header>
 
@@ -203,48 +275,59 @@ export default function AmenagementExterieurPage() {
           </div>
         </section>
 
-        {/* Chapô */}
-        <section className="py-section-padding bg-surface">
+        {/* Le catalogue, tout de suite après les garanties */}
+        <section className="py-20 md:py-24 bg-surface-container-low" id="gamme">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl">
-              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
-                Notre approche
-              </span>
-              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Un jardin n'est pas une addition d'ouvrages
-              </h2>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                <strong className="text-primary font-semibold">
-                  Un aménagement extérieur réussi se pense comme un projet unique (terrasse, pool house, abords de
-                  bassin, abri de jardin et cuisine d'été) plutôt que comme une addition d'ouvrages posés au fil des
-                  années.
-                </strong>{' '}
-                Une terrasse posée un été, un abri l'année suivante, un pool house trois ans plus tard : chacun est
-                peut-être bien fait, et pourtant l'ensemble ne tient pas. Les niveaux ne se répondent pas, les
-                essences jurent, les circulations se contrarient.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                Installés aux Billaux, à quelques minutes de <strong className="text-primary font-semibold">Libourne</strong>,
-                nous dessinons l'<strong className="text-primary font-semibold">aménagement extérieur</strong> comme
-                un projet unique : <strong className="text-primary font-semibold">terrasse</strong>,{' '}
-                <strong className="text-primary font-semibold">pool house</strong>,{' '}
-                <strong className="text-primary font-semibold">abri de jardin</strong>, abords de bassin et cuisine
-                d'été, puis nous fabriquons et nous posons, dans toute la{' '}
-                <strong className="text-primary font-semibold">Gironde</strong>.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
-                chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>{' '}
-                :{' '}
-                <a
-                  href="/#methode"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  un seul interlocuteur
-                </a>
-                , de l'étude à la pose.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+              <div className="max-w-2xl">
+                <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                  Notre gamme
+                </span>
+                <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous aménageons</h2>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Quatre ouvrages, pensés ensemble plutôt qu&apos;ajoutés les uns aux autres.
+                </p>
+              </div>
+              <a
+                href="/#quote"
+                className="shrink-0 inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
+              >
+                Demander mon étude gratuite
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
             </div>
+
+            <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 list-none p-0 m-0">
+              {CATALOGUE.map((c) => (
+                <li key={c.href}>
+                  <a
+                    href={c.href}
+                    className="group relative block aspect-[4/3] rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500"
+                  >
+                    <img
+                      width={c.w}
+                      height={c.h}
+                      style={{ objectPosition: c.pos }}
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      src={c.src}
+                      alt={c.alt}
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/25 to-transparent group-hover:via-primary/45 transition-colors duration-500"
+                    ></span>
+                    <span className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-between gap-2 text-white">
+                      <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">{c.nom}</span>
+                      <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform">
+                        arrow_forward
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -320,8 +403,8 @@ export default function AmenagementExterieurPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
                 <img
-                  width="768"
-                  height="512"
+                  width="1200"
+                  height="800"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
@@ -375,8 +458,8 @@ export default function AmenagementExterieurPage() {
               </div>
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  width="2000"
-                  height="2949"
+                  width="949"
+                  height="1400"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
@@ -459,6 +542,35 @@ export default function AmenagementExterieurPage() {
           </div>
         </section>
 
+        {/* Relais de conversion */}
+        <section className="bg-surface border-y border-surface-variant">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h2 className="font-headline-sm text-headline-sm text-primary mb-2">
+                Un projet qui mêle plusieurs ouvrages ?
+              </h2>
+              <p className="text-on-surface-variant text-body-md">
+                Terrasse, pool house, abords de bassin : nous les dessinons ensemble, et vous n&apos;avez qu&apos;un
+                seul interlocuteur.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+              <a
+                href="/#quote"
+                className="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 text-center"
+              >
+                Demander mon étude gratuite
+              </a>
+              <a
+                href="tel:+33557406580"
+                className="border border-primary/25 text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all text-center"
+              >
+                05 57 40 65 80
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Galerie */}
         <section className="py-section-padding bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
@@ -504,8 +616,8 @@ export default function AmenagementExterieurPage() {
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
                 <img
-                  width="1200"
-                  height="800"
+                  width="768"
+                  height="512"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -526,8 +638,8 @@ export default function AmenagementExterieurPage() {
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
                 <img
-                  width="1536"
-                  height="2048"
+                  width="900"
+                  height="1200"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -681,6 +793,51 @@ export default function AmenagementExterieurPage() {
                   Bordeaux
                 </li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Chapô */}
+        <section className="py-section-padding bg-surface">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                Notre approche
+              </span>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
+                Un jardin n'est pas une addition d'ouvrages
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                <strong className="text-primary font-semibold">
+                  Un aménagement extérieur réussi se pense comme un projet unique (terrasse, pool house, abords de
+                  bassin, abri de jardin et cuisine d'été) plutôt que comme une addition d'ouvrages posés au fil des
+                  années.
+                </strong>{' '}
+                Une terrasse posée un été, un abri l'année suivante, un pool house trois ans plus tard : chacun est
+                peut-être bien fait, et pourtant l'ensemble ne tient pas. Les niveaux ne se répondent pas, les
+                essences jurent, les circulations se contrarient.
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                Installés aux Billaux, à quelques minutes de <strong className="text-primary font-semibold">Libourne</strong>,
+                nous dessinons l'<strong className="text-primary font-semibold">aménagement extérieur</strong> comme
+                un projet unique : <strong className="text-primary font-semibold">terrasse</strong>,{' '}
+                <strong className="text-primary font-semibold">pool house</strong>,{' '}
+                <strong className="text-primary font-semibold">abri de jardin</strong>, abords de bassin et cuisine
+                d'été, puis nous fabriquons et nous posons, dans toute la{' '}
+                <strong className="text-primary font-semibold">Gironde</strong>.
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
+                chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>{' '}
+                :{' '}
+                <a
+                  href="/#methode"
+                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  un seul interlocuteur
+                </a>
+                , de l'étude à la pose.
+              </p>
             </div>
           </div>
         </section>

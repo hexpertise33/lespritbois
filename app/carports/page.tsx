@@ -574,38 +574,36 @@ export default function CarportsPage() {
               </p>
             </div>
 
+            {/* Nos photos de carport sont panoramiques (1200x646). Un cadre vertical
+                n'en montrerait qu'un tiers : la photo garde donc son format, et le
+                texte se place dessous sur le fond sombre de la carte. */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {GAMME.map((g) => (
-                <article key={g.id} className="group relative rounded-2xl overflow-hidden shadow-xl">
-                  <a
-                    href={`#${g.id}`}
-                    className="block relative h-[460px] lg:h-[560px]"
-                    aria-label={`${g.titre} — voir cette gamme`}
-                  >
-                    <img
-                      width={g.w}
-                      height={g.h}
-                      style={{ objectPosition: g.pos }}
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[900ms]"
-                      src={g.src}
-                      alt={g.alt}
-                    />
-                    <span aria-hidden="true" className="absolute inset-0 voile-tuile"></span>
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-0 bg-primary/0 lg:group-hover:bg-primary/35 lg:group-focus-within:bg-primary/35 transition-colors duration-500"
-                    ></span>
+                <article
+                  key={g.id}
+                  className="group rounded-2xl overflow-hidden shadow-xl bg-primary hover:shadow-2xl transition-shadow duration-500"
+                >
+                  <a href={`#${g.id}`} className="flex flex-col h-full" aria-label={`${g.titre} — voir cette gamme`}>
+                    <div className="relative aspect-[16/9] overflow-hidden">
+                      <img
+                        width={g.w}
+                        height={g.h}
+                        style={{ objectPosition: g.pos }}
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[900ms]"
+                        src={g.src}
+                        alt={g.alt}
+                      />
+                      <span className="absolute top-4 left-4 bg-primary/75 backdrop-blur-md border border-white/20 text-white font-label-md text-[12px] px-3 py-1.5 rounded-full uppercase tracking-widest">
+                        {g.surtitre}
+                      </span>
+                    </div>
 
-                    <span className="absolute top-5 left-5 bg-primary/70 backdrop-blur-md border border-white/20 text-white font-label-md text-[12px] px-3 py-1.5 rounded-full uppercase tracking-widest">
-                      {g.surtitre}
-                    </span>
-
-                    <div className="absolute inset-x-0 bottom-0 p-7 lg:p-8 text-white">
+                    <div className="p-7 lg:p-8 text-white flex flex-col flex-1">
                       <h3 className="font-headline-md text-headline-md text-[28px] leading-tight mb-3">{g.titre}</h3>
-                      <p className="text-on-primary-container text-body-md mb-4">{g.accroche}</p>
-                      <ul className="space-y-2 overflow-hidden transition-all duration-500 lg:max-h-0 lg:opacity-0 lg:group-hover:max-h-40 lg:group-hover:opacity-100 lg:group-focus-within:max-h-40 lg:group-focus-within:opacity-100">
+                      <p className="text-on-primary-container text-body-md mb-5">{g.accroche}</p>
+                      <ul className="space-y-2 mb-6">
                         {g.points.map((p) => (
                           <li key={p} className="flex items-start gap-2 text-white/90 text-body-md">
                             <span className="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">
@@ -615,7 +613,7 @@ export default function CarportsPage() {
                           </li>
                         ))}
                       </ul>
-                      <span className="mt-5 inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md group-hover:gap-3 transition-all">
+                      <span className="mt-auto inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md group-hover:gap-3 transition-all">
                         Voir cette gamme
                         <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                       </span>

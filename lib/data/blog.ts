@@ -14,6 +14,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'bois-local-pin-maritime-douglas-gironde',
+    titre:
+      'Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut vraiment la filière Nouvelle-Aquitaine ?',
+    extrait:
+      "En Gironde, le bois vraiment local c'est d'abord le pin maritime des Landes de Gascogne, puis le douglas de la partie limousine et le châtaignier des feuillus régionaux — trois essences qui couvrent la grande majorité de nos ouvrages. Durabilité réelle, mention CTB B+, label Bois de France et cas où nous proposons franchement une autre essence, par un artisan à Libourne.",
+    date: '2026-07-29',
+    categorie: 'Guide · Filière bois local',
+    image:
+      '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg',
+  },
+  {
     slug: 'bardage-bois-facade-essences-pose',
     titre:
       'Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ?',

@@ -264,6 +264,22 @@ const GAMME = [
     h: 646,
     pos: 'center 50%',
   },
+  {
+    id: 'carport-solaire',
+    surtitre: 'Photovoltaïque',
+    titre: 'Carport solaire',
+    accroche: 'La même structure, dont la toiture produit votre électricité.',
+    points: [
+      'Étanchéité assurée par la toiture',
+      'Nombre de panneaux libre',
+      'Une voiture, plusieurs, un camping-car',
+    ],
+    src: '/images/carport-solaire-lisudestemps.webp',
+    alt: 'Structure aluminium à toiture photovoltaïque LI-SU des Temps, panneaux solaires visibles en couverture',
+    w: 1400,
+    h: 1050,
+    pos: 'center 22%',
+  },
 ];
 
 /* Équipements intégrables à la structure, bois comme aluminium. */
@@ -607,60 +623,6 @@ export default function CarportsPage() {
                   </a>
                 </article>
               ))}
-
-              {/* Carport solaire : pas de photo de chantier, donc carte dessinée
-                  plutôt qu'une image d'illustration qui ne serait pas la nôtre. */}
-              <article className="group relative rounded-2xl overflow-hidden shadow-xl bg-primary">
-                <a
-                  href="#carport-solaire"
-                  className="block relative h-[460px] lg:h-[560px]"
-                  aria-label="Carport solaire — voir cette gamme"
-                >
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-0 bg-[radial-gradient(circle_at_70%_18%,rgba(198,124,61,0.45),transparent_58%)]"
-                  ></span>
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-x-8 top-20 h-40 rounded-lg border border-white/10 bg-[repeating-linear-gradient(115deg,rgba(255,255,255,0.09)_0_10px,transparent_10px_22px)] group-hover:border-secondary/40 transition-colors duration-500"
-                  ></span>
-
-                  <span className="absolute top-5 left-5 bg-white/10 backdrop-blur-md border border-white/25 text-white font-label-md text-[12px] px-3 py-1.5 rounded-full uppercase tracking-widest">
-                    Photovoltaïque
-                  </span>
-
-                  <span className="material-symbols-outlined absolute top-32 left-1/2 -translate-x-1/2 text-secondary text-6xl">
-                    solar_power
-                  </span>
-
-                  <div className="absolute inset-x-0 bottom-0 p-7 lg:p-8 text-white">
-                    <h3 className="font-headline-md text-headline-md text-[28px] leading-tight mb-3">
-                      Carport solaire
-                    </h3>
-                    <p className="text-on-primary-container text-body-md mb-4">
-                      La même structure, dont la toiture produit votre électricité.
-                    </p>
-                    <ul className="space-y-2 overflow-hidden transition-all duration-500 lg:max-h-0 lg:opacity-0 lg:group-hover:max-h-40 lg:group-hover:opacity-100 lg:group-focus-within:max-h-40 lg:group-focus-within:opacity-100">
-                      {[
-                        'Étanchéité assurée par la toiture',
-                        'Nombre de panneaux libre',
-                        'Une voiture, plusieurs, un camping-car',
-                      ].map((p) => (
-                        <li key={p} className="flex items-start gap-2 text-white/90 text-body-md">
-                          <span className="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">
-                            check_circle
-                          </span>
-                          <span>{p}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <span className="mt-5 inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md group-hover:gap-3 transition-all">
-                      Voir cette gamme
-                      <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                    </span>
-                  </div>
-                </a>
-              </article>
             </div>
           </div>
         </section>
@@ -920,30 +882,49 @@ export default function CarportsPage() {
         {/* Gamme 3 — Carport solaire */}
         <section className="py-section-padding bg-primary text-white" id="carport-solaire">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl mb-14">
-              <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-2">
-                Gamme 3 — L'abri qui produit
-              </p>
-              <h2 className="font-headline-md text-headline-md mt-2 mb-6">
-                Carport solaire : abritez votre voiture, produisez votre électricité
-              </h2>
-              <p className="font-body-lg text-body-lg text-on-primary-container mb-4">
-                Une toiture de carport, c'est une surface plane, dégagée et bien exposée : le support idéal pour des{' '}
-                <strong className="text-white font-semibold">panneaux photovoltaïques</strong>. Plutôt que de percer
-                la couverture de votre maison, vous produisez votre électricité au-dessus de votre véhicule.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-primary-container">
-                Nous posons le carport solaire sur mesure de notre partenaire français{' '}
-                <a
-                  href="https://www.lisudestemps.fr/carport-solaire-sur-mesure-lisudestemps/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-secondary-fixed underline underline-offset-4 decoration-secondary/60 hover:decoration-secondary transition-colors"
-                >
-                  Li-Su des Temps
-                </a>
-                .
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-14">
+              <div>
+                <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-2">
+                  Gamme 3 — L'abri qui produit
+                </p>
+                <h2 className="font-headline-md text-headline-md mt-2 mb-6">
+                  Carport solaire : abritez votre voiture, produisez votre électricité
+                </h2>
+                <p className="font-body-lg text-body-lg text-on-primary-container mb-4">
+                  Une toiture de carport, c'est une surface plane, dégagée et bien exposée : le support idéal pour
+                  des <strong className="text-white font-semibold">panneaux photovoltaïques</strong>. Plutôt que de
+                  percer la couverture de votre maison, vous produisez votre électricité au-dessus de votre
+                  véhicule.
+                </p>
+                <p className="font-body-lg text-body-lg text-on-primary-container">
+                  Nous posons le carport solaire sur mesure de notre partenaire français{' '}
+                  <a
+                    href="https://www.lisudestemps.fr/carport-solaire-sur-mesure-lisudestemps/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary-fixed underline underline-offset-4 decoration-secondary/60 hover:decoration-secondary transition-colors"
+                  >
+                    Li-Su des Temps
+                  </a>
+                  .
+                </p>
+              </div>
+              <figure>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    width="1400"
+                    height="1050"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                    src="/images/carport-solaire-lisudestemps.webp"
+                    alt="Structure aluminium à toiture photovoltaïque LI-SU des Temps, panneaux solaires visibles en couverture"
+                  />
+                </div>
+                <figcaption className="text-on-primary-container text-body-md text-[14px] mt-3 italic">
+                  Structure solaire LI-SU des Temps. Photo du fabricant.
+                </figcaption>
+              </figure>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="border-t-2 border-secondary pt-6">

@@ -71,14 +71,44 @@ const jsonld = [
       '@type': 'OfferCatalog',
       name: 'Nos savoir-faire',
       itemListElement: [
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Terrasses bois' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pergolas bois et bioclimatiques' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Carports bois, aluminium et solaires' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bardages bois' } },
         {
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: "Extensions et constructions bois, hors d'eau hors d'air" },
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Pergolas sur mesure',
+            description:
+              'Pergola bioclimatique à lames orientables, pergola aluminium à toiture fixe, pergola bois massif.',
+          },
         },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Carports sur mesure',
+            description:
+              'Carport bois (toiture plate, bac acier ou tuile), carport aluminium thermolaqué, carport solaire photovoltaïque.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Aménagement extérieur',
+            description:
+              "Terrasses bois, pool houses, abris de jardin, cuisines d'été, claustras et bardages.",
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Constructions bois',
+            description:
+              "Maison ossature bois, maison en A, extension, surélévation, abri et dépendance, livrés hors d'eau hors d'air.",
+          },
+        },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Terrasses bois' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bardages bois' } },
       ],
     },
   },
@@ -110,6 +140,184 @@ const AVIS = [
       "Merci infiniment à Manon et ses collègues pour le travail sur mes plans d'agrandissement. Projet mené jusqu'à l'obtention du permis. De bons conseils.",
   },
   { nom: 'Bérengère Coste', texte: "Entreprise sérieuse et à l'écoute." },
+];
+
+/* ---------------------------------------------------------------------------
+   Le catalogue, groupé par famille : le nom de la famille tient la colonne
+   de gauche, ses produits défilent en face. Quatre blocs de trois plutôt
+   que douze vignettes à plat, qui se lisaient comme un mur d'images.
+--------------------------------------------------------------------------- */
+const GAMMES = [
+  {
+    famille: 'Pergolas',
+    href: '/pergolas',
+    accroche: "L'ombre choisie, la lumière maîtrisée.",
+    produits: [
+      {
+        nom: 'Bioclimatique',
+        href: '/pergolas#pergola-bioclimatique',
+        src: '/images/source-adefrance/Pergolas-aluminium-Libourne-9.webp',
+        alt: 'Pergola bioclimatique à lames orientables au-dessus d’un salon de jardin',
+        w: 768,
+        h: 512,
+      },
+      {
+        nom: 'Aluminium',
+        href: '/pergolas#pergola-aluminium',
+        src: '/images/pergola-terrasse-bois-libourne-1.webp',
+        alt: 'Pergola aluminium anthracite adossée à une maison, sur terrasse bois',
+        w: 1200,
+        h: 900,
+      },
+      {
+        nom: 'Bois massif',
+        href: '/pergolas#pergola-bois',
+        src: '/images/pergola-bois-lames-terrasse.webp',
+        alt: 'Pergola en bois massif à poutres apparentes au-dessus d’une terrasse',
+        w: 1000,
+        h: 1500,
+      },
+    ],
+  },
+  {
+    famille: 'Carports',
+    href: '/carports',
+    accroche: "L'abri du véhicule, sans les fondations d'un garage.",
+    produits: [
+      {
+        nom: 'Bois',
+        href: '/carports#carport-bois',
+        src: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
+        alt: 'Carport bois autoporté à toiture plate abritant deux voitures',
+        w: 1200,
+        h: 646,
+      },
+      {
+        nom: 'Aluminium',
+        href: '/carports#carport-aluminium',
+        src: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
+        alt: 'Carport aluminium anthracite abritant deux voitures',
+        w: 1200,
+        h: 646,
+      },
+      {
+        nom: 'Solaire',
+        href: '/carports#carport-solaire',
+        src: '/images/carport-solaire-lisudestemps.webp',
+        alt: 'Structure aluminium à toiture photovoltaïque, panneaux solaires visibles',
+        w: 1400,
+        h: 1050,
+      },
+    ],
+  },
+  {
+    famille: 'Aménagement extérieur',
+    href: '/amenagement-exterieur',
+    accroche: 'Tout ce qui prolonge la maison vers le jardin.',
+    produits: [
+      {
+        nom: 'Terrasse bois',
+        href: '/amenagement-exterieur',
+        src: '/images/terrasse-bois-plots-gironde-1.webp',
+        alt: 'Terrasse en bois sur plots posée le long d’une maison en Gironde',
+        w: 950,
+        h: 1267,
+      },
+      {
+        nom: 'Pool house',
+        href: '/amenagement-exterieur',
+        src: '/images/terrasse-bois-pool-house-libourne.webp',
+        alt: 'Pool house bois et terrasse au bord d’une piscine, Libournais',
+        w: 736,
+        h: 981,
+      },
+      {
+        nom: 'Bardage bois',
+        href: '/amenagement-exterieur',
+        src: '/images/bardage-bois-douglas-gironde.webp',
+        alt: 'Bardage bois douglas à claire-voie verticale posé sur une dépendance en pierre, Gironde',
+        w: 1000,
+        h: 1333,
+      },
+    ],
+  },
+  {
+    famille: 'Constructions bois',
+    href: '/constructions-bois',
+    accroche: "Notre métier d'origine, livré hors d'eau hors d'air.",
+    produits: [
+      {
+        nom: 'Ossature bois',
+        href: '/constructions-bois',
+        src: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
+        alt: 'Construction à ossature bois bardée, menuiseries posées, mise hors d’air',
+        w: 900,
+        h: 1200,
+      },
+      {
+        nom: 'Maison en A',
+        href: '/constructions-bois',
+        src: '/images/source-adefrance/mais-en-a-accueil.webp',
+        alt: 'Maison en A à ossature bois construite aux Billaux',
+        w: 768,
+        h: 512,
+      },
+      {
+        nom: 'Extension & surélévation',
+        href: '/constructions-bois',
+        src: '/images/source-adefrance/aggrandissement-accueil.webp',
+        alt: 'Extension bois bardée accolée à un bâtiment en pierre, Gironde',
+        w: 768,
+        h: 512,
+      },
+    ],
+  },
+];
+
+/* Aperçu de réalisations : un échantillon des quatre métiers. */
+const APERCU = [
+  {
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    alt: 'Pergola aluminium adossée et terrasse bois réalisées près de Libourne',
+    legende: 'Pergola aluminium & terrasse bois',
+    w: 1600,
+    h: 900,
+  },
+  {
+    src: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
+    alt: 'Carport bois autoporté à toiture plate abritant deux voitures, Gironde',
+    legende: 'Carport bois autoporté',
+    w: 1200,
+    h: 646,
+  },
+  {
+    src: '/images/terrasse-bois-pool-house-libourne.webp',
+    alt: 'Terrasse bois et pool house au bord d’une piscine, Libournais',
+    legende: 'Terrasse bois & pool house',
+    w: 736,
+    h: 981,
+  },
+  {
+    src: '/images/source-adefrance/mais-en-a-accueil.webp',
+    alt: 'Maison en A à ossature bois construite aux Billaux',
+    legende: 'Maison en A, ossature bois',
+    w: 768,
+    h: 512,
+  },
+  {
+    src: '/images/pergola-bois-massif-terrasse.webp',
+    alt: 'Pergola en bois massif couvrant un salon de jardin sur une terrasse',
+    legende: 'Pergola bois massif',
+    w: 1100,
+    h: 1100,
+  },
+  {
+    src: '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp',
+    alt: 'Bardage bois vertical posé sur une dépendance en pierre, Gironde',
+    legende: 'Bardage bois sur bâti ancien',
+    w: 900,
+    h: 1200,
+  },
 ];
 
 function LogoGoogle({ className }: { className?: string }) {
@@ -203,12 +411,14 @@ export default function HomePage() {
                   Demander mon étude gratuite
                 </a>
                 <a
-                  className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md text-center hover:bg-white/20 transition-all"
-                  href="#solutions"
+                  className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md text-center hover:bg-white/20 transition-all inline-flex items-center justify-center gap-2"
+                  href="tel:+33557406580"
                 >
-                  Découvrir nos savoir-faire
+                  <span className="material-symbols-outlined text-secondary-fixed text-[20px]">phone_in_talk</span>
+                  05 57 40 65 80
                 </a>
               </div>
+
               <div className="mt-16 flex items-center gap-12">
                 <div className="flex flex-col">
                   <span className="font-headline-sm text-headline-sm text-white">10 ans</span>
@@ -261,147 +471,164 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Nos savoir-faire */}
-        <section className="py-section-padding bg-surface-container-low" id="solutions">
+        {/* Nos produits : catalogue groupé par famille */}
+        <section className="py-20 md:py-24 bg-surface-container-low" id="solutions">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="text-center max-w-3xl mx-auto mb-20">
-              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
-                Du sol au toit
-              </span>
-              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">Nos savoir-faire</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant">
-                Tout ce que nous faisons, c'est notre métier : le relevé avant le dessin, la fabrication en atelier,
-                la pose par nos équipes.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+              <div className="max-w-2xl">
+                <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                  Du sol au toit
+                </span>
+                <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous fabriquons</h2>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Quatre familles, douze ouvrages, tous sur mesure et posés par nos équipes.
+                </p>
+              </div>
+              <a
+                href="#quote"
+                className="shrink-0 inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
+              >
+                Demander mon étude gratuite
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-              <article className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-surface-variant flex flex-col focus-within:ring-2 focus-within:ring-secondary focus-within:ring-offset-2">
-                <div className="h-64 overflow-hidden relative">
-                  <img
-                    width="768"
-                    height="512"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    src="/images/source-adefrance/carport-accueil.webp"
-                    alt="Carport aluminium contemporain abritant deux véhicules, Gironde"
-                  />
-                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">
-                    Bois &amp; aluminium
-                  </div>
-                </div>
-                <div className="p-8 flex flex-col flex-1">
-                  <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Carports</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
-                    L'élégance durable pour votre véhicule. Toiture plate, bac acier ou tuile, et jusqu'au carport
-                    solaire.
-                  </p>
-                  <a
-                    className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
-                    href="/carports"
-                    aria-label="Découvrir nos carports"
-                  >
-                    Découvrir <span className="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </article>
 
-              <article className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-secondary/40 xl:scale-105 z-10 flex flex-col focus-within:ring-2 focus-within:ring-secondary focus-within:ring-offset-2">
-                <div className="h-64 overflow-hidden relative">
-                  <img
-                    width="768"
-                    height="512"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    src="/images/source-adefrance/Pergolas-aluminium-Libourne-4.webp"
-                    alt="Pergola bioclimatique en aluminium au bord d'une piscine, Libourne"
-                  />
-                  <div className="absolute bottom-4 left-4 bg-secondary text-primary px-3 py-1 rounded text-label-md font-label-md shadow-lg">
-                    Bioclimatique
+            {/* Une famille par ligne : son nom tient la colonne de gauche,
+                ses trois produits défilent en face. */}
+            <div className="divide-y divide-surface-variant border-t border-surface-variant">
+              {GAMMES.map((g, i) => (
+                <div key={g.href} className="group/famille grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 py-10">
+                  <div className="lg:col-span-3 flex flex-col justify-center">
+                    {/* Index cuivre : donne le rythme et pose la famille avant les produits */}
+                    <div className="flex items-center gap-4 mb-4">
+                      <span className="font-display-lg text-[32px] leading-none text-secondary">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <span aria-hidden="true" className="h-px flex-1 bg-secondary/35"></span>
+                    </div>
+                    <h3 className="font-headline-md text-headline-md text-[30px] leading-tight text-primary mb-3">
+                      {g.famille}
+                    </h3>
+                    <p className="text-on-surface-variant text-body-md mb-6">{g.accroche}</p>
+                    <a
+                      href={g.href}
+                      className="inline-flex items-center gap-2 w-fit border border-primary/25 text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                    >
+                      Voir la gamme
+                      <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
                   </div>
-                </div>
-                <div className="p-8 flex flex-col flex-1">
-                  <div className="inline-block self-start px-2 py-0.5 bg-primary-fixed text-secondary-dark text-[10px] uppercase font-bold tracking-widest rounded mb-2">
-                    Le plus demandé
-                  </div>
-                  <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Pergolas</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
-                    Bois massif ou aluminium à lames orientables. L'ombre choisie, la lumière maîtrisée.
-                  </p>
-                  <a
-                    className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
-                    href="/pergolas"
-                    aria-label="Découvrir nos pergolas"
-                  >
-                    En savoir plus <span className="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </article>
 
-              <article className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-surface-variant flex flex-col focus-within:ring-2 focus-within:ring-secondary focus-within:ring-offset-2">
-                <div className="h-64 overflow-hidden relative">
-                  <img
-                    width="736"
-                    height="981"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    src="/images/terrasse-bois-pool-house-noir.webp"
-                    alt="Terrasse en bois menant à une piscine, pool house et maison à bardage noir"
-                  />
-                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">
-                    Terrasses &amp; pool houses
-                  </div>
+                  <ul className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-4 list-none p-0 m-0">
+                    {g.produits.map((p) => (
+                      <li key={p.nom}>
+                        <a
+                          href={p.href}
+                          className="group relative block aspect-[4/3] rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500"
+                        >
+                          <img
+                            width={p.w}
+                            height={p.h}
+                            loading="lazy"
+                            decoding="async"
+                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            src={p.src}
+                            alt={p.alt}
+                          />
+                          <span
+                            aria-hidden="true"
+                            className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/25 to-transparent group-hover:via-primary/45 transition-colors duration-500"
+                          ></span>
+                          <span className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-between gap-2 text-white">
+                            <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">
+                              {p.nom}
+                            </span>
+                            <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform">
+                              arrow_forward
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="p-8 flex flex-col flex-1">
-                  <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Aménagement extérieur</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
-                    Terrasses, pool houses, abris de jardin et abords de bassin. Tout ce qui fait qu'on vit dehors.
-                  </p>
-                  <a
-                    className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
-                    href="/amenagement-exterieur"
-                    aria-label="Découvrir nos aménagements extérieurs"
-                  >
-                    Découvrir <span className="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </article>
-
-              <article className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-surface-variant flex flex-col focus-within:ring-2 focus-within:ring-secondary focus-within:ring-offset-2">
-                <div className="h-64 overflow-hidden relative">
-                  <img
-                    width="768"
-                    height="512"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    src="/images/source-adefrance/mais-en-a-accueil.webp"
-                    alt="Maison en A à ossature bois construite aux Billaux"
-                  />
-                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-label-md font-label-md text-primary">
-                    Sur mesure
-                  </div>
-                </div>
-                <div className="p-8 flex flex-col flex-1">
-                  <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Constructions bois</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
-                    Maisons ossature bois, maisons en A, extensions et surélévations, livrées hors d'eau hors d'air.
-                  </p>
-                  <a
-                    className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
-                    href="/constructions-bois"
-                    aria-label="Découvrir nos constructions bois"
-                  >
-                    Découvrir nos constructions <span className="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </article>
+              ))}
             </div>
           </div>
         </section>
 
+        {/* Relais de conversion après la vitrine */}
+        <section className="bg-surface border-y border-surface-variant">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h2 className="font-headline-sm text-headline-sm text-primary mb-2">
+                Vous ne savez pas encore quelle solution convient ?
+              </h2>
+              <p className="text-on-surface-variant text-body-md">
+                Envoyez-nous une photo de votre terrain ou de votre terrasse : nous vous disons ce qui est possible,
+                et à quel budget.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+              <a
+                href="#quote"
+                className="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 text-center"
+              >
+                Demander mon étude gratuite
+              </a>
+              <a
+                href="tel:+33557406580"
+                className="border border-primary/25 text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all text-center"
+              >
+                05 57 40 65 80
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Aperçu de réalisations */}
+        <section className="py-section-padding bg-surface" id="realisations">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+              <div className="max-w-2xl">
+                <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                  Nos chantiers
+                </span>
+                <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-4">
+                  Ce que nous avons posé en Gironde
+                </h2>
+                <p className="font-body-lg text-body-lg text-on-surface-variant">
+                  Des ouvrages réellement sortis de notre atelier, pas des images de catalogue.
+                </p>
+              </div>
+              <a
+                href="/realisations"
+                className="shrink-0 inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all"
+              >
+                Voir toutes nos réalisations
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {APERCU.map((p) => (
+                <figure key={p.src} className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+                  <img
+                    width={p.w}
+                    height={p.h}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    src={p.src}
+                    alt={p.alt}
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 to-transparent p-5 pt-12 text-white font-label-md text-label-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {p.legende}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
         {/* Notre méthode */}
         <section id="methode" className="py-section-padding bg-primary text-white overflow-hidden">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
@@ -469,8 +696,8 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
                   <img
-                    width="1536"
-                    height="2048"
+                    width="900"
+                    height="1200"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -566,8 +793,8 @@ export default function HomePage() {
             </div>
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                width="1600"
-                height="1200"
+                width="1400"
+                height="1050"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover"
@@ -658,6 +885,36 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* Relais de conversion avant le formulaire */}
+        <section className="bg-primary text-white">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 py-14 flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className="max-w-2xl">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
+                Parlons-en
+              </span>
+              <h2 className="font-headline-md text-headline-md mt-3 mb-3">Votre projet commence par un relevé</h2>
+              <p className="text-on-primary-container font-body-lg text-body-lg">
+                Nous venons mesurer, regarder l&apos;orientation et la nature du sol. C&apos;est gratuit, sans
+                engagement, et vous repartez avec un devis détaillé poste par poste sous 48h.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+              <a
+                href="#quote"
+                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center"
+              >
+                Demander mon étude gratuite
+              </a>
+              <a
+                href="tel:+33557406580"
+                className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all text-center"
+              >
+                05 57 40 65 80
+              </a>
+            </div>
           </div>
         </section>
 

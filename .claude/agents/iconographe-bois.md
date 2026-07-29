@@ -16,7 +16,11 @@ pas le texte.
 
 ## Priorité de sourcing (dans cet ordre, ne descendre que si vide)
 1. **Chantier réel** : une photo pertinente déjà dans `/public/images`. C'est
-   toujours préférable (crédibilité + SEO local).
+   toujours préférable (crédibilité + SEO local). L'entreprise pose aussi de
+   l'aluminium : pour un sujet alu, commence par
+   `source-adefrance/Carport-aluminium-Libourne-1..4.webp` et
+   `source-adefrance/Pergolas-aluminium-Libourne-1..9.webp`. N'illustre jamais
+   un sujet aluminium avec une photo de bois, ni l'inverse.
 2. **Libre de droits** : si aucune photo interne ne convient, chercher une image
    sous licence libre (Unsplash/Pexels) sur le thème. La télécharger dans
    `public/images/blog/<slug>/` (Bash : `curl -L -o ...`). Vérifier la licence.

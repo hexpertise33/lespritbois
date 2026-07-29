@@ -7,7 +7,8 @@ Mémoire de la routine de publication (2 articles/semaine, **mardi & jeudi**).
 Depuis le 26/07/2026, le blog fonctionne en **auto-publication quotidienne, sans
 relecture**. Tâche planifiée locale `article-quotidien-lespritbois`
 (cron `0 8 * * *` = tous les jours 8h, heure locale) : elle choisit un sujet neuf
-dans la sémantique bois, rédige, illustre, build, commit, push ET déploie en prod
+dans la sémantique **bois et aluminium** de l'entreprise (élargie le
+29/07/2026), rédige, illustre, build, commit, push ET déploie en prod
 (`npm run deploy`), vérifie le HTTP 200, puis passe le sujet à `publié` ci-dessous.
 Gérable depuis la section « Scheduled » de l'app.
 
@@ -31,13 +32,15 @@ Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
 ## Sujets en réserve prioritaires
 
-Réserve vide au 29/07/2026. Le dernier sujet prioritaire (bardage bois) a été
-publié le 28/07 sous le slug `bardage-bois-facade-essences-pose`, et la
-dernière idée en réserve (filière bois local) le 29/07 sous le slug
-`bois-local-pin-maritime-douglas-gironde`. **La liste « Idées de sujets en
-réserve » est désormais entièrement consommée** : les prochains articles
-devront partir d'une veille web (angle neuf ou saisonnier) en recoupant
-`lib/data/blog.ts`.
+Toute la réserve **bois** a été consommée au 29/07/2026 : dernier sujet
+prioritaire (bardage) publié le 28/07 sous `bardage-bois-facade-essences-pose`,
+dernière idée (filière bois local) le 29/07 sous
+`bois-local-pin-maritime-douglas-gironde`.
+
+La réserve a été **rechargée le 29/07/2026 avec les sujets aluminium** (carport,
+pergola bioclimatique, véranda, extension, protections solaires) : voir « Idées
+de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
+articles.
 
 **Point réglementaire tranché le 28/07/2026 (à ne pas rouvrir).** L'accroche
 « bardage bois × RE2020 » qui figurait ici s'appuyait sur un décret n° 2026-16
@@ -71,12 +74,34 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 
 ## Idées de sujets en réserve
 
-Liste **vide au 29/07/2026** — toutes les idées ont été publiées. Le prochain
-sujet doit venir d'une veille web (WebSearch), dans la sémantique bois du site
-(terrasse, bardage, carport, pergola, abri, poulailler, pool-house, clôture,
-ossature/extension, urbanisme/PLU, filière bois), avec un angle qui ne
-cannibalise aucun article existant.
+**Élargissement du 29/07/2026 — l'aluminium entre dans la routine.** Le magasin
+vend et pose le bois **et** l'aluminium (les pages `/pergolas` et `/carports` le
+disent déjà largement). Le blog couvre donc les deux matières. Voir la section
+« Thèmes » et « Comparatifs bois / aluminium » de `ligne-editoriale.md`.
 
-Idées consommées (déjà publiées) : entretien terrasse, poulailler, bardage,
-pool-house, abri de jardin kit vs sur-mesure, extension ossature bois,
+Réserve aluminium et mixte (aucune encore rédigée) :
+
+- **Pergola bioclimatique aluminium** : lames orientables, motorisation,
+  domotique, entretien — angle produit, à bien distinguer de l'article
+  comparatif `pergola-bois-ou-bioclimatique` déjà publié.
+- **Carport aluminium ou carport bois** : le comparatif de décision (le guide
+  `carport-bois-guide` ne traite que le bois).
+- **Véranda aluminium** : usages, isolation, urbanisme et budget — seuils et
+  réglementation thermique à vérifier par recherche web avant citation.
+- **Véranda ou extension ossature bois** : que choisir pour agrandir ? (angle
+  décision, distinct de `extension-ossature-bois-prix-m2`).
+- **Entretien d'une pergola / véranda aluminium** : thermolaquage, joints,
+  motorisation — le pendant alu de nos articles d'entretien bois.
+- **Choisir la teinte de son aluminium** : nuancier RAL, mat/sablé, teintes qui
+  vieillissent bien, accord avec une maison girondine.
+- **Brise-soleil orientables et protections solaires** : alu, stores, et le
+  couple pergola + occultation, angle saisonnier été.
+- **Garde-corps et clôture aluminium vs bois** : durabilité, entretien, coût
+  dans le temps (distinct de `cloture-brise-vue-bois-guide`).
+
+Idées bois consommées (déjà publiées) : entretien terrasse, poulailler,
+bardage, pool-house, abri de jardin kit vs sur-mesure, extension ossature bois,
 filière bois local (douglas / pin maritime).
+
+Quand cette réserve sera à son tour épuisée : veille web (WebSearch) pour un
+angle neuf, bois ou alu, en recoupant `lib/data/blog.ts`.

@@ -6,12 +6,45 @@ Document de référence pour la production d'articles. Lu par les sous-agents
 
 ## Thèmes
 
-Veille et articles autour de : matériaux du bois (essences, durabilité, classes
-d'emploi, traitements), métiers et savoir-faire du bois, réglementation
-(urbanisme/PLU, déclaration préalable, permis, RE2020), tendances d'aménagement
-extérieur, et les ouvrages phares de l'entreprise : **carport, terrasse,
-pergola, poulailler, pool-house, construction/extension bois, bardage,
-abri de jardin**. Angle toujours actionnable et ancré terrain Gironde.
+L'entreprise travaille **le bois ET l'aluminium** : le magasin vend et pose les
+deux. Le blog couvre donc les deux matières, jamais le bois seul.
+
+**Univers bois.** Matériaux (essences, durabilité, classes d'emploi,
+traitements), métiers et savoir-faire, filière locale, et les ouvrages phares :
+**carport, terrasse, pergola, poulailler, pool-house, construction/extension
+bois, bardage, abri de jardin, clôture/brise-vue**.
+
+**Univers aluminium.** **Carport aluminium, pergola bioclimatique à lames
+orientables, véranda, extension et verrière aluminium**, ainsi que les
+protections solaires (stores, brise-soleil orientables), garde-corps et
+clôtures alu. Le vocabulaire technique n'est pas celui du bois : parler
+**profilés et alliages, thermolaquage et teinte RAL, rupture de pont
+thermique, motorisation et domotique, étanchéité et évacuation des eaux,
+garanties** — et non de classes d'emploi ou de traitement autoclave.
+
+**Sujets transverses.** Réglementation (urbanisme/PLU, déclaration préalable,
+permis, RE2020), budget, entretien, tendances d'aménagement extérieur.
+
+Angle toujours actionnable et ancré terrain Gironde.
+
+### Comparatifs bois / aluminium
+
+Ce sont nos meilleurs sujets, et notre position est un atout : **nous vendons
+et posons les deux**, donc nous n'avons aucun intérêt à pousser une matière.
+Un comparatif doit le dire explicitement, puis trancher franchement selon
+l'usage (« pour ce cas précis, nous conseillons… »). Ne jamais conclure par un
+match nul mou. Règles :
+
+- Ne pas dénigrer une matière : chacune a des cas où elle gagne (chaleur,
+  sur-mesure, réparabilité et bilan carbone côté bois ; portées, entretien
+  quasi nul, lames orientables et motorisation côté alu).
+- Un comparatif ne doit pas cannibaliser un guide mono-matière existant :
+  vérifier `lib/data/blog.ts` et choisir un angle de décision distinct.
+- Prudence factuelle identique : **aucun coefficient thermique (Uw), aucune
+  durée de garantie, aucun numéro de DTU ni seuil réglementaire inventé**.
+  Source vérifiée par recherche web, sinon formulation qualitative.
+- Véranda et extension chauffées : la réglementation thermique/énergétique et
+  les seuils d'urbanisme se vérifient avant d'être cités, jamais de mémoire.
 
 ## Ton & format
 
@@ -57,14 +90,20 @@ article calque sa structure, dans l'ordre :
   image de couverture (`COVER`) réutilisée en hero + `ogImage`.
 - Priorité de source : (1) vraie photo de chantier de `/public/images`
   (voir `public/images/` et `public/images/source-adefrance/`) → (2) photo libre
-  de droits (Unsplash/Pexels, licence libre, thème bois) → (3) image IA en
+  de droits (Unsplash/Pexels, licence libre, thème bois ou alu) → (3) image IA en
   dernier recours seulement. Ne jamais laisser un `src` non résolu : si aucune
   photo chantier ni libre de droits ne convient et qu'aucun outil de génération
   d'image n'est disponible, **signaler le manque à l'utilisateur** (il fournira
   une photo ou validera une génération IA) plutôt que de livrer un article avec
   une image manquante.
+- **Sujets aluminium :** l'entreprise a de vraies photos de chantier alu, à
+  utiliser en priorité avant toute banque d'images —
+  `source-adefrance/Carport-aluminium-Libourne-1..4.webp` et
+  `source-adefrance/Pergolas-aluminium-Libourne-1..9.webp`.
 - Chaque image : `alt` descriptif orienté requête + géographie quand pertinent,
   et une `caption` (légende) qui apporte une info, pas une redite.
+- Ne pas illustrer un sujet aluminium avec une photo de bois (ni l'inverse) :
+  l'image doit montrer la matière dont parle la section.
 - Nouvelles images téléchargées/générées : les déposer dans
   `public/images/blog/<slug>/` et tracer la provenance dans le fichier de
   propositions et le commit.
@@ -73,7 +112,14 @@ article calque sa structure, dans l'ordre :
 
 Chaque article lie vers : au moins une page service pertinente (`/carports`,
 `/pergolas`, `/amenagement-exterieur`, `/constructions-bois`), `/realisations`,
-et au moins un autre article du blog quand le sujet s'y prête. Classe CSS de
+et au moins un autre article du blog quand le sujet s'y prête.
+
+⚠️ Ce sont les **seules** routes services existantes — il n'y a PAS de
+`/terrasses`, `/bardages` ni `/verandas`. Les pages `/pergolas` et `/carports`
+traitent déjà largement l'aluminium : ce sont les cibles naturelles des sujets
+alu. Pour une véranda, une extension ou une verrière aluminium, pointer vers
+`/constructions-bois` ou `/amenagement-exterieur`. Vérifier l'existence d'une
+route dans `app/` avant de créer un lien. Classe CSS de
 lien interne : `text-secondary-dark underline underline-offset-4
 decoration-secondary/40 hover:decoration-secondary transition-colors`.
 

@@ -2,6 +2,7 @@
 dist/
 .output/
 .next/
+.next-old-*/
 .open-next/
 next-env.d.ts
 .wrangler/

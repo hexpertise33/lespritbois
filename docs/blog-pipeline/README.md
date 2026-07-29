@@ -31,10 +31,13 @@ Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
 ## Sujets en réserve prioritaires
 
-Réserve vide au 28/07/2026 : le dernier sujet prioritaire (bardage bois) a été
-publié sous le slug `bardage-bois-facade-essences-pose`. Les prochains articles
-devront partir de la liste « Idées de sujets en réserve » restante ou d'une
-veille web.
+Réserve vide au 29/07/2026. Le dernier sujet prioritaire (bardage bois) a été
+publié le 28/07 sous le slug `bardage-bois-facade-essences-pose`, et la
+dernière idée en réserve (filière bois local) le 29/07 sous le slug
+`bois-local-pin-maritime-douglas-gironde`. **La liste « Idées de sujets en
+réserve » est désormais entièrement consommée** : les prochains articles
+devront partir d'une veille web (angle neuf ou saisonnier) en recoupant
+`lib/data/blog.ts`.
 
 **Point réglementaire tranché le 28/07/2026 (à ne pas rouvrir).** L'accroche
 « bardage bois × RE2020 » qui figurait ici s'appuyait sur un décret n° 2026-16
@@ -59,6 +62,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-20 | publié  | Protéger sa terrasse en bois de la canicule (été)        | proteger-terrasse-bois-canicule-entretien-ete |
 | 2026-07-16 | publié  | Pool-house en bois : réglementation, usages et budget 2026 | pool-house-bois-guide           |
 | 2026-07-16 | écarté  | Bardage bois en 2026 : essences, tendances et RE2020 (angle RE2020 infondé) | bardage-bois-re2020-tendances |
+| 2026-07-29 | publié  | Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut la filière Nouvelle-Aquitaine ? | bois-local-pin-maritime-douglas-gironde |
 | 2026-07-28 | publié  | Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ? | bardage-bois-facade-essences-pose |
 | 2026-07-26 | publié  | Poulailler en bois : réglementation 2026, bien-être et implantation | poulailler-bois-reglementation-implantation |
 | 2026-07-21 | publié  | Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | cloture-brise-vue-bois-guide |
@@ -67,9 +71,12 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 
 ## Idées de sujets en réserve
 
-- Entretien d'une terrasse bois (saturateur, dégrisage) — saisonnier printemps.
-- Poulailler en bois : bien-être animal, essences, implantation.
-- Bois local (douglas, pin maritime) : filière Nouvelle-Aquitaine.
+Liste **vide au 29/07/2026** — toutes les idées ont été publiées. Le prochain
+sujet doit venir d'une veille web (WebSearch), dans la sémantique bois du site
+(terrasse, bardage, carport, pergola, abri, poulailler, pool-house, clôture,
+ossature/extension, urbanisme/PLU, filière bois), avec un angle qui ne
+cannibalise aucun article existant.
 
 Idées consommées (déjà publiées) : entretien terrasse, poulailler, bardage,
-pool-house, abri de jardin kit vs sur-mesure, extension ossature bois.
+pool-house, abri de jardin kit vs sur-mesure, extension ossature bois,
+filière bois local (douglas / pin maritime).

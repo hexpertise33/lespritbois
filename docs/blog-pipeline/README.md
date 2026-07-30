@@ -42,6 +42,12 @@ pergola bioclimatique, véranda, extension, protections solaires) : voir « Idé
 de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
 articles.
 
+**Prochain créneau (31/07/2026)** : la pergola bioclimatique alu est publiée
+(30/07). Prochain sujet alu conseillé : **carport aluminium ou carport bois**
+(comparatif de décision) ou **véranda aluminium**. Dernières publications :
+29/07 bois (filière locale), 30/07 alu (pergola bioclimatique) — un article bois
+serait légitime pour rééquilibrer, sinon poursuivre l'alu.
+
 **Point réglementaire tranché le 28/07/2026 (à ne pas rouvrir).** L'accroche
 « bardage bois × RE2020 » qui figurait ici s'appuyait sur un décret n° 2026-16
 supposé encadrer le bardage : c'est un faux rattachement. Vérification faite,
@@ -71,6 +77,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-21 | publié  | Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | cloture-brise-vue-bois-guide |
 | 2026-07-23 | publié  | Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête       | abri-jardin-bois-kit-ou-sur-mesure |
 | 2026-07-23 | publié  | Extension en ossature bois : prix au m², délais et avantages en 2026     | extension-ossature-bois-prix-m2   |
+| 2026-07-30 | publié  | Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026 | pergola-bioclimatique-aluminium-guide |
 
 ## Idées de sujets en réserve
 
@@ -79,11 +86,13 @@ vend et pose le bois **et** l'aluminium (les pages `/pergolas` et `/carports` le
 disent déjà largement). Le blog couvre donc les deux matières. Voir la section
 « Thèmes » et « Comparatifs bois / aluminium » de `ligne-editoriale.md`.
 
-Réserve aluminium et mixte (aucune encore rédigée) :
+Réserve aluminium et mixte (le sujet « pergola bioclimatique aluminium » a été
+consommé le 30/07/2026 sous `pergola-bioclimatique-aluminium-guide` : angle
+produit, il couvre déjà lames orientables, motorisation/capteurs, thermolaquage
+et teinte RAL, stores zip et entretien alu — ne pas le refaire, et éviter un
+doublon avec l'idée « entretien pergola / véranda alu » ci-dessous, qu'il faudra
+recentrer sur la véranda) :
 
-- **Pergola bioclimatique aluminium** : lames orientables, motorisation,
-  domotique, entretien — angle produit, à bien distinguer de l'article
-  comparatif `pergola-bois-ou-bioclimatique` déjà publié.
 - **Carport aluminium ou carport bois** : le comparatif de décision (le guide
   `carport-bois-guide` ne traite que le bois).
 - **Véranda aluminium** : usages, isolation, urbanisme et budget — seuils et

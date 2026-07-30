@@ -14,6 +14,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'pergola-bioclimatique-aluminium-guide',
+    titre:
+      'Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026',
+    extrait:
+      "Une pergola bioclimatique se juge d'abord sur l'étanchéité de ses lames et l'évacuation des eaux intégrée aux poteaux, la qualité des profilés et de leur thermolaquage, puis sur la pertinence de la motorisation — le prix ne vient qu'après (400 à 900 €/m² posé, fourchettes 2026). Lames orientables, capteurs de pluie et de vent, teinte RAL, stores zip, urbanisme et entretien : le guide produit, par un artisan à Libourne (Gironde).",
+    date: '2026-07-30',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp',
+  },
+  {
     slug: 'bois-local-pin-maritime-douglas-gironde',
     titre:
       'Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut vraiment la filière Nouvelle-Aquitaine ?',

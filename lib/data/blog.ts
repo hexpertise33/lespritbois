@@ -14,6 +14,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'carport-aluminium-ou-bois-comparatif',
+    titre:
+      'Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style)',
+    extrait:
+      "L'aluminium gagne sur l'entretien quasi nul, les grandes portées sans poteau central et l'évacuation des eaux intégrée aux poteaux ; le bois gagne sur la chaleur, le sur-mesure, la réparabilité et le ticket d'entrée. Nous vendons et posons les deux : fourchettes de prix 2026 posées, entretien sur quinze à vingt ans, urbanisme et verdict par profil de projet, par un artisan à Libourne (Gironde).",
+    date: '2026-07-31',
+    categorie: 'Guide · Carports',
+    image: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
+  },
+  {
     slug: 'pergola-bioclimatique-aluminium-guide',
     titre:
       'Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026',

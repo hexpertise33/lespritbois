@@ -42,11 +42,13 @@ pergola bioclimatique, véranda, extension, protections solaires) : voir « Idé
 de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
 articles.
 
-**Prochain créneau (31/07/2026)** : la pergola bioclimatique alu est publiée
-(30/07). Prochain sujet alu conseillé : **carport aluminium ou carport bois**
-(comparatif de décision) ou **véranda aluminium**. Dernières publications :
-29/07 bois (filière locale), 30/07 alu (pergola bioclimatique) — un article bois
-serait légitime pour rééquilibrer, sinon poursuivre l'alu.
+**Prochain créneau (01/08/2026)** : le comparatif carport alu/bois est publié
+(31/07) sous `carport-aluminium-ou-bois-comparatif`. Prochains sujets conseillés
+dans la réserve : **véranda aluminium** (seuils et réglementation thermique à
+vérifier par recherche web avant citation) ou **véranda ou extension ossature
+bois** (angle décision). Dernières publications : 29/07 bois (filière locale),
+30/07 alu (pergola bioclimatique), 31/07 mixte (comparatif carports) — un
+article franchement bois serait légitime pour rééquilibrer.
 
 **Point réglementaire tranché le 28/07/2026 (à ne pas rouvrir).** L'accroche
 « bardage bois × RE2020 » qui figurait ici s'appuyait sur un décret n° 2026-16
@@ -78,6 +80,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-23 | publié  | Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête       | abri-jardin-bois-kit-ou-sur-mesure |
 | 2026-07-23 | publié  | Extension en ossature bois : prix au m², délais et avantages en 2026     | extension-ossature-bois-prix-m2   |
 | 2026-07-30 | publié  | Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026 | pergola-bioclimatique-aluminium-guide |
+| 2026-07-31 | publié  | Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style) | carport-aluminium-ou-bois-comparatif |
 
 ## Idées de sujets en réserve
 
@@ -93,8 +96,12 @@ et teinte RAL, stores zip et entretien alu — ne pas le refaire, et éviter un
 doublon avec l'idée « entretien pergola / véranda alu » ci-dessous, qu'il faudra
 recentrer sur la véranda) :
 
-- **Carport aluminium ou carport bois** : le comparatif de décision (le guide
-  `carport-bois-guide` ne traite que le bois).
+- ~~**Carport aluminium ou carport bois** : le comparatif de décision~~ →
+  consommé le 31/07/2026 sous `carport-aluminium-ou-bois-comparatif` (portées et
+  structure, thermolaquage/RAL, entretien sur 15-20 ans, budgets posés 2026,
+  évacuation des eaux, verdict par profil). Ne pas refaire de comparatif carport
+  bois/alu ; un futur sujet carport devra changer d'angle (usage, dimensionnement,
+  motorisation d'accès).
 - **Véranda aluminium** : usages, isolation, urbanisme et budget — seuils et
   réglementation thermique à vérifier par recherche web avant citation.
 - **Véranda ou extension ossature bois** : que choisir pour agrandir ? (angle

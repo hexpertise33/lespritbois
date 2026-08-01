@@ -307,7 +307,7 @@ export default function ArticleCarportAluOuBoisPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src={COVER}
-              alt="Carport aluminium thermolaqué gris anthracite abritant deux voitures, réalisation en Gironde"
+              alt="Carport aluminium thermolaqué gris anthracite à toiture plate abritant deux voitures"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
@@ -413,13 +413,13 @@ export default function ArticleCarportAluOuBoisPage() {
             <DuoFigure
               a={{
                 src: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
-                alt: 'Carport bois deux places à toit plat abritant deux voitures, réalisation en Gironde',
+                alt: 'Carport bois deux places à toit plat abritant deux voitures, réalisation à Arveyres',
                 caption:
                   'Le bois : sections apparentes, poteaux posés sur plots béton et pièces remplaçables une par une.',
               }}
               b={{
                 src: '/images/source-adefrance/Carport-aluminium-Libourne-3.webp',
-                alt: 'Carport aluminium anthracite adossé avec panneaux latéraux ajourés, près de Libourne',
+                alt: 'Carport aluminium anthracite adossé avec panneaux latéraux ajourés',
                 caption:
                   'L’aluminium : profilés fins, teinte RAL au choix et habillages latéraux dessinés dans la même gamme.',
               }}
@@ -494,7 +494,7 @@ export default function ArticleCarportAluOuBoisPage() {
 
             <Figure
               src="/images/source-adefrance/Carport-aluminium-Libourne-1.webp"
-              alt="Carport aluminium thermolaqué anthracite associé à un claustra bois, aménagement extérieur en Gironde"
+              alt="Carport aluminium thermolaqué anthracite associé à un claustra bois à claire-voie"
               caption="Poudre polyester cuite au four : le thermolaquage donne une surface mate parfaitement uniforme, qui supporte très bien le voisinage du bois."
             />
 
@@ -599,7 +599,7 @@ export default function ArticleCarportAluOuBoisPage() {
 
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-5.webp"
-              alt="Charpente de carport bois sur mesure en cours de montage sur dalle béton, chantier en Gironde"
+              alt="Charpente de carport bois sur mesure en cours de montage sur dalle béton, chantier à Lagorce"
               caption="Sous l'ouvrage, le poste qu'on oublie de chiffrer : dalle, plots ou longrines selon la nature du sol, avant même la première poutre."
             />
 
@@ -646,7 +646,7 @@ export default function ArticleCarportAluOuBoisPage() {
 
             <Figure
               src="/images/source-adefrance/Pergolas-aluminium-Libourne-1.webp"
-              alt="Structure aluminium adossée couvrant un accès voiture, poutre périphérique sans gouttière apparente, Gironde"
+              alt="Structure aluminium adossée couvrant un accès voiture, poutre périphérique sans gouttière apparente"
               caption="Aucune gouttière rapportée sur la ligne de rive : l'eau court dans la poutre puis descend dans le poteau, un circuit à dégager une fois par an."
             />
 
@@ -732,7 +732,7 @@ export default function ArticleCarportAluOuBoisPage() {
 
             <Figure
               src="/images/source-adefrance/Carport-aluminium-Libourne-2.webp"
-              alt="Carport aluminium deux places sans poteau central abritant deux voitures près de Libourne"
+              alt="Carport aluminium deux places sans poteau central abritant deux voitures"
               caption="Poteaux repoussés aux angles : on récupère la largeur d'ouverture des portières, précieuse quand l'allée est contrainte."
             />
           </div>

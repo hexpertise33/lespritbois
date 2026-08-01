@@ -259,7 +259,7 @@ const GAMME = [
     accroche: 'Lignes tendues, grandes portées et aucun entretien, dans la teinte de vos menuiseries.',
     points: ['Structure et visserie inox', 'Grandes portées, peu de poteaux', 'Sert aussi d’abri de terrasse'],
     src: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
-    alt: 'Carport aluminium anthracite abritant deux voitures, structure sur mesure en Gironde',
+    alt: 'Carport aluminium anthracite thermolaqué à toiture plate abritant deux voitures',
     w: 1200,
     h: 646,
     pos: 'center 50%',
@@ -395,7 +395,7 @@ const GALERIE = [
   },
   {
     src: '/images/source-adefrance/Carport-aluminium-Libourne-1.webp',
-    alt: 'Carport aluminium sur mesure à toiture plate, Gironde',
+    alt: 'Carport aluminium sur mesure à toiture plate, adossé à un bardage bois à claire-voie',
     legende: 'Carport aluminium à toiture plate',
   },
   {
@@ -425,7 +425,7 @@ const GALERIE = [
   },
   {
     src: '/images/source-adefrance/Carport-aluminium-Libourne-2.webp',
-    alt: 'Carport aluminium contemporain abritant deux véhicules, Gironde',
+    alt: 'Carport aluminium contemporain à toiture plate abritant deux véhicules',
     legende: 'Carport aluminium double',
   },
   {

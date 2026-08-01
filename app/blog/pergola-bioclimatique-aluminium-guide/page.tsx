@@ -138,7 +138,7 @@ const jsonld = [
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Une pergola bioclimatique protège-t-elle vraiment de la pluie ?',
+        name: "Où part l'eau de pluie quand les lames sont fermées ?",
         acceptedAnswer: {
           '@type': 'Answer',
           text: "Oui, lames fermées, une pergola bioclimatique de qualité forme une toiture qui collecte l'eau et l'évacue par des chéneaux périphériques puis par les poteaux. C'est la qualité de l'étanchéité entre les lames et du circuit d'évacuation qui fait la différence : sur les modèles bas de gamme, l'eau finit par ruisseler ou goutter à la jonction des lames. Une pergola reste toutefois un ouvrage ouvert sur les côtés : par pluie battante et vent de travers, la terrasse peut recevoir des embruns.",
@@ -178,7 +178,7 @@ const jsonld = [
       },
       {
         '@type': 'Question',
-        name: 'Peut-on fermer les côtés de la pergola plus tard ?',
+        name: 'Stores zippés ou vitrages coulissants : peut-on les ajouter après coup ?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: "Oui, à condition de l'avoir anticipé : stores verticaux zippés, panneaux coulissants à lames ou vitrages coulissants se posent après coup si la structure a été dimensionnée et pré-équipée pour les recevoir. Attention en revanche au point de bascule : une pergola entièrement refermée par des vitrages ne s'utilise plus comme une pergola mais comme une véranda, avec des conséquences réglementaires et thermiques différentes. Mieux vaut en parler dès la conception.",
@@ -217,7 +217,7 @@ const gammes = [
 
 const faq = [
   {
-    q: 'Une pergola bioclimatique protège-t-elle vraiment de la pluie ?',
+    q: "Où part l'eau de pluie quand les lames sont fermées ?",
     r: (
       <>
         Oui, lames fermées, une pergola bioclimatique de qualité forme une toiture qui collecte l&apos;eau et
@@ -277,7 +277,7 @@ const faq = [
     ),
   },
   {
-    q: 'Peut-on fermer les côtés de la pergola plus tard ?',
+    q: 'Stores zippés ou vitrages coulissants : peut-on les ajouter après coup ?',
     r: (
       <>
         Oui, à condition de l&apos;avoir anticipé : stores verticaux zippés, panneaux coulissants à lames ou vitrages

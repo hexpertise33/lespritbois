@@ -168,7 +168,7 @@ const jsonld = [
       },
       {
         '@type': 'Question',
-        name: 'Faut-il une autorisation pour installer une pergola ?',
+        name: 'Déclaration préalable ou permis de construire : que prévoir pour une pergola ?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: "Selon la surface couverte, l'adossement à la maison et le PLU de votre commune, une déclaration préalable de travaux ou un permis de construire peut être requis. Les seuils et les règles varient d'une commune à l'autre : nous les vérifions avant d'engager le projet.",
@@ -241,7 +241,7 @@ const faq = [
     ),
   },
   {
-    q: 'Faut-il une autorisation pour installer une pergola ?',
+    q: 'Déclaration préalable ou permis de construire : que prévoir pour une pergola ?',
     r: (
       <>
         Selon la surface couverte, l&apos;adossement à la maison et le PLU de votre commune, une déclaration préalable

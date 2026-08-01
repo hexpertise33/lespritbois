@@ -152,7 +152,7 @@ const jsonld = [
       },
       {
         '@type': 'Question',
-        name: 'Quel bois choisir pour un carport ?',
+        name: 'Douglas, mélèze, chêne ou pin autoclave : quelle essence pour un carport ?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: "Un carport demande une essence durable exposée aux intempéries : le douglas et le mélèze offrent un excellent rapport durabilité-prix en bois local, le chêne un feuillu noble pour les projets haut de gamme, le pin autoclave une solution économique. La structure porteuse et l'ancrage au sol comptent autant que l'essence pour la longévité de l'ouvrage.",
@@ -168,7 +168,7 @@ const jsonld = [
       },
       {
         '@type': 'Question',
-        name: 'Faut-il une autorisation pour installer un carport ?',
+        name: "Quelles démarches d'urbanisme avant de poser un carport ?",
         acceptedAnswer: {
           '@type': 'Answer',
           text: "Un carport crée de l'emprise au sol : selon la surface créée et le PLU de votre commune, une déclaration préalable de travaux ou un permis de construire peut être nécessaire. Les règles varient d'une commune à l'autre et selon la zone. Nous vérifions ces formalités avant d'engager le projet.",
@@ -217,7 +217,7 @@ const faq = [
     ),
   },
   {
-    q: 'Quel bois choisir pour un carport ?',
+    q: 'Douglas, mélèze, chêne ou pin autoclave : quelle essence pour un carport ?',
     r: (
       <>
         Un carport demande une essence durable exposée aux intempéries : le douglas et le mélèze offrent un excellent
@@ -239,7 +239,7 @@ const faq = [
     ),
   },
   {
-    q: 'Faut-il une autorisation pour installer un carport ?',
+    q: "Quelles démarches d'urbanisme avant de poser un carport ?",
     r: (
       <>
         Un carport crée de l&apos;emprise au sol : selon la surface créée et le PLU de votre commune, une déclaration

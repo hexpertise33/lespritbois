@@ -6,9 +6,9 @@ import SiteFooter from '@/components/SiteFooter';
 import GalerieChantiers, { type Vignette } from './GalerieChantiers';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Réalisations : carports, pergolas, extensions bois | L\'Esprit Bois',
+  title: 'Nos chantiers en Gironde : douze réalisations racontées',
   description:
-    'Nos chantiers racontés : carport à Capian, extension à Clérac, maison ossature bois à Rauzan, terrasse à Lacanau, pergola à Montussan. Douze communes, contraintes et durées détaillées.',
+    'Carport à Capian, extension à Clérac, maison ossature bois à Rauzan, terrasse à Lacanau : douze chantiers avec leur contrainte, leurs matériaux et leur durée.',
   keywords:
     "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan",
   path: '/realisations',

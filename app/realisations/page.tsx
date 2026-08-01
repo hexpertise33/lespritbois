@@ -38,10 +38,10 @@ const CHANTIERS: Chantier[] = [
     commune: 'Saint-Pey-de-Castets',
     categorie: 'Pergola',
     titre: 'Ombrager une terrasse plein sud sans lui retirer sa lumière',
-    src: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-6.webp',
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-5.webp',
     w: 825,
     h: 1100,
-    alt: "Couverture de pergola aluminium vue de dessous, alternant panneaux sandwich isolés et bandes vitrées au-dessus d'une porte-fenêtre, à Saint-Pey-de-Castets",
+    alt: "Pergola aluminium anthracite adossée à une maison, vue de trois-quarts depuis le jardin, couverture translucide visible, à Saint-Pey-de-Castets",
     faits: [
       { label: 'Ouvrage', valeur: 'Pergola aluminium adossée' },
       { label: 'Couverture', valeur: 'Panneau sandwich isolé + bande vitrée' },

@@ -28,7 +28,8 @@ export function GET() {
   const base = SITE.url.replace(/\/+$/, '');
 
   const entrees = [
-    ...PAGES_STATIQUES.map((chemin) => ({ loc: `${base}${chemin || '/'}`, lastmod: null as string | null })),
+    // Racine sans slash final : Next normalise ainsi la canonical, le sitemap doit dire la même chose.
+    ...PAGES_STATIQUES.map((chemin) => ({ loc: `${base}${chemin}`, lastmod: null as string | null })),
     ...articles.map((article) => ({
       loc: `${base}/blog/${article.slug}`,
       lastmod: article.date || null,

@@ -21,14 +21,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -44,8 +57,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -54,8 +68,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -258,7 +272,7 @@ export default function ArticleCarportBoisPage() {
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
-              height="900"
+              height="646"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -377,6 +391,8 @@ export default function ArticleCarportBoisPage() {
             {/* Image carport ouvert */}
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-2.webp"
+              w={1200}
+              h={646}
               alt="Carport en bois ouvert abritant une voiture, réalisation en Gironde"
               caption="Le carport bois abrite sans enfermer : la voiture reste accessible, l'ouvrage reste léger et lumineux."
             />
@@ -410,6 +426,8 @@ export default function ArticleCarportBoisPage() {
             {/* Image dans le corps */}
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-3.webp"
+              w={1200}
+              h={646}
               alt="Carport en bois sur mesure réalisé par L'Esprit Bois près de Libourne"
               caption="Un carport bois sur mesure en Gironde : structure ventilée, poteaux ancrés et toiture accordée à la maison."
             />
@@ -479,6 +497,8 @@ export default function ArticleCarportBoisPage() {
             {/* Image toiture / intégration */}
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-5.webp"
+              w={1200}
+              h={646}
               alt="Carport en bois dont la toiture reprend celle de la maison, en Gironde"
               caption="La toiture du carport dialogue avec celle de la maison : pente, teinte et matériau accordés."
             />
@@ -518,6 +538,8 @@ export default function ArticleCarportBoisPage() {
             {/* Image intégration */}
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-6.webp"
+              w={1200}
+              h={646}
               alt="Carport en bois intégré au prolongement d'une maison, réalisation L'Esprit Bois"
               caption="Bien intégré, le carport prolonge la maison au lieu de la contredire."
             />

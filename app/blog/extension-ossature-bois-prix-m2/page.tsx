@@ -23,14 +23,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -46,8 +59,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -56,8 +70,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -269,8 +283,8 @@ export default function ArticleExtensionOssatureBoisPage() {
         <header className="relative pt-40 pb-24 md:pt-48 md:pb-28 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              width="1200"
-              height="900"
+              width="900"
+              height="1200"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -377,6 +391,8 @@ export default function ArticleExtensionOssatureBoisPage() {
 
             <Figure
               src="/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-chantier-gironde.jpg"
+              w={1200}
+              h={900}
               alt="Montage de l'ossature bois d'une extension sur un chantier en Gironde, structure montée contre la maison existante"
               caption="Sur nos chantiers, l'ossature de l'extension se monte contre la maison existante : le raccord de toiture se prépare avant la mise hors d'eau."
             />
@@ -415,6 +431,8 @@ export default function ArticleExtensionOssatureBoisPage() {
 
             <Figure
               src="/images/blog/extension-ossature-bois-prix-m2/interieur-extension-ossature-bois-sejour-lumineux.jpg"
+              w={1200}
+              h={682}
               alt="Intérieur lumineux d'un séjour d'extension à ossature bois avec grande baie vitrée coulissante et finitions bois clair"
               caption="Illustration : à isolation performante, l'ossature bois autorise de grandes baies vitrées sans compromettre le confort thermique, pour une pièce de vie baignée de lumière."
             />
@@ -452,6 +470,8 @@ export default function ArticleExtensionOssatureBoisPage() {
 
             <Figure
               src="/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg"
+              w={1200}
+              h={900}
               alt="Extension ossature bois terminée près de Libourne, grande baie vitrée coulissante et bardage bois douglas"
               caption="La grande baie vitrée inonde l'extension de lumière ; à emprise au sol égale, l'ossature bois offre plus de surface habitable qu'en maçonnerie."
             />
@@ -537,6 +557,8 @@ export default function ArticleExtensionOssatureBoisPage() {
 
             <Figure
               src="/images/blog/extension-ossature-bois-prix-m2/bardage-bois-douglas-pin-maritime.jpg"
+              w={1400}
+              h={969}
               alt="Gros plan sur un bardage en bois douglas de Nouvelle-Aquitaine, filière pin maritime et douglas des Landes de Gascogne"
               caption="Pin maritime des Landes de Gascogne et douglas : une filière régionale qui raccourcit les circuits et soutient l'emploi local."
             />

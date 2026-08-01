@@ -21,14 +21,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -44,8 +57,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -54,8 +68,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -241,7 +255,7 @@ export default function ArticleClotureBriseVueBoisPage() {
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
-              height="900"
+              height="667"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -342,6 +356,8 @@ export default function ArticleClotureBriseVueBoisPage() {
 
             <Figure
               src="/images/blog/cloture-brise-vue-bois-guide/cloture-bois-limite-separative-1m80-gironde.webp"
+              w={1200}
+              h={800}
               alt="Clôture bois occultante en limite séparative surmontée d'une haie, hauteur d'intimité en Gironde"
               caption="En limite séparative, le PLU plafonne le plus souvent la clôture autour de 1,80 m."
             />
@@ -419,6 +435,8 @@ export default function ArticleClotureBriseVueBoisPage() {
 
             <Figure
               src="/images/blog/cloture-brise-vue-bois-guide/lames-cloture-bois-douglas-meleze-classe-3.webp"
+              w={1200}
+              h={675}
               alt="Gros plan sur des lames de clôture en bois résineux, fil et teinte chaude type douglas ou mélèze"
               caption="Douglas et mélèze tiennent naturellement en classe 3, sans traitement chimique."
             />
@@ -472,11 +490,15 @@ export default function ArticleClotureBriseVueBoisPage() {
             <DuoFigure
               a={{
                 src: '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-claire-voie-ventilee-jardin.webp',
+                w: 1200,
+                h: 1798,
                 alt: 'Clôture bois en claire-voie à lames espacées laissant passer la lumière, style ventilé',
                 caption: 'La claire-voie laisse respirer le terrain et résiste mieux au vent.',
               }}
               b={{
                 src: '/images/blog/cloture-brise-vue-bois-guide/brise-vue-bois-panneau-plein-occultant-terrasse.webp',
+                w: 1200,
+                h: 800,
                 alt: 'Brise-vue bois en panneau plein à lames jointives, occultation totale des regards',
                 caption: 'Le panneau plein coupe totalement les regards autour de la terrasse ou de la piscine.',
               }}
@@ -521,6 +543,8 @@ export default function ArticleClotureBriseVueBoisPage() {
 
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-3.webp"
+              w={1200}
+              h={646}
               alt="Poteaux bois montés sur pieds métalliques galvanisés désolidarisés du sol, chantier L'Esprit Bois en Gironde"
               caption="Sur nos chantiers, les poteaux bois reposent sur des pieds métalliques désolidarisés du sol : le principe qui fait durer clôtures comme carports."
             />

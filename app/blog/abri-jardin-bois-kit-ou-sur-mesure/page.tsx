@@ -21,14 +21,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -44,8 +57,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -54,8 +68,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -261,7 +275,7 @@ export default function ArticleAbriJardinBoisPage() {
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
-              height="900"
+              height="1800"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -373,6 +387,8 @@ export default function ArticleAbriJardinBoisPage() {
 
             <Figure
               src="/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-ancien-rangement-jardin.jpg"
+              w={963}
+              h={1100}
               alt="Vieil abri de jardin en bois entouré de bacs et caisses de rangement dans un jardin arboré"
               caption="À la rentrée, le rangement extérieur déborde souvent d'un vieil abri : c'est le moment où repartent les projets d'abri de jardin, avant l'automne."
             />
@@ -438,6 +454,8 @@ export default function ArticleAbriJardinBoisPage() {
 
             <Figure
               src="/images/source-adefrance/IMG-20240712-WA0039-opt.webp"
+              w={825}
+              h={1100}
               alt="Bardage bois douglas raccordé à la maison existante avec grande baie vitrée, chantier L'Esprit Bois en Gironde"
               caption="Sur-mesure : bardage douglas et teinte accordés au bâti existant — l'ouvrage se raccorde à la maison au lieu d'y être simplement posé."
             />
@@ -519,6 +537,8 @@ export default function ArticleAbriJardinBoisPage() {
 
             <Figure
               src="/images/blog/abri-jardin-bois-kit-ou-sur-mesure/interieur-abri-jardin-bois-rangement-outils.jpg"
+              w={900}
+              h={1200}
               alt="Intérieur d'un abri de jardin en bois avec parois lambrissées et étagère de rangement au-dessus d'un escabeau"
               caption="Parois lambrissées et étagères hautes : dans un abri bois, le volume utile et le rangement se pensent dès la conception."
             />

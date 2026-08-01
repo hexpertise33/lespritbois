@@ -22,14 +22,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -45,8 +58,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -55,8 +69,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -286,8 +300,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
         <header className="relative pt-40 pb-24 md:pt-48 md:pb-28 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              width="1200"
-              height="900"
+              width="768"
+              height="512"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -392,6 +406,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
 
             <Figure
               src="/images/source-adefrance/Pergolas-aluminium-Libourne-9.webp"
+              w={768}
+              h={512}
               alt="Lames orientables entrouvertes vues du dessous sur une pergola bioclimatique en aluminium"
               caption="Lames entrouvertes : l'air circule, l'ombre tombe en bandes et la chaleur ne stagne pas sous la toiture."
             />
@@ -431,6 +447,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
 
             <Figure
               src="/images/source-adefrance/Pergolas-aluminium-Libourne-7.webp"
+              w={768}
+              h={512}
               alt="Pergola bioclimatique aluminium blanche adossée à une maison, avec store vertical zippé descendu sur le côté"
               caption="Adossée : la pergola prolonge le séjour, et c'est le store latéral — non les lames — qui coupe le soleil rasant."
             />
@@ -476,6 +494,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
 
             <Figure
               src="/images/source-adefrance/Pergolas-aluminium-Libourne-8.webp"
+              w={768}
+              h={512}
               alt="Structure d'une pergola bioclimatique aluminium blanche, poutre périphérique et lames orientables ouvertes"
               caption="La poutre périphérique cache le chéneau : l'eau collectée lames fermées descend à l'intérieur des poteaux."
             />
@@ -577,11 +597,15 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
             <DuoFigure
               a={{
                 src: '/images/source-adefrance/Pergolas-aluminium-Libourne-4.webp',
+                w: 768,
+                h: 512,
                 alt: 'Pergola bioclimatique aluminium anthracite autoportante au bord d’une piscine, lames orientables entrouvertes',
                 caption: 'Anthracite : la structure se dessine nettement dans le jardin.',
               }}
               b={{
                 src: '/images/source-adefrance/Pergolas-aluminium-Libourne-5.webp',
+                w: 768,
+                h: 512,
                 alt: 'Pergola bioclimatique aluminium blanche adossée à une maison à façade claire, lames orientables',
                 caption: 'Teinte claire : le même ouvrage se fait presque oublier sur une façade enduite.',
               }}
@@ -628,11 +652,15 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
             <DuoFigure
               a={{
                 src: '/images/source-adefrance/Pergolas-aluminium-Libourne-6.webp',
+                w: 768,
+                h: 512,
                 alt: 'Store vertical zippé descendu sur le côté d’une pergola bioclimatique en aluminium anthracite',
                 caption: 'Le store zip coulisse dans des rails : il tient au vent et coupe le soleil rasant.',
               }}
               b={{
                 src: '/images/source-adefrance/Pergolas-aluminium-Libourne-2.webp',
+                w: 768,
+                h: 512,
                 alt: 'Vue sous une pergola bioclimatique aluminium avec éclairage LED intégré aux traverses et store latéral',
                 caption: 'LED intégrées aux traverses et store latéral : la terrasse reste utilisable le soir.',
               }}

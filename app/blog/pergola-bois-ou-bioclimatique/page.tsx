@@ -21,14 +21,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -44,8 +57,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -54,8 +68,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -259,8 +273,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
         <header className="relative pt-40 pb-24 md:pt-48 md:pb-28 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              width="1200"
-              height="900"
+              width="800"
+              height="533"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -360,12 +374,16 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
             <DuoFigure
               a={{
                 src: '/images/source-adefrance/Pergolas-bois-Libourne.webp',
+                w: 900,
+                h: 990,
                 alt: 'Pergola en bois adossée à une maison en Gironde',
                 caption: 'Pergola bois : chaleur du matériau et intégration à la maison.',
               }}
               b={{
-                src: '/images/source-adefrance/Pergolas-aluminium-Libourne-1.webp',
-                alt: 'Pergola bioclimatique en aluminium à lames orientables',
+                src: '/images/pergola-bioclimatique-lisudestemps.webp',
+                w: 800,
+                h: 533,
+                alt: 'Pergola bioclimatique en aluminium à lames orientables au-dessus d’une terrasse bois',
                 caption: 'Pergola bioclimatique alu : lames orientables et lignes contemporaines.',
               }}
             />
@@ -415,6 +433,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
             {/* Image d'illustration */}
             <Figure
               src="/images/pergola-bois-massif-terrasse.webp"
+              w={1100}
+              h={1100}
               alt="Pergola en bois massif prolongeant une terrasse en Gironde"
               caption="Une pergola en bois massif prolonge naturellement une terrasse et se patine avec le temps."
             />
@@ -480,6 +500,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
             {/* Image bioclimatique */}
             <Figure
               src="/images/source-adefrance/Pergolas-aluminium-Libourne-4.webp"
+              w={768}
+              h={512}
               alt="Pergola bioclimatique en aluminium avec lames orientables au-dessus d'une terrasse"
               caption="Lames orientables et motorisées : la bioclimatique règle l'ombre et la ventilation au bouton."
             />
@@ -526,6 +548,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
             {/* Image intégration */}
             <Figure
               src="/images/pergola-terrasse-bois-libourne-2.webp"
+              w={900}
+              h={1200}
               alt="Pergola bois intégrée à une terrasse en bois, réalisation en Gironde"
               caption="Même bois pour la terrasse et la pergola : l'ensemble se lit comme un seul ouvrage."
             />

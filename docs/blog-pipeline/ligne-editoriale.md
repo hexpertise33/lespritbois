@@ -132,3 +132,22 @@ decoration-secondary/40 hover:decoration-secondary transition-colors`.
 - [ ] Maillage interne présent (service + réalisations + article lié).
 - [ ] Entrée ajoutée en tête de `lib/data/blog.ts`.
 - [ ] Apostrophes JSX échappées ; `npm run build` passe.
+
+## Sources externes à citer (constat d'audit GEO du 01/08/2026)
+
+Chaque article qui avance un seuil réglementaire, une taxe, une norme ou une
+classe d'emploi cite sa source **au premier endroit où l'affirmation apparaît**
+(lien `className={lienInterne}` + `target="_blank" rel="noopener noreferrer"`).
+URL vérifiées, à recopier à l'identique — ne jamais inventer d'autre URL :
+
+- Déclaration préalable : https://www.service-public.gouv.fr/particuliers/vosdroits/F17578
+- Permis de construire : https://www.service-public.gouv.fr/particuliers/vosdroits/F1986
+- Taxe d'aménagement : https://www.service-public.gouv.fr/particuliers/vosdroits/F23263
+- Garantie décennale : https://entreprendre.service-public.gouv.fr/vosdroits/F2034
+- RE2020 : https://www.ecologie.gouv.fr/politiques-publiques/reglementation-environnementale-re2020
+- NF DTU / avis techniques : https://www.cstb.fr/
+- Classes d'emploi du bois, durabilité des essences : https://www.fcba.fr/
+
+2 à 3 liens par article, chacun vers une fiche différente. Si aucune source de
+la liste n'étaye l'affirmation : formulation prudente, pas de lien inventé.
+Ajouter la nouvelle URL de l'article au ping IndexNow (voir README).

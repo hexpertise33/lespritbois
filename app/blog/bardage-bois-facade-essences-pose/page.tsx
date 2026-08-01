@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/source-adefrance/IMG-20250303-WA0044-1.jpg';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Bardage bois façade : essences, pose et prix 2026 | L'Esprit Bois",
+  title: "Bardage bois : essences, pose et prix 2026",
   description:
-    "Douglas, mélèze, red cedar ou pin traité, claire-voie ou recouvrement, lame d'air ventilée, déclaration préalable et prix au m² : le guide du bardage bois à Libourne et en Gironde.",
+    "Douglas, mélèze, red cedar : durabilité, sens de pose, ventilation de la lame d'air et budget au mètre carré.",
   keywords:
     "bardage bois façade, bardage bois, prix bardage bois au m2, bardage bois claire-voie, essence bardage bois douglas mélèze, bardage red cedar, classe d'emploi 3, NF DTU 41.2, lame d'air ventilée, bardage bois Libourne, bardage bois Gironde",
   path: '/blog/bardage-bois-facade-essences-pose',
@@ -71,7 +71,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-28',
     dateModified: '2026-07-28',

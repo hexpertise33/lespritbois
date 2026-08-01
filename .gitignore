@@ -42,3 +42,9 @@ pnpm-debug.log*
 # Artefacts de build / plugins
 tsconfig.tsbuildinfo
 .superpowers/
+
+# Données brutes de l'audit SEO (regénérables)
+lesprit-bois.fr-audit/crawl.json
+lesprit-bois.fr-audit/crawl.py
+lesprit-bois.fr-audit/home-render.json
+lesprit-bois.fr-audit/render.err

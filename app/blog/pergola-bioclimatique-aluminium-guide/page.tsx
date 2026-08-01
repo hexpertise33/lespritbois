@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pergola bioclimatique aluminium : le guide 2026 | L'Esprit Bois",
+  title: "Pergola bioclimatique aluminium : le guide",
   description:
-    "Lames orientables, motorisation, thermolaquage, teinte RAL, urbanisme et budget 2026 : le guide complet de la pergola bioclimatique en aluminium à Libourne et en Gironde.",
+    "Lames orientables, évacuation de l'eau, motorisation et options : ce qu'il faut savoir avant de choisir.",
   keywords:
     "pergola bioclimatique aluminium, pergola bioclimatique, lames orientables, pergola bioclimatique motorisée, prix pergola bioclimatique 2026, pergola aluminium sur mesure, thermolaquage RAL, store zip pergola, pergola bioclimatique Libourne, pergola aluminium Gironde",
   path: '/blog/pergola-bioclimatique-aluminium-guide',
@@ -102,7 +102,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-30',
     dateModified: '2026-07-30',

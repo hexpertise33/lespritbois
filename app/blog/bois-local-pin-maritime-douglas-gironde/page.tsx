@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Bois local en Gironde : pin maritime, douglas, châtaignier | L'Esprit Bois",
+  title: "Bois local en Gironde : pin, douglas, châtaignier",
   description:
-    "Bois local Gironde : pin maritime des Landes, douglas de Nouvelle-Aquitaine, châtaignier. Origine, durabilité, label Bois de France et arbitrages honnêtes par un artisan à Libourne.",
+    "Ce que valent vraiment les essences de Nouvelle-Aquitaine en extérieur : durabilité, usages, limites.",
   keywords:
     "bois local Gironde, pin maritime des Landes, douglas Nouvelle-Aquitaine, filière bois locale Libourne, label Bois de France, essence bois locale terrasse Gironde, bois français construction, châtaignier bardage, CTB B+, classe d'emploi bois",
   path: '/blog/bois-local-pin-maritime-douglas-gironde',
@@ -72,7 +72,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-29',
     dateModified: '2026-07-29',

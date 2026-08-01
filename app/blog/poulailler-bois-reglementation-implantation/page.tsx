@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Poulailler en bois : réglementation 2026 et implantation | L'Esprit Bois",
+  title: "Poulailler en bois : règles et implantation",
   description:
-    "Poulailler en bois : moins de 5 m² sans formalité, déclaration préalable de 5 à 20 m², déclaration des volailles en mairie obligatoire. Dimensionnement, essences et implantation, par un artisan à Libourne (Gironde).",
+    "Distances à respecter, règlement sanitaire départemental, orientation et conception d'un poulailler qui dure.",
   keywords:
     "poulailler en bois, réglementation poulailler 2026, déclaration poulailler mairie, bien-être des poules, poulailler sur mesure Gironde, construire un poulailler Libourne, poulailler bois durable, dimensionnement poulailler",
   path: '/blog/poulailler-bois-reglementation-implantation',
@@ -71,7 +71,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-26',
     dateModified: '2026-07-26',

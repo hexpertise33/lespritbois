@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/terrasse-bois-plots-gironde-2.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Protéger sa terrasse en bois de la canicule | L'Esprit Bois",
+  title: "Protéger sa terrasse bois de la canicule",
   description:
-    "Saturateur, ombre, nettoyage : comment protéger une terrasse en bois des fortes chaleurs et des UV. Le guide d'entretien d'été d'un artisan à Libourne, en Gironde.",
+    "Grisaillement, dilatation, échardes : ce qui abîme une terrasse l'été et les gestes d'entretien qui la sauvent.",
   keywords:
     "protéger terrasse bois canicule, entretien terrasse bois été, saturateur terrasse bois, grisaillement bois UV, terrasse bois chaleur, voile d'ombrage terrasse, entretien terrasse bois Gironde, terrasse bois Libourne",
   path: '/blog/proteger-terrasse-bois-canicule-entretien-ete',
@@ -84,7 +84,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-20',
     dateModified: '2026-07-20',

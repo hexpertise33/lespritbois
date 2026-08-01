@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-cover.jpg';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Abri de jardin bois : kit ou sur-mesure ? Comparatif honnête | L\'Esprit Bois',
+  title: 'Abri de jardin bois : kit ou sur-mesure ?',
   description:
-    "Kit ou sur-mesure pour votre abri de jardin en bois ? Budget 2026, essence, durée de vie, réglementation et implantation : le comparatif honnête d'un artisan à Libourne, en Gironde.",
+    "Kit ou sur-mesure : durée de vie, montage, budget et limites de chaque solution, par un charpentier de Gironde.",
   keywords:
     "abri de jardin bois, abri de jardin sur mesure, abri de jardin en kit, abri de jardin bois Gironde, abri de jardin Libourne, prix abri de jardin bois 2026, kit abri jardin, abri jardin douglas",
   path: '/blog/abri-jardin-bois-kit-ou-sur-mesure',
@@ -100,7 +100,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-26',
     dateModified: '2026-07-26',

@@ -9,9 +9,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Extension ossature bois : prix au m², délais et avantages 2026 | L'Esprit Bois",
+  title: "Extension ossature bois : prix au m² et délais",
   description:
-    "Comptez 1 700 à 2 500 €/m² pour une extension ossature bois sur mesure en 2026. Prix, délais, autorisations, RE2020 et bois local : le guide d'un artisan en Gironde.",
+    "Ce que coûte réellement une extension bois en Gironde, ce qui fait varier le devis, et les délais à prévoir.",
   keywords:
     "extension ossature bois, prix extension bois m2, extension bois Gironde, extension ossature bois Libourne, agrandissement maison bois, extension bois RE2020, extension ossature bois prix au m2",
   path: '/blog/extension-ossature-bois-prix-m2',
@@ -102,7 +102,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-23',
     dateModified: '2026-07-23',

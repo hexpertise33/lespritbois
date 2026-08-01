@@ -5,9 +5,9 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Carport bois, aluminium & solaire à Libourne (33) | L'Esprit Bois",
+  title: "Carport bois, alu & solaire à Libourne (33)",
   description:
-    "Notre gamme de carports sur mesure : bois (toiture plate, bac acier, tuile), aluminium thermolaqué et carport solaire photovoltaïque. Éclairage, claustras, teintes RAL. Conception et pose à Libourne et en Gironde.",
+    "Carport bois, aluminium ou solaire, sur mesure. Conception et pose par nos équipes à Libourne et en Gironde.",
   keywords:
     'carport Libourne, carport Gironde, carport bois, carport aluminium, carport solaire, abri voiture Libourne, carport toiture plate, carport bac acier, carport adossé, carport autoporté',
   path: '/carports',

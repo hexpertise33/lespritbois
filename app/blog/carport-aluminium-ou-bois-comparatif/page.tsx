@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/source-adefrance/Carport-aluminium-Libourne-4.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Carport aluminium ou bois : comparatif 2026 en Gironde | L'Esprit Bois",
+  title: "Carport aluminium ou bois : le comparatif",
   description:
-    "Budget 2026, entretien, portées et style : nous vendons et posons les deux matières. Le comparatif honnête carport aluminium / carport bois, avec verdict par profil, à Libourne et en Gironde.",
+    "Entretien, portée, budget, intégration au bâti : la comparaison poste par poste, sans complaisance.",
   keywords:
     "carport aluminium ou bois, comparatif carport bois aluminium, carport aluminium Gironde, carport bois Libourne, prix carport aluminium 2026, entretien carport aluminium, carport aluminium sur mesure, carport bois ou alu, abri voiture aluminium",
   path: '/blog/carport-aluminium-ou-bois-comparatif',
@@ -102,7 +102,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-31',
     dateModified: '2026-07-31',

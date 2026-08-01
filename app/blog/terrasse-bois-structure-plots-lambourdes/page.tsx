@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/terrasse-bois-plots-gironde-4.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Structure terrasse bois : plots, lambourdes, ventilation | Gironde",
+  title: "Structure d'une terrasse bois : plots et lambourdes",
   description:
-    "Plots réglables, entraxe des lambourdes, ventilation de la sous-face et NF DTU 51.4 : ce qui décide vraiment de la durée de vie d'une terrasse en bois, par un artisan à Libourne (Gironde).",
+    "Plots, lambourdes, ventilation, pente : tout ce qui se joue sous les lames et décide de la durée de vie.",
   keywords:
     "structure terrasse bois, terrasse bois sur plots réglables, entraxe lambourdes terrasse, lambourdes terrasse bois, ventilation terrasse bois, sous-face terrasse bois, NF DTU 51.4, pose terrasse bois Gironde, terrasse bois Libourne",
   path: '/blog/terrasse-bois-structure-plots-lambourdes',
@@ -73,7 +73,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-08-01',
     dateModified: '2026-08-01',

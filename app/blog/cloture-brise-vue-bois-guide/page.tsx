@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-horizontales-jardin-gironde.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | L'Esprit Bois",
+  title: "Clôture et brise-vue bois : hauteur et budget",
   description:
-    "Quelle hauteur de clôture ai-je le droit de poser ? PLU, Code civil, déclaration préalable, essences durables, styles et budget au mètre linéaire : le guide clôture bois en Gironde.",
+    "Hauteur autorisée, distance de la limite séparative, essences qui tiennent, et ce que coûte un mètre linéaire.",
   keywords:
     "clôture en bois, brise-vue bois jardin, hauteur clôture réglementation PLU, clôture bois Gironde, claire-voie bois, clôture bois sur mesure Libourne, déclaration préalable clôture, essence clôture douglas",
   path: '/blog/cloture-brise-vue-bois-guide',
@@ -100,7 +100,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-21',
     dateModified: '2026-07-21',
@@ -503,7 +508,7 @@ export default function ArticleClotureBriseVueBoisPage() {
                 Une clôture ou un brise-vue s&apos;inscrit presque toujours dans un projet plus large — terrasse, tour de
                 piscine, portail, bardage assorti. Nous concevons l&apos;ensemble d&apos;un seul tenant : découvrez notre
                 approche de l&apos;<a href="/amenagement-exterieur" className={lienInterne}>aménagement extérieur</a> et
-                nos <a href="/bardages" className={lienInterne}>bardages bois</a>, pour une clôture qui dialogue avec la
+                nos <a href="/amenagement-exterieur" className={lienInterne}>bardages bois</a>, pour une clôture qui dialogue avec la
                 maison plutôt que de la contredire.
               </p>
             </section>

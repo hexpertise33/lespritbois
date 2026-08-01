@@ -18,6 +18,36 @@ export const metadata: Metadata = buildMetadata({
   ville: 'Les Billaux',
 });
 
+/* Avis Google réels, repris dans le JSON-LD (aggregateRating) et dans le
+   bandeau défilant plus bas. Doit rester déclaré avant `jsonld`. */
+const AVIS = [
+  {
+    nom: 'clément Baudon',
+    texte:
+      "Commande faite 2 jours avant les congés. On a pu avoir la totalité de la fourniture pour notre terrasse. Super conseil pour le plan de pose. Énorme avantage : l'expérience du vendeur, pour le rendu esthétique comme la mise en place.",
+  },
+  {
+    nom: 'Damien',
+    texte:
+      "Merci à David et toute son équipe pour leurs conseils. Ils m'ont aidé sur la conception d'une pergola et le résultat est parfait.",
+  },
+  {
+    nom: 'Guillaume Marie-Catherine',
+    texte: 'Malgré un timing ultra serré, le permis de construire a été déposé dans les temps !',
+  },
+  {
+    nom: 'thuy tran',
+    texte:
+      "Merci pour la modélisation 3D des chalets et pour les précieux conseils sur l'architecture, l'optimisation de l'espace et des coûts.",
+  },
+  {
+    nom: 'Georgia Flores',
+    texte:
+      "Merci infiniment à Manon et ses collègues pour le travail sur mes plans d'agrandissement. Projet mené jusqu'à l'obtention du permis. De bons conseils.",
+  },
+  { nom: 'Bérengère Coste', texte: "Entreprise sérieuse et à l'écoute." },
+];
+
 const jsonld = [
   {
     '@context': 'https://schema.org',
@@ -38,6 +68,16 @@ const jsonld = [
     image: 'https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp',
     priceRange: '€€',
     sameAs: SAME_AS,
+    /* Note globale des avis Google réellement affichés plus bas dans la page
+       (constante AVIS). Déclarée sur l'accueil uniquement : la répéter sur
+       chaque page reviendrait à multiplier artificiellement le signal. */
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: AVIS.length,
+    },
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'certification',
@@ -112,34 +152,6 @@ const jsonld = [
       ],
     },
   },
-];
-
-const AVIS = [
-  {
-    nom: 'clément Baudon',
-    texte:
-      "Commande faite 2 jours avant les congés. On a pu avoir la totalité de la fourniture pour notre terrasse. Super conseil pour le plan de pose. Énorme avantage : l'expérience du vendeur, pour le rendu esthétique comme la mise en place.",
-  },
-  {
-    nom: 'Damien',
-    texte:
-      "Merci à David et toute son équipe pour leurs conseils. Ils m'ont aidé sur la conception d'une pergola et le résultat est parfait.",
-  },
-  {
-    nom: 'Guillaume Marie-Catherine',
-    texte: 'Malgré un timing ultra serré, le permis de construire a été déposé dans les temps !',
-  },
-  {
-    nom: 'thuy tran',
-    texte:
-      "Merci pour la modélisation 3D des chalets et pour les précieux conseils sur l'architecture, l'optimisation de l'espace et des coûts.",
-  },
-  {
-    nom: 'Georgia Flores',
-    texte:
-      "Merci infiniment à Manon et ses collègues pour le travail sur mes plans d'agrandissement. Projet mené jusqu'à l'obtention du permis. De bons conseils.",
-  },
-  { nom: 'Bérengère Coste', texte: "Entreprise sérieuse et à l'écoute." },
 ];
 
 /* ---------------------------------------------------------------------------

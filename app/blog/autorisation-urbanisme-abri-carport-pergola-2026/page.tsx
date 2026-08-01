@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/source-adefrance/Carport-bois-Libourne-3.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Autorisation d'urbanisme abri, carport, pergola en 2026 | L'Esprit Bois",
+  title: "Abri, carport, pergola : quelle autorisation en 2026 ?",
   description:
-    "Déclaration préalable ou permis de construire ? Seuils d'emprise au sol, CERFA 16702, secteurs protégés : le guide 2026 pour abri de jardin, carport et pergola en Gironde.",
+    "Déclaration préalable ou permis de construire selon la surface, cas des secteurs protégés, et pièces à fournir.",
   keywords:
     "autorisation urbanisme abri de jardin, déclaration préalable carport, déclaration préalable travaux 2026, CERFA 16702, permis de construire pergola, seuil 20 m2 emprise au sol, urbanisme Libourne, autorisation abri de jardin Gironde",
   path: '/blog/autorisation-urbanisme-abri-carport-pergola-2026',
@@ -71,7 +71,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-11',
     dateModified: '2026-07-11',

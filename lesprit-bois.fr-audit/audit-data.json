@@ -1,0 +1,331 @@
+{
+ "summary": {
+  "health_score": 75,
+  "business_type": "Local Service — artisan charpentier / constructeur bois (brick-and-mortar + zone de service), Les Billaux (33500), Gironde",
+  "top_findings": [
+   "Lien Facebook erroné dans le sameAs et le pied de page (facebook.com/Eprisbois33, coquille probable) — seul lien externe du site",
+   "Aucun lien vers la fiche Google Business Profile, ni carte, ni bouton d'avis",
+   "/realisations : 539 mots pour 22 photos, alors que la page reçoit 21 liens internes",
+   "6 avis Google 5/5 affichés sans balisage AggregateRating",
+   "Lien interne mort vers /bardages depuis un article de blog (404)"
+  ],
+  "quick_wins": [
+   "Corriger l'URL Facebook et ajouter Instagram au sameAs (5 min)",
+   "Réparer le lien /bardages (5 min)",
+   "publisher.logo en PNG au lieu de SVG sur les 14 articles (10 min)",
+   "Ajouter AggregateRating sur l'accueil (15 min)",
+   "Déposer llms.txt (15 min)"
+  ]
+ },
+ "categories": [
+  {
+   "name": "SEO technique",
+   "score": 84,
+   "what_works": [
+    "http→https, www→non-www, slash final : toutes en 301/308",
+    "Sitemap aligné sur les 24 pages indexables, aucune orpheline",
+    "Rendu serveur intégral, indexation sans JavaScript",
+    "HSTS, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy présents"
+   ],
+   "findings": [
+    {
+     "title": "Content-Security-Policy absente",
+     "severity": "Medium",
+     "description": "Seul en-tête de sécurité manquant sur l'ensemble du site.",
+     "recommendation": "Ajouter une CSP, en commençant en Report-Only."
+    },
+    {
+     "title": "Canonical de l'accueil sans slash final",
+     "severity": "Low",
+     "description": "La canonical déclare https://lesprit-bois.fr alors que le sitemap et les liens internes utilisent la version avec slash. Les deux répondent 200.",
+     "recommendation": "Harmoniser sur une seule forme."
+    },
+    {
+     "title": "X-Powered-By: Next.js exposé",
+     "severity": "Low",
+     "description": "Divulgue la pile technique sur toutes les réponses.",
+     "recommendation": "Supprimer l'en-tête."
+    },
+    {
+     "title": "Pas de fichier IndexNow",
+     "severity": "Low",
+     "description": "Bing, Yandex et Naver ne reçoivent pas de notification malgré une publication régulière d'articles.",
+     "recommendation": "Déposer une clé IndexNow et notifier à chaque publication."
+    }
+   ]
+  },
+  {
+   "name": "Qualité de contenu",
+   "score": 68,
+   "what_works": [
+    "Pages de gamme de 1 365 à 3 156 mots avec FAQ structurée",
+    "Auteur nommé et cohérent sur les 14 articles, en JSON-LD et en signature visible",
+    "14 articles de 1 880 à 3 744 mots, tous datés 2026",
+    "SIRET, assureur décennal et Qualibat affichés"
+   ],
+   "findings": [
+    {
+     "title": "/realisations est une galerie sans texte",
+     "severity": "Critical",
+     "description": "539 mots pour 22 photos, aucune description de chantier, aucun chiffre, aucun verbatim rattaché à un projet. C'est la 2e page la plus maillée du site (21 liens entrants).",
+     "recommendation": "Transformer 6 à 8 projets en études de cas de 150 à 250 mots : contexte, contrainte, solution, durée, matériaux, commune."
+    },
+    {
+     "title": "Aucune page contact dédiée",
+     "severity": "High",
+     "description": "Le seul point de conversion est l'ancre /#quote sur l'accueil.",
+     "recommendation": "Créer /contact avec adresse, horaires, formulaire, carte et balisage ContactPage."
+    },
+    {
+     "title": "Aucune page « Qui sommes-nous »",
+     "severity": "High",
+     "description": "David Bertrand est déclaré « Expert bâtiment » en JSON-LD et signe 14 articles, sans page de présentation ni qualification vérifiable.",
+     "recommendation": "Créer la page et la lier depuis chaque signature d'article."
+    },
+    {
+     "title": "/amenagement-exterieur sous-développée",
+     "severity": "Medium",
+     "description": "1 365 mots contre 2 204 à 3 156 sur les pages sœurs, pour cinq sous-produits.",
+     "recommendation": "Étoffer chaque sous-section au niveau des autres pages de gamme."
+    },
+    {
+     "title": "Chevauchement blog / pages de gamme",
+     "severity": "Medium",
+     "description": "Deux articles pergolas et deux articles carports couvrent des intentions proches des pages de gamme correspondantes.",
+     "recommendation": "Vérifier qu'aucune FAQ n'est dupliquée et différencier les angles."
+    }
+   ]
+  },
+  {
+   "name": "On-page & maillage",
+   "score": 72,
+   "what_works": [
+    "Un seul h1 par page sur les 25 pages",
+    "Aucun title ni meta description dupliqué",
+    "Aucune page orpheline",
+    "11 à 14 h2 par page de gamme"
+   ],
+   "findings": [
+    {
+     "title": "Lien interne mort vers /bardages",
+     "severity": "High",
+     "description": "Lié depuis /blog/cloture-brise-vue-bois-guide, répond 404. Seul lien mort sur 25 destinations testées.",
+     "recommendation": "Rediriger vers /amenagement-exterieur ou créer la page."
+    },
+    {
+     "title": "15 titles dépassent 65 caractères",
+     "severity": "High",
+     "description": "Jusqu'à 93 caractères. Le suffixe « | L'Esprit Bois » coûte 16 caractères sur chaque page.",
+     "recommendation": "Ramener sous 60 caractères, supprimer le suffixe sur les articles."
+    },
+    {
+     "title": "14 meta descriptions dépassent 160 caractères",
+     "severity": "Medium",
+     "description": "Jusqu'à 239 caractères sur /pergolas.",
+     "recommendation": "Réécrire entre 140 et 155 caractères."
+    }
+   ]
+  },
+  {
+   "name": "Données structurées",
+   "score": 74,
+   "what_works": [
+    "GeneralContractor correctement typé avec adresse, geo, horaires, hasCredential",
+    "BreadcrumbList, Service et FAQPage valides sur toutes les pages de gamme",
+    "BlogPosting avec author de type Person sur les 14 articles",
+    "Aucun type déprécié"
+   ],
+   "findings": [
+    {
+     "title": "publisher.logo en SVG sur les 14 BlogPosting",
+     "severity": "High",
+     "description": "Google n'accepte pas le SVG pour ce champ : JPG, PNG ou WebP requis. Les articles ne sont pas éligibles aux résultats enrichis.",
+     "recommendation": "Utiliser logo2026.png (350x150), déjà présent dans le dépôt."
+    },
+    {
+     "title": "AggregateRating absent malgré 6 avis affichés",
+     "severity": "Medium",
+     "description": "« 5,0 sur 5 d'après 6 avis Google » s'affiche sur l'accueil sans balisage.",
+     "recommendation": "Ajouter AggregateRating sur l'entité GeneralContractor de l'accueil uniquement."
+    },
+    {
+     "title": "Entité GeneralContractor dupliquée sans @id",
+     "severity": "Medium",
+     "description": "Répétée intégralement sur 6 pages avec des jeux de propriétés incohérents.",
+     "recommendation": "Déclarer un @id unique et le référencer."
+    },
+    {
+     "title": "sameAs incomplet et probablement erroné",
+     "severity": "Medium",
+     "description": "Un seul profil déclaré, facebook.com/Eprisbois33, dont le nom semble comporter une coquille. Instagram absent.",
+     "recommendation": "Corriger l'URL après vérification manuelle et ajouter Instagram."
+    }
+   ]
+  },
+  {
+   "name": "Performance (CWV)",
+   "score": 80,
+   "what_works": [
+    "TTFB de 120 à 205 ms sur les pages testées",
+    "Image de héro préchargée, fetchPriority=high, dimensions explicites, WebP",
+    "Polices auto-hébergées via next/font",
+    "Aucun JavaScript applicatif bloquant"
+   ],
+   "findings": [
+    {
+     "title": "Police d'icônes tierce bloquant le rendu",
+     "severity": "High",
+     "description": "304 Ko (311 088 octets, mesuré) chargés depuis fonts.gstatic.com via une feuille de style synchrone, pour une quinzaine d'icônes réellement utilisées.",
+     "recommendation": "Remplacer par des SVG inline, ou charger la feuille de style de façon non bloquante."
+    },
+    {
+     "title": "14 images sans dimensions sur /blog",
+     "severity": "Low",
+     "description": "Le risque CLS ne se matérialise pas : le conteneur div.h-56 réserve déjà l'espace, vérifié dans le code.",
+     "recommendation": "Ajouter les dimensions par bonne pratique, sans urgence."
+    }
+   ]
+  },
+  {
+   "name": "Recherche IA (GEO)",
+   "score": 68,
+   "what_works": [
+    "Aucun crawler IA bloqué : GPTBot, ClaudeBot, PerplexityBot, Google-Extended testés en direct",
+    "Rendu serveur intégral",
+    "FAQPage sur les 14 articles et les 4 pages de gamme",
+    "Tableaux comparatifs et chiffres datés 2026"
+   ],
+   "findings": [
+    {
+     "title": "llms.txt absent",
+     "severity": "High",
+     "description": "Renvoie 404.",
+     "recommendation": "Déposer le fichier fourni dans findings/geo.md."
+    },
+    {
+     "title": "Aucune source externe citée",
+     "severity": "High",
+     "description": "Les articles avancent seuils réglementaires et prix sans citer service-public.fr, le code de l'urbanisme ou les DTU.",
+     "recommendation": "Sourcer les affirmations vérifiables."
+    },
+    {
+     "title": "Signaux de marque hors site quasi inexistants",
+     "severity": "High",
+     "description": "Aucune présence YouTube, LinkedIn, Reddit ou presse détectée.",
+     "recommendation": "Développer au moins un canal externe cohérent."
+    }
+   ]
+  },
+  {
+   "name": "SEO local",
+   "score": 49,
+   "what_works": [
+    "NAP cohérent à 100 % sur l'ensemble du site",
+    "Communes desservies citées sur les 4 pages de gamme",
+    "FAQ à angle local réel, dont le secteur protégé de Saint-Émilion",
+    "Citations officielles présentes (societe.com, pappers.fr)"
+   ],
+   "findings": [
+    {
+     "title": "Lien Facebook erroné dans le pied de page et le sameAs",
+     "severity": "Critical",
+     "description": "facebook.com/Eprisbois33 : le nom semble comporter une coquille. Facebook bloque la vérification automatisée, à confirmer manuellement.",
+     "recommendation": "Corriger dans lib/data/navigation.ts ligne 31."
+    },
+    {
+     "title": "Aucun lien vers la fiche Google Business Profile",
+     "severity": "High",
+     "description": "Ni lien, ni carte, ni bouton d'avis. Les 6 avis sont recopiés en dur sans lien vers leur source.",
+     "recommendation": "Lier la fiche depuis le bloc avis et intégrer une carte sur la page contact."
+    },
+    {
+     "title": "Écart d'adresse avec les registres légaux",
+     "severity": "Medium",
+     "description": "« 1 Aux Pradasses » sur le site contre « Lotissement Les Pradasses » dans les registres.",
+     "recommendation": "Harmoniser, Google recoupant ces sources."
+    },
+    {
+     "title": "Risque de doublon d'entité avec a-defrance.fr",
+     "severity": "Medium",
+     "description": "Le site sœur partage le même téléphone et la même adresse.",
+     "recommendation": "Différencier les entités ou clarifier la relation."
+    },
+    {
+     "title": "Volume d'avis faible",
+     "severity": "Low",
+     "description": "6 avis, tous à 5/5.",
+     "recommendation": "Mettre en place une relance systématique après réception de chantier."
+    }
+   ]
+  },
+  {
+   "name": "Images",
+   "score": 85,
+   "what_works": [
+    "Aucune image sans attribut alt sur ~250 images",
+    "Textes alternatifs descriptifs et localisés",
+    "WebP généralisé",
+    "Dimensions présentes sur 24 pages sur 25"
+   ],
+   "findings": [
+    {
+     "title": "Quelques fichiers lourds",
+     "severity": "Low",
+     "description": "Jusqu'à 223 Ko pour l'image de héro de /realisations.",
+     "recommendation": "Recompresser les images au-dessus de 150 Ko."
+    }
+   ]
+  }
+ ],
+ "action_plan": {
+  "phases": [
+   {
+    "name": "Phase 1 : corrections immédiates",
+    "timeframe": "Moins d'une heure",
+    "items": [
+     "Corriger l'URL Facebook (après vérification manuelle)",
+     "Ajouter Instagram au sameAs",
+     "Réparer le lien mort /bardages",
+     "publisher.logo en PNG sur les 14 articles",
+     "Ajouter AggregateRating sur l'accueil",
+     "Déposer llms.txt"
+    ]
+   },
+   {
+    "name": "Phase 2 : le local",
+    "timeframe": "Semaine 1",
+    "items": [
+     "Relier le site à la fiche Google Business Profile",
+     "Créer une page /contact avec balisage ContactPage",
+     "Harmoniser le NAP avec les registres légaux",
+     "Mettre en place la collecte d'avis après chantier"
+    ]
+   },
+   {
+    "name": "Phase 3 : contenu et preuve",
+    "timeframe": "Semaines 2 à 4",
+    "items": [
+     "Transformer /realisations en études de cas",
+     "Créer la page « Qui sommes-nous »",
+     "Raccourcir 15 titles et 14 meta descriptions",
+     "Étoffer /amenagement-exterieur"
+    ]
+   },
+   {
+    "name": "Phase 4 : technique et autorité",
+    "timeframe": "Mois 2",
+    "items": [
+     "Remplacer la police d'icônes tierce par des SVG inline",
+     "Ajouter une Content-Security-Policy",
+     "Factoriser l'entité GeneralContractor par @id",
+     "Citer des sources externes dans les articles",
+     "Nettoyer le code mort de lib/data/site.ts"
+    ]
+   }
+  ]
+ },
+ "artifacts": {
+  "findings_dir": "findings/",
+  "screenshots_dir": "screenshots/"
+ }
+}

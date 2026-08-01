@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/pool-house-bois-terrasse-piscine-libourne.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pool-house bois : réglementation, usages et budget 2026 | L'Esprit Bois",
+  title: "Pool house bois : règles, usages et budget",
   description:
-    "Quelle autorisation pour un pool-house en 2026 ? Seuils 5/20 m², primauté du PLU, usages réels, implantation, matériaux et budget : le guide d'un artisan en Gironde.",
+    "Emprise au sol, raccordements, usages réels et budget d'un pool house bois au bord d'un bassin en Gironde.",
   keywords:
     "pool house bois, pool house bois Gironde, pool house Libourne, réglementation pool house 2026, permis de construire pool house, prix pool house bois, pool house piscine, déclaration préalable pool house, local technique piscine bois",
   path: '/blog/pool-house-bois-guide',
@@ -84,7 +84,12 @@ const jsonld = [
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
-      logo: { '@type': 'ImageObject', url: 'https://lesprit-bois.fr/logo-mark.svg' },
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
+        width: 350,
+        height: 150,
+      },
     },
     datePublished: '2026-07-16',
     dateModified: '2026-07-16',

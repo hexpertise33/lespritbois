@@ -5,9 +5,9 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pergola bioclimatique, aluminium & bois à Libourne (33) | L'Esprit Bois",
+  title: "Pergola bioclimatique, alu & bois à Libourne",
   description:
-    'Notre gamme de pergolas sur mesure : bioclimatique à lames orientables, aluminium à toiture fixe (polycarbonate, panneau isolé, vitrage), bois massif, toile et claire-voie. Stores ZIP, éclairage, coloris RAL. Pose à Libourne et en Gironde.',
+    "Pergola bioclimatique, aluminium à toiture fixe ou bois massif, sur mesure. Pose à Libourne et en Gironde.",
   keywords:
     'pergola Libourne, pergola Gironde, pergola bioclimatique, pergola aluminium, pergola bois, lames orientables, toiture polycarbonate, store ZIP, pergola adossée, pergola autoportée',
   path: '/pergolas',

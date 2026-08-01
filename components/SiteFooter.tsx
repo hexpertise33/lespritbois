@@ -80,6 +80,15 @@ export default function SiteFooter() {
             >
               <span className="material-symbols-outlined text-sm">thumb_up</span>
             </a>
+            <a
+              className="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-secondary hover:border-secondary hover:text-primary transition-all"
+              href={RESEAUX.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="L'Esprit Bois sur Instagram (nouvel onglet)"
+            >
+              <span className="material-symbols-outlined text-sm">photo_camera</span>
+            </a>
           </div>
         </div>
       </div>

@@ -28,7 +28,8 @@ export const CONTACT = {
 /** Réseaux sociaux officiels. Servent au footer ET au `sameAs` de schema.org,
  *  qui aide Google à relier le site à la page Facebook (Knowledge Graph). */
 export const RESEAUX = {
-  facebook: 'https://www.facebook.com/Eprisbois33',
+  facebook: 'https://www.facebook.com/lespritbois33',
+  instagram: 'https://www.instagram.com/lespritbois',
 } as const;
 
 /** Profils à déclarer dans les données structurées. */

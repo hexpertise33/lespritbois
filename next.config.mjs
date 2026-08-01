@@ -1,3 +1,25 @@
+/** Content-Security-Policy en mode Report-Only.
+ *
+ *  Le site charge des ressources tierces légitimes : Google Fonts (feuille de
+ *  style + fichiers woff2), Google Ads et Consent Mode. Une CSP bloquante mal
+ *  calibrée les couperait, d'où le Report-Only : le navigateur signale les
+ *  violations en console sans rien bloquer. Une fois la console propre sur
+ *  plusieurs jours, basculer la clé en `Content-Security-Policy`. */
+const CSP = [
+  "default-src 'self'",
+  // 'unsafe-inline' et 'unsafe-eval' : requis par Next.js et par gtag.
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com",
+  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com",
+  "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
+  "frame-ancestors 'self'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "object-src 'none'",
+].join('; ');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Le site n'utilise que des <img> statiques (pas de next/image optimisé) :
@@ -5,9 +27,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // En-têtes de sécurité appliqués à toutes les routes. On évite volontairement
-  // une Content-Security-Policy stricte : le site charge Google Fonts et les
-  // scripts Google Ads/Consent Mode, qu'une CSP mal calibrée bloquerait.
+  // Ne pas divulguer la pile technique dans les en-têtes de réponse.
+  poweredByHeader: false,
+  // En-têtes de sécurité appliqués à toutes les routes.
   async headers() {
     return [
       {
@@ -20,6 +42,7 @@ const nextConfig = {
             key: 'Permissions-Policy',
             value: 'geolocation=(), microphone=(), camera=(), interest-cohort=()',
           },
+          { key: 'Content-Security-Policy-Report-Only', value: CSP },
         ],
       },
     ];

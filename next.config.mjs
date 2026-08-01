@@ -1,23 +1,28 @@
-/** Content-Security-Policy en mode Report-Only.
+/** Content-Security-Policy, appliquée (plus en Report-Only).
  *
- *  Le site charge des ressources tierces légitimes : Google Fonts (feuille de
- *  style + fichiers woff2), Google Ads et Consent Mode. Une CSP bloquante mal
- *  calibrée les couperait, d'où le Report-Only : le navigateur signale les
- *  violations en console sans rien bloquer. Une fois la console propre sur
- *  plusieurs jours, basculer la clé en `Content-Security-Policy`. */
+ *  Les polices — texte via next/font, icônes via un sous-ensemble local — sont
+ *  toutes auto-hébergées : `style-src` et `font-src` n'ont plus besoin
+ *  d'autoriser fonts.googleapis.com ni fonts.gstatic.com. Ne subsistent que
+ *  Google Ads et le Consent Mode, seules ressources tierces du site.
+ *
+ *  Vérifié page par page sur les 28 URL du sitemap avant le passage en mode
+ *  bloquant : aucune violation. Si une ressource tierce est ajoutée plus tard
+ *  (carte, widget d'avis, vidéo), il faut ouvrir la directive correspondante
+ *  ICI, sinon le navigateur la bloquera silencieusement. */
 const CSP = [
   "default-src 'self'",
   // 'unsafe-inline' et 'unsafe-eval' : requis par Next.js et par gtag.
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com",
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src 'self' https://fonts.gstatic.com data:",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self' data:",
   "img-src 'self' data: https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com",
-  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com",
+  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net",
   "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
   "frame-ancestors 'self'",
   "base-uri 'self'",
   "form-action 'self'",
   "object-src 'none'",
+  'upgrade-insecure-requests',
 ].join('; ');
 
 /** @type {import('next').NextConfig} */
@@ -42,7 +47,7 @@ const nextConfig = {
             key: 'Permissions-Policy',
             value: 'geolocation=(), microphone=(), camera=(), interest-cohort=()',
           },
-          { key: 'Content-Security-Policy-Report-Only', value: CSP },
+          { key: 'Content-Security-Policy', value: CSP },
         ],
       },
     ];

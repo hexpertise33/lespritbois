@@ -42,13 +42,25 @@ pergola bioclimatique, véranda, extension, protections solaires) : voir « Idé
 de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
 articles.
 
-**Prochain créneau (01/08/2026)** : le comparatif carport alu/bois est publié
-(31/07) sous `carport-aluminium-ou-bois-comparatif`. Prochains sujets conseillés
-dans la réserve : **véranda aluminium** (seuils et réglementation thermique à
-vérifier par recherche web avant citation) ou **véranda ou extension ossature
-bois** (angle décision). Dernières publications : 29/07 bois (filière locale),
-30/07 alu (pergola bioclimatique), 31/07 mixte (comparatif carports) — un
-article franchement bois serait légitime pour rééquilibrer.
+**Prochain créneau (02/08/2026)** : la structure de terrasse bois est publiée
+(01/08) sous `terrasse-bois-structure-plots-lambourdes` — c'était le
+rééquilibrage bois après trois créneaux à dominante alu. Le prochain article
+peut donc repartir sur l'**aluminium** : **véranda aluminium** (seuils
+d'urbanisme et réglementation thermique à vérifier par recherche web avant
+toute citation) ou **entretien d'une véranda / pergola aluminium** (recentré
+véranda, pour ne pas doublonner `pergola-bioclimatique-aluminium-guide`).
+Dernières publications : 29/07 bois (filière locale), 30/07 alu (pergola
+bioclimatique), 31/07 mixte (comparatif carports), 01/08 bois (structure
+terrasse).
+
+⚠️ Attention doublon terrasse : trois articles terrasse coexistent désormais —
+`quel-bois-pour-terrasse-exterieure` (essences, classes d'emploi, budget),
+`proteger-terrasse-bois-canicule-entretien-ete` (entretien de surface) et
+`terrasse-bois-structure-plots-lambourdes` (sous-face : supports, lambourdes,
+ventilation, drainage, fixations). Le créneau terrasse est saturé : tout
+nouveau sujet terrasse devra trouver un angle vraiment distinct
+(terrasse autour d'une piscine, terrasse surélevée avec garde-corps,
+rénovation d'une terrasse existante).
 
 **Point réglementaire tranché le 28/07/2026 (à ne pas rouvrir).** L'accroche
 « bardage bois × RE2020 » qui figurait ici s'appuyait sur un décret n° 2026-16
@@ -81,6 +93,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-23 | publié  | Extension en ossature bois : prix au m², délais et avantages en 2026     | extension-ossature-bois-prix-m2   |
 | 2026-07-30 | publié  | Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026 | pergola-bioclimatique-aluminium-guide |
 | 2026-07-31 | publié  | Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style) | carport-aluminium-ou-bois-comparatif |
+| 2026-08-01 | publié  | Structure d'une terrasse en bois : plots, lambourdes et ventilation | terrasse-bois-structure-plots-lambourdes |
 
 ## Idées de sujets en réserve
 
@@ -117,7 +130,9 @@ recentrer sur la véranda) :
 
 Idées bois consommées (déjà publiées) : entretien terrasse, poulailler,
 bardage, pool-house, abri de jardin kit vs sur-mesure, extension ossature bois,
-filière bois local (douglas / pin maritime).
+filière bois local (douglas / pin maritime), structure de terrasse (plots,
+lambourdes, ventilation — angle trouvé hors réserve le 01/08/2026, la réserve
+bois étant vide).
 
 Quand cette réserve sera à son tour épuisée : veille web (WebSearch) pour un
 angle neuf, bois ou alu, en recoupant `lib/data/blog.ts`.

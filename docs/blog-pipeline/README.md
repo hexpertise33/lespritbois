@@ -21,7 +21,14 @@ Un seul temps, entièrement automatique (routine `article-quotidien-lespritbois`
 choix du sujet (réserve ci-dessous → sinon veille web pour un angle neuf, en
 recoupant `lib/data/blog.ts` pour éviter les doublons) → rédaction
 (`redacteur-bois`) → images (`iconographe-bois`) → `npm run build` → commit +
-push → `npm run deploy` → contrôle HTTP 200 → sujet marqué `publié`.
+push → `npm run deploy` → contrôle HTTP 200 → ping IndexNow → sujet marqué `publié`.
+
+Ping IndexNow (notifie Bing/Yandex/Naver de la nouvelle URL, clé déposée dans
+`public/a0b43b04a9254681af50f9e95240c80b.txt`) :
+
+```
+curl -s "https://api.indexnow.org/indexnow?url=https://lesprit-bois.fr/blog/<slug>&key=a0b43b04a9254681af50f9e95240c80b"
+```
 
 Garde-fous automatiques (pas de relecture humaine) : build bloquant, vérification
 200 après deploy, anti-doublon de slug/angle et de cover, prudence factuelle

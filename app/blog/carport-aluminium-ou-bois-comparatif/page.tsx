@@ -22,14 +22,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -45,8 +58,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -55,8 +69,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -302,7 +316,7 @@ export default function ArticleCarportAluOuBoisPage() {
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
-              height="900"
+              height="646"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -416,12 +430,16 @@ export default function ArticleCarportAluOuBoisPage() {
                 alt: 'Carport bois deux places à toit plat abritant deux voitures, réalisation à Arveyres',
                 caption:
                   'Le bois : sections apparentes, poteaux posés sur plots béton et pièces remplaçables une par une.',
+                w: 1200,
+                h: 646,
               }}
               b={{
                 src: '/images/source-adefrance/Carport-aluminium-Libourne-3.webp',
                 alt: 'Carport aluminium anthracite adossé avec panneaux latéraux ajourés',
                 caption:
                   'L’aluminium : profilés fins, teinte RAL au choix et habillages latéraux dessinés dans la même gamme.',
+                w: 1200,
+                h: 646,
               }}
             />
 
@@ -496,6 +514,8 @@ export default function ArticleCarportAluOuBoisPage() {
               src="/images/source-adefrance/Carport-aluminium-Libourne-1.webp"
               alt="Carport aluminium thermolaqué anthracite associé à un claustra bois à claire-voie"
               caption="Poudre polyester cuite au four : le thermolaquage donne une surface mate parfaitement uniforme, qui supporte très bien le voisinage du bois."
+              w={1200}
+              h={646}
             />
 
             {/* 4. Entretien */}
@@ -601,6 +621,8 @@ export default function ArticleCarportAluOuBoisPage() {
               src="/images/source-adefrance/Carport-bois-Libourne-5.webp"
               alt="Charpente de carport bois sur mesure en cours de montage sur dalle béton, chantier à Lagorce"
               caption="Sous l'ouvrage, le poste qu'on oublie de chiffrer : dalle, plots ou longrines selon la nature du sol, avant même la première poutre."
+              w={1200}
+              h={646}
             />
 
             {/* 6. Couverture, évacuation et options */}
@@ -645,9 +667,11 @@ export default function ArticleCarportAluOuBoisPage() {
             </section>
 
             <Figure
-              src="/images/source-adefrance/Pergolas-aluminium-Libourne-1.webp"
-              alt="Structure aluminium adossée couvrant un accès voiture, poutre périphérique sans gouttière apparente"
+              src="/images/source-adefrance/construction-pool-house-aluminium-libourne.webp"
+              alt="Structure aluminium adossée à poutre périphérique anthracite, sans gouttière rapportée sur la ligne de rive, réalisée à Montussan"
               caption="Aucune gouttière rapportée sur la ligne de rive : l'eau court dans la poutre puis descend dans le poteau, un circuit à dégager une fois par an."
+              w={768}
+              h={512}
             />
 
             {/* 7. Urbanisme */}
@@ -734,6 +758,8 @@ export default function ArticleCarportAluOuBoisPage() {
               src="/images/source-adefrance/Carport-aluminium-Libourne-2.webp"
               alt="Carport aluminium deux places sans poteau central abritant deux voitures"
               caption="Poteaux repoussés aux angles : on récupère la largeur d'ouverture des portières, précieuse quand l'allée est contrainte."
+              w={1200}
+              h={646}
             />
           </div>
         </article>

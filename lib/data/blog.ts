@@ -14,6 +14,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'terrasse-bois-structure-plots-lambourdes',
+    titre:
+      "Structure d'une terrasse en bois : plots, lambourdes et ventilation, ce qui décide vraiment de sa durée de vie",
+    extrait:
+      "Une terrasse en bois ne meurt presque jamais de son essence : elle meurt de sa sous-face, faute de ventilation, de drainage ou de lambourdes correctement appuyées. Support et plots réglables, entraxe et sections, jeu entre lames, fixations inox et NF DTU 51.4 : le guide technique de ce qu'on ne voit plus une fois les lames posées, par un artisan à Libourne (Gironde).",
+    date: '2026-08-01',
+    categorie: 'Guide · Terrasses bois',
+    image: '/images/terrasse-bois-plots-gironde-4.webp',
+  },
+  {
     slug: 'carport-aluminium-ou-bois-comparatif',
     titre:
       'Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style)',

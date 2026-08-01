@@ -338,7 +338,16 @@ export default function ArticleAutorisationUrbanisme2026Page() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Pour une construction nouvelle (cas général, hors zone U et hors secteur protégé), trois paliers
-                s&apos;appliquent selon l&apos;emprise au sol créée :
+                s&apos;appliquent selon l&apos;emprise au sol créée (détaillés dans la{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  fiche officielle de la déclaration préalable
+                </a>{' '}
+                sur service-public.gouv.fr) :
               </p>
               <ul className="space-y-3 mb-6">
                 {[
@@ -405,8 +414,16 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 <strong className="text-primary font-semibold">extension du bâti existant</strong> (un carport
                 adossé, une pergola accolée à la maison, un abri dans le prolongement direct de l&apos;habitation),
                 le seuil de déclaration préalable est relevé : il passe de 20 à{' '}
-                <strong className="text-primary font-semibold">40 m² d&apos;emprise au sol</strong>. Au-delà, un
-                permis de construire reste nécessaire.
+                <strong className="text-primary font-semibold">40 m² d&apos;emprise au sol</strong>. Au-delà, un{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  permis de construire
+                </a>{' '}
+                reste nécessaire.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Ce relèvement de seuil ne fonctionne que dans un sens précis : c&apos;est la mairie qui qualifie ou

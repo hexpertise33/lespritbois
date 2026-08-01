@@ -508,7 +508,16 @@ export default function ArticleTerrasseBoisCaniculePage() {
                 <a href="/pergolas" className={lienInterne}>
                   pergola
                 </a>{' '}
-                est la solution pérenne : c&apos;est la seule qui protège la terrasse toute la saison sans qu&apos;on ait
+                est la solution pérenne (selon sa surface, elle peut demander une{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  déclaration préalable de travaux
+                </a>
+                ) : c&apos;est la seule qui protège la terrasse toute la saison sans qu&apos;on ait
                 à y penser, et la seule qui tienne le vent. Si vous hésitez entre une structure bois et une bioclimatique
                 à lames orientables, nous avons détaillé le match dans notre article{' '}
                 <a href="/blog/pergola-bois-ou-bioclimatique" className={lienInterne}>
@@ -594,8 +603,12 @@ export default function ArticleTerrasseBoisCaniculePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Trois principes suffisent ici. Les{' '}
-                <strong className="text-primary font-semibold">essences denses et naturellement durables</strong>{' '}
-                encaissent mieux l&apos;alternance sécheresse et humidité : elles bougent moins et fissurent moins. Un{' '}
+                <strong className="text-primary font-semibold">essences denses et naturellement durables</strong> — une
+                durabilité étudiée par l&apos;institut technologique{' '}
+                <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
+                  FCBA
+                </a>{' '}
+                — encaissent mieux l&apos;alternance sécheresse et humidité : elles bougent moins et fissurent moins. Un{' '}
                 <strong className="text-primary font-semibold">bois clair chauffe nettement moins qu&apos;un bois
                 foncé</strong>, ce qui change tout pour une terrasse où l&apos;on marche pieds nus. Et surtout, la pose
                 pèse autant que l&apos;essence : une ventilation franche sous les lames, un espacement respecté entre

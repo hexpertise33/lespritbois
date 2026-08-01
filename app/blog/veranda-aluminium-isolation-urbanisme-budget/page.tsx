@@ -651,8 +651,16 @@ export default function ArticleVerandaAluminiumPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une véranda close et couverte crée de l&apos;emprise au sol et de la surface de plancher : elle relève
-                donc du code de l&apos;urbanisme. Voici les seuils applicables, à confronter systématiquement au PLU de
-                votre commune.
+                donc du code de l&apos;urbanisme. Voici les seuils applicables, détaillés dans la{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  fiche officielle de la déclaration préalable de travaux
+                </a>
+                , à confronter systématiquement au PLU de votre commune.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-surface-variant shadow-sm">
                 <table className="w-full border-collapse text-body-md">
@@ -687,7 +695,17 @@ export default function ArticleVerandaAluminiumPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Dernier point à ne pas oublier : une véranda close et couverte génère de la surface taxable, la{' '}
-                <strong className="text-primary font-semibold">taxe d&apos;aménagement</strong> est donc due. Son calcul
+                <strong className="text-primary font-semibold">
+                  <a
+                    href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263"
+                    className={lienInterne}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    taxe d&apos;aménagement
+                  </a>
+                </strong>{' '}
+                est donc due. Son calcul
                 se fait au cas par cas ; renseignez-vous auprès du service urbanisme de votre mairie, qui vous donnera
                 le montant applicable à votre projet. Nous détaillons la logique générale des autorisations dans notre{' '}
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>

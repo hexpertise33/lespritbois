@@ -339,7 +339,12 @@ export default function ArticleQuelBoisTerrassePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La classe d&apos;emploi d&apos;un bois, définie par la norme{' '}
-                <strong className="text-primary font-semibold">NF EN 335</strong>, indique le niveau d&apos;humidité
+                <strong className="text-primary font-semibold">NF EN 335</strong> et détaillée par l&apos;institut
+                technologique{' '}
+                <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
+                  FCBA
+                </a>
+                , indique le niveau d&apos;humidité
                 auquel il peut être exposé sans se dégrader. Elle va de la classe 1 (intérieur sec) à la classe 5
                 (immersion en eau de mer). Pour une terrasse, la référence courante est la{' '}
                 <strong className="text-primary font-semibold">classe 4</strong> : un bois capable de rester en contact

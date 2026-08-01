@@ -428,8 +428,11 @@ export default function ArticleStructureTerrasseBoisPage() {
                   il n&apos;existe pas d&apos;entraxe ni de section « standard » valables partout.
                 </strong>{' '}
                 Ces valeurs dépendent de l&apos;essence, de l&apos;épaisseur et de la largeur de la lame, du sens de
-                pose et des charges prévues. Elles se déterminent à partir du NF DTU 51.4 et des préconisations du
-                fournisseur de la lame, qui indique la portée admissible de son produit.
+                pose et des charges prévues. Elles se déterminent à partir du NF DTU 51.4, publié par le{' '}
+                <a href="https://www.cstb.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
+                  CSTB
+                </a>
+                , et des préconisations du fournisseur de la lame, qui indique la portée admissible de son produit.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Cela dit, pour donner un ordre de grandeur de chantier : sur nos terrasses privées courantes, nous

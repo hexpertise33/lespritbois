@@ -467,7 +467,17 @@ export default function ArticleAbriJardinBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le mot-clé pour un abri qui dure, c&apos;est la{' '}
-                <strong className="text-primary font-semibold">classe d&apos;emploi</strong>. Elle décrit l&apos;exposition
+                <strong className="text-primary font-semibold">classe d&apos;emploi</strong>, un classement de la
+                filière bois porté par l&apos;institut technologique{' '}
+                <a
+                  href="https://www.fcba.fr/"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FCBA
+                </a>
+                . Elle décrit l&apos;exposition
                 du bois à l&apos;humidité : la <strong className="text-primary font-semibold">classe 3</strong> pour ce
                 qui est exposé aux intempéries sans contact permanent avec l&apos;eau (bardage, charpente sous
                 débord), la <strong className="text-primary font-semibold">classe 4</strong> pour tout ce qui touche le
@@ -550,7 +560,16 @@ export default function ArticleAbriJardinBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un abri de jardin crée de l&apos;emprise au sol : il relève donc de l&apos;urbanisme. Les grands repères
-                nationaux, sous réserve du PLU de votre commune :
+                nationaux (voir la{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  fiche officielle de la déclaration préalable
+                </a>{' '}
+                sur service-public.gouv.fr), sous réserve du PLU de votre commune :
               </p>
               <ul className="space-y-3 mb-5">
                 {[
@@ -569,7 +588,16 @@ export default function ArticleAbriJardinBoisPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 À cela s&apos;ajoutent les distances aux limites de propriété, fixées par le PLU ou, à défaut, par le Code
-                civil. Ces règles varient d&apos;une commune girondine à l&apos;autre : nous vérifions le PLU et montons
+                civil. Le mode de calcul de la{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  taxe d&apos;aménagement
+                </a>{' '}
+                est détaillé sur service-public.gouv.fr. Ces règles varient d&apos;une commune girondine à l&apos;autre : nous vérifions le PLU et montons
                 le dossier avant d&apos;engager le projet. Pour le détail des seuils et du CERFA, voyez notre guide
                 dédié :{' '}
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>

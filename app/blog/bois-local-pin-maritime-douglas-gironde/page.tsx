@@ -386,8 +386,16 @@ export default function ArticleBoisLocalGirondePage() {
                 scier une pièce hors standard sans bloquer un chantier) et{' '}
                 <strong className="text-primary font-semibold">la relation avec les scieries régionales</strong>, qui
                 permet de savoir d&apos;où vient le lot qu&apos;on pose. Sur le plan environnemental, l&apos;équation est
-                simple : le bois stocke du carbone pendant toute sa vie en œuvre, et un approvisionnement court réduit la
-                part transport du bilan.
+                simple : le bois stocke du carbone pendant toute sa vie en œuvre (un atout que valorise la{' '}
+                <a
+                  href="https://www.ecologie.gouv.fr/politiques-publiques/reglementation-environnementale-re2020"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  réglementation environnementale RE2020
+                </a>
+                ), et un approvisionnement court réduit la part transport du bilan.
               </p>
             </section>
 
@@ -416,7 +424,11 @@ export default function ArticleBoisLocalGirondePage() {
                 pas dehors. Mais il est{' '}
                 <strong className="text-primary font-semibold">très imprégnable</strong>, c&apos;est-à-dire que le
                 produit de traitement pénètre profondément dans le bois au lieu de rester en surface. Traité en
-                autoclave, il atteint donc la classe d&apos;emploi 4, celle du contact avec le sol ou l&apos;eau douce.
+                autoclave, il atteint donc la{' '}
+                <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
+                  classe d&apos;emploi 4
+                </a>
+                , celle du contact avec le sol ou l&apos;eau douce.
                 Un pin maritime correctement traité est un bois d&apos;extérieur sérieux, pas un pis-aller.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">

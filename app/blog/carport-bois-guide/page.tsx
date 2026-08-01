@@ -439,7 +439,9 @@ export default function ArticleCarportBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Comme pour une terrasse, un carport réclame une essence dont la durabilité naturelle résiste aux
-                intempéries, car la structure est exposée en permanence. Les valeurs sûres sous notre climat girondin
+                intempéries (voir les classes d&apos;emploi du bois documentées par{' '}
+                <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">l&apos;institut technologique FCBA</a>
+                ), car la structure est exposée en permanence. Les valeurs sûres sous notre climat girondin
                 sont le <strong className="text-primary font-semibold">douglas</strong> et le{' '}
                 <strong className="text-primary font-semibold">mélèze</strong>, deux résineux locaux au très bon rapport
                 durabilité-prix, le <strong className="text-primary font-semibold">chêne</strong> pour un feuillu noble
@@ -552,8 +554,11 @@ export default function ArticleCarportBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un carport crée de l&apos;emprise au sol : il relève donc de l&apos;urbanisme.{' '}
                 <strong className="text-primary font-semibold">
-                  Selon la surface créée et le PLU de votre commune, une déclaration préalable de travaux ou un permis de
-                  construire peut être nécessaire.
+                  Selon la surface créée et le PLU de votre commune, une{' '}
+                  <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable de travaux</a>{' '}
+                  ou un{' '}
+                  <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986" className={lienInterne} target="_blank" rel="noopener noreferrer">permis de construire</a>{' '}
+                  peut être nécessaire.
                 </strong>{' '}
                 Les règles varient d&apos;une commune à l&apos;autre, selon la zone (secteur protégé, proximité d&apos;un
                 monument, lotissement avec règlement propre) et selon la surface concernée.

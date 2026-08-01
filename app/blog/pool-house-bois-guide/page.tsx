@@ -322,8 +322,25 @@ export default function ArticlePoolHouseBoisPage() {
                 Un pool-house est une construction : il crée de l&apos;emprise au sol, c&apos;est-à-dire la projection
                 verticale du volume au sol, poteaux et débords de toiture compris. Les seuils du cas général sont simples
                 et n&apos;ont pas bougé en 2026 : <strong className="text-primary font-semibold">moins de 5 m², aucune
-                formalité ; de 5 à 20 m², une déclaration préalable de travaux ; au-delà de 20 m², un permis de
-                construire.</strong>
+                formalité ; de 5 à 20 m², une{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  déclaration préalable de travaux
+                </a>{' '}
+                ; au-delà de 20 m², un{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  permis de construire
+                </a>
+                .</strong>
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Vient la nuance qui cause le plus d&apos;erreurs : le fameux{' '}
@@ -345,7 +362,17 @@ export default function ArticlePoolHouseBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deux points à ne pas confondre. La{' '}
-                <strong className="text-primary font-semibold">taxe d&apos;aménagement</strong> se calcule en 2026 sur une
+                <strong className="text-primary font-semibold">
+                  <a
+                    href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263"
+                    className={lienInterne}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    taxe d&apos;aménagement
+                  </a>
+                </strong>{' '}
+                se calcule en 2026 sur une
                 valeur forfaitaire de <strong className="text-primary font-semibold">892 €/m²</strong> hors
                 Île-de-France : c&apos;est une base de calcul, pas un coût de construction, à multiplier par la surface
                 taxable et les taux communal et départemental. Et{' '}

@@ -284,7 +284,16 @@ export default function ArticlePoulaillerBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un poulailler est, aux yeux de l&apos;urbanisme, un petit abri : ce qui compte, c&apos;est son{' '}
                 <strong className="text-primary font-semibold">emprise au sol</strong>. Les seuils sont les mêmes que
-                pour un abri de jardin ou un pool-house :
+                pour un abri de jardin ou un pool-house (voir la{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  fiche officielle de la déclaration préalable
+                </a>{' '}
+                sur service-public.gouv.fr) :
               </p>
               <ul className="space-y-3 mb-5">
                 {[
@@ -303,7 +312,16 @@ export default function ArticlePoulaillerBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deux points passent souvent inaperçus. D&apos;abord, au-delà de{' '}
                 <strong className="text-primary font-semibold">5 m² clos et couvert</strong>, l&apos;ouvrage peut être
-                soumis à la <strong className="text-primary font-semibold">taxe d&apos;aménagement</strong> (taux
+                soumis à la{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong className="text-primary font-semibold">taxe d&apos;aménagement</strong>
+                </a>{' '}
+                (taux
                 communal souvent de l&apos;ordre de 1 à 5 %). Ensuite, une hauteur importante ou une implantation en
                 limite de propriété peuvent être encadrées par le <strong className="text-primary font-semibold">PLU</strong>{' '}
                 de votre commune et par le Code civil — un poulailler collé à la clôture du voisin n&apos;est pas
@@ -416,7 +434,17 @@ export default function ArticlePoulaillerBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                La règle de fond est celle des <strong className="text-primary font-semibold">classes d&apos;emploi</strong> :
+                La règle de fond est celle des <strong className="text-primary font-semibold">classes d&apos;emploi</strong>,
+                décrites par l&apos;institut technologique{' '}
+                <a
+                  href="https://www.fcba.fr/"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FCBA
+                </a>{' '}
+                :
                 les parties en contact avec le sol ou l&apos;humidité permanente doivent viser la classe 4, la structure
                 aérée et couverte se contente de la classe 3. Comme pour un carport, les pieds ne doivent{' '}
                 <strong className="text-primary font-semibold">jamais être noyés dans le béton</strong> mais posés sur

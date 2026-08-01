@@ -370,7 +370,16 @@ export default function ArticleClotureBriseVueBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Contrairement à une idée répandue, poser une clôture n&apos;est pas toujours libre.{' '}
                 <strong className="text-primary font-semibold">
-                  Une déclaration préalable de travaux est obligatoire dans plusieurs cas de figure fréquents :
+                  Une{' '}
+                  <a
+                    href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                    className={lienInterne}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    déclaration préalable de travaux
+                  </a>{' '}
+                  est obligatoire dans plusieurs cas de figure fréquents :
                 </strong>{' '}
                 lorsque le PLU ou une délibération du conseil municipal l&apos;impose sur tout ou partie de la commune,
                 dans les secteurs sauvegardés et les abords d&apos;un monument historique (avis de l&apos;Architecte des
@@ -379,7 +388,16 @@ export default function ArticleClotureBriseVueBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 À la différence d&apos;un carport ou d&apos;un abri, une clôture ne crée pas d&apos;emprise au sol
-                habitable : elle relève donc rarement du permis de construire. Mais le fait qu&apos;elle échappe au
+                habitable : elle relève donc rarement du{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  permis de construire
+                </a>
+                . Mais le fait qu&apos;elle échappe au
                 permis ne veut pas dire qu&apos;elle échappe à toute formalité — c&apos;est là que beaucoup de
                 particuliers se font surprendre.
               </p>
@@ -404,7 +422,17 @@ export default function ArticleClotureBriseVueBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une clôture est exposée en permanence à la pluie, au soleil et aux projections d&apos;eau du sol : elle
                 réclame une essence durable en <strong className="text-primary font-semibold">classe d&apos;emploi 3</strong>{' '}
-                (bois soumis à une humidification fréquente, hors contact permanent avec le sol). Trois valeurs sûres
+                (bois soumis à une humidification fréquente, hors contact permanent avec le sol), selon le référentiel de
+                l&apos;institut technologique{' '}
+                <a
+                  href="https://www.fcba.fr/"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FCBA
+                </a>
+                . Trois valeurs sûres
                 sous notre climat girondin :
               </p>
               <ul className="space-y-3 mb-5">

@@ -531,8 +531,11 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est aussi le moment de vérifier les formalités. Selon la surface couverte, l&apos;adossement à la
-                maison et le PLU de votre commune, une déclaration préalable de travaux ou un permis de construire peut
-                être requis :{' '}
+                maison et le PLU de votre commune, une{' '}
+                <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable de travaux</a>{' '}
+                ou un{' '}
+                <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986" className={lienInterne} target="_blank" rel="noopener noreferrer">permis de construire</a>{' '}
+                peut être requis :{' '}
                 <strong className="text-primary font-semibold">nous le vérifions pour vous avant d&apos;engager le projet.</strong>
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">

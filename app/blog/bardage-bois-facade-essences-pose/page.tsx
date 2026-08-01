@@ -445,7 +445,11 @@ export default function ArticleBardageBoisFacadePage() {
                 Avant même de parler de teinte ou de profil, une question tranche le sujet :{' '}
                 <strong className="text-primary font-semibold">votre bardage est-il en classe d&apos;emploi 3 ?</strong>{' '}
                 Cette classe correspond à un bois mis en œuvre à l&apos;extérieur, hors contact du sol, exposé à une
-                humidification fréquente. C&apos;est très exactement la vie d&apos;un bardage de façade : pluie, rosée,
+                humidification fréquente, telle que la décrit l&apos;
+                <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
+                  institut technologique FCBA
+                </a>
+                . C&apos;est très exactement la vie d&apos;un bardage de façade : pluie, rosée,
                 projections, séchage, et ainsi de suite pendant des décennies.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -579,7 +583,12 @@ export default function ArticleBardageBoisFacadePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Voici le cœur du sujet. La norme de référence pour la pose des bardages est le{' '}
-                <strong className="text-primary font-semibold">NF DTU 41.2, « Revêtements extérieurs en bois »</strong>.
+                <strong className="text-primary font-semibold">NF DTU 41.2, « Revêtements extérieurs en bois »</strong>,
+                publié par le{' '}
+                <a href="https://www.cstb.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
+                  CSTB
+                </a>
+                .
                 Elle formalise ce que tout charpentier sait par expérience : un bardage ne tient pas parce que le bois
                 est beau, il tient parce qu&apos;il sèche.
               </p>
@@ -638,7 +647,17 @@ export default function ArticleBardageBoisFacadePage() {
                 Oui, et c&apos;est une étape que l&apos;on sous-estime souvent parce qu&apos;on ne crée aucune surface.
                 Poser un bardage <strong className="text-primary font-semibold">modifie l&apos;aspect extérieur de la
                 façade</strong> : à ce titre, les travaux relèvent d&apos;une{' '}
-                <strong className="text-primary font-semibold">déclaration préalable</strong>. Le délai
+                <strong className="text-primary font-semibold">
+                  <a
+                    href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                    className={lienInterne}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    déclaration préalable
+                  </a>
+                </strong>
+                . Le délai
                 d&apos;instruction est d&apos;<strong className="text-primary font-semibold">un mois</strong>, porté à{' '}
                 <strong className="text-primary font-semibold">deux mois</strong> en périmètre des Bâtiments de France ou
                 en site patrimonial remarquable, où l&apos;avis de l&apos;architecte des Bâtiments de France est

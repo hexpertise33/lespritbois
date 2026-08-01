@@ -507,7 +507,25 @@ export default function ArticleExtensionOssatureBoisPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 À ce planning de chantier s&apos;ajoute, en amont, l&apos;instruction du dossier d&apos;urbanisme :
-                environ un mois pour une déclaration préalable, deux à trois mois pour un permis de construire. Un projet
+                environ un mois pour une{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  déclaration préalable
+                </a>
+                , deux à trois mois pour un{' '}
+                <a
+                  href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  permis de construire
+                </a>
+                . Un projet
                 bien mené se décide donc plusieurs mois avant le premier coup de pelle : mieux vaut lancer les démarches
                 à l&apos;automne pour un chantier au printemps.
               </p>
@@ -537,8 +555,19 @@ export default function ArticleExtensionOssatureBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Côté performance, la <strong className="text-primary font-semibold">RE2020 s&apos;applique aux
-                extensions selon leur surface</strong> : les petites relèvent d&apos;exigences allégées, mais dès
+                Côté performance, la{' '}
+                <strong className="text-primary font-semibold">
+                  <a
+                    href="https://www.ecologie.gouv.fr/politiques-publiques/reglementation-environnementale-re2020"
+                    className={lienInterne}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    RE2020
+                  </a>{' '}
+                  s&apos;applique aux extensions selon leur surface
+                </strong>{' '}
+                : les petites relèvent d&apos;exigences allégées, mais dès
                 qu&apos;une certaine surface est franchie, l&apos;extension doit répondre aux exigences d&apos;isolation,
                 de confort d&apos;été et d&apos;empreinte carbone des matériaux. C&apos;est un point où l&apos;ossature
                 bois part avec une longueur d&apos;avance : matériau biosourcé, faible empreinte carbone, excellente

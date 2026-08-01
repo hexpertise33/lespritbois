@@ -674,8 +674,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Oui, dans la plupart des cas, car une pergola bioclimatique est une construction qui crée de{' '}
                 <strong className="text-primary font-semibold">l&apos;emprise au sol</strong>. En règle générale : pas de
-                formalité en dessous de 5 m², <strong className="text-primary font-semibold">déclaration préalable de 5 à
-                20 m²</strong>, et <strong className="text-primary font-semibold">permis de construire au-delà de 20
+                formalité en dessous de 5 m², <strong className="text-primary font-semibold"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable</a> de 5 à
+                20 m²</strong>, et <strong className="text-primary font-semibold"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986" className={lienInterne} target="_blank" rel="noopener noreferrer">permis de construire</a> au-delà de 20
                 m²</strong>. Ces seuils sont le cadre national ; c&apos;est le{' '}
                 <strong className="text-primary font-semibold">PLU de votre commune</strong> qui tranche vraiment, et il
                 peut être plus exigeant : implantation par rapport aux limites séparatives, hauteur, aspect et teintes
@@ -684,7 +684,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une nuance revient souvent en rendez-vous, celle de la{' '}
-                <strong className="text-primary font-semibold">taxe d&apos;aménagement</strong>. Elle porte sur la
+                <strong className="text-primary font-semibold"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263" className={lienInterne} target="_blank" rel="noopener noreferrer">taxe d&apos;aménagement</a></strong>. Elle porte sur la
                 création de surface <em>close et couverte</em> : une pergola ouverte sur ses côtés n&apos;entre en
                 principe pas dans ce champ, même lames fermées. En revanche, si vous la refermez par des vitrages
                 coulissants, elle pourrait basculer du côté des surfaces closes et couvertes, comme une véranda. Comme

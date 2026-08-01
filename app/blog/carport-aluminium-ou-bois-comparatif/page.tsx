@@ -535,7 +535,8 @@ export default function ArticleCarportAluOuBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Côté bois, l&apos;entretien dépend du résultat visé. Si vous acceptez le{' '}
-                <strong className="text-primary font-semibold">grisaillement</strong>, un bois de classe d&apos;emploi
+                <strong className="text-primary font-semibold">grisaillement</strong>, un bois de{' '}
+                <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">classe d&apos;emploi</a>{' '}
                 adaptée (classe 3 pour les parties abritées, classe 4 pour tout élément en contact avec l&apos;humidité
                 permanente) ne demande qu&apos;une vérification annuelle des fixations et des évacuations. Si vous
                 voulez conserver la teinte d&apos;origine, comptez une application de saturateur ou de lasure tous les
@@ -685,8 +686,11 @@ export default function ArticleCarportAluOuBoisPage() {
                   l&apos;urbanisme ne fait aucune différence entre l&apos;aluminium et le bois
                 </strong>
                 . Ce qui compte, c&apos;est l&apos;emprise au sol créée. En principe, un ouvrage de moins de 5 m²
-                échappe à toute formalité, une déclaration préalable s&apos;impose au-delà, et l&apos;on bascule vers le
-                permis de construire à partir de 20 m² — seuil porté à 40 m² pour une extension en zone urbaine couverte
+                échappe à toute formalité, une{' '}
+                <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable</a>{' '}
+                s&apos;impose au-delà, et l&apos;on bascule vers le{' '}
+                <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986" className={lienInterne} target="_blank" rel="noopener noreferrer">permis de construire</a>{' '}
+                à partir de 20 m² — seuil porté à 40 m² pour une extension en zone urbaine couverte
                 par un PLU. La taxe d&apos;aménagement peut par ailleurs s&apos;appliquer selon la nature de
                 l&apos;ouvrage.
               </p>

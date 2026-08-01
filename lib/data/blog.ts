@@ -10,6 +10,9 @@ export type Article = {
   date: string;
   categorie: string;
   image: string;
+  /** Dimensions réelles du fichier image, à relever avant d'écrire l'entrée. */
+  imageLargeur: number;
+  imageHauteur: number;
 };
 
 export const articles: Article[] = [
@@ -23,6 +26,8 @@ export const articles: Article[] = [
     categorie: 'Guide · Vérandas aluminium',
     image:
       '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 800,
   },
   {
     slug: 'terrasse-bois-structure-plots-lambourdes',
@@ -33,6 +38,8 @@ export const articles: Article[] = [
     date: '2026-08-01',
     categorie: 'Guide · Terrasses bois',
     image: '/images/terrasse-bois-plots-gironde-4.webp',
+    imageLargeur: 850,
+    imageHauteur: 1133,
   },
   {
     slug: 'carport-aluminium-ou-bois-comparatif',
@@ -43,6 +50,8 @@ export const articles: Article[] = [
     date: '2026-07-31',
     categorie: 'Guide · Carports',
     image: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
   },
   {
     slug: 'pergola-bioclimatique-aluminium-guide',
@@ -53,6 +62,8 @@ export const articles: Article[] = [
     date: '2026-07-30',
     categorie: 'Guide · Pergolas aluminium',
     image: '/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp',
+    imageLargeur: 768,
+    imageHauteur: 512,
   },
   {
     slug: 'bois-local-pin-maritime-douglas-gironde',
@@ -64,6 +75,8 @@ export const articles: Article[] = [
     categorie: 'Guide · Filière bois local',
     image:
       '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 800,
   },
   {
     slug: 'bardage-bois-facade-essences-pose',
@@ -74,6 +87,8 @@ export const articles: Article[] = [
     date: '2026-07-28',
     categorie: 'Guide · Bardage bois',
     image: '/images/source-adefrance/IMG-20250303-WA0044-1.jpg',
+    imageLargeur: 1600,
+    imageHauteur: 739,
   },
   {
     slug: 'poulailler-bois-reglementation-implantation',
@@ -84,6 +99,8 @@ export const articles: Article[] = [
     date: '2026-07-26',
     categorie: 'Guide · Poulailler',
     image: '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 800,
   },
   {
     slug: 'abri-jardin-bois-kit-ou-sur-mesure',
@@ -94,6 +111,8 @@ export const articles: Article[] = [
     date: '2026-07-26',
     categorie: 'Guide · Abris de jardin',
     image: '/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-cover.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 1800,
   },
   {
     slug: 'extension-ossature-bois-prix-m2',
@@ -103,6 +122,8 @@ export const articles: Article[] = [
     date: '2026-07-23',
     categorie: 'Guide · Construction bois',
     image: '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp',
+    imageLargeur: 900,
+    imageHauteur: 1200,
   },
   {
     slug: 'cloture-brise-vue-bois-guide',
@@ -113,6 +134,8 @@ export const articles: Article[] = [
     date: '2026-07-21',
     categorie: 'Guide · Clôtures bois',
     image: '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-horizontales-jardin-gironde.webp',
+    imageLargeur: 1200,
+    imageHauteur: 667,
   },
   {
     slug: 'proteger-terrasse-bois-canicule-entretien-ete',
@@ -122,6 +145,8 @@ export const articles: Article[] = [
     date: '2026-07-20',
     categorie: 'Guide · Entretien terrasse',
     image: '/images/terrasse-bois-plots-gironde-2.webp',
+    imageLargeur: 1200,
+    imageHauteur: 900,
   },
   {
     slug: 'pool-house-bois-guide',
@@ -131,6 +156,8 @@ export const articles: Article[] = [
     date: '2026-07-16',
     categorie: 'Guide · Pool-house',
     image: '/images/pool-house-bois-terrasse-piscine-libourne.webp',
+    imageLargeur: 1200,
+    imageHauteur: 800,
   },
   {
     slug: 'autorisation-urbanisme-abri-carport-pergola-2026',
@@ -140,6 +167,8 @@ export const articles: Article[] = [
     date: '2026-07-11',
     categorie: 'Guide · Urbanisme',
     image: '/images/source-adefrance/Carport-bois-Libourne-3.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
   },
   {
     slug: 'pergola-bois-ou-bioclimatique',
@@ -149,6 +178,8 @@ export const articles: Article[] = [
     date: '2026-07-09',
     categorie: 'Guide · Pergolas',
     image: '/images/pergola-bioclimatique-lisudestemps.webp',
+    imageLargeur: 800,
+    imageHauteur: 533,
   },
   {
     slug: 'carport-bois-guide',
@@ -158,6 +189,8 @@ export const articles: Article[] = [
     date: '2026-07-09',
     categorie: 'Guide · Carports bois',
     image: '/images/source-adefrance/Carport-bois-Libourne-1.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
   },
   {
     slug: 'quel-bois-pour-terrasse-exterieure',
@@ -167,5 +200,7 @@ export const articles: Article[] = [
     date: '2026-07-09',
     categorie: 'Guide · Terrasses bois',
     image: '/images/terrasse-bois-plots-gironde-1.webp',
+    imageLargeur: 950,
+    imageHauteur: 1267,
   },
 ];

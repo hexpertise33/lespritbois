@@ -109,6 +109,8 @@ export default function BlogPage() {
                       <img
                         src={article.image}
                         alt={article.titre}
+                        width={article.imageLargeur}
+                        height={article.imageHauteur}
                         loading="lazy"
                         decoding="async"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"

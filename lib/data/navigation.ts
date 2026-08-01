@@ -41,6 +41,16 @@ export const GOOGLE = {
   fiche: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
   itineraire:
     'https://www.google.com/maps/dir/?api=1&destination=1+Aux+Pradasses%2C+33500+Les+Billaux',
+  /** Lien « laisser un avis ». Pointe pour l'instant sur la fiche, où le bouton
+   *  « Rédiger un avis » se trouve — soit deux clics pour le client.
+   *
+   *  À REMPLACER par le lien court officiel, de la forme
+   *  https://g.page/r/XXXXXXXXXXXX/review, qui ouvre directement le formulaire
+   *  de notation en un clic. Il se récupère dans le tableau de bord Google
+   *  Business Profile : « Demander des avis » → « Partager le formulaire
+   *  d'avis ». Il ne peut pas être reconstruit depuis l'identifiant public de
+   *  la fiche, d'où ce repli. Voir docs/collecte-avis.md. */
+  avis: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
 } as const;
 
 /** Profils à déclarer dans les données structurées. */

@@ -915,6 +915,15 @@ export default function HomePage() {
                     className="text-secondary-dark hover:underline"
                   >
                     Voir les avis
+                  </a>{' '}
+                  ·{' '}
+                  <a
+                    href={GOOGLE.avis}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary-dark hover:underline"
+                  >
+                    Laisser un avis
                   </a>
                 </p>
               </div>

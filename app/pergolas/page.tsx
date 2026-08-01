@@ -336,7 +336,7 @@ const ETAPES = [
       'Vous recevez un plan, les dimensions retenues, la teinte, les options et le prix poste par poste. Retour sous 48h après le rendez-vous.',
   },
   {
-    icone: 'stamp',
+    icone: 'approval',
     titre: 'Dossier d’urbanisme',
     texte:
       'Déclaration préalable ou permis de construire : nous vérifions le PLU de votre commune et nous montons le dossier avec vous.',

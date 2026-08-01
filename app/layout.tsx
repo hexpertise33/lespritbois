@@ -38,11 +38,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* Police d'icônes auto-hébergée (voir @font-face dans globals.css) :
+            plus de feuille de style tierce bloquante, plus de preconnect vers
+            fonts.googleapis.com. Préchargée car elle sert dès le premier écran
+            (icônes du bandeau de confiance et de la navigation). */}
         <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="preload"
+          href="/fonts/material-symbols-subset.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
         />
       </head>
       <body className="bg-surface font-body-md text-on-surface antialiased">

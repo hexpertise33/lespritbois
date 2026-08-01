@@ -92,7 +92,41 @@
    Styles maison
    ========================================================================= */
 
+/* Police d'icônes auto-hébergée et réduite aux 64 icônes réellement employées
+   sur le site (8,8 Ko contre 304 Ko pour la police complète). Plus aucune
+   requête vers fonts.googleapis.com ni fonts.gstatic.com, et plus de feuille
+   de style tierce bloquante en tête de cascade.
+
+   ATTENTION : le fichier ne contient QUE ces 64 glyphes. Employer un nom
+   d'icône absent de la liste affichera le texte brut à l'écran — la liste se
+   relève en cherchant le contenu des éléments .material-symbols-outlined dans
+   le HTML rendu, pas dans les sources (certaines icônes sont injectées
+   dynamiquement). Pour en ajouter une, régénérer le sous-ensemble :
+   https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=<liste,séparée,par,des,virgules>
+   puis télécharger le woff2 référencé et remplacer le fichier ci-dessous. */
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url('/fonts/material-symbols-subset.woff2') format('woff2');
+}
+
 .material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
   vertical-align: middle;
 }

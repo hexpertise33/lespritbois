@@ -103,6 +103,22 @@ const jsonld = [
       },
       {
         '@type': 'Question',
+        name: 'Faut-il une dalle béton sous une terrasse bois ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Pas nécessairement, et c'est souvent le poste où l'on dépense pour rien. Sur un sol déjà stabilisé, des plots réglables suffisent. Sur un remblai récent, un terrain en pente ou un sol sableux, nous employons des vis de fondation, vissées jusqu'à trouver un sol résistant : pas de terrassement, pas de délai de séchage, et un réglage indépendant de chaque pied. La dalle reste réservée aux ouvrages qui portent, comme un pool house ou une structure destinée à être fermée plus tard. Le choix se fait après un relevé sur place.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "Combien de temps dure un chantier d'aménagement extérieur ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Cela dépend de l'ouvrage et de la préparation en atelier. Sur nos chantiers récents : trois jours pour une terrasse en pin US sur vis de fondation à Lacanau, dix jours pour une plage de piscine complète en ipé à Moulon, deux jours de pose pour une pergola aluminium isolée à Montussan. Une pergola ou un carport se taille à l'atelier en une journée puis se pose en deux ; c'est ce qui limite la durée d'immobilisation de votre extérieur.",
+        },
+      },
+      {
+        '@type': 'Question',
         name: 'Faut-il une autorisation pour un pool house ou un abri de jardin ?',
         acceptedAnswer: {
           '@type': 'Answer',
@@ -409,7 +425,7 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover"
                   src="/images/source-adefrance/construction-pool-house-aluminium-libourne-2.webp"
-                  alt="Pool house avec bar extérieur sous couverture aluminium, réalisé en Gironde"
+                  alt="Pool house avec bar extérieur en pierre sous couverture aluminium à toiture plate"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -542,6 +558,204 @@ export default function AmenagementExterieurPage() {
           </div>
         </section>
 
+        {/* Chantiers récents */}
+        <section className="py-section-padding bg-surface" id="chantiers-recents">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-14">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                Trois chantiers récents
+              </span>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
+                Trois sols, trois manières de fonder
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Un aménagement extérieur se juge rarement sur ce qui se voit. Ce qui décide de sa durée de vie, c'est
+                ce qu'il y a dessous — et cela change à chaque terrain.
+              </p>
+            </div>
+
+            <div className="space-y-16">
+              <article className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    width="950"
+                    height="1267"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto"
+                    src="/images/terrasse-bois-plots-gironde-1.webp"
+                    alt="Terrasse bois en pin US posée sur sol sableux entre deux maisons, chantier de L'Esprit Bois à Lacanau"
+                  />
+                </div>
+                <div>
+                  <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
+                    Lacanau — Terrasse en pin US
+                  </p>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mt-2 mb-5">
+                    Quand le sol ne porte pas
+                  </h3>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
+                    Le sable du littoral ne porte pas. On peut poser une terrasse sur plots réglables et la voir
+                    descendre irrégulièrement au bout de deux hivers, ou aller chercher un sol qui tient.
+                  </p>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
+                    Nous avons fondé celle-ci sur{' '}
+                    <strong className="text-primary font-semibold">vis de fondation</strong>, vissées jusqu'à trouver
+                    de la résistance, plutôt que sur un lit de plots posés en surface. La mise en œuvre est plus
+                    longue au départ, mais elle supprime le rattrapage de niveau qui revient chaque année sur les
+                    terrains sableux.
+                  </p>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant">
+                    Platelage en pin US, avec une plinthe de rive qui referme la structure sur les quatre côtés : le
+                    sable ne s'installe pas dessous. Trois jours de pose.
+                  </p>
+                </div>
+              </article>
+
+              <article className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div className="lg:order-2 rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    width="736"
+                    height="981"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto"
+                    src="/images/terrasse-bois-pool-house-noir.webp"
+                    alt="Terrasse en ipé longeant une piscine, pool house à bardage noir en arrière-plan, chantier réalisé à Moulon"
+                  />
+                </div>
+                <div className="lg:order-1">
+                  <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
+                    Moulon — Plage de piscine en ipé
+                  </p>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mt-2 mb-5">
+                    Affleurer la margelle sur toute la longueur
+                  </h3>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
+                    La piscine était là, la maison aussi. Il manquait ce qui relie les deux. Nous avons posé une
+                    terrasse complète en <strong className="text-primary font-semibold">ipé</strong> et traité tout
+                    l'aménagement du tour de bassin.
+                  </p>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
+                    L'ipé n'est pas le bois le plus simple à travailler : dense et dur, il use la visserie et impose
+                    des avant-trous systématiques. En contrepartie, il ne grise pas comme un résineux, ne donne pas
+                    d'échardes pieds nus, et tient au bord d'une eau chlorée sans traitement lourd.
+                  </p>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant">
+                    Le tracé suit le bassin au plus juste : la lame de rive affleure la margelle sur toute la
+                    longueur, sans jeu qui se voit ni coupe biaise rattrapée à la volée. Dix jours de pose.
+                  </p>
+                </div>
+              </article>
+
+              <article className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    width="768"
+                    height="512"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto"
+                    src="/images/source-adefrance/construction-pool-house-aluminium-libourne.webp"
+                    alt="Cuisine d'été avec plancha et plan de travail sous une pergola aluminium isolée, chantier réalisé à Montussan"
+                  />
+                </div>
+                <div>
+                  <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
+                    Montussan — Cuisine d'été couverte
+                  </p>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mt-2 mb-5">
+                    Une pose en tunnel, sans jeu de montage
+                  </h3>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
+                    Le client voulait un espace bar couvert, avec plancha et plan de travail, dans une cour fermée sur
+                    ses côtés. Une <strong className="text-primary font-semibold">pose en tunnel</strong> — entre deux
+                    ouvrages existants, sans possibilité de reculer pour ajuster — ne pardonne pas l'approximation.
+                  </p>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
+                    Il n'y a pas de jeu de montage : la structure entre au millimètre, ou elle n'entre pas. Toutes les
+                    cotes ont été relevées sur place, et la pergola fabriquée sur mesure à partir de ce relevé plutôt
+                    qu'à partir d'un modèle standard rattrapé par des habillages.
+                  </p>
+                  <p className="font-body-lg text-body-lg text-on-surface-variant">
+                    La couverture est en panneau isolé, et ce n'est pas un détail de confort : sous une simple plaque,
+                    un espace bar plein soleil devient un four en été. Ici, on cuisine dessous à midi. Deux jours de
+                    pose.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <p className="mt-14 font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+              Ces trois chantiers sont détaillés, avec neuf autres, sur notre page{' '}
+              <a
+                href="/realisations"
+                className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+              >
+                réalisations
+              </a>{' '}
+              : commune, contrainte rencontrée, matériaux et durée de chantier pour chacun.
+            </p>
+          </div>
+        </section>
+
+        {/* Ce qu'il y a sous la terrasse */}
+        <section className="py-section-padding bg-surface-container-low" id="fondations">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                Le poste qu'on oublie de chiffrer
+              </span>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
+                Ce qu'il y a sous la terrasse décide de sa durée de vie
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Un devis de terrasse se compare souvent au mètre carré de lames. C'est la partie visible, et la moins
+                déterminante. Trois manières de fonder, trois budgets, trois durées de vie.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm">
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Plots réglables</h3>
+                <p className="text-on-surface-variant text-body-md mb-4">
+                  La solution la plus rapide et la moins chère. Elle convient sur un sol déjà stabilisé : une dalle
+                  existante, un béton maigre, un terrain compacté depuis longtemps.
+                </p>
+                <p className="text-on-surface-variant text-body-md">
+                  Sur un remblai récent ou un sol sableux, elle se paie en tassements différentiels — la terrasse
+                  descend par endroits, et le rattrapage revient chaque année.
+                </p>
+              </article>
+              <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm">
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Vis de fondation</h3>
+                <p className="text-on-surface-variant text-body-md mb-4">
+                  Vissées jusqu'à trouver un sol résistant, elles traversent la couche meuble. Chaque pied se règle
+                  indépendamment en hauteur, ce qui permet de rattraper une pente sans terrasser.
+                </p>
+                <p className="text-on-surface-variant text-body-md">
+                  Pas de béton, pas d'évacuation de terre, pas de délai de séchage. C'est ce que nous avons employé à
+                  Lacanau sur le sable, et à Capian sur un terrain en pente.
+                </p>
+              </article>
+              <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm">
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Dalle ou longrines</h3>
+                <p className="text-on-surface-variant text-body-md mb-4">
+                  La solution lourde, réservée aux ouvrages qui portent : un pool house, une dépendance, une structure
+                  destinée à être fermée plus tard.
+                </p>
+                <p className="text-on-surface-variant text-body-md">
+                  Elle suppose un terrassement et un délai de séchage. Nous la chiffrons à part et nous vous le disons
+                  avant de signer : c'est le poste qui fait le plus souvent déraper un budget annoncé au mètre carré.
+                </p>
+              </article>
+            </div>
+            <p className="mt-10 font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+              Le choix se fait sur place, après un relevé. Un terrain argileux du Libournais, un remblai récent et le
+              sable de la côte n'appellent pas la même réponse — et personne ne peut trancher depuis un catalogue.
+            </p>
+          </div>
+        </section>
+
         {/* Relais de conversion */}
         <section className="bg-surface border-y border-surface-variant">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -589,40 +803,40 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   src="/images/source-adefrance/construction-pool-house-aluminium-libourne.webp"
-                  alt="Cuisine d'été et bar abrités sous une pergola aluminium, Libourne"
+                  alt="Cuisine d'été et bar abrités sous une pergola aluminium isolée, chantier réalisé à Montussan"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
                 <img
-                  width="1200"
-                  height="800"
+                  width="736"
+                  height="981"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/construction-pool-house-aluminium-libourne-3.webp"
-                  alt="Cuisine d'été abritée sous une pergola bioclimatique, plan de travail et plancha"
+                  src="/images/terrasse-bois-pool-house-noir.webp"
+                  alt="Plage de piscine en ipé et pool house à bardage noir, chantier réalisé à Moulon"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
                 <img
-                  width="1200"
-                  height="800"
+                  width="825"
+                  height="1100"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/construction-pool-house-aluminium-libourne-4.webp"
-                  alt="Terrasse bois avec spa encastré, sous une pergola à lames orientables"
+                  src="/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp"
+                  alt="Salon de jardin sous une pergola aluminium à store latéral, à Saint-Pey-de-Castets"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
                 <img
-                  width="768"
-                  height="512"
+                  width="950"
+                  height="1267"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/Pergolas-aluminium-Libourne-5.webp"
-                  alt="Pergola bioclimatique à lames orientables au-dessus d'une terrasse, Gironde"
+                  src="/images/terrasse-bois-plots-gironde-1.webp"
+                  alt="Terrasse bois posée sur sol sableux entre deux maisons, chantier réalisé à Lacanau"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
@@ -633,18 +847,7 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   src="/images/source-adefrance/Pergolas-bois-Libourne.webp"
-                  alt="Terrasse bois massif et pergola adossée à la maison, Libournais"
-                />
-              </div>
-              <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
-                <img
-                  width="900"
-                  height="1200"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="/images/source-adefrance/IMG-20250129-WA0077-opt.webp"
-                  alt="Bardage bois en claire-voie servant de brise-vue en Gironde"
+                  alt="Pergola en bois massif exposée sur notre dépôt des Billaux"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
@@ -655,7 +858,7 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   src="/images/terrasse-bois-plots-gironde-2.webp"
-                  alt="Terrasse bois sur plots au pied d'une maison bois, en Gironde"
+                  alt="Terrasse bois en pin US posée sur vis de fondation dans le sable, à Lacanau"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
@@ -666,7 +869,7 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   src="/images/terrasse-bois-plots-gironde-4.webp"
-                  alt="Terrasse bois abritée par un store banne, sous les pins"
+                  alt="Terrasse bois abritée par un store banne, sous les pins, à Lacanau"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
@@ -679,7 +882,7 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover object-[center_72%] group-hover:scale-105 transition-transform duration-700"
                   src="/images/terrasse-bois-plots-gironde-3.webp"
-                  alt="Emmarchement d'une terrasse bois le long d'une baie vitrée"
+                  alt="Emmarchement d'une terrasse bois le long d'une baie vitrée, à Lacanau"
                 />
               </div>
             </div>
@@ -899,6 +1102,47 @@ export default function AmenagementExterieurPage() {
                   Libournais, l'exposition de votre terrasse, sa proximité avec un bassin et l'entretien que vous
                   êtes prêt à consentir orientent le choix bien plus que le catalogue. Nous en discutons sur
                   place, devant votre terrain.
+                </p>
+              </details>
+
+              <details className="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+                <summary className="flex justify-between items-center cursor-pointer list-none">
+                  <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
+                    Faut-il une dalle béton sous une terrasse bois ?
+                  </h3>
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    expand_more
+                  </span>
+                </summary>
+                <p className="text-on-surface-variant text-body-md mt-4">
+                  <strong className="text-primary font-semibold">Pas nécessairement</strong>, et c'est souvent le
+                  poste où l'on dépense pour rien. Sur un sol déjà stabilisé, des plots réglables suffisent. Sur un
+                  remblai récent, un terrain en pente ou un sol sableux, nous employons des vis de fondation,
+                  vissées jusqu'à trouver un sol résistant : pas de terrassement, pas de délai de séchage, et un
+                  réglage indépendant de chaque pied. La dalle reste réservée aux ouvrages qui portent, comme un
+                  pool house ou une structure destinée à être fermée plus tard. Le choix se fait après un relevé
+                  sur place.
+                </p>
+              </details>
+
+              <details className="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+                <summary className="flex justify-between items-center cursor-pointer list-none">
+                  <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
+                    Combien de temps dure un chantier d'aménagement extérieur ?
+                  </h3>
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    expand_more
+                  </span>
+                </summary>
+                <p className="text-on-surface-variant text-body-md mt-4">
+                  Cela dépend de l'ouvrage et de la préparation en atelier. Sur nos chantiers récents : trois jours
+                  pour une terrasse en pin US sur vis de fondation à{' '}
+                  <strong className="text-primary font-semibold">Lacanau</strong>, dix jours pour une plage de
+                  piscine complète en ipé à <strong className="text-primary font-semibold">Moulon</strong>, deux
+                  jours de pose pour une pergola aluminium isolée à{' '}
+                  <strong className="text-primary font-semibold">Montussan</strong>. Une pergola ou un carport se
+                  taille à l'atelier en une journée puis se pose en deux : c'est ce qui limite la durée
+                  d'immobilisation de votre extérieur.
                 </p>
               </details>
 

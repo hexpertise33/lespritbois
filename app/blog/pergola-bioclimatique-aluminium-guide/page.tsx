@@ -446,11 +446,11 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/source-adefrance/Pergolas-aluminium-Libourne-7.webp"
-              w={768}
-              h={512}
-              alt="Pergola bioclimatique aluminium blanche adossée à une maison, avec store vertical zippé descendu sur le côté"
-              caption="Adossée : la pergola prolonge le séjour, et c'est le store latéral — non les lames — qui coupe le soleil rasant."
+              src="/images/realisations/pergola-aluminium-store-zip-libourne-2.webp"
+              w={1100}
+              h={825}
+              alt="Store vertical descendu sur le côté d'une pergola aluminium adossée, chantier de L'Esprit Bois à Saint-Pey-de-Castets"
+              caption="Un de nos chantiers, à Saint-Pey-de-Castets : adossée, la pergola prolonge le séjour, et c'est le store latéral — non la couverture — qui coupe le soleil rasant."
             />
 
             {/* 3. Qualité */}
@@ -651,18 +651,18 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
 
             <DuoFigure
               a={{
-                src: '/images/source-adefrance/Pergolas-aluminium-Libourne-6.webp',
-                w: 768,
-                h: 512,
-                alt: 'Store vertical zippé descendu sur le côté d’une pergola bioclimatique en aluminium anthracite',
-                caption: 'Le store zip coulisse dans des rails : il tient au vent et coupe le soleil rasant.',
+                src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+                w: 825,
+                h: 1100,
+                alt: 'Pergola aluminium anthracite fermée par son store vertical, vue depuis le jardin, à Saint-Pey-de-Castets',
+                caption: 'Le store coulisse dans des rails latéraux : il tient au vent et coupe le soleil rasant.',
               }}
               b={{
-                src: '/images/source-adefrance/Pergolas-aluminium-Libourne-2.webp',
-                w: 768,
-                h: 512,
-                alt: 'Vue sous une pergola bioclimatique aluminium avec éclairage LED intégré aux traverses et store latéral',
-                caption: 'LED intégrées aux traverses et store latéral : la terrasse reste utilisable le soir.',
+                src: '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp',
+                w: 825,
+                h: 1100,
+                alt: 'Salon de jardin installé sous une pergola aluminium, store latéral descendu, sur terrasse bois',
+                caption: 'Store descendu en fin de journée : la terrasse reste utilisable quand le soleil tourne.',
               }}
             />
 

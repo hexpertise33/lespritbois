@@ -735,8 +735,8 @@ export default function PergolasPage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/source-adefrance/Pergolas-aluminium-Libourne-7.webp"
-                    alt="Détail des lames orientables d'une pergola bioclimatique"
+                    src="/images/source-adefrance/Pergolas-aluminium-Libourne-9.webp"
+                    alt="Lames orientables d'une pergola bioclimatique en aluminium, vues de dessous"
                   />
                 </div>
               </div>

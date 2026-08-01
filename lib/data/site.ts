@@ -126,24 +126,6 @@ export const metiers: Metier[] = [
   },
 ];
 
-export type Realisation = {
-  titre: string;
-  metier: string;
-  lieu: string;
-  image: string;
-  format: 'large' | 'haut' | 'standard';
-};
-
-// Réalisations — photos de chantiers réels (a-defrance.fr).
-export const realisations: Realisation[] = [
-  { titre: 'Carport aluminium contemporain', metier: 'Carports', lieu: 'Gironde', image: `${IMG}/carport-accueil.webp`, format: 'large' },
-  { titre: 'Extension bardée bois sur maison en pierre', metier: 'Constructions bois', lieu: 'Gironde', image: `${IMG}/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d.jpg`, format: 'haut' },
-  { titre: 'Pool house & terrasse bois', metier: 'Constructions bois', lieu: 'Libourne', image: `${IMG}/construction-pool-house-bois-libourne.webp`, format: 'standard' },
-  { titre: 'Maison en A sur mesure', metier: 'Constructions bois', lieu: 'Les Billaux', image: `${IMG}/mais-en-a-accueil.webp`, format: 'standard' },
-  { titre: 'Bardage red cedar claire-voie', metier: 'Bardages', lieu: 'Gironde', image: `${IMG}/IMG-20250129-WA0077.jpg`, format: 'haut' },
-  { titre: 'Pergola aluminium bioclimatique', metier: 'Pergolas', lieu: 'Libourne', image: `${IMG}/Pergolas-aluminium-Libourne-1.webp`, format: 'large' },
-];
-
 // Section « L'excellence du matériau » (home)
 export const matiere = {
   eyebrow: 'L’excellence du matériau',

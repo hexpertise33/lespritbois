@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
-import { CONTACT, GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Contact — charpentier à Libourne (33)',
@@ -34,48 +34,7 @@ const jsonld = [
     description:
       "Coordonnées, horaires, adresse de l'atelier et formulaire de demande d'étude gratuite de L'Esprit Bois, charpentier et constructeur bois aux Billaux, près de Libourne.",
     url: 'https://lesprit-bois.fr/contact',
-    mainEntity: {
-      '@type': 'GeneralContractor',
-      name: "L'Esprit Bois",
-      url: 'https://lesprit-bois.fr/',
-      telephone: CONTACT.telE164,
-      email: CONTACT.email,
-      sameAs: SAME_AS,
-      priceRange: '€€',
-      hasCredential: {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'certification',
-        name: 'Qualibat',
-      },
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: CONTACT.rue,
-        postalCode: CONTACT.codePostal,
-        addressLocality: CONTACT.ville,
-        addressRegion: CONTACT.region,
-        addressCountry: 'FR',
-      },
-      geo: { '@type': 'GeoCoordinates', latitude: 44.9517, longitude: -0.2372 },
-      openingHoursSpecification: {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '17:00',
-      },
-      areaServed: [
-        { '@type': 'City', name: 'Libourne' },
-        { '@type': 'AdministrativeArea', name: 'Gironde' },
-        { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
-      ],
-      contactPoint: {
-        '@type': 'ContactPoint',
-        telephone: CONTACT.telE164,
-        email: CONTACT.email,
-        contactType: 'customer service',
-        areaServed: 'FR',
-        availableLanguage: 'French',
-      },
-    },
+    mainEntity: ENTREPRISE_REF,
   },
 ];
 

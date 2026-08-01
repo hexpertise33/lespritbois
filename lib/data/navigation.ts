@@ -79,23 +79,14 @@ export const ONGLETS: Onglet[] = [
   { cle: 'blog', titre: 'Blog', url: '/blog' },
 ];
 
-/** Bloc « provider » réutilisé dans toutes les données structurées. */
-export const ENTREPRISE_JSONLD = {
-  '@type': 'GeneralContractor',
-  name: SITE.nom,
-  telephone: CONTACT.telE164,
-  email: CONTACT.email,
-  hasCredential: {
-    '@type': 'EducationalOccupationalCredential',
-    credentialCategory: 'certification',
-    name: 'Qualibat',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: CONTACT.rue,
-    postalCode: CONTACT.codePostal,
-    addressLocality: CONTACT.ville,
-    addressRegion: CONTACT.region,
-    addressCountry: 'FR',
-  },
-} as const;
+/** Identifiant unique de l'entreprise dans le graphe de données structurées.
+ *  L'entité complète — adresse, horaires, géolocalisation, catalogue, avis —
+ *  n'est décrite qu'une seule fois, sur l'accueil. Partout ailleurs on renvoie
+ *  vers cet `@id` avec `ENTREPRISE_REF` plutôt que de recopier le bloc : Google
+ *  consolide alors un seul et même établissement, au lieu d'en voir neuf aux
+ *  propriétés divergentes. */
+export const ENTREPRISE_ID = `${SITE.url}/#entreprise`;
+
+/** Référence à l'entité décrite sur l'accueil. À utiliser comme valeur de
+ *  `provider`, `publisher`, `about` ou `mainEntity` sur les autres pages. */
+export const ENTREPRISE_REF = { '@id': ENTREPRISE_ID } as const;

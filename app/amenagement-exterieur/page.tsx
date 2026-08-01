@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ENTREPRISE_REF } from '@/lib/data/navigation';
 import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
@@ -40,27 +41,7 @@ const jsonld = [
       { '@type': 'AdministrativeArea', name: 'Gironde' },
       { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
     ],
-    provider: {
-      '@type': 'GeneralContractor',
-      name: "L'Esprit Bois",
-      description:
-        "Créateur d'espaces extérieurs : terrasses, pool houses, abris de jardin, abords de bassin, pergolas et carports. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
-      telephone: '+33557406580',
-      email: 'lespritbois33@gmail.com',
-      hasCredential: {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'certification',
-        name: 'Qualibat',
-      },
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '1 Aux Pradasses',
-        postalCode: '33500',
-        addressLocality: 'Les Billaux',
-        addressRegion: 'Gironde',
-        addressCountry: 'FR',
-      },
-    },
+    provider: ENTREPRISE_REF,
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: "Prestations d'aménagement extérieur",

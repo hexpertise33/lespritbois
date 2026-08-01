@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
-import { GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
@@ -59,7 +59,14 @@ const jsonld = [
   {
     '@context': 'https://schema.org',
     '@type': 'GeneralContractor',
+    /* Description canonique de l'entreprise. Les autres pages n'en gardent
+       qu'une référence à cet `@id` (ENTREPRISE_REF), pour que Google consolide
+       un seul établissement au lieu de neuf descriptions divergentes. */
+    '@id': ENTREPRISE_ID,
     name: "L'Esprit Bois",
+    legalName: 'AD FRANCE',
+    vatID: 'FR47980264584',
+    taxID: '980264584',
     description:
       "Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
     url: 'https://lesprit-bois.fr/',
@@ -107,6 +114,30 @@ const jsonld = [
       { '@type': 'AdministrativeArea', name: 'Gironde' },
       { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
     ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+33557406580',
+      email: 'lespritbois33@gmail.com',
+      contactType: 'customer service',
+      areaServed: 'FR',
+      availableLanguage: 'French',
+    },
+    knowsAbout: [
+      'Charpente traditionnelle',
+      'Construction à ossature bois',
+      'Couverture',
+      'Aménagement extérieur',
+      'Pergolas',
+      'Carports',
+      'Terrasses bois',
+      'Bardage bois',
+    ],
+    employee: {
+      '@type': 'Person',
+      name: 'David Bertrand',
+      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
+      worksFor: { '@id': ENTREPRISE_ID },
+    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Nos savoir-faire',

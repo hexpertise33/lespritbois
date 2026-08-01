@@ -3,7 +3,7 @@ import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
-import { CONTACT, GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Qui sommes-nous — charpentiers à Libourne',
@@ -38,52 +38,7 @@ const jsonld = [
     url: 'https://lesprit-bois.fr/qui-sommes-nous',
     description:
       "Présentation de L'Esprit Bois, charpentiers et constructeurs bois installés aux Billaux, près de Libourne : métier, engagements, certifications et méthode de travail.",
-    mainEntity: {
-      '@type': 'GeneralContractor',
-      '@id': 'https://lesprit-bois.fr/#entreprise',
-      name: "L'Esprit Bois",
-      legalName: 'AD FRANCE',
-      url: 'https://lesprit-bois.fr/',
-      telephone: CONTACT.telE164,
-      email: CONTACT.email,
-      sameAs: SAME_AS,
-      vatID: 'FR47980264584',
-      taxID: '980264584',
-      knowsAbout: [
-        'Charpente traditionnelle',
-        'Construction à ossature bois',
-        'Couverture',
-        'Aménagement extérieur',
-        'Pergolas',
-        'Carports',
-        'Terrasses bois',
-        'Bardage bois',
-      ],
-      hasCredential: {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'certification',
-        name: 'Qualibat',
-      },
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: CONTACT.rue,
-        postalCode: CONTACT.codePostal,
-        addressLocality: CONTACT.ville,
-        addressRegion: CONTACT.region,
-        addressCountry: 'FR',
-      },
-      areaServed: [
-        { '@type': 'City', name: 'Libourne' },
-        { '@type': 'AdministrativeArea', name: 'Gironde' },
-        { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
-      ],
-      employee: {
-        '@type': 'Person',
-        name: 'David Bertrand',
-        jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-        worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-      },
-    },
+    mainEntity: ENTREPRISE_REF,
   },
 ];
 

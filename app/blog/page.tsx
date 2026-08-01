@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ENTREPRISE_REF } from '@/lib/data/navigation';
 import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
@@ -32,10 +33,7 @@ const jsonld = [
     description:
       "Conseils, retours de chantier et actualités autour du bois, des terrasses, pergolas, carports et constructions bois à Libourne et en Gironde.",
     url: 'https://lesprit-bois.fr/blog',
-    publisher: {
-      '@type': 'GeneralContractor',
-      name: "L'Esprit Bois",
-    },
+    publisher: ENTREPRISE_REF,
   },
 ];
 

@@ -24,14 +24,27 @@ export const metadata: Metadata = buildMetadata({
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
-function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+function Figure({
+  src,
+  alt,
+  caption,
+  w,
+  h,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  w: number;
+  h: number;
+}) {
   return (
     <figure className="-mx-6 md:-mx-16">
       <img
         loading="lazy"
         decoding="async"
-        width="1200"
-        height="800"
+        width={w}
+        height={h}
         className="w-full h-auto rounded-2xl object-cover shadow-sm"
         src={src}
         alt={alt}
@@ -47,8 +60,9 @@ function DuoFigure({
   a,
   b,
 }: {
-  a: { src: string; alt: string; caption: string };
-  b: { src: string; alt: string; caption: string };
+  /** `w` et `h` : dimensions réelles du fichier, à vérifier avant de les écrire. */
+  a: { src: string; alt: string; caption: string; w: number; h: number };
+  b: { src: string; alt: string; caption: string; w: number; h: number };
 }) {
   return (
     <div className="-mx-6 md:-mx-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -57,8 +71,8 @@ function DuoFigure({
           <img
             loading="lazy"
             decoding="async"
-            width="800"
-            height="600"
+            width={img.w}
+            height={img.h}
             className="w-full h-64 md:h-72 rounded-2xl object-cover shadow-sm"
             src={img.src}
             alt={img.alt}
@@ -307,7 +321,7 @@ export default function ArticleVerandaAluminiumPage() {
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
-              height="900"
+              height="800"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
@@ -337,7 +351,13 @@ export default function ArticleVerandaAluminiumPage() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
-                David Bertrand, L&apos;Esprit Bois
+                <a
+                  href="/qui-sommes-nous#david-bertrand"
+                  className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
+                >
+                  David Bertrand
+                </a>
+                , L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>1er août 2026</span>
@@ -408,6 +428,8 @@ export default function ArticleVerandaAluminiumPage() {
 
             <Figure
               src="/images/blog/veranda-aluminium-isolation-urbanisme-budget/interieur-veranda-vitree-extension-sejour.jpg"
+              w={1200}
+              h={801}
               alt="Intérieur d'une véranda vitrée aménagée en extension de séjour, profilés fins et grandes baies coulissantes"
               caption="Une véranda ouverte en permanence sur le séjour est traitée comme une pièce chauffée : profilés, vitrages et toiture changent de niveau d’exigence."
             />
@@ -461,9 +483,11 @@ export default function ArticleVerandaAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/source-adefrance/Pergolas-aluminium-Libourne-6.webp"
-              alt="Profilés aluminium fins thermolaqués teinte anthracite sur une structure posée à Libourne, en Gironde"
-              caption="Sur nos chantiers alu du Libournais, la teinte RAL est cuite au four sur le profilé : elle ne s’écaille pas et ne se repeint pas."
+              src="/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-4.webp"
+              w={825}
+              h={1100}
+              alt="Profilés aluminium thermolaqués anthracite d’une structure adossée, chantier de L’Esprit Bois à Saint-Pey-de-Castets"
+              caption="La teinte RAL est cuite au four sur le profilé : elle ne s’écaille pas et ne se repeint pas. Ici sur une de nos pergolas aluminium à Saint-Pey-de-Castets — le traitement est identique sur les profilés de véranda."
             />
 
             {/* Rupture de pont thermique */}
@@ -513,6 +537,8 @@ export default function ArticleVerandaAluminiumPage() {
 
             <Figure
               src="/images/blog/veranda-aluminium-isolation-urbanisme-budget/profile-aluminium-rupture-pont-thermique-double-vitrage.jpg"
+              w={1200}
+              h={800}
               alt="Coupe d'un profilé aluminium à rupture de pont thermique avec échantillon de double vitrage, détail technique de véranda"
               caption="En coupe, on voit les deux demi-profilés séparés par les barrettes isolantes : c’est cette ligne-là qu’il faut chercher sur un devis."
             />
@@ -573,8 +599,10 @@ export default function ArticleVerandaAluminiumPage() {
 
             <Figure
               src="/images/source-adefrance/Pergolas-aluminium-Libourne-9.webp"
-              alt="Toiture à lames orientables d'une pergola bioclimatique aluminium adossée à une maison à Libourne, vue de dessous"
-              caption="Traiter le soleil avant la façade vitrée : sur ce chantier libournais, les lames orientables ferment l’ombre à midi et s’ouvrent le soir."
+              w={768}
+              h={512}
+              alt="Toiture à lames orientables d'une pergola bioclimatique en aluminium adossée à une maison, vue de dessous"
+              caption="Traiter le soleil avant la façade vitrée : les lames orientables ferment l’ombre à midi et s’ouvrent le soir."
             />
 
             {/* Étanchéité */}
@@ -670,9 +698,11 @@ export default function ArticleVerandaAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/source-adefrance/construction-pool-house-aluminium-libourne-2.webp"
-              alt="Extension aluminium adossée à une maison à Libourne : structure thermolaquée, baie coulissante et raccord au mur existant"
-              caption="Un ouvrage adossé crée de l’emprise au sol : hauteur, implantation et teinte se vérifient au PLU avant de dessiner le raccord au mur."
+              src="/images/source-adefrance/IMG-20240712-WA0039-opt.webp"
+              w={825}
+              h={1100}
+              alt="Extension vitrée adossée à une maison, baie coulissante toute hauteur et raccord au mur existant, chantier de L’Esprit Bois à Génissac"
+              caption="Un ouvrage adossé crée de l’emprise au sol : hauteur, implantation et teinte se vérifient au PLU avant de dessiner le raccord au mur. Ici notre extension de Génissac."
             />
 
             {/* Budget */}

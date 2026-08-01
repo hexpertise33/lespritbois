@@ -48,7 +48,7 @@ export default function SiteFooter() {
             <li><a className={lien} href="/">Accueil</a></li>
             <li><a className={lien} href="/realisations">Réalisations</a></li>
             <li><a className={lien} href="/blog">Blog</a></li>
-            <li><a className={lien} href="/#quote">Demander un devis</a></li>
+            <li><a className={lien} href="/contact">Contact &amp; devis</a></li>
           </ul>
         </div>
 

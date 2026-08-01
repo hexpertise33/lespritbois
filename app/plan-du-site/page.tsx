@@ -31,7 +31,7 @@ const RUBRIQUES: { titre: string; liens: Lien[] }[] = [
       { titre: 'Accueil', url: '/' },
       { titre: 'Réalisations', url: '/realisations' },
       { titre: 'Blog', url: '/blog' },
-      { titre: 'Demander un devis', url: '/#quote' },
+      { titre: 'Contact & devis', url: '/contact' },
     ],
   },
   {

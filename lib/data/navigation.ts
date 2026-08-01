@@ -32,6 +32,17 @@ export const RESEAUX = {
   instagram: 'https://www.instagram.com/lespritbois',
 } as const;
 
+/** Fiche Google Business Profile.
+ *  `fiche` utilise l'identifiant Knowledge Graph de l'établissement, seul
+ *  identifiant stable que Google expose publiquement (extrait du lien de
+ *  partage de la fiche). `itineraire` passe par l'API Maps URLs officielle,
+ *  qui n'exige aucun identifiant et reste valable si l'adresse change. */
+export const GOOGLE = {
+  fiche: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
+  itineraire:
+    'https://www.google.com/maps/dir/?api=1&destination=1+Aux+Pradasses%2C+33500+Les+Billaux',
+} as const;
+
 /** Profils à déclarer dans les données structurées. */
 export const SAME_AS: string[] = Object.values(RESEAUX);
 

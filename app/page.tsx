@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
-import { SAME_AS } from '@/lib/data/navigation';
+import { GOOGLE, SAME_AS } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
@@ -878,7 +878,7 @@ export default function HomePage() {
                 <p className="text-on-surface-variant text-sm mt-1.5">
                   Basé sur <strong className="text-on-surface">6 avis</strong> ·{' '}
                   <a
-                    href="https://www.google.com/search?q=L%27Esprit+Bois+Les+Billaux"
+                    href={GOOGLE.fiche}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-secondary-dark hover:underline"

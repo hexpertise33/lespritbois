@@ -14,6 +14,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'veranda-aluminium-isolation-urbanisme-budget',
+    titre:
+      'Véranda en aluminium : isolation, urbanisme et budget, le guide pour agrandir sa maison en Gironde',
+    extrait:
+      "Une véranda aluminium se juge d'abord sur son confort douze mois par an : rupture de pont thermique des profilés, vitrages différenciés selon l'orientation et surtout traitement de la toiture, le poste le plus sous-estimé. Statut d'urbanisme (espace tampon ou vraie extension chauffée), seuils de déclaration préalable et de permis, étanchéité du raccord à la maison et fourchettes 2026 de 1 200 à 2 500 €/m² posé, par un artisan à Libourne (Gironde).",
+    date: '2026-08-01',
+    categorie: 'Guide · Vérandas aluminium',
+    image:
+      '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.jpg',
+  },
+  {
     slug: 'terrasse-bois-structure-plots-lambourdes',
     titre:
       "Structure d'une terrasse en bois : plots, lambourdes et ventilation, ce qui décide vraiment de sa durée de vie",

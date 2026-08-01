@@ -289,7 +289,13 @@ export default function ArticleBoisLocalGirondePage() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
-                David Bertrand, L&apos;Esprit Bois
+                <a
+                  href="/qui-sommes-nous#david-bertrand"
+                  className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
+                >
+                  David Bertrand
+                </a>
+                , L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>29 juillet 2026</span>

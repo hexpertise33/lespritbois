@@ -18,6 +18,7 @@ const PAGES_STATIQUES = [
   '/realisations',
   '/blog',
   '/contact',
+  '/qui-sommes-nous',
   '/mentions-legales',
   '/politique-de-confidentialite',
   '/plan-du-site',

@@ -46,6 +46,7 @@ export default function SiteFooter() {
           <p className="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">L'entreprise</p>
           <ul className="space-y-4">
             <li><a className={lien} href="/">Accueil</a></li>
+            <li><a className={lien} href="/qui-sommes-nous">Qui sommes-nous</a></li>
             <li><a className={lien} href="/realisations">Réalisations</a></li>
             <li><a className={lien} href="/blog">Blog</a></li>
             <li><a className={lien} href="/contact">Contact &amp; devis</a></li>

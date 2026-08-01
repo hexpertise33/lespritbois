@@ -29,6 +29,7 @@ const RUBRIQUES: { titre: string; liens: Lien[] }[] = [
     titre: "L'entreprise",
     liens: [
       { titre: 'Accueil', url: '/' },
+      { titre: 'Qui sommes-nous', url: '/qui-sommes-nous' },
       { titre: 'Réalisations', url: '/realisations' },
       { titre: 'Blog', url: '/blog' },
       { titre: 'Contact & devis', url: '/contact' },

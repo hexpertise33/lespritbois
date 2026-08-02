@@ -49,23 +49,27 @@ pergola bioclimatique, véranda, extension, protections solaires) : voir « Idé
 de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
 articles.
 
-**Prochain créneau (02/08/2026)** : la véranda aluminium a été consommée le
-01/08 sous `veranda-aluminium-isolation-urbanisme-budget` (profilés à rupture
-de pont thermique, vitrages, toiture et surchauffe d'été, étanchéité du
-raccord, seuils d'urbanisme 5/20/40 m² + architecte à 150 m², budget 1 200 à
-2 500 €/m² posé). Le prochain article devrait revenir au **bois** pour
-l'alternance : reste sans réserve bois dédiée, donc veille web pour un angle
-neuf (piste : terrasse autour d'une piscine, terrasse surélevée avec
-garde-corps, rénovation d'une terrasse existante, ou un sujet hors terrasse).
-Si l'on reste sur l'alu, les idées libres sont : teinte RAL, brise-soleil
-orientables, garde-corps alu vs bois, véranda ou extension ossature bois
-(angle décision).
+**Prochain créneau (03/08/2026)** : le 02/08 a consommé la piste « terrasse
+autour d'une piscine » sous `plage-piscine-bois-essences-pose` (bois, angle
+trouvé hors réserve : contraintes propres au bord d'un bassin — alternance
+mouillé/sec et UV plutôt que le chlore, antidérapance pieds nus et lame
+brossée vs rainurée, raccord aux margelles, trappes de visite au-dessus des
+pièces techniques, inox A4 en piscine au sel, sécurité du bassin, budget
+2026). Deux articles bois d'affilée (01/08 et 02/08) : le prochain devrait
+**revenir à l'aluminium**. Idées alu encore libres : teinte RAL, brise-soleil
+orientables et protections solaires, garde-corps alu vs bois, entretien
+pergola/véranda alu, véranda ou extension ossature bois (angle décision).
 Dernières publications : 29/07 bois (filière locale), 30/07 alu (pergola
 bioclimatique), 31/07 mixte (comparatif carports), 01/08 bois (structure
 terrasse) **et** 01/08 alu (véranda — deux articles ce jour-là, l'article
-terrasse ayant été publié par le créneau précédent).
+terrasse ayant été publié par le créneau précédent), 02/08 bois (plage de
+piscine).
 
-⚠️ Attention doublon terrasse : trois articles terrasse coexistent désormais —
+⚠️ Attention doublon terrasse : quatre articles terrasse coexistent désormais —
+`plage-piscine-bois-essences-pose` (bord de bassin : humidité cyclique,
+antidérapance, margelles, trappes, inox A4) s'ajoute aux trois ci-dessous. Des
+trois pistes terrasse encore libres, il ne reste que la terrasse surélevée avec
+garde-corps et la rénovation d'une terrasse existante. Les trois autres :
 `quel-bois-pour-terrasse-exterieure` (essences, classes d'emploi, budget),
 `proteger-terrasse-bois-canicule-entretien-ete` (entretien de surface) et
 `terrasse-bois-structure-plots-lambourdes` (sous-face : supports, lambourdes,
@@ -107,6 +111,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-07-31 | publié  | Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style) | carport-aluminium-ou-bois-comparatif |
 | 2026-08-01 | publié  | Structure d'une terrasse en bois : plots, lambourdes et ventilation | terrasse-bois-structure-plots-lambourdes |
 | 2026-08-01 | publié  | Véranda en aluminium : isolation, urbanisme et budget en Gironde | veranda-aluminium-isolation-urbanisme-budget |
+| 2026-08-02 | publié  | Plage de piscine en bois : essence, pose et budget autour d'un bassin | plage-piscine-bois-essences-pose |
 
 ## Idées de sujets en réserve
 
@@ -153,7 +158,13 @@ Idées bois consommées (déjà publiées) : entretien terrasse, poulailler,
 bardage, pool-house, abri de jardin kit vs sur-mesure, extension ossature bois,
 filière bois local (douglas / pin maritime), structure de terrasse (plots,
 lambourdes, ventilation — angle trouvé hors réserve le 01/08/2026, la réserve
-bois étant vide).
+bois étant vide), plage de piscine en bois (angle hors réserve du 02/08/2026).
+
+ℹ️ Constat de l'iconographe (02/08/2026) : `/images/terrasse-bois-piscine-exemple-opt.webp`
+n'est pas une photo de chantier maison mais la photo Pexels n° 19135424. Elle
+est aujourd'hui utilisée comme s'il s'agissait d'une réalisation sur
+`/amenagement-exterieur` et `/blog/pool-house-bois-guide` — à faire vérifier
+par David avant de la présenter comme une preuve de chantier.
 
 Quand cette réserve sera à son tour épuisée : veille web (WebSearch) pour un
 angle neuf, bois ou alu, en recoupant `lib/data/blog.ts`.

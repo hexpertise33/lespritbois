@@ -15,8 +15,9 @@ const CSP = [
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com",
   "style-src 'self' 'unsafe-inline'",
   "font-src 'self' data:",
-  "img-src 'self' data: https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com",
-  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net",
+  // *.google-analytics.com : GA4 collecte aussi via des hôtes régionaux (region1.google-analytics.com).
+  "img-src 'self' data: https://*.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com",
+  "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net",
   "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
   "frame-ancestors 'self'",
   "base-uri 'self'",

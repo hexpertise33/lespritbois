@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { jost, manrope, playfairDisplay } from '@/lib/fonts';
-import { GADS_ID } from '@/lib/gtag';
+import { GADS_ID, GA4_ID } from '@/lib/gtag';
 import ConsentBanner from '@/components/ConsentBanner';
 import PhoneClickTracker from '@/components/PhoneClickTracker';
 import './globals.css';
@@ -77,7 +77,8 @@ gtag('consent', 'default', {
   wait_for_update: 500
 });
 gtag('js', new Date());
-gtag('config', '${GADS_ID}');`}
+gtag('config', '${GADS_ID}');
+gtag('config', '${GA4_ID}');`}
         </Script>
         <a
           href="#contenu"

@@ -4,6 +4,10 @@
 /** Identifiant de la balise Google / compte Google Ads. */
 export const GADS_ID = 'AW-18163716378';
 
+/** Propriété Google Analytics 4 « L'Esprit Bois — lesprit-bois.fr »
+ *  (compte ECOTOIT, propriété 548157917, flux « Site L'Esprit Bois »). */
+export const GA4_ID = 'G-DBV2Q8X8T2';
+
 /** Action de conversion « Envoi de formulaire de lead » (send_to de l'extrait d'événement). */
 export const GADS_FORM_CONVERSION = 'AW-18163716378/S0LwCO3xks8cEJqikdVD';
 

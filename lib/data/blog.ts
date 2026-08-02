@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'plage-piscine-bois-essences-pose',
+    titre:
+      "Plage de piscine en bois : quelle essence, quelle pose et quel budget autour d'un bassin en Gironde ?",
+    extrait:
+      "Le vrai critère d'une plage de piscine n'est pas l'essence « qui résiste au chlore » mais le trio stabilité dimensionnelle, antidérapance pieds nus et ventilation de la sous-face : l'eau de bassin, très diluée, agresse bien moins le bois que l'alternance permanente mouillé/sec et les UV du plein sud. Essences et classe d'emploi 4, lame brossée plutôt que rainurée, raccord aux margelles et trappes de visite, fixations inox A4, sécurité du bassin et budget 2026, par un artisan à Libourne (Gironde).",
+    date: '2026-08-02',
+    categorie: 'Guide · Plage de piscine',
+    image: '/images/terrasse-bois-pool-house-libourne.webp',
+    imageLargeur: 736,
+    imageHauteur: 981,
+  },
+  {
     slug: 'veranda-aluminium-isolation-urbanisme-budget',
     titre:
       'Véranda en aluminium : isolation, urbanisme et budget, le guide pour agrandir sa maison en Gironde',

@@ -17,7 +17,9 @@ const CSP = [
   "font-src 'self' data:",
   // *.google-analytics.com : GA4 collecte aussi via des hôtes régionaux (region1.google-analytics.com).
   "img-src 'self' data: https://*.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com",
-  "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net",
+  // googleadservices.com et google.com : pings de conversion Google Ads (fetch/sendBeacon),
+  // en plus du fallback image déjà couvert par img-src.
+  "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com",
   "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
   "frame-ancestors 'self'",
   "base-uri 'self'",

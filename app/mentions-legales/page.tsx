@@ -8,6 +8,7 @@ export const metadata: Metadata = buildMetadata({
   title: "Mentions légales | L'Esprit Bois",
   description: "Mentions légales du site L'Esprit Bois : éditeur, hébergeur, propriété intellectuelle et assurances.",
   path: '/mentions-legales',
+  ogImage: '/images/pergola-bois-claire-voie-terrasse.webp',
   ogTitle: 'Mentions légales',
   ville: CONTACT.ville,
 });

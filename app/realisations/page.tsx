@@ -13,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
   keywords:
     "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan",
   path: '/realisations',
-  ogImage: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+  ogImage: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
   ogTitle: 'Nos chantiers, racontés : douze communes de Gironde',
   ville: 'Libourne',
 });

@@ -13,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
   keywords:
     "contact L'Esprit Bois, charpentier Libourne contact, devis pergola Gironde, devis carport Libourne, artisan bois Les Billaux",
   path: '/contact',
-  ogImage: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+  ogImage: '/images/source-adefrance/Magasin-materiaux-bois-libourne.webp',
   ogTitle: "Contacter L'Esprit Bois — Libourne et Gironde",
   ville: 'Les Billaux',
 });

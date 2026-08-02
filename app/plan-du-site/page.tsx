@@ -9,6 +9,7 @@ export const metadata: Metadata = buildMetadata({
   title: "Plan du site | L'Esprit Bois",
   description: "Plan du site L'Esprit Bois : accédez à toutes les pages et articles du site en un coup d'œil.",
   path: '/plan-du-site',
+  ogImage: '/images/source-adefrance/Carport-bois-Libourne-1.webp',
   ogTitle: 'Plan du site',
   ville: CONTACT.ville,
 });

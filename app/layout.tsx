@@ -37,6 +37,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="L'Esprit Bois — le blog"
+          href="/rss.xml"
+        />
 
         {/* Police d'icônes auto-hébergée (voir @font-face dans globals.css) :
             plus de feuille de style tierce bloquante, plus de preconnect vers

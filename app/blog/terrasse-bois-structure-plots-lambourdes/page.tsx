@@ -364,7 +364,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                   <tbody>
                     {supports.map((ligne, i) => (
                       <tr key={ligne[0]} className={i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low'}>
-                        <td className="px-4 py-3 text-primary font-semibold whitespace-nowrap">{ligne[0]}</td>
+                        <td className="px-4 py-3 text-primary font-semibold">{ligne[0]}</td>
                         <td className="px-4 py-3 text-on-surface-variant">{ligne[1]}</td>
                         <td className="px-4 py-3 text-on-surface-variant">{ligne[2]}</td>
                         <td className="px-4 py-3 text-on-surface-variant">{ligne[3]}</td>

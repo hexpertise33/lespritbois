@@ -424,7 +424,7 @@ export default function ArticlePlagePiscineBoisPage() {
                   <tbody>
                     {essences.map((ligne, i) => (
                       <tr key={ligne[0]} className={i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low'}>
-                        <td className="px-4 py-3 text-primary font-semibold whitespace-nowrap">{ligne[0]}</td>
+                        <td className="px-4 py-3 text-primary font-semibold">{ligne[0]}</td>
                         <td className="px-4 py-3 text-on-surface-variant">{ligne[1]}</td>
                         <td className="px-4 py-3 text-on-surface-variant">{ligne[2]}</td>
                         <td className="px-4 py-3 text-on-surface-variant">{ligne[3]}</td>
@@ -459,11 +459,11 @@ export default function ArticlePlagePiscineBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/plage-piscine-bois-essences-pose/plage-piscine-bois-lames-mouillees-pieds-nus.jpg"
+              src="/images/blog/plage-piscine-bois-essences-pose/plage-piscine-bois-lames-grisees-bord-bassin.jpg"
               w={1200}
               h={800}
-              alt="Pieds nus sur les lames de bois mouillées d'une plage de piscine, traces humides et lames sèches côte à côte"
-              caption="La teinte foncée trahit l'humidité : trois heures plus tard, la même lame est sèche. C'est ce battement quotidien, et non le chlore, qui fait tuiler un platelage de bassin."
+              alt="Platelage de plage de piscine en bois grisé longeant le bord d'un bassin, lames filantes et jeu régulier au ras de l'eau"
+              caption="Les lames les plus proches du bassin reçoivent les projections plusieurs fois par jour puis sèchent au soleil entre deux baignades. C'est ce battement mouillé/sec, et non le chlore, qui grise et fait tuiler un platelage de bassin."
             />
 
             {/* 3. Antidérapance */}

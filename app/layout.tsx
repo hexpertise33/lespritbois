@@ -37,6 +37,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        {/* Secours PNG : iOS, agrégateurs et interfaces IA qui n'affichent pas le SVG. */}
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link
           rel="alternate"
           type="application/rss+xml"

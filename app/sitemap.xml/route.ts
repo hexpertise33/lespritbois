@@ -9,19 +9,20 @@ import { articles } from '@/lib/data/blog';
  */
 export const dynamic = 'force-static';
 
-const PAGES_STATIQUES = [
-  '',
-  '/pergolas',
-  '/carports',
-  '/constructions-bois',
-  '/amenagement-exterieur',
-  '/realisations',
-  '/blog',
-  '/contact',
-  '/qui-sommes-nous',
-  '/mentions-legales',
-  '/politique-de-confidentialite',
-  '/plan-du-site',
+/** lastmod = date du dernier changement de contenu notable de la page. */
+const PAGES_STATIQUES: { chemin: string; lastmod: string }[] = [
+  { chemin: '', lastmod: '2026-08-02' },
+  { chemin: '/pergolas', lastmod: '2026-08-01' },
+  { chemin: '/carports', lastmod: '2026-08-01' },
+  { chemin: '/constructions-bois', lastmod: '2026-08-01' },
+  { chemin: '/amenagement-exterieur', lastmod: '2026-08-01' },
+  { chemin: '/realisations', lastmod: '2026-08-02' },
+  { chemin: '/blog', lastmod: '2026-08-01' },
+  { chemin: '/contact', lastmod: '2026-08-02' },
+  { chemin: '/qui-sommes-nous', lastmod: '2026-08-01' },
+  { chemin: '/mentions-legales', lastmod: '2026-08-02' },
+  { chemin: '/politique-de-confidentialite', lastmod: '2026-08-02' },
+  { chemin: '/plan-du-site', lastmod: '2026-08-02' },
 ];
 
 export function GET() {
@@ -29,7 +30,7 @@ export function GET() {
 
   const entrees = [
     // Racine sans slash final : Next normalise ainsi la canonical, le sitemap doit dire la même chose.
-    ...PAGES_STATIQUES.map((chemin) => ({ loc: `${base}${chemin}`, lastmod: null as string | null })),
+    ...PAGES_STATIQUES.map((p) => ({ loc: `${base}${p.chemin}`, lastmod: p.lastmod as string | null })),
     ...articles.map((article) => ({
       loc: `${base}/blog/${article.slug}`,
       lastmod: article.date || null,

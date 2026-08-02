@@ -85,6 +85,15 @@ const jsonld = [
       worstRating: '1',
       reviewCount: AVIS.length,
     },
+    /* Chaque avis affiché, balisé individuellement. Tous à 5/5 : ce sont les
+       seuls avis publiés sur la fiche Google à ce jour. Pas de datePublished,
+       la fiche ne l'expose pas. */
+    review: AVIS.map((avis) => ({
+      '@type': 'Review',
+      author: { '@type': 'Person', name: avis.nom },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: avis.texte,
+    })),
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'certification',

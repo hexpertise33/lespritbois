@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'garde-corps-terrasse-aluminium-ou-bois',
+    titre:
+      'Garde-corps de terrasse : aluminium ou bois ? Sécurité, entretien et budget en Gironde',
+    extrait:
+      "L'aluminium l'emporte dès que la terrasse est haute, exposée au vent ou au bord d'un bassin et qu'il faut préserver la vue : profilés thermolaqués, verre feuilleté ou barreaudage fin, entretien réduit à un lavage. Le bois garde l'avantage quand le garde-corps prolonge une terrasse en bois ou un bâti girondin en pierre, et qu'on veut pouvoir le réparer pièce par pièce. Norme NF P01-012 révisée en 2024, coût réel sur quinze ans, fourchettes au mètre linéaire posé et qualité de l'ancrage — le point qui fait céder la plupart des garde-corps —, par un artisan à Libourne (Gironde).",
+    date: '2026-08-04',
+    categorie: 'Guide · Aluminium & bois',
+    image:
+      '/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-aluminium-verre-terrasse-surelevee.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'plage-piscine-bois-essences-pose',
     titre:
       "Plage de piscine en bois : quelle essence, quelle pose et quel budget autour d'un bassin en Gironde ?",

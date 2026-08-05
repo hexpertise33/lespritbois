@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'renover-terrasse-bois-existante',
+    titre:
+      'Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? Le diagnostic avant de dépenser',
+    extrait:
+      "Ce qui décide entre poncer, remplacer les lames et tout déposer n'est pas la couleur grise du platelage — esthétique et parfaitement réversible — mais l'état de la sous-face : lambourdes, appuis, ventilation, fixations. Diagnostic en trois gestes, dégrisage et ponçage dans le bon ordre, remplacement lame par lame sans reprendre la structure, et quatre scénarios chiffrés de 15 à 150 €/m² posé, par un artisan à Libourne (Gironde).",
+    date: '2026-08-05',
+    categorie: 'Guide · Rénovation terrasse',
+    image:
+      '/images/blog/renover-terrasse-bois-existante/terrasse-bois-grisee-lames-patinees.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 800,
+  },
+  {
     slug: 'garde-corps-terrasse-aluminium-ou-bois',
     titre:
       'Garde-corps de terrasse : aluminium ou bois ? Sécurité, entretien et budget en Gironde',

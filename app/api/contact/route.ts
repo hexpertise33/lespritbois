@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     return Response.json({ error: 'Corps de requête JSON invalide.' }, { status: 400 });
   }
 
-  const { nom, tel, message, projet, budget } = body as Record<string, string | undefined>;
+  const { nom, tel, message, projet, budget, source } = body as Record<string, string | undefined>;
 
   if (!nom?.trim() || !tel?.trim() || !message?.trim()) {
     return Response.json(
@@ -43,6 +43,7 @@ export async function POST(request: Request) {
         '',
         'Message :',
         message,
+        ...(source ? ['', `Origine : ${source}`] : []),
       ].join('\n'),
       html: `
         <p><strong>Projet :</strong> ${projet ?? 'Non précisé'}</p>
@@ -50,6 +51,7 @@ export async function POST(request: Request) {
         <p><strong>Nom :</strong> ${nom}</p>
         <p><strong>Téléphone :</strong> ${tel}</p>
         <p><strong>Message :</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
+        ${source ? `<p><strong>Origine :</strong> ${source}</p>` : ''}
       `,
     });
 

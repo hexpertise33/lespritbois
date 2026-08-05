@@ -51,6 +51,21 @@ export function reportPhoneConversion(): void {
   });
 }
 
+/**
+ * Pousse l'événement GA4 `generate_lead` (propriété G-DBV2Q8X8T2).
+ * Utilisé uniquement par la landing page Google Ads /devis-pergola — les
+ * autres formulaires du site (ex. /contact) ne déclenchent que la
+ * conversion Google Ads via reportFormConversion, sans cet événement GA4.
+ * No-op côté serveur ou si la balise n'est pas encore chargée.
+ */
+export function reportLeadGenerated(): void {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'generate_lead', {
+    currency: 'EUR',
+    value: 1.0,
+  });
+}
+
 // --- Consentement (RGPD / Google Consent Mode v2) ---
 
 export type ConsentChoice = 'granted' | 'denied';

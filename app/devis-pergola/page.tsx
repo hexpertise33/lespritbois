@@ -184,12 +184,20 @@ export default function DevisPergolaPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-3xl shrink-0" aria-hidden="true">🇫🇷</span>
+              <svg
+                className="w-9 h-6 shrink-0 border border-surface-variant"
+                viewBox="0 0 3 2"
+                aria-hidden="true"
+              >
+                <rect width="1" height="2" x="0" fill="#002654" />
+                <rect width="1" height="2" x="1" fill="#FFFFFF" />
+                <rect width="1" height="2" x="2" fill="#ED2939" />
+              </svg>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Fabrication en atelier, en France
+                  Fabrication française
                 </p>
-                <p className="text-on-surface-variant text-body-md">Conception et pose par nos équipes, sans sous-traitance</p>
+                <p className="text-on-surface-variant text-body-md">Bois façonné dans notre atelier, aluminium de notre partenaire français</p>
               </div>
             </div>
           </div>

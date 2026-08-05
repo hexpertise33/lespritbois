@@ -42,13 +42,23 @@ fabrication française — la page reste « un peu triste » selon lui.
    **texte** (« Certifiés Qualibat RGE »), sans reproduire de marque
    déposée. À remplacer par le vrai logo dès qu'il sera fourni — mais ce
    remplacement est **hors périmètre** de cette itération.
-3. **Drapeau français** : simple emoji 🇫🇷 (caractère Unicode standard, ne
-   dépend pas du jeu d'icônes limité du site, aucun fichier à créer).
-4. **Formulation retenue pour la fabrication française** : « Fabrication en
-   atelier, en France » — reflète exactement ce que le site affirme déjà
-   ailleurs (atelier, sans sous-traitance), sans affirmer quoi que ce soit
-   sur l'origine des matières premières (bois, aluminium) qui n'a pas été
-   vérifiée.
+3. **Drapeau français** : initialement emoji 🇫🇷, remplacé après révision
+   finale par un SVG en ligne du tricolore français (bleu #002654, blanc
+   #FFFFFF, rouge #ED2939) — l'emoji ne se rend pas en drapeau visuel sur
+   Windows (Segoe UI Emoji n'inclut pas les glyphes de drapeau, affichant
+   à la place « FR »), et le tricolore national n'est pas une marque
+   déposée donc sûr à reproduire directement en SVG.
+4. **Formulation retenue pour la fabrication française** : initialement
+   « Fabrication en atelier, en France », mise à jour après révision finale
+   en « Fabrication française » (titre) et « Bois façonné dans notre atelier,
+   aluminium de notre partenaire français » (sous-texte) — l'utilisateur a
+   confirmé que les structures aluminium sont fabriquées par le partenaire
+   français Li-Su des Temps (pas en propre dans l'atelier), tandis que le
+   bois massif l'est effectivement. La page étant lourde en aluminium
+   (photo héro + 2/3 des cartes gamme), l'ancienne formulation surclamait
+   la fabrication maison pour une part importante du contenu. La nouvelle
+   formulation reste exacte pour les deux ranges : bois en atelier, aluminium
+   du partenaire français — toujours français, juste de mains différentes.
 
 ## Architecture
 
@@ -61,9 +71,9 @@ fabrication française — la page reste « un peu triste » selon lui.
     RGE » — seul le texte du titre change, tout le reste de cet élément
     (icône, sous-texte) reste identique.
   - Nouvel élément ajouté (4ᵉ élément, après « Libourne & Gironde ») :
-    emoji 🇫🇷 à la place de l'icône Material habituelle, titre
-    « Fabrication en atelier, en France », sous-texte « Conception et pose
-    par nos équipes, sans sous-traitance ».
+    SVG inline du tricolore français (bleu/blanc/rouge) à la place de l'icône
+    Material habituelle, titre « Fabrication française », sous-texte « Bois
+    façonné dans notre atelier, aluminium de notre partenaire français ».
   - La grille passe de `grid-cols-1 md:grid-cols-3` à `grid-cols-1
     sm:grid-cols-2 lg:grid-cols-4` pour accueillir le 4ᵉ élément
     proprement à toutes les tailles d'écran (1 colonne mobile, 2 colonnes
@@ -83,9 +93,11 @@ fabrication française — la page reste « un peu triste » selon lui.
 
 - Confirmer que le bandeau affiche bien 4 éléments, dans l'ordre : Qualibat
   RGE, Garantie décennale, Libourne & Gironde, Fabrication France.
-- Confirmer le rendu du drapeau 🇫🇷 (s'affiche comme un vrai drapeau dans
-  le navigateur, pas comme du texte brut — les emoji drapeaux dépendent du
-  système d'exploitation/police, à vérifier visuellement).
+- Confirmer que le drapeau SVG (tricolore) s'affiche correctement sur tous
+  les navigateurs et systèmes d'exploitation (le SVG inline en remplace
+  l'emoji, qui ne se rendait pas en drapeau sur Windows).
+- Confirmer que les nouvelles formulations texte sont présentes et exactes
+  dans le code.
 - Confirmer la disposition de la grille aux trois tailles d'écran (mobile
   1 colonne, tablette 2 colonnes, desktop 4 colonnes).
 - Aucune régression sur le reste de la page.

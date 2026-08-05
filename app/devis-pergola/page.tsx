@@ -19,27 +19,41 @@ export const metadata: Metadata = buildMetadata({
 
 /* Comparatif court : juste de quoi rassurer que l'entreprise couvre le
    besoin du visiteur, peu importe son type de pergola — pas le tableau
-   complet de /pergolas. Textes raccourcis depuis GAMME (app/pergolas/page.tsx). */
+   complet de /pergolas. Textes et photos raccourcis/repris depuis GAMME
+   (app/pergolas/page.tsx). */
 const GAMME_COURTE = [
   {
     icone: 'wb_sunny',
     titre: 'Pergola bioclimatique',
     texte: "Lames aluminium orientables : réglez l'ombre, la ventilation et la pluie d'un geste.",
+    src: '/images/source-adefrance/Pergolas-aluminium-Libourne-9.webp',
+    alt: 'Salon de jardin sous une pergola bioclimatique à lames orientables blanches, adossée à une maison contemporaine',
+    w: 768,
+    h: 512,
   },
   {
     icone: 'roofing',
     titre: 'Pergola aluminium',
     texte: 'Structure thermolaquée sans entretien, couverture polycarbonate, panneau isolant ou vitrage.',
+    src: '/images/pergola-terrasse-bois-libourne-1.webp',
+    alt: 'Pergola aluminium anthracite adossée à une maison girondine, vue en enfilade sur la terrasse bois',
+    w: 1200,
+    h: 900,
   },
   {
     icone: 'cabin',
     titre: 'Pergola bois massif',
     texte: "Douglas, mélèze ou red cedar : charpente traditionnelle qui s'accorde au bâti ancien.",
+    src: '/images/pergola-bois-lames-terrasse.webp',
+    alt: 'Pergola en bois massif à poutres apparentes au-dessus d’une terrasse en lames de bois',
+    w: 1000,
+    h: 1500,
   },
 ] as const;
 
-/* 4 photos de chantiers réels, reprises telles quelles de GALERIE
-   (app/pergolas/page.tsx) — mêmes fichiers, déjà optimisés et hébergés. */
+/* 8 photos, reprises telles quelles de GALERIE (app/pergolas/page.tsx) —
+   6 chantiers réels + 1 exemple bioclimatique + 1 exemple bois massif, pour
+   couvrir les 3 familles. Mêmes fichiers, déjà optimisés et hébergés. */
 const GALERIE_COURTE = [
   {
     src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
@@ -60,10 +74,34 @@ const GALERIE_COURTE = [
     h: 1100,
   },
   {
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-5.webp',
+    alt: 'Pergola aluminium et terrasse bois sur plots vues depuis le jardin',
+    w: 825,
+    h: 1100,
+  },
+  {
     src: '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp',
     alt: 'Salon de jardin installé sous une pergola aluminium avec stores, sur terrasse bois',
     w: 825,
     h: 1100,
+  },
+  {
+    src: '/images/pergola-terrasse-bois-libourne-4.webp',
+    alt: 'Pergola aluminium à toiture polycarbonate au-dessus d’une grande terrasse bois, Gironde',
+    w: 1000,
+    h: 1333,
+  },
+  {
+    src: '/images/source-adefrance/Pergolas-aluminium-Libourne-8.webp',
+    alt: 'Pergola bioclimatique blanche à lames orientables ouvertes, adossée à une maison',
+    w: 768,
+    h: 512,
+  },
+  {
+    src: '/images/source-adefrance/Pergolas-bois-Libourne.webp',
+    alt: 'Pergola en bois massif autoportée posée sur pieds béton',
+    w: 900,
+    h: 990,
   },
 ] as const;
 
@@ -72,11 +110,26 @@ export default function DevisPergolaPage() {
     <>
       <LandingPergolaHeader />
       <main id="contenu">
-        {/* Hero : pas de photo pleine largeur (contrairement à /pergolas) —
-            l'accent va au formulaire, pas à l'image, et la page reste plus
-            légère à charger sur mobile. */}
-        <header data-devis-hero className="bg-primary text-on-primary pt-10 pb-14 md:pt-16 md:pb-20">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        {/* Hero : photo pleine largeur (même patron que /pergolas, même
+            image) — remplace le fond uni sombre suite au retour utilisateur
+            (page perçue comme trop sombre et pas assez illustrée). */}
+        <header
+          data-devis-hero
+          className="relative text-on-primary pt-10 pb-14 md:pt-16 md:pb-20 overflow-hidden"
+        >
+          <div className="absolute inset-0 z-0">
+            <img
+              width="1600"
+              height="900"
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-full object-cover"
+              src="/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp"
+              alt="Pergola aluminium adossée et terrasse bois réalisées par L'Esprit Bois près de Libourne"
+            />
+            <div className="absolute inset-0 hero-interne"></div>
+          </div>
+          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div>
               <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">
                 Pergola sur mesure à Libourne et en Gironde — Devis gratuit sous 48h
@@ -170,7 +223,7 @@ export default function DevisPergolaPage() {
             <h2 className="font-headline-md text-headline-md text-primary mb-8 text-center">
               Nos dernières réalisations
             </h2>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {GALERIE_COURTE.map((img) => (
                 <img
                   key={img.src}
@@ -208,12 +261,67 @@ export default function DevisPergolaPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {GAMME_COURTE.map((g) => (
-                <div key={g.titre} className="bg-surface rounded-2xl p-6 text-center">
-                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{g.icone}</span>
-                  <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{g.titre}</h3>
-                  <p className="text-on-surface-variant font-body-md text-body-md">{g.texte}</p>
+                <div key={g.titre} className="bg-surface rounded-2xl overflow-hidden text-center">
+                  <img
+                    src={g.src}
+                    alt={g.alt}
+                    width={g.w}
+                    height={g.h}
+                    loading="lazy"
+                    className="w-full h-40 object-cover"
+                  />
+                  <div className="p-6">
+                    <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{g.icone}</span>
+                    <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{g.titre}</h3>
+                    <p className="text-on-surface-variant font-body-md text-body-md">{g.texte}</p>
+                  </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Mini FAQ — répond aux objections les plus susceptibles de
+            bloquer avant l'envoi du formulaire. Textes raccourcis depuis la
+            FAQ de /pergolas. Pas de JSON-LD FAQPage : page noindex, aucun
+            bénéfice SEO, inutile d'alourdir le HTML. */}
+        <section className="py-section-padding bg-surface">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 max-w-3xl">
+            <h2 className="font-headline-md text-headline-md text-primary mb-10 text-center">
+              Vos questions avant de vous lancer
+            </h2>
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
+                  Combien coûte une pergola sur mesure ?
+                </h3>
+                <p className="text-on-surface-variant font-body-md text-body-md">
+                  Le prix dépend de la surface couverte, du type de couverture, des équipements
+                  ajoutés et de la nature du support. Nous ne pratiquons pas de tarif au mètre
+                  carré affiché : nous relevons votre terrasse et remettons un devis détaillé,
+                  poste par poste.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
+                  Faut-il une autorisation d&apos;urbanisme ?
+                </h3>
+                <p className="text-on-surface-variant font-body-md text-body-md">
+                  Le plus souvent oui, une déclaration préalable de travaux selon la surface. Les
+                  seuils dépendent du PLU de votre commune : nous les vérifions sur pièces et
+                  montons le dossier avec vous.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
+                  Bois ou aluminium, laquelle choisir ?
+                </h3>
+                <p className="text-on-surface-variant font-body-md text-body-md">
+                  Le bois massif apporte chaleur et matière, l&apos;aluminium offre de grandes
+                  portées sans entretien. Le choix dépend de votre maison, de l&apos;usage
+                  souhaité et du budget — nous vous conseillons au rendez-vous.
+                </p>
+              </div>
             </div>
           </div>
         </section>

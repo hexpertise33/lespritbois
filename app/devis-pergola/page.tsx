@@ -5,6 +5,7 @@ import LandingPergolaHeader from '@/components/LandingPergolaHeader';
 import LandingPergolaFooter from '@/components/LandingPergolaFooter';
 import LandingPergolaForm from '@/components/LandingPergolaForm';
 import LandingPergolaStickyBar from '@/components/LandingPergolaStickyBar';
+import LandingPergolaDesktopPopup from '@/components/LandingPergolaDesktopPopup';
 
 export const metadata: Metadata = buildMetadata({
   title: "Devis pergola gratuit à Libourne — L'Esprit Bois",
@@ -344,6 +345,7 @@ export default function DevisPergolaPage() {
       </main>
       <LandingPergolaFooter />
       <LandingPergolaStickyBar />
+      <LandingPergolaDesktopPopup />
     </>
   );
 }

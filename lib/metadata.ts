@@ -16,6 +16,9 @@ export function buildMetadata(opts: {
   ogImage?: string;
   ogTitle?: string;
   ville?: string;
+  /** Pages hors indexation (ex : landing page publicitaire) — pose
+   *  `robots: 'noindex, nofollow'` au lieu de la valeur indexable par défaut. */
+  noindex?: boolean;
 }): Metadata {
   const {
     title,
@@ -25,6 +28,7 @@ export function buildMetadata(opts: {
     ogImage = '/images/source-adefrance/mais-en-a-accueil.webp',
     ogTitle,
     ville = 'Libourne',
+    noindex = false,
   } = opts;
 
   const base = SITE.url;
@@ -39,7 +43,7 @@ export function buildMetadata(opts: {
     alternates: {
       canonical,
     },
-    robots: 'index, follow, max-image-preview:large, max-snippet:-1',
+    robots: noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1',
     icons: {
       icon: '/favicon.svg',
     },

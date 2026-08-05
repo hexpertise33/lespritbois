@@ -30,20 +30,23 @@ export default function LandingPergolaStickyBar() {
   if (!visible) return null;
 
   return (
-    <div className="md:hidden fixed inset-x-0 bottom-0 z-40 bg-primary text-on-primary border-t border-white/10 shadow-xl px-4 py-3 flex items-center gap-3">
-      <a
-        href={CONTACT.telHref}
-        className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 border border-white/30 shrink-0"
-        aria-label={`Appeler le ${CONTACT.telAffiche}`}
-      >
-        <span className="material-symbols-outlined text-[22px]">call</span>
-      </a>
-      <a
-        href="#devis-bas"
-        className="flex-1 bg-secondary text-primary py-3 rounded-xl font-label-md text-label-md text-center"
-      >
-        Devis gratuit
-      </a>
-    </div>
+    <>
+      <div aria-hidden className="md:hidden h-20" />
+      <div className="md:hidden fixed inset-x-0 bottom-0 z-40 bg-primary text-on-primary border-t border-white/10 shadow-xl px-4 py-3 flex items-center gap-3">
+        <a
+          href={CONTACT.telHref}
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 border border-white/30 shrink-0"
+          aria-label={`Appeler le ${CONTACT.telAffiche}`}
+        >
+          <span className="material-symbols-outlined text-[22px]">call</span>
+        </a>
+        <a
+          href="#devis-bas"
+          className="flex-1 bg-secondary text-primary py-3 rounded-xl font-label-md text-label-md text-center"
+        >
+          Devis gratuit
+        </a>
+      </div>
+    </>
   );
 }

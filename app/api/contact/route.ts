@@ -45,14 +45,16 @@ export async function POST(request: Request) {
         message,
         ...(source ? ['', `Origine : ${source}`] : []),
       ].join('\n'),
-      html: `
-        <p><strong>Projet :</strong> ${projet ?? 'Non précisé'}</p>
-        <p><strong>Budget estimé :</strong> ${budget ?? 'Non précisé'}</p>
-        <p><strong>Nom :</strong> ${nom}</p>
-        <p><strong>Téléphone :</strong> ${tel}</p>
-        <p><strong>Message :</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
-        ${source ? `<p><strong>Origine :</strong> ${source}</p>` : ''}
-      `,
+      html: [
+        '',
+        `        <p><strong>Projet :</strong> ${projet ?? 'Non précisé'}</p>`,
+        `        <p><strong>Budget estimé :</strong> ${budget ?? 'Non précisé'}</p>`,
+        `        <p><strong>Nom :</strong> ${nom}</p>`,
+        `        <p><strong>Téléphone :</strong> ${tel}</p>`,
+        `        <p><strong>Message :</strong><br/>${message.replace(/\n/g, '<br/>')}</p>`,
+        ...(source ? [`        <p><strong>Origine :</strong> ${source}</p>`] : []),
+        '      ',
+      ].join('\n'),
     });
 
     if (error) {

@@ -132,11 +132,32 @@ par cas plutôt que de l'appliquer d'office). ⚠️ Le créneau **terrasse est
 désormais saturé à cinq articles** : des pistes terrasse identifiées, seule la
 **terrasse surélevée avec garde-corps** reste, et elle est déjà partiellement
 traitée par l'article garde-corps du 04/08 — considérer le sujet terrasse comme
-clos sauf angle radicalement neuf. Le 05/08 étant un article bois, le prochain
-doit **repartir sur l'aluminium**. Idées alu encore libres : teinte RAL,
-brise-soleil orientables et protections solaires, entretien pergola/véranda alu,
-clôture alu vs bois (limite séparative, occultation, portail assorti), véranda ou
-extension ossature bois (angle décision).
+clos sauf angle radicalement neuf.
+
+➡️ **Sujet imposé pour le 06/08/2026 (choix de David, 05/08) : la teinte RAL de
+l'aluminium.** Ne pas repiocher ailleurs dans la réserve. Retour à l'aluminium
+après un article bois, donc alternance respectée. Cadrage attendu :
+nuancier RAL et lecture d'un code, thermolaquage (poudre polyester, qualité de
+préparation et d'accrochage), finitions **mat / satiné / sablé / texturé**,
+teintes qui vieillissent bien face au soleil girondin et à la poussière, teintes
+foncées et dilatation/chaleur en plein sud, accord avec un bâti girondin (pierre
+blonde, tuile canal, menuiseries existantes), bicoloration intérieur/extérieur,
+raccord de teinte entre pergola, carport, garde-corps et menuiseries, retouches
+et réparabilité d'un profilé rayé. Vocabulaire alu strict (profilés, alliages,
+thermolaquage, RAL) — pas de classes d'emploi ni d'autoclave.
+⚠️ Prudence : **ne citer aucune durée de garantie de thermolaquage, aucun label
+(type Qualicoat/Qualimarine) ni aucune épaisseur de poudre sans source vérifiée
+par WebSearch** ; à défaut, formulation qualitative. Photos maison à privilégier :
+`source-adefrance/Pergolas-aluminium-Libourne-1..9.webp` et
+`Carport-aluminium-Libourne-1..4.webp` (cover inédite obligatoire — les n° 3 et 4
+sont déjà des covers). Attention à ne pas refaire
+`pergola-bioclimatique-aluminium-guide`, qui aborde déjà brièvement thermolaquage
+et RAL : rester sur le **choix de la teinte**, pas sur le produit.
+
+Idées alu restées libres après ce créneau : brise-soleil orientables et
+protections solaires, entretien pergola/véranda alu, clôture alu vs bois (limite
+séparative, occultation, portail assorti), véranda ou extension ossature bois
+(angle décision).
 
 **Créneau précédent (05/08/2026)** : le 04/08 a consommé la moitié « garde-corps »
 de l'idée « garde-corps et clôture aluminium vs bois », publiée sous
@@ -257,7 +278,8 @@ recentrer sur la véranda) :
   resserrer sur l'entretien pur : le produit véranda et le produit pergola
   bioclimatique sont désormais tous deux couverts.
 - **Choisir la teinte de son aluminium** : nuancier RAL, mat/sablé, teintes qui
-  vieillissent bien, accord avec une maison girondine.
+  vieillissent bien, accord avec une maison girondine. 📌 **Réservé au créneau du
+  06/08/2026** sur décision de David (cf. « Prochain créneau » plus haut).
 - **Brise-soleil orientables et protections solaires** : alu, stores, et le
   couple pergola + occultation, angle saisonnier été.
 - **Clôture aluminium vs bois** : durabilité, entretien, coût dans le temps

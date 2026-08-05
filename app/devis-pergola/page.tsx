@@ -4,6 +4,7 @@ import { CONTACT } from '@/lib/data/navigation';
 import LandingPergolaHeader from '@/components/LandingPergolaHeader';
 import LandingPergolaFooter from '@/components/LandingPergolaFooter';
 import LandingPergolaForm from '@/components/LandingPergolaForm';
+import LandingPergolaStickyBar from '@/components/LandingPergolaStickyBar';
 
 export const metadata: Metadata = buildMetadata({
   title: "Devis pergola gratuit à Libourne — L'Esprit Bois",
@@ -74,11 +75,11 @@ export default function DevisPergolaPage() {
         {/* Hero : pas de photo pleine largeur (contrairement à /pergolas) —
             l'accent va au formulaire, pas à l'image, et la page reste plus
             légère à charger sur mobile. */}
-        <header className="bg-primary text-on-primary pt-10 pb-14 md:pt-16 md:pb-20">
+        <header data-devis-hero className="bg-primary text-on-primary pt-10 pb-14 md:pt-16 md:pb-20">
           <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div>
               <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">
-                Pergola sur mesure à Libourne — Devis gratuit sous 48h
+                Pergola sur mesure à Libourne et en Gironde — Devis gratuit sous 48h
               </h1>
               <p className="font-body-lg text-body-lg text-white/85 mb-6">
                 Bioclimatique, aluminium ou bois massif : conçue, fabriquée et posée par la même
@@ -134,6 +135,35 @@ export default function DevisPergolaPage() {
           </div>
         </section>
 
+        {/* Preuve sociale chiffrée + relance vers le formulaire du milieu de page */}
+        <section className="py-section-padding bg-surface">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10">
+              <div>
+                <p className="font-headline-md text-headline-md text-primary mb-2">10 ans</p>
+                <p className="text-on-surface-variant font-body-md text-body-md">d&apos;expérience du bois</p>
+              </div>
+              <div>
+                <p className="font-headline-md text-headline-md text-primary mb-2">100%</p>
+                <p className="text-on-surface-variant font-body-md text-body-md">sur mesure</p>
+              </div>
+              <div>
+                <p className="font-headline-md text-headline-md text-primary mb-2">5.0/5</p>
+                <p className="text-on-surface-variant font-body-md text-body-md">sur 6 avis Google</p>
+              </div>
+            </div>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              Envie d&apos;une pergola comme celles-ci ? Recevez votre devis gratuit en 2 minutes.
+            </p>
+            <a
+              href="#devis-milieu"
+              className="inline-block bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all"
+            >
+              Recevoir mon devis gratuit
+            </a>
+          </div>
+        </section>
+
         {/* Galerie de réalisations */}
         <section className="py-section-padding bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
@@ -157,7 +187,7 @@ export default function DevisPergolaPage() {
         </section>
 
         {/* CTA répété — milieu de page */}
-        <section className="py-section-padding bg-surface">
+        <section id="devis-milieu" className="py-section-padding bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-2xl mx-auto">
               <div className="bg-surface-container-low rounded-2xl p-6 md:p-8 shadow-xl border border-surface-variant">
@@ -189,7 +219,7 @@ export default function DevisPergolaPage() {
         </section>
 
         {/* CTA final */}
-        <section className="py-section-padding bg-primary text-on-primary">
+        <section id="devis-bas" className="py-section-padding bg-primary text-on-primary">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-headline-md text-headline-md mb-8 text-center">
@@ -203,6 +233,7 @@ export default function DevisPergolaPage() {
         </section>
       </main>
       <LandingPergolaFooter />
+      <LandingPergolaStickyBar />
     </>
   );
 }

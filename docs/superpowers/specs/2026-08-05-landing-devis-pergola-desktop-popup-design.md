@@ -14,9 +14,19 @@ le formulaire ».
 
 ## Décisions validées avec l'utilisateur
 
-1. **Déclencheur** : défilement (au-delà de 50 % de la hauteur de la page),
-   choisi plutôt qu'un délai fixe ou une intention de sortie (souris quittant
-   l'écran — inopérant sur mobile, où arrive l'essentiel du trafic Ads).
+1. **Déclencheur** : défilement, choisi plutôt qu'un délai fixe ou une
+   intention de sortie (souris quittant l'écran — inopérant sur mobile, où
+   arrive l'essentiel du trafic Ads). Seuil initialement fixé à 50 % lors de
+   la conception, **révisé à 70 % pendant la vérification finale** : mesuré
+   dans un vrai navigateur, à 50 % le formulaire du milieu de page
+   (`#devis-milieu`) remplissait la quasi-totalité de l'écran (50px à 860px
+   sur un viewport de 900px de haut) — le pop-up serait apparu directement
+   par-dessus un visiteur en train de regarder, voire de remplir, un
+   formulaire actif, à l'encontre même de l'objectif de la demande. 70 %
+   correspond au moment où ce formulaire est passé (mesuré à ~69,5 % de
+   défilement total). Décision technique prise en cours de vérification,
+   pas revalidée avec l'utilisateur avant application — signalé
+   explicitement pour cette raison.
 2. **Contenu** : les deux canaux à la fois — téléphone et bouton devis, côte
    à côte dans la même boîte de dialogue, plutôt qu'un choix exclusif entre
    les deux.

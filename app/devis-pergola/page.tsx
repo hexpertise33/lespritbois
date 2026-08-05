@@ -155,12 +155,12 @@ export default function DevisPergolaPage() {
 
         {/* Bandeau de confiance */}
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Certifiés Qualibat
+                  Certifiés Qualibat RGE
                 </p>
                 <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
               </div>
@@ -181,6 +181,15 @@ export default function DevisPergolaPage() {
                   Libourne &amp; Gironde
                 </p>
                 <p className="text-on-surface-variant text-body-md">Nous intervenons dans tout le département</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="text-3xl shrink-0" aria-hidden="true">🇫🇷</span>
+              <div>
+                <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
+                  Fabrication en atelier, en France
+                </p>
+                <p className="text-on-surface-variant text-body-md">Conception et pose par nos équipes, sans sous-traitance</p>
               </div>
             </div>
           </div>

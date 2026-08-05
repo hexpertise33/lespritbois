@@ -22,6 +22,12 @@ export default function LandingPergolaFooter() {
         >
           Mentions légales
         </a>
+        <a
+          className="text-on-surface-variant hover:text-secondary-dark transition-colors text-sm underline"
+          href="/politique-de-confidentialite"
+        >
+          Politique de confidentialité
+        </a>
       </div>
     </footer>
   );

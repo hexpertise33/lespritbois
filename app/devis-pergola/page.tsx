@@ -286,41 +286,43 @@ export default function DevisPergolaPage() {
             FAQ de /pergolas. Pas de JSON-LD FAQPage : page noindex, aucun
             bénéfice SEO, inutile d'alourdir le HTML. */}
         <section className="py-section-padding bg-surface">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 max-w-3xl">
-            <h2 className="font-headline-md text-headline-md text-primary mb-10 text-center">
-              Vos questions avant de vous lancer
-            </h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
-                  Combien coûte une pergola sur mesure ?
-                </h3>
-                <p className="text-on-surface-variant font-body-md text-body-md">
-                  Le prix dépend de la surface couverte, du type de couverture, des équipements
-                  ajoutés et de la nature du support. Nous ne pratiquons pas de tarif au mètre
-                  carré affiché : nous relevons votre terrasse et remettons un devis détaillé,
-                  poste par poste.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
-                  Faut-il une autorisation d&apos;urbanisme ?
-                </h3>
-                <p className="text-on-surface-variant font-body-md text-body-md">
-                  Le plus souvent oui, une déclaration préalable de travaux selon la surface. Les
-                  seuils dépendent du PLU de votre commune : nous les vérifions sur pièces et
-                  montons le dossier avec vous.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
-                  Bois ou aluminium, laquelle choisir ?
-                </h3>
-                <p className="text-on-surface-variant font-body-md text-body-md">
-                  Le bois massif apporte chaleur et matière, l&apos;aluminium offre de grandes
-                  portées sans entretien. Le choix dépend de votre maison, de l&apos;usage
-                  souhaité et du budget — nous vous conseillons au rendez-vous.
-                </p>
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-headline-md text-headline-md text-primary mb-10 text-center">
+                Vos questions avant de vous lancer
+              </h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
+                    Combien coûte une pergola sur mesure ?
+                  </h3>
+                  <p className="text-on-surface-variant font-body-md text-body-md">
+                    Le prix dépend de la surface couverte, du type de couverture, des équipements
+                    ajoutés et de la nature du support. Nous ne pratiquons pas de tarif au mètre
+                    carré affiché : nous relevons votre terrasse et remettons un devis détaillé,
+                    poste par poste.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
+                    Faut-il une autorisation d&apos;urbanisme ?
+                  </h3>
+                  <p className="text-on-surface-variant font-body-md text-body-md">
+                    Le plus souvent oui, une déclaration préalable de travaux selon la surface. Les
+                    seuils dépendent du PLU de votre commune : nous les vérifions sur pièces et
+                    montons le dossier avec vous.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-2">
+                    Bois ou aluminium, laquelle choisir ?
+                  </h3>
+                  <p className="text-on-surface-variant font-body-md text-body-md">
+                    Le bois massif apporte chaleur et matière, l&apos;aluminium offre de grandes
+                    portées sans entretien. Le choix dépend de votre maison, de l&apos;usage
+                    souhaité et du budget — nous vous conseillons au rendez-vous.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

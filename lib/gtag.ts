@@ -61,6 +61,7 @@ export function reportPhoneConversion(): void {
 export function reportLeadGenerated(): void {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
   window.gtag('event', 'generate_lead', {
+    send_to: GA4_ID,
     currency: 'EUR',
     value: 1.0,
   });

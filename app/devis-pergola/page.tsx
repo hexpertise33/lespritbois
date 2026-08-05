@@ -92,7 +92,7 @@ export default function DevisPergolaPage() {
                 {CONTACT.telAffiche}
               </a>
             </div>
-            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
+            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl order-first md:order-none">
               <h2 className="font-headline-sm text-headline-sm text-primary mb-6">
                 Recevez votre devis gratuit
               </h2>
@@ -158,12 +158,14 @@ export default function DevisPergolaPage() {
 
         {/* CTA répété — milieu de page */}
         <section className="py-section-padding bg-surface">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 max-w-2xl">
-            <div className="bg-surface-container-low rounded-2xl p-6 md:p-8 shadow-xl border border-surface-variant">
-              <h2 className="font-headline-sm text-headline-sm text-primary mb-6 text-center">
-                Recevez votre devis gratuit
-              </h2>
-              <LandingPergolaForm instanceId="milieu" />
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-surface-container-low rounded-2xl p-6 md:p-8 shadow-xl border border-surface-variant">
+                <h2 className="font-headline-sm text-headline-sm text-primary mb-6 text-center">
+                  Recevez votre devis gratuit
+                </h2>
+                <LandingPergolaForm instanceId="milieu" />
+              </div>
             </div>
           </div>
         </section>
@@ -188,12 +190,14 @@ export default function DevisPergolaPage() {
 
         {/* CTA final */}
         <section className="py-section-padding bg-primary text-on-primary">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 max-w-2xl">
-            <h2 className="font-headline-md text-headline-md mb-8 text-center">
-              Prêt à profiter de votre terrasse autrement ?
-            </h2>
-            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
-              <LandingPergolaForm instanceId="bas" />
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="font-headline-md text-headline-md mb-8 text-center">
+                Prêt à profiter de votre terrasse autrement ?
+              </h2>
+              <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
+                <LandingPergolaForm instanceId="bas" />
+              </div>
             </div>
           </div>
         </section>

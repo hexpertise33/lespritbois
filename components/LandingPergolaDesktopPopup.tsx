@@ -10,7 +10,7 @@ const SESSION_KEY = 'lb-devis-pergola-popup-shown';
  * sur la racine ci-dessous) : sur mobile, LandingPergolaStickyBar affiche
  * déjà en permanence téléphone + bouton devis dès que le héros est
  * dépassé, un pop-up identique y ferait doublon. Se déclenche une seule
- * fois par session au premier passage sous les 50% de défilement de la
+ * fois par session au premier passage sous les 70% de défilement de la
  * page, mémorisé en sessionStorage (pas localStorage, qui persisterait
  * entre les visites).
  */
@@ -24,7 +24,7 @@ export default function LandingPergolaDesktopPopup() {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       if (scrollable <= 0) return;
       const progression = window.scrollY / scrollable;
-      if (progression >= 0.5) {
+      if (progression >= 0.7) {
         setVisible(true);
         sessionStorage.setItem(SESSION_KEY, '1');
         window.removeEventListener('scroll', onScroll);

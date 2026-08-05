@@ -120,7 +120,25 @@ npx wrangler versions deploy <version-id>@100% --yes
 C'est ce qui a permis, le 04/08, de confirmer la version saine avant de la
 mettre en ligne, et de sortir de l'alternance rollback / redeploy à l'aveugle.
 
-**Prochain créneau (05/08/2026)** : le 04/08 a consommé la moitié « garde-corps »
+**Prochain créneau (06/08/2026)** : le 05/08 a consommé la piste **rénovation
+d'une terrasse existante** sous `renover-terrasse-bois-existante` (bois ; thèse :
+le grisaillement est esthétique et réversible, c'est l'état de la sous-face qui
+décide entre poncer, remplacer les lames et tout déposer — diagnostic en trois
+gestes, dégrisage/ponçage/saturateur dans l'ordre, remplacement lame par lame,
+quatre scénarios de budget 15 → 150 €/m² posé). Le build est repassé normalement
+dans le dépôt réel ce jour-là : le blocage iCloud décrit plus bas ne s'est pas
+manifesté, le contournement `/tmp/iso` n'a pas été nécessaire (le vérifier au cas
+par cas plutôt que de l'appliquer d'office). ⚠️ Le créneau **terrasse est
+désormais saturé à cinq articles** : des pistes terrasse identifiées, seule la
+**terrasse surélevée avec garde-corps** reste, et elle est déjà partiellement
+traitée par l'article garde-corps du 04/08 — considérer le sujet terrasse comme
+clos sauf angle radicalement neuf. Le 05/08 étant un article bois, le prochain
+doit **repartir sur l'aluminium**. Idées alu encore libres : teinte RAL,
+brise-soleil orientables et protections solaires, entretien pergola/véranda alu,
+clôture alu vs bois (limite séparative, occultation, portail assorti), véranda ou
+extension ossature bois (angle décision).
+
+**Créneau précédent (05/08/2026)** : le 04/08 a consommé la moitié « garde-corps »
 de l'idée « garde-corps et clôture aluminium vs bois », publiée sous
 `garde-corps-terrasse-aluminium-ou-bois` (alu dominant, comparatif de décision :
 norme NF P01-012 révisée le 22/11/2024, remplissages verre/barreaudage/câbles,
@@ -151,11 +169,14 @@ terrasse) **et** 01/08 alu (véranda — deux articles ce jour-là, l'article
 terrasse ayant été publié par le créneau précédent), 02/08 bois (plage de
 piscine).
 
-⚠️ Attention doublon terrasse : quatre articles terrasse coexistent désormais —
+⚠️ Attention doublon terrasse : **cinq** articles terrasse coexistent désormais —
+`renover-terrasse-bois-existante` (05/08 : diagnostic sous-face, dégrisage et
+ponçage, remplacement des lames, budget de la réfection) et
 `plage-piscine-bois-essences-pose` (bord de bassin : humidité cyclique,
-antidérapance, margelles, trappes, inox A4) s'ajoute aux trois ci-dessous. Des
+antidérapance, margelles, trappes, inox A4) s'ajoutent aux trois ci-dessous. Des
 trois pistes terrasse encore libres, il ne reste que la terrasse surélevée avec
-garde-corps et la rénovation d'une terrasse existante. Les trois autres :
+garde-corps — elle-même partiellement traitée par l'article garde-corps du 04/08.
+Les trois autres :
 `quel-bois-pour-terrasse-exterieure` (essences, classes d'emploi, budget),
 `proteger-terrasse-bois-canicule-entretien-ete` (entretien de surface) et
 `terrasse-bois-structure-plots-lambourdes` (sous-face : supports, lambourdes,
@@ -199,6 +220,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-01 | publié  | Véranda en aluminium : isolation, urbanisme et budget en Gironde | veranda-aluminium-isolation-urbanisme-budget |
 | 2026-08-02 | publié  | Plage de piscine en bois : essence, pose et budget autour d'un bassin | plage-piscine-bois-essences-pose |
 | 2026-08-04 | publié  | Garde-corps de terrasse : aluminium ou bois ? Sécurité, entretien et budget en Gironde | garde-corps-terrasse-aluminium-ou-bois |
+| 2026-08-05 | publié  | Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? | renover-terrasse-bois-existante |
 
 ## Idées de sujets en réserve
 
@@ -250,7 +272,9 @@ Idées bois consommées (déjà publiées) : entretien terrasse, poulailler,
 bardage, pool-house, abri de jardin kit vs sur-mesure, extension ossature bois,
 filière bois local (douglas / pin maritime), structure de terrasse (plots,
 lambourdes, ventilation — angle trouvé hors réserve le 01/08/2026, la réserve
-bois étant vide), plage de piscine en bois (angle hors réserve du 02/08/2026).
+bois étant vide), plage de piscine en bois (angle hors réserve du 02/08/2026),
+rénovation d'une terrasse existante (05/08/2026 — dernière piste terrasse de la
+liste, hormis la terrasse surélevée).
 
 ℹ️ Constat de l'iconographe (02/08/2026) : `/images/terrasse-bois-piscine-exemple-opt.webp`
 n'est pas une photo de chantier maison mais la photo Pexels n° 19135424. Elle

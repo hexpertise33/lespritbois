@@ -527,7 +527,8 @@ Insert this new `<section>` immediately after the comparatif's closing `</sectio
             FAQ de /pergolas. Pas de JSON-LD FAQPage : page noindex, aucun
             bénéfice SEO, inutile d'alourdir le HTML. */}
         <section className="py-section-padding bg-surface">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 max-w-3xl">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mx-auto">
             <h2 className="font-headline-md text-headline-md text-primary mb-10 text-center">
               Vos questions avant de vous lancer
             </h2>
@@ -563,6 +564,7 @@ Insert this new `<section>` immediately after the comparatif's closing `</sectio
                   souhaité et du budget — nous vous conseillons au rendez-vous.
                 </p>
               </div>
+            </div>
             </div>
           </div>
         </section>

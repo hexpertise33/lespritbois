@@ -111,30 +111,27 @@ export default function DevisPergolaPage() {
     <>
       <LandingPergolaHeader />
       <main id="contenu">
-        {/* Hero : photo pleine largeur (même patron que /pergolas, même
-            image) — remplace le fond uni sombre suite au retour utilisateur
-            (page perçue comme trop sombre et pas assez illustrée). */}
-        <header
-          data-devis-hero
-          className="relative text-on-primary pt-10 pb-14 md:pt-16 md:pb-20 overflow-hidden"
-        >
-          <div className="absolute inset-0 z-0">
-            <img
-              width="1600"
-              height="900"
-              fetchPriority="high"
-              decoding="async"
-              className="w-full h-full object-cover"
-              src="/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp"
-              alt="Pergola aluminium adossée et terrasse bois réalisées par L'Esprit Bois près de Libourne"
-            />
-            <div className="absolute inset-0 hero-interne"></div>
-          </div>
-          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        {/* Hero : photo nette dans la colonne de texte (pas de fond plein
+            largeur assombri) — le visiteur doit voir ce qu'on lui vend
+            avant d'arriver au formulaire, sur mobile comme sur desktop.
+            Le formulaire n'est plus forcé en premier sur mobile (retire
+            order-first) : ordre naturel partout, texte+photo puis
+            formulaire. */}
+        <header data-devis-hero className="bg-primary text-on-primary pt-10 pb-14 md:pt-16 md:pb-20">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div>
-              <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">
+              <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">
                 Pergola sur mesure à Libourne et en Gironde — Devis gratuit sous 48h
               </h1>
+              <img
+                width="1600"
+                height="900"
+                fetchPriority="high"
+                decoding="async"
+                className="w-full h-56 md:h-64 object-cover rounded-2xl mb-6"
+                src="/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp"
+                alt="Pergola aluminium adossée et terrasse bois réalisées par L'Esprit Bois près de Libourne"
+              />
               <p className="font-body-lg text-body-lg text-white/85 mb-6">
                 Bioclimatique, aluminium ou bois massif : conçue, fabriquée et posée par la même
                 équipe, certifiée Qualibat et couverte par notre garantie décennale.
@@ -147,7 +144,7 @@ export default function DevisPergolaPage() {
                 {CONTACT.telAffiche}
               </a>
             </div>
-            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl order-first md:order-none">
+            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
               <h2 className="font-headline-sm text-headline-sm text-primary mb-6">
                 Recevez votre devis gratuit
               </h2>

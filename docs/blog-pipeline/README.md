@@ -134,9 +134,24 @@ désormais saturé à cinq articles** : des pistes terrasse identifiées, seule 
 traitée par l'article garde-corps du 04/08 — considérer le sujet terrasse comme
 clos sauf angle radicalement neuf.
 
-➡️ **Sujet imposé pour le 06/08/2026 (choix de David, 05/08) : la teinte RAL de
-l'aluminium.** Ne pas repiocher ailleurs dans la réserve. Retour à l'aluminium
-après un article bois, donc alternance respectée. Cadrage attendu :
+**Prochain créneau (07/08/2026)** : le 06/08 a consommé le sujet imposé **teinte
+RAL de l'aluminium** sous `choisir-teinte-ral-aluminium` (thèse : la teinte se
+joue sur la finition, l'exposition et l'accord aux menuiseries existantes plus
+que sur le code lui-même ; le RAL 7016 anthracite est le réflexe majoritaire,
+pas toujours le bon). Le build est repassé normalement dans le dépôt réel — le
+blocage iCloud décrit plus bas ne s'est pas manifesté, le contournement
+`/tmp/iso` n'a pas été nécessaire (continuer à le vérifier au cas par cas).
+Après un article bois (05/08) puis un article alu (06/08), le prochain peut
+repartir sur le **bois**, ou piocher dans les idées alu encore libres :
+brise-soleil orientables et protections solaires (angle saisonnier été,
+cohérent début août), entretien d'une pergola / véranda alu, clôture alu vs bois
+(limite séparative, occultation, portail assorti), véranda ou extension ossature
+bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idées, il
+faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
+articles).
+
+**Créneau précédent (06/08/2026)** — sujet alors imposé par David le 05/08 :
+la teinte RAL de l'aluminium, désormais publiée. Cadrage qui avait été retenu :
 nuancier RAL et lecture d'un code, thermolaquage (poudre polyester, qualité de
 préparation et d'accrochage), finitions **mat / satiné / sablé / texturé**,
 teintes qui vieillissent bien face au soleil girondin et à la poussière, teintes
@@ -242,6 +257,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-02 | publié  | Plage de piscine en bois : essence, pose et budget autour d'un bassin | plage-piscine-bois-essences-pose |
 | 2026-08-04 | publié  | Garde-corps de terrasse : aluminium ou bois ? Sécurité, entretien et budget en Gironde | garde-corps-terrasse-aluminium-ou-bois |
 | 2026-08-05 | publié  | Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? | renover-terrasse-bois-existante |
+| 2026-08-06 | publié  | Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde | choisir-teinte-ral-aluminium |
 
 ## Idées de sujets en réserve
 
@@ -277,9 +293,16 @@ recentrer sur la véranda) :
   motorisation — le pendant alu de nos articles d'entretien bois. ⚠️ Angle à
   resserrer sur l'entretien pur : le produit véranda et le produit pergola
   bioclimatique sont désormais tous deux couverts.
-- **Choisir la teinte de son aluminium** : nuancier RAL, mat/sablé, teintes qui
-  vieillissent bien, accord avec une maison girondine. 📌 **Réservé au créneau du
-  06/08/2026** sur décision de David (cf. « Prochain créneau » plus haut).
+- ~~**Choisir la teinte de son aluminium** : nuancier RAL, mat/sablé, teintes qui
+  vieillissent bien, accord avec une maison girondine~~ → consommé le 06/08/2026
+  sous `choisir-teinte-ral-aluminium` (lecture d'un code RAL Classic, ce
+  qu'encadrent le thermolaquage et les labels Qualicoat/Qualimarine, finitions
+  mat/satiné/sablé, teintes qui pardonnent la poussière girondine, teinte foncée
+  plein sud et effet bilame, accord au bâti — pierre blonde et tuile canal —,
+  bicoloration, raccord entre ouvrages posés à des dates différentes, retouche
+  d'un profilé rayé). Aucune épaisseur de poudre, durée de garantie ni
+  température citée : seuls les chiffres du nuancier RAL Classic, vérifiés par
+  WebSearch. Ne pas refaire de sujet « couleur de l'alu ».
 - **Brise-soleil orientables et protections solaires** : alu, stores, et le
   couple pergola + occultation, angle saisonnier été.
 - **Clôture aluminium vs bois** : durabilité, entretien, coût dans le temps

@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'choisir-teinte-ral-aluminium',
+    titre:
+      'Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde',
+    extrait:
+      "Une teinte d'aluminium ne se choisit pas vraiment sur un nuancier, mais sur trois critères : la finition — mate, satinée ou sablée —, qui change plus l'aspect final que le code RAL lui-même, l'exposition, une teinte foncée plein sud chauffant et se dilatant davantage, et l'accord avec les menuiseries déjà posées plutôt qu'avec la couleur des murs. Lire un code du RAL Classic, comprendre ce que le thermolaquage et les labels garantissent vraiment, accorder l'ouvrage à la pierre blonde et à la tuile canal, raccorder pergola, carport et garde-corps posés à des dates différentes : le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-06',
+    categorie: 'Guide · Aluminium',
+    image:
+      '/images/source-adefrance/construction-pool-house-aluminium-libourne-2.webp',
+    imageLargeur: 1200,
+    imageHauteur: 800,
+  },
+  {
     slug: 'renover-terrasse-bois-existante',
     titre:
       'Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? Le diagnostic avant de dépenser',

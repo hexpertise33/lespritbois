@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'veranda-ou-extension-ossature-bois',
+    titre:
+      'Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ?',
+    extrait:
+      "La véranda aluminium gagne quand on cherche de la lumière, une vue sur le jardin et un espace de vie clair ; l'extension en ossature bois s'impose dès que la pièce doit être une vraie pièce de la maison — chambre, bureau, suite parentale — utilisable à l'identique en février et en août. Points de bascule (surface vitrée voulue, heures d'occupation), confort d'été, seuils d'urbanisme et statut RE2020, budget 2026 de 1 200 à 2 500 €/m² posé, raccord à la maison existante et verdict par profil, par un artisan à Libourne (Gironde).",
+    date: '2026-08-07',
+    categorie: 'Guide · Agrandir sa maison',
+    image: '/images/source-adefrance/aggrandissement-accueil.webp',
+    imageLargeur: 768,
+    imageHauteur: 512,
+  },
+  {
     slug: 'choisir-teinte-ral-aluminium',
     titre:
       'Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde',

@@ -150,7 +150,58 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (08/08/2026)** : le 07/08 a consommé l'idée **véranda ou
+**Prochain créneau (08/08/2026) — SUJET IMPOSÉ PAR DAVID le 07/08 : le
+carport.** Consigne directe, elle prime sur la réserve et sur l'alternance des
+matières.
+
+⚠️ Le carport est notre créneau le plus saturé : **trois** articles le couvrent
+déjà — `carport-bois-guide` (guide produit bois : adossé/autoportant, essences,
+toiture, entretien), `carport-aluminium-ou-bois-comparatif` (comparatif matière,
+budgets, entretien sur 15-20 ans — **interdiction formelle de le refaire**) et
+`autorisation-urbanisme-abri-carport-pergola-2026` (seuils d'urbanisme, emprise
+au sol, CERFA). Il faut donc un angle **franchement neuf**, comme le prévoit
+déjà la réserve : « usage, dimensionnement, motorisation d'accès ».
+
+**Angle retenu : le dimensionnement.** Titre de travail « Quelle taille pour un
+carport ? Dimensions, hauteur et implantation pour bien garer sa voiture », slug
+proposé `dimensions-carport-taille-hauteur`. Thèse : la cote qui rate un carport
+n'est presque jamais la longueur, c'est la **hauteur libre sous traverse** et la
+**place de manœuvre pour ouvrir les portières** — un carport aux bonnes cotes sur
+le papier devient inutilisable dès qu'on y met un SUV, un coffre de toit ou un
+utilitaire. Sujet **transverse bois + alu** (les deux guides mono-matière
+existent déjà, celui-ci les chapeaute et y renvoie en maillage interne). Plan
+possible : les cotes réelles d'un véhicule d'aujourd'hui vs les kits standards ;
+hauteur libre (SUV, coffre de toit, galerie, van aménagé) ; largeur et
+dégagement des portières ; carport une voiture / deux voitures / voiture +
+rangement ; portée et poteaux — là où l'alu permet de supprimer le poteau
+central et où le bois impose une trame ; implantation, sens d'accès et manœuvre
+depuis la rue ; pente, évacuation des eaux et débord de toit.
+
+⚠️ Prudence factuelle : **ne citer aucune dimension normative, aucun DTU ni
+aucune règle de PLU chiffrée sans source vérifiée par WebSearch.** Les cotes de
+véhicules et les emprises de manœuvre doivent être données comme **ordres de
+grandeur constatés sur nos chantiers**, jamais comme une norme. Pour l'urbanisme,
+renvoyer à l'article existant plutôt que de re-détailler les seuils.
+
+**Angle de repli** si le dimensionnement se révèle trop proche de
+`carport-bois-guide` à la lecture : le **carport et la voiture électrique**
+(borne de recharge sous carport, cheminement électrique, toiture photovoltaïque)
+— angle 2026 réellement neuf, mais qui exige des sources vérifiées sur la partie
+électrique ; à défaut, formulation qualitative et renvoi à un électricien
+qualifié.
+
+**Images** : ne pas réutiliser les covers déjà prises
+(`Carport-aluminium-Libourne-4`, `Carport-bois-Libourne-1`,
+`Carport-bois-Libourne-3`). Restent libres en cover, toutes photos maison :
+`Carport-bois-Libourne-2`, `-5`, `-6`, `Carport-aluminium-Libourne-1`, `-2`,
+`-3`, `carport-accueil.webp` et `carport-bois-libourne.webp`.
+
+Les trois idées alu libres (brise-soleil et protections solaires, entretien
+pergola/véranda alu, clôture alu vs bois) sont **décalées d'un cran**, pas
+annulées.
+
+**Créneau initialement prévu pour le 08/08/2026** (remplacé par la consigne
+ci-dessus) : le 07/08 a consommé l'idée **véranda ou
 extension ossature bois** sous `veranda-ou-extension-ossature-bois` (comparatif
 mixte de décision — voir le détail dans la réserve plus bas). Le build est
 repassé normalement dans le dépôt réel, sans recourir au contournement

@@ -134,7 +134,7 @@ désormais saturé à cinq articles** : des pistes terrasse identifiées, seule 
 traitée par l'article garde-corps du 04/08 — considérer le sujet terrasse comme
 clos sauf angle radicalement neuf.
 
-**Prochain créneau (07/08/2026)** : le 06/08 a consommé le sujet imposé **teinte
+**Créneau précédent (07/08/2026)** : le 06/08 a consommé le sujet imposé **teinte
 RAL de l'aluminium** sous `choisir-teinte-ral-aluminium` (thèse : la teinte se
 joue sur la finition, l'exposition et l'accord aux menuiseries existantes plus
 que sur le code lui-même ; le RAL 7016 anthracite est le réflexe majoritaire,
@@ -149,6 +149,25 @@ cohérent début août), entretien d'une pergola / véranda alu, clôture alu vs
 bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idées, il
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
+
+**Prochain créneau (08/08/2026)** : le 07/08 a consommé l'idée **véranda ou
+extension ossature bois** sous `veranda-ou-extension-ossature-bois` (comparatif
+mixte de décision — voir le détail dans la réserve plus bas). Le build est
+repassé normalement dans le dépôt réel, sans recourir au contournement
+`/tmp/iso` (continuer à le vérifier au cas par cas). ⚠️ Une **404 isolée** est
+apparue à la deuxième des trois salves de `curl` juste après le deploy, puis
+8 essais consécutifs sur le domaine **et** sur l'URL `*.workers.dev` ont tous
+répondu 200 : c'est bien le repeuplement du cache edge décrit plus bas, pas un
+worker cassé. Confirmation utile : re-tester en série plutôt que de redéployer
+au premier 404.
+Après un article bois (05/08), un alu (06/08) et un mixte à dominante bois
+(07/08), le prochain devrait repartir sur l'**aluminium pur**. Idées alu encore
+libres : brise-soleil orientables et protections solaires (angle saisonnier
+été, toujours pertinent mi-août), entretien d'une pergola / véranda alu
+(à resserrer sur l'entretien pur), clôture alu vs bois (limite séparative,
+occultation, portail assorti). ⚠️ Ce sont les **trois dernières** idées de la
+réserve : après elles, veille web obligatoire. Le créneau **terrasse reste
+clos** (cinq articles).
 
 **Créneau précédent (06/08/2026)** — sujet alors imposé par David le 05/08 :
 la teinte RAL de l'aluminium, désormais publiée. Cadrage qui avait été retenu :
@@ -258,6 +277,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-04 | publié  | Garde-corps de terrasse : aluminium ou bois ? Sécurité, entretien et budget en Gironde | garde-corps-terrasse-aluminium-ou-bois |
 | 2026-08-05 | publié  | Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? | renover-terrasse-bois-existante |
 | 2026-08-06 | publié  | Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde | choisir-teinte-ral-aluminium |
+| 2026-08-07 | publié  | Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ? | veranda-ou-extension-ossature-bois |
 
 ## Idées de sujets en réserve
 
@@ -286,9 +306,19 @@ recentrer sur la véranda) :
   budget posé 2026). Aucun coefficient Uw ni seuil thermique cité : la
   distinction chauffée-communicante / espace tampon est traitée
   qualitativement, avec renvoi mairie + bureau d'études.
-- **Véranda ou extension ossature bois** : que choisir pour agrandir ? (angle
-  décision, distinct de `extension-ossature-bois-prix-m2` et de l'article
-  véranda alu ci-dessus, qui aborde déjà brièvement l'arbitrage).
+- ~~**Véranda ou extension ossature bois** : que choisir pour agrandir ?~~ →
+  consommé le 07/08/2026 sous `veranda-ou-extension-ossature-bois` (thèse : la
+  question n'est pas le matériau mais l'usage de la pièce — surface vitrée
+  voulue et heures d'occupation quotidienne ; véranda alu pour la lumière et le
+  jardin d'hiver, ossature bois dès que la pièce doit vivre à l'identique en
+  février et en août ; solution mixte extension bois + grande baie alu présentée
+  comme vrai troisième choix). Seuils d'urbanisme vérifiés (DP jusqu'à 40 m² en
+  zone U dotée d'un PLU, 20 m² sinon, permis au-delà, architecte obligatoire
+  au-delà de 150 m² de surface de plancher totale — sources service-public
+  F36777 et F17578). RE2020 traitée qualitativement, sans seuil chiffré ni
+  décret : c'est le **statut** (espace tampon non chauffé vs extension chauffée
+  communicante) qui décide, pas la matière. Ne pas refaire de sujet
+  « agrandir : véranda ou extension ».
 - **Entretien d'une pergola / véranda aluminium** : thermolaquage, joints,
   motorisation — le pendant alu de nos articles d'entretien bois. ⚠️ Angle à
   resserrer sur l'entretien pur : le produit véranda et le produit pergola

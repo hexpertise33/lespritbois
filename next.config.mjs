@@ -20,7 +20,11 @@ const CSP = [
   // Il tente d'abord un fetch (connect-src), puis retombe sur un ping image
   // (img-src) — les deux directives doivent l'autoriser, sinon la conversion
   // est bloquée silencieusement. Constaté en console le 08/08/2026.
-  "img-src 'self' data: https://*.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com https://pagead2.googlesyndication.com",
+  // www.googletagmanager.com : GA4 dispose aussi d'un canal de repli en ping
+  // image (/a?v=3&t=l…) quand le fetch n'aboutit pas. Le domaine était déjà
+  // autorisé en script-src et connect-src mais pas ici, donc ce repli était
+  // bloqué. Vérifié le 08/08/2026 via l'événement securitypolicyviolation.
+  "img-src 'self' data: https://*.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com https://pagead2.googlesyndication.com https://www.googletagmanager.com",
   // googleadservices.com et google.com : pings de conversion Google Ads (fetch/sendBeacon),
   // en plus du fallback image déjà couvert par img-src.
   "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://pagead2.googlesyndication.com",

@@ -16,10 +16,14 @@ const CSP = [
   "style-src 'self' 'unsafe-inline'",
   "font-src 'self' data:",
   // *.google-analytics.com : GA4 collecte aussi via des hôtes régionaux (region1.google-analytics.com).
-  "img-src 'self' data: https://*.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com",
+  // pagead2.googlesyndication.com : endpoint /ccm/collect du Consent Mode (Google Ads).
+  // Il tente d'abord un fetch (connect-src), puis retombe sur un ping image
+  // (img-src) — les deux directives doivent l'autoriser, sinon la conversion
+  // est bloquée silencieusement. Constaté en console le 08/08/2026.
+  "img-src 'self' data: https://*.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com https://pagead2.googlesyndication.com",
   // googleadservices.com et google.com : pings de conversion Google Ads (fetch/sendBeacon),
   // en plus du fallback image déjà couvert par img-src.
-  "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com",
+  "connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://pagead2.googlesyndication.com",
   "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
   "frame-ancestors 'self'",
   "base-uri 'self'",

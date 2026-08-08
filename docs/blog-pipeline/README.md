@@ -150,9 +150,51 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (08/08/2026) — SUJET IMPOSÉ PAR DAVID le 07/08 : le
-carport.** Consigne directe, elle prime sur la réserve et sur l'alternance des
-matières.
+**Prochain créneau (09/08/2026)** : le 08/08 a consommé le sujet imposé
+**carport, angle dimensionnement** sous `dimensions-carport-taille-hauteur`
+(transverse bois + alu ; thèse : la cote qui rate un carport n'est pas la
+longueur mais la hauteur libre sous traverse et le dégagement des portières —
+mesurer son véhicule réel, accessoires montés et rétroviseurs dépliés, avant de
+choisir un kit). Sept sections : cotes réelles vs kits standards, hauteur libre,
+largeur et portières, trois programmes de trame (1 voiture / 2 voitures /
+voiture + rangement), portée et position des poteaux, implantation et manœuvre
+depuis la rue, pente et débord de toit. L'angle de repli « carport et voiture
+électrique » (borne de recharge, cheminement, toiture photovoltaïque) **n'a pas
+été utilisé et reste disponible**.
+
+Chiffres extérieurs volontairement limités à deux sources vérifiées : la
+**NF P 91-100** (place de 2,50 × 5 m, allée 5 m, champ d'application = parcs
+accessibles au public, VL < 3,5 t et < 1,90 m — présentée explicitement comme
+**non applicable** à un carport privé) et les cotes constructeur de deux SUV
+compacts 2026 (Peugeot 3008, Renault Austral), dont la **largeur rétroviseurs
+dépliés de 2,08 à 2,11 m**, qui est le vrai argument de l'article. Toutes les
+autres cotes sont données comme ordres de grandeur constatés sur nos chantiers,
+jamais comme une norme. Urbanisme non re-détaillé : renvoi à l'article dédié.
+
+Le build est repassé normalement dans le dépôt réel, sans recourir au
+contournement `/tmp/iso` (continuer à le vérifier au cas par cas). ⚠️ Des **404
+alternés** sont apparus sur la première salve de `curl`, en alternance entre le
+domaine et l'URL `*.workers.dev` ; 16 requêtes consécutives ensuite ont toutes
+répondu 200 sur les deux hôtes, et `npx wrangler deployments status` confirmait
+déjà la bonne version (`1cf980a5`) à 100 %. C'est encore le repeuplement du
+cache edge, pas un worker cassé — même conclusion que le 07/08.
+
+⚠️ Le créneau **carport est désormais saturé à quatre articles** : guide bois,
+comparatif bois/alu, urbanisme, dimensionnement. Sauf angle radicalement neuf
+(la voiture électrique reste le seul identifié), le considérer comme clos, comme
+la terrasse.
+
+Après un alu (06/08), un mixte à dominante bois (07/08) et un transverse (08/08),
+le prochain devrait repartir sur l'**aluminium pur**. Les **trois dernières**
+idées alu de la réserve sont encore libres : brise-soleil orientables et
+protections solaires (angle saisonnier été, toujours pertinent mi-août),
+entretien d'une pergola / véranda alu (à resserrer sur l'entretien pur), clôture
+alu vs bois (limite séparative, occultation, portail assorti). Après elles,
+**veille web obligatoire**. Créneaux **terrasse et carport clos**.
+
+**Créneau du 08/08/2026 — SUJET ALORS IMPOSÉ PAR DAVID le 07/08 : le
+carport** (désormais publié, voir ci-dessus). Consigne directe, elle primait sur
+la réserve et sur l'alternance des matières.
 
 ⚠️ Le carport est notre créneau le plus saturé : **trois** articles le couvrent
 déjà — `carport-bois-guide` (guide produit bois : adossé/autoportant, essences,
@@ -190,11 +232,22 @@ renvoyer à l'article existant plutôt que de re-détailler les seuils.
 électrique ; à défaut, formulation qualitative et renvoi à un électricien
 qualifié.
 
-**Images** : ne pas réutiliser les covers déjà prises
-(`Carport-aluminium-Libourne-4`, `Carport-bois-Libourne-1`,
-`Carport-bois-Libourne-3`). Restent libres en cover, toutes photos maison :
-`Carport-bois-Libourne-2`, `-5`, `-6`, `Carport-aluminium-Libourne-1`, `-2`,
-`-3`, `carport-accueil.webp` et `carport-bois-libourne.webp`.
+**Images** : covers carport déjà prises, à ne plus réutiliser en cover —
+`Carport-aluminium-Libourne-4`, `Carport-bois-Libourne-1`,
+`Carport-bois-Libourne-3` et, depuis le 08/08, **`Carport-bois-Libourne-6`**.
+Restent libres en cover : `Carport-bois-Libourne-2`, `-5`,
+`Carport-aluminium-Libourne-1`, `-2`, `-3`, `carport-accueil.webp` et
+`carport-bois-libourne.webp`.
+
+⚠️ Constat de l'iconographe (08/08/2026), à retenir : `Carport-aluminium-Libourne-1`
+à `-4` et `carport-accueil.webp` **ne sont pas des chantiers de l'entreprise**
+mais des visuels du fournisseur LI-SU DES TEMPS, malgré leur nom de fichier —
+donc pas de « nos chantiers », « Libourne » ni « Gironde » dans leur `alt`/
+`caption`. Les photos **bois** sont, elles, de vrais chantiers, mais leurs
+communes réelles ne sont pas Libourne (Arveyres, Capian,
+Lugon-et-l'Île-du-Carnay, Saint-Denis-de-Pile). Voir aussi
+`carport-accueil.webp` = même scène recadrée que `Carport-aluminium-Libourne-4`,
+et seul fichier du lot en 768 × 512 (les autres font 1200 × 646).
 
 Les trois idées alu libres (brise-soleil et protections solaires, entretien
 pergola/véranda alu, clôture alu vs bois) sont **décalées d'un cran**, pas
@@ -329,6 +382,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-05 | publié  | Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? | renover-terrasse-bois-existante |
 | 2026-08-06 | publié  | Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde | choisir-teinte-ral-aluminium |
 | 2026-08-07 | publié  | Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ? | veranda-ou-extension-ossature-bois |
+| 2026-08-08 | publié  | Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture | dimensions-carport-taille-hauteur |
 
 ## Idées de sujets en réserve
 
@@ -348,8 +402,14 @@ recentrer sur la véranda) :
   consommé le 31/07/2026 sous `carport-aluminium-ou-bois-comparatif` (portées et
   structure, thermolaquage/RAL, entretien sur 15-20 ans, budgets posés 2026,
   évacuation des eaux, verdict par profil). Ne pas refaire de comparatif carport
-  bois/alu ; un futur sujet carport devra changer d'angle (usage, dimensionnement,
-  motorisation d'accès).
+  bois/alu. L'angle de rechange **dimensionnement** a lui aussi été consommé le
+  08/08/2026 sous `dimensions-carport-taille-hauteur` (hauteur libre sous
+  traverse, dégagement des portières, trames selon le programme, portée et
+  position des poteaux, implantation et manœuvre, pente et débord). Le créneau
+  carport est **clos à quatre articles** ; les seuls angles encore vierges
+  identifiés sont la **voiture électrique sous carport** (borne de recharge,
+  cheminement électrique, toiture photovoltaïque — exige des sources vérifiées
+  côté électrique) et la **motorisation d'accès**.
 - ~~**Véranda aluminium** : usages, isolation, urbanisme et budget~~ → consommé
   le 01/08/2026 sous `veranda-aluminium-isolation-urbanisme-budget` (rupture de
   pont thermique et vitrages, toiture et surchauffe d'été, étanchéité et

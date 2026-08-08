@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'dimensions-carport-taille-hauteur',
+    titre:
+      'Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture',
+    extrait:
+      "La cote qui rate un carport n'est presque jamais la longueur : c'est la hauteur libre sous traverse et la place pour ouvrir les portières — un SUV compact 2026 mesure 2,08 à 2,11 m rétroviseurs dépliés, un chiffre qui ne figure sur aucune plaquette de kit. Mesurer son véhicule réel accessoires montés, choisir sa trame selon le programme (une voiture, deux voitures, voiture + rangement), savoir où tombent les poteaux selon qu'on construit en bois ou en aluminium et implanter l'abri pour la manœuvre depuis la rue : le guide dimensionnel d'un artisan à Libourne (Gironde).",
+    date: '2026-08-08',
+    categorie: 'Guide · Carport',
+    image: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'veranda-ou-extension-ossature-bois',
     titre:
       'Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ?',

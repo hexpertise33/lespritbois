@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'protection-solaire-brise-soleil-orientable',
+    titre:
+      'Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ?',
+    extrait:
+      "Une protection solaire n'est efficace que si elle arrête le rayonnement dehors, avant le vitrage : un store intérieur ne fait que gérer une chaleur déjà entrée. Lire l'orientation de sa façade avant de choisir, trancher entre brise-soleil orientable, store screen à zip et brise-soleil fixe, comprendre la tenue au vent, les automatismes et l'entretien réel des profilés thermolaqués, et savoir quand c'est en réalité une pergola bioclimatique qu'il faut : le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-10',
+    categorie: 'Guide · Protections solaires aluminium',
+    image: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
+    imageLargeur: 1100,
+    imageHauteur: 825,
+  },
+  {
     slug: 'dimensions-carport-taille-hauteur',
     titre:
       'Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture',

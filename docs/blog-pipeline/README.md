@@ -185,13 +185,45 @@ et l'URL `*.workers.dev`, puis 8 requêtes consécutives toutes en 200 et
 repeuplement du cache edge, comme les 07/08 et 08/08. C'est désormais le
 comportement normal après chaque deploy — ne pas redéployer au premier 404.
 
+📌 **Veille alu du 10/08/2026 faite pour ce créneau** —
+`docs/blog-pipeline/2026-08-10.md`, 2 propositions au statut `proposé` :
+**(A, recommandée) « L'aluminium est-il écologique ? »**
+(`aluminium-ecologique-recyclage-bas-carbone`), angle d'actualité appuyé sur
+l'annonce SNFA du 04/02/2026 d'une filière française de recyclage des
+menuiseries alu — chiffres vérifiés par WebFetch mais **à attribuer nommément au
+SNFA**, et le « 95 % d'énergie économisée » **non vérifié**, à confirmer ou à
+formuler qualitativement ; **(B, repli)** « Clôture en aluminium »
+(`cloture-aluminium-lames-occultantes-guide`), la dernière idée de réserve,
+recentrée sur occultation / prise au vent / raccord au portail pour ne pas
+refaire `cloture-brise-vue-bois-guide` ni le comparatif matière du garde-corps.
+
+📌 **Veille bois du 10/08/2026, même fichier** — la réserve bois était vide,
+elle est rechargée avec deux angles neufs, tous deux appuyés sur des sources
+institutionnelles **vérifiées par WebFetch** :
+**(C, la meilleure des quatre) « Termites en Gironde »**
+(`termites-gironde-ouvrage-bois-prevention`) — point de vue du constructeur, pas
+de l'applicateur : contact bois-sol, ventilation de sous-face et réservoirs
+(bûches, souches) plutôt que l'essence ; obligations légales confirmées sur
+ecologie.gouv.fr avec les articles **L. 126-4 à L. 126-6, L. 126-24/25 et
+R. 126-2 à R. 126-4** du CCH (numérotation actuelle — ne pas citer les anciens
+L. 133-x). ⚠️ **La date de l'arrêté préfectoral girondin n'est pas vérifiée**
+(les dates qui circulent viennent de sites commerciaux) : la vérifier sur
+`gironde.gouv.fr` ou rester qualitatif, en renvoyant à la cartographie Cerema.
+**(D, saisonnier)** « Abri à bûches »
+(`abri-buches-bois-stockage-sechage`) — créneau « commande du bois pour l'hiver »
+ouvert jusqu'à début octobre ; trois chiffres ADEME vérifiés (humidité < 23 %,
+séchage 18 mois minimum, stockage aéré sans contact avec le sol) et rien d'autre
+à sourcer : c'est le sujet le plus sûr à écrire des quatre.
+
+Ordre suggéré : **A (11/08) → C → D avant fin septembre → B** en bouche-trou alu.
+
 ⚠️ **La réserve alu est presque vide** : il ne reste que **deux** idées —
 entretien d'une pergola / véranda alu (à resserrer sur l'entretien pur, les deux
-produits étant déjà couverts) et clôture alu vs bois (limite séparative,
-occultation, portail assorti). Après elles, **veille web obligatoire**. Créneaux
-**terrasse et carport clos**. Après un transverse (08/08) et un alu pur (10/08),
-le prochain devrait repartir sur le **bois** — mais aucune idée bois n'est en
-réserve : veille web à prévoir dès maintenant côté bois.
+produits étant déjà couverts) et clôture alu vs bois, désormais formalisée en
+proposition B. Créneaux **terrasse et carport clos**. Une fois les quatre
+propositions du 10/08 consommées, la réserve retombe à la seule idée
+« entretien pergola/véranda alu » : **reprogrammer une veille dans deux à trois
+semaines**.
 
 **Créneau précédent (09/08/2026)** : le 08/08 a consommé le sujet imposé
 **carport, angle dimensionnement** sous `dimensions-carport-taille-hauteur`
@@ -427,6 +459,10 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-07 | publié  | Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ? | veranda-ou-extension-ossature-bois |
 | 2026-08-08 | publié  | Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture | dimensions-carport-taille-hauteur |
 | 2026-08-10 | publié  | Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ? | protection-solaire-brise-soleil-orientable |
+| 2026-08-11 | proposé | L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026 | aluminium-ecologique-recyclage-bas-carbone |
+| 2026-08-11 | proposé | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
+| —          | proposé | Termites en Gironde : concevoir un ouvrage bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
+| —          | proposé | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver | abri-buches-bois-stockage-sechage |
 
 ## Idées de sujets en réserve
 

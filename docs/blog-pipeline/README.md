@@ -185,6 +185,22 @@ et l'URL `*.workers.dev`, puis 8 requêtes consécutives toutes en 200 et
 repeuplement du cache edge, comme les 07/08 et 08/08. C'est désormais le
 comportement normal après chaque deploy — ne pas redéployer au premier 404.
 
+⚠️ **Double déclenchement de la tâche planifiée le 10/08/2026 — aucun second
+article publié.** La tâche `article-quotidien-lespritbois` (cron `0 8 * * *`)
+s'est déclenchée une seconde fois à **19h54**, alors que l'article du jour
+(`protection-solaire-brise-soleil-orientable`) était déjà
+publié, déployé et vérifié en 200 à 19h01, et que la veille venait d'être
+committée à 19h50. Vraisemblablement un rattrapage d'occurrence manquée après
+réveil de la machine (le créneau de 8h n'a pas tourné à l'heure ce jour-là).
+**Décision prise : ne rien publier.** Le quota est d'un article par jour, celui
+du 10/08 existe et répond 200 ; publier la proposition A le soir même aurait
+créé deux articles datés du 10/08, laissé le 11/08 vide et consommé la réserve
+d'un cran pour rien. La proposition A reste donc **le sujet du créneau du
+11/08**. Règle pour les prochaines exécutions : avant de rédiger, vérifier la
+date de la première entrée de `lib/data/blog.ts` — si elle est déjà celle du
+jour et que l'URL répond 200, la tâche est un doublon de déclenchement, ne rien
+publier et le signaler.
+
 📌 **Veille alu du 10/08/2026 faite pour ce créneau** —
 `docs/blog-pipeline/2026-08-10.md`, 2 propositions au statut `proposé` :
 **(A, recommandée) « L'aluminium est-il écologique ? »**

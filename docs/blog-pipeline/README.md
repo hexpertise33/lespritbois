@@ -150,7 +150,50 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (09/08/2026)** : le 08/08 a consommé le sujet imposé
+**Prochain créneau (11/08/2026)** : le 10/08 a consommé l'idée alu **brise-soleil
+orientables et protections solaires** sous
+`protection-solaire-brise-soleil-orientable` (aluminium pur ; thèse : une
+protection n'est efficace que posée **dehors, avant le vitrage**, un store
+intérieur ne gérant qu'une chaleur déjà entrée — et c'est l'**orientation de la
+façade** qui décide, pas le catalogue : lame horizontale ou casquette au sud où
+le soleil d'été est haut, toile verticale ou volet à l'ouest où il arrive
+rasant en fin de journée). Sept sections : protection extérieure vs intérieure,
+lecture de la façade, brise-soleil orientable, store screen à zip, brise-soleil
+fixe et casquette, vent/automatismes/entretien, budget et arbitrage avec la
+pergola bioclimatique.
+
+⚠️ **Le créneau du 09/08 n'a pas produit d'article** (dernier commit du 08/08,
+aucune trace d'exécution) : l'article du 10/08 est le suivant dans l'ordre, pas
+un rattrapage du 09.
+
+Prudence factuelle : **aucun** facteur solaire (Sw/Fc), seuil degrés-heures (DH)
+ni classe de vent NF EN 13561 cité. Vérification faite, la page officielle
+RE2020 d'ecologie.gouv.fr **ne détaille pas l'indicateur DH** (elle parle
+seulement d'« une garantie de confort en cas de forte chaleur ») : les seuils
+350/1250 DH ne circulent que sur des sources secondaires — ne pas les citer.
+Trois sources vérifiées seulement : ADEME canicule
+(`agirpourlatransition.ademe.fr/particuliers/proteger-sante/periode-canicule/canicule-comment-garder-logement-frais`),
+RE2020 (qualitatif) et déclaration préalable. Les deux seuls chiffres de
+l'article sont des fourchettes de prix explicitement données comme « constatées
+sur nos propres chantiers en 2026 ».
+
+Le build est repassé normalement dans le dépôt réel, sans recourir au
+contournement `/tmp/iso` (continuer à le vérifier au cas par cas). ⚠️ Encore des
+**404 alternés** sur la première salve de `curl`, en alternance entre le domaine
+et l'URL `*.workers.dev`, puis 8 requêtes consécutives toutes en 200 et
+`npx wrangler deployments status` confirmant la version `6e672860` à 100 % :
+repeuplement du cache edge, comme les 07/08 et 08/08. C'est désormais le
+comportement normal après chaque deploy — ne pas redéployer au premier 404.
+
+⚠️ **La réserve alu est presque vide** : il ne reste que **deux** idées —
+entretien d'une pergola / véranda alu (à resserrer sur l'entretien pur, les deux
+produits étant déjà couverts) et clôture alu vs bois (limite séparative,
+occultation, portail assorti). Après elles, **veille web obligatoire**. Créneaux
+**terrasse et carport clos**. Après un transverse (08/08) et un alu pur (10/08),
+le prochain devrait repartir sur le **bois** — mais aucune idée bois n'est en
+réserve : veille web à prévoir dès maintenant côté bois.
+
+**Créneau précédent (09/08/2026)** : le 08/08 a consommé le sujet imposé
 **carport, angle dimensionnement** sous `dimensions-carport-taille-hauteur`
 (transverse bois + alu ; thèse : la cote qui rate un carport n'est pas la
 longueur mais la hauteur libre sous traverse et le dégagement des portières —
@@ -383,6 +426,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-06 | publié  | Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde | choisir-teinte-ral-aluminium |
 | 2026-08-07 | publié  | Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ? | veranda-ou-extension-ossature-bois |
 | 2026-08-08 | publié  | Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture | dimensions-carport-taille-hauteur |
+| 2026-08-10 | publié  | Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ? | protection-solaire-brise-soleil-orientable |
 
 ## Idées de sujets en réserve
 
@@ -444,8 +488,15 @@ recentrer sur la véranda) :
   d'un profilé rayé). Aucune épaisseur de poudre, durée de garantie ni
   température citée : seuls les chiffres du nuancier RAL Classic, vérifiés par
   WebSearch. Ne pas refaire de sujet « couleur de l'alu ».
-- **Brise-soleil orientables et protections solaires** : alu, stores, et le
-  couple pergola + occultation, angle saisonnier été.
+- ~~**Brise-soleil orientables et protections solaires** : alu, stores, et le
+  couple pergola + occultation, angle saisonnier été.~~ → consommé le 10/08/2026
+  sous `protection-solaire-brise-soleil-orientable` (protection extérieure vs
+  store intérieur, choix par orientation de façade, brise-soleil orientable,
+  store screen à zip, brise-soleil fixe et casquette, tenue au vent et
+  automatismes, entretien des profilés thermolaqués, budgets 2026 « nos
+  chantiers », arbitrage avec la pergola bioclimatique). Aucun facteur solaire,
+  seuil DH ni classe de vent cité. Ne pas refaire de sujet « protéger ses baies
+  du soleil ».
 - **Clôture aluminium vs bois** : durabilité, entretien, coût dans le temps
   (distinct de `cloture-brise-vue-bois-guide`). ⚠️ Le volet **garde-corps** de
   cette idée a été consommé le 03/08/2026 sous

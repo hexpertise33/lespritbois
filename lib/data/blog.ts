@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'aluminium-ecologique-recyclage-bas-carbone',
+    titre:
+      "L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026",
+    extrait:
+      "L'aluminium neuf coûte cher en énergie, l'aluminium recyclé beaucoup moins — et c'est précisément là que la filière française bascule en 2026, avec les objectifs de collecte, de capacité de refonte et de traçabilité annoncés par le SNFA. Ce que cela change vraiment face au bois, qui garde l'avantage à la fabrication quand l'aluminium le reprend sur la durée de vie, l'entretien et la fin de vie, les quatre questions à poser à son installateur et l'arbitrage ouvrage par ouvrage — pergola, carport, garde-corps, véranda — par un artisan qui pose les deux matières à Libourne (Gironde).",
+    date: '2026-08-11',
+    categorie: 'Guide · Aluminium et environnement',
+    image: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+    imageLargeur: 825,
+    imageHauteur: 1100,
+  },
+  {
     slug: 'protection-solaire-brise-soleil-orientable',
     titre:
       'Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ?',

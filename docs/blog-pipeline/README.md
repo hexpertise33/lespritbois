@@ -150,7 +150,60 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (11/08/2026)** : le 10/08 a consommé l'idée alu **brise-soleil
+**Prochain créneau (12/08/2026)** : le 11/08 a consommé la **proposition A** de la
+veille du 10/08 sous `aluminium-ecologique-recyclage-bas-carbone` (aluminium pur ;
+thèse : l'aluminium neuf coûte cher en énergie, le recyclé beaucoup moins, et la
+filière française bascule en 2026 — mais cela n'en fait pas l'égal du bois sur le
+carbone : on choisit une matière là où elle dure le plus longtemps sans être
+remplacée, pas pour son étiquette). Sept sections : réponse en une minute,
+primaire vs recyclé, filière française 2026, comparaison bois/alu sur quatre
+critères, notre position d'artisan qui pose les deux, questions à poser à son
+installateur, arbitrage par ouvrage en Gironde.
+
+⚠️ **Le « 95 % d'énergie économisée par le recyclage » est un faux ami — point
+tranché, ne pas rouvrir.** La veille du 10/08 l'avait laissé « non vérifié ». La
+vérification du 11/08 le tranche : le chiffre figure bien sur une page ADEME
+(`infos.ademe.fr`, mars 2026) mais la phrase « leur recyclage permet de diminuer
+de 95 % l'énergie requise par rapport à une production primaire » porte sur les
+**superalliages** (base nickel, cobalt, titane), **pas sur l'aluminium**. Ne
+jamais l'attribuer à l'alu. L'article s'en tient à une formulation qualitative
+(« une fraction de l'énergie nécessaire à l'électrolyse de la bauxite »), sans
+pourcentage ni lien.
+
+Tous les chiffres de filière sont attribués nommément au **SNFA**, sur deux
+sources vérifiées (`bati.zepros.fr` du 04/02/2026 et `batiactu.com` du
+30/01/2026) : 96 % des menuiseries en fin de vie collectées, 200 000 t/an de
+capacité visée dès 2026, 100 % des menuiseries déposées d'ici 2030, Coralium
+(40 000 t à horizon 2027) et Aluminium Group Solution (80 000 t/an),
+éco-modulation AGEC à partir de 40 % de recyclé, Alu+C− à partir de 30 % pour les
+fenêtres, mention RSE des labels `fenêtrealu`/`façadealu` annoncée pour juin 2026.
+Aucun kg CO₂/kg, aucun Uw, aucun DTU, aucun seuil RE2020 chiffré (RE2020 citée
+qualitativement).
+
+⚠️ **Le blocage iCloud s'est manifesté ce 11/08, pour la première fois depuis le
+04/08.** `npm run build` dans le dépôt réel est resté 10 minutes sur « Creating an
+optimized production build » sans écrire une seule fois dans `.next`, avec un
+backlog `brctl` confirmé sous `/Documents/projet`. Le contournement documenté plus
+bas a fonctionné intégralement : clone `/tmp/iso`, **vrai `npm install`** (plus
+`npm approve-scripts esbuild fsevents sharp workerd`, nécessaire et à faire paquet
+par paquet — `--allow-scripts-pending` est interactif et ne passe pas en tâche
+planifiée), build, puis `npm run deploy` depuis le clone. Les fichiers non encore
+committés doivent être **copiés à la main dans le clone** (`git clone` ne prend
+que le committé). Continuer à tester le dépôt réel d'abord : le blocage est
+intermittent.
+
+Après le deploy, un **seul 404 isolé** sur l'URL `*.workers.dev` au premier essai,
+puis 7 salves consécutives toutes en 200 sur les deux hôtes, version `67a533e0`
+confirmée à 100 %. Comportement normal de repeuplement du cache edge.
+
+**Réserve après ce créneau** : il reste les propositions **C** (termites en
+Gironde, la meilleure), **D** (abri à bûches, saisonnier — créneau ouvert
+jusqu'à début octobre) et **B** (clôture aluminium, repli alu), toutes détaillées
+dans `docs/blog-pipeline/2026-08-10.md`, plus l'idée « entretien pergola/véranda
+alu ». Ordre suggéré : **C → D avant fin septembre → B**. Après quoi, veille web
+obligatoire.
+
+**Créneau précédent (11/08/2026)** : le 10/08 a consommé l'idée alu **brise-soleil
 orientables et protections solaires** sous
 `protection-solaire-brise-soleil-orientable` (aluminium pur ; thèse : une
 protection n'est efficace que posée **dehors, avant le vitrage**, un store
@@ -475,7 +528,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-07 | publié  | Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ? | veranda-ou-extension-ossature-bois |
 | 2026-08-08 | publié  | Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture | dimensions-carport-taille-hauteur |
 | 2026-08-10 | publié  | Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ? | protection-solaire-brise-soleil-orientable |
-| 2026-08-11 | proposé | L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026 | aluminium-ecologique-recyclage-bas-carbone |
+| 2026-08-11 | publié  | L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026 | aluminium-ecologique-recyclage-bas-carbone |
 | 2026-08-11 | proposé | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
 | —          | proposé | Termites en Gironde : concevoir un ouvrage bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
 | —          | proposé | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver | abri-buches-bois-stockage-sechage |

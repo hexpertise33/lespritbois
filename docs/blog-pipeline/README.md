@@ -2,6 +2,36 @@
 
 Mémoire de la routine de publication (2 articles/semaine, **mardi & jeudi**).
 
+---
+
+## 🛑 À LIRE AVANT TOUTE RÉDACTION — le créneau est-il déjà servi ?
+
+**Des articles peuvent avoir été écrits À L'AVANCE, plusieurs jours avant leur
+date.** C'est arrivé le 11/08/2026 : David a demandé dans la même soirée les
+articles du 12/08 et du 13/08, tous deux rédigés, déployés et vérifiés en 200 ce
+soir-là. Le tableau « Sujets » fait foi.
+
+**Test à faire en premier, avant de choisir un sujet :**
+
+1. Y a-t-il, **n'importe où** dans `lib/data/blog.ts` (pas seulement en première
+   position), une entrée dont la `date` est **celle du jour** ?
+2. Si oui, son URL `https://lesprit-bois.fr/blog/<slug>` répond-elle **200** ?
+
+**Si les deux réponses sont oui : NE RIEN PUBLIER.** Le créneau du jour est déjà
+servi. Signale-le dans ton résumé et arrête-toi là. Le quota est d'un article par
+jour ; en publier un second créerait deux articles à la même date.
+
+⚠️ **Ne teste pas seulement la première entrée du tableau.** C'était la règle
+écrite après le double déclenchement du 10/08, et elle est **insuffisante** : dès
+qu'un article est écrit en avance, la première entrée porte une date *future*, le
+test échoue, et la tâche publie un article en trop. C'est la date recherchée dans
+tout le tableau qui compte, pas la position.
+
+Si aucune entrée ne porte la date du jour, le créneau est libre : déroule la
+routine normalement.
+
+---
+
 ## Routine planifiée — publication quotidienne automatique
 
 Depuis le 26/07/2026, le blog fonctionne en **auto-publication quotidienne, sans
@@ -150,7 +180,52 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (13/08/2026)** : ⚠️ **le créneau du 12/08 est déjà servi.**
+**Prochain créneau (14/08/2026)** : ⚠️ **les créneaux du 12/08 ET du 13/08 sont
+déjà servis** — voir le bloc en tête de fichier. Dans la soirée du 11/08, David a
+demandé successivement l'article termites « pour demain » puis l'article clôture
+alu « pour le 13 » : les deux ont été rédigés, illustrés, buildés, déployés et
+vérifiés en 200 le 11/08 au soir. **Les runs planifiés du 12/08 et du 13/08 ne
+doivent donc rien publier.** Le prochain article à produire est celui du
+**14/08**.
+
+Le 13/08 a consommé la **proposition B** sous
+`cloture-aluminium-lames-occultantes-guide` (aluminium pur ; thèse : une clôture
+alu se choisit sur son taux d'occultation et sa prise au vent, pas sur son profil
+— c'est ce couple qui décide de la hauteur tenable, du nombre de poteaux et du
+scellement). Angle resserré comme exigé : la réglementation renvoie à
+`cloture-brise-vue-bois-guide` sans re-chiffrer, le comparatif matière à
+`garde-corps-terrasse-aluminium-ou-bois` sans le refaire, le nuancier à
+`choisir-teinte-ral-aluminium`. Aucune classe de vent, aucun DTU, aucun Eurocode,
+aucune hauteur réglementaire, aucune profondeur de scellement normative ; un seul
+lien externe (service-public F17578).
+
+⚠️ **Constat images à retenir : Pexels n'a pas de clôture aluminium exploitable.**
+Le dépôt n'en a aucune non plus (confirmé). Deux lancements successifs de
+l'iconographe sont morts sur erreur API après avoir tourné en rond sur la
+recherche d'images, sans rien écrire — le sourcing a fini par être fait à la
+main. Ce qui existe d'utilisable sur Pexels : des lames métalliques à contre-jour
+(photo 29674354), un barreaudage noir en enfilade (33903903), une clôture
+métallique occultante entre piliers (12191313). En revanche **rien d'honnête sur
+le pied de poteau/scellement ni sur la clôture en pente** : ces motifs ne
+renvoient que des clôtures rurales en bois ou du barbelé, hors sujet sur un
+article alu. Le visuel « pente » a donc été **supprimé** plutôt que forcé —
+l'article tient à cinq images, dans la fourchette de la charte. À refaire pareil
+la prochaine fois : mieux vaut une image de moins qu'une image fausse.
+
+⚠️ Un `git push` a échoué en cours de route (« remote end hung up »), **alors que
+le deploy, lui, était déjà parti** : la prod avait l'article mais pas le remote.
+Le push a été relancé et rattrapé. À surveiller : chaîner push et deploy avec
+`|` puis `&&` masque l'échec du push (le code de retour est celui de `tail`).
+Vérifier `git rev-parse HEAD` contre `origin/main` après publication.
+
+**Réserve après ce créneau** : il ne reste que **D** (abri à bûches, saisonnier —
+créneau ouvert jusqu'à début octobre, le plus sûr à écrire, trois chiffres ADEME
+vérifiés) dans `docs/blog-pipeline/2026-08-10.md`, et l'idée « entretien
+pergola/véranda alu » (à resserrer sur l'entretien pur). Après un alu le 13/08,
+le 14/08 peut prendre **D**. Ensuite la réserve est vide : **veille web
+obligatoire**.
+
+**Créneau précédent (13/08/2026)** : ⚠️ **le créneau du 12/08 était déjà servi.**
 David a demandé le 11/08 en fin de journée d'écrire « l'article termites pour
 demain » : la **proposition C** a donc été rédigée, illustrée, buildée, poussée et
 déployée le 11/08 au soir, **datée du 12/08**, sous
@@ -297,10 +372,13 @@ réveil de la machine (le créneau de 8h n'a pas tourné à l'heure ce jour-là)
 du 10/08 existe et répond 200 ; publier la proposition A le soir même aurait
 créé deux articles datés du 10/08, laissé le 11/08 vide et consommé la réserve
 d'un cran pour rien. La proposition A reste donc **le sujet du créneau du
-11/08**. Règle pour les prochaines exécutions : avant de rédiger, vérifier la
-date de la première entrée de `lib/data/blog.ts` — si elle est déjà celle du
-jour et que l'URL répond 200, la tâche est un doublon de déclenchement, ne rien
-publier et le signaler.
+11/08**. Règle pour les prochaines exécutions : voir le bloc « **Le créneau
+est-il déjà servi ?** » en tête de ce fichier. ⚠️ La règle écrite ici le 10/08
+(« vérifier la date de la **première** entrée de `lib/data/blog.ts` ») a été
+**corrigée le 11/08** : elle ne tient pas dès qu'un article est écrit à l'avance,
+puisque la première entrée porte alors une date future. C'est la présence d'une
+entrée **à la date du jour, n'importe où dans le tableau**, avec une URL en 200,
+qui doit arrêter la tâche.
 
 📌 **Veille alu du 10/08/2026 faite pour ce créneau** —
 `docs/blog-pipeline/2026-08-10.md`, 2 propositions au statut `proposé` :
@@ -577,7 +655,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-08 | publié  | Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture | dimensions-carport-taille-hauteur |
 | 2026-08-10 | publié  | Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ? | protection-solaire-brise-soleil-orientable |
 | 2026-08-11 | publié  | L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026 | aluminium-ecologique-recyclage-bas-carbone |
-| 2026-08-11 | proposé | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
+| 2026-08-13 | publié  | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
 | 2026-08-12 | publié  | Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
 | —          | proposé | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver | abri-buches-bois-stockage-sechage |
 

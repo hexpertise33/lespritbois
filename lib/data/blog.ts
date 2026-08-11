@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'cloture-aluminium-lames-occultantes-guide',
+    titre:
+      'Clôture en aluminium : lames occultantes, limite séparative et raccord au portail, le guide en Gironde',
+    extrait:
+      "Une clôture en aluminium se choisit sur son taux d'occultation et sur sa prise au vent, pas sur son profil : c'est ce couple-là qui décide de la hauteur tenable, du nombre de poteaux et du type de scellement. Occulter seulement là où c'est utile, choisir entre lames pleines, espacées, ajourées ou orientables, dimensionner l'ancrage pour l'occultation réellement retenue, accorder la teinte au portail et aux menuiseries et rattraper une pente : le guide d'un artisan à Libourne (Gironde), avec nos fourchettes 2026 au mètre linéaire.",
+    date: '2026-08-13',
+    categorie: 'Guide · Clôture aluminium',
+    image:
+      '/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-occultante-limite-propriete.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 901,
+  },
+  {
     slug: 'termites-gironde-ouvrage-bois-prevention',
     titre:
       'Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert',

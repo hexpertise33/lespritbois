@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'termites-gironde-ouvrage-bois-prevention',
+    titre:
+      'Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert',
+    extrait:
+      "Les termites ne s'attaquent pas au bois parce qu'il est en bois, mais parce qu'il est humide, au contact du sol et jamais ventilé : trois défauts de pose que nous voyons bien plus souvent que des essences mal choisies. La Gironde étant déclarée totalement termitée par arrêté préfectoral du 12 février 2001, voici le point de vue du constructeur — rupture de capillarité et sabots de poteaux, ventilation de sous-face, réservoirs de cellulose à supprimer au jardin, ce que les classes d'emploi et les traitements font vraiment, et vos obligations légales — par un artisan à Libourne (Gironde).",
+    date: '2026-08-12',
+    categorie: 'Guide · Bois et termites',
+    image: '/images/terrasse-bois-plots-gironde-3.webp',
+    imageLargeur: 1000,
+    imageHauteur: 1333,
+  },
+  {
     slug: 'aluminium-ecologique-recyclage-bas-carbone',
     titre:
       "L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026",

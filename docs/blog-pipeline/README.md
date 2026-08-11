@@ -150,7 +150,55 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (12/08/2026)** : le 11/08 a consommé la **proposition A** de la
+**Prochain créneau (13/08/2026)** : ⚠️ **le créneau du 12/08 est déjà servi.**
+David a demandé le 11/08 en fin de journée d'écrire « l'article termites pour
+demain » : la **proposition C** a donc été rédigée, illustrée, buildée, poussée et
+déployée le 11/08 au soir, **datée du 12/08**, sous
+`termites-gironde-ouvrage-bois-prevention` (bois ; thèse : les termites ne
+s'attaquent pas au bois parce qu'il est en bois, mais parce qu'il est humide, au
+contact du sol et jamais ventilé — trois défauts de pose qu'on voit plus souvent
+que des essences mal choisies). Point de vue du **constructeur, pas de
+l'applicateur** : la limite de métier est dite explicitement dans l'article (pas
+de curatif, renvoi à un professionnel certifié et à un diagnostiqueur accrédité
+Cofrac). Sept sections : ce qui attire vraiment les termites, contact bois-sol,
+ventilation de sous-face, réservoirs de cellulose au jardin, essences/classes
+d'emploi/traitements, obligations légales, règles de pose en Gironde.
+
+➡️ **Conséquence pour le run planifié du 12/08 à 8h : il ne doit rien publier.**
+La première entrée de `lib/data/blog.ts` porte déjà la date du 12/08 et l'URL
+répond 200 — c'est exactement le cas prévu par la règle du double déclenchement
+consignée pour le 10/08. Le run doit le constater et s'arrêter. Le prochain
+article à produire est donc celui du **13/08**.
+
+✅ **Point réglementaire levé (celui que la veille avait laissé ouvert).** La date
+de l'arrêté préfectoral girondin est désormais **vérifiée à la source**, sur le
+site des services de l'État en Gironde : arrêté du **12 février 2001** instituant
+une zone de surveillance et de lutte contre les termites, et **département
+déclaré « totalement termité »** — toute la Gironde, pas seulement certaines
+communes. C'est l'ancrage local le plus fort dont dispose le blog, réutilisable.
+Il n'existe **pas** d'arrêté préfectoral mérules en Gironde. Autres faits
+vérifiés et utilisés : information obligatoire de la mairie dès détection, état
+relatif à la présence de termites valable **6 mois** et réalisé par une personne
+certifiée par un organisme accrédité **Cofrac**, bois de démolition contaminés
+incinérés sur place ou traités avant transport. Références citées en numérotation
+actuelle — **L. 126-4 à L. 126-6, L. 126-24 et L. 126-25, R. 126-2 à R. 126-4,
+R. 131-1 à R. 131-3** — jamais en L. 133-x. Aucun taux d'infestation, coût de
+traitement, durée de garantie, DTU ni nom de produit dans l'article.
+
+Le dépôt réel était **de nouveau bloqué par iCloud** ce 11/08 au soir (deuxième
+fois dans la même journée, `.next` sans aucune écriture, log vide) : contournement
+`/tmp/iso` appliqué d'emblée pour le build et le deploy. Après deploy, un **seul
+404 isolé** sur `*.workers.dev` au premier essai puis 5 salves toutes en 200 sur
+les deux hôtes, version `f8953da8` confirmée à 100 %, IndexNow pingué.
+
+**Réserve après ce créneau** : il reste **D** (abri à bûches, saisonnier —
+créneau ouvert jusqu'à début octobre, le plus sûr à écrire, trois chiffres ADEME
+vérifiés) et **B** (clôture aluminium, repli alu), détaillées dans
+`docs/blog-pipeline/2026-08-10.md`, plus l'idée « entretien pergola/véranda alu ».
+Après un article bois le 12/08, le **13/08 devrait repartir sur l'aluminium** →
+B. Puis D avant fin septembre. Ensuite, **veille web obligatoire**.
+
+**Créneau précédent (12/08/2026)** : le 11/08 a consommé la **proposition A** de la
 veille du 10/08 sous `aluminium-ecologique-recyclage-bas-carbone` (aluminium pur ;
 thèse : l'aluminium neuf coûte cher en énergie, le recyclé beaucoup moins, et la
 filière française bascule en 2026 — mais cela n'en fait pas l'égal du bois sur le
@@ -530,7 +578,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-10 | publié  | Brise-soleil orientable ou store extérieur : quelle protection solaire pour vos baies vitrées en Gironde ? | protection-solaire-brise-soleil-orientable |
 | 2026-08-11 | publié  | L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026 | aluminium-ecologique-recyclage-bas-carbone |
 | 2026-08-11 | proposé | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
-| —          | proposé | Termites en Gironde : concevoir un ouvrage bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
+| 2026-08-12 | publié  | Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
 | —          | proposé | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver | abri-buches-bois-stockage-sechage |
 
 ## Idées de sujets en réserve

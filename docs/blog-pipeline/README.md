@@ -180,7 +180,52 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (14/08/2026)** : ⚠️ **les créneaux du 12/08 ET du 13/08 sont
+**Prochain créneau (15/08/2026)** : ⚠️ **la réserve est VIDE — veille web
+obligatoire avant le prochain article.** Les créneaux du 12/08, 13/08 **et
+14/08** sont tous servis, les trois articles ayant été écrits en avance.
+
+Le 14/08 a consommé la **proposition D**, dernière de la réserve, sous
+`abri-buches-bois-stockage-sechage` (bois ; thèse : un abri à bûches ne protège
+pas le bois de l'eau, il le fait sécher — c'est la ventilation qui fait passer
+la bûche sous le seuil d'humidité utile, pas la couverture, et un abri fermé sur
+ses quatre côtés fait pourrir le bois). Sept sections : ce que l'abri doit faire,
+le seuil d'humidité, les cinq règles de conception (toit débordant, côtés
+ajourés, pile surélevée, orientation au vent, profondeur limitée),
+dimensionnement sur deux campagnes de séchage, adossé/autoportant/intégré au
+carport, implantation loin du mur de la maison (pont vers l'article termites),
+kit ou sur-mesure et budget. **Rédigé et publié le 12/08 au soir**, à la demande
+de David (« écris quand même l'article du 14/08 maintenant »), après que le run
+planifié du 12/08 se soit arrêté sans rien publier.
+
+Prudence factuelle : les **seuls** chiffres extérieurs sont les trois données
+ADEME vérifiées en veille (humidité < 23 %, séchage 18 mois minimum après la
+coupe, stockage aéré sans contact avec le sol), citées avec leur lien. **Aucune**
+conversion stère / m³ apparent / consommation annuelle, aucun prix du bois de
+chauffage, aucun rendement de poêle, aucune durée de vie chiffrée de l'abri
+(traitée par trois choix de conception), aucun seuil d'urbanisme re-détaillé
+(renvoi à l'article dédié). Le budget est une fourchette volontairement large
+« constatée sur nos propres chantiers en 2026 ». Deux liens externes seulement :
+ADEME et FCBA (qualitatif, sur la durabilité des essences).
+
+Images : le dépôt n'a **aucune** photo d'abri à bûches (confirmé) — cover et deux
+figures en libre de droits (Pexels 2890, 97259, 13922054, licence Pexels,
+**sans aucune géolocalisation**), plus deux vraies photos de chantier girondines
+sur des principes transposables (carport bois en appentis pour la structure
+adossée, plancher sur plots pour la surélévation), légendées comme telles sans
+laisser croire qu'il s'agit d'abris à bûches. L'iconographe n'a pas trouvé de
+détail « poteau sur sabot » exploitable en interne et a préféré la photo de plots
+réglables plutôt qu'une image de banque faussement présentée comme un chantier —
+même arbitrage que le 13/08.
+
+Build passé normalement dans le dépôt réel, sans recourir au contournement
+`/tmp/iso`. Après deploy : **un seul 404 isolé** sur le domaine au premier essai
+puis 9 requêtes consécutives en 200 sur les deux hôtes, version `ee3e8e96`
+confirmée à 100 %, IndexNow pingué (200). Comportement de cache edge habituel.
+
+➡️ **Les runs planifiés du 13/08 et du 14/08 ne doivent rien publier** : leurs
+créneaux sont servis, le test de tête de fichier doit les arrêter.
+
+**Créneau précédent (14/08/2026)** : ⚠️ **les créneaux du 12/08 ET du 13/08 sont
 déjà servis** — voir le bloc en tête de fichier. Dans la soirée du 11/08, David a
 demandé successivement l'article termites « pour demain » puis l'article clôture
 alu « pour le 13 » : les deux ont été rédigés, illustrés, buildés, déployés et
@@ -218,12 +263,12 @@ Le push a été relancé et rattrapé. À surveiller : chaîner push et deploy a
 `|` puis `&&` masque l'échec du push (le code de retour est celui de `tail`).
 Vérifier `git rev-parse HEAD` contre `origin/main` après publication.
 
-**Réserve après ce créneau** : il ne reste que **D** (abri à bûches, saisonnier —
-créneau ouvert jusqu'à début octobre, le plus sûr à écrire, trois chiffres ADEME
-vérifiés) dans `docs/blog-pipeline/2026-08-10.md`, et l'idée « entretien
-pergola/véranda alu » (à resserrer sur l'entretien pur). Après un alu le 13/08,
-le 14/08 peut prendre **D**. Ensuite la réserve est vide : **veille web
-obligatoire**.
+**Réserve après ce créneau** : ⚠️ **D a été consommée le 14/08** (voir plus
+haut). Les quatre propositions de `docs/blog-pipeline/2026-08-10.md` sont donc
+toutes publiées. Il ne subsiste que l'idée « **entretien pergola / véranda alu** »
+(à resserrer sur l'entretien pur, les deux produits étant déjà couverts) — une
+seule idée pour un seul créneau. **Veille web obligatoire dès le prochain
+article.**
 
 **Créneau précédent (13/08/2026)** : ⚠️ **le créneau du 12/08 était déjà servi.**
 David a demandé le 11/08 en fin de journée d'écrire « l'article termites pour
@@ -665,7 +710,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-11 | publié  | L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026 | aluminium-ecologique-recyclage-bas-carbone |
 | 2026-08-13 | publié  | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
 | 2026-08-12 | publié  | Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
-| —          | proposé | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver | abri-buches-bois-stockage-sechage |
+| 2026-08-14 | publié  | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon) | abri-buches-bois-stockage-sechage |
 
 ## Idées de sujets en réserve
 

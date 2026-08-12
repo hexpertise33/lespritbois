@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'abri-buches-bois-stockage-sechage',
+    titre:
+      "Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon)",
+    extrait:
+      "Un bon abri à bûches ne protège pas le bois de l'eau, il le fait sécher : c'est la ventilation, pas la couverture, qui fait passer une bûche sous le seuil d'humidité utile — et un abri fermé sur ses quatre côtés fait pourrir le bois au lieu de le sécher. Les cinq règles de conception qui marchent, comment dimensionner son abri sur deux campagnes de séchage, où l'implanter — jamais contre le mur de la maison — et ce que ça coûte vraiment : le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-14',
+    categorie: 'Guide · Abri à bûches',
+    image:
+      '/images/blog/abri-buches-bois-stockage-sechage/abri-buches-bois-buches-empilees-sous-toit.jpg',
+    imageLargeur: 1200,
+    imageHauteur: 796,
+  },
+  {
     slug: 'cloture-aluminium-lames-occultantes-guide',
     titre:
       'Clôture en aluminium : lames occultantes, limite séparative et raccord au portail, le guide en Gironde',

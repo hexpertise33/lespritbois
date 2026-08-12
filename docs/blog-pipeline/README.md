@@ -180,9 +180,94 @@ bois (angle décision). ⚠️ La réserve alu se vide : après ces quatre idée
 faudra repasser par une veille web. Le créneau **terrasse reste clos** (cinq
 articles).
 
-**Prochain créneau (15/08/2026)** : ⚠️ **la réserve est VIDE — veille web
-obligatoire avant le prochain article.** Les créneaux du 12/08, 13/08 **et
-14/08** sont tous servis, les trois articles ayant été écrits en avance.
+**Prochain créneau (16/08/2026)** : ⚠️ **les créneaux du 12/08, 13/08, 14/08 ET
+15/08 sont tous servis**, les quatre articles ayant été écrits en avance dans la
+journée du 12/08. Les runs planifiés du 13, 14 et 15/08 ne doivent **rien
+publier** — le test de tête de fichier doit les arrêter.
+
+Le 15/08 a consommé la **proposition A** de la veille du 12/08 sous
+`entretien-aluminium-pergola-veranda-revision-automne` (aluminium pur ; thèse :
+un ouvrage en alu ne s'entretient pas vraiment, il se surveille — le
+thermolaquage ne demande qu'un lavage à l'eau savonneuse, et ce qui lâche ce sont
+les évacuations bouchées, les joints fatigués et la motorisation que personne n'a
+jamais regardée ; la seule intervention qui compte avant l'hiver est de dégager
+les chéneaux avant la chute des feuilles). Sept sections : ce que l'alu demande
+vraiment, laver sans décaper, évacuations d'eau, organes mobiles (lames, stores
+zip, coulissants), motorisation et capteurs, joints et raccord à la maison,
+calendrier de révision. **Solde la dernière idée de la réserve aluminium**,
+enfin resserrée sur l'entretien pur : les produits pergola et véranda ne sont pas
+refaits, l'article y renvoie.
+
+Prudence factuelle : aucune durée de garantie, aucun label chiffré
+(Qualicoat/Qualimarine en mention qualitative), aucune épaisseur de poudre, aucun
+DTU, aucune norme, aucune fréquence normative — les rythmes sont donnés comme
+**nos habitudes de chantier**, avec un paragraphe qui le dit explicitement. Aucun
+produit d'entretien commercial nommé. Limite de métier posée noir sur blanc
+(moteur, coffret, câblage → installateur ou électricien qualifié), comme
+l'article termites le fait pour le curatif. **Aucun lien externe** : aucune source
+de la liste blanche n'étayait le propos, et rien n'a été inventé.
+
+✅ **Le pari « images » de la veille a payé** : les 5 visuels sont de vraies photos
+de chantier **déjà présentes au dépôt** (`realisations/pergola-aluminium-*` et
+`terrasse-bois-pergola-aluminium-libourne-7`, chantier de Saint-Pey-de-Castets),
+sans un seul téléchargement ni aucune recherche web — donc sans le risque qui
+avait fait échouer deux lancements d'iconographe le 13/08. Cover inédite :
+`realisations/pergola-aluminium-terrasse-bois-libourne-1.webp`, seule photo alu
+en paysage 16:9 du lot. Les 4 autres sont en portrait 825 × 1100 : l'article a
+donc des figures hautes, format déjà employé ailleurs, sans blocage.
+
+⚠️ **Provenance des visuels `source-adefrance/Pergolas-aluminium-*` — la note
+mémoire est incomplète.** L'iconographe a constaté que le logo « LI-SU DES
+TEMPS » est incrusté non seulement sur `Pergolas-aluminium-Libourne-1` (le seul
+signalé jusqu'ici) mais **aussi sur `-2` et `-6`** : toute la série est donc
+suspecte d'être fournisseur, pas chantier maison. Aucun de ces fichiers n'a été
+utilisé ici. À vérifier avant de présenter l'un d'eux comme une réalisation.
+
+Build passé normalement dans le dépôt réel, sans contournement `/tmp/iso`. Après
+deploy : **12 requêtes en 200 d'emblée sur les deux hôtes, aucun 404** — c'est la
+première fois depuis le 07/08 que le repeuplement du cache edge ne se manifeste
+pas. Version `89708b62` confirmée à 100 %, IndexNow pingué (200).
+
+**Créneau précédent (15/08/2026)** : ⚠️ Les créneaux du 12/08, 13/08 **et 14/08**
+sont tous servis, les trois articles ayant été écrits en avance.
+
+📌 **Veille du 12/08/2026 faite pour ce créneau** —
+`docs/blog-pipeline/2026-08-12.md`, 2 propositions au statut `proposé` :
+**(A, recommandée)** « La révision d'avant-automne des ouvrages en aluminium »
+(`entretien-aluminium-pergola-veranda-revision-automne`), qui solde enfin la
+dernière idée de la réserve alu, resserrée sur l'**entretien pur** ; saisonnière
+(la révision se fait avant la chute des feuilles), et surtout **la seule dont les
+5-6 images sont toutes disponibles en interne** — zéro dépendance à Pexels, alors
+que les deux derniers articles ont buté là-dessus. **(B)** « Bureau de jardin en
+bois » (`bureau-jardin-bois-studio-reglementation-budget`), sujet de rentrée
+jamais traité et pourtant dans notre offre (`/constructions-bois` cite « bureau
+de jardin ») ; son apport neuf est la **taxe d'aménagement**, absente de tout le
+blog — valeurs 2026 vérifiées sur service-public F23263 (892 €/m² hors IDF,
+1 011 €/m² IDF depuis le 01/01/2026, exonération ≤ 5 m², et une **pergola non
+close n'est pas taxable quelle que soit sa surface**).
+
+⚠️ **Portail aluminium écarté, et c'est délibéré.** La veille web en faisait le
+meilleur créneau alu de 2026, mais **le portail n'est pas dans notre offre** :
+les pages services listent terrasses, pool houses, plage de piscine, abris de
+jardin, cuisines d'été, claustras/bardages, carports, pergolas et constructions
+bois. Ne pas le proposer tant que David n'a pas confirmé que nous en posons.
+
+⚠️ **Nouveau faux ami réglementaire — ne pas le rattacher à une maison
+individuelle.** Le **décret n° 2026-674 du 27 juillet 2026** modifie
+l'article R. 421-19 sur les **lotissements** (voies et équipements communs à
+plusieurs lots à bâtir). Il ne concerne pas un abri, un carport ni une annexe sur
+parcelle privée. Même piège que le décret n° 2026-16 tranché le 28/07.
+
+ℹ️ **Réserve après cette veille** : A ayant été publiée le 15/08, il reste **B**
+(bureau de jardin en bois, sujet de **rentrée** — à écrire début septembre, son
+apport neuf étant la **taxe d'aménagement**, absente de tout le blog) et l'idée
+**cuisine d'été** repérée au passage — explicitement dans l'offre
+(`/amenagement-exterieur`), jamais traitée, mais à programmer vers
+**février-mars** (saison mal placée en août). Après B, la réserve retombe à cette
+seule idée hors saison : **reprogrammer une veille d'ici deux à trois semaines**.
+
+**État avant la veille** : la réserve était **vide**, les quatre propositions du
+10/08 étant toutes publiées.
 
 Le 14/08 a consommé la **proposition D**, dernière de la réserve, sous
 `abri-buches-bois-stockage-sechage` (bois ; thèse : un abri à bûches ne protège
@@ -711,6 +796,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-13 | publié  | Clôture en aluminium : lames occultantes, limite séparative et raccord au portail | cloture-aluminium-lames-occultantes-guide |
 | 2026-08-12 | publié  | Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
 | 2026-08-14 | publié  | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon) | abri-buches-bois-stockage-sechage |
+| 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
+| —          | proposé | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 
 ## Idées de sujets en réserve
 

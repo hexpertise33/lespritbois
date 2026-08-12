@@ -240,10 +240,18 @@ ventilation de sous-face, réservoirs de cellulose au jardin, essences/classes
 d'emploi/traitements, obligations légales, règles de pose en Gironde.
 
 ➡️ **Conséquence pour le run planifié du 12/08 à 8h : il ne doit rien publier.**
-La première entrée de `lib/data/blog.ts` porte déjà la date du 12/08 et l'URL
+Une entrée de `lib/data/blog.ts` porte déjà la date du 12/08 et l'URL
 répond 200 — c'est exactement le cas prévu par la règle du double déclenchement
 consignée pour le 10/08. Le run doit le constater et s'arrêter. Le prochain
 article à produire est donc celui du **13/08**.
+
+✅ **Constaté le 12/08/2026 à 8h33 : le run planifié s'est bien arrêté sans rien
+publier.** Le test de tête de fichier a fonctionné tel que corrigé le 11/08 : la
+recherche porte sur **toute** la table (l'entrée du 12/08 est en 2ᵉ position,
+derrière celle du 13/08, écrite en avance), et
+`https://lesprit-bois.fr/blog/termites-gironde-ouvrage-bois-prevention` a
+répondu 200 sur trois salves. Le prochain créneau à produire reste le **14/08**
+(sujet pressenti : **D**, abri à bûches), le 13/08 étant lui aussi déjà servi.
 
 ✅ **Point réglementaire levé (celui que la veille avait laissé ouvert).** La date
 de l'arrêté préfectoral girondin est désormais **vérifiée à la source**, sur le

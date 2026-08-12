@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'entretien-aluminium-pergola-veranda-revision-automne',
+    titre:
+      "Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne (et ce qui casse quand on l'oublie)",
+    extrait:
+      "Un ouvrage en aluminium ne s'entretient pas vraiment, il se surveille : le thermolaquage ne demande qu'un lavage à l'eau savonneuse, et ce qui lâche sur nos chantiers, ce sont les évacuations d'eau bouchées, les joints fatigués et la motorisation que personne n'a jamais regardée. La seule intervention qui compte avant l'hiver — dégager les chéneaux avant la chute des feuilles —, les gestes qui abîment un profilé, les symptômes qui doivent alerter, où s'arrête le bricolage sur un moteur et notre calendrier de révision : le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-15',
+    categorie: 'Guide · Entretien aluminium',
+    image: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    imageLargeur: 1600,
+    imageHauteur: 900,
+  },
+  {
     slug: 'abri-buches-bois-stockage-sechage',
     titre:
       "Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon)",

@@ -371,7 +371,7 @@ const ETAPES = [
 const GALERIE = [
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-2.webp',
-    alt: 'Carport bois adossé à la façade au coucher du soleil, charpente apparente, Libourne',
+    alt: "Carport bois adossé à la façade au coucher du soleil, charpente apparente, à Lugon-et-l'Île-du-Carnay",
     legende: 'Charpente adossée, contre-jour de fin de journée',
   },
   {
@@ -386,7 +386,7 @@ const GALERIE = [
   },
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-5.webp',
-    alt: 'Carport bois avec toiture bac acier près de Libourne',
+    alt: 'Carport bois avec toiture bac acier, à Lagorce',
     legende: 'Grande charpente bois, toiture bac acier',
   },
   {
@@ -699,7 +699,7 @@ export default function CarportsPage() {
                     decoding="async"
                     className="w-full h-full object-cover"
                     src="/images/source-adefrance/Carport-bois-Libourne-5.webp"
-                    alt="Carport bois de grande portée avec toiture bac acier près de Libourne"
+                    alt="Carport bois de grande portée avec toiture bac acier, chantier à Lagorce"
                   />
                 </div>
               </div>
@@ -759,7 +759,7 @@ export default function CarportsPage() {
                     decoding="async"
                     className="w-full h-full object-cover"
                     src="/images/source-adefrance/Carport-aluminium-Libourne-4.webp"
-                    alt="Carport aluminium anthracite abritant deux voitures, structure sur mesure en Gironde"
+                    alt="Carport aluminium anthracite abritant deux voitures, structure sur mesure"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
@@ -770,7 +770,7 @@ export default function CarportsPage() {
                     decoding="async"
                     className="w-full h-full object-cover"
                     src="/images/source-adefrance/Carport-aluminium-Libourne-2.webp"
-                    alt="Carport aluminium contemporain sur mesure installé en Gironde"
+                    alt="Carport aluminium contemporain sur mesure, modèle de notre gamme"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">

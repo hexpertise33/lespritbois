@@ -153,7 +153,7 @@ const CATALOGUE = [
     nom: 'Abords de bassin',
     href: '#abords-bassin',
     src: '/images/terrasse-bois-piscine-exemple-opt.webp',
-    alt: 'Plage de piscine en bois et margelles, r\u00e9alis\u00e9e en Gironde',
+    alt: 'Plage de piscine en bois et margelles bordant un bassin',
     w: 949,
     h: 1400,
     pos: 'center 95%',

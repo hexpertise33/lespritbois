@@ -435,7 +435,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               src="/images/pergola-bois-massif-terrasse.webp"
               w={1100}
               h={1100}
-              alt="Pergola en bois massif prolongeant une terrasse en Gironde"
+              alt="Pergola en bois massif à lames prolongeant une terrasse au-dessus d'un salon extérieur"
               caption="Une pergola en bois massif prolonge naturellement une terrasse et se patine avec le temps."
             />
 
@@ -553,8 +553,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               src="/images/pergola-terrasse-bois-libourne-2.webp"
               w={900}
               h={1200}
-              alt="Pergola bois intégrée à une terrasse en bois, réalisation en Gironde"
-              caption="Même bois pour la terrasse et la pergola : l'ensemble se lit comme un seul ouvrage."
+              alt="Pergola aluminium anthracite à couverture translucide posée au-dessus d'une terrasse en bois, sur un de nos chantiers"
+              caption="L'autre façon d'intégrer : structure aluminium sombre au-dessus d'un platelage bois. Les deux matières se répondent sans chercher à se ressembler."
             />
 
             {/* Budget */}

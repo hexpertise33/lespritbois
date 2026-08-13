@@ -472,7 +472,7 @@ export default function ArticlePoolHouseBoisPage() {
 
             <Figure
               src="/images/terrasse-bois-piscine-exemple-opt.webp"
-              alt="Plage de piscine en bois avec recul sur la limite séparative et écran végétal, aménagement en Gironde"
+              alt="Plage de piscine en bois avec recul sur la limite séparative et écran végétal"
               caption="Le recul se décide avant la dalle : plage de circulation le long du bassin, distance à la limite séparative, et végétal pour traiter le vis-à-vis."
               cadrage="object-bottom"
             />

@@ -608,7 +608,7 @@ export default function ArticleBoisLocalGirondePage() {
 
             <Figure
               src="/images/source-adefrance/Magasin-materiaux-bois-libourne.webp"
-              alt="Showroom bois de L&apos;Esprit Bois à Libourne : échantillons de lames, bardages et quincaillerie présentés aux clients"
+              alt="Showroom bois de L&apos;Esprit Bois aux Billaux, près de Libourne : échantillons de lames, bardages et quincaillerie présentés aux clients"
               caption="C&apos;est ici que se joue la traçabilité : devant l&apos;échantillon, on nomme l&apos;essence, la scierie et le traitement. Ces quatre mentions reportées au devis sont ce qui rend deux offres réellement comparables."
             />
 

@@ -365,7 +365,7 @@ const APERCU = [
   },
   {
     src: '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp',
-    alt: 'Bardage bois vertical posé sur une dépendance en pierre, Gironde',
+    alt: 'Bardage bois vertical posé sur une dépendance en pierre, à Clérac',
     legende: 'Bardage bois sur bâti ancien',
     w: 900,
     h: 1200,

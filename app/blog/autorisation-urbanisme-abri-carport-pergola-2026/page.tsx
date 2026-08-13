@@ -327,7 +327,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
 
             <Figure
               src="/images/source-adefrance/Carport-bois-Libourne-5.webp"
-              alt="Carport en bois double vu en légère plongée à Libourne, illustrant l'emprise au sol créée par la toiture et les poteaux"
+              alt="Carport en bois double vu en légère plongée, chantier à Lagorce en Gironde, illustrant l'emprise au sol créée par la toiture et les poteaux"
               caption="L'emprise au sol se mesure en projection verticale : toiture et poteaux compris, même pour un abri ouvert."
             />
 

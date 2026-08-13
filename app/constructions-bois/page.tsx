@@ -856,7 +856,7 @@ export default function ConstructionsBoisPage() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   src="/images/source-adefrance/construction-pool-house-aluminium-libourne.webp"
-                  alt="Pool house en aluminium réalisé à Libourne"
+                  alt="Pool house en aluminium réalisé à Montussan, en Gironde"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">

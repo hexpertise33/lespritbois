@@ -538,7 +538,7 @@ export default function ArticleTerrasseBoisCaniculePage() {
 
             <Figure
               src="/images/pergola-terrasse-bois-libourne-1.webp"
-              alt="Pergola aluminium anthracite adossée couvrant une terrasse en bois, avec un olivier à droite, près de Libourne"
+              alt="Pergola aluminium anthracite adossée couvrant une terrasse en bois, avec un olivier à droite, à Saint-Pey-de-Castets"
               caption="Une couverture fixe et le végétal existant se complètent : l'un tient le vent, l'autre rafraîchit réellement l'air."
               cadrage="object-center"
             />

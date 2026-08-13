@@ -394,8 +394,8 @@ const GALERIE = [
   },
   {
     src: '/images/pergola-terrasse-bois-libourne-4.webp',
-    alt: 'Pergola aluminium à toiture polycarbonate au-dessus d’une grande terrasse bois, Gironde',
-    legende: 'Grande portée sur terrasse bois, Gironde',
+    alt: 'Pergola aluminium à toiture polycarbonate au-dessus d’une grande terrasse bois, à Saint-Pey-de-Castets',
+    legende: 'Grande portée sur terrasse bois, Saint-Pey-de-Castets',
     w: 1000,
     h: 1333,
   },

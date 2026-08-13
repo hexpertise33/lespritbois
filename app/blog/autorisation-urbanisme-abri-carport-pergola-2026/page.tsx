@@ -440,7 +440,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
 
             <Figure
               src="/images/pergola-bois-massif-terrasse.webp"
-              alt="Pergola en bois massif adossée à une maison, extension du bâti existant en zone U d'une commune girondine"
+              alt="Pergola en bois massif adossée à une maison, extension du bâti existant, notre chantier d'Arveyres en Gironde"
               caption="Adossée à la maison, une pergola ou un carport peut être qualifié d'extension : le seuil de déclaration préalable passe alors à 40 m²."
             />
 

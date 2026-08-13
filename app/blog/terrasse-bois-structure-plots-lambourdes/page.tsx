@@ -393,7 +393,7 @@ export default function ArticleStructureTerrasseBoisPage() {
 
             <Figure
               src="/images/pergola-terrasse-bois-libourne-2.webp"
-              alt="Terrasse en bois sur plots réglables, rive laissée ouverte et vide d'air sous le platelage, sur un de nos chantiers en Gironde"
+              alt="Terrasse en bois sur plots réglables, rive laissée ouverte et vide d'air sous le platelage, notre chantier de Saint-Pey-de-Castets"
               caption="Les plots noirs se lisent sous la rive : ils rattrapent un terrain qui n'est pas plan et créent d'emblée le vide d'air sous la terrasse."
             />
 

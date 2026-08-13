@@ -216,12 +216,26 @@ avait fait échouer deux lancements d'iconographe le 13/08. Cover inédite :
 en paysage 16:9 du lot. Les 4 autres sont en portrait 825 × 1100 : l'article a
 donc des figures hautes, format déjà employé ailleurs, sans blocage.
 
-⚠️ **Provenance des visuels `source-adefrance/Pergolas-aluminium-*` — la note
-mémoire est incomplète.** L'iconographe a constaté que le logo « LI-SU DES
-TEMPS » est incrusté non seulement sur `Pergolas-aluminium-Libourne-1` (le seul
-signalé jusqu'ici) mais **aussi sur `-2` et `-6`** : toute la série est donc
-suspecte d'être fournisseur, pas chantier maison. Aucun de ces fichiers n'a été
-utilisé ici. À vérifier avant de présenter l'un d'eux comme une réalisation.
+✅ **Provenance des visuels `source-adefrance/Pergolas-aluminium-*` — réaudit fait
+le 12/08/2026, point clos.** Les 9 images ont été regardées une par une. Le logo
+« LI-SU DES TEMPS » est incrusté sur **`-1`, `-2`, `-6` et `-7`** — l'audit du
+01/08 ne signalait que `-1`, et le contrôle en passant de l'iconographe disait
+`-1`/`-2`/`-6` : les deux étaient incomplets. Les cinq fichiers sans logo
+appartiennent à la même série, font **tous exactement 768 × 512** comme ceux à
+logo, et `-5` montre un paysage qui n'est pas girondin (maison blanche, vue sur
+collines, transats). **Conclusion : traiter les 9 comme des visuels fournisseur.**
+Ils restent utilisables comme illustration de **produit** ; ils ne doivent jamais
+figurer dans une galerie ou une légende revendiquant un chantier, « nos
+réalisations », Libourne ou la Gironde.
+
+Deux galeries les présentaient comme des réalisations et ont été corrigées
+(commit `bbc2bfa`, déployé et vérifié) : `/pergolas`, section « Pergolas
+réalisées à Libourne et en Gironde » (`-8` et `-5` remplacés), et
+`/devis-pergola`, section « Nos dernières réalisations » (`-8` remplacé) — par de
+vraies photos du chantier de Saint-Pey-de-Castets. Aucun article de blog n'était
+en faute : toutes les légendes de la série y sont neutres, sans commune ni
+mention « nos chantiers ». Détail complet dans la mémoire
+`images-source-adefrance-provenance`.
 
 Build passé normalement dans le dépôt réel, sans contournement `/tmp/iso`. Après
 deploy : **12 requêtes en 200 d'emblée sur les deux hôtes, aucun 404** — c'est la

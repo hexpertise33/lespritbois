@@ -358,8 +358,8 @@ const APERCU = [
   },
   {
     src: '/images/pergola-bois-massif-terrasse.webp',
-    alt: 'Pergola en bois massif couvrant un salon de jardin sur une terrasse',
-    legende: 'Pergola bois massif',
+    alt: 'Pergola en bois massif couvrant un salon de jardin sur une terrasse, réalisation en Gironde',
+    legende: 'Pergola bois massif, Gironde',
     w: 1100,
     h: 1100,
   },

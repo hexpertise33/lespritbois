@@ -435,7 +435,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               src="/images/pergola-bois-massif-terrasse.webp"
               w={1100}
               h={1100}
-              alt="Pergola en bois massif à lames prolongeant une terrasse au-dessus d'un salon extérieur"
+              alt="Pergola en bois massif à lames prolongeant une terrasse au-dessus d'un salon extérieur, sur un de nos chantiers en Gironde"
               caption="Une pergola en bois massif prolonge naturellement une terrasse et se patine avec le temps."
             />
 

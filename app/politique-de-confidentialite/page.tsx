@@ -9,7 +9,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Politique de confidentialité de L'Esprit Bois : quelles données sont collectées, dans quel but, combien de temps et comment exercer vos droits.",
   path: '/politique-de-confidentialite',
-  ogImage: '/images/pergola-bois-poutres-terrasse.webp',
+  ogImage: '/images/pergola-bois-chevrons-sous-face.jpg',
   ogTitle: 'Politique de confidentialité',
   ville: CONTACT.ville,
 });

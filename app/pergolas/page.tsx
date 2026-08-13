@@ -243,10 +243,10 @@ const GAMME = [
     titre: 'Pergola bois massif',
     accroche: 'Douglas, mélèze ou red cedar, assemblages traditionnels et patine qui vieillit bien.',
     points: ['Essences choisies selon l’exposition', 'Claire-voie, lames fixes ou toile', 'S’accorde au bâti ancien'],
-    src: '/images/pergola-bois-lames-terrasse.webp',
-    alt: 'Pergola en bois massif à poutres apparentes au-dessus d’une terrasse en lames de bois',
-    w: 1000,
-    h: 1500,
+    src: '/images/pergola-bois-chevrons-enfilade.jpg',
+    alt: 'Pergola en bois massif à chevrons apparents vue en enfilade, poteaux réguliers et ombre portée au sol',
+    w: 800,
+    h: 1200,
     pos: 'center 45%',
   },
 ];
@@ -966,8 +966,8 @@ export default function PergolasPage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/pergola-bois-claire-voie-terrasse.webp"
-                    alt="Pergola en bois massif à claire-voie adossée à une maison, au-dessus d’une terrasse en bois"
+                    src="/images/pergola-bois-charpente-massive-patine.jpg"
+                    alt="Charpente de pergola en bois massif aux assemblages contreventés, bois grisaillé par les années"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
@@ -988,8 +988,8 @@ export default function PergolasPage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/pergola-bois-poutres-terrasse.webp"
-                    alt="Pergola à poutres apparentes prolongeant une maison contemporaine sur une grande terrasse bois"
+                    src="/images/pergola-bois-chevrons-sous-face.jpg"
+                    alt="Sous-face d'une pergola en bois : chevrons posés sur pannes, vus en contre-plongée sur le ciel"
                   />
                 </div>
               </div>

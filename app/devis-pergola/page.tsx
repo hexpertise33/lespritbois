@@ -99,10 +99,10 @@ const GALERIE_COURTE = [
     h: 1100,
   },
   {
-    src: '/images/source-adefrance/Pergolas-bois-Libourne.webp',
-    alt: 'Pergola en bois massif autoportée posée sur pieds béton',
-    w: 900,
-    h: 990,
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+    alt: 'Pergola aluminium adossée vue depuis la terrasse bois, poteaux et traverses thermolaqués',
+    w: 825,
+    h: 1100,
   },
 ] as const;
 

@@ -376,8 +376,8 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                 src: '/images/source-adefrance/Pergolas-bois-Libourne.webp',
                 w: 900,
                 h: 990,
-                alt: 'Pergola en bois adossée à une maison en Gironde',
-                caption: 'Pergola bois : chaleur du matériau et intégration à la maison.',
+                alt: 'Pergola en bois massif autoportée, poteaux sur pieds béton, exposée sur notre dépôt des Billaux',
+                caption: 'Pergola bois : chaleur du matériau et assemblages visibles. Modèle exposé sur notre dépôt, où l’on peut le voir en vrai.',
               }}
               b={{
                 src: '/images/pergola-bioclimatique-lisudestemps.webp',

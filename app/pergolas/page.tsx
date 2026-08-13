@@ -414,11 +414,11 @@ const GALERIE = [
     h: 1100,
   },
   {
-    src: '/images/source-adefrance/Pergolas-bois-Libourne.webp',
-    alt: 'Pergola en bois massif autoportée posée sur pieds béton',
-    legende: 'Pergola bois massif autoportée',
-    w: 900,
-    h: 990,
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+    alt: 'Pergola aluminium adossée vue depuis la terrasse bois, poteaux et traverses thermolaqués',
+    legende: 'Vue en enfilade sous la pergola',
+    w: 825,
+    h: 1100,
   },
 ];
 
@@ -978,7 +978,7 @@ export default function PergolasPage() {
                     decoding="async"
                     className="w-full h-full object-cover"
                     src="/images/source-adefrance/Pergolas-bois-Libourne.webp"
-                    alt="Pergola en bois massif autoportée, poteaux sur pieds béton, réalisée en Gironde"
+                    alt="Pergola en bois massif autoportée, poteaux sur pieds béton, exposée sur notre dépôt des Billaux"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">

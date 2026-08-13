@@ -93,10 +93,10 @@ const GALERIE_COURTE = [
     h: 1333,
   },
   {
-    src: '/images/source-adefrance/Pergolas-aluminium-Libourne-8.webp',
-    alt: 'Pergola bioclimatique blanche à lames orientables ouvertes, adossée à une maison',
-    w: 768,
-    h: 512,
+    src: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-4.webp',
+    alt: 'Pergola aluminium adossée à toiture polycarbonate, raccord à la façade vu depuis la terrasse',
+    w: 825,
+    h: 1100,
   },
   {
     src: '/images/source-adefrance/Pergolas-bois-Libourne.webp',

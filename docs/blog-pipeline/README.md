@@ -79,8 +79,19 @@ pergola bioclimatique, véranda, extension, protections solaires) : voir « Idé
 de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
 articles.
 
-⚠️ **Panne d'environnement identifiée le 04/08/2026 — à connaître avant tout
-build.** Le dépôt est dans `~/Documents/projet`, **synchronisé par iCloud
+✅ **Panne iCloud RÉSOLUE le 13/08/2026 — le dépôt a déménagé.** Le dossier de
+travail est désormais **`~/Projets/lespritbois`**, hors iCloud. `npm run build`
+y passe en **17 s**, contre un figeage indéfini auparavant. Le contournement
+`/tmp/iso` décrit ci-dessous **n'a plus lieu d'être** ; il est conservé pour
+mémoire. ⚠️ Un simple `mv` depuis l'ancien emplacement s'est bloqué (la panne
+empêchait sa propre correction) : le déménagement s'est fait par `git clone`
+depuis GitHub, en recopiant à la main le non-versionné (`lesprit-bois.fr-audit/`,
+`.claude/settings.local.json`) puis `npm install` + `npm approve-scripts` paquet
+par paquet. L'ancien dossier `~/Documents/projet/lespritbois` reste sur le disque
+en secours, à supprimer par David quand il le jugera bon.
+
+⚠️ **Historique de la panne (04/08/2026), conservé pour comprendre les incidents
+passés.** Le dépôt était dans `~/Documents/projet`, **synchronisé par iCloud
 Drive**. Depuis un `CKUnderlyingErrorContainerReset` du 02/08 à 22h06, le démon
 `fileproviderd` est bloqué en attente ininterruptible et `brctl status` montre un
 backlog en `pending-scan` sous `/Documents/projet` (17 tentatives). Conséquence :

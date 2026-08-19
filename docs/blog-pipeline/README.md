@@ -787,6 +787,34 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+**Créneau du 20/08/2026 — servi d'avance le 19/08.** David a choisi la
+**proposition B** plutôt que la A recommandée : publiée sous
+`carport-voiture-electrique-borne-recharge` (transverse bois + alu ; thèse : le
+carport est le meilleur endroit pour recharger, à condition d'y penser avant de
+couler les plots — ce qui coûte cher après coup n'est jamais la borne, c'est la
+tranchée à rouvrir). Point de vue du **constructeur** : fourreaux et réservations
+posés pendant le chantier, limite de métier dite explicitement, l'électricité
+renvoyée à un électricien qualifié. Apport transverse : sur beaucoup de carports
+aluminium, l'évacuation des eaux descend **dans les poteaux** — percer un
+profilé, c'est percer une descente d'eau. Le **créneau carport est maintenant
+clos à cinq articles**, plus aucun angle vierge identifié.
+
+✅ **Le fait qui justifiait le sujet, vérifié et publié correctement** : le crédit
+d'impôt pour une borne de recharge est **supprimé pour les dépenses payées à
+partir du 1ᵉʳ janvier 2026** (service-public F35578, cité littéralement). Les
+75 % plafonnés à 500 € par système pilotable sont rattachés au passé. **Aucun
+taux de TVA n'est cité** : la page BOFiP du taux réduit en rénovation énergétique
+(BOI-TVA-LIQ-30-20-95) ne traite pas des bornes, et l'article dit explicitement
+pourquoi il s'abstient — formulation à reprendre quand une source manque.
+**Aucune obligation IRVE affirmée** : la fiche officielle ne l'exige pas.
+Photovoltaïque traité en **structure** seulement, sans kWc ni rendement.
+
+➡️ **Il reste la proposition A**, non consommée : « Fermer sa pergola
+bioclimatique pour l'hiver » (`fermer-pergola-bioclimatique-hiver-rideau-verre`),
+aluminium pur, saisonnière et à jouer **avant l'automne** — c'est le sujet du
+21/08. Après elle, la réserve retombe à la seule idée « cuisine d'été »
+(février-mars) : **veille à reprogrammer**.
+
 📌 **Veille du 19/08/2026 faite pour le créneau du 20/08** —
 `docs/blog-pipeline/2026-08-19.md`, 2 propositions au statut `proposé`, écrites
 après que le bureau de jardin ait consommé la dernière de la réserve.
@@ -880,7 +908,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 | —          | proposé | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
-| —          | proposé | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
+| 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve
 

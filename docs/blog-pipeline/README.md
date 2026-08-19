@@ -787,6 +787,30 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+📌 **Veille du 19/08/2026 faite pour le créneau du 20/08** —
+`docs/blog-pipeline/2026-08-19.md`, 2 propositions au statut `proposé`, écrites
+après que le bureau de jardin ait consommé la dernière de la réserve.
+**(A, recommandée)** « Fermer sa pergola bioclimatique pour l'hiver »
+(`fermer-pergola-bioclimatique-hiver-rideau-verre`) — aluminium pur, saisonnier
+(la fermeture se pose avant l'automne), 4 à 5 images sur 6 disponibles en
+interne. Thèse tranchée : fermer une pergola prolonge la saison mais **ne
+fabrique pas une véranda**. Apport neuf : fermer rend l'ouvrage potentiellement
+**clos et couvert**, donc taxable — le critère que l'article du 19/08 vient
+d'établir et de sourcer. **(B)** « Carport et voiture électrique »
+(`carport-voiture-electrique-borne-recharge`), dernier angle vierge du créneau
+carport, réservé depuis le 08/08.
+
+🚨 **Fait vérifié à ne pas rater sur B — et c'est un piège actif.** Le **crédit
+d'impôt pour l'installation d'une borne de recharge est SUPPRIMÉ pour les
+dépenses payées à partir du 1ᵉʳ janvier 2026** (citation littérale de
+service-public **F35578**). Il valait 75 %, plafonné à 500 € par système
+pilotable, sur des dépenses facturées et payées avant le 31/12/2025. **Tout le
+web l'annonce encore comme en vigueur** : ne jamais recopier ce montant depuis
+une page commerciale. Même famille d'erreur que le « 95 % d'énergie économisée »
+de l'aluminium, tranché le 11/08. ⚠️ Ne pas affirmer non plus l'**obligation
+IRVE** : la page service-public consultée ne l'exige pas explicitement, elle
+parle de l'entreprise qui fournit l'équipement ou de son sous-traitant.
+
 ### ⚠️ Trou de publication du 16 au 18/08/2026 — la tâche s'est arrêtée en silence
 
 Constaté le 19/08 : **aucun article les 16, 17 et 18/08**. Le dernier publié
@@ -855,6 +879,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-14 | publié  | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon) | abri-buches-bois-stockage-sechage |
 | 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
+| —          | proposé | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
+| —          | proposé | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve
 

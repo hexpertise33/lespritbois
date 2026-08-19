@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'carport-voiture-electrique-borne-recharge',
+    titre:
+      'Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque',
+    extrait:
+      "Le carport est le meilleur endroit pour recharger une voiture électrique — à condition d'y penser avant de couler les plots : ce qui coûte cher après coup, ce n'est jamais la borne, c'est la tranchée à rouvrir et le passage à faire sous un ouvrage déjà monté. Fourreaux et réservations à poser pendant le chantier, où placer la borne selon la trappe et le sens de stationnement, ce qu'une couverture photovoltaïque impose à la structure, la limite entre notre métier et celui de l'électricien, et la vérité sur l'aide fiscale supprimée au 1er janvier 2026 : le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-20',
+    categorie: 'Guide · Carport et voiture électrique',
+    image: '/images/source-adefrance/carport-bois-libourne.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'bureau-jardin-bois-studio-reglementation-budget',
     titre:
       "Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin",

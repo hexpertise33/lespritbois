@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'bureau-jardin-bois-studio-reglementation-budget',
+    titre:
+      "Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin",
+    extrait:
+      "Ce qui coûte cher dans un bureau de jardin, ce n'est pas l'ossature : c'est tout ce qui le rend habitable — isolation, menuiseries, électricité et raccordements. Un abri devient un bureau le jour où on l'isole et où on l'alimente, et c'est ce jour-là que l'urbanisme et la taxe d'aménagement s'invitent : autorisation et PLU, valeur forfaitaire 2026 et exonération des 5 m², confort d'hiver et d'été, alimentation d'une construction détachée et budget poste par poste, par un artisan à Libourne (Gironde).",
+    date: '2026-08-19',
+    categorie: 'Guide · Bureau de jardin',
+    image: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
+    imageLargeur: 900,
+    imageHauteur: 1200,
+  },
+  {
     slug: 'entretien-aluminium-pergola-veranda-revision-automne',
     titre:
       "Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne (et ce qui casse quand on l'oublie)",

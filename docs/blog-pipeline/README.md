@@ -787,6 +787,38 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+### ⚠️ Trou de publication du 16 au 18/08/2026 — la tâche s'est arrêtée en silence
+
+Constaté le 19/08 : **aucun article les 16, 17 et 18/08**. Le dernier publié
+était celui du 15/08 (écrit en avance le 13). La tâche `article-quotidien-lespritbois`
+était pourtant **active**, et le planificateur enregistrait bien un déclenchement
+chaque matin.
+
+Ce qui a été établi : dernière exécution ayant laissé une trace le **15/08 à
+12h50**, dans l'**ancien** dossier `~/Documents/projet/lespritbois` — ce jour-là
+elle a d'ailleurs correctement refusé de publier, le créneau étant déjà servi.
+Depuis, **aucune session n'a jamais tourné dans `~/Projets/lespritbois`** : le
+dossier de transcriptions de ce chemin n'a pas bougé depuis sa création le 14/08.
+Les déclenchements des 16 au 19 n'ont produit aucune session exploitable.
+
+Cause probable : la tâche a été créée quand le dépôt vivait sous `~/Documents`,
+et le planificateur ne permet pas de changer le dossier de démarrage enregistré —
+seulement les instructions. Une **étape 0** a donc été ajoutée en tête du SKILL.md,
+qui force `cd /Users/bertranddavid/Projets/lespritbois` et interdit explicitement
+l'ancien chemin. À surveiller : si le 20/08 ne sort pas non plus, le problème est
+ailleurs que dans le prompt.
+
+**Décision prise sur le rattrapage : ne pas antidater.** Les 16-18 restent vides.
+Trois articles publiés le même jour avec des dates passées se voient plus qu'un
+trou de trois jours, et cela aurait vidé la réserve d'un coup. Le 19/08 a été
+publié normalement.
+
+⚠️ **Le vrai défaut : rien n'alerte quand la routine ne produit rien.** Quatre
+jours ont passé sans que personne le voie. Activer `notifyOnCompletion` sur la
+tâche **depuis une session normale** (impossible depuis une exécution planifiée,
+qui ne peut pas s'abonner à ses propres notifications) : l'absence de notification
+devient alors le signal.
+
 ## Sujets
 
 Statuts : `idée` · `proposé` · `publié` · `écarté`.
@@ -822,7 +854,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-12 | publié  | Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert | termites-gironde-ouvrage-bois-prevention |
 | 2026-08-14 | publié  | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon) | abri-buches-bois-stockage-sechage |
 | 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
-| —          | proposé | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
+| 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 
 ## Idées de sujets en réserve
 

@@ -787,6 +787,42 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+**Créneau du 22/08/2026 — servi d'avance le 19/08.** La **proposition C** a été
+publiée sous `traiter-bois-exterieur-avant-hiver` (bois ; thèse : il reste
+quelques semaines pour traiter ses bois, après quoi le produit reste en surface
+et part au premier hiver — et **on ne traite pas pour la couleur, on traite pour
+l'eau**). Sept sections, dont un **tableau par ouvrage** en section 4 qui porte
+tout l'angle.
+
+✅ **Comment il échappe au créneau terrasse clos** — méthode réutilisable : il ne
+s'adresse pas au propriétaire de terrasse mais au **propriétaire d'ouvrages
+bois**, et le dit dès le chapô (« ce guide ne parle pas que de terrasse »).
+Terrasse, bardage, clôture, carport et abri n'ont ni la même cause de
+dégradation, ni le même geste, ni le même rythme. Différence explicite posée avec
+`proteger-terrasse-bois-canicule-entretien-ete` : l'un protège du soleil en pleine
+saison, celui-ci prépare à l'eau et au froid.
+
+⚠️ **Prudence : aucune température, aucun délai, aucun taux d'humidité.** Les
+plages qui circulent (« 10 à 25 °C », « 15 à 25 °C », « pas de pluie sous 48 h »)
+viennent **uniquement de fabricants et de revendeurs**, et **se contredisent entre
+elles** — preuve qu'aucune n'est normative. La fenêtre est décrite comme un
+**régime météo**, jamais comme une date. Aucune marque, aucun rendement au m²,
+aucune durée de tenue, aucune classe d'emploi chiffrée ; le nettoyeur haute
+pression est condamné sans citer de pression. Un seul lien externe (FCBA,
+qualitatif).
+
+Images : cinq visuels, **zéro téléchargement** — carport de
+Lugon-et-l'Île-du-Carnay en cover, bardage douglas « en Gironde » sans commune,
+pieds de poteaux de Capian, plus deux photos de banque déjà au dépôt et
+référencées en place depuis les dossiers d'autres articles, sans duplication ni
+géolocalisation. Après deploy : 404 alternés sur les deux premières salves, puis
+10 requêtes consécutives en 200. Version `15e6fbd8` à 100 %, IndexNow pingué.
+
+➡️ **Il reste la proposition D** : « Claustra en bois »
+(`claustra-bois-separation-jardin`), qui couvre enfin la ligne « Claustras &
+bardages » de `/amenagement-exterieur`. C'est le sujet du **23/08**. Après elle,
+réserve vide et **veille obligatoire**.
+
 📌 **Seconde veille du 19/08/2026, pour le créneau du 22/08** — même fichier
 `docs/blog-pipeline/2026-08-19.md`, section « Seconde veille ». 2 propositions au
 statut `proposé`. **(C, recommandée)** « Traiter ses bois avant l'hiver »
@@ -986,7 +1022,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 | 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
-| —          | proposé | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
+| 2026-08-22 | publié  | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
 | —          | proposé | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 

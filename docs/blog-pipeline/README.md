@@ -787,6 +787,43 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+🛑 **RÉSERVE VIDE au 23/08/2026 — veille obligatoire avant le prochain article.**
+Les créneaux du **19, 20, 21, 22 et 23/08** sont tous servis, les quatre derniers
+écrits en avance le 19/08. Les runs planifiés du 20 au 23 ne doivent **rien
+publier** : le test de tête de fichier doit les arrêter. Le prochain article à
+produire est celui du **24/08**, sans aucun sujet en réserve.
+
+**Créneau du 23/08/2026 — servi d'avance le 19/08.** La **proposition D** a été
+publiée sous `claustra-bois-separation-jardin` (bois ; thèse : un claustra n'est
+pas une clôture courte — posé à l'intérieur de la parcelle, il ne borne aucune
+limite et échappe aux contraintes de la clôture séparative ; et **on ne masque pas
+une vue, on masque un axe de regard**, donc l'ouvrage juste est presque toujours
+plus court et plus bas qu'on ne l'imagine). Couvre enfin la ligne « Claustras &
+bardages » de `/amenagement-exterieur`, explicitement dans l'offre et restée sans
+article.
+
+Frontière avec `cloture-brise-vue-bois-guide` posée dès la section 1 : aucun seuil
+de hauteur re-chiffré, renvoi à l'article dédié et à la mairie. ⚠️ **Jamais
+« sans formalité »** — la formulation retenue rappelle qu'un passage en mairie
+reste le bon réflexe dès qu'on prend de la hauteur ou en secteur protégé. Le
+**« 30 % d'ajour » est cité pour être démenti** : ce n'est pas une norme,
+l'occultation tient à une géométrie (épaisseur des lames, distance, angle de
+regard), pas à un ratio. Aucun DTU, aucune classe de vent, aucune profondeur de
+scellement.
+
+⚠️ **Piège d'iconographie inédit, à retenir : une image peut contredire la thèse
+sans rien dire de faux.** Le dossier `blog/cloture-brise-vue-bois-guide/` contient
+cinq visuels bois parfaitement réutilisables sur le papier — mais quatre se
+lisent comme des **clôtures de limite** (mitoyenneté visible, linéaire continu,
+alignement de rue), or l'article démontre justement qu'un claustra n'en est pas
+une. L'iconographe les a **ouverts un par un** et écartés, ne retenant que la
+claire-voie dressée devant un mur, sans limite visible, qui fait la cover.
+Généralisable : quand un article repose sur une distinction, vérifier que
+**chaque image la respecte**, pas seulement qu'elle montre la bonne matière.
+
+Après deploy : **16 requêtes en 200 d'emblée**, aucun 404 — deuxième fois
+seulement depuis le 07/08. Version `fa5e839b` à 100 %, IndexNow pingué.
+
 **Créneau du 22/08/2026 — servi d'avance le 19/08.** La **proposition C** a été
 publiée sous `traiter-bois-exterieur-avant-hiver` (bois ; thèse : il reste
 quelques semaines pour traiter ses bois, après quoi le produit reste en surface
@@ -1023,7 +1060,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 | 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
 | 2026-08-22 | publié  | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
-| —          | proposé | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
+| 2026-08-23 | publié  | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

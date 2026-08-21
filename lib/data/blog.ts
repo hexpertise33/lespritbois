@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'traiter-bois-exterieur-avant-hiver',
+    titre:
+      "Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment",
+    extrait:
+      "Il reste quelques semaines pour traiter ses bois extérieurs — après, ce n'est plus la peine : un saturateur ne pénètre que sur un bois sec, par temps doux et sans pluie derrière, sinon il reste en surface et part au premier hiver. Et on ne traite pas pour la couleur mais pour l'eau : terrasse, bardage, clôture, carport et abri ne demandent ni le même produit ni le même rythme — le guide tous ouvrages bois d'un artisan à Libourne (Gironde).",
+    date: '2026-08-22',
+    categorie: 'Guide · Entretien du bois',
+    image: '/images/source-adefrance/Carport-bois-Libourne-2.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'fermer-pergola-bioclimatique-hiver-rideau-verre',
     titre:
       "Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment",

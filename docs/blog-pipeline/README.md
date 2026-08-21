@@ -787,6 +787,41 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+📌 **Seconde veille du 19/08/2026, pour le créneau du 22/08** — même fichier
+`docs/blog-pipeline/2026-08-19.md`, section « Seconde veille ». 2 propositions au
+statut `proposé`. **(C, recommandée)** « Traiter ses bois avant l'hiver »
+(`traiter-bois-exterieur-avant-hiver`) — la fenêtre de traitement se ferme
+réellement dans quelques semaines, et les 5 images existent toutes en interne.
+Son angle contourne proprement le créneau terrasse clos : il balaie **tous les
+ouvrages bois** (terrasse, bardage, clôture, carport, abri), pas la seule
+terrasse — à dire explicitement dans le chapô. **(D)** « Claustra en bois »
+(`claustra-bois-separation-jardin`), qui couvre enfin une ligne explicite de
+l'offre (`/amenagement-exterieur` liste « Claustras & bardages ») restée sans
+article.
+
+⚠️ **Constat de fond : la veine aluminium est épuisée.** Neuf articles la
+couvrent — produit, comparatifs, teinte, protection solaire, entretien, clôture,
+recyclage, fermeture. **Aucun angle alu neuf n'est identifiable** sans apport
+extérieur : un produit que l'entreprise se mettrait à poser, ou des photos de
+chantier sur un motif non couvert. Les deux propositions ci-dessus sont donc
+toutes deux **bois**, ce qui déroge à l'alternance : c'est assumé, mieux vaut
+cela qu'un dixième article alu redondant.
+
+🚨 **Troisième occurrence du même piège réglementaire en trois semaines.** La
+veille fait remonter une **réglementation incendie propre à la construction
+bois** (publication progressive annoncée d'ici fin 2026) et un projet de **cadre
+unifié** pour la construction bois. **Ne les rattacher à aucun de nos sujets** :
+ces textes visent des bâtiments, pour l'essentiel collectifs et tertiaires, pas
+une terrasse ni un carport de particulier. Même faux rattachement que le décret
+n° 2026-16 (RE2020 tertiaire, 28/07) et le décret n° 2026-674 (lotissements,
+19/08). La tentation est manifestement récurrente ; la règle ne bouge pas.
+
+⚠️ **Second sujet écarté, à trancher par David : terrasse bois ou composite.**
+C'est le comparatif le plus demandé du créneau et il manque au blog, mais le mot
+« composite » **n'apparaît dans aucune page service** — seulement au détour de
+trois articles. Même situation que le portail aluminium écarté le 12/08 : ne pas
+écrire sur un matériau que l'entreprise ne pose pas. À rouvrir si David confirme.
+
 🛑 **RÉSERVE VIDE au 21/08/2026 — veille obligatoire avant le prochain article.**
 Les créneaux du 19, 20 **et 21/08** sont tous servis, les deux derniers écrits en
 avance le 19/08. Les runs planifiés du 20 et du 21 ne doivent **rien publier** :
@@ -951,6 +986,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 | 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
+| —          | proposé | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
+| —          | proposé | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

@@ -787,6 +787,49 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+🛑 **RÉSERVE VIDE au 21/08/2026 — veille obligatoire avant le prochain article.**
+Les créneaux du 19, 20 **et 21/08** sont tous servis, les deux derniers écrits en
+avance le 19/08. Les runs planifiés du 20 et du 21 ne doivent **rien publier** :
+le test de tête de fichier doit les arrêter. Le prochain article à produire est
+celui du **22/08**, et il n'y a plus aucun sujet en réserve — seulement l'idée
+**cuisine d'été**, dans l'offre mais hors saison (à programmer février-mars).
+
+**Créneau du 21/08/2026 — servi d'avance le 19/08.** La **proposition A** a été
+publiée sous `fermer-pergola-bioclimatique-hiver-rideau-verre` (aluminium pur ;
+thèse assumée : fermer une pergola prolonge la saison mais **ne fabrique pas une
+véranda** — sans isolation, on gagne un abri hors vent et hors pluie, pas une
+pièce chauffée, et si la pièce doit vivre en février il faut le dire au client
+plutôt que lui vendre une fermeture qui décevra). Sept sections, différenciation
+explicite avec `protection-solaire-brise-soleil-orientable` : même quincaillerie,
+cahier des charges opposé — l'un arrête le soleil l'été, l'autre ferme contre le
+vent et la pluie.
+
+✅ **Apport neuf, absent de toutes les pages commerciales du créneau** : fermer
+rend l'ouvrage potentiellement **clos et couvert**, le critère qui déclenche la
+**taxe d'aménagement** — une pergola non close y échappe quelle que soit sa
+surface (service-public F23263). Aucun seuil re-chiffré : renvoi aux articles
+urbanisme et bureau de jardin, et conseil de passage en mairie.
+
+Prudence : **aucune épaisseur de verre** (les « 10 ou 12 mm de verre trempé » qui
+circulent viennent de sites commerciaux, pas d'une source normative), aucun
+Uw/Ug, aucune classe de vent, aucun DTU, aucune garantie, aucune puissance de
+chauffage d'appoint. Condensation traitée qualitativement.
+
+⚠️ **Le visuel « rideau de verre » a été supprimé faute d'image honnête** — et
+c'est gênant, puisque c'est le motif du titre. L'iconographe a cherché sur Pexels
+(*glass curtain terrace*, *enclosed patio*, *frameless glass doors*, *glazed
+balcony*, *glass pergola*, *sliding glass wall*) et sur Openverse : rien
+d'exploitable, uniquement des vérandas américaines à ossature bois, des
+intérieurs ou des façades d'immeubles. Illustrer un sujet alu par une structure
+bois aurait menti sur la matière — même arbitrage que le 13/08. **Le dépôt gagne
+à recevoir une photo de chantier de pergola alu avec vitrage coulissant** : c'est
+le seul motif de l'article qu'il ne couvre pas. Une figure de compensation a été
+ajoutée après la section 1, l'article tient donc à 6 visuels.
+
+Après deploy : un **404 sur la première salve** (les deux hôtes simultanément)
+puis 10 requêtes consécutives en 200. Version `0997fc7e` à 100 %, IndexNow
+pingué.
+
 **Créneau du 20/08/2026 — servi d'avance le 19/08.** David a choisi la
 **proposition B** plutôt que la A recommandée : publiée sous
 `carport-voiture-electrique-borne-recharge` (transverse bois + alu ; thèse : le
@@ -907,7 +950,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-14 | publié  | Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon) | abri-buches-bois-stockage-sechage |
 | 2026-08-15 | publié  | Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne | entretien-aluminium-pergola-veranda-revision-automne |
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
-| —          | proposé | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
+| 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

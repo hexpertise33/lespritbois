@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'fermer-pergola-bioclimatique-hiver-rideau-verre',
+    titre:
+      "Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment",
+    extrait:
+      "Fermer une pergola prolonge la saison de quelques mois, mais ne fabrique pas une véranda : sans isolation ni rupture de pont thermique, on gagne un abri hors vent et hors pluie, pas une pièce chauffée — et si la pièce doit vivre en février, mieux vaut le dire. Rideau de verre, store screen à zip, panneaux fixes ou coulissants côté par côté, condensation, budget poste par poste, et le point que personne ne signale : fermer peut rendre l'ouvrage clos et couvert, donc taxable. Le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-21',
+    categorie: 'Guide · Fermeture de pergola',
+    image: '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp',
+    imageLargeur: 825,
+    imageHauteur: 1100,
+  },
+  {
     slug: 'carport-voiture-electrique-borne-recharge',
     titre:
       'Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque',

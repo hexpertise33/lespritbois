@@ -198,10 +198,10 @@ const jsonld = [
       },
       {
         '@type': 'Question',
-        name: 'Êtes-vous certifiés et assurés ?',
+        name: 'Êtes-vous qualifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat — une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière —, et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.",
         },
       },
     ],
@@ -1755,7 +1755,7 @@ export default function PergolasPage() {
               <details className="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
                 <summary className="flex justify-between items-center cursor-pointer list-none">
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
-                    Êtes-vous certifiés et assurés ?
+                    Êtes-vous qualifiés et assurés ?
                   </h3>
                   <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more

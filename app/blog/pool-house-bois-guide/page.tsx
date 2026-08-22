@@ -110,7 +110,7 @@ const jsonld = [
         name: 'Faut-il une autorisation pour construire un pool-house ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Cela dépend de l'emprise au sol créée. En dessous de 5 m², aucune formalité. De 5 à 20 m², une déclaration préalable de travaux. Au-delà de 20 m², un permis de construire. Le seuil relevé à 40 m² ne concerne que les extensions accolées à une maison existante en zone urbaine couverte par un PLU : un pool-house détaché au fond du jardin reste au seuil de 20 m². Dans tous les cas, le PLU de votre commune prime et peut imposer des règles plus strictes.",
+          text: "Cela dépend de l'emprise au sol créée. En dessous de 5 m², aucune formalité. De 5 à 20 m², une déclaration préalable de travaux. Au-delà de 20 m², un permis de construire. Le seuil relevé à 40 m² ne concerne que les extensions accolées à une maison existante en zone urbaine couverte par un PLU : un pool-house détaché au fond du jardin reste au seuil de 20 m². Attention : en secteur protégé (abords d'un monument historique, site classé), cette exonération sous 5 m² ne s'applique pas et la déclaration préalable est due dès le premier mètre carré. Dans tous les cas, le PLU de votre commune prime et peut imposer des règles plus strictes.",
         },
       },
       {
@@ -169,7 +169,8 @@ const faq = [
     q: 'Faut-il une autorisation pour construire un pool-house ?',
     r: (
       <>
-        Cela dépend de l&apos;emprise au sol créée. En dessous de 5 m², aucune formalité. De 5 à 20 m², une déclaration
+        Cela dépend de l&apos;emprise au sol créée. En dessous de 5 m², aucune formalité — sauf en secteur protégé,
+        où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration
         préalable de travaux. Au-delà de 20 m², un permis de construire. Le seuil relevé à 40 m² ne concerne que les
         extensions accolées à une maison existante en zone urbaine couverte par un PLU : un pool-house détaché au fond du
         jardin reste au seuil de 20 m². Dans tous les cas, le PLU de votre commune prime et peut imposer des règles plus
@@ -299,7 +300,8 @@ export default function ArticlePoolHouseBoisPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Un pool-house de moins de 5 m² ne demande aucune formalité ; entre 5 et 20 m² d&apos;emprise au sol, une
+                Un pool-house de moins de 5 m² ne demande aucune formalité, sauf en secteur protégé où la déclaration
+                préalable est due dès le premier mètre carré ; entre 5 et 20 m² d&apos;emprise au sol, une
                 déclaration préalable de travaux suffit ; au-delà de 20 m², il faut un permis de construire. Mais c&apos;est
                 le PLU de votre commune qui tranche vraiment, et lui seul.
               </strong>{' '}
@@ -323,7 +325,7 @@ export default function ArticlePoolHouseBoisPage() {
                 Un pool-house est une construction : il crée de l&apos;emprise au sol, c&apos;est-à-dire la projection
                 verticale du volume au sol, poteaux et débords de toiture compris. Les seuils du cas général sont simples
                 et n&apos;ont pas bougé en 2026 : <strong className="text-primary font-semibold">moins de 5 m², aucune
-                formalité ; de 5 à 20 m², une{' '}
+                formalité hors secteur protégé ; de 5 à 20 m², une{' '}
                 <a
                   href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
                   className={lienInterne}

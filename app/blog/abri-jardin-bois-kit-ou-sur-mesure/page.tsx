@@ -163,7 +163,7 @@ const jsonld = [
         name: 'Faut-il une autorisation pour installer un abri de jardin ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "En principe, en dessous de 5 m² d'emprise au sol aucune formalité n'est due, entre 5 et 20 m² une déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre commune peut durcir ces règles, et une taxe d'aménagement au taux communal (souvent 1 à 5 %) s'applique dès la déclaration préalable. Nous vérifions ces formalités avant d'engager le projet.",
+          text: "En principe, en dessous de 5 m² d'emprise au sol aucune formalité n'est due — sauf en secteur protégé, où la déclaration préalable s'impose dès le premier mètre carré —, entre 5 et 20 m² une déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre commune peut durcir ces règles, et une taxe d'aménagement au taux communal (souvent 1 à 5 %) s'applique dès la déclaration préalable. Nous vérifions ces formalités avant d'engager le projet.",
         },
       },
       {
@@ -233,7 +233,7 @@ const faq = [
     q: 'Faut-il une autorisation pour installer un abri de jardin ?',
     r: (
       <>
-        En principe, en dessous de 5 m² d&apos;emprise au sol aucune formalité n&apos;est due, entre 5 et 20 m² une
+        En principe, en dessous de 5 m² d&apos;emprise au sol aucune formalité n&apos;est due — sauf en secteur protégé, où la déclaration préalable s&apos;impose dès le premier mètre carré —, entre 5 et 20 m² une
         déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre
         commune peut durcir ces règles, et une taxe d&apos;aménagement au taux communal (souvent 1 à 5 %) s&apos;applique
         dès la déclaration préalable. Nous vérifions ces formalités avant d&apos;engager le projet.

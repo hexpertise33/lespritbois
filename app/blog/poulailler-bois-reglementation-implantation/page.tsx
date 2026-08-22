@@ -97,7 +97,7 @@ const jsonld = [
         name: 'Faut-il une autorisation pour installer un poulailler en bois ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "En dessous de 5 m² d'emprise au sol, aucune formalité d'urbanisme n'est requise. De 5 à 20 m², une déclaration préalable en mairie s'impose (instruction environ un mois). Au-delà de 20 m², c'est un permis de construire. Au-delà de 5 m² clos et couvert, une taxe d'aménagement peut s'appliquer, et le PLU comme le Code civil encadrent la hauteur et l'implantation en limite de propriété.",
+          text: "En dessous de 5 m² d'emprise au sol, aucune formalité d'urbanisme n'est requise — sauf en secteur protégé (abords d'un monument historique, site classé), où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration préalable en mairie s'impose (instruction environ un mois). Au-delà de 20 m², c'est un permis de construire. Au-delà de 5 m² clos et couvert, une taxe d'aménagement peut s'appliquer, et le PLU comme le Code civil encadrent la hauteur et l'implantation en limite de propriété.",
         },
       },
       {
@@ -142,7 +142,9 @@ const faq = [
     r: (
       <>
         En dessous de <strong className="text-primary font-semibold">5 m² d&apos;emprise au sol</strong>, aucune
-        formalité d&apos;urbanisme n&apos;est requise. De 5 à 20 m², une déclaration préalable en mairie s&apos;impose
+        formalité d&apos;urbanisme n&apos;est requise — sauf en secteur protégé (abords d&apos;un monument historique,
+        site classé), où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration
+        préalable en mairie s&apos;impose
         (instruction environ un mois). Au-delà de 20 m², c&apos;est un permis de construire. Au-delà de 5 m² clos et
         couvert, une taxe d&apos;aménagement peut s&apos;appliquer, et le PLU comme le Code civil encadrent la hauteur
         et l&apos;implantation en limite de propriété.
@@ -260,7 +262,8 @@ export default function ArticlePoulaillerBoisPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Avant d&apos;installer votre poulailler : en dessous de 5 m² d&apos;emprise au sol, aucune formalité
+                Avant d&apos;installer votre poulailler : en dessous de 5 m² d&apos;emprise au sol — hors secteur
+                protégé —, aucune formalité
                 d&apos;urbanisme ; de 5 à 20 m², une déclaration préalable en mairie ; au-delà, un permis de construire.
                 Attention à la hauteur, à l&apos;implantation en limite et à la taxe d&apos;aménagement dès 5 m² clos et
                 couvert — et surtout, toute détention de volailles se déclare en mairie, quelle que soit la quantité,
@@ -298,7 +301,7 @@ export default function ArticlePoulaillerBoisPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Moins de 5 m²', 'aucune formalité d’urbanisme : vous pouvez installer votre poulailler librement, sous réserve du règlement de votre commune.'],
+                  ['Moins de 5 m²', 'aucune formalité d’urbanisme hors secteur protégé — en abords de monument historique ou site classé, la déclaration préalable est due dès le premier mètre carré. Ailleurs, vous pouvez installer votre poulailler librement, sous réserve du règlement de votre commune.'],
                   ['De 5 à 20 m²', 'une déclaration préalable de travaux en mairie est nécessaire, avec une instruction d’environ un mois.'],
                   ['Plus de 20 m²', 'vous entrez dans le champ du permis de construire — rare pour un poulailler familial, plus fréquent pour un projet mixte (poulailler + resserre).'],
                 ].map(([titre, texte]) => (
@@ -341,7 +344,7 @@ export default function ArticlePoulaillerBoisPage() {
             <Figure
               src="/images/blog/poulailler-bois-reglementation-implantation/poules-jardin-petit-poulailler-bois.webp"
               alt="Poules dans un jardin engazonné devant un petit poulailler en bois de moins de 5 m²"
-              caption="En dessous de 5 m² d'emprise au sol, le poulailler s'installe sans formalité d'urbanisme — la déclaration des volailles, elle, reste obligatoire."
+              caption="En dessous de 5 m² d'emprise au sol et hors secteur protégé, le poulailler s'installe sans formalité d'urbanisme — la déclaration des volailles, elle, reste obligatoire quelle que soit la surface."
             />
 
             {/* 2. Déclaration en mairie des volailles */}

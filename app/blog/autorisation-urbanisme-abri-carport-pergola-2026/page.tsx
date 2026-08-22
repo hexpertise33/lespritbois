@@ -99,7 +99,7 @@ const jsonld = [
         name: "Faut-il une autorisation pour installer un abri de jardin, un carport ou une pergola ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Cela dépend de l'emprise au sol créée, c'est-à-dire de la projection verticale de la construction, poteaux compris. En dessous de 5 m², aucune formalité n'est requise. Entre 5 et 20 m², une déclaration préalable de travaux est nécessaire. Au-delà de 20 m², il faut un permis de construire. Ces seuils s'appliquent au cas général ; le PLU de votre commune peut prévoir des règles plus strictes.",
+          text: "Cela dépend de l'emprise au sol créée, c'est-à-dire de la projection verticale de la construction, poteaux compris. En dessous de 5 m², aucune formalité n'est requise hors secteur protégé. Entre 5 et 20 m², une déclaration préalable de travaux est nécessaire. Au-delà de 20 m², il faut un permis de construire. Ces seuils s'appliquent au cas général ; le PLU de votre commune peut prévoir des règles plus strictes.",
         },
       },
       {
@@ -107,7 +107,7 @@ const jsonld = [
         name: "Quels sont les seuils d'emprise au sol en 2026 pour un abri, un carport ou une pergola ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Jusqu'à 5 m² d'emprise au sol : aucune formalité. De plus de 5 m² à 20 m² : déclaration préalable (formulaire CERFA n°16702). Au-delà de 20 m² : permis de construire. En zone U d'une commune couverte par un PLU, si l'ouvrage est considéré comme une extension du bâti existant, le seuil de déclaration préalable est relevé à 40 m² ; au-delà, un permis de construire est requis.",
+          text: "Jusqu'à 5 m² d'emprise au sol : aucune formalité, sauf en secteur protégé où la déclaration préalable est due dès le premier mètre carré. De plus de 5 m² à 20 m² : déclaration préalable (formulaire CERFA n°16702). Au-delà de 20 m² : permis de construire. En zone U d'une commune couverte par un PLU, si l'ouvrage est considéré comme une extension du bâti existant, le seuil de déclaration préalable est relevé à 40 m² ; au-delà, un permis de construire est requis.",
         },
       },
       {
@@ -160,7 +160,7 @@ const faq = [
     r: (
       <>
         Cela dépend de l&apos;emprise au sol créée, c&apos;est-à-dire de la projection verticale de la construction,
-        poteaux compris. En dessous de 5 m², aucune formalité n&apos;est requise. Entre 5 et 20 m², une déclaration
+        poteaux compris. En dessous de 5 m², aucune formalité n&apos;est requise hors secteur protégé. Entre 5 et 20 m², une déclaration
         préalable de travaux est nécessaire. Au-delà de 20 m², il faut un permis de construire. Ces seuils
         s&apos;appliquent au cas général ; le PLU de votre commune peut prévoir des règles plus strictes.
       </>
@@ -170,7 +170,8 @@ const faq = [
     q: "Quels sont les seuils d'emprise au sol en 2026 pour un abri, un carport ou une pergola ?",
     r: (
       <>
-        Jusqu&apos;à 5 m² d&apos;emprise au sol : aucune formalité. De plus de 5 m² à 20 m² : déclaration préalable
+        Jusqu&apos;à 5 m² d&apos;emprise au sol : aucune formalité, sauf en secteur protégé où la déclaration
+        préalable est due dès le premier mètre carré. De plus de 5 m² à 20 m² : déclaration préalable
         (formulaire CERFA n°16702). Au-delà de 20 m² : permis de construire. En zone U d&apos;une commune couverte par
         un PLU, si l&apos;ouvrage est considéré comme une extension du bâti existant, le seuil de déclaration
         préalable est relevé à 40 m² ; au-delà, un permis de construire est requis.
@@ -355,7 +356,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
               </p>
               <ul className="space-y-3 mb-6">
                 {[
-                  ['Jusqu’à 5 m²', 'aucune formalité d’urbanisme n’est requise, même si nous recommandons de vérifier le règlement de votre lotissement.'],
+                  ['Jusqu’à 5 m²', 'aucune formalité d’urbanisme hors secteur protégé — en abords de monument historique ou site classé, la déclaration préalable est due dès le premier mètre carré. Nous recommandons par ailleurs de vérifier le règlement de votre lotissement.'],
                   ['De plus de 5 m² à 20 m²', 'une déclaration préalable de travaux est obligatoire, à déposer avec le nouveau formulaire CERFA n°16702.'],
                   ['Au-delà de 20 m²', 'un permis de construire devient nécessaire, avec un dossier plus complet (plan de coupe, notice descriptive, insertion paysagère).'],
                 ].map(([titre, texte]) => (

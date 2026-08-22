@@ -675,7 +675,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Oui, dans la plupart des cas, car une pergola bioclimatique est une construction qui crée de{' '}
                 <strong className="text-primary font-semibold">l&apos;emprise au sol</strong>. En règle générale : pas de
-                formalité en dessous de 5 m², <strong className="text-primary font-semibold"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable</a> de 5 à
+                formalité en dessous de 5 m² hors secteur protégé, <strong className="text-primary font-semibold"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable</a> de 5 à
                 20 m²</strong>, et <strong className="text-primary font-semibold"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986" className={lienInterne} target="_blank" rel="noopener noreferrer">permis de construire</a> au-delà de 20
                 m²</strong>. Ces seuils sont le cadre national ; c&apos;est le{' '}
                 <strong className="text-primary font-semibold">PLU de votre commune</strong> qui tranche vraiment, et il

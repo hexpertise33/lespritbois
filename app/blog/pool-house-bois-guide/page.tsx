@@ -665,7 +665,7 @@ export default function ArticlePoolHouseBoisPage() {
 
             <Figure
               src="/images/source-adefrance/construction-pool-house-aluminium-libourne-2.webp"
-              alt="Pool-house équipé d'un bar en pierre et d'une toiture plate en aluminium, réalisation près de Libourne"
+              alt="Pool-house équipé d'un bar en pierre et d'une toiture plate en aluminium, réalisation L'Esprit Bois"
               caption="Un plan de travail, un évier, une plancha : chaque équipement suppose une gaine ou une attente passée avant la dalle."
             />
           </div>

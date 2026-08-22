@@ -123,7 +123,7 @@ const jsonld = [
         name: "Faut-il une autorisation particulière près de Saint-Émilion ou d'un monument historique ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. Dans les abords de monuments historiques et les sites classés, comme le périmètre UNESCO de Saint-Émilion, la déclaration préalable est obligatoire dès 5 m² d'emprise au sol et jusqu'à 20 m² ; au-delà, un permis de construire est requis. Le dossier est en plus soumis à l'avis de l'Architecte des Bâtiments de France, ce qui allonge le délai d'instruction à deux mois.",
+          text: "Oui, et c'est un piège courant : l'exonération applicable sous 5 m² ne vaut plus. Dans les abords de monuments historiques et les sites classés, comme le périmètre UNESCO de Saint-Émilion, la déclaration préalable est due dès le premier mètre carré et jusqu'à 20 m² (article R421-11 du code de l'urbanisme) ; au-delà, un permis de construire est requis. Le dossier est en plus soumis à l'avis de l'Architecte des Bâtiments de France, ce qui allonge le délai d'instruction à deux mois.",
         },
       },
       {
@@ -147,11 +147,11 @@ const jsonld = [
 ];
 
 const seuils = [
-  ['Jusqu’à 5 m²', 'Aucune formalité', 'Aucun', 'Vérifier tout de même le règlement de lotissement ou un secteur protégé'],
+  ['Jusqu’à 5 m²', 'Aucune formalité — sauf secteur protégé', 'Aucun', 'En abords de monument ou site classé, la DP est due dès le 1er m²'],
   ['De 5 à 20 m²', 'Déclaration préalable (CERFA 16702)', '1 mois', '2 mois si secteur protégé (avis ABF)'],
   ['Au-delà de 20 m²', 'Permis de construire', '2 à 3 mois', 'Toujours nécessaire, quelle que soit la zone'],
   ['Extension en zone U (PLU), jusqu’à 40 m²', 'Déclaration préalable', '1 mois', 'La mairie doit qualifier l’ouvrage d’extension'],
-  ['Secteur protégé / abords ABF', 'DP dès 5 m², permis au-delà de 20 m²', '2 mois', 'Avis de l’Architecte des Bâtiments de France'],
+  ['Secteur protégé / abords ABF', 'DP dès le 1er m², permis au-delà de 20 m²', '2 mois', 'L’exonération sous 5 m² ne s’applique pas ; avis de l’ABF'],
 ];
 
 const faq = [
@@ -193,7 +193,8 @@ const faq = [
     r: (
       <>
         Oui. Dans les abords de monuments historiques et les sites classés, comme le périmètre UNESCO de
-        Saint-Émilion, la déclaration préalable est obligatoire dès 5 m² d&apos;emprise au sol et jusqu&apos;à 20 m² ;
+        Saint-Émilion, l&apos;exonération applicable sous 5 m² ne vaut plus : la déclaration préalable est due dès
+        le premier mètre carré et jusqu&apos;à 20 m² ;
         au-delà, un permis de construire est requis. Le dossier est en plus soumis à l&apos;avis de l&apos;Architecte
         des Bâtiments de France, ce qui allonge le délai d&apos;instruction à deux mois.
       </>
@@ -455,10 +456,15 @@ export default function ArticleAutorisationUrbanisme2026Page() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Dans les <strong className="text-primary font-semibold">abords de monuments historiques</strong> et
                 les <strong className="text-primary font-semibold">sites classés</strong>, la règle se durcit
-                nettement : la déclaration préalable devient obligatoire{' '}
-                <strong className="text-primary font-semibold">dès 5 m² d&apos;emprise au sol</strong>, jusqu&apos;à
-                20 m², et un permis de construire est requis au-delà. Ces secteurs concernent très concrètement notre
-                territoire : le périmètre UNESCO de{' '}
+                nettement, et c&apos;est le piège le plus courant :{' '}
+                <strong className="text-primary font-semibold">
+                  l&apos;exonération applicable sous 5 m² ne s&apos;applique plus
+                </strong>
+                . La déclaration préalable est due{' '}
+                <strong className="text-primary font-semibold">dès le premier mètre carré</strong> et jusqu&apos;à
+                20 m² (article R421-11 du code de l&apos;urbanisme), et un permis de construire est requis au-delà. Un
+                abri de 3 m² qui ne demanderait aucune formalité ailleurs doit donc être déclaré ici. Ces secteurs
+                concernent très concrètement notre territoire : le périmètre UNESCO de{' '}
                 <strong className="text-primary font-semibold">Saint-Émilion</strong> et les abords de nombreux
                 monuments protégés autour de Libourne et dans le Libournais imposent cette règle plus stricte.
               </p>
@@ -481,7 +487,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             <Figure
               src="/images/blog/autorisation-urbanisme-abri-carport-pergola-2026/saint-emilion-secteur-protege.webp"
               alt="Vue patrimoniale de Saint-Émilion, secteur protégé du Libournais soumis à l'avis de l'Architecte des Bâtiments de France"
-              caption="Dans les abords de Saint-Émilion et de nombreux monuments du Libournais, la déclaration préalable est obligatoire dès 5 m² d'emprise au sol."
+              caption="Dans les abords de Saint-Émilion et de nombreux monuments du Libournais, l'exonération sous 5 m² tombe : la déclaration préalable est due dès le premier mètre carré."
             />
 
             {/* 5. CERFA 16702 */}

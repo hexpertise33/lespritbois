@@ -671,8 +671,8 @@ export default function ArticleRenoverTerrasseBoisPage() {
               src="/images/terrasse-bois-plots-gironde-4.webp"
               w={850}
               h={1133}
-              alt="Terrasse en bois à la teinte homogène après finition, chantier L'Esprit Bois à Lacanau en Gironde"
-              caption="Teinte homogène retrouvée : sur une structure saine, une journée de dégrisage et de saturateur suffit à ce résultat."
+              alt="Terrasse en pin posée sur sol sableux, teinte homogène à la livraison, chantier de L'Esprit Bois à Lacanau"
+              caption="La teinte que l'on cherche à retrouver : sur une structure saine, une journée de dégrisage puis de saturateur ramène un platelage grisé à cet aspect. La photo est celle d'une terrasse neuve, prise à la livraison."
             />
           </div>
         </article>

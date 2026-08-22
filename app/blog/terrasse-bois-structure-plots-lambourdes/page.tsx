@@ -679,7 +679,7 @@ export default function ArticleStructureTerrasseBoisPage() {
 
             <Figure
               src="/images/terrasse-bois-pool-house-libourne.webp"
-              alt="Terrasse en bois terminée au bord d'une piscine à Libourne, lames alignées et jeu régulier, réalisation L'Esprit Bois"
+              alt="Terrasse en ipé terminée au bord d'une piscine, lames alignées et jeu régulier, chantier de L'Esprit Bois à Moulon"
               caption="Une terrasse réussie ne montre rien de sa structure : alignement, planéité et jeu constant sont le résultat visible d'un réglage fait sous les lames."
             />
           </div>

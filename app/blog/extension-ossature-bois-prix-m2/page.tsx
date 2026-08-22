@@ -5,10 +5,19 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-// COVER : vraie extension ossature bois L'Esprit Bois (bardage douglas, grande
-// baie vitrée coulissante et terrasse) accolée à une grange en pierre.
-// ⚠️ Le chantier est à Clérac, en Charente-Maritime, pas en Gironde : ne pas le
-// relégender « près de Libourne ». Voir lib/data/chantiers.ts.
+// COVER : extension ossature bois L'Esprit Bois bardée en bois vertical, greffée
+// sur une grange en pierre — les contreforts métalliques scellés sont visibles sur
+// le pignon. ⚠️ Le chantier est à Clérac, en CHARENTE-MARITIME, pas en Gironde :
+// ne jamais le relégender « en Gironde » ni « près de Libourne ».
+// Voir lib/data/chantiers.ts, entrée 'clerac'.
+/* Les deux photos de public/images/blog/extension-ossature-bois-prix-m2/ sont des
+   chantiers de l'entreprise, confirmés par David le 22/08/2026. Identifiées à
+   GÉNISSAC par recoupement avec la photo de référence du chantier
+   (source-adefrance/IMG-20240712-WA0039-opt.webp) : même crépi de la maison
+   existante, même dallage en opus incertain, même piscine, même bardage vertical
+   et mêmes menuiseries aluminium noires. Rauzan est écarté (bardage douglas brut
+   rose, construction isolée, prise en hiver) et Clérac aussi (l'existant y est une
+   grange en pierre, pas un mur crépi). */
 const COVER = '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp';
 
 export const metadata: Metadata = buildMetadata({
@@ -396,7 +405,7 @@ export default function ArticleExtensionOssatureBoisPage() {
               src="/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-chantier-gironde.jpg"
               w={1200}
               h={900}
-              alt="Montage de l'ossature bois d'une extension, structure levée contre la maison existante"
+              alt="Montage de l'ossature bois d'une extension contre une maison existante, toiture d'origine conservée, chantier de L'Esprit Bois à Génissac"
               caption="Sur nos chantiers, l'ossature de l'extension se monte contre la maison existante : le raccord de toiture se prépare avant la mise hors d'eau."
             />
 
@@ -475,7 +484,7 @@ export default function ArticleExtensionOssatureBoisPage() {
               src="/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg"
               w={1200}
               h={900}
-              alt="Extension à ossature bois terminée, grande baie vitrée coulissante et bardage bois douglas"
+              alt="Extension à ossature bois bardée en douglas avec grande baie coulissante en aluminium noir, terrasse en cours de ferraillage, chantier de L'Esprit Bois à Génissac"
               caption="La grande baie vitrée inonde l'extension de lumière ; à emprise au sol égale, l'ossature bois offre plus de surface habitable qu'en maçonnerie."
             />
 

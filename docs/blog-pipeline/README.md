@@ -32,6 +32,36 @@ routine normalement.
 
 ---
 
+## 🛑 JAMAIS D'ARTICLE EN AVANCE — un run = un article daté du jour
+
+Règle posée par David le 22/08/2026. Elle prime sur la réserve, sur l'alternance
+des matières et sur toute envie de prendre de l'avance.
+
+- **L'article publié porte toujours la date du jour même.** Jamais une date
+  future, même si la réserve est pleine, même si le sujet du lendemain semble
+  prêt, même si le run tombe tard le soir.
+- **Un run = au plus un article.** Ne sers jamais les créneaux suivants
+  « pendant qu'on y est ».
+- **La veille ne publie rien.** Elle écrit ses propositions dans
+  `docs/blog-pipeline/AAAA-MM-JJ.md` et passe les lignes du tableau « Sujets » au
+  statut `proposé`. Elle ne crée aucune page `app/blog/<slug>/`, n'ajoute aucune
+  entrée dans `lib/data/blog.ts`, ne build pas, ne pousse pas, ne déploie pas.
+- **Réserve vide ≠ écrire en avance.** Le run du jour fait sa veille, **puis**
+  rédige et publie **le seul article du jour** à partir d'un des angles trouvés.
+  Les autres angles restent en réserve pour les jours suivants.
+
+Pourquoi : l'écriture en avance est la cause de toute la confusion des 12–15/08
+puis des 19–23/08. Dès qu'une entrée porte une date future, la tête du tableau
+ment sur l'état du jour, les runs planifiés ne savent plus s'ils doivent publier,
+et le contrôle « créneau déjà servi » a dû être réécrit deux fois. Le seul état
+sain est : **une entrée par jour, écrite le jour même**.
+
+Seule exception : une demande explicite de David dans la conversation (« écris
+aussi l'article de demain »). Elle ne se déduit jamais du contexte, d'une réserve
+confortable ni d'un run qui a du temps devant lui.
+
+---
+
 ## Routine planifiée — publication quotidienne automatique
 
 Depuis le 26/07/2026, le blog fonctionne en **auto-publication quotidienne, sans

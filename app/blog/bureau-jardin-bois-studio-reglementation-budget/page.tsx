@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/metadata';
+import { AUTEUR_REF } from '@/lib/data/navigation';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
@@ -76,12 +77,7 @@ const jsonld = [
     description:
       "Ce qui coûte cher dans un bureau de jardin, ce n'est pas l'ossature, c'est tout ce qui le rend habitable : isolation, menuiseries, électricité et raccordements. Autorisation d'urbanisme, taxe d'aménagement 2026, confort d'hiver, alimentation d'une construction détachée et budget poste par poste, par un artisan à Libourne (Gironde).",
     image: 'https://lesprit-bois.fr' + COVER,
-    author: {
-      '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-      worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-    },
+    author: AUTEUR_REF,
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
@@ -335,7 +331,7 @@ export default function ArticleBureauJardinBoisPage() {
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
-                  href="/qui-sommes-nous#david-bertrand"
+                  href="/auteur/david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand

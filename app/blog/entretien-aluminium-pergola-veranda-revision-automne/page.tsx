@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/metadata';
+import { AUTEUR_REF } from '@/lib/data/navigation';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
@@ -77,12 +78,7 @@ const jsonld = [
     description:
       "Un ouvrage en aluminium ne s'entretient pas vraiment, il se surveille. Ce qui lâche, ce sont les évacuations d'eau bouchées, les joints fatigués et la motorisation que personne ne regarde jamais : la révision à faire avant la chute des feuilles, les gestes qui abîment le thermolaquage, les symptômes qui doivent alerter et notre calendrier d'entretien en Gironde.",
     image: 'https://lesprit-bois.fr' + COVER,
-    author: {
-      '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-      worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-    },
+    author: AUTEUR_REF,
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
@@ -299,7 +295,7 @@ export default function ArticleEntretienAluminiumPage() {
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
-                  href="/qui-sommes-nous#david-bertrand"
+                  href="/auteur/david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand

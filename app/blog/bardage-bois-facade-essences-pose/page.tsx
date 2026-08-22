@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/metadata';
+import { AUTEUR_REF } from '@/lib/data/navigation';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
@@ -62,12 +63,7 @@ const jsonld = [
     description:
       "Choisir un bardage bois pour sa façade : comparatif des essences (douglas, mélèze, red cedar, pin traité), classe d'emploi 3, pose claire-voie ou à recouvrement, lame d'air ventilée selon le NF DTU 41.2, déclaration préalable et budget au m² posé, à Libourne et en Gironde.",
     image: 'https://lesprit-bois.fr' + COVER,
-    author: {
-      '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-      worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-    },
+    author: AUTEUR_REF,
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
@@ -289,7 +285,7 @@ export default function ArticleBardageBoisFacadePage() {
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
-                  href="/qui-sommes-nous#david-bertrand"
+                  href="/auteur/david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand

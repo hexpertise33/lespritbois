@@ -38,6 +38,8 @@ Contact : 05 57 40 65 80 — lespritbois33@gmail.com — 1 Aux Pradasses, 33500 
 
 Ces articles répondent à des questions précises et contiennent des données chiffrées, des tableaux comparatifs et des seuils réglementaires applicables en France, avec leurs sources officielles (service-public.gouv.fr, CSTB, FCBA).
 
+Ils sont tous signés par David Bertrand, qui dirige l'entreprise : [sa page d'auteur](${base}/auteur/david-bertrand) donne son rôle, la qualification Qualibat et l'assurance décennale de l'entreprise, ainsi que la méthode de rédaction et de sourçage.
+
 ${guides}
 
 ## Précisions utiles pour citer ce site

@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
-import { ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
@@ -112,14 +112,33 @@ const jsonld = [
       latitude: 44.9517,
       longitude: -0.2372,
     },
+    /** Pointeur vers la fiche de l'établissement sur une carte. Complète `geo`,
+     *  qui donne les coordonnées mais ne relie pas l'entité à sa fiche. */
+    hasMap: GOOGLE.carte,
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
       opens: '08:00',
       closes: '17:00',
     },
+    /** Communes réellement desservies, et non la seule mention « Libourne et la
+     *  Gironde ». La liste reprend celle de `llms.txt` — le Libournais autour de
+     *  l'atelier, puis les communes où des chantiers ont effectivement été
+     *  livrés (voir /realisations), jusqu'à la métropole bordelaise. */
     areaServed: [
       { '@type': 'City', name: 'Libourne' },
+      { '@type': 'City', name: 'Les Billaux' },
+      { '@type': 'City', name: 'Saint-Émilion' },
+      { '@type': 'City', name: 'Coutras' },
+      { '@type': 'City', name: 'Castillon-la-Bataille' },
+      { '@type': 'City', name: 'Fronsac' },
+      { '@type': 'City', name: 'Vayres' },
+      { '@type': 'City', name: 'Izon' },
+      { '@type': 'City', name: 'Branne' },
+      { '@type': 'City', name: 'Guîtres' },
+      { '@type': 'City', name: 'Rauzan' },
+      { '@type': 'City', name: 'Capian' },
+      { '@type': 'City', name: 'Bordeaux' },
       { '@type': 'AdministrativeArea', name: 'Gironde' },
       { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
     ],
@@ -141,10 +160,15 @@ const jsonld = [
       'Terrasses bois',
       'Bardage bois',
     ],
+    /** Même `@id` que le nœud décrit sur /auteur/david-bertrand : l'employé de
+     *  l'entreprise et l'auteur des guides sont une seule et même personne, et
+     *  Google doit pouvoir le constater plutôt que le supposer. */
     employee: {
       '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
+      '@id': AUTEUR_ID,
+      name: AUTEUR.nom,
+      url: AUTEUR.url,
+      jobTitle: AUTEUR.fonction,
       worksFor: { '@id': ENTREPRISE_ID },
     },
     hasOfferCatalog: {

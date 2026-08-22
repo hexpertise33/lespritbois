@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/metadata';
+import { AUTEUR_REF } from '@/lib/data/navigation';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
@@ -78,12 +79,7 @@ const jsonld = [
     description:
       "Comparatif de décision entre garde-corps aluminium et garde-corps bois pour une terrasse : ce que dit la norme NF P01-012 révisée en 2024, profilés et remplissages côté aluminium, essences et réparabilité côté bois, entretien sur quinze ans, budget au mètre linéaire posé en Gironde et qualité de l'ancrage.",
     image: 'https://lesprit-bois.fr' + COVER,
-    author: {
-      '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-      worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-    },
+    author: AUTEUR_REF,
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
@@ -310,7 +306,7 @@ export default function ArticleGardeCorpsTerrassePage() {
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
-                  href="/qui-sommes-nous#david-bertrand"
+                  href="/auteur/david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand

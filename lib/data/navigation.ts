@@ -41,6 +41,9 @@ export const GOOGLE = {
   fiche: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
   itineraire:
     'https://www.google.com/maps/dir/?api=1&destination=1+Aux+Pradasses%2C+33500+Les+Billaux',
+  /** L'établissement situé sur une carte. Sert de `hasMap` dans les données
+   *  structurées : `fiche` est une page de résultats, pas une carte. */
+  carte: 'https://www.google.com/maps/search/?api=1&query=1+Aux+Pradasses%2C+33500+Les+Billaux',
   /** Lien « laisser un avis ». Pointe pour l'instant sur la fiche, où le bouton
    *  « Rédiger un avis » se trouve — soit deux clics pour le client.
    *
@@ -53,8 +56,24 @@ export const GOOGLE = {
   avis: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
 } as const;
 
-/** Profils à déclarer dans les données structurées. */
-export const SAME_AS: string[] = Object.values(RESEAUX);
+/** Profils externes à déclarer dans le `sameAs` de l'entité.
+ *
+ *  Le `sameAs` sert à corroborer l'entité ailleurs que sur son propre site :
+ *  c'est ce qui permet à Google, et aux moteurs génératifs, de confirmer que
+ *  « L'Esprit Bois » existe en dehors de lesprit-bois.fr. On n'y met donc que
+ *  des profils qui décrivent **la même entité**, avec les mêmes nom, adresse et
+ *  téléphone. Une fiche au NAP divergent ferait l'inverse de l'effet recherché.
+ *
+ *  La fiche Google est ajoutée ici via son identifiant Knowledge Graph : c'est
+ *  le seul pointeur stable et public vers l'établissement.
+ *
+ *  ⚠️ Volontairement absente : la fiche PagesJaunes `pros/63361515`. Elle est au
+ *  nom de « Les A de France », à la même adresse (1 lotissement Pradasses), mais
+ *  avec un autre téléphone (06 35 48 43 92) et un autre site (a-defrance.fr).
+ *  C'est l'entité voisine, pas celle-ci : la déclarer identique introduirait une
+ *  incohérence de NAP au lieu de la corroboration recherchée. Il n'existe à ce
+ *  jour aucune fiche PagesJaunes au nom de L'Esprit Bois. */
+export const SAME_AS: string[] = [...Object.values(RESEAUX), GOOGLE.fiche];
 
 export type Onglet = {
   cle: string;
@@ -100,3 +119,18 @@ export const ENTREPRISE_ID = `${SITE.url}/#entreprise`;
 /** Référence à l'entité décrite sur l'accueil. À utiliser comme valeur de
  *  `provider`, `publisher`, `about` ou `mainEntity` sur les autres pages. */
 export const ENTREPRISE_REF = { '@id': ENTREPRISE_ID } as const;
+
+/** Identifiant stable de l'auteur des guides.
+ *
+ *  Les 33 articles déclaraient jusqu'ici un `Person` anonyme, recopié en ligne
+ *  dans chaque fichier : ni `@id`, ni `url`, ni page à laquelle se rattacher.
+ *  L'expertise était donc affirmée trente-trois fois et vérifiable zéro fois.
+ *  Un seul nœud est désormais défini, sur /auteur/david-bertrand ; partout
+ *  ailleurs on s'y réfère par cet identifiant. */
+export const AUTEUR_ID = `${SITE.url}/auteur/david-bertrand#person`;
+export const AUTEUR_REF = { '@id': AUTEUR_ID } as const;
+export const AUTEUR = {
+  nom: 'David Bertrand',
+  fonction: "Expert bâtiment et créateur d'espaces extérieurs",
+  url: `${SITE.url}/auteur/david-bertrand`,
+} as const;

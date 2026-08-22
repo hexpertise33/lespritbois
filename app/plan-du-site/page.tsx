@@ -32,6 +32,7 @@ const RUBRIQUES: { titre: string; liens: Lien[] }[] = [
     liens: [
       { titre: 'Accueil', url: '/' },
       { titre: 'Qui sommes-nous', url: '/qui-sommes-nous' },
+      { titre: 'David Bertrand, auteur des guides', url: '/auteur/david-bertrand' },
       { titre: 'Réalisations', url: '/realisations' },
       { titre: 'Blog', url: '/blog' },
       { titre: 'Contact & devis', url: '/contact' },

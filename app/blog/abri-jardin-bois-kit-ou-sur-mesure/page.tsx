@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/metadata';
+import { AUTEUR_REF } from '@/lib/data/navigation';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
@@ -105,12 +106,7 @@ const jsonld = [
     description:
       "Kit ou sur-mesure pour un abri de jardin en bois : budget 2026, essence et classes d'emploi, durée de vie, réglementation et implantation en Gironde. Le comparatif de décision d'un artisan à Libourne.",
     image: 'https://lesprit-bois.fr' + COVER,
-    author: {
-      '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-      worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-    },
+    author: AUTEUR_REF,
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
@@ -306,7 +302,7 @@ export default function ArticleAbriJardinBoisPage() {
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
-                  href="/qui-sommes-nous#david-bertrand"
+                  href="/auteur/david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand

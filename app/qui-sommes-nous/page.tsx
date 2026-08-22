@@ -270,7 +270,14 @@ export default function QuiSommesNousPage() {
               <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
                 Qui écrit sur ce site
               </span>
-              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">David Bertrand</h2>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
+                <a
+                  href="/auteur/david-bertrand"
+                  className="hover:text-secondary-dark transition-colors"
+                >
+                  David Bertrand
+                </a>
+              </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Expert bâtiment et créateur d&apos;espaces extérieurs, il dirige L&apos;Esprit Bois et signe les
                 guides techniques publiés sur ce site.
@@ -285,13 +292,22 @@ export default function QuiSommesNousPage() {
                 Quand un sujet dépend du PLU de votre commune ou de la nature de votre sol, les guides le disent
                 plutôt que d&apos;avancer un chiffre universel qui serait faux chez la moitié des lecteurs.
               </p>
-              <a
-                href="/blog"
-                className="mt-8 inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
-              >
-                Lire les guides
-                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
-              </a>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="/auteur/david-bertrand"
+                  className="inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                >
+                  Qui écrit ces guides
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+                <a
+                  href="/blog"
+                  className="inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                >
+                  Lire les guides
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
             </div>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img

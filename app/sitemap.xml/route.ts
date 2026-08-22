@@ -20,6 +20,7 @@ const PAGES_STATIQUES: { chemin: string; lastmod: string }[] = [
   { chemin: '/blog', lastmod: '2026-08-01' },
   { chemin: '/contact', lastmod: '2026-08-02' },
   { chemin: '/qui-sommes-nous', lastmod: '2026-08-01' },
+  { chemin: '/auteur/david-bertrand', lastmod: '2026-08-22' },
   { chemin: '/mentions-legales', lastmod: '2026-08-02' },
   { chemin: '/politique-de-confidentialite', lastmod: '2026-08-02' },
   { chemin: '/plan-du-site', lastmod: '2026-08-02' },

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/metadata';
+import { AUTEUR_REF } from '@/lib/data/navigation';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
@@ -107,12 +108,7 @@ const jsonld = [
     description:
       "Fermer une pergola prolonge la saison de quelques mois, mais ne fabrique pas une véranda : sans isolation ni rupture de pont thermique, on gagne un abri hors vent et hors pluie, pas une pièce chauffée. Rideau de verre, store screen à zip, panneaux vitrés fixes ou coulissants, condensation, budget poste par poste et l'effet méconnu de la fermeture sur le statut fiscal de l'ouvrage : le guide d'un artisan à Libourne (Gironde).",
     image: 'https://lesprit-bois.fr' + COVER,
-    author: {
-      '@type': 'Person',
-      name: 'David Bertrand',
-      jobTitle: "Expert bâtiment et créateur d'espaces extérieurs",
-      worksFor: { '@type': 'Organization', name: "L'Esprit Bois" },
-    },
+    author: AUTEUR_REF,
     publisher: {
       '@type': 'Organization',
       name: "L'Esprit Bois",
@@ -335,7 +331,7 @@ export default function ArticleFermerPergolaPage() {
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
-                  href="/qui-sommes-nous#david-bertrand"
+                  href="/auteur/david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand

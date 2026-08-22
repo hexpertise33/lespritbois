@@ -93,7 +93,7 @@ export default function SiteNav({ page = '' }: { page?: string }) {
           aria-controls="menu-mobile"
           onClick={() => setMenuOuvert((v) => !v)}
         >
-          <span id="menu-icone" className="material-symbols-outlined">
+          <span id="menu-icone" className="material-symbols-outlined" aria-hidden="true">
             {menuOuvert ? 'close' : 'menu'}
           </span>
         </button>

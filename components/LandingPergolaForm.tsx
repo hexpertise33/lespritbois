@@ -65,7 +65,7 @@ export default function LandingPergolaForm({ instanceId }: { instanceId: Instanc
   if (etat === 'success') {
     return (
       <div className="space-y-4 text-center py-12">
-        <span className="material-symbols-outlined text-secondary-dark text-5xl">check_circle</span>
+        <span className="material-symbols-outlined text-secondary-dark text-5xl" aria-hidden="true">check_circle</span>
         <h3 className="font-headline-sm text-headline-sm text-primary">Merci pour votre demande !</h3>
         <p className="text-on-surface-variant font-body-md text-body-md">
           Nous revenons vers vous sous 48h avec une première estimation.

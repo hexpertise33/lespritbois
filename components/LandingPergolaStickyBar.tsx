@@ -38,7 +38,7 @@ export default function LandingPergolaStickyBar() {
           className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 border border-white/30 shrink-0"
           aria-label={`Appeler le ${CONTACT.telAffiche}`}
         >
-          <span className="material-symbols-outlined text-[22px]">call</span>
+          <span className="material-symbols-outlined text-[22px]" aria-hidden="true">call</span>
         </a>
         <a
           href="#devis-bas"

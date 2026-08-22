@@ -79,7 +79,7 @@ export default function LandingPergolaDesktopPopup() {
             href={CONTACT.telHref}
             className="inline-flex items-center justify-center gap-2 bg-surface-container-low border border-surface-variant text-primary px-6 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all"
           >
-            <span className="material-symbols-outlined text-[20px]">call</span>
+            <span className="material-symbols-outlined text-[20px]" aria-hidden="true">call</span>
             {CONTACT.telAffiche}
           </a>
           <a

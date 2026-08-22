@@ -176,7 +176,7 @@ const jsonld = [
         name: 'Êtes-vous certifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.",
         },
       },
     ],
@@ -307,7 +307,7 @@ export default function ConstructionsBoisPage() {
               <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Certifiés Qualibat
+                  Qualifiés Qualibat
                 </p>
                 <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
               </div>
@@ -1013,7 +1013,7 @@ export default function ConstructionsBoisPage() {
                 sous-traitance.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
+                Entreprise <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, nous couvrons
                 chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>,
                 et nous montons pour vous le dossier d'urbanisme,{' '}
                 <a
@@ -1193,7 +1193,7 @@ export default function ConstructionsBoisPage() {
                 </summary>
                 <p className="text-on-surface-variant text-body-md mt-4">
                   Oui. L'Esprit Bois est une entreprise{' '}
-                  <strong className="text-primary font-semibold">certifiée Qualibat</strong>, la qualification de
+                  <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, la qualification de
                   référence du bâtiment, et chacun de nos ouvrages est couvert par notre{' '}
                   <strong className="text-primary font-semibold">garantie décennale</strong> : la structure que
                   nous posons est garantie dix ans à compter de la réception du chantier.

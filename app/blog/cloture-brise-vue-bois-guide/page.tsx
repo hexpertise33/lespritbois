@@ -697,7 +697,7 @@ export default function ArticleClotureBriseVueBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Il n&apos;existe pas de clôture universelle : il y a la hauteur autorisée par votre PLU, l&apos;essence qui
               tiendra sous notre climat, le style juste entre intimité et ventilation, et une pose qui garde le bois au
-              sec. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à
+              sec. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à
               Libourne et dans toute la Gironde, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

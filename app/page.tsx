@@ -10,7 +10,7 @@ import { ZONES } from '@/lib/data/zones';
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
   description:
-    'Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Entreprise certifiée Qualibat, garantie décennale.',
+    'Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Entreprise qualifiée Qualibat, garantie décennale.',
   keywords:
     "L'Esprit Bois, carport Libourne, pergola Gironde, extension bois Libourne, construction bois Gironde, charpentier Libourne",
   path: '/',
@@ -69,7 +69,7 @@ const jsonld = [
     vatID: 'FR47980264584',
     taxID: '980264584',
     description:
-      "Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.",
+      "Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise qualifiée Qualibat, ouvrages couverts par une garantie décennale.",
     url: 'https://lesprit-bois.fr/',
     telephone: '+33557406580',
     email: 'lespritbois33@gmail.com',
@@ -95,10 +95,14 @@ const jsonld = [
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       reviewBody: avis.texte,
     })),
+    /** Qualibat délivre des qualifications ET des certifications : L'Esprit Bois
+     *  détient une QUALIFICATION professionnelle, pas une certification.
+     *  Confirmé par David le 22/08/2026 — ne pas repasser à 'certification'. */
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
-      credentialCategory: 'certification',
+      credentialCategory: 'qualification professionnelle',
       name: 'Qualibat',
+      recognizedBy: { '@type': 'Organization', name: 'Qualibat' },
     },
     address: {
       '@type': 'PostalAddress',
@@ -522,7 +526,7 @@ export default function HomePage() {
               <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Certifiés Qualibat
+                  Qualifiés Qualibat
                 </p>
                 <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
               </div>
@@ -872,7 +876,7 @@ export default function HomePage() {
                 et sa beauté.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                Entreprise <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons
+                Entreprise <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, nous couvrons
                 chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>.
                 Un seul interlocuteur, de l'étude à la pose, sans sous-traitance : c'est la seule façon de répondre
                 de ce qu'on pose.

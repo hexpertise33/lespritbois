@@ -818,7 +818,7 @@ export default function ArticleTeinteRalAluminiumPage() {
               Un code RAL ne dit pas grand-chose seul : c&apos;est la finition, l&apos;exposition et l&apos;accord avec
               vos menuiseries qui font une teinte réussie. Nous apportons les échantillons de profilés chez vous, nous
               les regardons dehors contre votre façade, et nous vérifions au passage ce que permet le PLU de votre
-              commune. C&apos;est la démarche que nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à
+              commune. C&apos;est la démarche que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à
               Libourne et dans toute la Gironde, sur nos pergolas, carports et garde-corps en aluminium.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

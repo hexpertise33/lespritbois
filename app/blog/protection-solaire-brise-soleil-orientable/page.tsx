@@ -790,7 +790,7 @@ export default function ArticleProtectionSolairePage() {
               Arrêter le soleil dehors, avant le vitrage, puis choisir le dispositif selon l&apos;orientation : brise-soleil
               orientable au sud pour doser la lumière, store screen à zip sur les grandes baies d&apos;ouest, brise-soleil
               fixe quand on ne veut aucune mécanique. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois,
-              entreprise certifiée Qualibat à Libourne et dans toute la Gironde — protections solaires, pergolas
+              entreprise qualifiée Qualibat à Libourne et dans toute la Gironde — protections solaires, pergolas
               bioclimatiques et vérandas aluminium, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

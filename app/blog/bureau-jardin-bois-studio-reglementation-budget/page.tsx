@@ -898,7 +898,7 @@ export default function ArticleBureauJardinBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Un bureau de jardin réussi, c&apos;est une petite construction traitée comme telle : fondée sérieusement,
               isolée sur ses six faces, alimentée dans les règles, déclarée en mairie et budgétée taxe comprise. C&apos;est
-              le projet que nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute
+              le projet que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute
               la Gironde — de l&apos;étude d&apos;implantation au dossier d&apos;urbanisme, puis du chantier à la
               livraison. Si la déclaration part maintenant, vous travaillez au calme avant l&apos;hiver.
             </p>

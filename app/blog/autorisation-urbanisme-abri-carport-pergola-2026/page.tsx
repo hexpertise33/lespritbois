@@ -639,7 +639,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             </h2>
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Emprise au sol, seuils de 20 ou 40 m², secteur protégé, nouveau CERFA n°16702 : la réglementation 2026
-              n&apos;a rien d&apos;évident à démêler seul. Chez L&apos;Esprit Bois, entreprise certifiée Qualibat à
+              n&apos;a rien d&apos;évident à démêler seul. Chez L&apos;Esprit Bois, entreprise qualifiée Qualibat à
               Libourne, nous vérifions le PLU de votre commune et montons votre dossier d&apos;urbanisme avant même de
               chiffrer votre abri, carport ou pergola, dans toute la Gironde.
             </p>

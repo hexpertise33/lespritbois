@@ -702,7 +702,7 @@ export default function ArticleAbriJardinBoisPage() {
               Kit ou sur-mesure, il n&apos;y a pas de mauvaise réponse dans l&apos;absolu : il y a l&apos;abri juste pour
               votre besoin, votre budget et la durée pendant laquelle vous comptez le garder. Dès que la surface, la
               longévité ou l&apos;intégration au jardin comptent, le sur-mesure fait la différence. C&apos;est le
-              diagnostic que nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute
+              diagnostic que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute
               la Gironde, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

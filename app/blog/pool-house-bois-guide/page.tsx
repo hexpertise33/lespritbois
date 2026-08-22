@@ -715,7 +715,7 @@ export default function ArticlePoolHouseBoisPage() {
               La réglementation vous dira ce que vous avez le droit de construire ; elle ne vous dira jamais ce dont vous
               avez besoin. Un bon pool-house, c&apos;est le juste usage, à la bonne distance du bassin, avec les réseaux
               passés au bon moment. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois, entreprise
-              certifiée Qualibat, à Libourne et dans toute la Gironde, vérification du PLU et formalités
+              qualifiée Qualibat, à Libourne et dans toute la Gironde, vérification du PLU et formalités
               d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

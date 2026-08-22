@@ -726,7 +726,7 @@ export default function ArticleStructureTerrasseBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Personne ne vous complimentera jamais sur vos lambourdes. C&apos;est pourtant là que se joue la différence
               entre une terrasse qui traverse quinze saisons sans broncher et une terrasse qu&apos;il faut reprendre au
-              bout de cinq ans. Chez L&apos;Esprit Bois, entreprise certifiée Qualibat à Libourne et dans toute la
+              bout de cinq ans. Chez L&apos;Esprit Bois, entreprise qualifiée Qualibat à Libourne et dans toute la
               Gironde, nous commençons toujours par le sol, les niveaux et la ventilation — le choix de la lame vient
               ensuite.
             </p>

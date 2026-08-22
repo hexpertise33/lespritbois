@@ -388,7 +388,7 @@ export default function RealisationsPage() {
               <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Certifiés Qualibat
+                  Qualifiés Qualibat
                 </p>
                 <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
               </div>

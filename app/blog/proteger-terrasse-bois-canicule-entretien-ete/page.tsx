@@ -725,7 +725,7 @@ export default function ArticleTerrasseBoisCaniculePage() {
               Retenez l&apos;essentiel : le gris n&apos;est pas une maladie, le saturateur ne s&apos;applique jamais sur un
               bois brûlant, la haute pression fait plus de mal que de bien, et l&apos;ombre reste le seul remède qui
               s&apos;attaque à la cause. Le reste se décide à la conception : ventilation, jeu entre les lames,
-              orientation. C&apos;est ce que nous faisons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à
+              orientation. C&apos;est ce que nous faisons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à
               Libourne et dans toute la Gironde, du diagnostic d&apos;une terrasse existante à la pose d&apos;une
               couverture qui la protégera durablement.
             </p>

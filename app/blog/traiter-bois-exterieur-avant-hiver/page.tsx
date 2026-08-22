@@ -787,7 +787,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               ce qui retient l&apos;eau, et reportez l&apos;application au printemps : un bois nu passe l&apos;hiver
               sans dommage, un bois mal traité se paie deux fois. Et n&apos;oubliez pas que votre terrasse, votre
               bardage, votre clôture et votre carport ne demandent ni le même produit ni le même rythme. Chez L&apos;Esprit
-              Bois, entreprise certifiée Qualibat installée près de Libourne, nous entretenons, diagnostiquons et
+              Bois, entreprise qualifiée Qualibat installée près de Libourne, nous entretenons, diagnostiquons et
               rénovons les ouvrages en bois dans toute la Gironde — y compris ceux que nous n&apos;avons pas construits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

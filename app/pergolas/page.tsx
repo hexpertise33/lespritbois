@@ -201,7 +201,7 @@ const jsonld = [
         name: 'Êtes-vous certifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.",
         },
       },
     ],
@@ -515,7 +515,7 @@ export default function PergolasPage() {
               <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Certifiés Qualibat
+                  Qualifiés Qualibat
                 </p>
                 <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
               </div>
@@ -1429,7 +1429,7 @@ export default function PergolasPage() {
                   un seul interlocuteur
                 </a>
                 , de l'étude à la dernière lame. Entreprise{' '}
-                <strong className="text-primary font-semibold">certifiée Qualibat</strong>, nous couvrons chaque
+                <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, nous couvrons chaque
                 ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>.
               </p>
             </div>
@@ -1763,7 +1763,7 @@ export default function PergolasPage() {
                 </summary>
                 <p className="text-on-surface-variant text-body-md mt-4">
                   Oui. L'Esprit Bois est une entreprise{' '}
-                  <strong className="text-primary font-semibold">certifiée Qualibat</strong> et chacun de nos ouvrages
+                  <strong className="text-primary font-semibold">Qualifiée Qualibat</strong> et chacun de nos ouvrages
                   est couvert par notre <strong className="text-primary font-semibold">garantie décennale</strong>.
                   Les structures aluminium de notre partenaire{' '}
                   <a

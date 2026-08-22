@@ -23,7 +23,7 @@ export function GET() {
 
   const corps = `# L'Esprit Bois
 
-> Charpentier et constructeur bois installé aux Billaux (33500), à cinq minutes de Libourne, en Gironde. Conception, fabrication en atelier et pose par les mêmes équipes, sans sous-traitance. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale assurée par SMABTP.
+> Charpentier et constructeur bois installé aux Billaux (33500), à cinq minutes de Libourne, en Gironde. Conception, fabrication en atelier et pose par les mêmes équipes, sans sous-traitance. Entreprise qualifiée Qualibat, ouvrages couverts par une garantie décennale assurée par SMABTP.
 
 Zone d'intervention : Libourne et le Libournais (Les Billaux, Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), et plus largement la Gironde jusqu'à la métropole bordelaise.
 

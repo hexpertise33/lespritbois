@@ -815,7 +815,7 @@ export default function ArticleGardeCorpsTerrassePage() {
               pour l&apos;effort qu&apos;il doit reprendre et pensé pour ne pas offrir de prise à un enfant. Nous posons
               les deux matières et nous vous dirons franchement laquelle convient à votre terrasse, après avoir mesuré
               la hauteur et regardé sur quoi il est possible de fixer. C&apos;est le diagnostic que nous menons chez
-              L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute la Gironde.
+              L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

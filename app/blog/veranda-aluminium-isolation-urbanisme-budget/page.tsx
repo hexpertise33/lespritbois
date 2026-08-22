@@ -840,7 +840,7 @@ export default function ArticleVerandaAluminiumPage() {
               pont thermique, des vitrages différenciés selon l&apos;orientation, une toiture pensée pour l&apos;été
               girondin et un raccord à la maison irréprochable. Le reste — la teinte RAL, la motorisation, le budget —
               découle de ces décisions. Nous vendons et posons le bois comme l&apos;aluminium : chez L&apos;Esprit
-              Bois, entreprise certifiée Qualibat à Libourne et dans toute la Gironde, nous vous dirons franchement
+              Bois, entreprise qualifiée Qualibat à Libourne et dans toute la Gironde, nous vous dirons franchement
               laquelle des deux solutions sert le mieux votre projet, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

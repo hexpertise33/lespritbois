@@ -666,7 +666,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
               Il n&apos;y a pas de « meilleure pergola » universelle : il y a celle qui correspond à votre maison, à
               votre usage et à votre budget. Le bois pour la chaleur et l&apos;intégration, la bioclimatique pour le
               confort modulable, et parfois un mariage des deux. C&apos;est le diagnostic que nous menons chez
-              L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute la Gironde.
+              L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

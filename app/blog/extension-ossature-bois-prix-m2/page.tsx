@@ -765,7 +765,7 @@ export default function ArticleExtensionOssatureBoisPage() {
               Une extension en ossature bois, c&apos;est de la surface en plus sans déménager, un chantier court et
               propre, une belle isolation et un bilan carbone qui joue en votre faveur, pour 1 700 à 2 500 €/m² sur
               mesure. Reste à caler le juste projet sur votre terrain et votre budget : c&apos;est le diagnostic que nous
-              menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute la Gironde,
+              menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde,
               vérification du PLU et dossier d&apos;urbanisme compris.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

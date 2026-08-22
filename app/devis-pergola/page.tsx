@@ -134,7 +134,7 @@ export default function DevisPergolaPage() {
               />
               <p className="font-body-lg text-body-lg text-white/85 mb-6">
                 Bioclimatique, aluminium ou bois massif : conçue, fabriquée et posée par la même
-                équipe, certifiée Qualibat et couverte par notre garantie décennale.
+                équipe, qualifiée Qualibat et couverte par notre garantie décennale.
               </p>
               <a
                 href={CONTACT.telHref}
@@ -160,7 +160,7 @@ export default function DevisPergolaPage() {
               <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Certifiés Qualibat RGE
+                  Qualifiés Qualibat RGE
                 </p>
                 <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
               </div>

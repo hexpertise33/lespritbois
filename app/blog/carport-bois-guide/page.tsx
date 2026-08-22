@@ -683,7 +683,7 @@ export default function ArticleCarportBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Il n&apos;existe pas de carport universel : il y a l&apos;abri juste pour votre terrain, votre maison et
               votre budget, ancré sur une structure durable et coiffé d&apos;une toiture cohérente. C&apos;est le
-              diagnostic que nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute
+              diagnostic que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute
               la Gironde, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

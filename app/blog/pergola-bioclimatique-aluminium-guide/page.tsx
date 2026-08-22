@@ -810,7 +810,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               par les poteaux sans qu&apos;on la voie, une motorisation utile plutôt que bavarde, et des côtés pensés
               pour le soleil de 19 h. Nous vendons et posons le bois comme l&apos;aluminium : nous n&apos;avons donc
               aucun intérêt à vous pousser une matière. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois,
-              entreprise certifiée Qualibat, à Libourne et dans toute la Gironde, formalités d&apos;urbanisme comprises.
+              entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

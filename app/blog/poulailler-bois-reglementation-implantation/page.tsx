@@ -603,7 +603,7 @@ export default function ArticlePoulaillerBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Réglementation d&apos;urbanisme, déclaration des volailles en mairie, dimensionnement au bien-être,
               essence durable et bonne implantation : un poulailler réussi, c&apos;est tout cela réuni. C&apos;est le
-              diagnostic que nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute
+              diagnostic que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute
               la Gironde — formalités comprises. Installez le vôtre avant l&apos;hiver.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

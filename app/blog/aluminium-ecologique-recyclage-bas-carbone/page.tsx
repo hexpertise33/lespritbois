@@ -767,7 +767,7 @@ export default function ArticleAluminiumEcologiquePage() {
               L&apos;aluminium recyclé change réellement la donne, et la filière française se structure pour cela dès
               2026 — sans pour autant effacer l&apos;avantage du bois à la fabrication. Le vrai geste écologique reste
               le même dans les deux cas : un ouvrage bien conçu, bien posé, qui tiendra trente ans sans être remplacé.
-              C&apos;est l&apos;arbitrage que nous menons avec vous chez L&apos;Esprit Bois, entreprise certifiée
+              C&apos;est l&apos;arbitrage que nous menons avec vous chez L&apos;Esprit Bois, entreprise qualifiée
               Qualibat, à Libourne et dans toute la Gironde — bois ou aluminium, selon ce que votre projet demande
               vraiment.
             </p>

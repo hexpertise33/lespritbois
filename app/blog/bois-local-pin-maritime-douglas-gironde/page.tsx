@@ -708,7 +708,7 @@ export default function ArticleBoisLocalGirondePage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Travailler le bois local en Gironde n&apos;est pas un argument marketing : c&apos;est une ressource
               disponible à quelques dizaines de kilomètres de Libourne, avec de vraies qualités techniques et de vraies
-              limites. Chez L&apos;Esprit Bois, entreprise certifiée Qualibat, nous choisissons l&apos;essence pour
+              limites. Chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, nous choisissons l&apos;essence pour
               l&apos;usage, nous écrivons la provenance et la classe d&apos;emploi sur le devis, et nous disons quand une
               autre essence servira mieux votre projet.
             </p>

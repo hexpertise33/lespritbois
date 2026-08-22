@@ -536,7 +536,7 @@ export default function ArticleQuelBoisTerrassePage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Il n&apos;existe pas de « meilleur bois » universel : il y a le bois juste pour votre terrain, votre
               exposition et votre budget, posé sur une structure ventilée et bien drainée. C&apos;est le diagnostic que
-              nous menons chez L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute la Gironde.
+              nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

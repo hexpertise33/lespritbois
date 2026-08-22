@@ -811,7 +811,7 @@ export default function ArticleCarportAluOuBoisPage() {
               Nous vendons et posons le bois comme l&apos;aluminium : notre seul intérêt est que votre carport soit le
               bon, pas qu&apos;il soit d&apos;une matière plutôt que d&apos;une autre. Venez avec vos contraintes —
               largeur, teinte des menuiseries, entretien accepté, budget global — et nous tranchons ensemble, devant
-              votre terrain. L&apos;Esprit Bois, entreprise certifiée Qualibat, intervient à Libourne et dans toute la
+              votre terrain. L&apos;Esprit Bois, entreprise qualifiée Qualibat, intervient à Libourne et dans toute la
               Gironde, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -879,7 +879,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               Véranda aluminium ou extension en ossature bois, nous posons les deux : notre seul intérêt est que la
               pièce que vous ajoutez soit celle que vous utiliserez vraiment, en février comme en août. Venez avec vos
               contraintes — usage visé, orientation, surface, budget global — et nous tranchons ensemble, devant votre
-              maison. L&apos;Esprit Bois, entreprise certifiée Qualibat, intervient à Libourne et dans toute la Gironde,
+              maison. L&apos;Esprit Bois, entreprise qualifiée Qualibat, intervient à Libourne et dans toute la Gironde,
               formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

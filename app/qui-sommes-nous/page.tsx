@@ -8,7 +8,7 @@ import { CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
 export const metadata: Metadata = buildMetadata({
   title: 'Qui sommes-nous — charpentiers à Libourne',
   description:
-    "L'Esprit Bois : charpentiers et constructeurs bois aux Billaux, près de Libourne. Certifiés Qualibat, garantie décennale SMABTP, aucune sous-traitance.",
+    "L'Esprit Bois : charpentiers et constructeurs bois aux Billaux, près de Libourne. Qualifiés Qualibat, garantie décennale SMABTP, aucune sous-traitance.",
   keywords:
     "qui sommes-nous L'Esprit Bois, charpentier Libourne, constructeur bois Gironde, entreprise Qualibat Libourne, David Bertrand charpentier",
   path: '/qui-sommes-nous',
@@ -37,7 +37,7 @@ const jsonld = [
     name: "Qui sommes-nous — L'Esprit Bois",
     url: 'https://lesprit-bois.fr/qui-sommes-nous',
     description:
-      "Présentation de L'Esprit Bois, charpentiers et constructeurs bois installés aux Billaux, près de Libourne : métier, engagements, certifications et méthode de travail.",
+      "Présentation de L'Esprit Bois, charpentiers et constructeurs bois installés aux Billaux, près de Libourne : métier, engagements, qualification et méthode de travail.",
     mainEntity: ENTREPRISE_REF,
   },
 ];
@@ -45,7 +45,7 @@ const jsonld = [
 const ENGAGEMENTS = [
   {
     icone: 'verified',
-    titre: 'Certifiés Qualibat',
+    titre: 'Qualifiés Qualibat',
     texte:
       "La qualification de référence du bâtiment. Elle s'obtient sur dossier — moyens techniques, références de chantiers, situation financière — et se renouvelle. Ce n'est pas un logo qu'on achète.",
   },

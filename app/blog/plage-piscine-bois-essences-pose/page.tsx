@@ -776,7 +776,7 @@ export default function ArticlePlagePiscineBoisPage() {
               Choisir « le bois qui résiste au chlore » ne règle rien. Ce qui fait une plage de piscine agréable dans
               dix ans, c&apos;est une essence stable, une surface confortable pieds nus, une eau qui s&apos;éloigne du
               bassin et une sous-face qui respire — plus des détails que personne ne remarque : jeu de dilatation,
-              visserie inox A4, trappes démontables. Chez L&apos;Esprit Bois, entreprise certifiée Qualibat à Libourne
+              visserie inox A4, trappes démontables. Chez L&apos;Esprit Bois, entreprise qualifiée Qualibat à Libourne
               et dans toute la Gironde, nous relevons les niveaux, le dispositif de sécurité du bassin et les
               contraintes d&apos;urbanisme avant de parler de lames.
             </p>

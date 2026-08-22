@@ -292,7 +292,7 @@ export default function ContactPage() {
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
               <span className="material-symbols-outlined text-secondary text-4xl mb-3 block" aria-hidden="true">verified</span>
-              <h2 className="font-headline-sm text-headline-sm text-secondary-fixed mb-2">Certifiés Qualibat</h2>
+              <h2 className="font-headline-sm text-headline-sm text-secondary-fixed mb-2">Qualifiés Qualibat</h2>
               <p className="text-on-primary-container text-body-md">La qualification de référence du bâtiment.</p>
             </div>
             <div>

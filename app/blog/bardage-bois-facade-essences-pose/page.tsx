@@ -808,7 +808,7 @@ export default function ArticleBardageBoisFacadePage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Choisissez l&apos;essence pour son aspect, son origine et votre budget ; choisissez votre poseur pour la
               ventilation qu&apos;il saura ménager derrière les lames. C&apos;est ce diagnostic que nous menons chez
-              L&apos;Esprit Bois, entreprise certifiée Qualibat, à Libourne et dans toute la Gironde — essence, profil de
+              L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde — essence, profil de
               pose, déclaration préalable et budget compris.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

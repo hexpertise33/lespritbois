@@ -396,7 +396,7 @@ export default function ArticleExtensionOssatureBoisPage() {
               src="/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-chantier-gironde.jpg"
               w={1200}
               h={900}
-              alt="Montage de l'ossature bois d'une extension sur un chantier en Gironde, structure montée contre la maison existante"
+              alt="Montage de l'ossature bois d'une extension, structure levée contre la maison existante"
               caption="Sur nos chantiers, l'ossature de l'extension se monte contre la maison existante : le raccord de toiture se prépare avant la mise hors d'eau."
             />
 
@@ -475,7 +475,7 @@ export default function ArticleExtensionOssatureBoisPage() {
               src="/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg"
               w={1200}
               h={900}
-              alt="Extension ossature bois terminée près de Libourne, grande baie vitrée coulissante et bardage bois douglas"
+              alt="Extension à ossature bois terminée, grande baie vitrée coulissante et bardage bois douglas"
               caption="La grande baie vitrée inonde l'extension de lumière ; à emprise au sol égale, l'ossature bois offre plus de surface habitable qu'en maçonnerie."
             />
 

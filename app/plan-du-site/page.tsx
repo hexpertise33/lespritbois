@@ -4,6 +4,7 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import { CONTACT } from '@/lib/data/navigation';
 import { articles } from '@/lib/data/blog';
+import { ZONES } from '@/lib/data/zones';
 
 export const metadata: Metadata = buildMetadata({
   title: "Plan du site — toutes nos pages | L'Esprit Bois",
@@ -26,6 +27,10 @@ const RUBRIQUES: { titre: string; liens: Lien[] }[] = [
       { titre: 'Aménagement extérieur', url: '/amenagement-exterieur' },
       { titre: 'Constructions bois', url: '/constructions-bois' },
     ],
+  },
+  {
+    titre: "Zones d'intervention",
+    liens: ZONES.map((z) => ({ titre: z.h1, url: `/${z.slug}` })),
   },
   {
     titre: "L'entreprise",

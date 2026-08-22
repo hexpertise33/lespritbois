@@ -1,5 +1,6 @@
 import { SITE } from '@/lib/data/navigation';
 import { articles } from '@/lib/data/blog';
+import { ZONES } from '@/lib/data/zones';
 
 /**
  * llms.txt servi via un route handler, comme le sitemap : la liste des guides
@@ -11,6 +12,10 @@ export const dynamic = 'force-static';
 
 export function GET() {
   const base = SITE.url.replace(/\/+$/, '');
+
+  const zones = ZONES.map(
+    (z) => `  - [${z.h1}](${base}/${z.slug}) : ${z.communes.join(', ')}.`,
+  ).join('\n');
 
   const guides = articles
     .map((a) => `- [${a.titre}](${base}/blog/${a.slug}) — publié le ${a.date}.`)
@@ -31,6 +36,8 @@ Contact : 05 57 40 65 80 — lespritbois33@gmail.com — 1 Aux Pradasses, 33500 
 - [Aménagement extérieur](${base}/amenagement-exterieur) : terrasses bois sur plots ou lambourdes, pool houses, abris de jardin, cuisines d'été, claustras et bardages.
 - [Constructions bois](${base}/constructions-bois) : maison à ossature bois, maison en A, extension, surélévation, abri et dépendance. Livraison hors d'eau hors d'air, le second œuvre revenant aux artisans du client.
 - [Réalisations](${base}/realisations) : études de cas de chantiers réellement réalisés en Gironde.
+- Zones d'intervention détaillées, chacune adossée à des chantiers réellement livrés dans le secteur :
+${zones}
 - [Qui sommes-nous](${base}/qui-sommes-nous) : l'entreprise, l'atelier et l'auteur des guides.
 - [Contact](${base}/contact) : adresse, horaires, formulaire de demande d'étude.
 

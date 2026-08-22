@@ -1,5 +1,6 @@
 import { SITE } from '@/lib/data/navigation';
 import { articles } from '@/lib/data/blog';
+import { ZONES } from '@/lib/data/zones';
 
 /**
  * Sitemap servi sur /sitemap.xml via un route handler (et non la convention
@@ -32,6 +33,7 @@ export function GET() {
   const entrees = [
     // Racine sans slash final : Next normalise ainsi la canonical, le sitemap doit dire la même chose.
     ...PAGES_STATIQUES.map((p) => ({ loc: `${base}${p.chemin}`, lastmod: p.lastmod as string | null })),
+    ...ZONES.map((z) => ({ loc: `${base}/${z.slug}`, lastmod: '2026-08-22' as string | null })),
     ...articles.map((article) => ({
       loc: `${base}/blog/${article.slug}`,
       lastmod: article.date || null,

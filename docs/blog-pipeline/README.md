@@ -62,20 +62,45 @@ confortable ni d'un run qui a du temps devant lui.
 
 ---
 
-## Routine planifiée — publication quotidienne automatique
+## Routine planifiée — deux publications par semaine
 
-Depuis le 26/07/2026, le blog fonctionne en **auto-publication quotidienne, sans
-relecture**. Tâche planifiée locale `article-quotidien-lespritbois`
-(cron `0 8 * * *` = tous les jours 8h, heure locale) : elle choisit un sujet neuf
-dans la sémantique **bois et aluminium** de l'entreprise (élargie le
-29/07/2026), rédige, illustre, build, commit, push ET déploie en prod
-(`npm run deploy`), vérifie le HTTP 200, puis passe le sujet à `publié` ci-dessous.
-Gérable depuis la section « Scheduled » de l'app.
+Depuis le 26/07/2026, le blog fonctionne en **auto-publication sans relecture**.
+Tâche planifiée locale `article-quotidien-lespritbois` : elle choisit un sujet
+neuf dans la sémantique **bois et aluminium** de l'entreprise (élargie le
+29/07/2026), rédige, illustre, **maille rétroactivement depuis deux articles
+voisins**, build, commit, push ET déploie en prod (`npm run deploy`), vérifie le
+HTTP 200, puis passe le sujet à `publié` ci-dessous. Gérable depuis la section
+« Scheduled » de l'app.
+
+⚙️ **Cadence ramenée à deux articles par semaine le 22/08/2026** — cron
+`0 8 * * 2,5` (mardi et vendredi 8h, heure locale), contre `0 8 * * *`
+auparavant. Décision de David sur l'audit SEO du 22/08, qui a constaté
+**20 articles publiés en 23 jours et aucune page commerciale créée** sur la même
+période : 33 guides pour 5 pages de gamme.
+
+Les trois motifs, dans l'ordre :
+
+1. **Le maillage ne suivait pas.** Les articles récents recevaient 2 à 3 liens
+   internes contextuels, contre 19 à 45 pour les pages de gamme. Publier plus
+   vite qu'on ne maille produit des pages quasi orphelines. D'où la nouvelle
+   étape 4 bis de la routine : deux liens rétroactifs posés depuis des articles
+   voisins, dans le même commit que l'article.
+2. **Le retour commercial est indirect.** Un lecteur de guide est à deux clics
+   de `/contact`. Le temps libéré va aux pages de gamme et aux pages de zone.
+3. **Le rythme est un signal.** 3 500 mots par jour pour un artisan seul
+   correspond au profil décrit par Google sous *scaled content abuse*. Le
+   contenu est sourcé et honnête ; la cadence, elle, se lit dans le sitemap.
+
+⚠️ **Ne pas compenser en publiant deux articles d'un coup.** Un run = un
+article ; les jours sans créneau, la routine ne tourne pas. La règle « jamais
+d'article en avance » du 22/08 reste entière : une réserve pleine n'autorise ni
+à prendre de l'avance, ni à rattraper.
 
 L'ancienne veille bihebdomadaire `veille-blog-lespritbois` (Temps 1 sans
-publication) est **désactivée** : l'auto-publication quotidienne la remplace.
+publication) est **désactivée** : l'auto-publication la remplace, la veille
+étant faite par le run lui-même quand la réserve est vide.
 
-## Workflow (mode quotidien)
+## Workflow (mode automatique)
 
 Un seul temps, entièrement automatique (routine `article-quotidien-lespritbois`) :
 choix du sujet (réserve ci-dessous → sinon veille web pour un angle neuf, en

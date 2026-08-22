@@ -1076,11 +1076,14 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-12 p-6 bg-white/5 rounded-xl border-l-2 border-secondary italic text-on-primary-container text-sm">
-                  « Une équipe qui ne se contente pas de construire : elle conçoit un lieu de vie. Un seul
-                  interlocuteur, du premier croquis à la dernière lame. »
-                  <span className="block mt-3 not-italic text-xs tracking-wide text-secondary-fixed">
-                    Client, Libourne
+                <div className="mt-12 p-6 bg-white/5 rounded-xl border-l-2 border-secondary text-on-primary-container text-sm">
+                  Nous ne nous contentons pas de construire : nous concevons un lieu de vie. Un seul
+                  interlocuteur, du premier croquis à la dernière lame.
+                  <span className="block mt-3 text-xs tracking-wide text-secondary-fixed">
+                    Notre engagement —{' '}
+                    <a href={GOOGLE.avis} className="underline underline-offset-4 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                      lire les avis de nos clients
+                    </a>
                   </span>
                 </div>
               </div>

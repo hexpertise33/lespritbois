@@ -837,7 +837,7 @@ export default function ConstructionsBoisPage() {
               Constructions réalisées à Libourne et en Gironde
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
-              Trois de ces chantiers — la grange reprise à Clérac, la toiture conservée à Génissac, la maison de 150 m² à Rauzan — sont racontés en détail sur notre page <a href="/constructeur-ossature-bois-gironde" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">constructeur à ossature bois en Gironde</a>, avec le point dur de chacun.
+              Trois de ces chantiers — la toiture conservée à Génissac, la maison de 150 m² à Rauzan, et la grange reprise à Clérac, juste au-delà de la limite départementale — sont racontés en détail sur notre page <a href="/constructeur-ossature-bois-gironde" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">constructeur à ossature bois en Gironde</a>, avec le point dur de chacun.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">

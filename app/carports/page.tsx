@@ -447,7 +447,7 @@ export default function CarportsPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src="/images/source-adefrance/Carport-bois-Libourne-1.webp"
-              alt="Carport bois sur mesure réalisé par L'Esprit Bois à Libourne, en Gironde"
+              alt="Carport bois sur mesure réalisé par L'Esprit Bois à Lugon-et-l'Île-du-Carnay, en Gironde"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>

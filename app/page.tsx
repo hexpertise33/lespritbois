@@ -502,7 +502,7 @@ export default function HomePage() {
 
               <div className="mt-16 flex items-center gap-12">
                 <div className="flex flex-col">
-                  <span className="font-headline-sm text-headline-sm text-white">10 ans</span>
+                  <span className="font-headline-sm text-headline-sm text-white">20 ans</span>
                   <span className="font-label-md text-label-md uppercase tracking-wider text-white/70">
                     D'expérience du bois
                   </span>
@@ -932,7 +932,7 @@ export default function HomePage() {
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
               <div>
-                <p className="font-display-lg text-[56px] leading-none text-secondary">10</p>
+                <p className="font-display-lg text-[56px] leading-none text-secondary">20</p>
                 <p className="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-4">
                   ans d'expérience du bois
                 </p>

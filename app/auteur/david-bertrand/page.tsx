@@ -162,6 +162,14 @@ export default function AuteurPage() {
                   sous-traitance : les personnes qui relèvent et dessinent sont celles qui montent.
                 </p>
                 <p>
+                  Les <strong className="text-primary font-semibold">vingt ans d&apos;expérience</strong>{' '}
+                  affichés sur ce site sont les siens, pas ceux de la société : ils comptent les
+                  chantiers, pas les exercices comptables. La marque L&apos;Esprit Bois est plus jeune
+                  que l&apos;homme qui la dirige, et son immatriculation le montre — nous préférons
+                  l&apos;écrire que laisser un visiteur le découvrir en vérifiant le SIRET, ce à quoi
+                  nous l&apos;invitons par ailleurs.
+                </p>
+                <p>
                   C&apos;est ce qui donne sa matière à ce blog. Les guides répondent aux questions qui
                   reviennent en rendez-vous — quel bois tient dehors en Gironde, quelle autorisation
                   d&apos;urbanisme pour un abri, ce que coûte réellement une extension à ossature bois,

@@ -208,7 +208,7 @@ export default function DevisPergolaPage() {
           <div className="max-w-container-max mx-auto px-6 md:px-16 text-center">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10">
               <div>
-                <p className="font-headline-md text-headline-md text-primary mb-2">10 ans</p>
+                <p className="font-headline-md text-headline-md text-primary mb-2">20 ans</p>
                 <p className="text-on-surface-variant font-body-md text-body-md">d&apos;expérience du bois</p>
               </div>
               <div>

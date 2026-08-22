@@ -178,7 +178,7 @@ export default function QuiSommesNousPage() {
         <section className="py-16 bg-primary text-white">
           <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             <div>
-              <p className="font-display-lg text-[56px] leading-none text-secondary">10</p>
+              <p className="font-display-lg text-[56px] leading-none text-secondary">20</p>
               <p className="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-4">
                 ans d&apos;expérience du bois
               </p>
@@ -280,7 +280,8 @@ export default function QuiSommesNousPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Expert bâtiment et créateur d&apos;espaces extérieurs, il dirige L&apos;Esprit Bois et signe les
-                guides techniques publiés sur ce site.
+                guides techniques publiés sur ce site. Les vingt ans d&apos;expérience affichés plus haut sont
+                les siens : la marque est plus jeune que l&apos;homme qui la dirige.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Ces guides ne sont pas des articles de remplissage. Ils répondent aux questions qui reviennent en

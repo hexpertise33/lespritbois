@@ -260,7 +260,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -356,7 +356,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                   ['Au-delà de 20 m²', 'un permis de construire devient nécessaire, avec un dossier plus complet (plan de coupe, notice descriptive, insertion paysagère).'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -607,7 +607,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

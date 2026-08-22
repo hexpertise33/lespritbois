@@ -9,7 +9,7 @@ const COVER = '/images/blog/abri-buches-bois-stockage-sechage/abri-buches-bois-b
 export const metadata: Metadata = buildMetadata({
   title: "Abri à bûches bois : stocker et sécher son bois en Gironde",
   description:
-    "Un abri à bûches ne protège pas le bois de l'eau, il le fait sécher. Ventilation, seuil d'humidité, dimensionnement, implantation et budget : le guide d'un artisan à Libourne (Gironde).",
+    "Un abri à bûches ne protège pas le bois de l'eau, il le fait sécher. Ventilation, dimensionnement, implantation et budget, par un artisan en Gironde.",
   keywords:
     "abri à bûches, abri buches bois, stockage bois de chauffage, abri bûches sur mesure, faire sécher son bois de chauffage, séchage bois de chauffage, abri à bûches Gironde, abri bûches Libourne, rangement bois de chauffage extérieur",
   path: '/blog/abri-buches-bois-stockage-sechage',
@@ -297,7 +297,7 @@ export default function ArticleAbriBuchesPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -455,7 +455,7 @@ export default function ArticleAbriBuchesPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">
@@ -499,7 +499,7 @@ export default function ArticleAbriBuchesPage() {
                   "Prévoyez une réserve d'accès : un bout de plancher libre pour poser un panier, une hache ou le petit bois d'allumage, sinon il finira par terre, dans l'humidité.",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
@@ -628,7 +628,7 @@ export default function ArticleAbriBuchesPage() {
                   "Pas sous un arbre à feuillage dense : la couverture s'encombre, l'ombre permanente entretient l'humidité et la mousse.",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
@@ -733,7 +733,7 @@ export default function ArticleAbriBuchesPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

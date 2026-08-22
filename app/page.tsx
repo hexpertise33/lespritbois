@@ -400,7 +400,7 @@ function CarteAvis({ nom, texte }: { nom: string; texte: string }) {
     <figure className="shrink-0 w-[320px] md:w-[380px] mx-3 bg-surface rounded-2xl border border-surface-variant p-8 flex flex-col">
       <div className="flex items-center gap-1 text-secondary-dark mb-4" aria-hidden="true">
         {Array.from({ length: 5 }).map((_, i) => (
-          <span key={i} className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+          <span key={i} className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }} aria-hidden="true">
             star
           </span>
         ))}
@@ -466,7 +466,7 @@ export default function HomePage() {
                   className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md text-center hover:bg-white/20 transition-all inline-flex items-center justify-center gap-2"
                   href="tel:+33557406580"
                 >
-                  <span className="material-symbols-outlined text-secondary-fixed text-[20px]">phone_in_talk</span>
+                  <span className="material-symbols-outlined text-secondary-fixed text-[20px]" aria-hidden="true">phone_in_talk</span>
                   05 57 40 65 80
                 </a>
               </div>
@@ -494,7 +494,7 @@ export default function HomePage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat
@@ -503,7 +503,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -512,7 +512,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Un seul interlocuteur
@@ -541,7 +541,7 @@ export default function HomePage() {
                 className="shrink-0 inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
               >
                 Demander mon étude gratuite
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
               </a>
             </div>
 
@@ -567,7 +567,7 @@ export default function HomePage() {
                       className="inline-flex items-center gap-2 w-fit border border-primary/25 text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
                     >
                       Voir la gamme
-                      <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                      <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
                     </a>
                   </div>
 
@@ -595,7 +595,7 @@ export default function HomePage() {
                             <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">
                               {p.nom}
                             </span>
-                            <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform">
+                            <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                               arrow_forward
                             </span>
                           </span>
@@ -658,7 +658,7 @@ export default function HomePage() {
                 className="shrink-0 inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all"
               >
                 Voir toutes nos réalisations
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
               </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -699,7 +699,7 @@ export default function HomePage() {
                 <div className="space-y-8">
                   <div className="flex gap-6 group">
                     <div className="w-16 h-16 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-secondary transition-colors duration-300">
-                      <span className="material-symbols-outlined text-secondary group-hover:text-primary text-3xl transition-colors">
+                      <span className="material-symbols-outlined text-secondary group-hover:text-primary text-3xl transition-colors" aria-hidden="true">
                         design_services
                       </span>
                     </div>
@@ -714,7 +714,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex gap-6 group">
                     <div className="w-16 h-16 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-secondary transition-colors duration-300">
-                      <span className="material-symbols-outlined text-secondary group-hover:text-primary text-3xl transition-colors">
+                      <span className="material-symbols-outlined text-secondary group-hover:text-primary text-3xl transition-colors" aria-hidden="true">
                         handshake
                       </span>
                     </div>
@@ -729,7 +729,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex gap-6 group">
                     <div className="w-16 h-16 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-secondary transition-colors duration-300">
-                      <span className="material-symbols-outlined text-secondary group-hover:text-primary text-3xl transition-colors">
+                      <span className="material-symbols-outlined text-secondary group-hover:text-primary text-3xl transition-colors" aria-hidden="true">
                         umbrella
                       </span>
                     </div>
@@ -759,7 +759,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-primary/15"></div>
                 </div>
                 <div className="absolute -bottom-10 -left-10 bg-surface text-primary p-8 rounded-2xl shadow-2xl hidden md:block max-w-xs border-t-2 border-secondary">
-                  <span className="material-symbols-outlined text-secondary-dark text-5xl mb-4">shield</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-5xl mb-4" aria-hidden="true">shield</span>
                   <p className="font-headline-sm text-headline-sm text-[20px] mb-2 leading-tight">
                     Garantie décennale
                   </p>
@@ -908,7 +908,7 @@ export default function HomePage() {
                       <span
                         key={i}
                         className="material-symbols-outlined text-[22px]"
-                        style={{ fontVariationSettings: "'FILL' 1" }}
+                        style={{ fontVariationSettings: "'FILL' 1" }} aria-hidden="true"
                       >
                         star
                       </span>
@@ -994,18 +994,18 @@ export default function HomePage() {
                   </p>
                   <div className="space-y-6">
                     <a className="flex items-center gap-4 hover:text-secondary transition-colors" href="tel:+33557406580">
-                      <span className="material-symbols-outlined text-secondary">phone_in_talk</span>
+                      <span className="material-symbols-outlined text-secondary" aria-hidden="true">phone_in_talk</span>
                       <span className="font-label-md">05 57 40 65 80</span>
                     </a>
                     <a
                       className="flex items-center gap-4 hover:text-secondary transition-colors"
                       href="mailto:lespritbois33@gmail.com"
                     >
-                      <span className="material-symbols-outlined text-secondary">mail</span>
+                      <span className="material-symbols-outlined text-secondary" aria-hidden="true">mail</span>
                       <span className="font-label-md">lespritbois33@gmail.com</span>
                     </a>
                     <div className="flex items-center gap-4">
-                      <span className="material-symbols-outlined text-secondary">location_on</span>
+                      <span className="material-symbols-outlined text-secondary" aria-hidden="true">location_on</span>
                       <span className="font-label-md">1 Aux Pradasses, 33500 Les Billaux</span>
                     </div>
                   </div>

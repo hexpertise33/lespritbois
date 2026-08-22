@@ -9,7 +9,7 @@ const COVER = '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp
 export const metadata: Metadata = buildMetadata({
   title: "Fermer une pergola pour l'hiver en Gironde | L'Esprit Bois",
   description:
-    "Rideau de verre, store screen à zip ou panneaux vitrés : fermer une pergola bioclimatique prolonge la saison de quelques mois, mais ne fabrique pas une véranda. Ce que ça change vraiment, côté confort, budget et urbanisme, par un artisan à Libourne (Gironde).",
+    "Rideau de verre, store screen à zip ou panneaux vitrés : fermer une pergola bioclimatique prolonge la saison sans fabriquer une véranda. Notre avis en Gironde.",
   keywords:
     "fermer une pergola, rideau de verre pergola, fermeture pergola bioclimatique, pergola fermée Gironde, store zip pergola Libourne, pergola quatre saisons, fermer pergola bioclimatique hiver, paroi vitrée pergola, panneau vitré coulissant pergola, pergola fermée hiver Gironde",
   path: '/blog/fermer-pergola-bioclimatique-hiver-rideau-verre',
@@ -333,7 +333,7 @@ export default function ArticleFermerPergolaPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -472,7 +472,7 @@ export default function ArticleFermerPergolaPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -564,7 +564,7 @@ export default function ArticleFermerPergolaPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -649,7 +649,7 @@ export default function ArticleFermerPergolaPage() {
                   'Garder le sol drainé et la pente vers l’extérieur : une flaque qui stagne alimente la condensation tout l’hiver.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -756,7 +756,7 @@ export default function ArticleFermerPergolaPage() {
                   ['Sol, éclairage et finitions', 'de quelques centaines d’euros à 2 000 € et au-delà, selon l’état du support existant.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -847,7 +847,7 @@ export default function ArticleFermerPergolaPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

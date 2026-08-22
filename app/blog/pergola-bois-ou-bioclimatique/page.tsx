@@ -303,7 +303,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -457,7 +457,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                   ['Un budget maîtrisé sur une grande surface', 'le bois couvre de grandes portées sans la mécanique d’une motorisation.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -524,7 +524,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                   'La cohérence des matériaux avec la terrasse et le jardin existants, pour un ensemble qui se lit d’un seul tenant.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -581,7 +581,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                   ['Les fondations et le raccord', 'ancrages, adossement à la maison, préparation du support et évacuation des eaux.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -642,7 +642,7 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

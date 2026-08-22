@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/source-adefrance/IMG-20250129-WA0077-opt.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Bureau de jardin en bois : autorisation, isolation, budget | Gironde",
+  title: "Bureau de jardin en bois : autorisation, isolation et budget",
   description:
-    "Bureau de jardin en bois isolé : déclaration préalable, taxe d'aménagement 2026, isolation, électricité et budget poste par poste. Le guide honnête d'un artisan à Libourne (Gironde).",
+    "Bureau de jardin isolé : déclaration préalable, taxe d'aménagement 2026, isolation, électricité et budget poste par poste, par un artisan en Gironde.",
   keywords:
     "bureau de jardin bois, studio de jardin, bureau de jardin Gironde, studio de jardin Libourne, prix bureau de jardin, taxe d'aménagement abri de jardin, bureau de jardin isolé, studio de jardin ossature bois, bureau de jardin autorisation, bureau de jardin Libourne",
   path: '/blog/bureau-jardin-bois-studio-reglementation-budget',
@@ -333,7 +333,7 @@ export default function ArticleBureauJardinBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -498,7 +498,7 @@ export default function ArticleBureauJardinBoisPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">
@@ -563,7 +563,7 @@ export default function ArticleBureauJardinBoisPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">
@@ -630,7 +630,7 @@ export default function ArticleBureauJardinBoisPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">
@@ -694,7 +694,7 @@ export default function ArticleBureauJardinBoisPage() {
                   'L’emplacement du tableau, des prises et des points lumineux, arrêté avec vous avant fermeture des parois.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
@@ -740,7 +740,7 @@ export default function ArticleBureauJardinBoisPage() {
                   'Le voisinage : vue, ombre portée et bruit se regardent depuis chez le voisin autant que depuis chez soi.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
@@ -818,7 +818,7 @@ export default function ArticleBureauJardinBoisPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md text-on-surface-variant">
@@ -874,7 +874,7 @@ export default function ArticleBureauJardinBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

@@ -118,7 +118,7 @@ export default function PolitiqueConfidentialitePage() {
                 href="/"
                 className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all"
               >
-                <span className="material-symbols-outlined">arrow_back</span> Retour à l'accueil
+                <span className="material-symbols-outlined" aria-hidden="true">arrow_back</span> Retour à l'accueil
               </a>
             </div>
           </div>

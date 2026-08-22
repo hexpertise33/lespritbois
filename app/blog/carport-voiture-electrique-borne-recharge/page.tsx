@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/carport-bois-libourne.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Carport et borne de recharge : ce qu'il faut prévoir | Gironde",
   description:
-    "Borne de recharge sous carport : les fourreaux et réservations à poser avant le chantier, où placer la borne, ce qu'une toiture photovoltaïque impose à la structure et la fiscalité 2026. Le guide d'un artisan à Libourne (Gironde).",
+    "Borne de recharge sous carport : les fourreaux à poser avant le chantier, où placer la borne, la toiture photovoltaïque et la fiscalité 2026, en Gironde.",
   keywords:
     "borne de recharge sous carport, carport voiture électrique, carport photovoltaïque, carport solaire Gironde, borne de recharge maison Libourne, recharge véhicule électrique domicile, carport borne de recharge, fourreau carport, carport Libourne, carport Gironde",
   path: '/blog/carport-voiture-electrique-borne-recharge',
@@ -297,7 +297,7 @@ export default function ArticleCarportVoitureElectriquePage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -392,7 +392,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                   ['Un support de fixation dédié', 'un poteau de section suffisante, une joue habillée ou une platine rapportée, pensés dès la conception pour recevoir un appareil sans affaiblir la structure.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -509,7 +509,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                   ['L’accès pour la maintenance', 'une installation se visite, se nettoie, se dépanne. Un ouvrage sur lequel on ne peut plus intervenir sans nacelle ni démontage devient une charge, pas une ressource.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -709,7 +709,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                   ['Elle n’est pas au programme', 'nous en parlons quand même, une fois, au moment du devis. Sur un ouvrage destiné à durer vingt ans, se fermer cette porte pour économiser une ligne modeste est un mauvais calcul — et la revente du bien la rouvre souvent.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -770,7 +770,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

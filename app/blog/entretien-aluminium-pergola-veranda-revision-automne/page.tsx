@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Entretien aluminium : pergola et véranda en Gironde | L'Esprit Bois",
+  title: "Entretien d'une pergola ou d'une véranda en aluminium | Gironde",
   description:
-    "Entretien d'une pergola, d'une véranda ou de menuiseries en aluminium : ce qu'il faut vraiment faire avant l'automne — évacuations d'eau, joints, lames, motorisation. Le guide d'un artisan à Libourne (Gironde).",
+    "Pergola, véranda et menuiseries en aluminium : ce qu'il faut vraiment vérifier avant l'automne — évacuations, joints, lames, motorisation. En Gironde.",
   keywords:
     "entretien aluminium, entretien pergola aluminium, nettoyer une pergola bioclimatique, hivernage pergola aluminium, entretien véranda aluminium Gironde, entretien menuiserie aluminium Libourne, nettoyage profilé thermolaqué, évacuation d'eau pergola, entretien store zip, aluminium entretien Gironde",
   path: '/blog/entretien-aluminium-pergola-veranda-revision-automne',
@@ -297,7 +297,7 @@ export default function ArticleEntretienAluminiumPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -371,7 +371,7 @@ export default function ArticleEntretienAluminiumPage() {
                   ['Ce qui ne se fait pas', 'décaper, poncer, repeindre au rouleau, dégripper un rail, mastiquer par-dessus un joint fatigué, démonter un coffret électrique.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -418,7 +418,7 @@ export default function ArticleEntretienAluminiumPage() {
                   'La retouche improvisée au pinceau sur une rayure, avec la première bombe de peinture venue : la teinte ne tombe jamais juste et la reprise se voit plus que la rayure.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -475,7 +475,7 @@ export default function ArticleEntretienAluminiumPage() {
                   'Sur une véranda : une trace au plafond ou en tête de vitrage, à distinguer d’une simple condensation (voir plus bas).',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -594,7 +594,7 @@ export default function ArticleEntretienAluminiumPage() {
                   'Retrouver et ranger la notice du fabricant, ainsi que la marque et la référence des moteurs : une photo du coffret et de l’étiquette vous fera gagner un temps fou le jour d’un dépannage.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -642,7 +642,7 @@ export default function ArticleEntretienAluminiumPage() {
                   'Les seuils et les appuis : l’eau doit y filer vers l’extérieur, jamais stagner en cuvette.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -735,7 +735,7 @@ export default function ArticleEntretienAluminiumPage() {
                   'L’accès demande de monter sur la couverture, sur un vitrage ou sur du polycarbonate : cela ne se fait pas, sous aucun prétexte.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -770,7 +770,7 @@ export default function ArticleEntretienAluminiumPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

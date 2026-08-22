@@ -225,7 +225,7 @@ export default function QuiSommesNousPage() {
                   key={e.titre}
                   className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
                 >
-                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{e.icone}</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">{e.icone}</span>
                   <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{e.titre}</h3>
                   <p className="text-on-surface-variant text-body-md">{e.texte}</p>
                 </article>
@@ -254,7 +254,7 @@ export default function QuiSommesNousPage() {
                   <span className="absolute top-6 right-7 font-display-lg text-[44px] leading-none text-primary/[0.08]">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{e.icone}</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">{e.icone}</span>
                   <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{e.titre}</h3>
                   <p className="text-on-surface-variant text-body-md">{e.texte}</p>
                 </li>
@@ -290,7 +290,7 @@ export default function QuiSommesNousPage() {
                 className="mt-8 inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
               >
                 Lire les guides
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
               </a>
             </div>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
@@ -384,22 +384,22 @@ export default function QuiSommesNousPage() {
                   href={CONTACT.telHref}
                   className="flex items-center gap-3 text-primary hover:text-secondary-dark transition-colors"
                 >
-                  <span className="material-symbols-outlined text-secondary-dark">phone_in_talk</span>
+                  <span className="material-symbols-outlined text-secondary-dark" aria-hidden="true">phone_in_talk</span>
                   <span className="font-label-md text-label-md">{CONTACT.telAffiche}</span>
                 </a>
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="flex items-center gap-3 text-primary hover:text-secondary-dark transition-colors break-all"
                 >
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0">mail</span>
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0" aria-hidden="true">mail</span>
                   <span className="font-label-md text-label-md">{CONTACT.email}</span>
                 </a>
                 <p className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary-dark">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark" aria-hidden="true">location_on</span>
                   <span>{CONTACT.adresseComplete}</span>
                 </p>
                 <p className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary-dark">schedule</span>
+                  <span className="material-symbols-outlined text-secondary-dark" aria-hidden="true">schedule</span>
                   <span>{CONTACT.horaires}</span>
                 </p>
               </div>
@@ -417,7 +417,7 @@ export default function QuiSommesNousPage() {
                   className="flex-1 text-center inline-flex items-center justify-center gap-2 border border-primary/25 text-primary px-6 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all"
                 >
                   Fiche Google
-                  <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">open_in_new</span>
                 </a>
               </div>
             </div>

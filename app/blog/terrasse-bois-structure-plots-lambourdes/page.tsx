@@ -9,7 +9,7 @@ const COVER = '/images/terrasse-bois-plots-gironde-4.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Structure d'une terrasse bois : plots et lambourdes",
   description:
-    "Plots, lambourdes, ventilation, pente : tout ce qui se joue sous les lames et décide de la durée de vie.",
+    "Plots, lambourdes, ventilation et pente : tout ce qui se joue sous les lames et décide de la durée de vie d'une terrasse bois, expliqué en Gironde.",
   keywords:
     "structure terrasse bois, terrasse bois sur plots réglables, entraxe lambourdes terrasse, lambourdes terrasse bois, ventilation terrasse bois, sous-face terrasse bois, NF DTU 51.4, pose terrasse bois Gironde, terrasse bois Libourne",
   path: '/blog/terrasse-bois-structure-plots-lambourdes',
@@ -265,7 +265,7 @@ export default function ArticleStructureTerrasseBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -415,7 +415,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                   ['Le sens de pose', 'les lambourdes se posent perpendiculairement aux lames, et le sens des lames se choisit en fonction de l’écoulement de l’eau, de la circulation et de la lecture de l’espace depuis la maison.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -477,7 +477,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                   'Un dessous qu’on entretient : ni feuilles accumulées, ni terre remontée, ni stockage de bûches ou de mobilier qui bouche la circulation.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -647,7 +647,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                   'Vérifier les niveaux par rapport aux seuils de la maison avant de figer la hauteur des plots.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -702,7 +702,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

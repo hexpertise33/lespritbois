@@ -276,7 +276,7 @@ export default function ConstructionsBoisPage() {
                     href={c.href}
                     className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/25 text-white px-4 py-2.5 rounded-full font-label-md text-label-md hover:bg-white/20 hover:border-secondary/60 transition-all"
                   >
-                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]">arrow_downward</span>
+                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]" aria-hidden="true">arrow_downward</span>
                     {c.nom}
                   </a>
                 </li>
@@ -304,7 +304,7 @@ export default function ConstructionsBoisPage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat
@@ -313,7 +313,7 @@ export default function ConstructionsBoisPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -322,7 +322,7 @@ export default function ConstructionsBoisPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Un seul interlocuteur
@@ -351,7 +351,7 @@ export default function ConstructionsBoisPage() {
                 className="shrink-0 inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
               >
                 Demander mon étude gratuite
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
               </a>
             </div>
 
@@ -377,7 +377,7 @@ export default function ConstructionsBoisPage() {
                     ></span>
                     <span className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-between gap-2 text-white">
                       <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">{c.nom}</span>
-                      <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform">
+                      <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                         arrow_forward
                       </span>
                     </span>
@@ -405,7 +405,7 @@ export default function ConstructionsBoisPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">home_work</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">home_work</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Maison ossature bois</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Des murs préfabriqués en atelier, levés en quelques jours. Chantier sec, murs fins à performance
@@ -416,7 +416,7 @@ export default function ConstructionsBoisPage() {
                 <div className="absolute top-6 right-6 px-2 py-0.5 bg-primary-fixed text-secondary-dark text-[10px] uppercase font-bold tracking-widest rounded">
                   Notre signature
                 </div>
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">cabin</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">cabin</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Maison en A</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Murs et toiture ne font qu'un. L'eau s'évacue d'elle-même, le volume intérieur monte en double
@@ -424,7 +424,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">pool</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">pool</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Pool house</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Bois ou aluminium, adossé ou indépendant. L'annexe qui transforme un bassin en véritable espace de
@@ -432,7 +432,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">cottage</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">cottage</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Abri &amp; dépendance</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Atelier, bureau de jardin, remise, garage. Une petite construction se rate aussi facilement qu'une
@@ -440,7 +440,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">add_home</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">add_home</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Extension</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Agrandir sans déménager. L'ossature bois se greffe sur l'existant, en chantier sec et rapide.
@@ -448,7 +448,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block">
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">
                   vertical_align_top
                 </span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Surélévation</h3>
@@ -480,28 +480,28 @@ export default function ConstructionsBoisPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
               <div className="border-t-2 border-secondary pt-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="material-symbols-outlined text-secondary text-4xl">umbrella</span>
+                  <span className="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">umbrella</span>
                   <h3 className="font-headline-sm text-headline-sm text-secondary-fixed">Hors d'eau</h3>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">Fondations adaptées au terrain</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">
                       Ossature, contreventement, charpente
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">
                       Couverture et évacuation des eaux pluviales
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">
                       Pare-pluie, lame d'air ventilée, bardage
                     </span>
@@ -510,28 +510,28 @@ export default function ConstructionsBoisPage() {
               </div>
               <div className="border-t-2 border-secondary pt-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="material-symbols-outlined text-secondary text-4xl">air</span>
+                  <span className="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">air</span>
                   <h3 className="font-headline-sm text-headline-sm text-secondary-fixed">Hors d'air</h3>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">
                       Menuiseries extérieures posées et vitrées
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">Isolation en fibre de bois</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">
                       Frein-vapeur continu, adhésifs et manchons
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check</span>
                     <span className="text-on-primary-container text-body-md">Portes extérieures et seuils</span>
                   </li>
                 </ul>
@@ -572,7 +572,7 @@ export default function ConstructionsBoisPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">straighten</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">straighten</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Le relevé avant le dessin</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Niveaux réels, alignement de l'égout de toit et du faîtage, hauteurs d'allèges, aplomb des murs.
@@ -580,7 +580,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">roofing</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">roofing</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Le raccord de couverture</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Noue, solin, bande de rive : c'est là que l'eau cherche à entrer. Continuité de la couverture,
@@ -588,7 +588,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">linear_scale</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">linear_scale</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">La désolidarisation</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Neuf et ancien ne tassent pas au même rythme. La jonction est conçue pour absorber ces mouvements
@@ -596,7 +596,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">layers</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">layers</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">La continuité de l'isolant</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Une isolation interrompue à la jonction crée un pont thermique, et de la condensation. L'isolant
@@ -604,7 +604,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">air</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">air</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">L'étanchéité à l'air</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Le hors d'air ne s'arrête pas aux menuiseries : membrane continue, adhésifs, manchons aux
@@ -612,7 +612,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">palette</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">palette</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">La peau extérieure</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Bardage bois, enduit, ou franche rupture assumée. Faire famille avec la maison sans tomber dans le
@@ -653,7 +653,7 @@ export default function ConstructionsBoisPage() {
                 </p>
                 <ul className="space-y-4 mb-6">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -662,7 +662,7 @@ export default function ConstructionsBoisPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -671,13 +671,13 @@ export default function ConstructionsBoisPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Murs fins à performance égale : plus de surface habitable</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -771,7 +771,7 @@ export default function ConstructionsBoisPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">map</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">map</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Nous lisons votre PLU</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Zone, emprise au sol, hauteur constructible, aspect des façades, secteur protégé : le règlement de
@@ -779,7 +779,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">description</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">description</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Nous montons le dossier</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Déclaration préalable ou permis de construire : plans, notice, insertion paysagère. Nous
@@ -787,7 +787,7 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">forum</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">forum</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Nous en parlons au rendez-vous</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Seuils applicables, obligation éventuelle d'architecte, exigences thermiques : nous vous disons ce
@@ -928,51 +928,51 @@ export default function ConstructionsBoisPage() {
               </h3>
               <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Libourne
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Les Billaux
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Saint-Émilion
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Coutras
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Fronsac
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Vayres
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Izon
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Saint-Denis-de-Pile
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Castillon-la-Bataille
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Guîtres
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Branne
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Bordeaux
                 </li>
               </ul>
@@ -1041,7 +1041,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Qu'est-ce qu'une maison à ossature bois ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1059,7 +1059,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Qu'est-ce qu'une maison en A ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1076,7 +1076,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Jusqu'où va votre intervention ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1095,7 +1095,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Faut-il un permis de construire pour un pool house ou un abri ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1114,7 +1114,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Une construction en bois dure-t-elle vraiment ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1132,7 +1132,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Comment garantissez-vous l'intégration à la maison existante ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1149,7 +1149,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Peut-on surélever n'importe quelle maison ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1166,7 +1166,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Mon extension est-elle soumise à la RE2020 ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1184,7 +1184,7 @@ export default function ConstructionsBoisPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Êtes-vous certifiés et assurés ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>

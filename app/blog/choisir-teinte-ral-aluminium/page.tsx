@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/construction-pool-house-aluminium-libour
 export const metadata: Metadata = buildMetadata({
   title: "Teinte RAL aluminium : bien la choisir | L'Esprit Bois",
   description:
-    "Quelle teinte RAL pour une pergola, un carport ou un garde-corps en aluminium ? Nuancier, finitions mat, satiné ou sablé, teintes qui vieillissent bien : le guide d'un artisan à Libourne (Gironde).",
+    "Quelle teinte RAL pour une pergola, un carport ou un garde-corps en aluminium ? Nuancier, finitions mat ou sablé, teintes qui vieillissent bien.",
   keywords:
     "teinte RAL aluminium, couleur RAL menuiserie aluminium, thermolaquage aluminium, RAL 7016 gris anthracite, nuancier RAL Classic, finition sablée aluminium, pergola aluminium teinte Libourne, aluminium thermolaqué Gironde, choisir couleur aluminium extérieur",
   path: '/blog/choisir-teinte-ral-aluminium',
@@ -333,7 +333,7 @@ export default function ArticleTeinteRalAluminiumPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -394,7 +394,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                   ['9xxx', 'les blancs et les noirs, du blanc pur au noir profond.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -462,7 +462,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                   ['Qualimarine', 'certification française délivrée par l’ADAL, qui vient en complément et ajoute un contrôle en amont sur l’alliage — notamment ses teneurs en cuivre et en fer. Elle vise les ambiances marines et les atmosphères agressives.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -590,7 +590,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                   ['Le blanc pur', 'il reste lumineux et léger, il s’accorde à beaucoup de bâtis, mais il rend visible la moindre salissure. En bord de route blanche ou de chemin de vigne, il demande un lavage plus fréquent — ce qui n’est pas grave si vous l’assumez.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -628,7 +628,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                   ['Les jeux de pose ne s’improvisent pas', 'grandes portées, longues traverses, lames orientables plein sud : les jeux et les cales de dilatation doivent être prévus dès la commande. C’est le genre de point qui distingue une pose soignée d’un montage rapide.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -676,7 +676,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                   ['Décider dehors, en fin de journée', 'la lumière rasante du soir est la plus révélatrice : c’est là qu’on voit si une teinte se fond ou se dispute avec la façade.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -798,7 +798,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

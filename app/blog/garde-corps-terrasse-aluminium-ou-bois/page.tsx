@@ -10,7 +10,7 @@ const COVER =
 export const metadata: Metadata = buildMetadata({
   title: "Garde-corps terrasse : aluminium ou bois ? | L'Esprit Bois",
   description:
-    "Garde-corps de terrasse en aluminium ou en bois : norme NF P01-012 révisée, entretien sur quinze ans, prix au mètre linéaire et ancrage. Le comparatif d'un artisan à Libourne (Gironde).",
+    "Garde-corps de terrasse en aluminium ou en bois : norme NF P01-012, entretien sur quinze ans, prix au mètre linéaire et ancrage. Le comparatif en Gironde.",
   keywords:
     "garde-corps terrasse aluminium ou bois, garde-corps aluminium Libourne, garde-corps bois terrasse Gironde, norme garde-corps NF P01-012, prix garde-corps terrasse, garde-corps terrasse surélevée, garde-corps verre feuilleté, garde-corps terrasse Gironde",
   path: '/blog/garde-corps-terrasse-aluminium-ou-bois',
@@ -308,7 +308,7 @@ export default function ArticleGardeCorpsTerrassePage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -366,7 +366,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   ['La plage de piscine en surplomb', 'quand le bassin ou la plage domine un talus, un mur de soutènement ou un escalier.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -417,7 +417,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   ['Le gabarit anti-escalade est revu', 'à la suite de tests menés sur 200 enfants de 3 à 11 ans, qui franchissaient en moins de cinq secondes des garde-corps pourtant conformes à la version de 1988. L’objectif affiché est de ralentir l’escalade, pas de la rendre impossible.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -483,7 +483,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   ['Les câbles inox tendus', 'un rendu léger et marin, à condition d’une tension maîtrisée et de montants dimensionnés pour la reprendre dans la durée.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -633,7 +633,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   ['Garde-corps aluminium à remplissage verre feuilleté', 'nettement au-dessus, souvent de 450 à 900 € le mètre linéaire posé : le vitrage et sa mise en œuvre dominent le prix.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -690,7 +690,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   ['La fixation en applique, en rive', 'le garde-corps se fixe sur la face verticale du nez de dalle ou de la structure. On ne perd pas de surface et l’effort est mieux repris, à condition que la rive soit saine et suffisamment épaisse.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -744,7 +744,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   ['Maison girondine en pierre', 'ça dépend du dessin. Un barreaudage aluminium fin en teinte sable ou bronze disparaît devant la pierre et respecte la façade ; un garde-corps bois en chêne, dessiné dans l’esprit du bâti, s’y intègre tout aussi bien. Ici, c’est la cohérence architecturale qui tranche, pas la technique.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -794,7 +794,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/terrasse-bois-pool-house-libourne.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Plage de piscine en bois : essence, pose et budget | L'Esprit Bois",
+  title: "Plage de piscine en bois : essence, pose et budget | Gironde",
   description:
-    "Quel bois autour d'une piscine ? Essences, antidérapance pieds nus, raccord aux margelles, sous-face et budget 2026 : le guide d'un artisan à Libourne (Gironde).",
+    "Quel bois autour d'une piscine ? Essences, antidérapance pieds nus, raccord aux margelles, sous-face et budget 2026, par un artisan en Gironde.",
   keywords:
     "plage de piscine en bois, terrasse de piscine en bois, quel bois autour d'une piscine, plage de piscine bois Gironde, terrasse piscine bois Libourne, bois antidérapant piscine, margelle et lame bois, prix plage de piscine bois",
   path: '/blog/plage-piscine-bois-essences-pose',
@@ -308,7 +308,7 @@ export default function ArticlePlagePiscineBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -375,7 +375,7 @@ export default function ArticlePlagePiscineBoisPage() {
                   ['Les charges ponctuelles', 'bains de soleil qu’on traîne, chaises à pieds fins, échelle, plongeoir, robot posé au sol : la plage subit des charges concentrées, souvent toujours aux mêmes endroits.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -681,7 +681,7 @@ export default function ArticlePlagePiscineBoisPage() {
                   ['Essence exotique', 'environ 200 à 280 €/m² posé — pour une stabilité et une longévité maximales.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -751,7 +751,7 @@ export default function ArticlePlagePiscineBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

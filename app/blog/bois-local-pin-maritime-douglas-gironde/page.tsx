@@ -9,7 +9,7 @@ const COVER = '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-m
 export const metadata: Metadata = buildMetadata({
   title: "Bois local en Gironde : pin, douglas, châtaignier",
   description:
-    "Ce que valent vraiment les essences de Nouvelle-Aquitaine en extérieur : durabilité, usages, limites.",
+    "Ce que valent le pin maritime, le douglas et le châtaignier de Nouvelle-Aquitaine en extérieur : durabilité, usages et limites, vus d'un atelier girondin.",
   keywords:
     "bois local Gironde, pin maritime des Landes, douglas Nouvelle-Aquitaine, filière bois locale Libourne, label Bois de France, essence bois locale terrasse Gironde, bois français construction, châtaignier bardage, CTB B+, classe d'emploi bois",
   path: '/blog/bois-local-pin-maritime-douglas-gironde',
@@ -288,7 +288,7 @@ export default function ArticleBoisLocalGirondePage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -342,7 +342,7 @@ export default function ArticleBoisLocalGirondePage() {
                   ['Le bois certifié PEFC ou FSC', 'c’est une question de gestion durable de la forêt d’origine : renouvellement de la ressource, respect des sols et de la biodiversité, conditions d’exploitation. Ce n’est pas une garantie d’origine géographique.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -591,7 +591,7 @@ export default function ArticleBoisLocalGirondePage() {
                   'D’où vient le bois, et quelle scierie l’a transformé ?',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -683,7 +683,7 @@ export default function ArticleBoisLocalGirondePage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

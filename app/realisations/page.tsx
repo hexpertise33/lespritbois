@@ -7,7 +7,7 @@ import SiteFooter from '@/components/SiteFooter';
 import GalerieChantiers, { type Vignette } from './GalerieChantiers';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Nos chantiers en Gironde et alentour : douze réalisations racontées',
+  title: "Nos réalisations en Gironde : douze chantiers racontés",
   description:
     'Carport à Capian, extension à Clérac, maison ossature bois à Rauzan, terrasse à Lacanau : douze chantiers avec leur contrainte, leurs matériaux et leur durée.',
   keywords:
@@ -575,7 +575,7 @@ export default function RealisationsPage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat
@@ -584,7 +584,7 @@ export default function RealisationsPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -593,7 +593,7 @@ export default function RealisationsPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Un seul interlocuteur
@@ -831,7 +831,7 @@ export default function RealisationsPage() {
                   'Bordeaux',
                 ].map((commune) => (
                   <li key={commune} className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                     {commune}
                   </li>
                 ))}

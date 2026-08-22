@@ -215,7 +215,7 @@ export default function AmenagementExterieurPage() {
                     href={c.href}
                     className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/25 text-white px-4 py-2.5 rounded-full font-label-md text-label-md hover:bg-white/20 hover:border-secondary/60 transition-all"
                   >
-                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]">arrow_downward</span>
+                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]" aria-hidden="true">arrow_downward</span>
                     {c.nom}
                   </a>
                 </li>
@@ -243,7 +243,7 @@ export default function AmenagementExterieurPage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat
@@ -252,7 +252,7 @@ export default function AmenagementExterieurPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -261,7 +261,7 @@ export default function AmenagementExterieurPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Un seul interlocuteur
@@ -290,7 +290,7 @@ export default function AmenagementExterieurPage() {
                 className="shrink-0 inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
               >
                 Demander mon étude gratuite
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
               </a>
             </div>
 
@@ -317,7 +317,7 @@ export default function AmenagementExterieurPage() {
                     ></span>
                     <span className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-between gap-2 text-white">
                       <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">{c.nom}</span>
-                      <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform">
+                      <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                         arrow_forward
                       </span>
                     </span>
@@ -344,25 +344,25 @@ export default function AmenagementExterieurPage() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Platelage sur structure ventilée, plots ou lambourdes</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Douglas, mélèze, red cedar ou chêne, selon l'exposition</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Pente et évacuation des eaux étudiées avant la pose</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Emmarchements, jardinières et banquettes intégrés</span>
@@ -429,7 +429,7 @@ export default function AmenagementExterieurPage() {
                   href="/#quote"
                   className="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95"
                 >
-                  Étudier mon pool house <span className="material-symbols-outlined">arrow_forward</span>
+                  Étudier mon pool house <span className="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
                 </a>
               </div>
             </div>
@@ -467,7 +467,7 @@ export default function AmenagementExterieurPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="border-t-2 border-secondary pt-6">
-                <span className="material-symbols-outlined text-secondary text-4xl mb-4">deck</span>
+                <span className="material-symbols-outlined text-secondary text-4xl mb-4" aria-hidden="true">deck</span>
                 <h3 className="font-headline-sm text-headline-sm text-secondary-fixed mb-3">Plage de piscine</h3>
                 <p className="text-on-primary-container text-body-md">
                   Terrasse bois au ras de l'eau, caillebotis, habillage de margelles. Une lame antidérapante et une
@@ -475,7 +475,7 @@ export default function AmenagementExterieurPage() {
                 </p>
               </div>
               <div className="border-t-2 border-secondary pt-6">
-                <span className="material-symbols-outlined text-secondary text-4xl mb-4">visibility_off</span>
+                <span className="material-symbols-outlined text-secondary text-4xl mb-4" aria-hidden="true">visibility_off</span>
                 <h3 className="font-headline-sm text-headline-sm text-secondary-fixed mb-3">
                   Intimité &amp; local technique
                 </h3>
@@ -485,7 +485,7 @@ export default function AmenagementExterieurPage() {
                 </p>
               </div>
               <div className="border-t-2 border-secondary pt-6">
-                <span className="material-symbols-outlined text-secondary text-4xl mb-4">groups</span>
+                <span className="material-symbols-outlined text-secondary text-4xl mb-4" aria-hidden="true">groups</span>
                 <h3 className="font-headline-sm text-headline-sm text-secondary-fixed mb-3">Coordination</h3>
                 <p className="text-on-primary-container text-body-md">
                   Nous intervenons avant ou après votre pisciniste, et nous nous calons sur son calendrier. Les
@@ -512,7 +512,7 @@ export default function AmenagementExterieurPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">cabin</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">cabin</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Abris de jardin</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Rangement des outils, du mobilier d'hiver, des vélos. Ossature bois, bardage accordé à la
@@ -520,7 +520,7 @@ export default function AmenagementExterieurPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">outdoor_grill</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">outdoor_grill</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Cuisines d'été</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Un plan de travail abrité, un point d'eau, une plancha : les repas sortent, et la maison respire.
@@ -528,7 +528,7 @@ export default function AmenagementExterieurPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">fence</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">fence</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Claustras &amp; bardages</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Se cacher du vis-à-vis sans se murer. Claire-voie, tasseaux verticaux, brise-vue bois : l'ombre et
@@ -929,51 +929,51 @@ export default function AmenagementExterieurPage() {
               </h3>
               <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Libourne
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Les Billaux
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Saint-Émilion
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Coutras
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Fronsac
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Vayres
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Izon
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Saint-Denis-de-Pile
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Castillon-la-Bataille
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Guîtres
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Branne
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                   Bordeaux
                 </li>
               </ul>
@@ -1042,7 +1042,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Que comprend un aménagement extérieur ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1057,7 +1057,7 @@ export default function AmenagementExterieurPage() {
               <details className="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
                 <summary className="flex justify-between items-center cursor-pointer list-none">
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">Construisez-vous la piscine ?</h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1074,7 +1074,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Quelle essence de bois pour une terrasse en Gironde ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1091,7 +1091,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Faut-il une dalle béton sous une terrasse bois ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1111,7 +1111,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Combien de temps dure un chantier d'aménagement extérieur ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1132,7 +1132,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Faut-il une autorisation pour un pool house ou un abri de jardin ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1151,7 +1151,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Jusqu'où va votre intervention sur un pool house ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1169,7 +1169,7 @@ export default function AmenagementExterieurPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Êtes-vous certifiés et assurés ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>

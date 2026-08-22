@@ -9,7 +9,7 @@ const COVER = '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.w
 export const metadata: Metadata = buildMetadata({
   title: "Aluminium recyclé : est-il écologique ? | L'Esprit Bois",
   description:
-    "L'aluminium est-il écologique ? Aluminium primaire ou recyclé, filière française de recyclage en 2026, comparaison honnête avec le bois : le guide d'un artisan qui pose les deux à Libourne (Gironde).",
+    "L'aluminium est-il écologique ? Primaire ou recyclé, filière française en 2026, comparaison honnête avec le bois, par un artisan qui pose les deux.",
   keywords:
     "aluminium recyclé, aluminium écologique, aluminium bas carbone, bois ou aluminium écologie, recyclage menuiserie aluminium, empreinte carbone aluminium, profilés aluminium recyclés, menuiserie aluminium Gironde, pergola aluminium Libourne, aluminium ou bois durable",
   path: '/blog/aluminium-ecologique-recyclage-bas-carbone',
@@ -299,7 +299,7 @@ export default function ArticleAluminiumEcologiquePage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -394,7 +394,7 @@ export default function ArticleAluminiumEcologiquePage() {
                   ['L’aluminium recyclé', 'du métal déjà existant — chutes d’usinage, profilés de dépose, menuiseries déposées — trié par famille d’alliages, refondu, coulé en nouvelles billettes, puis filé pour donner des profilés neufs. Aucune perte de qualité mécanique à l’arrivée.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -473,7 +473,7 @@ export default function ArticleAluminiumEcologiquePage() {
                   ['Les labels fenêtrealu et façadealu', 'ils se dotent d’une nouvelle mention Environnement, une mention RSE étant annoncée pour juin 2026. Un repère de plus pour distinguer un gammiste engagé d’un simple revendeur.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -642,7 +642,7 @@ export default function ArticleAluminiumEcologiquePage() {
                   ['Que devient la dépose de l’ancien ouvrage ?', 'c’est la question que personne ne pose. Les profilés partent-ils triés en filière, séparés des vitrages et des joints, ou finissent-ils en benne tout-venant ? La réponse en dit long sur l’entreprise.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -685,7 +685,7 @@ export default function ArticleAluminiumEcologiquePage() {
                   ['Véranda et extension', 'une véranda largement vitrée appelle l’aluminium et sa rupture de pont thermique ; une extension qui doit devenir une vraie pièce de la maison, habitée toute l’année, appelle plutôt une ossature bois. Ce sont deux programmes différents, pas deux prix différents pour le même objet.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -742,7 +742,7 @@ export default function ArticleAluminiumEcologiquePage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

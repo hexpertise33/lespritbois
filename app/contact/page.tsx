@@ -96,7 +96,7 @@ export default function ContactPage() {
                 href={CONTACT.telHref}
                 className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center inline-flex items-center justify-center gap-2"
               >
-                <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
+                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">phone_in_talk</span>
                 {CONTACT.telAffiche}
               </a>
               <a
@@ -114,7 +114,7 @@ export default function ContactPage() {
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <article className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">phone_in_talk</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">phone_in_talk</span>
                 <h2 className="font-headline-sm text-headline-sm text-primary mb-3">Téléphone</h2>
                 <a
                   href={CONTACT.telHref}
@@ -128,7 +128,7 @@ export default function ContactPage() {
               </article>
 
               <article className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">mail</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">mail</span>
                 <h2 className="font-headline-sm text-headline-sm text-primary mb-3">E-mail</h2>
                 <a
                   href={`mailto:${CONTACT.email}`}
@@ -142,7 +142,7 @@ export default function ContactPage() {
               </article>
 
               <article className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">location_on</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">location_on</span>
                 <h2 className="font-headline-sm text-headline-sm text-primary mb-3">Atelier</h2>
                 <address className="not-italic text-on-surface-variant text-body-md">
                   {CONTACT.rue}
@@ -156,12 +156,12 @@ export default function ContactPage() {
                   className="mt-3 inline-flex items-center gap-1.5 text-secondary-dark font-label-md text-label-md hover:gap-2.5 transition-all"
                 >
                   Itinéraire
-                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
                 </a>
               </article>
 
               <article className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">schedule</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">schedule</span>
                 <h2 className="font-headline-sm text-headline-sm text-primary mb-3">Horaires</h2>
                 <p className="text-on-surface-variant text-body-md">{CONTACT.horaires}</p>
                 <p className="text-on-surface-variant text-body-md mt-3">
@@ -187,19 +187,19 @@ export default function ContactPage() {
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                      <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>
                       <span className="text-on-primary-container text-body-md">
                         Relevé sur place gratuit, dans tout le Libournais
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                      <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>
                       <span className="text-on-primary-container text-body-md">
                         Devis détaillé poste par poste, pas de forfait au mètre carré
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                      <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>
                       <span className="text-on-primary-container text-body-md">
                         Dossier d&apos;urbanisme monté avec vous si nécessaire
                       </span>
@@ -252,7 +252,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
                 >
-                  <span className="material-symbols-outlined text-[18px]">directions</span>
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">directions</span>
                   Calculer mon itinéraire
                 </a>
                 <a
@@ -262,7 +262,7 @@ export default function ContactPage() {
                   className="inline-flex items-center justify-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all"
                 >
                   Voir notre fiche Google
-                  <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">open_in_new</span>
                 </a>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function ContactPage() {
               <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
                 {COMMUNES.map((c) => (
                   <li key={c} className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                     {c}
                   </li>
                 ))}
@@ -291,19 +291,19 @@ export default function ContactPage() {
         <section className="bg-primary text-white">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
-              <span className="material-symbols-outlined text-secondary text-4xl mb-3 block">verified</span>
+              <span className="material-symbols-outlined text-secondary text-4xl mb-3 block" aria-hidden="true">verified</span>
               <h2 className="font-headline-sm text-headline-sm text-secondary-fixed mb-2">Certifiés Qualibat</h2>
               <p className="text-on-primary-container text-body-md">La qualification de référence du bâtiment.</p>
             </div>
             <div>
-              <span className="material-symbols-outlined text-secondary text-4xl mb-3 block">shield</span>
+              <span className="material-symbols-outlined text-secondary text-4xl mb-3 block" aria-hidden="true">shield</span>
               <h2 className="font-headline-sm text-headline-sm text-secondary-fixed mb-2">Garantie décennale</h2>
               <p className="text-on-primary-container text-body-md">
                 Chaque ouvrage couvert dix ans à compter de la réception.
               </p>
             </div>
             <div>
-              <span className="material-symbols-outlined text-secondary text-4xl mb-3 block">handshake</span>
+              <span className="material-symbols-outlined text-secondary text-4xl mb-3 block" aria-hidden="true">handshake</span>
               <h2 className="font-headline-sm text-headline-sm text-secondary-fixed mb-2">Un seul interlocuteur</h2>
               <p className="text-on-primary-container text-body-md">
                 De l&apos;étude à la pose, sans sous-traitance.

@@ -9,7 +9,7 @@ const COVER = '/images/blog/poulailler-bois-reglementation-implantation/poulaill
 export const metadata: Metadata = buildMetadata({
   title: "Poulailler en bois : règles et implantation",
   description:
-    "Distances à respecter, règlement sanitaire départemental, orientation et conception d'un poulailler qui dure.",
+    "Distances à respecter, règlement sanitaire départemental, orientation et conception d'un poulailler en bois qui dure, par un artisan en Gironde.",
   keywords:
     "poulailler en bois, réglementation poulailler 2026, déclaration poulailler mairie, bien-être des poules, poulailler sur mesure Gironde, construire un poulailler Libourne, poulailler bois durable, dimensionnement poulailler",
   path: '/blog/poulailler-bois-reglementation-implantation',
@@ -237,7 +237,7 @@ export default function ArticlePoulaillerBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -302,7 +302,7 @@ export default function ArticlePoulaillerBoisPage() {
                   ['Plus de 20 m²', 'vous entrez dans le champ du permis de construire — rare pour un poulailler familial, plus fréquent pour un projet mixte (poulailler + resserre).'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -386,7 +386,7 @@ export default function ArticlePoulaillerBoisPage() {
                   ['Pondoirs', 'un pondoir pour 3 à 4 poules suffit — elles aiment pondre au même endroit, au calme et dans la pénombre.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -426,7 +426,7 @@ export default function ArticlePoulaillerBoisPage() {
                   ['Le red cedar', 'très stable et durable, une essence haut de gamme pour un poulailler soigné qui grise joliment.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -476,7 +476,7 @@ export default function ArticlePoulaillerBoisPage() {
                   'Prédateurs : grillage enterré sur 20 à 30 cm contre le renard qui creuse, mailles fines et fermetures verrouillées contre la fouine, qui passe par la moindre ouverture.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -545,7 +545,7 @@ export default function ArticlePoulaillerBoisPage() {
                   'Sur le bois : laisser griser sans crainte, ou appliquer un saturateur tous les deux à trois ans pour conserver la teinte d’origine.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -576,7 +576,7 @@ export default function ArticlePoulaillerBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

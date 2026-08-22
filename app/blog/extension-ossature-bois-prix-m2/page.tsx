@@ -11,7 +11,7 @@ const COVER = '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a
 export const metadata: Metadata = buildMetadata({
   title: "Extension ossature bois : prix au m² et délais",
   description:
-    "Ce que coûte réellement une extension bois en Gironde, ce qui fait varier le devis, et les délais à prévoir.",
+    "Ce que coûte réellement une extension en ossature bois en Gironde, ce qui fait varier le devis et les délais à prévoir, par un constructeur à Libourne.",
   keywords:
     "extension ossature bois, prix extension bois m2, extension bois Gironde, extension ossature bois Libourne, agrandissement maison bois, extension bois RE2020, extension ossature bois prix au m2",
   path: '/blog/extension-ossature-bois-prix-m2',
@@ -313,7 +313,7 @@ export default function ArticleExtensionOssatureBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -372,7 +372,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['Haut de gamme (au-delà de 2 500 à 3 000 €/m²)', 'grandes baies vitrées, toiture terrasse ou végétalisée, prestations sur mesure, terrain en pente ou accès difficile.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -414,7 +414,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['Le bilan carbone', 'le bois stocke le carbone au lieu d’en émettre à la fabrication. C’est un matériau biosourcé que la RE2020 valorise directement, et un argument qui compte à la revente.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -454,7 +454,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['La nature du sol et l’accès', 'un sol argileux, une pente à rattraper, un terrain difficile d’accès pour la grue ou des réseaux éloignés alourdissent les fondations et le terrassement. Sur le Libournais, l’argile est la variable qu’on regarde en premier.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -498,7 +498,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['Second œuvre', 'c’est le gros du temps : isolation, cloisons, électricité, plomberie, revêtements, et surtout les raccords avec la maison existante (jonction de toiture, ouverture du mur porteur, harmonisation).'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -547,7 +547,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['Le seuil des 150 m²', 'dès que la surface totale de la maison dépasse 150 m² après travaux, le recours à un architecte est obligatoire pour le dépôt du dossier.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -608,7 +608,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['Le douglas', 'environ 90 000 hectares dans la région, apprécié pour sa résistance mécanique et sa durabilité naturelle. Il permet souvent un bardage sans traitement chimique et se prête bien aux parements visibles d’une extension.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -690,7 +690,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                   ['Un seul interlocuteur, de l’étude à la pose', 'de la conception aux finitions, vous parlez à la même équipe. Une extension réussie appelle souvent la terrasse et les abords qui vont avec.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -729,7 +729,7 @@ export default function ArticleExtensionOssatureBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

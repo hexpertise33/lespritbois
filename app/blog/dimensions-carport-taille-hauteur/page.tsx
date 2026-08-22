@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/Carport-bois-Libourne-6.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Dimensions d'un carport : quelle taille ? | L'Esprit Bois",
   description:
-    "Quelle taille pour un carport ? Hauteur libre sous traverse, largeur utile, dégagement des portières, trame une ou deux voitures et implantation : le guide d'un artisan à Libourne, en Gironde.",
+    "Quelle taille pour un carport ? Hauteur sous traverse, largeur utile, dégagement des portières et trame une ou deux voitures, par un artisan en Gironde.",
   keywords:
     "dimensions carport, hauteur carport, taille carport 2 voitures, largeur carport, carport dimensions Gironde, carport sur mesure Libourne, hauteur sous traverse carport, carport SUV, carport bois Libourne, carport aluminium Gironde",
   path: '/blog/dimensions-carport-taille-hauteur',
@@ -282,7 +282,7 @@ export default function ArticleDimensionsCarportPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -406,7 +406,7 @@ export default function ArticleDimensionsCarportPage() {
                   ['Porte de garage ou portail motorisé à proximité', 'une porte sectionnelle qui se replie sous plafond, un rail de portail coulissant ou un moteur de portail battant peuvent occuper précisément le volume où l’on comptait poser la traverse.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -710,7 +710,7 @@ export default function ArticleDimensionsCarportPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

@@ -9,7 +9,7 @@ const COVER = '/images/pool-house-bois-terrasse-piscine-libourne.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Pool house bois : règles, usages et budget",
   description:
-    "Emprise au sol, raccordements, usages réels et budget d'un pool house bois au bord d'un bassin en Gironde.",
+    "Emprise au sol, raccordements, usages réels et budget d'un pool house en bois au bord d'un bassin : le guide d'un constructeur bois en Gironde.",
   keywords:
     "pool house bois, pool house bois Gironde, pool house Libourne, réglementation pool house 2026, permis de construire pool house, prix pool house bois, pool house piscine, déclaration préalable pool house, local technique piscine bois",
   path: '/blog/pool-house-bois-guide',
@@ -276,7 +276,7 @@ export default function ArticlePoolHouseBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -408,7 +408,7 @@ export default function ArticlePoolHouseBoisPage() {
                   ['La chambre d’amis ou la pièce en plus', 'séduisant, mais attention : dès qu’il devient habitable, le pool-house crée de la surface de plancher, change la donne urbanisme (permis quasi systématique) et bascule dans une autre logique : isolation, chauffage, menuiseries. Ce n’est plus un pool-house, c’est une petite construction bois.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -604,7 +604,7 @@ export default function ArticlePoolHouseBoisPage() {
                   ['La taxe d’aménagement', 'calculée sur la valeur forfaitaire de 892 €/m² en 2026 hors Île-de-France, à multiplier par la surface taxable et les taux communal et départemental.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -638,7 +638,7 @@ export default function ArticlePoolHouseBoisPage() {
                   ['Traiter la terrasse et le pool-house comme un seul ouvrage', 'même essence, mêmes niveaux, même sens de lame : c’est ce qui fait qu’un aménagement paraît d’origine plutôt que rapporté.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -688,7 +688,7 @@ export default function ArticlePoolHouseBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

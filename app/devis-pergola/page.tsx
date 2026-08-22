@@ -10,7 +10,7 @@ import LandingPergolaDesktopPopup from '@/components/LandingPergolaDesktopPopup'
 export const metadata: Metadata = buildMetadata({
   title: "Devis pergola gratuit à Libourne — L'Esprit Bois",
   description:
-    'Recevez votre devis gratuit de pergola sur mesure à Libourne et en Gironde, sous 48h. Bioclimatique, aluminium ou bois massif, posé par une entreprise certifiée Qualibat.',
+    "Devis gratuit sous 48 h pour une pergola sur mesure à Libourne et en Gironde : bioclimatique, aluminium ou bois massif, par une entreprise Qualibat.",
   path: '/devis-pergola',
   ogImage: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
   ogTitle: 'Pergola sur mesure à Libourne — devis gratuit sous 48h',
@@ -140,7 +140,7 @@ export default function DevisPergolaPage() {
                 href={CONTACT.telHref}
                 className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 py-4 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all"
               >
-                <span className="material-symbols-outlined text-[20px]">call</span>
+                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">call</span>
                 {CONTACT.telAffiche}
               </a>
             </div>
@@ -157,7 +157,7 @@ export default function DevisPergolaPage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat RGE
@@ -166,7 +166,7 @@ export default function DevisPergolaPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -175,7 +175,7 @@ export default function DevisPergolaPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">location_on</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">location_on</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Libourne &amp; Gironde
@@ -286,7 +286,7 @@ export default function DevisPergolaPage() {
                     className="w-full h-40 object-cover"
                   />
                   <div className="p-6">
-                    <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{g.icone}</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">{g.icone}</span>
                     <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{g.titre}</h3>
                     <p className="text-on-surface-variant font-body-md text-body-md">{g.texte}</p>
                   </div>

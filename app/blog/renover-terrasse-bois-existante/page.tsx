@@ -7,9 +7,9 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/blog/renover-terrasse-bois-existante/terrasse-bois-grisee-lames-patinees.jpg';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Rénover une terrasse en bois : poncer ou refaire ? | L'Esprit Bois",
+  title: "Rénover une terrasse en bois : poncer ou refaire ? | Gironde",
   description:
-    "Poncer, changer les lames ou tout déposer ? Le diagnostic honnête avant de dépenser : sous-face, lambourdes, dégrisage, prix au m² en Gironde, par un artisan à Libourne.",
+    "Poncer, changer les lames ou tout déposer ? Le diagnostic honnête avant de dépenser : sous-face, lambourdes, dégrisage et prix au m² en Gironde.",
   keywords:
     "rénover une terrasse en bois, remplacer les lames d'une terrasse en bois, rénovation terrasse bois Gironde, terrasse bois Libourne, dégriser et poncer une terrasse, refaire une terrasse en bois prix, terrasse bois grise, changer lambourdes terrasse",
   path: '/blog/renover-terrasse-bois-existante',
@@ -286,7 +286,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -342,7 +342,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   ['Regarder sous la lame', 'démontez une ou deux lames en partie basse, là où l’eau stagne. C’est là que tout se joue : humidité permanente, terre remontée, lambourde noire, appui écrasé, absence de lame d’air.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -400,7 +400,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   'Les fentes traversantes ou les lames qui vrillent franchement, signe que la lame a dépassé son état d’usage.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -437,7 +437,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   ['Le drainage et la pente', 'l’eau trouve-t-elle une sortie, ou une bordure, un muret ou une dalle plus haute la retiennent-ils sous la terrasse ?'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -481,7 +481,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   ['4. Saturer', 'sur bois propre, sec et froid. Le saturateur nourrit le bois sans former de film : il s’use au lieu de s’écailler, et se renouvelle sans décapage.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -579,7 +579,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   'Le passage des gaines d’éclairage ou d’alimentation avant la pose du platelage.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -695,7 +695,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

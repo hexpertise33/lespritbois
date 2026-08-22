@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/Carport-bois-Libourne-2.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Traiter le bois avant l'hiver : la dernière fenêtre en Gironde",
   description:
-    "Terrasse, bardage, clôture, carport : quand traiter ses bois extérieurs avant l'hiver, avec quel produit, et pourquoi on traite pour l'eau, pas pour la couleur. Le guide d'un artisan à Libourne.",
+    "Terrasse, bardage, clôture, carport : quand traiter ses bois avant l'hiver, avec quel produit, et pourquoi on traite pour l'eau, pas pour la couleur.",
   keywords:
     "traiter le bois avant l'hiver, saturateur bois extérieur, entretien bois automne, protéger sa terrasse en bois Gironde, entretien bardage bois Libourne, hivernage ouvrages bois, traitement bois extérieur, entretien clôture bois, entretien carport bois",
   path: '/blog/traiter-bois-exterieur-avant-hiver',
@@ -321,7 +321,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -433,7 +433,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                   ['Ce qui reste posé sur le bois', 'feuilles mortes accumulées dans une rainure, pot de fleurs à même la lame, paillasson qui ne sèche jamais : autant d’éponges permanentes.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -611,7 +611,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                   ['Le vernis et la peinture', 'ils créent le film le plus étanche… et le plus fragile en extérieur. Sous nos climats, l’eau finit par passer par un défaut, et elle ne peut plus repartir. Nous les réservons à des ouvrages abrités.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -670,7 +670,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                   'Laisser les feuilles mortes, les pots et les paillassons en place tout l’hiver : chacun est une éponge posée sur l’ouvrage.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -766,7 +766,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

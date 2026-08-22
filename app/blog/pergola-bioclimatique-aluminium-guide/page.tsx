@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Pergola bioclimatique aluminium : le guide",
   description:
-    "Lames orientables, évacuation de l'eau, motorisation et options : ce qu'il faut savoir avant de choisir.",
+    "Lames orientables, évacuation de l'eau, motorisation et options : ce qu'il faut savoir avant de choisir sa pergola bioclimatique, à Libourne et en Gironde.",
   keywords:
     "pergola bioclimatique aluminium, pergola bioclimatique, lames orientables, pergola bioclimatique motorisée, prix pergola bioclimatique 2026, pergola aluminium sur mesure, thermolaquage RAL, store zip pergola, pergola bioclimatique Libourne, pergola aluminium Gironde",
   path: '/blog/pergola-bioclimatique-aluminium-guide',
@@ -330,7 +330,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -472,7 +472,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   ['Des articulations et une visserie durables', 'les lames pivotent des milliers de fois : bagues, axes et biellettes sont les vraies pièces d’usure. Fixations en inox, et pièces de rechange disponibles chez le fabricant.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -575,7 +575,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   ['La finition sablée ou texturée', 'plutôt qu’un brillant : elle accroche moins les reflets, masque bien mieux les micro-traces et les marques de doigts, et vieillit plus élégamment qu’un satiné lisse.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -628,7 +628,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   ['Le confort thermique', 'chauffage radiant en hiver, brumisation en canicule : à prévoir dès la conception pour l’alimentation et les fixations, pas à visser après coup.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -721,7 +721,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   ['Au-delà', 'pour les grandes portées et les modules accolés, les stores zip, les panneaux coulissants et les finitions poussées.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -749,7 +749,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   'Vérifier une fois par an les articulations des lames, la visserie et le bon fonctionnement de la motorisation et des capteurs (dont les seuils se règlent souvent après la première saison).',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -784,7 +784,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

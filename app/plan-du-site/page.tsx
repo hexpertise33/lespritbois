@@ -6,8 +6,9 @@ import { CONTACT } from '@/lib/data/navigation';
 import { articles } from '@/lib/data/blog';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Plan du site | L'Esprit Bois",
-  description: "Plan du site L'Esprit Bois : accédez à toutes les pages et articles du site en un coup d'œil.",
+  title: "Plan du site — toutes nos pages | L'Esprit Bois",
+  description:
+    "Plan du site L'Esprit Bois : toutes nos pages de gamme, nos réalisations en Gironde et l'ensemble des guides du blog, en un coup d'œil.",
   path: '/plan-du-site',
   ogImage: '/images/source-adefrance/Carport-bois-Libourne-1.webp',
   ogTitle: 'Plan du site',

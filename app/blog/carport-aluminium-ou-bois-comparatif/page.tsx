@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/Carport-aluminium-Libourne-4.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Carport aluminium ou bois : le comparatif",
   description:
-    "Entretien, portée, budget, intégration au bâti : la comparaison poste par poste, sans complaisance.",
+    "Carport aluminium ou bois : entretien, portée, budget et intégration au bâti, la comparaison poste par poste d'un artisan en Gironde, sans complaisance.",
   keywords:
     "carport aluminium ou bois, comparatif carport bois aluminium, carport aluminium Gironde, carport bois Libourne, prix carport aluminium 2026, entretien carport aluminium, carport aluminium sur mesure, carport bois ou alu, abri voiture aluminium",
   path: '/blog/carport-aluminium-ou-bois-comparatif',
@@ -345,7 +345,7 @@ export default function ArticleCarportAluOuBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -406,7 +406,7 @@ export default function ArticleCarportAluOuBoisPage() {
                   ['Votre priorité est le budget d’entrée', 'le bois, qui démarre plus bas à surface équivalente — l’écart se resserre sur la durée de vie complète.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -600,7 +600,7 @@ export default function ArticleCarportAluOuBoisPage() {
                   ['La taxe d’aménagement', 'due selon la nature et la surface de l’ouvrage créé, elle se calcule sur des valeurs revalorisées chaque année et surprend beaucoup de propriétaires.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -786,7 +786,7 @@ export default function ArticleCarportAluOuBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

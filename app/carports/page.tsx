@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter';
 export const metadata: Metadata = buildMetadata({
   title: "Carport bois, alu & solaire à Libourne (33)",
   description:
-    "Carport bois, aluminium ou solaire, sur mesure. Conception et pose par nos équipes à Libourne et en Gironde.",
+    "Carport bois, aluminium ou solaire, sur mesure : conception en atelier et pose par nos équipes à Libourne et dans toute la Gironde. Étude gratuite.",
   keywords:
     'carport Libourne, carport Gironde, carport bois, carport aluminium, carport solaire, abri voiture Libourne, carport toiture plate, carport bac acier, carport adossé, carport autoporté',
   path: '/carports',
@@ -482,7 +482,7 @@ export default function CarportsPage() {
                     href={`#${g.id}`}
                     className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/25 text-white px-4 py-2.5 rounded-full font-label-md text-label-md hover:bg-white/20 hover:border-secondary/60 transition-all"
                   >
-                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]">arrow_downward</span>
+                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]" aria-hidden="true">arrow_downward</span>
                     {g.titre}
                   </a>
                 </li>
@@ -510,7 +510,7 @@ export default function CarportsPage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat
@@ -519,7 +519,7 @@ export default function CarportsPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -528,7 +528,7 @@ export default function CarportsPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Un seul interlocuteur
@@ -587,7 +587,7 @@ export default function CarportsPage() {
                       <ul className="space-y-2 mb-6">
                         {g.points.map((p) => (
                           <li key={p} className="flex items-start gap-2 text-white/90 text-body-md">
-                            <span className="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">
+                            <span className="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5" aria-hidden="true">
                               check_circle
                             </span>
                             <span>{p}</span>
@@ -596,7 +596,7 @@ export default function CarportsPage() {
                       </ul>
                       <span className="mt-auto inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md group-hover:gap-3 transition-all">
                         Voir cette gamme
-                        <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
                       </span>
                     </div>
                   </a>
@@ -633,25 +633,25 @@ export default function CarportsPage() {
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Essences choisies selon l'exposition de chaque pièce</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Poteaux sur platines inox, décollés du sol</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Trois toitures possibles : plate, bac acier ou tuile</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Peut recevoir bardage, claustra ou local de rangement</span>
@@ -711,7 +711,7 @@ export default function CarportsPage() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">horizontal_rule</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">horizontal_rule</span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Toiture plate</h4>
                 <p className="text-on-surface-variant text-body-md mb-4">
                   La ligne la plus contemporaine. Étanchéité par membrane, évacuation intégrée dans la structure, et
@@ -723,7 +723,7 @@ export default function CarportsPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">roofing</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">roofing</span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Toiture bac acier</h4>
                 <p className="text-on-surface-variant text-body-md mb-4">
                   Légère, économique et rapide à poser. Large choix de coloris RAL pour s'accorder aux menuiseries,
@@ -732,7 +732,7 @@ export default function CarportsPage() {
                 <p className="text-on-surface-variant text-body-md italic">Le meilleur rapport durabilité / budget.</p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">home</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">home</span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Toiture tuile</h4>
                 <p className="text-on-surface-variant text-body-md mb-4">
                   La continuité parfaite avec la couverture de la maison, souvent la seule solution acceptée près
@@ -812,7 +812,7 @@ export default function CarportsPage() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -821,13 +821,13 @@ export default function CarportsPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Toiture isolante, résistante aux chocs et au ruissellement</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -835,13 +835,13 @@ export default function CarportsPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Large choix de teintes, laquage durable, aucun entretien</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -907,7 +907,7 @@ export default function CarportsPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="border-t-2 border-secondary pt-6">
-                <span className="material-symbols-outlined text-secondary text-4xl mb-4">water_drop</span>
+                <span className="material-symbols-outlined text-secondary text-4xl mb-4" aria-hidden="true">water_drop</span>
                 <h3 className="font-headline-sm text-headline-sm text-secondary-fixed mb-3">
                   L'étanchéité ne dépend pas des panneaux
                 </h3>
@@ -918,7 +918,7 @@ export default function CarportsPage() {
                 </p>
               </div>
               <div className="border-t-2 border-secondary pt-6">
-                <span className="material-symbols-outlined text-secondary text-4xl mb-4">tune</span>
+                <span className="material-symbols-outlined text-secondary text-4xl mb-4" aria-hidden="true">tune</span>
                 <h3 className="font-headline-sm text-headline-sm text-secondary-fixed mb-3">
                   Le nombre de panneaux, à la carte
                 </h3>
@@ -929,7 +929,7 @@ export default function CarportsPage() {
                 </p>
               </div>
               <div className="border-t-2 border-secondary pt-6">
-                <span className="material-symbols-outlined text-secondary text-4xl mb-4">straighten</span>
+                <span className="material-symbols-outlined text-secondary text-4xl mb-4" aria-hidden="true">straighten</span>
                 <h3 className="font-headline-sm text-headline-sm text-secondary-fixed mb-3">
                   Une voiture, plusieurs, ou un camping-car
                 </h3>
@@ -959,7 +959,7 @@ export default function CarportsPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <article className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">house_siding</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">house_siding</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Carport adossé</h3>
                 <p className="text-on-surface-variant text-body-md mb-5">
                   Il prend appui sur la façade ou sur le mur du garage. Moins de poteaux, une ligne plus nette, et un
@@ -967,21 +967,21 @@ export default function CarportsPage() {
                 </p>
                 <ul className="space-y-2 text-on-surface-variant text-body-md">
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Gagne de la place sur un terrain étroit</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>On décharge les courses au sec, jusqu'à la porte</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Demande une façade saine : nous la vérifions au relevé</span>
                   </li>
                 </ul>
               </article>
               <article className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">deck</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">deck</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Carport autoporté</h3>
                 <p className="text-on-surface-variant text-body-md mb-5">
                   Il repose sur ses propres poteaux et se pose où vous voulez : en limite de propriété, au bout de
@@ -989,15 +989,15 @@ export default function CarportsPage() {
                 </p>
                 <ul className="space-y-2 text-on-surface-variant text-body-md">
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Aucune contrainte liée à la façade ou au débord de toit</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Permet d'abriter plusieurs véhicules côte à côte</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Se prolonge facilement d'un local de rangement</span>
                   </li>
                 </ul>
@@ -1027,7 +1027,7 @@ export default function CarportsPage() {
                   key={o.titre}
                   className="bg-white/[0.06] border border-white/15 rounded-2xl p-7 hover:bg-white/[0.1] hover:border-secondary/40 transition-colors duration-500"
                 >
-                  <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-4">{o.icone}</span>
+                  <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-4" aria-hidden="true">{o.icone}</span>
                   <h3 className="font-headline-sm text-headline-sm text-[20px] mb-3">{o.titre}</h3>
                   <p className="text-on-primary-container text-body-md">{o.texte}</p>
                 </article>
@@ -1273,7 +1273,7 @@ export default function CarportsPage() {
                   <span className="absolute top-6 right-7 font-display-lg text-[44px] leading-none text-primary/[0.08]">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{e.icone}</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">{e.icone}</span>
                   <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{e.titre}</h3>
                   <p className="text-on-surface-variant text-body-md">{e.texte}</p>
                 </li>
@@ -1364,7 +1364,7 @@ export default function CarportsPage() {
               <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
                 {COMMUNES.map((c) => (
                   <li key={c} className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                     {c}
                   </li>
                 ))}
@@ -1392,7 +1392,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Faut-il une autorisation d'urbanisme pour un carport ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1418,7 +1418,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Carport bois ou carport aluminium : lequel choisir ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1437,7 +1437,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Quel bois choisir pour un carport en Gironde ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1461,7 +1461,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Toiture plate, bac acier ou tuile : laquelle choisir ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1480,7 +1480,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Adossé ou autoporté : quelle implantation choisir ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1499,7 +1499,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Quelles dimensions prévoir pour une ou deux voitures ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1518,7 +1518,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Qu'est-ce qu'un carport solaire ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1536,7 +1536,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Peut-on installer une borne de recharge sous le carport ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1554,7 +1554,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Combien coûte un carport sur mesure ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1574,7 +1574,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Êtes-vous certifiés et assurés ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1592,7 +1592,7 @@ export default function CarportsPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Intervenez-vous en dehors de Libourne ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>

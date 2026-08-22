@@ -6,7 +6,8 @@ import { CONTACT, SITE } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: "Mentions légales | L'Esprit Bois",
-  description: "Mentions légales du site L'Esprit Bois : éditeur, hébergeur, propriété intellectuelle et assurances.",
+  description:
+    "Mentions légales du site lesprit-bois.fr : éditeur, hébergeur, propriété intellectuelle, assurances et garantie décennale de L'Esprit Bois.",
   path: '/mentions-legales',
   ogImage: '/images/pergola-bois-charpente-massive-patine.jpg',
   ogTitle: 'Mentions légales',
@@ -110,7 +111,7 @@ export default function MentionsLegalesPage() {
                 href="/"
                 className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all"
               >
-                <span className="material-symbols-outlined">arrow_back</span> Retour à l'accueil
+                <span className="material-symbols-outlined" aria-hidden="true">arrow_back</span> Retour à l'accueil
               </a>
             </div>
           </div>

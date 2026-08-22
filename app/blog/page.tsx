@@ -83,7 +83,7 @@ export default function BlogPage() {
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             {articles.length === 0 ? (
               <div className="max-w-2xl mx-auto text-center py-12">
-                <span className="material-symbols-outlined text-secondary-dark text-5xl mb-6">edit_note</span>
+                <span className="material-symbols-outlined text-secondary-dark text-5xl mb-6" aria-hidden="true">edit_note</span>
                 <h2 className="font-headline-md text-headline-md text-primary mb-4">
                   Les premiers articles arrivent bientôt
                 </h2>
@@ -95,7 +95,7 @@ export default function BlogPage() {
                   href="/#quote"
                   className="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95"
                 >
-                  Nous contacter <span className="material-symbols-outlined">arrow_forward</span>
+                  Nous contacter <span className="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
                 </a>
               </div>
             ) : (
@@ -128,7 +128,7 @@ export default function BlogPage() {
                         href={`/blog/${article.slug}`}
                         className="inline-flex items-center gap-2 text-secondary-dark font-label-md hover:gap-4 transition-all"
                       >
-                        Lire l'article <span className="material-symbols-outlined">arrow_forward</span>
+                        Lire l'article <span className="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
                       </a>
                     </div>
                   </article>

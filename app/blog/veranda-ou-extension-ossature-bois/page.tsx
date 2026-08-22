@@ -9,7 +9,7 @@ const COVER = '/images/source-adefrance/aggrandissement-accueil.webp';
 export const metadata: Metadata = buildMetadata({
   title: "Véranda ou extension bois : que choisir ? | L'Esprit Bois",
   description:
-    "Véranda aluminium ou extension en ossature bois pour agrandir sa maison en Gironde ? Usage, confort, urbanisme et budget 2026 : notre arbitrage d'artisan à Libourne.",
+    "Véranda aluminium ou extension en ossature bois pour agrandir sa maison ? Usage, confort, urbanisme et budget 2026 : notre arbitrage en Gironde.",
   keywords:
     "véranda ou extension bois, agrandir sa maison Gironde, extension ossature bois Libourne, véranda aluminium Gironde, prix agrandissement maison 2026, extension maison Libournais, véranda ou extension, agrandissement maison Libourne",
   path: '/blog/veranda-ou-extension-ossature-bois',
@@ -377,7 +377,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -446,7 +446,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -708,7 +708,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -859,7 +859,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

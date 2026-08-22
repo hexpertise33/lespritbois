@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter';
 export const metadata: Metadata = buildMetadata({
   title: "Pergola bioclimatique, alu & bois à Libourne",
   description:
-    "Pergola bioclimatique, aluminium à toiture fixe ou bois massif, sur mesure. Pose à Libourne et en Gironde.",
+    "Pergola bioclimatique à lames orientables, aluminium à toiture fixe ou bois massif, sur mesure. Conception et pose à Libourne et en Gironde.",
   keywords:
     'pergola Libourne, pergola Gironde, pergola bioclimatique, pergola aluminium, pergola bois, lames orientables, toiture polycarbonate, store ZIP, pergola adossée, pergola autoportée',
   path: '/pergolas',
@@ -484,7 +484,7 @@ export default function PergolasPage() {
                     href={`#${g.id}`}
                     className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/25 text-white px-4 py-2.5 rounded-full font-label-md text-label-md hover:bg-white/20 hover:border-secondary/60 transition-all"
                   >
-                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]">arrow_downward</span>
+                    <span className="material-symbols-outlined text-secondary-fixed text-[18px]" aria-hidden="true">arrow_downward</span>
                     {g.titre}
                   </a>
                 </li>
@@ -512,7 +512,7 @@ export default function PergolasPage() {
         <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">verified</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Certifiés Qualibat
@@ -521,7 +521,7 @@ export default function PergolasPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">shield</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Garantie décennale
@@ -530,7 +530,7 @@ export default function PergolasPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0">handshake</span>
+              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
               <div>
                 <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
                   Un seul interlocuteur
@@ -596,7 +596,7 @@ export default function PergolasPage() {
                       <ul className="space-y-2 overflow-hidden transition-all duration-500 lg:max-h-0 lg:opacity-0 lg:group-hover:max-h-40 lg:group-hover:opacity-100 lg:group-focus-within:max-h-40 lg:group-focus-within:opacity-100">
                         {g.points.map((p) => (
                           <li key={p} className="flex items-start gap-2 text-white/90 text-body-md">
-                            <span className="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">
+                            <span className="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5" aria-hidden="true">
                               check_circle
                             </span>
                             <span>{p}</span>
@@ -606,7 +606,7 @@ export default function PergolasPage() {
 
                       <span className="mt-5 inline-flex items-center gap-2 text-secondary-fixed font-label-md text-label-md group-hover:gap-3 transition-all">
                         Voir cette gamme
-                        <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
                       </span>
                     </div>
                   </a>
@@ -647,7 +647,7 @@ export default function PergolasPage() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -655,25 +655,25 @@ export default function PergolasPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Adossée à la façade ou entièrement autoportée</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Fabrication sur mesure, aux dimensions de votre terrasse</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Large choix de teintes, structure sans entretien</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -729,7 +729,7 @@ export default function PergolasPage() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">water_drop</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">water_drop</span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Pas d'eau stagnante</h4>
                 <p className="text-on-surface-variant text-body-md">
                   La toiture est conçue pour que l'eau s'écoule toujours, dans les deux sens : rien ne s'accumule sur
@@ -737,7 +737,7 @@ export default function PergolasPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">
                   precision_manufacturing
                 </span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Le détail invisible</h4>
@@ -747,7 +747,7 @@ export default function PergolasPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">plumbing</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">plumbing</span>
                 <h4 className="font-headline-sm text-headline-sm text-primary mb-3">Une évacuation adaptée</h4>
                 <p className="text-on-surface-variant text-body-md">
                   Plusieurs systèmes existent, dont l'évacuation dissimulée dans les poteaux. Nous retenons celui qui
@@ -855,7 +855,7 @@ export default function PergolasPage() {
 
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -863,7 +863,7 @@ export default function PergolasPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -871,7 +871,7 @@ export default function PergolasPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -879,7 +879,7 @@ export default function PergolasPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -1013,31 +1013,31 @@ export default function PergolasPage() {
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Essences choisies selon l'exposition de l'ouvrage</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Adossée à la façade ou autoportée, assemblages traditionnels</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Pieds de poteaux protégés, décollés du sol</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">Couverture claire-voie, lames fixes, canisse ou toile</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">
                       check_circle
                     </span>
                     <span className="text-body-md">
@@ -1073,7 +1073,7 @@ export default function PergolasPage() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <article className="bg-surface-container-low rounded-xl p-7 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">grid_goldenratio</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">grid_goldenratio</span>
                 <h4 className="font-headline-sm text-headline-sm text-[20px] text-primary mb-3">Claire-voie</h4>
                 <p className="text-on-surface-variant text-body-md">
                   Des lames fixes espacées, dont l'écartement et l'orientation se calculent selon la course du
@@ -1081,7 +1081,7 @@ export default function PergolasPage() {
                 </p>
               </article>
               <article className="bg-surface-container-low rounded-xl p-7 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">horizontal_split</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">horizontal_split</span>
                 <h4 className="font-headline-sm text-headline-sm text-[20px] text-primary mb-3">Lames fixes serrées</h4>
                 <p className="text-on-surface-variant text-body-md">
                   Le même principe, resserré : l'ombre devient dense et continue. C'est le choix pour une terrasse
@@ -1089,7 +1089,7 @@ export default function PergolasPage() {
                 </p>
               </article>
               <article className="bg-surface-container-low rounded-xl p-7 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">roller_shades</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">roller_shades</span>
                 <h4 className="font-headline-sm text-headline-sm text-[20px] text-primary mb-3">
                   Toile tendue ou rétractable
                 </h4>
@@ -1099,7 +1099,7 @@ export default function PergolasPage() {
                 </p>
               </article>
               <article className="bg-surface-container-low rounded-xl p-7 border border-surface-variant">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">water_drop</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">water_drop</span>
                 <h4 className="font-headline-sm text-headline-sm text-[20px] text-primary mb-3">
                   Polycarbonate ou panneau
                 </h4>
@@ -1129,7 +1129,7 @@ export default function PergolasPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <article className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">house_siding</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">house_siding</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Pergola adossée</h3>
                 <p className="text-on-surface-variant text-body-md mb-5">
                   Elle prend appui sur la façade et prolonge la maison. Deux poteaux au lieu de quatre, une ligne
@@ -1137,21 +1137,21 @@ export default function PergolasPage() {
                 </p>
                 <ul className="space-y-2 text-on-surface-variant text-body-md">
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Idéale devant un séjour ou une cuisine ouverte</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Moins d'emprise au sol visible, moins de poteaux</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Demande une façade saine : nous la vérifions au relevé</span>
                   </li>
                 </ul>
               </article>
               <article className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">deck</span>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">deck</span>
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Pergola autoportée</h3>
                 <p className="text-on-surface-variant text-body-md mb-5">
                   Elle repose sur ses quatre poteaux et se pose où vous voulez : au bord de la piscine, au fond du
@@ -1159,15 +1159,15 @@ export default function PergolasPage() {
                 </p>
                 <ul className="space-y-2 text-on-surface-variant text-body-md">
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Aucune contrainte liée à la façade ou au débord de toit</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>Crée une pièce à part entière dans le jardin</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1">check</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px] mt-1" aria-hidden="true">check</span>
                     <span>S'associe bien à un pool house ou à une terrasse de piscine</span>
                   </li>
                 </ul>
@@ -1197,7 +1197,7 @@ export default function PergolasPage() {
                   key={o.titre}
                   className="bg-white/[0.06] border border-white/15 rounded-2xl p-7 hover:bg-white/[0.1] hover:border-secondary/40 transition-colors duration-500"
                 >
-                  <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-4">{o.icone}</span>
+                  <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-4" aria-hidden="true">{o.icone}</span>
                   <h3 className="font-headline-sm text-headline-sm text-[20px] mb-3">{o.titre}</h3>
                   <p className="text-on-primary-container text-body-md">{o.texte}</p>
                 </article>
@@ -1459,7 +1459,7 @@ export default function PergolasPage() {
                   <span className="absolute top-6 right-7 font-display-lg text-[44px] leading-none text-primary/[0.08]">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4">{e.icone}</span>
+                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">{e.icone}</span>
                   <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{e.titre}</h3>
                   <p className="text-on-surface-variant text-body-md">{e.texte}</p>
                 </li>
@@ -1550,7 +1550,7 @@ export default function PergolasPage() {
               <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
                 {COMMUNES.map((c) => (
                   <li key={c} className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-secondary-dark text-[18px]">location_on</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">location_on</span>
                     {c}
                   </li>
                 ))}
@@ -1578,7 +1578,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Comment fonctionne une pergola bioclimatique ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1596,7 +1596,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Quelle différence entre une pergola bioclimatique et une pergola aluminium à toiture fixe ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1617,7 +1617,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Une pergola bioclimatique protège-t-elle vraiment de la pluie ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1635,7 +1635,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Peut-on fermer les côtés d'une pergola ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1654,7 +1654,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Pergola bois ou pergola aluminium : laquelle choisir ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1672,7 +1672,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Adossée ou autoportée : quelle implantation choisir ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1691,7 +1691,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Faut-il une autorisation d'urbanisme pour une pergola ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1717,7 +1717,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Combien coûte une pergola sur mesure ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1737,7 +1737,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Jusqu'à quelle taille peut-on aller ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>
@@ -1754,7 +1754,7 @@ export default function PergolasPage() {
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Êtes-vous certifiés et assurés ?
                   </h3>
-                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                     expand_more
                   </span>
                 </summary>

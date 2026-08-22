@@ -9,7 +9,7 @@ const COVER = '/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-me
 export const metadata: Metadata = buildMetadata({
   title: "Clôture aluminium : lames occultantes et pose | L'Esprit Bois",
   description:
-    "Clôture aluminium à lames occultantes : degré d'occultation, prise au vent, scellement des poteaux, raccord au portail et budget 2026 au mètre linéaire, à Libourne et en Gironde.",
+    "Clôture aluminium à lames occultantes : degré d'occultation, prise au vent, scellement, raccord au portail et budget 2026 au mètre linéaire, en Gironde.",
   keywords:
     "clôture aluminium, clôture aluminium lames occultantes, brise-vue aluminium, clôture alu occultante, lames orientables clôture, poteaux clôture aluminium, portail et clôture assortis, prix clôture aluminium 2026, clôture aluminium Gironde, clôture aluminium Libourne",
   path: '/blog/cloture-aluminium-lames-occultantes-guide',
@@ -301,7 +301,7 @@ export default function ArticleClotureAluminiumPage() {
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-label-md text-label-md">
               <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary text-[20px]">person</span>
+                <span className="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">person</span>
                 <a
                   href="/qui-sommes-nous#david-bertrand"
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
@@ -414,7 +414,7 @@ export default function ArticleClotureAluminiumPage() {
                   ['Les zones à seulement délimiter', 'une limite sur champ ouvert, un fond de parcelle : un remplissage léger marque la propriété sans transformer le terrain en enclos.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -522,7 +522,7 @@ export default function ArticleClotureAluminiumPage() {
                   'Adapter au sol réel : un terrain sableux, remblayé ou détrempé ne se comporte pas comme une terre ferme, et cela se voit à la première tarière.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">{item}</span>
                   </li>
                 ))}
@@ -648,7 +648,7 @@ export default function ArticleClotureAluminiumPage() {
                   ['Le portail et ses abords', 'poteaux renforcés, motorisation, fourreaux, coffret : à intégrer dès le devis plutôt qu’à rajouter ensuite.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
                     <span className="text-body-md text-on-surface-variant">
                       <strong className="text-primary font-semibold">{titre}</strong> : {texte}
                     </span>
@@ -710,7 +710,7 @@ export default function ArticleClotureAluminiumPage() {
                 >
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline-sm text-headline-sm text-primary pr-6">{item.q}</h3>
-                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform">
+                    <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
                       expand_more
                     </span>
                   </summary>

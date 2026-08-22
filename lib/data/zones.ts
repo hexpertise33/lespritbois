@@ -77,7 +77,7 @@ export const ZONES: Zone[] = [
       titre: 'Ce que le relief de l’Entre-deux-Mers impose à un ouvrage',
       paragraphes: [
         "L'Entre-deux-Mers n'est pas une plaine. Entre Génissac et Rauzan, les parcelles sont en coteau, souvent orientées plein sud pour la vigne — et les maisons qui s'y sont installées ont hérité de cette exposition. C'est excellent en février et invivable en juillet, ce qui explique la proportion de pergolas dans ce que nous y posons.",
-        "Le relief a une conséquence directe sur les fondations. Un terrain en pente ne se règle pas en calant la structure : à Capian, un carport pour trois voitures a demandé une charpente à deux pentes et des appuis repris à des niveaux différents, parce que rattraper le dénivelé dans la couverture aurait donné un ouvrage qui penche à l'œil. C'est du dessin, pas du calage.",
+        "Le relief a une conséquence directe sur les fondations, et sur le budget. Sur un sol horizontal, on coule une dalle ou des plots et l'affaire est réglée ; en pente, une dalle suppose un terrassement, un décaissement et un soutènement — une bonne part de l'enveloppe dépensée avant d'avoir posé le premier poteau. À Capian, pour un carport bois de 6 × 9 mètres à trois véhicules, nous avons fondé sur des vis de fondation d'un mètre cinquante, vissées directement dans le sol : chaque pied se règle indépendamment en hauteur, ce qui rattrape la pente sans toucher au terrain. Pas de béton, pas d'évacuation de terre, pas de délai de séchage.",
         "Le sous-sol change avec l'altitude, et cela se sent à la fondation. Les plateaux reposent sur le calcaire à astéries, celui-là même qui a servi de pierre de construction dans toute la région : il porte très bien, mais il se creuse mal, et une réservation qu'on croyait faite à la tarière se termine parfois au brise-roche. Les vallons, eux, sont sur molasses — plus tendres, plus sensibles à l'eau. Nous sondons avant de chiffrer plutôt que de découvrir le jour de la pose.",
         "Enfin, ces communes viticoles comptent beaucoup d'églises et de bâtis anciens protégés. Une parcelle située dans le périmètre des abords d'un monument historique fait passer la demande d'urbanisme par l'avis de l'Architecte des Bâtiments de France : la teinte, la pente de toiture et parfois le matériau de couverture sont alors regardés. Cela ne bloque rien, mais cela change le calendrier. Nous vérifions ce point au relevé, avant de dessiner, plutôt qu'après un refus.",
       ],
@@ -104,7 +104,7 @@ export const ZONES: Zone[] = [
       },
     ],
     acces:
-      "L'atelier est aux Billaux, en bordure nord de l'Entre-deux-Mers : Génissac et Moulon sont à une quinzaine de minutes, Rauzan et Saint-Pey-de-Castets à une demi-heure, Capian plus au sud. Nous n'y sous-traitons rien : les équipes qui relèvent sont celles qui posent.",
+      "L'atelier est aux Billaux, au confluent de l'Isle et de la Dordogne : nous sommes en Libournais, sur l'autre rive, à quelques minutes de l'entrée nord de l'Entre-deux-Mers. Génissac et Moulon sont à une quinzaine de minutes, Rauzan et Saint-Pey-de-Castets à une demi-heure, Capian plus au sud. Nous n'y sous-traitons rien : les équipes qui relèvent sont celles qui posent.",
     faq: [
       {
         q: 'Intervenez-vous à Créon, Targon ou Branne ?',
@@ -112,7 +112,7 @@ export const ZONES: Zone[] = [
       },
       {
         q: 'Une pergola sur un terrain en pente coûte-t-elle plus cher ?',
-        r: "Pas systématiquement, mais elle se dessine différemment. Ce qui coûte, ce n'est pas la pente elle-même : c'est le nombre d'appuis à des niveaux différents et, parfois, la nature du sol sous ces appuis. À Capian, la charpente à deux pentes du carport a été conçue pour le dénivelé dès le dessin, ce qui a évité les reprises coûteuses en fin de chantier.",
+        r: "Pas systématiquement, mais elle se fonde différemment. Ce qui coûte en pente, ce n'est pas la structure : c'est le terrassement qu'une dalle impose. À Capian, le carport a été fondé sur vis d'un mètre cinquante, chaque pied réglable en hauteur — la pente est rattrapée dans la fondation, sans décaissement ni soutènement, et le budget passe dans l'ouvrage plutôt que dans le sol.",
       },
       {
         q: 'Faut-il une autorisation pour une pergola en Entre-deux-Mers ?',
@@ -123,15 +123,15 @@ export const ZONES: Zone[] = [
   {
     slug: 'constructeur-ossature-bois-gironde',
     nom: 'Gironde',
-    communes: ['Génissac', 'Rauzan', 'Clérac', 'Libourne', 'Les Billaux'],
+    communes: ['Génissac', 'Rauzan', 'Libourne', 'Les Billaux', 'Coutras', 'Castillon-la-Bataille'],
     title: 'Constructeur ossature bois en Gironde : extension et maison',
     description:
-      "Extension et maison à ossature bois en Gironde : trois chantiers racontés à Génissac, Rauzan et Clérac, du raccord sur grange en pierre à la maison finie.",
+      "Extension et maison à ossature bois en Gironde : les chantiers de Génissac et Rauzan racontés en détail, du raccord sur l'existant à la maison de 150 m².",
     keywords:
       'constructeur ossature bois Gironde, extension ossature bois Gironde, maison ossature bois Gironde, extension bois Libourne, constructeur bois Gironde, surélévation bois Gironde',
     h1: 'Constructeur à ossature bois en Gironde',
     chapo:
-      "Une extension et une maison ne se jugent pas sur un catalogue mais sur des raccords. Voici trois chantiers girondins, avec le point dur de chacun.",
+      "Une extension et une maison ne se jugent pas sur un catalogue mais sur des raccords. Voici trois chantiers — deux en Gironde, un juste de l'autre côté de la limite départementale — avec le point dur de chacun.",
     cover: '/images/ossature-bois-isolation-fibre-gironde.webp',
     coverW: 1200,
     coverH: 900,
@@ -141,7 +141,7 @@ export const ZONES: Zone[] = [
       titre: 'Le point dur d’une extension, c’est toujours le raccord',
       paragraphes: [
         "Une extension à ossature bois neuve ne pose pas de difficulté en elle-même : elle est dessinée, taillée en atelier, montée en quelques jours. Ce qui fait ou défait le chantier, c'est la jonction avec l'existant — et en Gironde, l'existant est souvent en pierre, parfois ancien, rarement d'équerre.",
-        "À Clérac, il fallait greffer une ossature neuve sur une grange en pierre équipée de contreforts métalliques scellés en façade. Le risque n'était pas esthétique : un joint mal traité entre deux systèmes constructifs produit un pont thermique sur toute la hauteur, avec la condensation qui va avec. Nous avons mené l'extension en isolation par l'extérieur, pour que l'enveloppe neuve se referme sur l'existant au lieu de s'y accoler.",
+        "Le cas le plus démonstratif que nous ayons documenté est à Clérac — en Charente-Maritime, à la limite du département, où la Gironde, la Dordogne et la Charente se rejoignent. Il fallait y greffer une ossature neuve sur une grange en pierre équipée de contreforts métalliques scellés en façade. Le risque n'était pas esthétique : un joint mal traité entre deux systèmes constructifs produit un pont thermique sur toute la hauteur, avec la condensation qui va avec. Nous avons mené l'extension en isolation par l'extérieur, pour que l'enveloppe neuve se referme sur l'existant au lieu de s'y accoler.",
         "À Génissac, le client tenait à garder sa toiture. Elle avait bougé : les relevés ne donnaient pas les mêmes cotes d'un bout à l'autre du rampant. Poser une ossature sur des cotes théoriques aurait produit un décalage visible dès la première panne. Nous avons relevé point par point avant de dessiner, puis absorbé les écarts dans la structure plutôt que dans les finitions.",
         "À Rauzan, il ne s'agissait plus d'agrandir mais de construire : 150 m² de maison et garage, mêlant ossature bois et maçonnerie traditionnelle. Faire cohabiter deux modes constructifs suppose de caler très tôt les niveaux finis et les épaisseurs d'enveloppe. Ce qui n'est pas arbitré au dessin se rattrape en fin de chantier, et se rattrape mal.",
       ],
@@ -187,26 +187,26 @@ export const ZONES: Zone[] = [
   {
     slug: 'amenagement-exterieur-bordeaux-metropole',
     nom: 'métropole bordelaise',
-    communes: ['Montussan', 'Bordeaux', 'Cenon', 'Lormont', 'Artigues-près-Bordeaux'],
+    communes: ['Bordeaux', 'Cenon', 'Lormont', 'Floirac', 'Artigues-près-Bordeaux', 'Carbon-Blanc', 'Montussan'],
     title: 'Pergola et aménagement extérieur en métropole bordelaise',
     description:
-      "Pergola, carport et terrasse sur mesure en métropole bordelaise : un chantier raconté à Montussan, et ce que la densité change à un ouvrage extérieur.",
+      "Pergola, carport et terrasse sur mesure en métropole bordelaise : un chantier raconté à Montussan, aux portes de la métropole, et ce que la densité change.",
     keywords:
-      'pergola Bordeaux, aménagement extérieur Bordeaux, carport Bordeaux métropole, terrasse bois Bordeaux, pergola Montussan, pergola coteaux bordelais',
+      'pergola Bordeaux, aménagement extérieur Bordeaux, carport Bordeaux métropole, terrasse bois Bordeaux, pergola Montussan, pergola rive droite Bordeaux',
     h1: 'Pergolas et aménagements extérieurs en métropole bordelaise',
     chapo:
-      "Notre atelier est aux Billaux, à une quarantaine de minutes de Bordeaux par l'A89. Nous intervenons sur la métropole, et nous préférons vous dire d'emblée ce que sa densité change à un chantier.",
+      "Notre atelier est aux Billaux, à une quarantaine de minutes de Bordeaux par l'A89. Nous intervenons sur la métropole sans y avoir encore de chantier documenté — et nous préférons vous dire d'emblée ce que sa densité change à un ouvrage.",
     cover: '/images/source-adefrance/construction-pool-house-aluminium-libourne.webp',
     coverW: 768,
     coverH: 512,
     coverAlt:
-      "Pergola aluminium isolée couvrant un espace bar avec plancha et plan de travail, réalisée à Montussan, près de Bordeaux",
+      "Pergola aluminium isolée couvrant un espace bar avec plancha et plan de travail, réalisée à Montussan, aux portes de Bordeaux Métropole",
     contexte: {
       titre: 'Sur la métropole, la contrainte n’est pas le terrain — c’est l’accès et la limite',
       paragraphes: [
-        "Nos chantiers girondins sont pour l'essentiel en Libournais et en Entre-deux-Mers. Sur la métropole bordelaise, notre chantier documenté est à Montussan, dans les Coteaux Bordelais, à une vingtaine de minutes de Bordeaux par l'A89 et la rocade. Nous ne prétendrons pas à une longue liste de références intra-muros : ce serait faux, et vous le verriez au premier rendez-vous.",
+        "Autant le dire tout de suite : nos chantiers sont pour l'essentiel en Libournais et en Entre-deux-Mers, et nous n'avons pas de référence à l'intérieur de Bordeaux Métropole. Le plus proche est à Montussan — commune de la Communauté de communes Les Rives de la Laurence, aux portes de la métropole, à une vingtaine de minutes de Bordeaux par l'A89 et la rocade. Prétendre à une longue liste de références intra-muros serait faux, et vous le verriez au premier rendez-vous.",
         "Ce que nous savons, en revanche, c'est ce qui change quand on quitte la parcelle de campagne. À Montussan, la pergola devait entrer entre deux ouvrages existants, dans une cour fermée : une pose en tunnel, sans jeu de montage. La structure entre au millimètre ou elle n'entre pas. Toutes les cotes ont été relevées sur place et la pergola fabriquée d'après ce relevé, pas d'après un modèle standard rattrapé par des habillages. C'est exactement la situation d'un jardin de ville.",
-        "La deuxième contrainte métropolitaine est la limite séparative. En tissu dense, un carport ou une pergola touche presque toujours une limite, ce qui met en jeu la vue sur le fonds voisin et, selon les cas, la hauteur admissible en limite. Ces règles sont dans le règlement de zone du PLU métropolitain, et elles varient d'une commune et d'un secteur à l'autre. Nous les lisons avant de dessiner.",
+        "La deuxième contrainte est la limite séparative. En tissu dense, un carport ou une pergola touche presque toujours une limite, ce qui met en jeu la vue sur le fonds voisin et, selon les cas, la hauteur admissible en limite. Sur les vingt-huit communes de Bordeaux Métropole, ces règles figurent au règlement de zone du PLU intercommunal et varient d'un secteur à l'autre ; en périphérie, chaque commune a le sien. Dans les deux cas, nous le lisons avant de dessiner, pas après.",
         "La troisième, c'est l'accès. Une charpente préparée en atelier arrive en éléments à assembler ; encore faut-il pouvoir les livrer. Rue étroite, portail de 90 cm, passage par la maison : cela se règle au relevé, en adaptant les longueurs de pièces, pas le jour de la pose.",
       ],
     },
@@ -236,7 +236,7 @@ export const ZONES: Zone[] = [
     faq: [
       {
         q: 'Vous déplacez-vous jusqu’à Bordeaux ?',
-        r: "Oui. L'atelier est aux Billaux, à une quarantaine de minutes du centre de Bordeaux par l'A89, et notre chantier le plus proche de la métropole est à Montussan. Le déplacement pour le relevé et le devis est gratuit.",
+        r: "Oui. L'atelier est aux Billaux, à une quarantaine de minutes du centre de Bordeaux par l'A89. Notre chantier le plus proche est à Montussan, aux portes de la métropole sans y être — nous préférons le dire que le laisser croire. Le déplacement pour le relevé et le devis est gratuit, sur la métropole comme ailleurs.",
       },
       {
         q: 'Peut-on poser une pergola dans une cour fermée, sans recul ?',

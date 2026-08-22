@@ -124,16 +124,21 @@ export default function PageZone({ zone }: { zone: Zone }) {
         <section className="py-20 md:py-28 bg-surface-container">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
-              {chantiers.length === 1
-                ? 'Notre chantier dans le secteur'
-                : `Nos ${chantiers.length} chantiers dans le secteur`}
+              {zone.chantiersTitre ??
+                (chantiers.length === 1
+                  ? 'Notre chantier dans le secteur'
+                  : `Nos ${chantiers.length} chantiers dans le secteur`)}
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-14 max-w-2xl">
-              Commune réelle, contrainte réelle, durée réelle. Ce sont les mêmes fiches que dans{' '}
-              <a href="/realisations" className={lienInterne}>
-                nos réalisations
-              </a>
-              , sans réécriture à l&apos;avantage de la page.
+              {zone.chantiersIntro ?? (
+                <>
+                  Commune réelle, contrainte réelle, durée réelle. Ce sont les mêmes fiches que dans{' '}
+                  <a href="/realisations" className={lienInterne}>
+                    nos réalisations
+                  </a>
+                  , sans réécriture à l&apos;avantage de la page.
+                </>
+              )}
             </p>
             <div className="space-y-16">
               {chantiers.map((c) => (

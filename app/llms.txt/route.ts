@@ -25,7 +25,7 @@ export function GET() {
 
 > Charpentier et constructeur bois installé aux Billaux (33500), à cinq minutes de Libourne, en Gironde. Conception, fabrication en atelier et pose par les mêmes équipes, sans sous-traitance. Entreprise qualifiée Qualibat, ouvrages couverts par une garantie décennale assurée par SMABTP.
 
-Zone d'intervention : Libourne et le Libournais (Les Billaux, Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), et plus largement la Gironde jusqu'à la métropole bordelaise.
+Zone d'intervention : Libourne et le Libournais (Les Billaux, Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), et plus largement la Gironde jusqu'à la métropole bordelaise. Pour les pergolas, l'entreprise se déplace également sur le Bassin d'Arcachon (La Teste-de-Buch, Arcachon, Gujan-Mestras, Le Teich), où elle n'a pas encore de chantier livré.
 
 Contact : 05 57 40 65 80 — lespritbois33@gmail.com — 1 Aux Pradasses, 33500 Les Billaux.
 

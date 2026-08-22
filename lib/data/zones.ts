@@ -32,6 +32,11 @@ export type Zone = {
   contexte: { titre: string; paragraphes: string[] };
   /** Identifiants des chantiers de /realisations à mettre en avant. */
   chantiers: string[];
+  /** Titre et introduction de la section chantiers. À renseigner quand la zone n'a pas
+   *  encore de chantier à elle : le gabarit annonce sinon « nos N chantiers dans le
+   *  secteur », ce qui serait faux. */
+  chantiersTitre?: string;
+  chantiersIntro?: string;
   /** Distance et temps depuis l'atelier des Billaux, vérifiés à la carte. */
   acces: string;
   /** Guides du blog à rattacher au secteur.
@@ -245,6 +250,85 @@ export const ZONES: Zone[] = [
       {
         q: 'Quelles sont les règles en limite de propriété sur la métropole ?',
         r: "Elles figurent dans le règlement de la zone où se trouve votre parcelle, au PLU métropolitain, et varient d'un secteur à l'autre : hauteur admissible en limite, recul imposé, vues sur le fonds voisin. C'est la première chose que nous vérifions au relevé. Les seuils nationaux de déclaration préalable et de permis, eux, sont détaillés dans notre guide des autorisations d'urbanisme.",
+      },
+    ],
+  },
+  {
+    slug: 'pergola-bassin-arcachon',
+    nom: "Bassin d'Arcachon",
+    communes: [
+      'La Teste-de-Buch',
+      'Arcachon',
+      'Gujan-Mestras',
+      'Le Teich',
+      'Biganos',
+      'Andernos-les-Bains',
+      'Lège-Cap-Ferret',
+    ],
+    title: "Pergola sur le Bassin d'Arcachon : vent, embruns, site classé",
+    description:
+      "Pergola bioclimatique ou aluminium sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
+    keywords:
+      "pergola Bassin d'Arcachon, pergola La Teste-de-Buch, pergola bioclimatique Arcachon, pergola Gujan-Mestras, pergola Cap-Ferret, store extérieur Bassin d'Arcachon",
+    h1: "Pergolas sur le Bassin d'Arcachon",
+    chapo:
+      "Nous nous déplaçons sur le Bassin pour les pergolas. Autant le dire tout de suite : nous n'y avons pas encore posé — voici donc ce que nous savons du terrain, pas une liste de références que nous n'avons pas.",
+    cover: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
+    coverW: 1200,
+    coverH: 900,
+    coverAlt:
+      "Pergola aluminium anthracite équipée d'un store screen à zip, guidage latéral visible, réalisée par L'Esprit Bois",
+    contexte: {
+      titre: 'Trois contraintes que le Bassin ajoute à une pergola',
+      paragraphes: [
+        "La première est le vent. Une pergola bioclimatique n'est pas une toiture : c'est une surface qui prend au vent, et ses lames orientables encore davantage. Sur une façade exposée aux entrées maritimes, ce n'est pas la lame qui décide du dimensionnement, c'est l'ancrage — nombre de poteaux, section, type de massif. Nous ne donnerons pas ici de vitesse de référence : le zonage réglementaire se lit à la commune, et l'exposition réelle d'une parcelle abritée par la forêt n'a rien à voir avec celle d'une façade ouverte sur l'eau. C'est un calcul, pas un abaque, et il se fait après le relevé.",
+        "La deuxième est l'air salin. Un profilé aluminium thermolaqué tient très bien dehors, mais en ambiance marine la question n'est plus la teinte, c'est la préparation de surface et l'alliage. Le label Qualicoat couvre le laquage ; Qualimarine, délivré par l'ADAL, ajoute un contrôle en amont sur l'alliage lui-même — teneurs en cuivre et en fer — et vise précisément les ambiances marines. Sur le Bassin, nous demandons la qualification du laqueur et nous faisons écrire la garantie du laquage sur le devis. Le détail est dans notre guide sur le choix des teintes RAL.",
+        "La troisième est le dossier d'urbanisme, et c'est celle qu'on sous-estime. Le Bassin concentre les protections : la Ville d'Hiver d'Arcachon est un site classé depuis 1985, la dune du Pilat et la forêt communale de La Teste-de-Buch le sont également. Dans un périmètre protégé, l'exonération applicable sous 5 m² ne joue plus : la déclaration préalable est due dès le premier mètre carré, et le dossier passe par l'avis de l'Architecte des Bâtiments de France, ce qui porte l'instruction à deux mois. Une pergola commandée en mars pour l'été se prépare en janvier.",
+        "Rien de tout cela n'empêche quoi que ce soit. Mais un devis qui ignore ces trois points est un devis qu'il faudra refaire.",
+      ],
+    },
+    chantiers: ['lacanau'],
+    chantiersTitre: 'Notre chantier littoral le plus proche',
+    chantiersIntro:
+      "Nous n'avons pas encore de pergola posée sur le Bassin. Notre référence côtière est à Lacanau, sur la côte océane : ce n'est pas le Bassin, et c'est une terrasse et non une pergola — mais le sol y pose exactement la même question, et c'est ce que vous devriez demander à tout artisan qui vient chez vous.",
+    guides: [
+      {
+        slug: 'choisir-teinte-ral-aluminium',
+        titre: 'Teinte RAL aluminium : bien la choisir',
+        pourquoi:
+          "Contient le passage sur Qualicoat et Qualimarine : à lire avant de signer un devis en bord de mer.",
+      },
+      {
+        slug: 'pergola-bioclimatique-aluminium-guide',
+        titre: 'Pergola bioclimatique aluminium : le guide',
+        pourquoi:
+          'Lames orientables, évacuation de l’eau et motorisation — les postes qui décident du confort réel.',
+      },
+      {
+        slug: 'protection-solaire-brise-soleil-orientable',
+        titre: 'Brise-soleil orientable ou store extérieur ?',
+        pourquoi:
+          "Le store à guidage par zip tient au vent là où un store banne classique se rentre : distinction utile ici.",
+      },
+    ],
+    acces:
+      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Le relevé et le devis sont gratuits, déplacement compris — nous ne facturons pas la distance, nous en tenons compte dans l'organisation du chantier, en préparant davantage en atelier pour réduire le nombre de journées sur place.",
+    faq: [
+      {
+        q: 'Vous déplacez-vous vraiment jusqu’au Bassin ?',
+        r: "Oui, pour les pergolas. C'est une zone que nous voulons développer, et nous préférons l'annoncer plutôt que de le laisser deviner. Le relevé et le devis sont gratuits, déplacement compris. En revanche nous ne vous dirons pas que nous y avons vingt chantiers : nous n'y avons pas encore posé, et vous le verriez au premier rendez-vous.",
+      },
+      {
+        q: 'Une pergola tient-elle au vent du Bassin ?',
+        r: "Oui, à condition qu'elle soit dimensionnée pour, et c'est l'ancrage qui décide, pas la lame. Le zonage réglementaire du vent se lit à la commune, et l'exposition réelle d'une parcelle abritée par la forêt n'a rien à voir avec celle d'une façade ouverte sur l'eau : nous relevons avant de dimensionner. Méfiez-vous d'un devis qui annonce une tenue au vent sans être venu voir la parcelle.",
+      },
+      {
+        q: 'Faut-il une autorisation pour une pergola à Arcachon ou à La Teste ?',
+        r: "Presque toujours, et plus tôt qu'ailleurs. Le Bassin concentre les sites classés — la Ville d'Hiver d'Arcachon depuis 1985, la dune du Pilat, la forêt communale de La Teste-de-Buch. Dans ces périmètres, l'exonération sous 5 m² ne s'applique pas : la déclaration préalable est due dès le premier mètre carré, avec avis de l'Architecte des Bâtiments de France et deux mois d'instruction. Nous vérifions la situation de votre parcelle au relevé.",
+      },
+      {
+        q: 'L’aluminium résiste-t-il aux embruns ?',
+        r: "Bien, s'il est préparé pour. Le thermolaquage seul ne dit rien de l'alliage : c'est la qualification du laqueur qui compte, Qualicoat pour le laquage et Qualimarine — délivré par l'ADAL — pour les ambiances marines, qui ajoute un contrôle sur les teneurs en cuivre et en fer. Demandez cette qualification et faites écrire la garantie du laquage sur le devis : elle varie beaucoup d'un fournisseur à l'autre.",
       },
     ],
   },

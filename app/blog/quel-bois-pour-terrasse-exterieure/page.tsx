@@ -63,7 +63,11 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure',
     },
-    about: ['terrasse bois', 'essences de bois', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'terrasse bois' },
+      { '@type': 'Thing', name: 'essences de bois' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -478,7 +482,7 @@ export default function ArticleQuelBoisTerrassePage() {
                 dégrader en cinq ans chez l&apos;autre : la pose fait la différence autant que le bois. Une terrasse
                 bien conçue appelle souvent d&apos;autres ouvrages du même chantier (une{' '}
                 <a href="/pergolas" className={lienInterne}>pergola</a> pour l&apos;ombre, l&apos;habillage des{' '}
-                <a href="/amenagement-exterieur" className={lienInterne}>abords d&apos;un bassin</a>) que nous menons
+                <a href="/terrasses-bois" className={lienInterne}>abords d&apos;un bassin</a>) que nous menons
                 avec un seul interlocuteur, de l&apos;étude à la pose.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">

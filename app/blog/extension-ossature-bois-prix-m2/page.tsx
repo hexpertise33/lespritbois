@@ -125,7 +125,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2',
     },
-    about: ['extension ossature bois', 'agrandissement maison', 'construction bois', 'RE2020'],
+    about: [
+      { '@type': 'Thing', name: 'extension ossature bois' },
+      { '@type': 'Thing', name: 'agrandissement maison' },
+      { '@type': 'Thing', name: 'construction bois' },
+      { '@type': 'Thing', name: 'RE2020' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -426,7 +431,7 @@ export default function ArticleExtensionOssatureBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/extension-ossature-bois-prix-m2/interieur-extension-ossature-bois-sejour-lumineux.jpg"
+              src="/images/blog/extension-ossature-bois-prix-m2/interieur-extension-ossature-bois-sejour-lumineux.webp"
               w={1200}
               h={682}
               alt="Intérieur lumineux d'un séjour d'extension à ossature bois avec grande baie vitrée coulissante et finitions bois clair"
@@ -581,7 +586,7 @@ export default function ArticleExtensionOssatureBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/extension-ossature-bois-prix-m2/bardage-bois-douglas-pin-maritime.jpg"
+              src="/images/blog/extension-ossature-bois-prix-m2/bardage-bois-douglas-pin-maritime.webp"
               w={1400}
               h={969}
               alt="Gros plan sur un bardage en bois douglas de Nouvelle-Aquitaine, filière pin maritime et douglas des Landes de Gascogne"

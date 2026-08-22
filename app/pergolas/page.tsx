@@ -243,7 +243,7 @@ const GAMME = [
     titre: 'Pergola bois massif',
     accroche: 'Douglas, mélèze ou red cedar, assemblages traditionnels et patine qui vieillit bien.',
     points: ['Essences choisies selon l’exposition', 'Claire-voie, lames fixes ou toile', 'S’accorde au bâti ancien'],
-    src: '/images/pergola-bois-chevrons-enfilade.jpg',
+    src: '/images/pergola-bois-chevrons-enfilade.webp',
     alt: 'Pergola en bois massif à chevrons apparents vue en enfilade, poteaux réguliers et ombre portée au sol',
     w: 800,
     h: 1200,
@@ -966,7 +966,7 @@ export default function PergolasPage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/pergola-bois-charpente-massive-patine.jpg"
+                    src="/images/pergola-bois-charpente-massive-patine.webp"
                     alt="Charpente de pergola en bois massif aux assemblages contreventés, bois grisaillé par les années"
                   />
                 </div>
@@ -988,7 +988,7 @@ export default function PergolasPage() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/pergola-bois-chevrons-sous-face.jpg"
+                    src="/images/pergola-bois-chevrons-sous-face.webp"
                     alt="Sous-face d'une pergola en bois : chevrons posés sur pannes, vus en contre-plongée sur le ciel"
                   />
                 </div>
@@ -1477,6 +1477,9 @@ export default function PergolasPage() {
             <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-12">
               Pergolas réalisées à Libourne et en Gironde
             </h2>
+            <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
+              Cinq de nos chantiers sont en Entre-deux-Mers, où le coteau et le sous-sol calcaire changent la conception : ils sont détaillés sur notre page <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergolas et carports en Entre-deux-Mers</a>. En ville, la contrainte est autre — voir <a href="/amenagement-exterieur-bordeaux-metropole" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">métropole bordelaise</a>.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {GALERIE.map((p) => (
                 <figure key={p.src} className="group relative overflow-hidden rounded-2xl aspect-[4/3]">

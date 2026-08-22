@@ -96,12 +96,12 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/traiter-bois-exterieur-avant-hiver',
     },
     about: [
-      'entretien du bois',
-      'saturateur',
-      'terrasse bois',
-      'bardage bois',
-      'clôture bois',
-      'carport bois',
+      { '@type': 'Thing', name: 'entretien du bois' },
+      { '@type': 'Thing', name: 'saturateur' },
+      { '@type': 'Thing', name: 'terrasse bois' },
+      { '@type': 'Thing', name: 'bardage bois' },
+      { '@type': 'Thing', name: 'clôture bois' },
+      { '@type': 'Thing', name: 'carport bois' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -452,7 +452,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
             </section>
 
             <Figure
-              src="/images/blog/plage-piscine-bois-essences-pose/lame-terrasse-bois-brossee-jeu-entre-lames.jpg"
+              src="/images/blog/plage-piscine-bois-essences-pose/lame-terrasse-bois-brossee-jeu-entre-lames.webp"
               w={1100}
               h={825}
               alt="Gros plan sur le fil, les nœuds et les fentes de retrait de lames de terrasse en bois exposées à la pluie"

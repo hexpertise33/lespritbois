@@ -123,7 +123,11 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure',
     },
-    about: ['abri de jardin bois', 'abri de jardin sur mesure', 'abri de jardin en kit'],
+    about: [
+      { '@type': 'Thing', name: 'abri de jardin bois' },
+      { '@type': 'Thing', name: 'abri de jardin sur mesure' },
+      { '@type': 'Thing', name: 'abri de jardin en kit' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -382,7 +386,7 @@ export default function ArticleAbriJardinBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-ancien-rangement-jardin.jpg"
+              src="/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-ancien-rangement-jardin.webp"
               w={963}
               h={1100}
               alt="Vieil abri de jardin en bois entouré de bacs et caisses de rangement dans un jardin arboré"
@@ -542,7 +546,7 @@ export default function ArticleAbriJardinBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/abri-jardin-bois-kit-ou-sur-mesure/interieur-abri-jardin-bois-rangement-outils.jpg"
+              src="/images/blog/abri-jardin-bois-kit-ou-sur-mesure/interieur-abri-jardin-bois-rangement-outils.webp"
               w={900}
               h={1200}
               alt="Intérieur d'un abri de jardin en bois avec parois lambrissées et étagère de rangement au-dessus d'un escabeau"

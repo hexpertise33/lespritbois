@@ -125,10 +125,10 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/protection-solaire-brise-soleil-orientable',
     },
     about: [
-      'brise-soleil orientable',
-      'protection solaire extérieure',
-      'store screen extérieur',
-      'aluminium',
+      { '@type': 'Thing', name: 'brise-soleil orientable' },
+      { '@type': 'Thing', name: 'protection solaire extérieure' },
+      { '@type': 'Thing', name: 'store screen extérieur' },
+      { '@type': 'Thing', name: 'aluminium' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -577,7 +577,7 @@ export default function ArticleProtectionSolairePage() {
             </section>
 
             <Figure
-              src="/images/blog/protection-solaire-brise-soleil-orientable/brise-soleil-fixe-lames-aluminium-facade.jpg"
+              src="/images/blog/protection-solaire-brise-soleil-orientable/brise-soleil-fixe-lames-aluminium-facade.webp"
               w={1200}
               h={800}
               alt="Brise-soleil fixe en lames aluminium horizontales devant les vitrages d'une façade contemporaine"

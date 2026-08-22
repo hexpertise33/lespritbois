@@ -95,7 +95,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/aluminium-ecologique-recyclage-bas-carbone',
     },
-    about: ['aluminium recyclé', 'aluminium bas carbone', 'bois ou aluminium', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'aluminium recyclé' },
+      { '@type': 'Thing', name: 'aluminium bas carbone' },
+      { '@type': 'Thing', name: 'bois ou aluminium' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -655,7 +660,7 @@ export default function ArticleAluminiumEcologiquePage() {
             </section>
 
             <Figure
-              src="/images/blog/aluminium-ecologique-recyclage-bas-carbone/chutes-profiles-metal-recyclage-aluminium.jpg"
+              src="/images/blog/aluminium-ecologique-recyclage-bas-carbone/chutes-profiles-metal-recyclage-aluminium.webp"
               w={1200}
               h={800}
               alt="Chutes de profilés métalliques amassées avant refonte, illustration du recyclage de l’aluminium"

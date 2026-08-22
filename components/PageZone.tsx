@@ -210,6 +210,44 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </div>
         </section>
 
+        {/* Guides rattachés au secteur */}
+        <section className="py-20 md:py-28 bg-surface">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
+              À lire avant de se lancer dans le secteur
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
+              Trois guides signés par{' '}
+              <a href="/auteur/david-bertrand" className={lienInterne}>
+                David Bertrand
+              </a>
+              , qui répondent aux questions posées le plus souvent ici.
+            </p>
+            <ul className="grid md:grid-cols-3 gap-8">
+              {zone.guides.map((g) => (
+                <li key={g.slug} className="border-t-2 border-secondary/40 pt-5">
+                  <a
+                    href={`/blog/${g.slug}`}
+                    className="font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors"
+                  >
+                    {g.titre}
+                  </a>
+                  <p className="font-body-md text-body-md text-on-surface-variant mt-3">
+                    {g.pourquoi}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-10">
+              L&apos;ensemble des guides est sur{' '}
+              <a href="/blog" className={lienInterne}>
+                notre blog
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="py-20 md:py-28 bg-surface-container">
           <div className="max-w-container-max mx-auto px-6 md:px-16">

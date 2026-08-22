@@ -93,7 +93,13 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete',
     },
-    about: ['terrasse bois', 'entretien du bois', 'saturateur', 'ombrage', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'terrasse bois' },
+      { '@type': 'Thing', name: 'entretien du bois' },
+      { '@type': 'Thing', name: 'saturateur' },
+      { '@type': 'Thing', name: 'ombrage' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -657,7 +663,7 @@ export default function ArticleTerrasseBoisCaniculePage() {
                 Ventilation sous les lames, jeu correct entre elles, pose sur plots qui laisse l&apos;air circuler,
                 orientation pensée pour l&apos;ombre de fin de journée : ce qui se joue avant la première vis conditionne
                 les quinze années suivantes. C&apos;est toute notre approche de l&apos;{' '}
-                <a href="/amenagement-exterieur" className={lienInterne}>
+                <a href="/terrasses-bois" className={lienInterne}>
                   aménagement extérieur
                 </a>
                 , et vous en verrez le résultat dans{' '}

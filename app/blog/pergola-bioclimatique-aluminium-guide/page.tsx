@@ -125,7 +125,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide',
     },
-    about: ['pergola bioclimatique', 'aluminium', 'lames orientables', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'pergola bioclimatique' },
+      { '@type': 'Thing', name: 'aluminium' },
+      { '@type': 'Thing', name: 'lames orientables' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

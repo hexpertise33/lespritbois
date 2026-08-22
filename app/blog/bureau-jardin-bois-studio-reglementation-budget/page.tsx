@@ -94,7 +94,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/bureau-jardin-bois-studio-reglementation-budget',
     },
-    about: ['bureau de jardin bois', 'studio de jardin', "taxe d'aménagement", 'construction bois'],
+    about: [
+      { '@type': 'Thing', name: 'bureau de jardin bois' },
+      { '@type': 'Thing', name: 'studio de jardin' },
+      { '@type': 'Thing', name: "taxe d'aménagement" },
+      { '@type': 'Thing', name: 'construction bois' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -426,7 +431,7 @@ export default function ArticleBureauJardinBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/bureau-jardin-bois-studio-reglementation-budget/bureau-jardin-poste-travail-baie-vitree.jpg"
+              src="/images/blog/bureau-jardin-bois-studio-reglementation-budget/bureau-jardin-poste-travail-baie-vitree.webp"
               w={1200}
               h={800}
               alt="Poste de travail avec ordinateur portable devant une baie vitrée ouverte sur une terrasse en bois et le jardin"

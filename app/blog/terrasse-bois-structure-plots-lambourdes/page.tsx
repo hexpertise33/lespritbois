@@ -82,7 +82,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/terrasse-bois-structure-plots-lambourdes',
     },
-    about: ['structure terrasse bois', 'lambourdes', 'plots réglables', 'ventilation terrasse'],
+    about: [
+      { '@type': 'Thing', name: 'structure terrasse bois' },
+      { '@type': 'Thing', name: 'lambourdes' },
+      { '@type': 'Thing', name: 'plots réglables' },
+      { '@type': 'Thing', name: 'ventilation terrasse' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -441,7 +446,7 @@ export default function ArticleStructureTerrasseBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/terrasse-bois-structure-plots-lambourdes/lambourdes-terrasse-bois-entraxe-pose-lames.jpg"
+              src="/images/blog/terrasse-bois-structure-plots-lambourdes/lambourdes-terrasse-bois-entraxe-pose-lames.webp"
               alt="Lambourdes bois d'une terrasse espacées à entraxe régulier, premières lames vissées par-dessus"
               caption="À gauche la trame de lambourdes encore nue, à droite les lames déjà vissées : une fois cette limite franchie, plus rien ne se reprend en sous-face."
             />
@@ -531,7 +536,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                 jardin : si l&apos;eau qui traverse le platelage se retrouve piégée dans une cuvette argileuse, on a
                 simplement déplacé le problème de dix centimètres. Ce travail de nivellement et de drainage fait partie
                 intégrante de nos chantiers d&apos;
-                <a href="/amenagement-exterieur" className={lienInterne}>
+                <a href="/terrasses-bois" className={lienInterne}>
                   aménagement extérieur
                 </a>
                 .

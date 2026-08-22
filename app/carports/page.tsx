@@ -1291,6 +1291,9 @@ export default function CarportsPage() {
             <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-12">
               Carports réalisés à Libourne et en Gironde
             </h2>
+            <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
+              Le carport pour trois voitures sur terrain en pente de Capian, et les autres chantiers du secteur, sont détaillés sur notre page <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergolas et carports en Entre-deux-Mers</a>.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {GALERIE.map((p) => (
                 <figure key={p.src} className="group relative overflow-hidden rounded-2xl aspect-[4/3]">

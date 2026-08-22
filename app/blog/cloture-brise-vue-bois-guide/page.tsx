@@ -123,7 +123,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide',
     },
-    about: ['clôture en bois', 'brise-vue bois', 'aménagement extérieur', 'réglementation PLU'],
+    about: [
+      { '@type': 'Thing', name: 'clôture en bois' },
+      { '@type': 'Thing', name: 'brise-vue bois' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+      { '@type': 'Thing', name: 'réglementation PLU' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

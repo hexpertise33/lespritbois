@@ -135,6 +135,24 @@ export default function BlogPage() {
                 ))}
               </div>
             )}
+            <p className="font-body-md text-body-md text-on-surface-variant mt-16 max-w-3xl">
+              Ces {articles.length} guides sont signés par{' '}
+              <a
+                href="/auteur/david-bertrand"
+                className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+              >
+                David Bertrand
+              </a>
+              , qui dirige l&apos;atelier. Pour retrouver une page précise — gamme, réalisation,
+              secteur d&apos;intervention —, le{' '}
+              <a
+                href="/plan-du-site"
+                className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+              >
+                plan du site
+              </a>{' '}
+              les rassemble toutes.
+            </p>
           </div>
         </section>
       </main>

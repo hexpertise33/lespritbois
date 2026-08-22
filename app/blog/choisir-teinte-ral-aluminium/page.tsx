@@ -126,11 +126,11 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/choisir-teinte-ral-aluminium',
     },
     about: [
-      'teinte RAL aluminium',
-      'thermolaquage',
-      'finition aluminium',
-      'pergola aluminium',
-      'carport aluminium',
+      { '@type': 'Thing', name: 'teinte RAL aluminium' },
+      { '@type': 'Thing', name: 'thermolaquage' },
+      { '@type': 'Thing', name: 'finition aluminium' },
+      { '@type': 'Thing', name: 'pergola aluminium' },
+      { '@type': 'Thing', name: 'carport aluminium' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -420,7 +420,7 @@ export default function ArticleTeinteRalAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/blog/choisir-teinte-ral-aluminium/echantillons-profiles-aluminium-thermolaque-teinte-ral.jpg"
+              src="/images/blog/choisir-teinte-ral-aluminium/echantillons-profiles-aluminium-thermolaque-teinte-ral.webp"
               w={1200}
               h={800}
               alt="Échantillons de profilés en aluminium thermolaqué comparés dehors avant d'arrêter une teinte RAL"
@@ -546,7 +546,7 @@ export default function ArticleTeinteRalAluminiumPage() {
 
             <DuoFigure
               a={{
-                src: '/images/blog/choisir-teinte-ral-aluminium/profile-aluminium-thermolaque-anthracite-face-laquee.jpg',
+                src: '/images/blog/choisir-teinte-ral-aluminium/profile-aluminium-thermolaque-anthracite-face-laquee.webp',
                 alt: "Profilé en aluminium thermolaqué gris anthracite tenu en main, face laquée et coupe du profilé visibles",
                 caption:
                   'Une face laquée lisse capte un reflet doux et densifie la teinte : très beau le jour de la pose, impitoyable avec les traces de doigts.',

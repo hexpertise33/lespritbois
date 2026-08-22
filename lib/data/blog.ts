@@ -85,7 +85,7 @@ export const articles: Article[] = [
     date: '2026-08-14',
     categorie: 'Guide · Abri à bûches',
     image:
-      '/images/blog/abri-buches-bois-stockage-sechage/abri-buches-bois-buches-empilees-sous-toit.jpg',
+      '/images/blog/abri-buches-bois-stockage-sechage/abri-buches-bois-buches-empilees-sous-toit.webp',
     imageLargeur: 1200,
     imageHauteur: 796,
   },
@@ -98,7 +98,7 @@ export const articles: Article[] = [
     date: '2026-08-13',
     categorie: 'Guide · Clôture aluminium',
     image:
-      '/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-occultante-limite-propriete.jpg',
+      '/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-occultante-limite-propriete.webp',
     imageLargeur: 1200,
     imageHauteur: 901,
   },
@@ -197,7 +197,7 @@ export const articles: Article[] = [
     date: '2026-08-04',
     categorie: 'Guide · Aluminium & bois',
     image:
-      '/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-aluminium-verre-terrasse-surelevee.jpg',
+      '/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-aluminium-verre-terrasse-surelevee.webp',
     imageLargeur: 1200,
     imageHauteur: 646,
   },
@@ -222,7 +222,7 @@ export const articles: Article[] = [
     date: '2026-08-01',
     categorie: 'Guide · Vérandas aluminium',
     image:
-      '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.jpg',
+      '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.webp',
     imageLargeur: 1200,
     imageHauteur: 800,
   },
@@ -271,7 +271,7 @@ export const articles: Article[] = [
     date: '2026-07-29',
     categorie: 'Guide · Filière bois local',
     image:
-      '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg',
+      '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.webp',
     imageLargeur: 1200,
     imageHauteur: 800,
   },
@@ -283,7 +283,7 @@ export const articles: Article[] = [
       "L'essence décide de l'aspect et du prix, mais c'est la pose qui décide de la durée de vie : une lame d'air ventilée d'au moins 20 mm, entrée basse et sortie haute, comme le prévoit le NF DTU 41.2. Comparatif douglas, mélèze, red cedar et pin traité, classe d'emploi 3, claire-voie ou recouvrement, déclaration préalable et prix au m² posé, par un artisan à Libourne (Gironde).",
     date: '2026-07-28',
     categorie: 'Guide · Bardage bois',
-    image: '/images/source-adefrance/IMG-20250303-WA0044-1.jpg',
+    image: '/images/source-adefrance/IMG-20250303-WA0044-1.webp',
     imageLargeur: 1600,
     imageHauteur: 739,
   },
@@ -295,7 +295,7 @@ export const articles: Article[] = [
       "Moins de 5 m² sans formalité, déclaration préalable de 5 à 20 m² — et surtout, toute détention de volailles se déclare en mairie, même une seule poule. Dimensionnement au bien-être des poules, essences durables et bonne implantation : le guide du poulailler bois, par un artisan à Libourne (Gironde).",
     date: '2026-07-26',
     categorie: 'Guide · Poulailler',
-    image: '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg',
+    image: '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.webp',
     imageLargeur: 1200,
     imageHauteur: 800,
   },

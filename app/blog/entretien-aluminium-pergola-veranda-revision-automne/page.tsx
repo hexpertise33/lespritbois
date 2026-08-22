@@ -95,7 +95,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/entretien-aluminium-pergola-veranda-revision-automne',
     },
-    about: ['entretien aluminium', 'pergola aluminium', 'véranda aluminium', 'thermolaquage'],
+    about: [
+      { '@type': 'Thing', name: 'entretien aluminium' },
+      { '@type': 'Thing', name: 'pergola aluminium' },
+      { '@type': 'Thing', name: 'véranda aluminium' },
+      { '@type': 'Thing', name: 'thermolaquage' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

@@ -126,10 +126,10 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/veranda-ou-extension-ossature-bois',
     },
     about: [
-      'véranda aluminium',
-      'extension ossature bois',
-      'agrandissement de maison',
-      'urbanisme',
+      { '@type': 'Thing', name: 'véranda aluminium' },
+      { '@type': 'Thing', name: 'extension ossature bois' },
+      { '@type': 'Thing', name: 'agrandissement de maison' },
+      { '@type': 'Thing', name: 'urbanisme' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -501,7 +501,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 h: 1200,
               }}
               b={{
-                src: '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.jpg',
+                src: '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.webp',
                 alt: "Véranda aluminium vitrée du sol au plafond, profilés anthracite ouverts sur une terrasse et un jardin",
                 caption:
                   "Véranda aluminium : des profilés fins, un maximum de verre — et presque aucun mur contre lequel meubler.",

@@ -6,7 +6,7 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
 const COVER =
-  '/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-aluminium-verre-terrasse-surelevee.jpg';
+  '/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-aluminium-verre-terrasse-surelevee.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Garde-corps terrasse : aluminium ou bois ? | L'Esprit Bois",
@@ -97,10 +97,10 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/garde-corps-terrasse-aluminium-ou-bois',
     },
     about: [
-      'garde-corps de terrasse',
-      'garde-corps aluminium',
-      'garde-corps bois',
-      'sécurité terrasse surélevée',
+      { '@type': 'Thing', name: 'garde-corps de terrasse' },
+      { '@type': 'Thing', name: 'garde-corps aluminium' },
+      { '@type': 'Thing', name: 'garde-corps bois' },
+      { '@type': 'Thing', name: 'sécurité terrasse surélevée' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -439,7 +439,7 @@ export default function ArticleGardeCorpsTerrassePage() {
             </section>
 
             <Figure
-              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-barreaudage-vertical-rive-terrasse.jpg"
+              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-barreaudage-vertical-rive-terrasse.webp"
               w={1200}
               h={646}
               alt="Garde-corps de terrasse à barreaudage vertical serré en rive de plancher bois, dans l'esprit de la norme NF P01-012"
@@ -499,7 +499,7 @@ export default function ArticleGardeCorpsTerrassePage() {
             </section>
 
             <Figure
-              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/profiles-aluminium-thermolaques-garde-corps.jpg"
+              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/profiles-aluminium-thermolaques-garde-corps.webp"
               w={1200}
               h={646}
               alt="Profilés thermolaqués teinte anthracite d'un garde-corps aluminium : main courante, barreaudage et lisse basse"
@@ -553,7 +553,7 @@ export default function ArticleGardeCorpsTerrassePage() {
             </section>
 
             <Figure
-              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-bois-terrasse-bois-surelevee.jpg"
+              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-bois-terrasse-bois-surelevee.webp"
               w={1200}
               h={646}
               alt="Garde-corps bois à montants et barreaudage vertical bordant une terrasse en bois surélevée"
@@ -604,7 +604,7 @@ export default function ArticleGardeCorpsTerrassePage() {
             </section>
 
             <Figure
-              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-bois-grise-vieillissement.jpg"
+              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/garde-corps-bois-grise-vieillissement.webp"
               w={1200}
               h={646}
               alt="Main courante et lisse d'un garde-corps bois grisées par les intempéries après plusieurs saisons sans finition"
@@ -717,7 +717,7 @@ export default function ArticleGardeCorpsTerrassePage() {
             </section>
 
             <Figure
-              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/fixation-applique-garde-corps-inox.jpg"
+              src="/images/blog/garde-corps-terrasse-aluminium-ou-bois/fixation-applique-garde-corps-inox.webp"
               w={1200}
               h={646}
               alt="Fixation en applique d'une main courante inox sur son support : détail du point d'ancrage d'un garde-corps"

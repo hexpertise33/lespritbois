@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-occultante-limite-propriete.jpg';
+const COVER = '/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-occultante-limite-propriete.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Clôture aluminium : lames occultantes et pose | L'Esprit Bois",
@@ -95,7 +95,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/cloture-aluminium-lames-occultantes-guide',
     },
-    about: ['clôture aluminium', 'lames occultantes', 'brise-vue aluminium', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'clôture aluminium' },
+      { '@type': 'Thing', name: 'lames occultantes' },
+      { '@type': 'Thing', name: 'brise-vue aluminium' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -427,7 +432,7 @@ export default function ArticleClotureAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/blog/cloture-aluminium-lames-occultantes-guide/lames-metalliques-ajourees-contre-jour.jpg"
+              src="/images/blog/cloture-aluminium-lames-occultantes-guide/lames-metalliques-ajourees-contre-jour.webp"
               w={1200}
               h={1800}
               alt="Lames métalliques espacées vues à contre-jour, la lumière passant entre les profilés"
@@ -534,7 +539,7 @@ export default function ArticleClotureAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-barreaudage-poteaux.jpg"
+              src="/images/blog/cloture-aluminium-lames-occultantes-guide/cloture-metallique-barreaudage-poteaux.webp"
               w={1200}
               h={800}
               alt="Clôture métallique en barreaudage vue en enfilade, poteaux régulièrement espacés"

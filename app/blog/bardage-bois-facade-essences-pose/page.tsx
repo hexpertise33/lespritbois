@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/source-adefrance/IMG-20250303-WA0044-1.jpg';
+const COVER = '/images/source-adefrance/IMG-20250303-WA0044-1.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Bardage bois : essences, pose et prix 2026",
@@ -80,7 +80,11 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose',
     },
-    about: ['bardage bois', 'façade bois', 'construction bois'],
+    about: [
+      { '@type': 'Thing', name: 'bardage bois' },
+      { '@type': 'Thing', name: 'façade bois' },
+      { '@type': 'Thing', name: 'construction bois' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -427,7 +431,7 @@ export default function ArticleBardageBoisFacadePage() {
             </section>
 
             <Figure
-              src="/images/blog/bardage-bois-facade-essences-pose/lames-bardage-bois-essences-teintes.jpg"
+              src="/images/blog/bardage-bois-facade-essences-pose/lames-bardage-bois-essences-teintes.webp"
               alt="Lames de bois sciées et empilées avant façonnage en bardage : la teinte et le veinage changent d'une essence à l'autre"
               caption="Une teinte de bardage se juge sur lame sèche et à la lumière du jour, jamais sur un nuancier : demandez un échantillon de l'essence retenue avant de commander la façade entière."
             />
@@ -515,7 +519,7 @@ export default function ArticleBardageBoisFacadePage() {
             </section>
 
             <Figure
-              src="/images/blog/bardage-bois-facade-essences-pose/bardage-bois-claire-voie-recouvrement-facade.jpg"
+              src="/images/blog/bardage-bois-facade-essences-pose/bardage-bois-claire-voie-recouvrement-facade.webp"
               alt="Façade bois associant un bardage vertical à lames jointives et des panneaux horizontaux en claire-voie"
               caption="Vertical et horizontal peuvent cohabiter sur une même façade : chaque changement de sens impose sa propre ossature de tasseaux, donc un calepinage arrêté avant la commande des lames."
             />
@@ -730,7 +734,7 @@ export default function ArticleBardageBoisFacadePage() {
             </section>
 
             <Figure
-              src="/images/source-adefrance/IMG-20240712-WA0032.jpg"
+              src="/images/source-adefrance/IMG-20240712-WA0032.webp"
               alt="Bardage bois vertical et encadrement de baie vitrée sur une façade terminée, réalisation L'Esprit Bois en Gironde"
               caption="Encadrements de baies, angles et pied de façade concentrent une large part de la main-d'œuvre : c'est souvent là que se lit l'écart entre deux devis affichés au même prix au m²."
             />

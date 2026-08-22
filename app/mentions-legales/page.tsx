@@ -9,7 +9,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Mentions légales du site lesprit-bois.fr : éditeur, hébergeur, propriété intellectuelle, assurances et garantie décennale de L'Esprit Bois.",
   path: '/mentions-legales',
-  ogImage: '/images/pergola-bois-charpente-massive-patine.jpg',
+  ogImage: '/images/pergola-bois-charpente-massive-patine.webp',
   ogTitle: 'Mentions légales',
   ville: CONTACT.ville,
 });

@@ -34,6 +34,7 @@ Contact : 05 57 40 65 80 — lespritbois33@gmail.com — 1 Aux Pradasses, 33500 
 - [Pergolas](${base}/pergolas) : bioclimatique à lames orientables, aluminium à toiture fixe (polycarbonate, panneau isolant, vitrage), bois massif. Adossées ou autoportées, avec stores ZIP, éclairage intégré et claustras en option.
 - [Carports](${base}/carports) : bois (toiture plate, bac acier ou tuile), aluminium thermolaqué, solaire photovoltaïque. Adossés ou autoportés.
 - [Aménagement extérieur](${base}/amenagement-exterieur) : terrasses bois sur plots ou lambourdes, pool houses, abris de jardin, cuisines d'été, claustras et bardages.
+- [Terrasses bois](${base}/terrasses-bois) : terrasse sur plots réglables ou lambourdes, plage de piscine et abords de bassin, terrasse sur sol instable. Page dédiée, distincte de l'aménagement extérieur.
 - [Constructions bois](${base}/constructions-bois) : maison à ossature bois, maison en A, extension, surélévation, abri et dépendance. Livraison hors d'eau hors d'air, le second œuvre revenant aux artisans du client.
 - [Réalisations](${base}/realisations) : études de cas de chantiers réellement réalisés en Gironde.
 - Zones d'intervention détaillées, chacune adossée à des chantiers réellement livrés dans le secteur :

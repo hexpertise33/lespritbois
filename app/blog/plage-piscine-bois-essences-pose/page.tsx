@@ -95,7 +95,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/plage-piscine-bois-essences-pose',
     },
-    about: ['plage de piscine en bois', 'terrasse de piscine', 'essences de bois', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'plage de piscine en bois' },
+      { '@type': 'Thing', name: 'terrasse de piscine' },
+      { '@type': 'Thing', name: 'essences de bois' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -502,7 +507,7 @@ export default function ArticlePlagePiscineBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/plage-piscine-bois-essences-pose/lame-terrasse-bois-brossee-jeu-entre-lames.jpg"
+              src="/images/blog/plage-piscine-bois-essences-pose/lame-terrasse-bois-brossee-jeu-entre-lames.webp"
               w={1100}
               h={825}
               alt="Gros plan de lames de terrasse en bois à surface brossée, jeu régulier entre lames et vis noyées"
@@ -550,7 +555,7 @@ export default function ArticlePlagePiscineBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/plage-piscine-bois-essences-pose/margelle-piscine-raccord-terrasse-skimmer.jpg"
+              src="/images/blog/plage-piscine-bois-essences-pose/margelle-piscine-raccord-terrasse-skimmer.webp"
               w={1200}
               h={802}
               alt="Raccord d'une plage de piscine à la margelle en pierre claire, skimmer intégré et lames arrêtées à jeu constant"
@@ -712,7 +717,7 @@ export default function ArticlePlagePiscineBoisPage() {
                   nos réalisations en Gironde
                 </a>
                 , et découvrir notre approche des terrasses et plages de bassin sur mesure sur notre page{' '}
-                <a href="/amenagement-exterieur" className={lienInterne}>
+                <a href="/terrasses-bois" className={lienInterne}>
                   aménagement extérieur
                 </a>{' '}
                 — de l&apos;étude des niveaux au dernier ajustage sur margelle.

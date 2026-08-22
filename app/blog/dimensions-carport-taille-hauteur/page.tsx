@@ -95,7 +95,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/dimensions-carport-taille-hauteur',
     },
-    about: ['dimensions carport', 'hauteur carport', 'carport sur mesure', 'abri voiture'],
+    about: [
+      { '@type': 'Thing', name: 'dimensions carport' },
+      { '@type': 'Thing', name: 'hauteur carport' },
+      { '@type': 'Thing', name: 'carport sur mesure' },
+      { '@type': 'Thing', name: 'abri voiture' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/blog/abri-buches-bois-stockage-sechage/abri-buches-bois-buches-empilees-sous-toit.jpg';
+const COVER = '/images/blog/abri-buches-bois-stockage-sechage/abri-buches-bois-buches-empilees-sous-toit.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Abri à bûches bois : stocker et sécher son bois en Gironde",
@@ -93,7 +93,11 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/abri-buches-bois-stockage-sechage',
     },
-    about: ['abri à bûches', 'stockage bois de chauffage', 'séchage du bois de chauffage'],
+    about: [
+      { '@type': 'Thing', name: 'abri à bûches' },
+      { '@type': 'Thing', name: 'stockage bois de chauffage' },
+      { '@type': 'Thing', name: 'séchage du bois de chauffage' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -411,7 +415,7 @@ export default function ArticleAbriBuchesPage() {
             </section>
 
             <Figure
-              src="/images/blog/abri-buches-bois-stockage-sechage/bois-de-chauffage-empile-extremites-buches-ventilation.jpg"
+              src="/images/blog/abri-buches-bois-stockage-sechage/bois-de-chauffage-empile-extremites-buches-ventilation.webp"
               w={1200}
               h={561}
               alt="Stockage de bois de chauffage ventilé : bûches empilées, extrémités des rondins tournées vers l'extérieur"
@@ -469,7 +473,7 @@ export default function ArticleAbriBuchesPage() {
             </section>
 
             <Figure
-              src="/images/blog/abri-buches-bois-stockage-sechage/stockage-bois-chauffage-claire-voie-lames-ajourees.jpg"
+              src="/images/blog/abri-buches-bois-stockage-sechage/stockage-bois-chauffage-claire-voie-lames-ajourees.webp"
               w={1200}
               h={827}
               alt="Rangement de bois de chauffage à claire-voie : jours réguliers entre les lames, bûches visibles derrière"

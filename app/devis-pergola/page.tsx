@@ -45,7 +45,7 @@ const GAMME_COURTE = [
     icone: 'cabin',
     titre: 'Pergola bois massif',
     texte: "Douglas, mélèze ou red cedar : charpente traditionnelle qui s'accorde au bâti ancien.",
-    src: '/images/pergola-bois-chevrons-enfilade.jpg',
+    src: '/images/pergola-bois-chevrons-enfilade.webp',
     alt: 'Pergola en bois massif à chevrons apparents vue en enfilade au-dessus d’une allée',
     w: 800,
     h: 1200,

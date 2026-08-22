@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg';
+const COVER = '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Poulailler en bois : règles et implantation",
@@ -80,7 +80,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation',
     },
-    about: ['poulailler bois', 'réglementation poulailler', 'bien-être des poules', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'poulailler bois' },
+      { '@type': 'Thing', name: 'réglementation poulailler' },
+      { '@type': 'Thing', name: 'bien-être des poules' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -334,7 +339,7 @@ export default function ArticlePoulaillerBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/poulailler-bois-reglementation-implantation/poules-jardin-petit-poulailler-bois.jpg"
+              src="/images/blog/poulailler-bois-reglementation-implantation/poules-jardin-petit-poulailler-bois.webp"
               alt="Poules dans un jardin engazonné devant un petit poulailler en bois de moins de 5 m²"
               caption="En dessous de 5 m² d'emprise au sol, le poulailler s'installe sans formalité d'urbanisme — la déclaration des volailles, elle, reste obligatoire."
             />
@@ -400,7 +405,7 @@ export default function ArticlePoulaillerBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/poulailler-bois-reglementation-implantation/interieur-poulailler-pondoir-oeufs.jpg"
+              src="/images/blog/poulailler-bois-reglementation-implantation/interieur-poulailler-pondoir-oeufs.webp"
               alt="Poule couvant dans un pondoir en bois garni de paille à l'intérieur d'un poulailler, avec des œufs"
               caption="Perchoirs à la bonne hauteur, pondoirs à la pénombre et ventilation haute : le bien-être des poules se joue à l'intérieur de l'abri."
             />

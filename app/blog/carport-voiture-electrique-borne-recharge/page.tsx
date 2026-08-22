@@ -96,10 +96,10 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/carport-voiture-electrique-borne-recharge',
     },
     about: [
-      'borne de recharge sous carport',
-      'carport voiture électrique',
-      'carport photovoltaïque',
-      'aménagement extérieur',
+      { '@type': 'Thing', name: 'borne de recharge sous carport' },
+      { '@type': 'Thing', name: 'carport voiture électrique' },
+      { '@type': 'Thing', name: 'carport photovoltaïque' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -476,7 +476,7 @@ export default function ArticleCarportVoitureElectriquePage() {
             </section>
 
             <Figure
-              src="/images/blog/carport-voiture-electrique-borne-recharge/borne-recharge-murale-cable-branche-vehicule.jpg"
+              src="/images/blog/carport-voiture-electrique-borne-recharge/borne-recharge-murale-cable-branche-vehicule.webp"
               w={1200}
               h={801}
               alt="Borne de recharge murale pour voiture électrique, câble branché sur le boîtier au droit du stationnement"

@@ -80,7 +80,14 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026',
     },
-    about: ["urbanisme", "déclaration préalable", "permis de construire", "abri de jardin", "carport", "pergola"],
+    about: [
+      { '@type': 'Thing', name: 'urbanisme' },
+      { '@type': 'Thing', name: 'déclaration préalable' },
+      { '@type': 'Thing', name: 'permis de construire' },
+      { '@type': 'Thing', name: 'abri de jardin' },
+      { '@type': 'Thing', name: 'carport' },
+      { '@type': 'Thing', name: 'pergola' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

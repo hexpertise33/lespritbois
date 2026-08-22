@@ -6,7 +6,7 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
 const COVER =
-  '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.jpg';
+  '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.webp';
 
 export const metadata: Metadata = buildMetadata({
   title:
@@ -127,7 +127,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/veranda-aluminium-isolation-urbanisme-budget',
     },
-    about: ['véranda aluminium', 'extension de maison', 'isolation', 'urbanisme'],
+    about: [
+      { '@type': 'Thing', name: 'véranda aluminium' },
+      { '@type': 'Thing', name: 'extension de maison' },
+      { '@type': 'Thing', name: 'isolation' },
+      { '@type': 'Thing', name: 'urbanisme' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -423,7 +428,7 @@ export default function ArticleVerandaAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/blog/veranda-aluminium-isolation-urbanisme-budget/interieur-veranda-vitree-extension-sejour.jpg"
+              src="/images/blog/veranda-aluminium-isolation-urbanisme-budget/interieur-veranda-vitree-extension-sejour.webp"
               w={1200}
               h={801}
               alt="Intérieur d'une véranda vitrée aménagée en extension de séjour, profilés fins et grandes baies coulissantes"
@@ -532,7 +537,7 @@ export default function ArticleVerandaAluminiumPage() {
             </section>
 
             <Figure
-              src="/images/blog/veranda-aluminium-isolation-urbanisme-budget/profile-aluminium-rupture-pont-thermique-double-vitrage.jpg"
+              src="/images/blog/veranda-aluminium-isolation-urbanisme-budget/profile-aluminium-rupture-pont-thermique-double-vitrage.webp"
               w={1200}
               h={800}
               alt="Coupe d'un profilé aluminium à rupture de pont thermique avec échantillon de double vitrage, détail technique de véranda"

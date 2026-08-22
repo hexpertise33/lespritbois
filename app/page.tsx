@@ -5,6 +5,7 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
 import { AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { ZONES } from '@/lib/data/zones';
 
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
@@ -248,7 +249,7 @@ const GAMMES = [
       {
         nom: 'Bois massif',
         href: '/pergolas#pergola-bois',
-        src: '/images/pergola-bois-chevrons-enfilade.jpg',
+        src: '/images/pergola-bois-chevrons-enfilade.webp',
         alt: 'Pergola en bois massif à chevrons apparents vue en enfilade au-dessus d’une allée',
         w: 800,
         h: 1200,
@@ -293,7 +294,7 @@ const GAMMES = [
     produits: [
       {
         nom: 'Terrasse bois',
-        href: '/amenagement-exterieur',
+        href: '/terrasses-bois',
         src: '/images/terrasse-bois-plots-gironde-1.webp',
         alt: 'Terrasse en bois sur plots posée le long d’une maison en Gironde',
         w: 950,
@@ -701,6 +702,47 @@ export default function HomePage() {
                     {p.legende}
                   </figcaption>
                 </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+        {/* Zones d'intervention — chaque secteur a sa page, adossée à ses chantiers */}
+        <section className="py-20 md:py-24 bg-surface-container-low" id="zones">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-2xl mb-12">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                Où nous intervenons
+              </span>
+              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-4">
+                Trois secteurs, trois façons de travailler
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Un coteau de l&apos;Entre-deux-Mers, une grange en pierre à reprendre, une cour
+                fermée en ville : le terrain change l&apos;ouvrage bien plus que le catalogue. Chaque
+                secteur a sa page, avec les chantiers que nous y avons livrés.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {ZONES.map((z) => (
+                <a
+                  key={z.slug}
+                  href={`/${z.slug}`}
+                  className="group block bg-surface rounded-2xl p-8 border border-outline-variant hover:border-secondary transition-colors"
+                >
+                  <h3 className="font-title-lg text-title-lg text-primary mb-3 group-hover:text-secondary-dark transition-colors">
+                    {z.h1}
+                  </h3>
+                  <p className="font-body-md text-body-md text-on-surface-variant mb-5">{z.chapo}</p>
+                  <p className="font-label-md text-label-md text-secondary-dark inline-flex items-center gap-2">
+                    {z.communes.slice(0, 4).join(', ')}…
+                    <span
+                      className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                      aria-hidden="true"
+                    >
+                      arrow_forward
+                    </span>
+                  </p>
+                </a>
               ))}
             </div>
           </div>

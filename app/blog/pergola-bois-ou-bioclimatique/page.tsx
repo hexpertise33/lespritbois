@@ -123,7 +123,11 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique',
     },
-    about: ['pergola bois', 'pergola bioclimatique', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'pergola bois' },
+      { '@type': 'Thing', name: 'pergola bioclimatique' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

@@ -93,7 +93,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/termites-gironde-ouvrage-bois-prevention',
     },
-    about: ['termites', 'bois extérieur', 'terrasse bois', 'Gironde'],
+    about: [
+      { '@type': 'Thing', name: 'termites' },
+      { '@type': 'Thing', name: 'bois extérieur' },
+      { '@type': 'Thing', name: 'terrasse bois' },
+      { '@type': 'Thing', name: 'Gironde' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -531,7 +536,7 @@ export default function ArticleTermitesGirondePage() {
             </section>
 
             <Figure
-              src="/images/blog/termites-gironde-ouvrage-bois-prevention/bois-de-chauffage-empile-sol-contre-mur.jpg"
+              src="/images/blog/termites-gironde-ouvrage-bois-prevention/bois-de-chauffage-empile-sol-contre-mur.webp"
               w={1200}
               h={901}
               alt="Bûches de bois de chauffage empilées à même le sol, plaquées contre le mur d'un appentis de jardin"

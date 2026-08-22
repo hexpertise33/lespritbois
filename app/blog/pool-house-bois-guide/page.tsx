@@ -93,7 +93,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/pool-house-bois-guide',
     },
-    about: ['pool house bois', 'piscine', 'aménagement extérieur', 'urbanisme'],
+    about: [
+      { '@type': 'Thing', name: 'pool house bois' },
+      { '@type': 'Thing', name: 'piscine' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+      { '@type': 'Thing', name: 'urbanisme' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

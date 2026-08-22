@@ -281,6 +281,9 @@ export default function AmenagementExterieurPage() {
                   Notre gamme
                 </span>
                 <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous aménageons</h2>
+            <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
+              Selon le secteur, le terrain ne pose pas les mêmes questions : voir nos pages <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">Entre-deux-Mers</a> et <a href="/amenagement-exterieur-bordeaux-metropole" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">métropole bordelaise</a>.
+            </p>
                 <p className="font-body-md text-body-md text-on-surface-variant">
                   Quatre ouvrages, pensés ensemble plutôt qu&apos;ajoutés les uns aux autres.
                 </p>
@@ -340,7 +343,14 @@ export default function AmenagementExterieurPage() {
                 <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                   Une terrasse réussie efface la marche entre le séjour et le jardin. Elle se pense avant tout par
                   dessous : structure ventilée, écoulement de l'eau, sens des lames, fixations qui ne remontent pas
-                  avec le temps.
+                  avec le temps. Le sujet a sa page :{' '}
+                  <a
+                    href="/terrasses-bois"
+                    className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                  >
+                    terrasses bois à Libourne et en Gironde
+                  </a>
+                  , avec deux chantiers détaillés et le choix des essences.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">

@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
-const COVER = '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg';
+const COVER = '/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Bois local en Gironde : pin, douglas, châtaignier",
@@ -81,7 +81,13 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde',
     },
-    about: ['bois local', 'pin maritime', 'douglas', 'châtaignier', 'filière bois Nouvelle-Aquitaine'],
+    about: [
+      { '@type': 'Thing', name: 'bois local' },
+      { '@type': 'Thing', name: 'pin maritime' },
+      { '@type': 'Thing', name: 'douglas' },
+      { '@type': 'Thing', name: 'châtaignier' },
+      { '@type': 'Thing', name: 'filière bois Nouvelle-Aquitaine' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -556,7 +562,7 @@ export default function ArticleBoisLocalGirondePage() {
             </section>
 
             <Figure
-              src="/images/blog/bois-local-pin-maritime-douglas-gironde/cloture-chataignier-feuillu-patine-naturelle.jpg"
+              src="/images/blog/bois-local-pin-maritime-douglas-gironde/cloture-chataignier-feuillu-patine-naturelle.webp"
               alt="Clôture rurale en bois de châtaignier fendu, patine grise argentée d&apos;un feuillu naturellement durable laissé sans traitement"
               caption="Un feuillu naturellement durable comme le châtaignier n&apos;a besoin d&apos;aucun produit pour tenir dehors : il vire simplement à l&apos;argenté en quelques saisons. Le gris n&apos;est pas une usure, c&apos;est de la surface."
             />

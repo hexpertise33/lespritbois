@@ -126,10 +126,10 @@ const jsonld = [
       '@id': 'https://lesprit-bois.fr/blog/fermer-pergola-bioclimatique-hiver-rideau-verre',
     },
     about: [
-      'fermer une pergola',
-      'rideau de verre',
-      'pergola bioclimatique aluminium',
-      'store screen à zip',
+      { '@type': 'Thing', name: 'fermer une pergola' },
+      { '@type': 'Thing', name: 'rideau de verre' },
+      { '@type': 'Thing', name: 'pergola bioclimatique aluminium' },
+      { '@type': 'Thing', name: 'store screen à zip' },
     ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
@@ -589,7 +589,7 @@ export default function ArticleFermerPergolaPage() {
 
             <DuoFigure
               a={{
-                src: '/images/blog/fermer-pergola-bioclimatique-hiver-rideau-verre/paroi-vitree-coulissante-fermeture-terrasse.jpg',
+                src: '/images/blog/fermer-pergola-bioclimatique-hiver-rideau-verre/paroi-vitree-coulissante-fermeture-terrasse.webp',
                 w: 1200,
                 h: 600,
                 alt: 'Côté de terrasse fermé par des panneaux vitrés à profilés thermolaqués, vue conservée sur le jardin',

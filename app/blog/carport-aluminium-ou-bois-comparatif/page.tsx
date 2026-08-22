@@ -125,7 +125,12 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif',
     },
-    about: ['carport aluminium', 'carport bois', 'abri voiture', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'carport aluminium' },
+      { '@type': 'Thing', name: 'carport bois' },
+      { '@type': 'Thing', name: 'abri voiture' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {

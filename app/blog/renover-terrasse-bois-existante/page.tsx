@@ -95,7 +95,11 @@ const jsonld = [
       '@type': 'WebPage',
       '@id': 'https://lesprit-bois.fr/blog/renover-terrasse-bois-existante',
     },
-    about: ['rénovation terrasse bois', 'entretien terrasse', 'aménagement extérieur'],
+    about: [
+      { '@type': 'Thing', name: 'rénovation terrasse bois' },
+      { '@type': 'Thing', name: 'entretien terrasse' },
+      { '@type': 'Thing', name: 'aménagement extérieur' },
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Gironde' },
   },
   {
@@ -496,7 +500,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/renover-terrasse-bois-existante/application-saturateur-pinceau-bois-exterieur.jpg"
+              src="/images/blog/renover-terrasse-bois-existante/application-saturateur-pinceau-bois-exterieur.webp"
               w={1200}
               h={800}
               alt="Application d'un saturateur au pinceau sur du bois extérieur, après dégrisage et ponçage"
@@ -540,7 +544,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
             </section>
 
             <Figure
-              src="/images/blog/renover-terrasse-bois-existante/lame-bois-neuve-sur-terrasse-ancienne.jpg"
+              src="/images/blog/renover-terrasse-bois-existante/lame-bois-neuve-sur-terrasse-ancienne.webp"
               w={1200}
               h={800}
               alt="Bois neuf posé sur une terrasse en bois ancienne : contraste de teinte entre lames neuves et lames patinées"
@@ -657,7 +661,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Nous intervenons sur ces trois scénarios dans tout le Libournais et la Gironde, dans le cadre de nos
-                prestations d&apos;<a href="/amenagement-exterieur" className={lienInterne}>aménagement extérieur</a>. Vous
+                prestations d&apos;<a href="/terrasses-bois" className={lienInterne}>aménagement extérieur</a>. Vous
                 pouvez voir des terrasses reprises ou refaites entièrement parmi{' '}
                 <a href="/realisations" className={lienInterne}>nos réalisations en Gironde</a>.
               </p>

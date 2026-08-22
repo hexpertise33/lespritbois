@@ -17,18 +17,6 @@ export type Article = {
 
 export const articles: Article[] = [
   {
-    slug: 'claustra-bois-separation-jardin',
-    titre:
-      "Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture",
-    extrait:
-      "Un claustra n'est pas une clôture courte : posé à l'intérieur de la parcelle, il ne borne aucune limite et échappe donc aux contraintes qui pèsent sur une clôture séparative — c'est la séparation de jardin la plus rapide à mettre en œuvre. Et parce qu'on ne masque pas une vue mais un axe de regard, l'ouvrage juste est presque toujours plus court et plus bas qu'on ne l'imagine : ajour et prise au vent, motifs de lames, ancrage au sol ou sur une terrasse existante, essences, vieillissement et budget — le guide d'un artisan à Libourne (Gironde).",
-    date: '2026-08-23',
-    categorie: 'Guide · Claustra bois',
-    image: '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-claire-voie-ventilee-jardin.webp',
-    imageLargeur: 1200,
-    imageHauteur: 1798,
-  },
-  {
     slug: 'traiter-bois-exterieur-avant-hiver',
     titre:
       "Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment",

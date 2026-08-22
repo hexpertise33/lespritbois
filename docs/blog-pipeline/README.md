@@ -817,11 +817,28 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
-🛑 **RÉSERVE VIDE au 23/08/2026 — veille obligatoire avant le prochain article.**
-Les créneaux du **19, 20, 21, 22 et 23/08** sont tous servis, les quatre derniers
-écrits en avance le 19/08. Les runs planifiés du 20 au 23 ne doivent **rien
-publier** : le test de tête de fichier doit les arrêter. Le prochain article à
-produire est celui du **24/08**, sans aucun sujet en réserve.
+🛑 **RÉSERVE : une seule idée au 22/08/2026 — le claustra, dépublié et remis en
+réserve.** Voir ci-dessous.
+
+✅ **Dépublication de l'article du 23/08, décidée par David le 22/08/2026.**
+`claustra-bois-separation-jardin` avait été écrit **le 21/08 à 12h28**, soit deux
+jours en avance, en même temps que ceux du 21 et du 22. Pour repartir propre en
+même temps que la nouvelle règle « jamais d'article en avance » (voir le bloc en
+tête de fichier), il a été **retiré de la production** : `git revert 17d5a1d`
+(page, entrée `blog.ts` et les 3 photos du dossier dédié), build, deploy, URL
+vérifiée en 404. La page n'aura été en ligne qu'environ 24 h.
+
+➡️ **Le sujet claustra n'est pas perdu et n'est pas écarté** : il repasse au
+statut `réserve`. Son texte intégral, ses images et son maillage sont récupérables
+tels quels dans le commit `17d5a1d` (`git show 17d5a1d`, ou
+`git revert 17d5a1d` pour le remettre). **Le republier un jour donné, avec la date
+de ce jour-là**, suffit — il ne reste plus qu'à rafraîchir la date dans
+`blog.ts`, dans le hero et dans le JSON-LD (`datePublished`/`dateModified`).
+
+**État des créneaux** : le 19, 20, 21 et 22/08 sont servis et le restent. Le
+**23/08 est de nouveau libre**, mais ne le sers pas d'avance — il sera produit le
+23/08, par le run du jour. Le prochain article à produire est donc celui du
+**23/08**, et le claustra en est le candidat naturel.
 
 **Créneau du 23/08/2026 — servi d'avance le 19/08.** La **proposition D** a été
 publiée sous `claustra-bois-separation-jardin` (bois ; thèse : un claustra n'est
@@ -1090,7 +1107,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 | 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
 | 2026-08-22 | publié  | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
-| 2026-08-23 | publié  | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
+| —          | réserve | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin (⚠️ dépublié le 22/08, texte complet récupérable dans le commit `17d5a1d`) |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

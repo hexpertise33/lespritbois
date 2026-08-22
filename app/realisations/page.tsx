@@ -356,7 +356,7 @@ export default function RealisationsPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src="/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp"
-              alt="Pergola aluminium adossée et terrasse bois réalisées par L'Esprit Bois à Saint-Pey-de-Castets"
+              alt="Pergola aluminium adossée posée par L'Esprit Bois à Saint-Pey-de-Castets, sur une terrasse bois construite par le client"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>

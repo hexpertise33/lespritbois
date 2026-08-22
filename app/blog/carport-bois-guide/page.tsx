@@ -428,7 +428,7 @@ export default function ArticleCarportBoisPage() {
               src="/images/source-adefrance/Carport-bois-Libourne-3.webp"
               w={1200}
               h={646}
-              alt="Carport en bois sur mesure réalisé par L'Esprit Bois près de Libourne"
+              alt="Carport en bois sur mesure réalisé par L'Esprit Bois à Capian, en Entre-deux-Mers"
               caption="Un carport bois sur mesure en Gironde : structure ventilée, poteaux ancrés et toiture accordée à la maison."
             />
 

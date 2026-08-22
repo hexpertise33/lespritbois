@@ -130,7 +130,7 @@ export default function DevisPergolaPage() {
                 decoding="async"
                 className="w-full h-56 md:h-64 object-cover rounded-2xl mb-6"
                 src="/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp"
-                alt="Pergola aluminium adossée et terrasse bois réalisées par L'Esprit Bois près de Libourne"
+                alt="Pergola aluminium adossée posée par L'Esprit Bois à Saint-Pey-de-Castets, en Entre-deux-Mers"
               />
               <p className="font-body-lg text-body-lg text-white/85 mb-6">
                 Bioclimatique, aluminium ou bois massif : conçue, fabriquée et posée par la même

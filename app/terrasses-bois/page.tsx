@@ -33,15 +33,15 @@ const chantiers = ['moulon', 'lacanau']
 const FAQ = [
   {
     q: 'Quel bois choisir pour une terrasse en Gironde ?',
-    r: "Cela se décide sur l'usage, pas sur le catalogue. Un pin maritime de classe 4, local et abordable, convient à une terrasse de plain-pied qu'on entretient. Un ipé ne grise pas, ne donne pas d'échardes pieds nus et tient au bord d'une eau chlorée, mais il est dense, dur et plus cher. Entre les deux, le douglas et le mélèze couvrent la plupart des cas. Le détail des essences est dans notre guide « quel bois pour une terrasse extérieure ».",
+    r: "Cela se décide sur l'usage, pas sur le catalogue. Le pin maritime a une durabilité naturelle faible mais il est très imprégnable : traité en autoclave, il atteint la classe d'emploi 4 et convient, local et abordable, à une terrasse de plain-pied qu'on entretient. Un ipé ne grise pas, ne donne pas d'échardes pieds nus et tient au bord d'une eau chlorée, mais il est dense, dur et plus cher. Entre les deux, le douglas et le mélèze couvrent la plupart des cas. Le détail des essences est dans notre guide « quel bois pour une terrasse extérieure ».",
   },
   {
     q: 'Plots ou lambourdes : quelle structure ?',
-    r: "Les plots réglables permettent de rattraper une pente et de ventiler sous le platelage sans toucher au sol existant ; c'est la solution la plus fréquente sur dalle ou sur terrain stabilisé. Les lambourdes sur appuis ponctuels s'imposent quand le sol ne porte pas régulièrement. Dans les deux cas, ce qui décide de la durée de vie, c'est la ventilation de la sous-face et la pente d'écoulement, pas l'essence des lames.",
+    r: "Les plots réglables rattrapent une pente et ventilent la sous-face sans toucher au sol existant : c'est la solution courante sur dalle ou sur terrain stabilisé. Mais un plot posé en surface ne vaut que ce que vaut le sol dessous. Quand celui-ci ne porte pas — sable, remblai, terrain qui imposerait un décaissement —, nous fondons sur vis, vissées jusqu'à trouver de la résistance : c'est ce que nous avons fait à Lacanau. Dans tous les cas, ce qui décide de la durée de vie, c'est la ventilation de la sous-face et la pente d'écoulement, pas l'essence des lames.",
   },
   {
     q: 'Combien de temps dure une terrasse en bois ?',
-    r: "Une terrasse bien ventilée par-dessous et nettoyée une fois par an tient quinze à vingt ans en Gironde, essence selon. Ce qui la tue prématurément, c'est presque toujours l'eau qui stagne sous les lames, pas le soleil. Quand elle vieillit, tout n'est pas à refaire : notre guide sur la rénovation explique comment décider entre poncer, changer les lames et tout déposer.",
+    r: "Sur nos chantiers girondins, une terrasse bien ventilée par-dessous et nettoyée une fois par an se tient quinze à vingt ans, essence selon — c'est notre observation, pas une garantie. Ce qui la tue prématurément, c'est presque toujours l'eau qui stagne sous les lames, pas le soleil. Quand elle vieillit, tout n'est pas à refaire : notre guide sur la rénovation explique comment décider entre poncer, changer les lames et tout déposer.",
   },
   {
     q: 'Intervenez-vous au bord d’une piscine ?',
@@ -106,7 +106,8 @@ const jsonld = [
           itemOffered: {
             '@type': 'Service',
             name: 'Terrasse sur sol instable ou sableux',
-            description: 'Fondations reprises en profondeur jusqu’à un horizon porteur.',
+            description:
+              'Fondation sur vis, vissées jusqu’à un horizon porteur, plutôt que sur plots posés en surface.',
           },
         },
       ],
@@ -141,7 +142,7 @@ export default function TerrassesBoisPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src={COVER}
-              alt="Terrasse en bois posée sur plots réglables dans un jardin en Gironde, lames en pin traité"
+              alt="Terrasse en bois longeant une maison, lames posées dans le sens de la façade, réalisée en Gironde"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
@@ -197,10 +198,12 @@ export default function TerrassesBoisPage() {
                   vient après, et il compte moins qu&apos;on ne le croit.
                 </p>
                 <p>
-                  Nous travaillons sur plots réglables quand il faut rattraper une pente et ventiler
-                  sans toucher au sol existant, et sur lambourdes reprises en appuis ponctuels quand le
-                  sol ne porte pas régulièrement. Les essences vont du pin maritime de classe 4, local
-                  et abordable, à l&apos;ipé pour les abords de bassin.
+                  Nous travaillons sur plots réglables quand le sol porte et qu&apos;il s&apos;agit de
+                  rattraper une pente sans toucher au terrain. Quand il ne porte pas — sable du
+                  littoral, remblai, terrain en pente qui imposerait un décaissement —, nous fondons sur
+                  vis, vissées jusqu&apos;à trouver de la résistance, chaque pied réglable
+                  indépendamment. Les essences vont du pin maritime traité en autoclave, local et
+                  abordable, à l&apos;ipé pour les abords de bassin.
                 </p>
               </div>
               <div className="mt-10 flex flex-wrap gap-4">
@@ -230,10 +233,11 @@ export default function TerrassesBoisPage() {
         <section className="py-20 md:py-28 bg-surface-container">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
-              Deux terrasses, deux sols qui ne portaient pas pareil
+              Deux terrasses, deux problèmes qui n&apos;avaient rien à voir
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-14 max-w-2xl">
-              Commune réelle, contrainte réelle. Les fiches complètes sont dans{' '}
+              Un raccord à la margelle au millimètre à Moulon, un sol qui ne porte pas à Lacanau :
+              commune réelle, contrainte réelle. Les fiches complètes sont dans{' '}
               <a href="/realisations" className={lienInterne}>
                 nos réalisations
               </a>

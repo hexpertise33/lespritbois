@@ -355,7 +355,7 @@ const GAMMES = [
 const APERCU = [
   {
     src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
-    alt: 'Pergola aluminium adossée et terrasse bois réalisées près de Libourne',
+    alt: 'Pergola aluminium adossée posée à Saint-Pey-de-Castets, sur une terrasse construite par le client',
     legende: 'Pergola aluminium & terrasse bois',
     w: 1600,
     h: 900,

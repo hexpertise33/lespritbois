@@ -575,7 +575,7 @@ export default function AmenagementExterieurPage() {
                     decoding="async"
                     className="w-full h-auto"
                     src="/images/terrasse-bois-plots-gironde-1.webp"
-                    alt="Terrasse bois en pin US posée sur sol sableux entre deux maisons, chantier de L'Esprit Bois à Lacanau"
+                    alt="Terrasse bois sur plots posée le long d'une maison, réalisée en Gironde"
                   />
                 </div>
                 <div>
@@ -827,7 +827,7 @@ export default function AmenagementExterieurPage() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   src="/images/terrasse-bois-plots-gironde-1.webp"
-                  alt="Terrasse bois posée sur sol sableux entre deux maisons, chantier réalisé à Lacanau"
+                  alt="Terrasse bois sur plots longeant une maison, réalisée en Gironde"
                 />
               </div>
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">

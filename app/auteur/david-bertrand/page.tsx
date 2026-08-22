@@ -244,10 +244,12 @@ export default function AuteurPage() {
               </h2>
               <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
                 <p>
-                  Chaque affirmation réglementaire renvoie à sa source officielle — service-public.gouv.fr
-                  pour les autorisations d&apos;urbanisme, le FCBA et le CSTB pour les règles de mise en
-                  œuvre du bois, Légifrance pour les textes eux-mêmes. Un seuil, une distance ou une
-                  surface taxable qu&apos;on ne peut pas sourcer n&apos;est pas écrit.
+                  La règle est de renvoyer chaque seuil réglementaire à sa source officielle —
+                  service-public.gouv.fr pour les autorisations d&apos;urbanisme, le FCBA et le CSTB pour
+                  les règles de mise en œuvre du bois, Légifrance pour les textes eux-mêmes. Une
+                  distance ou une surface taxable qu&apos;on ne peut pas sourcer n&apos;est pas écrite,
+                  et un seuil qui dépend du PLU de votre commune est présenté comme tel plutôt que
+                  donné pour universel.
                 </p>
                 <p>
                   Les fourchettes de prix sont celles pratiquées sur nos propres chantiers en Gironde, pas

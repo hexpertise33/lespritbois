@@ -6,7 +6,9 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
 // COVER : vraie extension ossature bois L'Esprit Bois (bardage douglas, grande
-// baie vitrée coulissante et terrasse) accolée à une maison en pierre girondine.
+// baie vitrée coulissante et terrasse) accolée à une grange en pierre.
+// ⚠️ Le chantier est à Clérac, en Charente-Maritime, pas en Gironde : ne pas le
+// relégender « près de Libourne ». Voir lib/data/chantiers.ts.
 const COVER = '/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp';
 
 export const metadata: Metadata = buildMetadata({
@@ -290,7 +292,7 @@ export default function ArticleExtensionOssatureBoisPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src={COVER}
-              alt="Extension en ossature bois accolée à une maison en Gironde, bardage bois et grandes baies vitrées, près de Libourne"
+              alt="Extension en ossature bois accolée à une grange en pierre, bardage bois vertical et grandes baies vitrées, chantier de L'Esprit Bois à Clérac"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>

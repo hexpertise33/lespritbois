@@ -842,6 +842,23 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
+✅ **Constaté le 23/08/2026 à 16h31 : le run planifié s'est arrêté sans rien
+publier.** Le test de tête de fichier a joué correctement : `lib/data/blog.ts`
+porte bien une entrée à la date du jour (`claustra-bois-separation-jardin`, en
+1ʳᵉ position) et `https://lesprit-bois.fr/blog/claustra-bois-separation-jardin`
+a répondu **200 sur trois salves espacées**. Le créneau du 23/08 étant servi par
+la republication du claustra faite plus tôt dans la journée, publier un second
+article aurait créé deux entrées à la même date. Aucune veille n'a été lancée :
+elle appartient au run qui produira réellement l'article suivant.
+
+⚠️ **Deux points à trancher par David, relevés au passage.** (1) Ce run s'est
+déclenché un **dimanche**, alors que le cron a été ramené le 22/08 à `0 8 * * 2,5`
+(mardi et vendredi) — c'est probablement un rattrapage d'occurrence, mais la
+tâche planifiée mérite d'être revérifiée dans la section « Scheduled ».
+(2) La note ci-dessous annonce le prochain article pour le **24/08**, qui est un
+**lundi** : avec la cadence à deux articles par semaine, le prochain créneau
+cohérent est le **mardi 25/08**. La date retenue reste à confirmer.
+
 🛑 **RÉSERVE VIDE au 23/08/2026 — veille obligatoire avant le prochain article.**
 Le claustra, seule idée restante, a été republié ce jour (voir ci-dessous). Le
 prochain article à produire est celui du **24/08**, sans aucun sujet en réserve :

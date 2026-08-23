@@ -842,8 +842,20 @@ compter du 1er mai 2026. Il **ne concerne pas** le bardage d'une maison
 individuelle. L'article publié ne cite donc aucun décret ; il s'appuie sur le
 **NF DTU 41.2** et sur les règles de déclaration préalable.
 
-🛑 **RÉSERVE : une seule idée au 22/08/2026 — le claustra, dépublié et remis en
-réserve.** Voir ci-dessous.
+🛑 **RÉSERVE VIDE au 23/08/2026 — veille obligatoire avant le prochain article.**
+Le claustra, seule idée restante, a été republié ce jour (voir ci-dessous). Le
+prochain article à produire est celui du **24/08**, sans aucun sujet en réserve :
+le run devra commencer par une veille web.
+
+✅ **Republication du claustra le 23/08/2026, à la date du jour.** David :
+« publie l'article du 23 demain avec le claustra ». Restauration des fichiers
+depuis `17d5a1d` (`git checkout 17d5a1d -- app/blog/... public/images/blog/...`)
+puis réinsertion de l'entrée en tête de `blog.ts`. **Aucune date n'a eu besoin
+d'être retouchée** : l'article portait déjà le 23/08 dans `blog.ts`, dans le hero
+et dans le JSON-LD — il est donc publié le jour même de sa date, conformément à
+la nouvelle règle. Le cycle dépublication → republication le bon jour a donc
+fonctionné exactement comme prévu, et sert de mode d'emploi si le cas se
+represente.
 
 ✅ **Dépublication de l'article du 23/08, décidée par David le 22/08/2026.**
 `claustra-bois-separation-jardin` avait été écrit **le 21/08 à 12h28**, soit deux
@@ -1132,7 +1144,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-19 | publié  | Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin | bureau-jardin-bois-studio-reglementation-budget |
 | 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
 | 2026-08-22 | publié  | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
-| —          | réserve | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin (⚠️ dépublié le 22/08, texte complet récupérable dans le commit `17d5a1d`) |
+| 2026-08-23 | publié  | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

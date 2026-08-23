@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter';
 const COVER = '/images/pergola-bioclimatique-lisudestemps.webp';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pergola bois ou bioclimatique : comment choisir ? | L'Esprit Bois",
+  title: 'Pergola bois ou bioclimatique : que choisir en Gironde ?',
   description:
     "Pergola bois sur mesure ou bioclimatique alu à lames orientables ? Comparatif, cas d'usage, budget et entretien pour bien choisir en Gironde.",
   keywords:

@@ -10,7 +10,7 @@ const COVER = '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-hori
 export const metadata: Metadata = buildMetadata({
   title: "Clôture et brise-vue bois : hauteur et budget",
   description:
-    "Hauteur autorisée, distance de la limite séparative, essences qui tiennent, et ce que coûte un mètre linéaire.",
+    "Hauteur autorisée, distance à la limite séparative, essences qui tiennent et budget au mètre linéaire — le guide d'un artisan à Libourne (Gironde).",
   keywords:
     "clôture en bois, brise-vue bois jardin, hauteur clôture réglementation PLU, clôture bois Gironde, claire-voie bois, clôture bois sur mesure Libourne, déclaration préalable clôture, essence clôture douglas",
   path: '/blog/cloture-brise-vue-bois-guide',

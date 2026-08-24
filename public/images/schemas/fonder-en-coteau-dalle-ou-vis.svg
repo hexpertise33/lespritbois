@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img"
+     aria-labelledby="titre desc">
+  <title id="titre">Fonder sur un terrain en pente : dalle ou vis de fondation</title>
+  <desc id="desc">À gauche, une dalle sur terrain en pente impose un décaissement et un mur de
+    soutènement, avec évacuation de terre. À droite, des vis de fondation réglées chacune à sa
+    hauteur suivent la pente sans toucher au terrain.</desc>
+
+  <style>
+    .fond    { fill: #faf7f2; }
+    .terre   { fill: #eae4da; }
+    .beton   { fill: #b9b1a6; }
+    .bois    { fill: #c67c3d; }
+    .boisf   { fill: #9a5a24; }
+    .acier   { stroke: #1f1c19; stroke-width: 2; fill: none; }
+    .fin     { stroke: #5b5651; stroke-width: 1.5; fill: none; }
+    .titre   { font: 600 19px Georgia, serif; fill: #1f1c19; }
+    .txt     { font: 14px system-ui, -apple-system, sans-serif; fill: #5b5651; }
+    .lbl     { font: 600 13px system-ui, -apple-system, sans-serif; fill: #9a5a24; }
+  </style>
+
+  <rect class="fond" width="960" height="460"/>
+
+  <!-- ================= GAUCHE : dalle et terrassement ================= -->
+  <text class="titre" x="40" y="42">Dalle : on corrige le terrain</text>
+  <text class="txt"   x="40" y="66">Décaisser, soutenir, évacuer.</text>
+
+  <!-- coteau d'origine, en pointillé, puis terrain décaissé -->
+  <path class="fin" d="M40 300 L440 190" stroke-dasharray="5 5"/>
+  <text class="lbl" x="120" y="214">terrain d'origine</text>
+
+  <path class="terre" d="M40 300 L240 246 L240 320 L440 320 L440 380 L40 380 Z"/>
+  <rect class="beton" x="234" y="246" width="16" height="74"/>
+  <rect class="beton" x="240" y="304" width="200" height="16"/>
+  <text class="lbl" x="60" y="342">déblai</text>
+  <text class="lbl" x="96" y="300">soutènement</text>
+  <path class="fin" d="M188 296 h44"/>
+
+  <!-- poteaux posés sur la dalle -->
+  <rect class="bois" x="290" y="230" width="14" height="74"/>
+  <rect class="bois" x="390" y="230" width="14" height="74"/>
+  <rect class="boisf" x="276" y="218" width="132" height="12"/>
+
+  <!-- camion de terre évacuée -->
+  <g class="fin">
+    <path d="M96 268 h60"/><path d="M144 261 l14 7 -14 7"/>
+  </g>
+  <text class="lbl" x="96" y="256">terre à évacuer</text>
+
+  <text class="txt" x="40" y="410">Une bonne part de l'enveloppe part dans</text>
+  <text class="txt" x="40" y="430">le terrassement, avant le premier poteau.</text>
+
+  <line class="fin" x1="480" y1="30" x2="480" y2="440" stroke-dasharray="6 6"/>
+
+  <!-- ================= DROITE : vis de fondation ================= -->
+  <text class="titre" x="520" y="42">Vis : on suit le terrain</text>
+  <text class="txt"   x="520" y="66">Chaque pied se règle en hauteur.</text>
+
+  <path class="terre" d="M520 300 L920 190 L920 380 L520 380 Z"/>
+  <text class="lbl" x="540" y="344">terrain intact</text>
+
+  <!-- vis de longueurs différentes, tête alignée -->
+  <g class="acier">
+    <path d="M580 230 v62"/><path d="M680 230 v46"/><path d="M780 230 v34"/><path d="M880 230 v18"/>
+  </g>
+  <g class="fin">
+    <path d="M574 244 l12 6 M574 260 l12 6 M574 276 l12 6"/>
+    <path d="M674 244 l12 6 M674 260 l12 6"/>
+    <path d="M774 244 l12 6"/>
+  </g>
+
+  <!-- traverse parfaitement horizontale -->
+  <rect class="boisf" x="560" y="218" width="340" height="12"/>
+  <rect class="bois"  x="574" y="200" width="14" height="18"/>
+  <rect class="bois"  x="874" y="200" width="14" height="18"/>
+  <text class="lbl" x="600" y="192">niveau fini, horizontal</text>
+
+  <text class="txt" x="520" y="410">Pas de béton, pas d'évacuation de terre,</text>
+  <text class="txt" x="520" y="430">pas de délai de séchage.</text>
+</svg>

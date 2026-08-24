@@ -127,6 +127,14 @@ export const ZONES: Zone[] = [
         "Enfin, ces communes viticoles comptent beaucoup d'églises et de bâtis anciens protégés. Une parcelle située dans le périmètre des abords d'un monument historique fait passer la demande d'urbanisme par l'avis de l'Architecte des Bâtiments de France : la teinte, la pente de toiture et parfois le matériau de couverture sont alors regardés. Cela ne bloque rien, mais cela change le calendrier. Nous vérifions ce point au relevé, avant de dessiner, plutôt qu'après un refus.",
       ],
     },
+    schema: {
+      src: '/images/schemas/fonder-en-coteau-dalle-ou-vis.svg',
+      w: 960,
+      h: 460,
+      alt: "Comparaison en coupe entre une dalle sur terrain en pente, qui impose décaissement et mur de soutènement, et des vis de fondation réglées chacune à sa hauteur",
+      legende:
+        "Sur un coteau, le choix de fondation décide du budget avant qu'un seul poteau soit posé. À gauche, la dalle suppose de corriger le terrain : décaissement, soutènement, terre à évacuer. À droite, chaque vis se règle en hauteur et le terrain reste en place. C'est ce que nous avons fait à Capian.",
+    },
     chantiers: ['saint-pey-de-castets', 'capian', 'moulon', 'genissac', 'rauzan'],
     guides: [
       {
@@ -193,6 +201,32 @@ export const ZONES: Zone[] = [
         "À Rauzan, il ne s'agissait plus d'agrandir mais de construire : 150 m² de maison et garage, mêlant ossature bois et maçonnerie traditionnelle. Faire cohabiter deux modes constructifs suppose de caler très tôt les niveaux finis et les épaisseurs d'enveloppe. Ce qui n'est pas arbitré au dessin se rattrape en fin de chantier, et se rattrape mal.",
       ],
     },
+    schema: {
+      src: '/images/schemas/raccord-extension-ossature-sur-pierre.svg',
+      w: 960,
+      h: 460,
+      alt: "Vue en plan comparant une extension simplement accolée à un mur en pierre, qui laisse un pont thermique sur toute la hauteur, et une extension en isolation par l'extérieur dont l'enveloppe se referme sur l'existant",
+      legende:
+        "Le raccord se joue en plan, pas en façade. Accolée, l'extension laisse une coupure verticale sur toute la hauteur du joint, et c'est là que la condensation s'installe. En isolation par l'extérieur, l'isolant passe devant les deux systèmes constructifs et la coupure disparaît. C'est la solution retenue à Clérac.",
+    },
+    galerie: [
+      {
+        src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-chantier-gironde.jpg',
+        w: 1200,
+        h: 900,
+        alt: "Ossature bois en cours de levage contre une maison existante dont la toiture d'origine a été conservée, chantier de L'Esprit Bois à Génissac",
+        legende:
+          'Génissac : ossature en cours de levage, toiture d\'origine conservée. Les cotes du rampant ont été relevées point par point avant le dessin.',
+      },
+      {
+        src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg',
+        w: 1200,
+        h: 900,
+        alt: "Extension à ossature bois bardée, grande baie vitrée posée, terrasse en cours de ferraillage, chantier de L'Esprit Bois à Génissac",
+        legende:
+          'Génissac, plus tard : bardage et baie posés, terrasse en ferraillage. Les écarts du relevé ont été absorbés dans la structure, pas dans les finitions.',
+      },
+    ],
     chantiers: ['clerac', 'genissac', 'rauzan'],
     guides: [
       {
@@ -259,6 +293,32 @@ export const ZONES: Zone[] = [
         "La troisième, c'est l'accès. Une charpente préparée en atelier arrive en éléments à assembler ; encore faut-il pouvoir les livrer. Rue étroite, portail de 90 cm, passage par la maison : cela se règle au relevé, en adaptant les longueurs de pièces, pas le jour de la pose.",
       ],
     },
+    schema: {
+      src: '/images/schemas/limite-separative-et-acces-en-ville.svg',
+      w: 960,
+      h: 460,
+      alt: "À gauche, une parcelle urbaine vue en plan avec le recul imposé entre le carport et la limite séparative ; à droite, un portail de 90 cm qui impose d'adapter la longueur des pièces préparées en atelier",
+      legende:
+        "Les deux contraintes qui décident d'un ouvrage en ville, et qu'aucune ne se voit sur une photo. À gauche le règlement de zone, qui fixe le recul et la hauteur admissible en limite. À droite l'accès, qui fixe la longueur des pièces qu'on peut préparer en atelier.",
+    },
+    galerie: [
+      {
+        src: '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp',
+        w: 825,
+        h: 1100,
+        alt: "Salon de jardin abrité sous une pergola aluminium à couverture translucide, store screen descendu sur le côté, réalisation de L'Esprit Bois à Saint-Pey-de-Castets",
+        legende:
+          'Saint-Pey-de-Castets : store screen descendu côté vis-à-vis. En jardin de ville, c\'est souvent lui qui règle la question du voisinage.',
+      },
+      {
+        src: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-4.webp',
+        w: 825,
+        h: 1100,
+        alt: "Pergola aluminium anthracite à couverture polycarbonate adossée à une maison, terrasse bois sur plots visible en contrebas, réalisation de L'Esprit Bois à Saint-Pey-de-Castets",
+        legende:
+          'Saint-Pey-de-Castets : couverture polycarbonate, structure adossée. La même pose en cour fermée se prépare entièrement au relevé.',
+      },
+    ],
     chantiers: ['montussan'],
     guides: [
       {

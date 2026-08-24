@@ -13,7 +13,21 @@ const inactifMobile =
 const actifMobile =
   'block py-3 font-label-md text-label-md text-primary border-l-2 border-secondary pl-4 -ml-4';
 
-export default function SiteNav({ page = '' }: { page?: string }) {
+/**
+ * `ancreDevis` : cible du bouton « Devis gratuit ».
+ *
+ * Par défaut le formulaire de l'accueil, seul point de conversion du site
+ * avant le 24/08/2026. Depuis, les pages de gamme, de zone et de réalisations
+ * ont le leur : elles passent leur propre ancre, sinon le bouton le plus
+ * visible du site ferait quitter la page au visiteur le plus décidé.
+ */
+export default function SiteNav({
+  page = '',
+  ancreDevis = '/#quote',
+}: {
+  page?: string;
+  ancreDevis?: string;
+}) {
   const [menuOuvert, setMenuOuvert] = useState(false);
   const [dense, setDense] = useState(false);
   const boutonRef = useRef<HTMLButtonElement>(null);
@@ -78,7 +92,7 @@ export default function SiteNav({ page = '' }: { page?: string }) {
 
         <a
           className="hidden lg:inline-flex bg-primary text-on-primary px-5 xl:px-6 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95 shadow-lg whitespace-nowrap shrink-0"
-          href="/#quote"
+          href={ancreDevis}
         >
           Devis gratuit
         </a>
@@ -119,7 +133,7 @@ export default function SiteNav({ page = '' }: { page?: string }) {
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <a
               className="flex-1 text-center bg-primary text-on-primary px-6 py-4 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all"
-              href="/#quote"
+              href={ancreDevis}
             >
               Demander un devis gratuit
             </a>

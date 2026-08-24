@@ -16,7 +16,7 @@ import { CONTACT } from '@/lib/data/navigation';
  * deux ancres qu'elle vise (data-devis-hero et #devis-bas) sont les mêmes
  * des deux côtés.
  */
-export default function DevisStickyBar() {
+export default function DevisStickyBar({ ancre = '#devis-bas' }: { ancre?: string }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function DevisStickyBar() {
           <span className="material-symbols-outlined text-[22px]" aria-hidden="true">call</span>
         </a>
         <a
-          href="#devis-bas"
+          href={ancre}
           className="flex-1 bg-secondary text-primary py-3 rounded-xl font-label-md text-label-md text-center"
         >
           Devis gratuit

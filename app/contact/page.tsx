@@ -219,7 +219,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="lg:w-3/5 p-12">
-                <ContactForm />
+                <ContactForm pageLabel="/contact" />
               </div>
             </div>
           </div>

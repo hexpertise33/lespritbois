@@ -3,6 +3,9 @@ import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
+import DevisForm from '@/components/DevisForm';
+import DevisStickyBar from '@/components/DevisStickyBar';
+import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import { CHANTIERS } from '@/lib/data/chantiers';
 import { CONTACT, ENTREPRISE_ID, ENTREPRISE_REF, SITE } from '@/lib/data/navigation';
 
@@ -13,6 +16,11 @@ import { CONTACT, ENTREPRISE_ID, ENTREPRISE_REF, SITE } from '@/lib/data/navigat
  *  cinq autres prestations. C'est la requête la plus proche du cœur de métier
  *  qui n'avait pas sa page. */
 const COVER = '/images/terrasse-bois-plots-gironde-1.webp';
+
+/* Étiquettes d'attribution : sans elles, un lead de cette page arriverait
+   indistinct de ceux de la landing publicitaire. */
+const PROJET = 'Terrasse bois';
+const PAGE_LABEL = '/terrasses-bois';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Terrasse en bois sur mesure à Libourne et en Gironde',
@@ -131,9 +139,11 @@ export default function TerrassesBoisPage() {
   return (
     <>
       <JsonLd data={jsonld} />
-      <SiteNav page="amenagement-exterieur" />
+      <SiteNav page="amenagement-exterieur" ancreDevis="#devis-bas" />
       <main id="contenu">
-        <header className="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
+        <header
+          data-devis-hero
+          className="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
@@ -337,25 +347,30 @@ export default function TerrassesBoisPage() {
           </div>
         </section>
 
-        <section className="py-20 md:py-28 bg-surface-container">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 text-center">
-            <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
-              Une terrasse à construire ou à reprendre ?
-            </h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
-              Nous venons voir le sol avant de chiffrer. Le relevé et le devis sont gratuits, à
-              Libourne et dans toute la Gironde. {CONTACT.telAffiche}.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95"
-            >
-              Demander mon étude gratuite
-            </a>
+        <section id="devis-bas" className="py-20 md:py-28 bg-primary text-on-primary">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="font-headline-md text-headline-md mb-4 text-center">
+                Une terrasse à construire ou à reprendre ?
+              </h2>
+              <p className="font-body-md text-body-md text-on-primary/80 mb-8 text-center">
+                Nous venons voir le sol avant de chiffrer. Le relevé et le devis sont gratuits, à
+                Libourne et dans toute la Gironde. Vous pouvez aussi appeler le{' '}
+                <a href={CONTACT.telHref} className="underline underline-offset-4">
+                  {CONTACT.telAffiche}
+                </a>
+                .
+              </p>
+              <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
+                <DevisForm instanceId="bas" projet={PROJET} pageLabel={PAGE_LABEL} />
+              </div>
+            </div>
           </div>
         </section>
       </main>
       <SiteFooter />
+      <DevisStickyBar />
+      <DevisDesktopPopup pageLabel={PAGE_LABEL} />
     </>
   );
 }

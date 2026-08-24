@@ -5,7 +5,14 @@ import { reportFormConversion } from '@/lib/gtag';
 
 type Etat = 'idle' | 'loading' | 'success' | 'error';
 
-export default function ContactForm() {
+/**
+ * Formulaire de contact général, utilisé sur l'accueil et sur /contact.
+ *
+ * `pageLabel` sert uniquement à l'attribution : sans lui, un lead de
+ * l'accueil arrive dans la boîte mail indistinct d'un lead de /contact,
+ * alors que ce sont deux intentions très différentes.
+ */
+export default function ContactForm({ pageLabel }: { pageLabel?: string }) {
   const [etat, setEtat] = useState<Etat>('idle');
   const [erreur, setErreur] = useState<string | null>(null);
 
@@ -19,7 +26,7 @@ export default function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(donnees),
+        body: JSON.stringify(pageLabel ? { ...donnees, source: `Page : ${pageLabel}` } : donnees),
       });
 
       if (!res.ok) {

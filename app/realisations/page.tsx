@@ -6,7 +6,15 @@ import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
+import DevisForm from '@/components/DevisForm';
+import DevisStickyBar from '@/components/DevisStickyBar';
+import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import GalerieChantiers, { type Vignette } from './GalerieChantiers';
+
+/* Étiquettes d'attribution : sans elles, un lead de cette page arriverait
+   indistinct de ceux de la landing publicitaire. */
+const PROJET = 'Projet vu depuis les réalisations';
+const PAGE_LABEL = '/realisations';
 
 export const metadata: Metadata = buildMetadata({
   title: "Nos réalisations en Gironde : douze chantiers racontés",
@@ -344,10 +352,12 @@ export default function RealisationsPage() {
   return (
     <>
       <JsonLd data={jsonld} />
-      <SiteNav page="realisations" />
+      <SiteNav page="realisations" ancreDevis="#devis-bas" />
       <main id="contenu">
         {/* Hero */}
-        <header className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <header
+          data-devis-hero
+          className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               width="1600"
@@ -666,7 +676,7 @@ export default function RealisationsPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-section-padding bg-primary text-white">
+        <section id="devis-bas" className="py-section-padding bg-primary text-white">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
               À votre tour
@@ -675,24 +685,22 @@ export default function RealisationsPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Racontez-nous ce que vous imaginez. Nous revenons vers vous sous 48h avec une première estimation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/#quote"
-                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect"
-              >
-                Demander mon étude gratuite
-              </a>
-              <a
-                href="tel:+33557406580"
-                className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all"
-              >
+            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl text-left">
+              <DevisForm instanceId="bas" projet={PROJET} pageLabel={PAGE_LABEL} />
+            </div>
+            <p className="font-body-md text-body-md text-on-primary-container mt-6">
+              Ou appelez directement le{' '}
+              <a href="tel:+33557406580" className="underline underline-offset-4">
                 05 57 40 65 80
               </a>
-            </div>
+              .
+            </p>
           </div>
         </section>
       </main>
       <SiteFooter />
+      <DevisStickyBar />
+      <DevisDesktopPopup pageLabel={PAGE_LABEL} />
     </>
   );
 }

@@ -3,6 +3,8 @@ import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
+import DevisStickyBar from '@/components/DevisStickyBar';
+import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import ContactForm from '@/components/ContactForm';
 import { AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
 import { ZONES } from '@/lib/data/zones';
@@ -460,7 +462,10 @@ export default function HomePage() {
       <SiteNav page="accueil" />
       <main id="contenu">
         {/* Hero */}
-        <header className="relative min-h-screen flex items-center pt-24 overflow-hidden">
+        <header
+          data-devis-hero
+          className="relative min-h-screen flex items-center pt-24 overflow-hidden"
+        >
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
@@ -1095,13 +1100,15 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="lg:w-3/5 p-12">
-                <ContactForm />
+                <ContactForm pageLabel="/" />
               </div>
             </div>
           </div>
         </section>
       </main>
       <SiteFooter />
+      <DevisStickyBar ancre="#quote" />
+      <DevisDesktopPopup pageLabel="/" ancre="#quote" />
     </>
   );
 }

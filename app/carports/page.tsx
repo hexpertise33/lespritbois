@@ -4,6 +4,14 @@ import { buildMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
+import DevisForm from '@/components/DevisForm';
+import DevisStickyBar from '@/components/DevisStickyBar';
+import DevisDesktopPopup from '@/components/DevisDesktopPopup';
+
+/* Étiquettes d'attribution : sans elles, un lead de cette page arriverait
+   indistinct de ceux de la landing publicitaire. */
+const PROJET = 'Carport';
+const PAGE_LABEL = '/carports';
 
 export const metadata: Metadata = buildMetadata({
   title: "Carport bois, alu & solaire à Libourne (33)",
@@ -435,10 +443,12 @@ export default function CarportsPage() {
   return (
     <>
       <JsonLd data={jsonld} />
-      <SiteNav page="carports" />
+      <SiteNav page="carports" ancreDevis="#devis-bas" />
       <main id="contenu">
         {/* Hero de page */}
-        <header className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <header
+          data-devis-hero
+          className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
@@ -491,7 +501,7 @@ export default function CarportsPage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/#quote"
+                href="#devis-bas"
                 className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center"
               >
                 Demander mon étude gratuite
@@ -1194,7 +1204,7 @@ export default function CarportsPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 shrink-0">
               <a
-                href="/#quote"
+                href="#devis-bas"
                 className="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 text-center"
               >
                 Demander conseil
@@ -1610,7 +1620,7 @@ export default function CarportsPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-section-padding bg-primary text-white">
+        <section id="devis-bas" className="py-section-padding bg-primary text-white">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Parlons-en</span>
             <h2 className="font-headline-md text-headline-md mt-4 mb-6">
@@ -1620,24 +1630,22 @@ export default function CarportsPage() {
               Décrivez-nous votre terrain, votre maison et vos usages : nous revenons vers vous sous 48h avec une
               première estimation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/#quote"
-                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect"
-              >
-                Demander mon étude gratuite
-              </a>
-              <a
-                href="tel:+33557406580"
-                className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all"
-              >
+            <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl text-left">
+              <DevisForm instanceId="bas" projet={PROJET} pageLabel={PAGE_LABEL} />
+            </div>
+            <p className="font-body-md text-body-md text-on-primary-container mt-6">
+              Ou appelez directement le{' '}
+              <a href="tel:+33557406580" className="underline underline-offset-4">
                 05 57 40 65 80
               </a>
-            </div>
+              .
+            </p>
           </div>
         </section>
       </main>
       <SiteFooter />
+      <DevisStickyBar />
+      <DevisDesktopPopup pageLabel={PAGE_LABEL} />
     </>
   );
 }

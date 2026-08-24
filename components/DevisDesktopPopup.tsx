@@ -16,7 +16,13 @@ import { CONTACT } from '@/lib/data/navigation';
  * a vu le pop-up sur une page de zone ne le verrait plus sur la landing
  * publicitaire dans la même session, et inversement.
  */
-export default function DevisDesktopPopup({ pageLabel }: { pageLabel: string }) {
+export default function DevisDesktopPopup({
+  pageLabel,
+  ancre = '#devis-bas',
+}: {
+  pageLabel: string;
+  ancre?: string;
+}) {
   const [visible, setVisible] = useState(false);
   const sessionKey = `lb-devis-popup-shown:${pageLabel}`;
 
@@ -86,7 +92,7 @@ export default function DevisDesktopPopup({ pageLabel }: { pageLabel: string }) 
             {CONTACT.telAffiche}
           </a>
           <a
-            href="#devis-bas"
+            href={ancre}
             onClick={() => setVisible(false)}
             className="bg-primary text-on-primary px-6 py-4 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all"
           >

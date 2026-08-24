@@ -171,6 +171,26 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 ))}
               </div>
             </div>
+
+            {/* Schéma technique, à la suite immédiate du texte qu'il illustre.
+                Volontairement pleine largeur : c'est une figure à lire, pas une
+                vignette d'accompagnement. */}
+            {zone.schema && (
+              <figure className="mt-16">
+                <img
+                  width={zone.schema.w}
+                  height={zone.schema.h}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl border border-outline-variant bg-surface"
+                  src={zone.schema.src}
+                  alt={zone.schema.alt}
+                />
+                <figcaption className="font-body-md text-body-md text-on-surface-variant mt-4 max-w-3xl">
+                  {zone.schema.legende}
+                </figcaption>
+              </figure>
+            )}
           </div>
         </section>
 
@@ -294,6 +314,36 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 </article>
               ))}
             </div>
+            {/* Galerie, dans la section des chantiers et non à part : ces photos
+                sont de la preuve, au même titre que la fiche au-dessus. Chaque
+                légende nomme sa commune — c'est ce qui autorise à montrer un
+                chantier d'ailleurs sur la page d'un secteur où l'on n'a pas
+                encore posé. */}
+            {zone.galerie && zone.galerie.length > 0 && (
+              <ul className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {zone.galerie.map((photo) => (
+                  <li key={photo.src}>
+                    <figure>
+                      <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                        <img
+                          width={photo.w}
+                          height={photo.h}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover"
+                          src={photo.src}
+                          alt={photo.alt}
+                        />
+                      </div>
+                      <figcaption className="font-body-md text-body-md text-on-surface-variant mt-3">
+                        {photo.legende}
+                      </figcaption>
+                    </figure>
+                  </li>
+                ))}
+              </ul>
+            )}
+
             {/* Rappel discret : le visiteur vient de lire une preuve, pas un
                 argumentaire. Une phrase suffit, un bandeau ferait redite avec
                 celui du dessus. */}

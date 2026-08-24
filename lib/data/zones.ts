@@ -49,6 +49,25 @@ export type Zone = {
   /** Ce qui distingue vraiment ce secteur, techniquement. Pas du remplissage
    *  géographique : la raison pour laquelle un chantier y est différent. */
   contexte: { titre: string; paragraphes: string[] };
+  /** Schéma technique illustrant l'argument central de la page, affiché juste
+   *  après le contexte. Dessiné, pas photographié : sur un sujet comme la
+   *  reprise de charge sous le sable, aucune photo ne montre ce qui compte —
+   *  c'est sous la terrasse. Aucun concurrent du secteur n'en publie.
+   *
+   *  `legende` porte l'information, pas la décoration : elle doit se suffire à
+   *  elle-même pour qui ne regarde que les images. */
+  schema?: { src: string; w: number; h: number; alt: string; legende: string };
+  /** Photos de chantier supplémentaires, en complément de la fiche chantier.
+   *
+   *  Ajouté le 24/08/2026 : le gabarit n'affichait que deux images de contenu
+   *  — la photo de fond du héros et celle de la fiche chantier — sur des pages
+   *  de plusieurs milliers de pixels. Pour un métier qui se vend à l'œil, c'est
+   *  insuffisant.
+   *
+   *  ⚠️ La légende nomme toujours la commune réelle du chantier. Montrer une
+   *  pergola de Montussan sur une page du Bassin est honnête tant que la page
+   *  ne laisse pas croire qu'elle y a été posée. */
+  galerie?: { src: string; w: number; h: number; alt: string; legende: string }[];
   /** Identifiants des chantiers de /realisations à mettre en avant. */
   chantiers: string[];
   /** Titre et introduction de la section chantiers. À renseigner quand la zone n'a pas
@@ -325,6 +344,40 @@ export const ZONES: Zone[] = [
         "Rien de tout cela n'empêche quoi que ce soit. Mais un devis qui ignore ces quatre points est un devis qu'il faudra refaire.",
       ],
     },
+    schema: {
+      src: '/images/schemas/pergola-ancrage-au-vent.svg',
+      w: 960,
+      h: 460,
+      alt: "Schéma d'une pergola bioclimatique sous le vent : les lames orientables créent un soulèvement, l'effort descend par les poteaux jusqu'aux massifs",
+      legende:
+        "Le vent ne s'arrête pas à la lame : il la traverse pour descendre dans les poteaux et finir dans les massifs. C'est pour cela qu'une tenue au vent ne se promet pas sur catalogue — elle se calcule après le relevé de la parcelle.",
+    },
+    galerie: [
+      {
+        src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+        w: 825,
+        h: 1100,
+        alt: "Pergola aluminium anthracite avec store screen à zip déployé sur un côté, posée sur une terrasse bois, réalisation de L'Esprit Bois à Saint-Pey-de-Castets",
+        legende:
+          'Saint-Pey-de-Castets — le store à guidage par zip, celui qui reste tenu quand un store banne classique se rentre.',
+      },
+      {
+        src: '/images/realisations/terrasse-bois-pergola-aluminium-libourne-7.webp',
+        w: 825,
+        h: 1100,
+        alt: "Vue sous la couverture d'une pergola aluminium anthracite en enfilade au-dessus d'une terrasse bois, réalisation de L'Esprit Bois à Saint-Pey-de-Castets",
+        legende:
+          'Saint-Pey-de-Castets — vue sous couverture : c\'est la section des poteaux qui reprend l\'effort, pas la traverse.',
+      },
+      {
+        src: '/images/source-adefrance/construction-pool-house-aluminium-libourne.webp',
+        w: 768,
+        h: 512,
+        alt: "Pergola aluminium à couverture isolée abritant un espace bar avec plancha et plan de travail, réalisation de L'Esprit Bois à Montussan",
+        legende:
+          'Montussan — couverture en panneau isolé : sous une simple plaque, un espace plein sud devient un four.',
+      },
+    ],
     chantiers: ['lacanau'],
     chantiersTitre: 'Notre chantier littoral le plus proche',
     chantiersIntro:
@@ -430,6 +483,40 @@ export const ZONES: Zone[] = [
         "Aucun de ces quatre points n'empêche de faire une belle terrasse sur le Bassin. Mais un devis qui n'en parle d'aucun est un devis qui n'est pas venu voir le terrain.",
       ],
     },
+    schema: {
+      src: '/images/schemas/terrasse-plots-ou-vis-sur-sable.svg',
+      w: 960,
+      h: 460,
+      alt: "Coupe comparant une terrasse sur plots posés en surface, qui prend une gîte quand le sable se tasse, et une terrasse sur vis de fondation vissées jusqu'à la couche porteuse",
+      legende:
+        "Ce qui décide de la tenue d'une terrasse sur sable est sous le platelage, donc invisible sur une photo. À gauche, chaque plot descend de sa propre hauteur : c'est le tassement différentiel qui déforme l'ouvrage, pas la charge. À droite, la charge est reprise sous le sable.",
+    },
+    galerie: [
+      {
+        src: '/images/terrasse-bois-plots-gironde-4.webp',
+        w: 850,
+        h: 1133,
+        alt: "Terrasse bois posée à même le sable devant une maison à bardage noir, pins maritimes en arrière-plan, chantier de L'Esprit Bois à Lacanau",
+        legende:
+          'Lacanau — le sable vient jusqu\'à la rive du platelage, et la pinède commence derrière la maison.',
+      },
+      {
+        src: '/images/terrasse-bois-plots-gironde-3.webp',
+        w: 1000,
+        h: 1333,
+        alt: "Jonction entre le platelage bois et le mur de la maison, marche de rive visible, chantier de L'Esprit Bois à Lacanau",
+        legende:
+          'Lacanau — la jonction au bâti et la marche de rive, réglées après avoir trouvé le niveau porteur.',
+      },
+      {
+        src: '/images/terrasse-bois-pool-house-noir.webp',
+        w: 736,
+        h: 981,
+        alt: 'Plage de piscine en bois clair longeant un bassin, pool house à bardage noir au fond, réalisation de L\'Esprit Bois à Moulon',
+        legende:
+          'Moulon — ce n\'est pas le littoral, mais c\'est le même travail de rive au millimètre le long du bassin.',
+      },
+    ],
     chantiers: ['lacanau'],
     chantiersTitre: 'Notre terrasse posée sur le sable',
     chantiersIntro:
@@ -535,6 +622,32 @@ export const ZONES: Zone[] = [
         "Chacun de ces quatre points se traite différemment selon l'ouvrage. C'est pourquoi nous avons une page par ouvrage plutôt qu'une page qui dirait tout à moitié.",
       ],
     },
+    galerie: [
+      {
+        src: '/images/terrasse-bois-plots-gironde-4.webp',
+        w: 850,
+        h: 1133,
+        alt: "Terrasse bois posée à même le sable devant une maison à bardage noir, pins maritimes en arrière-plan, chantier de L'Esprit Bois à Lacanau",
+        legende:
+          'Lacanau — le sable vient jusqu\'à la rive du platelage. C\'est le sol du littoral, et il ne porte pas seul.',
+      },
+      {
+        src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
+        w: 825,
+        h: 1100,
+        alt: "Pergola aluminium anthracite avec store screen à zip déployé sur un côté, posée sur une terrasse bois, réalisation de L'Esprit Bois à Saint-Pey-de-Castets",
+        legende:
+          'Saint-Pey-de-Castets — pergola aluminium et store à zip, la protection qui tient quand le vent se lève.',
+      },
+      {
+        src: '/images/terrasse-bois-pool-house-noir.webp',
+        w: 736,
+        h: 981,
+        alt: 'Plage de piscine en bois clair longeant un bassin, pool house à bardage noir au fond, réalisation de L\'Esprit Bois à Moulon',
+        legende:
+          'Moulon — plage de piscine et pool house : le même soin de rive que sur une terrasse de bord de mer.',
+      },
+    ],
     chantiers: ['lacanau'],
     chantiersTitre: 'Notre chantier littoral le plus proche',
     chantiersIntro:

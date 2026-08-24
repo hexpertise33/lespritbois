@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img"
+     aria-labelledby="titre desc">
+  <title id="titre">Plots réglables contre vis de fondation sur sol sableux</title>
+  <desc id="desc">À gauche, une terrasse sur plots posés en surface : le sable se tasse
+    inégalement et le platelage prend une gîte. À droite, la même terrasse sur vis de fondation
+    vissées jusqu'à la couche porteuse : le niveau ne bouge pas.</desc>
+
+  <style>
+    .fond   { fill: #faf7f2; }
+    .sable  { fill: #eae4da; }
+    .porteur{ fill: #b9b1a6; }
+    .bois   { fill: #c67c3d; }
+    .boisf  { fill: #9a5a24; }
+    .trait  { stroke: #1f1c19; stroke-width: 2; fill: none; }
+    .fin    { stroke: #5b5651; stroke-width: 1.5; fill: none; }
+    .titre  { font: 600 19px Georgia, serif; fill: #1f1c19; }
+    .txt    { font: 14px system-ui, -apple-system, sans-serif; fill: #5b5651; }
+    .lbl    { font: 600 13px system-ui, -apple-system, sans-serif; fill: #9a5a24; }
+  </style>
+
+  <rect class="fond" width="960" height="460"/>
+
+  <!-- ===================== GAUCHE : plots en surface ===================== -->
+  <text class="titre" x="40" y="42">Plots posés en surface</text>
+  <text class="txt"   x="40" y="66">Le sable ne se tasse pas partout pareil.</text>
+
+  <rect class="sable"   x="40" y="250" width="400" height="120"/>
+  <rect class="porteur" x="40" y="340" width="400" height="30"/>
+  <text class="lbl" x="52" y="290">sable</text>
+  <text class="lbl" x="52" y="360">couche porteuse</text>
+
+  <!-- platelage incliné : la gîte -->
+  <g transform="rotate(3.2 240 206)">
+    <rect class="bois"  x="60" y="196" width="360" height="14"/>
+    <rect class="boisf" x="60" y="210" width="360" height="6"/>
+  </g>
+
+  <!-- plots : de moins en moins visibles à mesure qu'ils s'enfoncent -->
+  <rect class="porteur" x="92"  y="208" width="26" height="42"/>
+  <rect class="porteur" x="222" y="216" width="26" height="34"/>
+  <rect class="porteur" x="352" y="223" width="26" height="27"/>
+
+  <!-- flèches de tassement, décalées pour ne pas heurter le mot « sable » -->
+  <g class="fin">
+    <path d="M148 268 v20"/><path d="M143 282 l5 8 5-8"/>
+    <path d="M255 268 v32"/><path d="M250 294 l5 8 5-8"/>
+    <path d="M375 268 v42"/><path d="M370 304 l5 8 5-8"/>
+  </g>
+
+  <text class="txt" x="40" y="400">Chaque appui descend de sa propre hauteur.</text>
+  <text class="txt" x="40" y="420">Au bout de deux hivers, ce n'est plus un</text>
+  <text class="txt" x="40" y="440">niveau qu'on rattrape : c'est une gîte.</text>
+
+  <line class="fin" x1="480" y1="30" x2="480" y2="440" stroke-dasharray="6 6"/>
+
+  <!-- ===================== DROITE : vis de fondation ===================== -->
+  <text class="titre" x="520" y="42">Vis de fondation</text>
+  <text class="txt"   x="520" y="66">Vissées jusqu'à trouver de la résistance.</text>
+
+  <rect class="sable"   x="520" y="250" width="400" height="120"/>
+  <rect class="porteur" x="520" y="340" width="400" height="30"/>
+  <text class="lbl" x="532" y="290">sable</text>
+  <text class="lbl" x="532" y="360">couche porteuse</text>
+
+  <rect class="bois"  x="540" y="200" width="360" height="14"/>
+  <rect class="boisf" x="540" y="214" width="360" height="6"/>
+
+  <!-- vis traversant le sable jusqu'au porteur -->
+  <g class="trait">
+    <path d="M600 220 v135"/><path d="M720 220 v135"/><path d="M840 220 v135"/>
+  </g>
+  <g class="fin">
+    <path d="M594 236 l12 6 M594 252 l12 6 M594 268 l12 6 M594 284 l12 6 M594 300 l12 6 M594 316 l12 6 M594 332 l12 6"/>
+    <path d="M714 236 l12 6 M714 252 l12 6 M714 268 l12 6 M714 284 l12 6 M714 300 l12 6 M714 316 l12 6 M714 332 l12 6"/>
+    <path d="M834 236 l12 6 M834 252 l12 6 M834 268 l12 6 M834 284 l12 6 M834 300 l12 6 M834 316 l12 6 M834 332 l12 6"/>
+  </g>
+
+  <text class="txt" x="520" y="400">La charge est reprise sous le sable, pas</text>
+  <text class="txt" x="520" y="420">dessus. La pose est plus longue au départ</text>
+  <text class="txt" x="520" y="440">et supprime le rattrapage annuel.</text>
+</svg>

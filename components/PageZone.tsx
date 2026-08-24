@@ -174,9 +174,9 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </div>
         </section>
 
-        {/* Pages d'offre du secteur. Ne s'affiche que sur une page mère : c'est
-            ce qui distingue un hub de secteur d'une page de zone ordinaire. */}
-        {zone.offres && zone.offres.length > 0 && (
+        {/* Sur la page mère, les pages d'offre sont la charge utile : elles
+            viennent juste après le contexte, avant toute relance. */}
+        {!zone.parent && zone.offres && zone.offres.length > 0 && (
           <section className="py-20 md:py-28 bg-surface-container">
             <div className="max-w-container-max mx-auto px-6 md:px-16">
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
@@ -380,6 +380,37 @@ export default function PageZone({ zone }: { zone: Zone }) {
             </p>
           </div>
         </section>
+
+        {/* Sur une page d'offre, les ouvrages voisins passent après l'accès et
+            les guides : placés plus haut, ils détourneraient le visiteur de la
+            relance au moment précis où il vient d'être convaincu. */}
+        {zone.parent && zone.offres && zone.offres.length > 0 && (
+          <section className="py-20 md:py-28 bg-surface-container">
+            <div className="max-w-container-max mx-auto px-6 md:px-16">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
+                {zone.parent ? 'Nos autres ouvrages' : 'Nos ouvrages'} {zone.article} {zone.nom}
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
+                Chaque page traite la contrainte propre à son ouvrage — elles ne se répètent pas.
+              </p>
+              <ul className="grid md:grid-cols-2 gap-8">
+                {zone.offres.map((o) => (
+                  <li key={o.slug} className="border-t-2 border-secondary/40 pt-5">
+                    <a
+                      href={`/${o.slug}`}
+                      className="font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors"
+                    >
+                      {o.titre}
+                    </a>
+                    <p className="font-body-md text-body-md text-on-surface-variant mt-3">
+                      {o.resume}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
 
         {/* FAQ */}
         <section className="py-20 md:py-28 bg-surface-container">

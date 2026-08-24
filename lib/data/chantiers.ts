@@ -1,5 +1,5 @@
 // =========================================================================
-// L'ESPRIT BOIS — chantiers documentés.
+// L'ESPRIT BOIS, chantiers documentés.
 //
 // Source unique des études de cas : /realisations les affiche toutes, les pages
 // de zone (lib/data/zones.ts) en reprennent un sous-ensemble par `id`. Un
@@ -7,7 +7,7 @@
 // =========================================================================
 
 /** Un chantier documenté : commune réelle, ouvrage réel, contrainte réelle, durée réelle.
- *  Toutes ces données viennent de l'entreprise — rien n'est extrapolé. */
+ *  Toutes ces données viennent de l'entreprise, rien n'est extrapolé. */
 export type Chantier = {
   id: string;
   commune: string;
@@ -39,7 +39,7 @@ export const CHANTIERS: Chantier[] = [
     ],
     paragraphes: [
       "La terrasse était plein sud. En juillet, elle devenait inutilisable passé onze heures ; l'hiver, c'était le seul endroit de la maison à capter du soleil. Le client ne voulait pas choisir entre les deux.",
-      "Une pergola à couverture opaque aurait réglé la chaleur en assombrissant la pièce qui donne dessus. Nous avons donc composé la toiture : du panneau sandwich isolé sur la plus grande partie, qui coupe le rayonnement et évite l'effet de fournaise sous la tôle, et une bande vitrée au droit de la baie pour que la lumière continue d'entrer. Deux stores électriques verticaux ferment les côtés exposés au soleil rasant de fin de journée — on les descend quand il faut, on les remonte le reste du temps.",
+      "Une pergola à couverture opaque aurait réglé la chaleur en assombrissant la pièce qui donne dessus. Nous avons donc composé la toiture : du panneau sandwich isolé sur la plus grande partie, qui coupe le rayonnement et évite l'effet de fournaise sous la tôle, et une bande vitrée au droit de la baie pour que la lumière continue d'entrer. Deux stores électriques verticaux ferment les côtés exposés au soleil rasant de fin de journée, on les descend quand il faut, on les remonte le reste du temps.",
       "La structure est en aluminium thermolaqué, adossée à la façade. La terrasse bois sur laquelle elle repose avait été construite par le client lui-même : nos poteaux la traversent pour descendre jusqu'à leurs propres appuis, sans s'appuyer sur son platelage ni obliger à la reprendre.",
       "Trois jours sur place, structure, couverture et stores compris. C'est le rythme d'un ouvrage préparé en atelier : on arrive avec des pièces à assembler, pas à fabriquer.",
     ],
@@ -170,7 +170,7 @@ export const CHANTIERS: Chantier[] = [
     ],
     paragraphes: [
       "Le client de Montussan voulait un espace bar couvert, avec plancha et plan de travail, dans une cour fermée sur ses côtés.",
-      "Une pose en tunnel — entre deux ouvrages existants, sans possibilité de reculer pour ajuster — ne pardonne pas l'approximation. Il n'y a pas de jeu de montage : la structure entre au millimètre, ou elle n'entre pas. Toutes les cotes ont donc été relevées sur place, et la pergola fabriquée sur mesure à partir de ce relevé plutôt qu'à partir d'un modèle standard rattrapé par des habillages.",
+      "Une pose en tunnel (entre deux ouvrages existants, sans possibilité de reculer pour ajuster) ne pardonne pas l'approximation. Il n'y a pas de jeu de montage : la structure entre au millimètre, ou elle n'entre pas. Toutes les cotes ont donc été relevées sur place, et la pergola fabriquée sur mesure à partir de ce relevé plutôt qu'à partir d'un modèle standard rattrapé par des habillages.",
       "La couverture est en panneau isolé, et ce n'est pas un détail de confort : sous une simple plaque, un espace bar orienté plein soleil devient un four en plein été. Ici, on peut cuisiner dessous à midi.",
       'Deux jours de pose pour la structure.',
     ],
@@ -192,7 +192,7 @@ export const CHANTIERS: Chantier[] = [
     ],
     paragraphes: [
       "Trois voitures à abriter, un terrain en pente et un budget serré : à Capian, les trois contraintes tiraient dans des directions opposées.",
-      "Sur un sol horizontal, on coule une dalle ou des plots et l'affaire est réglée. En pente, une dalle suppose un terrassement, un décaissement et un soutènement — soit une bonne part du budget dépensée avant d'avoir posé le premier poteau.",
+      "Sur un sol horizontal, on coule une dalle ou des plots et l'affaire est réglée. En pente, une dalle suppose un terrassement, un décaissement et un soutènement, soit une bonne part du budget dépensée avant d'avoir posé le premier poteau.",
       "Nous avons donc fondé le carport sur des vis de fondation d'un mètre cinquante, vissées directement dans le sol. Chaque pied se règle indépendamment en hauteur, ce qui permet de rattraper la pente sans toucher au terrain. Pas de béton, pas d'évacuation de terre, pas de délai de séchage : le budget passe dans la structure au lieu de partir dans le sol.",
       "Le carport fait 6 mètres sur 9, en bois avec couverture bac acier, dimensionné pour trois véhicules de front. Une journée de taille à l'atelier, deux jours de pose sur place.",
     ],

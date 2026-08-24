@@ -39,10 +39,10 @@ export function GET() {
   const corps = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${xmlEscape(SITE.nom)} — le blog</title>
+    <title>${xmlEscape(SITE.nom)}, le blog</title>
     <link>${base}/blog</link>
     <atom:link href="${base}/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>Guides techniques bois et aluminium — terrasses, pergolas, carports, extensions — par un charpentier de Libourne (Gironde).</description>
+    <description>Guides techniques bois et aluminium (terrasses, pergolas, carports, extensions) par un charpentier de Libourne (Gironde).</description>
     <language>fr</language>
 ${items}
   </channel>

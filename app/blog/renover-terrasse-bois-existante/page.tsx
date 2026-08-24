@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -119,7 +119,7 @@ const jsonld = [
         name: 'Faut-il une autorisation pour rénover une terrasse en bois existante ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Remettre en état une terrasse existante à l'identique, sans changer son emprise ni sa hauteur, relève de l'entretien et n'appelle en principe aucune formalité. En revanche, dès que le projet modifie l'ouvrage — agrandissement de l'emprise, surélévation, ajout d'une couverture —, une déclaration préalable peut être exigée, selon le PLU de votre commune. Le service urbanisme de la mairie tranche : nous faisons cette vérification avant d'engager le chantier.",
+          text: "Remettre en état une terrasse existante à l'identique, sans changer son emprise ni sa hauteur, relève de l'entretien et n'appelle en principe aucune formalité. En revanche, dès que le projet modifie l'ouvrage (agrandissement de l'emprise, surélévation, ajout d'une couverture), une déclaration préalable peut être exigée, selon le PLU de votre commune. Le service urbanisme de la mairie tranche : nous faisons cette vérification avant d'engager le chantier.",
         },
       },
       {
@@ -195,7 +195,7 @@ const faq = [
       <>
         Remettre en état une terrasse existante à l&apos;identique, sans changer son emprise ni sa hauteur, relève de
         l&apos;entretien et n&apos;appelle en principe aucune formalité. En revanche, dès que le projet modifie
-        l&apos;ouvrage — agrandissement de l&apos;emprise, surélévation, ajout d&apos;une couverture —, une{' '}
+        l&apos;ouvrage (agrandissement de l&apos;emprise, surélévation, ajout d&apos;une couverture), une{' '}
         <a
           href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
           className={lienInterne}
@@ -292,8 +292,8 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>5 août 2026</span>
@@ -310,7 +310,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
               <strong className="text-primary font-semibold">
                 Avant de dépenser un euro sur une terrasse fatiguée, retournez le raisonnement : dans neuf cas sur dix,
                 ce qui décide entre poncer, remplacer les lames ou tout déposer n&apos;est pas la couleur grise du
-                platelage — purement esthétique et parfaitement réversible — mais l&apos;état de la sous-face :
+                platelage, purement esthétique et parfaitement réversible, mais l&apos;état de la sous-face :
                 lambourdes, appuis, ventilation, fixations. Une terrasse grise, fendue et pleine d&apos;échardes se
                 rénove très bien en surface. Une terrasse dont les lambourdes travaillent doit être déposée, même si les
                 lames sont encore belles.
@@ -380,8 +380,8 @@ export default function ArticleRenoverTerrasseBoisPage() {
                 <strong className="text-primary font-semibold">
                   C&apos;est un phénomène de surface, esthétique, qui n&apos;enlève rien à la résistance mécanique de la
                   lame
-                </strong>{' '}
-                — et il se corrige en une journée avec un dégriseur.
+                </strong>,{' '}
+               et il se corrige en une journée avec un dégriseur.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Les fentes de retrait, elles aussi, sont normales. Le bois travaille avec les cycles d&apos;humidité :
@@ -446,7 +446,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Dernier point à vérifier si vous envisagez de changer les lames : l&apos;entraxe des lambourdes dépend
-                de l&apos;épaisseur et de l&apos;essence des lames posées — couramment de l&apos;ordre de 40 à 50 cm
+                de l&apos;épaisseur et de l&apos;essence des lames posées, couramment de l&apos;ordre de 40 à 50 cm
                 pour une lame de 27 mm, sans jamais dépasser ce que prescrit le document pour la lame retenue. Nous
                 avons détaillé toute cette partie invisible dans notre guide sur{' '}
                 <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
@@ -467,7 +467,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
             {/* 4. Rénovation de surface */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Rénovation de surface : dégriser, poncer, saturer — dans le bon ordre
+                Rénovation de surface : dégriser, poncer, saturer, dans le bon ordre
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Si la structure est saine, la remise à neuf de l&apos;aspect suit toujours la même séquence, et
@@ -491,7 +491,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 L&apos;erreur la plus fréquente en Gironde, c&apos;est le saturateur passé en plein été sur une lame
                 brûlante : le produit sèche avant de pénétrer, laisse des traces et ne protège rien. On applique tôt le
-                matin, à l&apos;ombre, hors canicule — un sujet que nous détaillons dans notre article sur{' '}
+                matin, à l&apos;ombre, hors canicule, un sujet que nous détaillons dans notre article sur{' '}
                 <a href="/blog/proteger-terrasse-bois-canicule-entretien-ete" className={lienInterne}>
                   la protection d&apos;une terrasse bois en été
                 </a>
@@ -504,7 +504,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
               w={1200}
               h={800}
               alt="Application d'un saturateur au pinceau sur du bois extérieur, après dégrisage et ponçage"
-              caption="Le saturateur s'applique au pinceau, dans le sens de la fibre, sur un bois sec et froid — jamais sur une lame brûlante."
+              caption="Le saturateur s'applique au pinceau, dans le sens de la fibre, sur un bois sec et froid, jamais sur une lame brûlante."
             />
 
             {/* 5. Remplacer les lames */}
@@ -531,11 +531,11 @@ export default function ArticleRenoverTerrasseBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Si vous remplacez la totalité du platelage, c&apos;est le bon moment pour revoir l&apos;essence en
-                fonction de sa durabilité naturelle — les classes d&apos;emploi sont documentées par{' '}
+                fonction de sa durabilité naturelle, les classes d&apos;emploi sont documentées par{' '}
                 <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   l&apos;institut technologique FCBA
-                </a>{' '}
-                — et de votre exposition réelle. Notre guide{' '}
+                </a>,{' '}
+               et de votre exposition réelle. Notre guide{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   quel bois choisir pour une terrasse extérieure
                 </a>{' '}
@@ -554,7 +554,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
             {/* 6. Refaire à neuf */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Quand refaire à neuf a plus de sens — et ce qu&apos;on en profite pour changer
+                Quand refaire à neuf a plus de sens, et ce qu&apos;on en profite pour changer
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Quatre situations nous font recommander la dépose totale plutôt que la rénovation :{' '}
@@ -562,7 +562,7 @@ export default function ArticleRenoverTerrasseBoisPage() {
                   la structure est atteinte sur plusieurs lambourdes ; le sol a bougé
                 </strong>{' '}
                 (tassement, racines, dalle fissurée) et la terrasse ne se rattrape plus au réglage ; la terrasse était
-                mal ventilée dès l&apos;origine, posée quasiment à même la terre — dans ce cas, la refaire à
+                mal ventilée dès l&apos;origine, posée quasiment à même la terre, dans ce cas, la refaire à
                 l&apos;identique reviendrait à reproduire la panne ; ou bien le projet change, parce que vous voulez
                 agrandir, redécouper ou sécuriser l&apos;ouvrage.
               </p>
@@ -597,8 +597,8 @@ export default function ArticleRenoverTerrasseBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Côté formalités : remettre en état une terrasse existante à l&apos;identique relève de l&apos;entretien
                 et n&apos;appelle en principe aucune démarche. C&apos;est la{' '}
-                <em>modification</em> de l&apos;ouvrage — agrandissement de l&apos;emprise, surélévation, ajout
-                d&apos;une couverture — qui peut déclencher une{' '}
+                <em>modification</em> de l&apos;ouvrage, agrandissement de l&apos;emprise, surélévation, ajout
+                d&apos;une couverture, qui peut déclencher une{' '}
                 <a
                   href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
                   className={lienInterne}

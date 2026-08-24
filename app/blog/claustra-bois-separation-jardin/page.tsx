@@ -9,7 +9,7 @@ const COVER = '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-claire-voi
 export const metadata: Metadata = buildMetadata({
   title: 'Claustra bois : masquer un vis-à-vis sans clôturer, en Gironde',
   description:
-    "Un claustra ne borne aucune limite : il masque un axe de regard. Ajour, motif, ancrage, essences et budget — le guide d'un artisan à Libourne (Gironde).",
+    "Un claustra ne borne aucune limite : il masque un axe de regard. Ajour, motif, ancrage, essences et budget, le guide d'un artisan à Libourne (Gironde).",
   keywords:
     'claustra bois, claustra jardin, brise-vue terrasse bois, cacher un local technique piscine, claustra bois Gironde, séparation de jardin Libourne, claustra lames verticales, panneau ajouré bois, claustra sur terrasse bois',
   path: '/blog/claustra-bois-separation-jardin',
@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -75,7 +75,7 @@ const jsonld = [
     headline:
       "Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture",
     description:
-      "Un claustra n'est pas une clôture courte : posé à l'intérieur de la parcelle, il masque un axe de regard précis et obéit à des règles bien plus légères. Taux d'ajour et prise au vent, motifs de lames, ancrage au sol ou sur une terrasse existante, essences, vieillissement et budget — le guide d'un artisan à Libourne, en Gironde.",
+      "Un claustra n'est pas une clôture courte : posé à l'intérieur de la parcelle, il masque un axe de regard précis et obéit à des règles bien plus légères. Taux d'ajour et prise au vent, motifs de lames, ancrage au sol ou sur une terrasse existante, essences, vieillissement et budget, le guide d'un artisan à Libourne, en Gironde.",
     image: 'https://lesprit-bois.fr' + COVER,
     author: {
       '@type': 'Person',
@@ -117,7 +117,7 @@ const jsonld = [
         name: 'Quelle différence entre un claustra et une clôture ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "La clôture borne une limite de propriété : elle court sur tout un linéaire, elle regarde le voisin et elle relève à ce titre du règlement d'urbanisme local et des règles de voisinage. Le claustra, lui, se pose à l'intérieur de la parcelle : il ne borne rien, il masque un point précis — un local technique, une fenêtre en vis-à-vis, un coin de terrasse. C'est un ouvrage de composition, généralement bien plus court, dont la longueur et la hauteur se décident au regard, pas au mètre linéaire de la limite.",
+          text: "La clôture borne une limite de propriété : elle court sur tout un linéaire, elle regarde le voisin et elle relève à ce titre du règlement d'urbanisme local et des règles de voisinage. Le claustra, lui, se pose à l'intérieur de la parcelle : il ne borne rien, il masque un point précis, un local technique, une fenêtre en vis-à-vis, un coin de terrasse. C'est un ouvrage de composition, généralement bien plus court, dont la longueur et la hauteur se décident au regard, pas au mètre linéaire de la limite.",
         },
       },
       {
@@ -141,7 +141,7 @@ const jsonld = [
         name: 'Peut-on poser un claustra sur une terrasse en bois existante ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui, mais jamais en vissant les poteaux dans les lames. Une lame de terrasse n'est pas une pièce porteuse : elle ne reprend pas l'effort de bras de levier d'un panneau qui prend le vent, et elle finit par se déchirer autour des vis. Il faut descendre jusqu'à la structure — lambourdes, plots — ou créer un appui dédié sous le platelage, quitte à déposer quelques lames le temps du chantier. C'est le point que nous vérifions en premier quand un claustra doit s'implanter sur une terrasse déjà en place.",
+          text: "Oui, mais jamais en vissant les poteaux dans les lames. Une lame de terrasse n'est pas une pièce porteuse : elle ne reprend pas l'effort de bras de levier d'un panneau qui prend le vent, et elle finit par se déchirer autour des vis. Il faut descendre jusqu'à la structure (lambourdes, plots) ou créer un appui dédié sous le platelage, quitte à déposer quelques lames le temps du chantier. C'est le point que nous vérifions en premier quand un claustra doit s'implanter sur une terrasse déjà en place.",
         },
       },
       {
@@ -149,7 +149,7 @@ const jsonld = [
         name: 'Quel bois choisir pour un claustra, et faut-il le traiter ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Les mêmes essences que pour un bardage ou une clôture : douglas, mélèze, châtaignier, ou pin maritime local traité pour un budget contenu. La vraie précaution n'est pas dans l'essence mais dans la mise en œuvre — aucune pièce en contact avec le sol, une quincaillerie inox, et un traitement des deux faces avant la pose, car la face arrière d'un claustra plaqué contre un local technique devient inaccessible ensuite. Le grisaillement, lui, est esthétique et réversible : il n'enlève rien à la solidité.",
+          text: "Les mêmes essences que pour un bardage ou une clôture : douglas, mélèze, châtaignier, ou pin maritime local traité pour un budget contenu. La vraie précaution n'est pas dans l'essence mais dans la mise en œuvre, aucune pièce en contact avec le sol, une quincaillerie inox, et un traitement des deux faces avant la pose, car la face arrière d'un claustra plaqué contre un local technique devient inaccessible ensuite. Le grisaillement, lui, est esthétique et réversible : il n'enlève rien à la solidité.",
         },
       },
       {
@@ -203,11 +203,11 @@ const faq = [
     r: (
       <>
         La clôture borne une limite de propriété : elle court sur tout un linéaire, elle regarde le voisin et elle relève
-        à ce titre du règlement d&apos;urbanisme local et des règles de voisinage — c&apos;est le sujet de notre{' '}
+        à ce titre du règlement d&apos;urbanisme local et des règles de voisinage, c&apos;est le sujet de notre{' '}
         <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
           guide clôture et brise-vue en bois
         </a>
-        . Le claustra, lui, se pose à l&apos;intérieur de la parcelle : il ne borne rien, il masque un point précis — un
+        . Le claustra, lui, se pose à l&apos;intérieur de la parcelle : il ne borne rien, il masque un point précis, un
         local technique, une fenêtre en vis-à-vis, un coin de terrasse. C&apos;est un ouvrage de composition,
         généralement bien plus court, dont la longueur et la hauteur se décident au regard, pas au mètre linéaire de la
         limite.
@@ -222,7 +222,7 @@ const faq = [
         qu&apos;un claustra ne demande jamais rien. Tout dépend du plan local d&apos;urbanisme de votre commune, de la
         hauteur de l&apos;ouvrage et du secteur : en secteur protégé ou aux abords d&apos;un monument, les règles
         changent complètement, et un lotissement peut ajouter son propre règlement. Le bon réflexe est un passage en
-        mairie dès qu&apos;on prend de la hauteur ou qu&apos;on est en secteur sensible — au besoin, une{' '}
+        mairie dès qu&apos;on prend de la hauteur ou qu&apos;on est en secteur sensible, au besoin, une{' '}
         <a
           href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
           className={lienInterne}
@@ -254,12 +254,12 @@ const faq = [
       <>
         Oui, mais jamais en vissant les poteaux dans les lames. Une lame de terrasse n&apos;est pas une pièce porteuse :
         elle ne reprend pas l&apos;effort de bras de levier d&apos;un panneau qui prend le vent, et elle finit par se
-        déchirer autour des vis. Il faut descendre jusqu&apos;à la structure — lambourdes, plots, comme nous
+        déchirer autour des vis. Il faut descendre jusqu&apos;à la structure, lambourdes, plots, comme nous
         l&apos;expliquons dans notre article sur{' '}
         <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
           la structure d&apos;une terrasse bois
-        </a>{' '}
-        — ou créer un appui dédié sous le platelage, quitte à déposer quelques lames le temps du chantier. C&apos;est le
+        </a>,{' '}
+       ou créer un appui dédié sous le platelage, quitte à déposer quelques lames le temps du chantier. C&apos;est le
         point que nous vérifions en premier quand un claustra doit s&apos;implanter sur une terrasse déjà en place.
       </>
     ),
@@ -269,8 +269,8 @@ const faq = [
     r: (
       <>
         Les mêmes essences que pour un bardage ou une clôture : douglas, mélèze, châtaignier, ou pin maritime local
-        traité pour un budget contenu. La vraie précaution n&apos;est pas dans l&apos;essence mais dans la mise en œuvre
-        — aucune pièce en contact avec le sol, une quincaillerie inox, et un traitement des deux faces avant la pose, car
+        traité pour un budget contenu. La vraie précaution n&apos;est pas dans l&apos;essence mais dans la mise en œuvre,
+       aucune pièce en contact avec le sol, une quincaillerie inox, et un traitement des deux faces avant la pose, car
         la face arrière d&apos;un claustra plaqué contre un local technique devient inaccessible ensuite. Le
         grisaillement, lui, est esthétique et réversible : il n&apos;enlève rien à la solidité.
       </>
@@ -338,8 +338,8 @@ export default function ArticleClaustraBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>23 août 2026</span>
@@ -354,14 +354,14 @@ export default function ArticleClaustraBoisPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">Un claustra n&apos;est pas une clôture courte.</strong> Il
-              ne ferme pas une limite de propriété : il masque un point précis — un local technique, un vis-à-vis de
+              ne ferme pas une limite de propriété : il masque un point précis, un local technique, un vis-à-vis de
               fenêtre à fenêtre, un coin de terrasse. Et parce qu&apos;il ne borne rien, il obéit à des règles bien plus
               légères que celles d&apos;une clôture : c&apos;est ce qui en fait, dans nos jardins girondins, la solution
               la plus rapide à mettre en œuvre. Reste la vraie question, celle que presque personne ne pose avant de
               commander un panneau :{' '}
               <strong className="text-primary font-semibold">on ne masque pas une vue, on masque un axe de regard.</strong>{' '}
               Ce qui compte, ce n&apos;est pas la longueur du claustra, c&apos;est d&apos;où l&apos;on regarde et depuis
-              où l&apos;on est vu — et à ce jeu-là, un claustra bien implanté est très souvent beaucoup plus court et
+              où l&apos;on est vu, et à ce jeu-là, un claustra bien implanté est très souvent beaucoup plus court et
               plus bas qu&apos;on ne l&apos;imagine.
             </p>
           </div>
@@ -370,13 +370,13 @@ export default function ArticleClaustraBoisPage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Claustra ou clôture */}
+            {/* 1, Claustra ou clôture */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Claustra ou clôture : ce qui change dès qu&apos;on ne borne plus une limite
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Les deux ouvrages se ressemblent — des poteaux, des lames, du bois — et pourtant ils ne relèvent pas du
+                Les deux ouvrages se ressemblent (des poteaux, des lames, du bois) et pourtant ils ne relèvent pas du
                 même métier ni des mêmes contraintes. Une clôture{' '}
                 <strong className="text-primary font-semibold">borne</strong> : elle marque la limite entre deux
                 propriétés, court sur tout un linéaire, et concerne le voisin autant que vous. Un claustra{' '}
@@ -386,10 +386,10 @@ export default function ArticleClaustraBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Cette différence a une conséquence directe.{' '}
                 <strong className="text-primary font-semibold">
-                  Tout le corpus de règles qui encadre une clôture — hauteurs autorisées, distances, rapports de
-                  voisinage — s&apos;applique à la limite séparative
-                </strong>
-                , et nous l&apos;avons traité en détail dans notre guide{' '}
+                  Tout le corpus de règles qui encadre une clôture (hauteurs autorisées, distances, rapports de
+                  voisinage) s&apos;applique à la limite séparative
+                </strong>,
+                et nous l&apos;avons traité en détail dans notre guide{' '}
                 <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
                   clôture et brise-vue en bois
                 </a>
@@ -405,8 +405,8 @@ export default function ArticleClaustraBoisPage() {
                 <strong className="text-primary font-semibold">
                   Le régime est bien plus léger que celui d&apos;une clôture de limite, mais un passage en mairie reste
                   le bon réflexe dès qu&apos;on prend de la hauteur ou qu&apos;on est en secteur protégé
-                </strong>{' '}
-                — et selon la commune, une{' '}
+                </strong>,{' '}
+               et selon la commune, une{' '}
                 <a
                   href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
                   className={lienInterne}
@@ -433,14 +433,14 @@ export default function ArticleClaustraBoisPage() {
               caption="Un seul et même panneau : à gauche, pris presque de face, il laisse passer le jardin ; à droite, dès que le regard devient oblique, le chant des lames l'a refermé. C'est l'angle qui masque, pas la largeur du jour."
             />
 
-            {/* 2 — Les trois usages */}
+            {/* 2, Les trois usages */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Les trois usages qui reviennent : local technique, vis-à-vis, coin de terrasse
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 En une saison, les demandes de claustra que nous recevons se rangent presque toutes dans trois cases. Et
-                chacune appelle un ouvrage différent — même essence, même savoir-faire, mais pas la même géométrie.
+                chacune appelle un ouvrage différent, même essence, même savoir-faire, mais pas la même géométrie.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Le local technique</strong> arrive en tête, piscine en
@@ -467,7 +467,7 @@ export default function ArticleClaustraBoisPage() {
                 spontanément à un rideau continu tout le long du jardin. Dans les faits, la gêne est presque toujours{' '}
                 <em>ponctuelle</em> : c&apos;est une fenêtre d&apos;étage précise, un balcon, un angle de terrasse
                 voisine. Une fois qu&apos;on identifie cet axe-là, un panneau de deux ou trois mètres, correctement
-                placé, supprime la gêne aussi bien que quinze mètres de clôture — pour un cinquième du budget, et sans
+                placé, supprime la gêne aussi bien que quinze mètres de clôture, pour un cinquième du budget, et sans
                 assombrir le jardin.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -481,7 +481,7 @@ export default function ArticleClaustraBoisPage() {
               </p>
             </section>
 
-            {/* 3 — Le taux d'ajour */}
+            {/* 3, Le taux d'ajour */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Le taux d&apos;ajour : masquer sans créer un mur, et sans prendre le vent
@@ -491,8 +491,8 @@ export default function ArticleClaustraBoisPage() {
                 suite :{' '}
                 <strong className="text-primary font-semibold">
                   « 30 % d&apos;ajour » n&apos;est pas une norme, ce n&apos;est même pas un repère utile
-                </strong>
-                , parce que l&apos;occultation ne dépend pas d&apos;un ratio mais d&apos;une géométrie. Deux panneaux au
+                </strong>,
+                parce que l&apos;occultation ne dépend pas d&apos;un ratio mais d&apos;une géométrie. Deux panneaux au
                 jour identique masqueront très différemment selon l&apos;épaisseur des lames, la distance à laquelle on
                 se tient et, surtout, l&apos;angle sous lequel on regarde.
               </p>
@@ -502,15 +502,15 @@ export default function ArticleClaustraBoisPage() {
                 pratiquement opaque dès qu&apos;on s&apos;écarte de l&apos;axe : c&apos;est le réglage des vis-à-vis
                 latéraux, quand le regard arrive de côté. Un{' '}
                 <strong className="text-primary font-semibold">jour égal à la lame</strong> reste franchement traversant
-                de face : il filtre, il joue avec la lumière, il ne cache pas — c&apos;est un choix de composition, pas
+                de face : il filtre, il joue avec la lumière, il ne cache pas, c&apos;est un choix de composition, pas
                 d&apos;intimité. Et plus la lame est épaisse, plus le panneau se ferme vite en tournant autour, parce que
                 c&apos;est le chant du bois qui masque, pas sa face.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 D&apos;où notre méthode de relevé, qui prend dix minutes et évite des erreurs coûteuses : on se place
                 d&apos;abord{' '}
-                <strong className="text-primary font-semibold">là où l&apos;on est vu</strong> — assis sur le transat,
-                pas debout —, puis on va se mettre{' '}
+                <strong className="text-primary font-semibold">là où l&apos;on est vu</strong> (assis sur le transat,
+                pas debout), puis on va se mettre{' '}
                 <strong className="text-primary font-semibold">là d&apos;où l&apos;on regarde</strong>, chez soi ou
                 depuis la limite. Entre ces deux points, on tend un drap ou on plante deux piquets. Neuf fois sur dix, le
                 claustra nécessaire est plus court et plus bas que ce qui était envisagé, et il se décale de deux mètres
@@ -521,7 +521,7 @@ export default function ArticleClaustraBoisPage() {
                 <strong className="text-primary font-semibold">
                   un panneau plein est une voile, un panneau ajouré laisse respirer le vent
                 </strong>
-                . Sur nos chantiers, ce que nous observons est constant — les désordres n&apos;apparaissent jamais sur
+                . Sur nos chantiers, ce que nous observons est constant, les désordres n&apos;apparaissent jamais sur
                 les claires-voies, ils apparaissent sur les panneaux pleins mal ancrés, qui se mettent à jouer, puis à
                 pousser le poteau. En Gironde, entre les coups de vent d&apos;ouest et les orages d&apos;été, refermer un
                 claustra à l&apos;extrême oblige à surdimensionner ses appuis. Ajourer, c&apos;est aussi acheter de la
@@ -529,7 +529,7 @@ export default function ArticleClaustraBoisPage() {
               </p>
             </section>
 
-            {/* 4 — Les motifs */}
+            {/* 4, Les motifs */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Lames verticales, horizontales, à claire-voie, croisillons : ce que chaque motif donne à voir
@@ -570,14 +570,14 @@ export default function ArticleClaustraBoisPage() {
                 logique de pose d&apos;une façade, développée dans notre guide du{' '}
                 <a href="/blog/bardage-bois-facade-essences-pose" className={lienInterne}>
                   bardage bois en façade
-                </a>
-                , dont un claustra est le cousin proche : mêmes lames, mêmes essences, même attention aux points où
+                </a>,
+                dont un claustra est le cousin proche : mêmes lames, mêmes essences, même attention aux points où
                 l&apos;eau s&apos;attarde.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 La seconde concerne <strong className="text-primary font-semibold">la cohérence</strong>. Un claustra qui
-                reprend le motif, le sens et la teinte d&apos;un ouvrage déjà présent — un bardage, une clôture, la
-                sous-face d&apos;une pergola — disparaît dans la composition. Un claustra au motif inédit, posé au milieu
+                reprend le motif, le sens et la teinte d&apos;un ouvrage déjà présent, un bardage, une clôture, la
+                sous-face d&apos;une pergola, disparaît dans la composition. Un claustra au motif inédit, posé au milieu
                 d&apos;un jardin qui parle une autre langue, saute aux yeux : au lieu de masquer quelque chose, il
                 devient lui-même la chose qu&apos;on regarde. C&apos;est le piège classique des panneaux décoratifs
                 achetés en jardinerie.
@@ -589,10 +589,10 @@ export default function ArticleClaustraBoisPage() {
               w={1200}
               h={800}
               alt="Panneau de claustra en bois à lames horizontales, jour étroit entre les lames et montant d'ossature en bout de panneau"
-              caption="Jour étroit entre lames horizontales : le panneau se ferme vite dès qu'on quitte l'axe. Reste que chaque lame présente une face qui garde la pluie — c'est le chanfrein donné à la pose qui fait la différence dans dix ans."
+              caption="Jour étroit entre lames horizontales : le panneau se ferme vite dès qu'on quitte l'axe. Reste que chaque lame présente une face qui garde la pluie, c'est le chanfrein donné à la pose qui fait la différence dans dix ans."
             />
 
-            {/* 5 — Ancrage */}
+            {/* 5, Ancrage */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ancrage : au sol, sur plots, sur une terrasse existante
@@ -613,15 +613,15 @@ export default function ArticleClaustraBoisPage() {
                 pluie ni l&apos;humidité du massif. C&apos;est le même principe que sous les poteaux d&apos;un carport,
                 et c&apos;est ce qui explique qu&apos;un ouvrage bien posé grise tranquillement pendant que le voisin
                 pourrit par le pied. Nous ne donnons volontairement aucune dimension de massif ici : elle dépend de la
-                hauteur, du motif, de la nature du sol — argile, sable, remblai récent — et cela se décide sur place.
+                hauteur, du motif, de la nature du sol (argile, sable, remblai récent) et cela se décide sur place.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Sur une terrasse en bois existante</strong>, c&apos;est le
                 cas le plus fréquent et le plus mal traité. La tentation est de visser les poteaux dans les lames :
                 jamais. Une lame de platelage n&apos;est pas une pièce porteuse, elle ne reprend aucun effort de levier,
                 et elle finit par se déchirer autour des vis. Il faut{' '}
-                <strong className="text-primary font-semibold">descendre chercher la structure</strong> — lambourdes,
-                plots, ou un appui dédié créé pour l&apos;occasion —, quitte à déposer quelques lames le temps du
+                <strong className="text-primary font-semibold">descendre chercher la structure</strong> (lambourdes,
+                plots, ou un appui dédié créé pour l&apos;occasion), quitte à déposer quelques lames le temps du
                 chantier et à les reposer ensuite. Notre article sur{' '}
                 <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
                   la structure d&apos;une terrasse bois
@@ -629,8 +629,8 @@ export default function ArticleClaustraBoisPage() {
                 explique ce qui se trouve sous vos pieds et pourquoi tout se joue là.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                <strong className="text-primary font-semibold">Sur une dalle, un carrelage ou une terrasse maçonnée</strong>
-                , on travaille en platines chevillées — à condition de savoir ce qu&apos;il y a sous la dalle. Percer une
+                <strong className="text-primary font-semibold">Sur une dalle, un carrelage ou une terrasse maçonnée</strong>,
+                on travaille en platines chevillées, à condition de savoir ce qu&apos;il y a sous la dalle. Percer une
                 terrasse étanchée au-dessus d&apos;un volume habité n&apos;est pas un geste anodin, et nous préférons
                 alors des solutions qui ne traversent pas : appuis rapportés, jardinières lestées, panneau autoportant
                 calé sur une structure indépendante.
@@ -653,7 +653,7 @@ export default function ArticleClaustraBoisPage() {
               caption="Ce carport que nous avons posé à Capian montre le principe qui vaut aussi sous un claustra : chaque poteau est repris sur un pied métallique, et le bois ne touche jamais le sol."
             />
 
-            {/* 6 — Essences et vieillissement */}
+            {/* 6, Essences et vieillissement */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Essences, finition et vieillissement
@@ -661,7 +661,7 @@ export default function ArticleClaustraBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un claustra est un ouvrage vertical, ventilé sur ses deux faces, jamais piétiné : c&apos;est, avec le
                 bardage, l&apos;une des situations les plus favorables au bois. Les essences que nous employons sont
-                celles de nos clôtures et de nos façades — <strong className="text-primary font-semibold">douglas</strong>{' '}
+                celles de nos clôtures et de nos façades, <strong className="text-primary font-semibold">douglas</strong>{' '}
                 et <strong className="text-primary font-semibold">mélèze</strong> pour leur excellent rapport
                 durabilité-prix, <strong className="text-primary font-semibold">châtaignier</strong> pour un feuillu
                 local à la belle patine, <strong className="text-primary font-semibold">pin maritime</strong> traité de
@@ -679,7 +679,7 @@ export default function ArticleClaustraBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Trois précautions de mise en œuvre pèsent plus lourd que l&apos;essence elle-même. La première :{' '}
-                <strong className="text-primary font-semibold">aucune pièce de bois en contact avec le sol</strong> —
+                <strong className="text-primary font-semibold">aucune pièce de bois en contact avec le sol</strong>,
                 cadre relevé, lames arrêtées au-dessus de la terre ou du gravier, végétation tenue à distance. La
                 deuxième : <strong className="text-primary font-semibold">une quincaillerie inox</strong>, faute de quoi
                 chaque fixation laisse couler une traînée noire sur la lame au bout de deux hivers. La troisième, celle
@@ -695,7 +695,7 @@ export default function ArticleClaustraBoisPage() {
                 <a href="/blog/renover-terrasse-bois-existante" className={lienInterne}>
                   rénovation d&apos;une terrasse existante
                 </a>
-                . Si vous tenez à la teinte d&apos;origine, un saturateur se recharge sans décapage — au bon moment de
+                . Si vous tenez à la teinte d&apos;origine, un saturateur se recharge sans décapage, au bon moment de
                 l&apos;année, et pas n&apos;importe lequel : c&apos;est tout le propos de notre article sur{' '}
                 <a href="/blog/traiter-bois-exterieur-avant-hiver" className={lienInterne}>
                   le traitement des bois avant l&apos;hiver
@@ -710,10 +710,10 @@ export default function ArticleClaustraBoisPage() {
               w={1200}
               h={900}
               alt="Claustra en bois ajouré refermé en angle autour d'un équipement technique extérieur"
-              caption="Un habillage à claire-voie posé autour d'un équipement technique, décollé du matériel : l'ajour n'est pas décoratif, il laisse respirer les appareils — et la face avant doit pouvoir se déposer sans outillage."
+              caption="Un habillage à claire-voie posé autour d'un équipement technique, décollé du matériel : l'ajour n'est pas décoratif, il laisse respirer les appareils, et la face avant doit pouvoir se déposer sans outillage."
             />
 
-            {/* 7 — Budget et délai */}
+            {/* 7, Budget et délai */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Budget, délai et ce qu&apos;on peut poser en une journée (Libourne, Gironde)
@@ -723,7 +723,7 @@ export default function ArticleClaustraBoisPage() {
                 <strong className="text-primary font-semibold">constatées sur nos propres chantiers en 2026</strong>,
                 autour de Libourne, et ne remplace en rien un devis. Un claustra bois posé se situe le plus souvent{' '}
                 <strong className="text-primary font-semibold">entre 250 et 700 € du mètre linéaire</strong>, fourniture
-                et pose comprises — un écart considérable, qui s&apos;explique par la hauteur, l&apos;essence, le motif
+                et pose comprises, un écart considérable, qui s&apos;explique par la hauteur, l&apos;essence, le motif
                 (une claire-voie simple ne coûte pas un tressage) et surtout par l&apos;ancrage. Pour un cache de local
                 technique de quelques mètres, ouvertures et accès compris, nous constatons plutôt une enveloppe{' '}
                 <strong className="text-primary font-semibold">entre 800 et 2 500 €</strong>.
@@ -751,7 +751,7 @@ export default function ArticleClaustraBoisPage() {
                 <strong className="text-primary font-semibold">
                   La plupart des claustras courts se posent en une journée
                 </strong>{' '}
-                quand l&apos;appui existe déjà — une terrasse dont on connaît la structure, une dalle saine, des
+                quand l&apos;appui existe déjà, une terrasse dont on connaît la structure, une dalle saine, des
                 fourreaux en place. Dès qu&apos;il faut couler des massifs, comptez une intervention pour la
                 préparation, le temps que le béton fasse sa prise, puis une seconde pour le montage. C&apos;est le genre
                 de chantier que nous glissons entre deux gros ouvrages, et c&apos;est aussi pour cela qu&apos;il rend
@@ -762,8 +762,8 @@ export default function ArticleClaustraBoisPage() {
                 d&apos;un aménagement plus large. Ils font partie de notre offre d&apos;
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
-                </a>{' '}
-                — au même titre que les bardages et les cloisons ajourées — et se raccordent naturellement à nos{' '}
+                </a>,{' '}
+               au même titre que les bardages et les cloisons ajourées, et se raccordent naturellement à nos{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
                 </a>{' '}
@@ -817,7 +817,7 @@ export default function ArticleClaustraBoisPage() {
             </h2>
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Avant de chiffrer un linéaire, allez vous asseoir là où vous êtes gêné, puis allez voir d&apos;où l&apos;on
-              vous regarde. C&apos;est ce trajet-là qui dessine le claustra : sa position, sa hauteur, son ajour — et
+              vous regarde. C&apos;est ce trajet-là qui dessine le claustra : sa position, sa hauteur, son ajour, et
               presque toujours un ouvrage plus modeste, plus lumineux et moins cher que celui qu&apos;on imaginait. Le
               reste tient à l&apos;ancrage et à un bois tenu à l&apos;écart du sol. Chez L&apos;Esprit Bois, entreprise
               certifiée Qualibat installée près de Libourne, nous concevons et posons ces séparations de jardin dans

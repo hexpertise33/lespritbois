@@ -97,7 +97,7 @@ const jsonld = [
         name: 'Faut-il une autorisation pour installer un poulailler en bois ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "En dessous de 5 m² d'emprise au sol, aucune formalité d'urbanisme n'est requise — sauf en secteur protégé (abords d'un monument historique, site classé), où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration préalable en mairie s'impose (instruction environ un mois). Au-delà de 20 m², c'est un permis de construire. Au-delà de 5 m² clos et couvert, une taxe d'aménagement peut s'appliquer, et le PLU comme le Code civil encadrent la hauteur et l'implantation en limite de propriété.",
+          text: "En dessous de 5 m² d'emprise au sol, aucune formalité d'urbanisme n'est requise, sauf en secteur protégé (abords d'un monument historique, site classé), où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration préalable en mairie s'impose (instruction environ un mois). Au-delà de 20 m², c'est un permis de construire. Au-delà de 5 m² clos et couvert, une taxe d'aménagement peut s'appliquer, et le PLU comme le Code civil encadrent la hauteur et l'implantation en limite de propriété.",
         },
       },
       {
@@ -142,7 +142,7 @@ const faq = [
     r: (
       <>
         En dessous de <strong className="text-primary font-semibold">5 m² d&apos;emprise au sol</strong>, aucune
-        formalité d&apos;urbanisme n&apos;est requise — sauf en secteur protégé (abords d&apos;un monument historique,
+        formalité d&apos;urbanisme n&apos;est requise, sauf en secteur protégé (abords d&apos;un monument historique,
         site classé), où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration
         préalable en mairie s&apos;impose
         (instruction environ un mois). Au-delà de 20 m², c&apos;est un permis de construire. Au-delà de 5 m² clos et
@@ -246,8 +246,8 @@ export default function ArticlePoulaillerBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>26 juillet 2026</span>
@@ -262,11 +262,11 @@ export default function ArticlePoulaillerBoisPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Avant d&apos;installer votre poulailler : en dessous de 5 m² d&apos;emprise au sol — hors secteur
-                protégé —, aucune formalité
+                Avant d&apos;installer votre poulailler : en dessous de 5 m² d&apos;emprise au sol, hors secteur
+                protégé, aucune formalité
                 d&apos;urbanisme ; de 5 à 20 m², une déclaration préalable en mairie ; au-delà, un permis de construire.
                 Attention à la hauteur, à l&apos;implantation en limite et à la taxe d&apos;aménagement dès 5 m² clos et
-                couvert — et surtout, toute détention de volailles se déclare en mairie, quelle que soit la quantité,
+                couvert, et surtout, toute détention de volailles se déclare en mairie, quelle que soit la quantité,
                 même une seule poule.
               </strong>{' '}
               L&apos;engouement pour les poules de jardin ne faiblit pas, et la fin d&apos;été est le bon moment pour
@@ -301,9 +301,9 @@ export default function ArticlePoulaillerBoisPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Moins de 5 m²', 'aucune formalité d’urbanisme hors secteur protégé — en abords de monument historique ou site classé, la déclaration préalable est due dès le premier mètre carré. Ailleurs, vous pouvez installer votre poulailler librement, sous réserve du règlement de votre commune.'],
+                  ['Moins de 5 m²', 'aucune formalité d’urbanisme hors secteur protégé, en abords de monument historique ou site classé, la déclaration préalable est due dès le premier mètre carré. Ailleurs, vous pouvez installer votre poulailler librement, sous réserve du règlement de votre commune.'],
                   ['De 5 à 20 m²', 'une déclaration préalable de travaux en mairie est nécessaire, avec une instruction d’environ un mois.'],
-                  ['Plus de 20 m²', 'vous entrez dans le champ du permis de construire — rare pour un poulailler familial, plus fréquent pour un projet mixte (poulailler + resserre).'],
+                  ['Plus de 20 m²', 'vous entrez dans le champ du permis de construire, rare pour un poulailler familial, plus fréquent pour un projet mixte (poulailler + resserre).'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -328,7 +328,7 @@ export default function ArticlePoulaillerBoisPage() {
                 (taux
                 communal souvent de l&apos;ordre de 1 à 5 %). Ensuite, une hauteur importante ou une implantation en
                 limite de propriété peuvent être encadrées par le <strong className="text-primary font-semibold">PLU</strong>{' '}
-                de votre commune et par le Code civil — un poulailler collé à la clôture du voisin n&apos;est pas
+                de votre commune et par le Code civil, un poulailler collé à la clôture du voisin n&apos;est pas
                 toujours autorisé.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -344,7 +344,7 @@ export default function ArticlePoulaillerBoisPage() {
             <Figure
               src="/images/blog/poulailler-bois-reglementation-implantation/poules-jardin-petit-poulailler-bois.webp"
               alt="Poules dans un jardin engazonné devant un petit poulailler en bois de moins de 5 m²"
-              caption="En dessous de 5 m² d'emprise au sol et hors secteur protégé, le poulailler s'installe sans formalité d'urbanisme — la déclaration des volailles, elle, reste obligatoire quelle que soit la surface."
+              caption="En dessous de 5 m² d'emprise au sol et hors secteur protégé, le poulailler s'installe sans formalité d'urbanisme, la déclaration des volailles, elle, reste obligatoire quelle que soit la surface."
             />
 
             {/* 2. Déclaration en mairie des volailles */}
@@ -384,10 +384,10 @@ export default function ArticlePoulaillerBoisPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Surface de l’abri', 'environ 0,25 m² par poule au minimum à l’intérieur du poulailler — et mieux vaut viser plus large, une poule à l’étroit vit mal.'],
+                  ['Surface de l’abri', 'environ 0,25 m² par poule au minimum à l’intérieur du poulailler, et mieux vaut viser plus large, une poule à l’étroit vit mal.'],
                   ['Parcours extérieur', 'comptez environ 4 m² par poule de parcours pour qu’elles grattent, picorent et prennent leurs bains de poussière.'],
                   ['Perchoirs', 'environ 20 cm de perchoir par poule : elles dorment perchées, c’est un besoin, pas un luxe.'],
-                  ['Pondoirs', 'un pondoir pour 3 à 4 poules suffit — elles aiment pondre au même endroit, au calme et dans la pénombre.'],
+                  ['Pondoirs', 'un pondoir pour 3 à 4 poules suffit, elles aiment pondre au même endroit, au calme et dans la pénombre.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -402,7 +402,7 @@ export default function ArticlePoulaillerBoisPage() {
                 parcours clos généreux forme une base confortable. Prévoyez aussi{' '}
                 <strong className="text-primary font-semibold">une ventilation haute sans courant d&apos;air</strong> au
                 niveau des perchoirs, et une <strong className="text-primary font-semibold">protection contre les
-                prédateurs</strong> — grillage enterré contre le renard, mailles serrées contre la fouine, sur laquelle
+                prédateurs</strong>, grillage enterré contre le renard, mailles serrées contre la fouine, sur laquelle
                 nous revenons plus bas.
               </p>
             </section>
@@ -458,8 +458,8 @@ export default function ArticlePoulaillerBoisPage() {
                 Nous détaillons ces essences, leurs classes d&apos;emploi et leurs fourchettes de prix dans notre article{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   quel bois choisir pour une terrasse extérieure
-                </a>{' '}
-                — la logique de durabilité est exactement la même pour un poulailler.
+                </a>,{' '}
+               la logique de durabilité est exactement la même pour un poulailler.
               </p>
             </section>
 
@@ -486,7 +486,7 @@ export default function ArticlePoulaillerBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Un poulailler bien implanté demande souvent d&apos;autres aménagements du même jardin — allée drainée,
+                Un poulailler bien implanté demande souvent d&apos;autres aménagements du même jardin, allée drainée,
                 clôture, parcours engazonné. C&apos;est notre métier d&apos;
                 <a href="/amenagement-exterieur" className={lienInterne}>aménagement extérieur</a> : nous pensons
                 l&apos;abri dans l&apos;ensemble du terrain, pas comme un objet posé à part.
@@ -506,7 +506,7 @@ export default function ArticlePoulaillerBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le kit du commerce a ses arguments : prix bas, montage rapide, disponibilité immédiate. Pour deux ou
-                trois poules et un budget serré, il dépanne. Mais ses limites apparaissent vite —{' '}
+                trois poules et un budget serré, il dépanne. Mais ses limites apparaissent vite,{' '}
                 <strong className="text-primary font-semibold">bois fin peu durable, ventilation mal pensée,
                 fermetures fragiles</strong> face à une fouine déterminée, et une durée de vie souvent courte sous notre
                 climat girondin humide.
@@ -604,7 +604,7 @@ export default function ArticlePoulaillerBoisPage() {
               Réglementation d&apos;urbanisme, déclaration des volailles en mairie, dimensionnement au bien-être,
               essence durable et bonne implantation : un poulailler réussi, c&apos;est tout cela réuni. C&apos;est le
               diagnostic que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute
-              la Gironde — formalités comprises. Installez le vôtre avant l&apos;hiver.
+              la Gironde, formalités comprises. Installez le vôtre avant l&apos;hiver.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

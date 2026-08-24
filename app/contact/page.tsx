@@ -7,14 +7,14 @@ import ContactForm from '@/components/ContactForm';
 import { CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Contact — charpentier à Libourne (33)',
+  title: 'Contact, charpentier à Libourne (33)',
   description:
     "Contactez L'Esprit Bois : 05 57 40 65 80, 1 Aux Pradasses aux Billaux, à 5 min de Libourne. Étude et devis gratuits en Gironde.",
   keywords:
     "contact L'Esprit Bois, charpentier Libourne contact, devis pergola Gironde, devis carport Libourne, artisan bois Les Billaux",
   path: '/contact',
   ogImage: '/images/source-adefrance/Magasin-materiaux-bois-libourne.webp',
-  ogTitle: "Contacter L'Esprit Bois — Libourne et Gironde",
+  ogTitle: "Contacter L'Esprit Bois, Libourne et Gironde",
   ville: 'Les Billaux',
 });
 

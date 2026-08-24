@@ -11,7 +11,7 @@ const PARAMETRES_SUIVIS = ['utm_source', 'utm_medium', 'utm_campaign', 'gclid'] 
 /**
  * Construit la mention d'origine ajoutée à l'e-mail de lead : la page, la
  * position du CTA sur cette page, plus les paramètres UTM/gclid présents dans
- * l'URL courante (lus au moment du submit, sans jamais rediriger la page —
+ * l'URL courante (lus au moment du submit, sans jamais rediriger la page,
  * donc sans jamais perdre le gclid que Google Ads a besoin de retrouver).
  */
 function construireOrigine(pageLabel: string, instanceId: InstanceId): string {
@@ -22,14 +22,14 @@ function construireOrigine(pageLabel: string, instanceId: InstanceId): string {
     const valeur = params.get(cle);
     return valeur ? `${cle}=${valeur}` : null;
   }).filter((v): v is string => v !== null);
-  return trouves.length > 0 ? `${base} — ${trouves.join(', ')}` : base;
+  return trouves.length > 0 ? `${base}, ${trouves.join(', ')}` : base;
 }
 
 /**
  * Formulaire de devis en page, réutilisable hors de la landing publicitaire.
  *
  * `projet` et `pageLabel` sont obligatoires : sans eux, un lead venu d'une page
- * de zone arriverait étiqueté « Pergola (landing Ads) — /devis-pergola » et
+ * de zone arriverait étiqueté « Pergola (landing Ads), /devis-pergola » et
  * l'attribution serait perdue.
  */
 export default function DevisForm({

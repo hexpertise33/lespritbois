@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -209,8 +209,8 @@ const faq = [
         hauteurs et de la limite séparative dans notre{' '}
         <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
           guide de la clôture brise-vue en bois
-        </a>
-        , et nous nous chargeons de la vérification avant d&apos;engager un chantier.
+        </a>,
+        et nous nous chargeons de la vérification avant d&apos;engager un chantier.
       </>
     ),
   },
@@ -308,8 +308,8 @@ export default function ArticleClotureAluminiumPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>13 août 2026</span>
@@ -328,7 +328,7 @@ export default function ArticleClotureAluminiumPage() {
                 profil : c&apos;est ce couple-là qui décide de la hauteur tenable, du nombre de poteaux et du type de
                 scellement.
               </strong>{' '}
-              La teinte, la finition et le dessin des lames viennent après — ils font le style, pas la tenue. Sur nos
+              La teinte, la finition et le dessin des lames viennent après, ils font le style, pas la tenue. Sur nos
               chantiers en Gironde, les clôtures alu qui penchent au bout de deux hivers ne sont presque jamais des
               clôtures mal fabriquées : ce sont des clôtures pleines posées avec le scellement d&apos;une clôture
               ajourée. Voici comment décider, dans l&apos;ordre : combien occulter, où, puis comment tenir au sol, et
@@ -357,7 +357,7 @@ export default function ArticleClotureAluminiumPage() {
                 <strong className="text-primary font-semibold">
                   elle ne remplace pas un mur, ni une haie, ni le règlement d&apos;urbanisme de votre commune.
                 </strong>{' '}
-                Elle ne coupe pas le bruit d&apos;une route — un panneau de quelques millimètres d&apos;épaisseur ne fait
+                Elle ne coupe pas le bruit d&apos;une route, un panneau de quelques millimètres d&apos;épaisseur ne fait
                 pas écran acoustique. Et elle n&apos;est pas non plus toujours le bon choix esthétique : devant une
                 maison en pierre, dans un bourg ancien, un ouvrage bois ou une clôture mixte s&apos;intègre souvent mieux.
                 Nous posons les deux matières et nous le disons sans détour ; le comparatif de fond entre alu et bois,
@@ -377,15 +377,15 @@ export default function ArticleClotureAluminiumPage() {
                   rel="noopener noreferrer"
                 >
                   déclaration préalable de travaux
-                </a>
-                , et le <strong className="text-primary font-semibold">PLU peut imposer une hauteur, une teinte ou un
-                type de clôture</strong> — cela se vérifie au service urbanisme de votre mairie, jamais par analogie avec
+                </a>,
+                et le <strong className="text-primary font-semibold">PLU peut imposer une hauteur, une teinte ou un
+                type de clôture</strong>, cela se vérifie au service urbanisme de votre mairie, jamais par analogie avec
                 le voisin. Nous n&apos;allons pas re-détailler ici les questions de hauteur autorisée et de limite
                 séparative : elles sont traitées en profondeur dans notre{' '}
                 <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
                   guide de la clôture brise-vue
-                </a>
-                , et la logique est exactement la même en aluminium.
+                </a>,
+                et la logique est exactement la même en aluminium.
               </p>
             </section>
 
@@ -425,8 +425,8 @@ export default function ArticleClotureAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Le réflexe « je prends du plein partout » coûte cher deux fois : à l&apos;achat, parce que le plein est
                 le remplissage le plus onéreux au mètre linéaire, et à la pose, parce qu&apos;il impose partout le
-                scellement le plus lourd. Un chantier bien arbitré mélange les traitements — plein sur les mètres qui le
-                méritent, ajouré ailleurs — dans la même teinte et le même profilé, ce qui donne un ensemble parfaitement
+                scellement le plus lourd. Un chantier bien arbitré mélange les traitements (plein sur les mètres qui le
+                méritent, ajouré ailleurs) dans la même teinte et le même profilé, ce qui donne un ensemble parfaitement
                 cohérent à l&apos;œil.
               </p>
             </section>
@@ -485,7 +485,7 @@ export default function ArticleClotureAluminiumPage() {
                   pergola bioclimatique
                 </a>{' '}
                 : on règle l&apos;occultation selon le moment de la journée. C&apos;est confortable, c&apos;est
-                spectaculaire sur un linéaire court devant une terrasse — et c&apos;est un mécanisme de plus à entretenir
+                spectaculaire sur un linéaire court devant une terrasse, et c&apos;est un mécanisme de plus à entretenir
                 sur une clôture de trente mètres. Nous les conseillons ponctuellement, rarement sur toute une limite.
               </p>
             </section>
@@ -503,7 +503,7 @@ export default function ArticleClotureAluminiumPage() {
                 </strong>{' '}
                 Un panneau plein ne laisse rien traverser : il se comporte comme une voile et transmet intégralement
                 l&apos;effort à ses appuis. Un remplissage ajouré, lui, laisse filer une partie de l&apos;air et sollicite
-                bien moins la structure — à hauteur égale, ce n&apos;est tout simplement pas le même ouvrage.
+                bien moins la structure, à hauteur égale, ce n&apos;est tout simplement pas le même ouvrage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Quand une clôture penche, ce n&apos;est presque jamais la lame qui a cédé, ni le poteau qui a plié :
@@ -518,7 +518,7 @@ export default function ArticleClotureAluminiumPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   'Resserrer l’entraxe des poteaux dès que l’on passe en lames pleines ou que la hauteur augmente : plus d’appuis, moins d’effort sur chacun.',
-                  'Augmenter le volume du massif de scellement en pleine terre, et le couler avec une reprise nette autour du fût du poteau — l’ancrage est un ouvrage à part entière, pas un trou rebouché.',
+                  'Augmenter le volume du massif de scellement en pleine terre, et le couler avec une reprise nette autour du fût du poteau, l’ancrage est un ouvrage à part entière, pas un trou rebouché.',
                   'Sur muret, longrine ou dalle existante : platines et scellement chimique, avec visserie inox, après vérification que le support reprend réellement l’effort. Une platine chevillée dans un muret creux ne tient pas.',
                   'Adapter au sol réel : un terrain sableux, remblayé ou détrempé ne se comporte pas comme une terre ferme, et cela se voit à la première tarière.',
                 ].map((item) => (
@@ -556,13 +556,13 @@ export default function ArticleClotureAluminiumPage() {
                 garde-corps et les menuiseries de la maison. La question n&apos;est donc pas « quelle teinte me plaît »
                 mais <strong className="text-primary font-semibold">« combien de teintes y a-t-il déjà sur cette
                 façade »</strong>. La règle qui fonctionne presque toujours est celle des deux teintes : une pour les
-                ouvrages de limite — clôture, portail, portillon —, une pour les menuiseries, avec éventuellement un
+                ouvrages de limite (clôture, portail, portillon), une pour les menuiseries, avec éventuellement un
                 rappel de l&apos;une dans l&apos;autre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deux pièges concrets, vus plus d&apos;une fois. Le premier : commander la clôture chez un fournisseur et
                 le portail chez un autre, dans la même référence RAL, mais avec des{' '}
-                <strong className="text-primary font-semibold">finitions différentes</strong> — un mat et un satiné, par
+                <strong className="text-primary font-semibold">finitions différentes</strong>, un mat et un satiné, par
                 exemple. Côte à côte, à deux mètres l&apos;un de l&apos;autre, la différence saute aux yeux alors que le
                 nuancier annonçait la même teinte. Le second : choisir la teinte sur un échantillon tenu à la main, en
                 magasin. Une teinte se juge dehors, à la lumière du jour, contre la façade et posée verticalement.
@@ -594,12 +594,12 @@ export default function ArticleClotureAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Peu de terrains sont plats, et c&apos;est là que se joue la qualité perçue d&apos;une clôture alu. Deux
                 façons de traiter une pente. La{' '}
-                <strong className="text-primary font-semibold">pose en décrochements</strong> — dite pose en escalier —
+                <strong className="text-primary font-semibold">pose en décrochements</strong>, dite pose en escalier,
                 garde chaque panneau parfaitement horizontal et rattrape la dénivelée d&apos;un poteau au suivant :
                 rendu très net, mais un jour triangulaire apparaît en pied de chaque panneau, qu&apos;il faut combler par
                 un muret bahut, une plinthe ou une lame basse ajustée. La{' '}
                 <strong className="text-primary font-semibold">pose suivant la pente</strong>, avec un remplissage coupé
-                en biais, épouse le terrain et supprime ces jours — c&apos;est plus élégant sur une pente régulière, mais
+                en biais, épouse le terrain et supprime ces jours, c&apos;est plus élégant sur une pente régulière, mais
                 cela suppose un relevé de niveaux précis avant fabrication, chaque panneau étant alors une pièce unique.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -608,15 +608,15 @@ export default function ArticleClotureAluminiumPage() {
                 dimensionne et se scelle en conséquence. Et si le portail est motorisé,{' '}
                 <strong className="text-primary font-semibold">
                   les fourreaux d&apos;alimentation et de commande passent avant le scellement
-                </strong>
-                , pas après : c&apos;est le regret numéro un des chantiers où la clôture a été posée en premier « pour
+                </strong>,
+                pas après : c&apos;est le regret numéro un des chantiers où la clôture a été posée en premier « pour
                 avancer », et où il faut ensuite ouvrir une tranchée le long d&apos;un ouvrage tout juste terminé.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Restent les raccords aux ouvrages existants, qui font tout le soin d&apos;une pose : arrivée en about
                 contre un mur de maison ou un pilier maçonné, angle sur un poteau existant, jonction avec une haie ou un
                 grillage conservé, franchissement d&apos;un regard ou d&apos;un compteur. Chacun de ces points se
-                dessine sur le relevé, avant commande — c&apos;est exactement le travail que nous menons sur nos chantiers
+                dessine sur le relevé, avant commande, c&apos;est exactement le travail que nous menons sur nos chantiers
                 d&apos;<a href="/amenagement-exterieur" className={lienInterne}>aménagement extérieur</a>, où la clôture
                 arrive souvent en même temps qu&apos;une terrasse, un portail ou une allée.
               </p>
@@ -631,8 +631,8 @@ export default function ArticleClotureAluminiumPage() {
                 Une clôture se chiffre au mètre linéaire, pose comprise. Les ordres de grandeur que nous donnons ici sont{' '}
                 <strong className="text-primary font-semibold">
                   ceux constatés sur nos propres chantiers en 2026, en Gironde
-                </strong>{' '}
-                — ce ne sont ni des prix de marché ni un tarif : entre 200 et 350 € le mètre linéaire pour un remplissage
+                </strong>,{' '}
+               ce ne sont ni des prix de marché ni un tarif : entre 200 et 350 € le mètre linéaire pour un remplissage
                 ajouré ou à lames espacées, et entre 300 et 550 € le mètre linéaire pour des lames pleines occultantes de
                 belle hauteur, fournies et posées. Les lames orientables et les grandes hauteurs sortent de ces
                 fourchettes, et un portail motorisé se chiffre à part.
@@ -643,7 +643,7 @@ export default function ArticleClotureAluminiumPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   ['Le degré d’occultation', 'c’est le premier poste : le plein coûte plus cher au mètre, et il impose en plus un ancrage renforcé sur tout le linéaire concerné.'],
-                  ['La hauteur', 'elle joue deux fois — sur la quantité de profilés et sur le dimensionnement des poteaux et des massifs.'],
+                  ['La hauteur', 'elle joue deux fois, sur la quantité de profilés et sur le dimensionnement des poteaux et des massifs.'],
                   ['La longueur totale', 'un long linéaire amortit la mise en œuvre et l’approvisionnement ; dix mètres coûtent proportionnellement plus cher que soixante.'],
                   ['Le terrain', 'pente, sol dur ou remblayé, accès pour la mini-pelle, réseaux enterrés à repérer : c’est le poste le plus imprévisible depuis un bureau.'],
                   ['Le portail et ses abords', 'poteaux renforcés, motorisation, fourreaux, coffret : à intégrer dès le devis plutôt qu’à rajouter ensuite.'],
@@ -663,8 +663,8 @@ export default function ArticleClotureAluminiumPage() {
                 </strong>{' '}
                 : lames pleines sur les quelques mètres exposés aux vues, remplissage ajouré sur le reste du tracé, même
                 teinte et même profilé partout. À budget égal, l&apos;ouvrage est mieux posé, mieux tenu au vent, et le
-                jardin garde sa lumière. Si votre projet penche finalement vers le bois — maison ancienne, esprit
-                végétal, budget serré —, nous le disons et nous vous orientons vers notre{' '}
+                jardin garde sa lumière. Si votre projet penche finalement vers le bois (maison ancienne, esprit
+                végétal, budget serré), nous le disons et nous vous orientons vers notre{' '}
                 <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
                   guide de la clôture brise-vue en bois
                 </a>{' '}
@@ -734,7 +734,7 @@ export default function ArticleClotureAluminiumPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Occulter là où c&apos;est utile, filtrer partout ailleurs, et dimensionner les poteaux et le scellement
               pour l&apos;occultation réellement choisie : c&apos;est tout le métier d&apos;une clôture en aluminium. Le
-              reste — teinte, finition, dessin des lames — fait le style, pas la tenue. Nous relevons votre limite,
+              reste (teinte, finition, dessin des lames) fait le style, pas la tenue. Nous relevons votre limite,
               vérifions les règles applicables à votre commune et chiffrons l&apos;ouvrage sur place, à Libourne et dans
               toute la Gironde.
             </p>

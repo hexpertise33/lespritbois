@@ -3,8 +3,8 @@ import { SITE } from './data/navigation';
 
 /** Bornes d'affichage en SERP, en caractères.
  *
- *  Au-delà de la borne haute Google tronque : la fin de la phrase — souvent
- *  celle qui porte l'appel à l'action et la mention géographique — n'est jamais
+ *  Au-delà de la borne haute Google tronque : la fin de la phrase, souvent
+ *  celle qui porte l'appel à l'action et la mention géographique, n'est jamais
  *  affichée. En deçà de la borne basse on laisse de la surface de résultat
  *  inutilisée.
  *
@@ -27,7 +27,7 @@ function verifieLongueurs(champs: { title: string; description: string; path: st
       const n = [...champs[champ]].length;
       const { min, max } = BORNES[champ];
       if (n >= min && n <= max) return null;
-      return `${champ} : ${n} caractères (attendu ${min}–${max}) — « ${champs[champ]} »`;
+      return `${champ} : ${n} caractères (attendu ${min}–${max}), « ${champs[champ]} »`;
     })
     .filter((x): x is string => x !== null);
 
@@ -57,7 +57,7 @@ export function buildMetadata(opts: {
   ogImage?: string;
   ogTitle?: string;
   ville?: string;
-  /** Pages hors indexation (ex : landing page publicitaire) — pose
+  /** Pages hors indexation (ex : landing page publicitaire), pose
    *  `robots: 'noindex, follow'` au lieu de la valeur indexable par défaut.
    *
    *  `follow` et non `nofollow` : la page doit rester hors de l'index, mais ses

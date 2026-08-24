@@ -1,5 +1,5 @@
 // =========================================================================
-// L'ESPRIT BOIS — articles de blog.
+// L'ESPRIT BOIS, articles de blog.
 // Ajoute un objet à ce tableau pour publier un nouvel article sur /blog.
 // =========================================================================
 
@@ -21,7 +21,7 @@ export const articles: Article[] = [
     titre:
       "Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture",
     extrait:
-      "Un claustra n'est pas une clôture courte : posé à l'intérieur de la parcelle, il ne borne aucune limite et échappe donc aux contraintes qui pèsent sur une clôture séparative — c'est la séparation de jardin la plus rapide à mettre en œuvre. Et parce qu'on ne masque pas une vue mais un axe de regard, l'ouvrage juste est presque toujours plus court et plus bas qu'on ne l'imagine : ajour et prise au vent, motifs de lames, ancrage au sol ou sur une terrasse existante, essences, vieillissement et budget — le guide d'un artisan à Libourne (Gironde).",
+      "Un claustra n'est pas une clôture courte : posé à l'intérieur de la parcelle, il ne borne aucune limite et échappe donc aux contraintes qui pèsent sur une clôture séparative, c'est la séparation de jardin la plus rapide à mettre en œuvre. Et parce qu'on ne masque pas une vue mais un axe de regard, l'ouvrage juste est presque toujours plus court et plus bas qu'on ne l'imagine : ajour et prise au vent, motifs de lames, ancrage au sol ou sur une terrasse existante, essences, vieillissement et budget, le guide d'un artisan à Libourne (Gironde).",
     date: '2026-08-23',
     categorie: 'Guide · Claustra bois',
     image: '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-claire-voie-ventilee-jardin.webp',
@@ -33,7 +33,7 @@ export const articles: Article[] = [
     titre:
       "Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment",
     extrait:
-      "Il reste quelques semaines pour traiter ses bois extérieurs — après, ce n'est plus la peine : un saturateur ne pénètre que sur un bois sec, par temps doux et sans pluie derrière, sinon il reste en surface et part au premier hiver. Et on ne traite pas pour la couleur mais pour l'eau : terrasse, bardage, clôture, carport et abri ne demandent ni le même produit ni le même rythme — le guide tous ouvrages bois d'un artisan à Libourne (Gironde).",
+      "Il reste quelques semaines pour traiter ses bois extérieurs, après, ce n'est plus la peine : un saturateur ne pénètre que sur un bois sec, par temps doux et sans pluie derrière, sinon il reste en surface et part au premier hiver. Et on ne traite pas pour la couleur mais pour l'eau : terrasse, bardage, clôture, carport et abri ne demandent ni le même produit ni le même rythme, le guide tous ouvrages bois d'un artisan à Libourne (Gironde).",
     date: '2026-08-22',
     categorie: 'Guide · Entretien du bois',
     image: '/images/source-adefrance/Carport-bois-Libourne-2.webp',
@@ -45,7 +45,7 @@ export const articles: Article[] = [
     titre:
       "Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment",
     extrait:
-      "Fermer une pergola prolonge la saison de quelques mois, mais ne fabrique pas une véranda : sans isolation ni rupture de pont thermique, on gagne un abri hors vent et hors pluie, pas une pièce chauffée — et si la pièce doit vivre en février, mieux vaut le dire. Rideau de verre, store screen à zip, panneaux fixes ou coulissants côté par côté, condensation, budget poste par poste, et le point que personne ne signale : fermer peut rendre l'ouvrage clos et couvert, donc taxable. Le guide d'un artisan à Libourne (Gironde).",
+      "Fermer une pergola prolonge la saison de quelques mois, mais ne fabrique pas une véranda : sans isolation ni rupture de pont thermique, on gagne un abri hors vent et hors pluie, pas une pièce chauffée, et si la pièce doit vivre en février, mieux vaut le dire. Rideau de verre, store screen à zip, panneaux fixes ou coulissants côté par côté, condensation, budget poste par poste, et le point que personne ne signale : fermer peut rendre l'ouvrage clos et couvert, donc taxable. Le guide d'un artisan à Libourne (Gironde).",
     date: '2026-08-21',
     categorie: 'Guide · Fermeture de pergola',
     image: '/images/realisations/salon-sous-pergola-aluminium-libourne-8.webp',
@@ -57,7 +57,7 @@ export const articles: Article[] = [
     titre:
       'Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque',
     extrait:
-      "Le carport est le meilleur endroit pour recharger une voiture électrique — à condition d'y penser avant de couler les plots : ce qui coûte cher après coup, ce n'est jamais la borne, c'est la tranchée à rouvrir et le passage à faire sous un ouvrage déjà monté. Fourreaux et réservations à poser pendant le chantier, où placer la borne selon la trappe et le sens de stationnement, ce qu'une couverture photovoltaïque impose à la structure, la limite entre notre métier et celui de l'électricien, et la vérité sur l'aide fiscale supprimée au 1er janvier 2026 : le guide d'un artisan à Libourne (Gironde).",
+      "Le carport est le meilleur endroit pour recharger une voiture électrique, à condition d'y penser avant de couler les plots : ce qui coûte cher après coup, ce n'est jamais la borne, c'est la tranchée à rouvrir et le passage à faire sous un ouvrage déjà monté. Fourreaux et réservations à poser pendant le chantier, où placer la borne selon la trappe et le sens de stationnement, ce qu'une couverture photovoltaïque impose à la structure, la limite entre notre métier et celui de l'électricien, et la vérité sur l'aide fiscale supprimée au 1er janvier 2026 : le guide d'un artisan à Libourne (Gironde).",
     date: '2026-08-20',
     categorie: 'Guide · Carport et voiture électrique',
     image: '/images/source-adefrance/carport-bois-libourne.webp',
@@ -69,7 +69,7 @@ export const articles: Article[] = [
     titre:
       "Bureau de jardin en bois : autorisation, isolation et budget d'une vraie pièce en plus dans le jardin",
     extrait:
-      "Ce qui coûte cher dans un bureau de jardin, ce n'est pas l'ossature : c'est tout ce qui le rend habitable — isolation, menuiseries, électricité et raccordements. Un abri devient un bureau le jour où on l'isole et où on l'alimente, et c'est ce jour-là que l'urbanisme et la taxe d'aménagement s'invitent : autorisation et PLU, valeur forfaitaire 2026 et exonération des 5 m², confort d'hiver et d'été, alimentation d'une construction détachée et budget poste par poste, par un artisan à Libourne (Gironde).",
+      "Ce qui coûte cher dans un bureau de jardin, ce n'est pas l'ossature : c'est tout ce qui le rend habitable, isolation, menuiseries, électricité et raccordements. Un abri devient un bureau le jour où on l'isole et où on l'alimente, et c'est ce jour-là que l'urbanisme et la taxe d'aménagement s'invitent : autorisation et PLU, valeur forfaitaire 2026 et exonération des 5 m², confort d'hiver et d'été, alimentation d'une construction détachée et budget poste par poste, par un artisan à Libourne (Gironde).",
     date: '2026-08-19',
     categorie: 'Guide · Bureau de jardin',
     image: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
@@ -81,7 +81,7 @@ export const articles: Article[] = [
     titre:
       "Entretenir sa pergola, sa véranda et ses menuiseries en aluminium : la révision d'avant-automne (et ce qui casse quand on l'oublie)",
     extrait:
-      "Un ouvrage en aluminium ne s'entretient pas vraiment, il se surveille : le thermolaquage ne demande qu'un lavage à l'eau savonneuse, et ce qui lâche sur nos chantiers, ce sont les évacuations d'eau bouchées, les joints fatigués et la motorisation que personne n'a jamais regardée. La seule intervention qui compte avant l'hiver — dégager les chéneaux avant la chute des feuilles —, les gestes qui abîment un profilé, les symptômes qui doivent alerter, où s'arrête le bricolage sur un moteur et notre calendrier de révision : le guide d'un artisan à Libourne (Gironde).",
+      "Un ouvrage en aluminium ne s'entretient pas vraiment, il se surveille : le thermolaquage ne demande qu'un lavage à l'eau savonneuse, et ce qui lâche sur nos chantiers, ce sont les évacuations d'eau bouchées, les joints fatigués et la motorisation que personne n'a jamais regardée. La seule intervention qui compte avant l'hiver, dégager les chéneaux avant la chute des feuilles, les gestes qui abîment un profilé, les symptômes qui doivent alerter, où s'arrête le bricolage sur un moteur et notre calendrier de révision : le guide d'un artisan à Libourne (Gironde).",
     date: '2026-08-15',
     categorie: 'Guide · Entretien aluminium',
     image: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
@@ -93,7 +93,7 @@ export const articles: Article[] = [
     titre:
       "Abri à bûches en bois : bien stocker son bois de chauffage avant l'hiver (et le faire sécher pour de bon)",
     extrait:
-      "Un bon abri à bûches ne protège pas le bois de l'eau, il le fait sécher : c'est la ventilation, pas la couverture, qui fait passer une bûche sous le seuil d'humidité utile — et un abri fermé sur ses quatre côtés fait pourrir le bois au lieu de le sécher. Les cinq règles de conception qui marchent, comment dimensionner son abri sur deux campagnes de séchage, où l'implanter — jamais contre le mur de la maison — et ce que ça coûte vraiment : le guide d'un artisan à Libourne (Gironde).",
+      "Un bon abri à bûches ne protège pas le bois de l'eau, il le fait sécher : c'est la ventilation, pas la couverture, qui fait passer une bûche sous le seuil d'humidité utile, et un abri fermé sur ses quatre côtés fait pourrir le bois au lieu de le sécher. Les cinq règles de conception qui marchent, comment dimensionner son abri sur deux campagnes de séchage, où l'implanter, jamais contre le mur de la maison, et ce que ça coûte vraiment : le guide d'un artisan à Libourne (Gironde).",
     date: '2026-08-14',
     categorie: 'Guide · Abri à bûches',
     image:
@@ -119,7 +119,7 @@ export const articles: Article[] = [
     titre:
       'Termites en Gironde : comment concevoir un ouvrage en bois qui ne leur offre pas le couvert',
     extrait:
-      "Les termites ne s'attaquent pas au bois parce qu'il est en bois, mais parce qu'il est humide, au contact du sol et jamais ventilé : trois défauts de pose que nous voyons bien plus souvent que des essences mal choisies. La Gironde étant déclarée totalement termitée par arrêté préfectoral du 12 février 2001, voici le point de vue du constructeur — rupture de capillarité et sabots de poteaux, ventilation de sous-face, réservoirs de cellulose à supprimer au jardin, ce que les classes d'emploi et les traitements font vraiment, et vos obligations légales — par un artisan à Libourne (Gironde).",
+      "Les termites ne s'attaquent pas au bois parce qu'il est en bois, mais parce qu'il est humide, au contact du sol et jamais ventilé : trois défauts de pose que nous voyons bien plus souvent que des essences mal choisies. La Gironde étant déclarée totalement termitée par arrêté préfectoral du 12 février 2001, voici le point de vue du constructeur, rupture de capillarité et sabots de poteaux, ventilation de sous-face, réservoirs de cellulose à supprimer au jardin, ce que les classes d'emploi et les traitements font vraiment, et vos obligations légales, par un artisan à Libourne (Gironde).",
     date: '2026-08-12',
     categorie: 'Guide · Bois et termites',
     image: '/images/terrasse-bois-plots-gironde-3.webp',
@@ -131,7 +131,7 @@ export const articles: Article[] = [
     titre:
       "L'aluminium est-il écologique ? Recyclage, bas carbone et ce que ça change face au bois en 2026",
     extrait:
-      "L'aluminium neuf coûte cher en énergie, l'aluminium recyclé beaucoup moins — et c'est précisément là que la filière française bascule en 2026, avec les objectifs de collecte, de capacité de refonte et de traçabilité annoncés par le SNFA. Ce que cela change vraiment face au bois, qui garde l'avantage à la fabrication quand l'aluminium le reprend sur la durée de vie, l'entretien et la fin de vie, les quatre questions à poser à son installateur et l'arbitrage ouvrage par ouvrage — pergola, carport, garde-corps, véranda — par un artisan qui pose les deux matières à Libourne (Gironde).",
+      "L'aluminium neuf coûte cher en énergie, l'aluminium recyclé beaucoup moins, et c'est précisément là que la filière française bascule en 2026, avec les objectifs de collecte, de capacité de refonte et de traçabilité annoncés par le SNFA. Ce que cela change vraiment face au bois, qui garde l'avantage à la fabrication quand l'aluminium le reprend sur la durée de vie, l'entretien et la fin de vie, les quatre questions à poser à son installateur et l'arbitrage ouvrage par ouvrage (pergola, carport, garde-corps, véranda) par un artisan qui pose les deux matières à Libourne (Gironde).",
     date: '2026-08-11',
     categorie: 'Guide · Aluminium et environnement',
     image: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-3.webp',
@@ -155,7 +155,7 @@ export const articles: Article[] = [
     titre:
       'Quelle taille pour un carport ? Dimensions, hauteur et implantation pour bien garer sa voiture',
     extrait:
-      "La cote qui rate un carport n'est presque jamais la longueur : c'est la hauteur libre sous traverse et la place pour ouvrir les portières — un SUV compact 2026 mesure 2,08 à 2,11 m rétroviseurs dépliés, un chiffre qui ne figure sur aucune plaquette de kit. Mesurer son véhicule réel accessoires montés, choisir sa trame selon le programme (une voiture, deux voitures, voiture + rangement), savoir où tombent les poteaux selon qu'on construit en bois ou en aluminium et implanter l'abri pour la manœuvre depuis la rue : le guide dimensionnel d'un artisan à Libourne (Gironde).",
+      "La cote qui rate un carport n'est presque jamais la longueur : c'est la hauteur libre sous traverse et la place pour ouvrir les portières, un SUV compact 2026 mesure 2,08 à 2,11 m rétroviseurs dépliés, un chiffre qui ne figure sur aucune plaquette de kit. Mesurer son véhicule réel accessoires montés, choisir sa trame selon le programme (une voiture, deux voitures, voiture + rangement), savoir où tombent les poteaux selon qu'on construit en bois ou en aluminium et implanter l'abri pour la manœuvre depuis la rue : le guide dimensionnel d'un artisan à Libourne (Gironde).",
     date: '2026-08-08',
     categorie: 'Guide · Carport',
     image: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
@@ -167,7 +167,7 @@ export const articles: Article[] = [
     titre:
       'Véranda ou extension en ossature bois : que choisir pour agrandir sa maison en Gironde ?',
     extrait:
-      "La véranda aluminium gagne quand on cherche de la lumière, une vue sur le jardin et un espace de vie clair ; l'extension en ossature bois s'impose dès que la pièce doit être une vraie pièce de la maison — chambre, bureau, suite parentale — utilisable à l'identique en février et en août. Points de bascule (surface vitrée voulue, heures d'occupation), confort d'été, seuils d'urbanisme et statut RE2020, budget 2026 de 1 200 à 2 500 €/m² posé, raccord à la maison existante et verdict par profil, par un artisan à Libourne (Gironde).",
+      "La véranda aluminium gagne quand on cherche de la lumière, une vue sur le jardin et un espace de vie clair ; l'extension en ossature bois s'impose dès que la pièce doit être une vraie pièce de la maison (chambre, bureau, suite parentale) utilisable à l'identique en février et en août. Points de bascule (surface vitrée voulue, heures d'occupation), confort d'été, seuils d'urbanisme et statut RE2020, budget 2026 de 1 200 à 2 500 €/m² posé, raccord à la maison existante et verdict par profil, par un artisan à Libourne (Gironde).",
     date: '2026-08-07',
     categorie: 'Guide · Agrandir sa maison',
     image: '/images/source-adefrance/aggrandissement-accueil.webp',
@@ -179,7 +179,7 @@ export const articles: Article[] = [
     titre:
       'Choisir la teinte RAL de son aluminium : nuancier, finitions et teintes qui vieillissent bien en Gironde',
     extrait:
-      "Une teinte d'aluminium ne se choisit pas vraiment sur un nuancier, mais sur trois critères : la finition — mate, satinée ou sablée —, qui change plus l'aspect final que le code RAL lui-même, l'exposition, une teinte foncée plein sud chauffant et se dilatant davantage, et l'accord avec les menuiseries déjà posées plutôt qu'avec la couleur des murs. Lire un code du RAL Classic, comprendre ce que le thermolaquage et les labels garantissent vraiment, accorder l'ouvrage à la pierre blonde et à la tuile canal, raccorder pergola, carport et garde-corps posés à des dates différentes : le guide d'un artisan à Libourne (Gironde).",
+      "Une teinte d'aluminium ne se choisit pas vraiment sur un nuancier, mais sur trois critères : la finition (mate, satinée ou sablée), qui change plus l'aspect final que le code RAL lui-même, l'exposition, une teinte foncée plein sud chauffant et se dilatant davantage, et l'accord avec les menuiseries déjà posées plutôt qu'avec la couleur des murs. Lire un code du RAL Classic, comprendre ce que le thermolaquage et les labels garantissent vraiment, accorder l'ouvrage à la pierre blonde et à la tuile canal, raccorder pergola, carport et garde-corps posés à des dates différentes : le guide d'un artisan à Libourne (Gironde).",
     date: '2026-08-06',
     categorie: 'Guide · Aluminium',
     image:
@@ -192,7 +192,7 @@ export const articles: Article[] = [
     titre:
       'Rénover une terrasse en bois : poncer, changer les lames ou tout refaire ? Le diagnostic avant de dépenser',
     extrait:
-      "Ce qui décide entre poncer, remplacer les lames et tout déposer n'est pas la couleur grise du platelage — esthétique et parfaitement réversible — mais l'état de la sous-face : lambourdes, appuis, ventilation, fixations. Diagnostic en trois gestes, dégrisage et ponçage dans le bon ordre, remplacement lame par lame sans reprendre la structure, et quatre scénarios chiffrés de 15 à 150 €/m² posé, par un artisan à Libourne (Gironde).",
+      "Ce qui décide entre poncer, remplacer les lames et tout déposer n'est pas la couleur grise du platelage, esthétique et parfaitement réversible, mais l'état de la sous-face : lambourdes, appuis, ventilation, fixations. Diagnostic en trois gestes, dégrisage et ponçage dans le bon ordre, remplacement lame par lame sans reprendre la structure, et quatre scénarios chiffrés de 15 à 150 €/m² posé, par un artisan à Libourne (Gironde).",
     date: '2026-08-05',
     categorie: 'Guide · Rénovation terrasse',
     image:
@@ -205,7 +205,7 @@ export const articles: Article[] = [
     titre:
       'Garde-corps de terrasse : aluminium ou bois ? Sécurité, entretien et budget en Gironde',
     extrait:
-      "L'aluminium l'emporte dès que la terrasse est haute, exposée au vent ou au bord d'un bassin et qu'il faut préserver la vue : profilés thermolaqués, verre feuilleté ou barreaudage fin, entretien réduit à un lavage. Le bois garde l'avantage quand le garde-corps prolonge une terrasse en bois ou un bâti girondin en pierre, et qu'on veut pouvoir le réparer pièce par pièce. Norme NF P01-012 révisée en 2024, coût réel sur quinze ans, fourchettes au mètre linéaire posé et qualité de l'ancrage — le point qui fait céder la plupart des garde-corps —, par un artisan à Libourne (Gironde).",
+      "L'aluminium l'emporte dès que la terrasse est haute, exposée au vent ou au bord d'un bassin et qu'il faut préserver la vue : profilés thermolaqués, verre feuilleté ou barreaudage fin, entretien réduit à un lavage. Le bois garde l'avantage quand le garde-corps prolonge une terrasse en bois ou un bâti girondin en pierre, et qu'on veut pouvoir le réparer pièce par pièce. Norme NF P01-012 révisée en 2024, coût réel sur quinze ans, fourchettes au mètre linéaire posé et qualité de l'ancrage, le point qui fait céder la plupart des garde-corps, par un artisan à Libourne (Gironde).",
     date: '2026-08-04',
     categorie: 'Guide · Aluminium & bois',
     image:
@@ -267,7 +267,7 @@ export const articles: Article[] = [
     titre:
       'Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026',
     extrait:
-      "Une pergola bioclimatique se juge d'abord sur l'étanchéité de ses lames et l'évacuation des eaux intégrée aux poteaux, la qualité des profilés et de leur thermolaquage, puis sur la pertinence de la motorisation — le prix ne vient qu'après (400 à 900 €/m² posé, fourchettes 2026). Lames orientables, capteurs de pluie et de vent, teinte RAL, stores zip, urbanisme et entretien : le guide produit, par un artisan à Libourne (Gironde).",
+      "Une pergola bioclimatique se juge d'abord sur l'étanchéité de ses lames et l'évacuation des eaux intégrée aux poteaux, la qualité des profilés et de leur thermolaquage, puis sur la pertinence de la motorisation, le prix ne vient qu'après (400 à 900 €/m² posé, fourchettes 2026). Lames orientables, capteurs de pluie et de vent, teinte RAL, stores zip, urbanisme et entretien : le guide produit, par un artisan à Libourne (Gironde).",
     date: '2026-07-30',
     categorie: 'Guide · Pergolas aluminium',
     image: '/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp',
@@ -279,7 +279,7 @@ export const articles: Article[] = [
     titre:
       'Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut vraiment la filière Nouvelle-Aquitaine ?',
     extrait:
-      "En Gironde, le bois vraiment local c'est d'abord le pin maritime des Landes de Gascogne, puis le douglas de la partie limousine et le châtaignier des feuillus régionaux — trois essences qui couvrent la grande majorité de nos ouvrages. Durabilité réelle, mention CTB B+, label Bois de France et cas où nous proposons franchement une autre essence, par un artisan à Libourne.",
+      "En Gironde, le bois vraiment local c'est d'abord le pin maritime des Landes de Gascogne, puis le douglas de la partie limousine et le châtaignier des feuillus régionaux, trois essences qui couvrent la grande majorité de nos ouvrages. Durabilité réelle, mention CTB B+, label Bois de France et cas où nous proposons franchement une autre essence, par un artisan à Libourne.",
     date: '2026-07-29',
     categorie: 'Guide · Filière bois local',
     image:
@@ -304,7 +304,7 @@ export const articles: Article[] = [
     titre:
       'Poulailler en bois : réglementation 2026, bien-être des poules et bonne implantation',
     extrait:
-      "Moins de 5 m² sans formalité, déclaration préalable de 5 à 20 m² — et surtout, toute détention de volailles se déclare en mairie, même une seule poule. Dimensionnement au bien-être des poules, essences durables et bonne implantation : le guide du poulailler bois, par un artisan à Libourne (Gironde).",
+      "Moins de 5 m² sans formalité, déclaration préalable de 5 à 20 m², et surtout, toute détention de volailles se déclare en mairie, même une seule poule. Dimensionnement au bien-être des poules, essences durables et bonne implantation : le guide du poulailler bois, par un artisan à Libourne (Gironde).",
     date: '2026-07-26',
     categorie: 'Guide · Poulailler',
     image: '/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.webp',

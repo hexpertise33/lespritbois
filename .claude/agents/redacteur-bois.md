@@ -38,7 +38,7 @@ Un fichier `app/blog/<slug>/page.tsx` complet et compilable :
 ## Emplacements images
 Tu ne choisis PAS les fichiers image. À chaque endroit où une image doit venir,
 insère un composant `Figure` (ou `DuoFigure`) dont chaque prop `src` vaut la
-chaîne `"__IMAGE_A_SOURCER__"` — pour `DuoFigure`, mets-la dans `a.src` ET
+chaîne `"__IMAGE_A_SOURCER__"` : pour `DuoFigure`, mets-la dans `a.src` ET
 `b.src`. Ajoute juste au-dessus un commentaire :
 `{/* IMAGE: <brief de ce que l'image doit montrer, orientation SEO> */}`.
 Vise le ratio de la charte (~1 visuel toutes les 1–2 sections). L'iconographe
@@ -46,6 +46,10 @@ remplacera ces marqueurs.
 
 ## Contraintes
 - Échappe les apostrophes JSX (`&apos;`) comme dans le gabarit.
+- **Aucun cadratin (`—`) dans le texte publié.** Décision de David du
+  24/08/2026, appliquée à tout le site. Reponctue : virgules pour une incise
+  courte, parenthèses dès que l'incise contient elle-même une virgule,
+  deux-points quand la suite explique ce qui précède.
 - SEO Libourne/Gironde dans title, description, h1, une section, la conclusion.
 - Maillage interne : au moins un lien service + `/realisations` + un article lié.
 - Termine en fournissant le texte prêt à coller pour l'entrée `Article` de

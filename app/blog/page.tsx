@@ -142,9 +142,9 @@ export default function BlogPage() {
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 David Bertrand
-              </a>
-              , qui dirige l&apos;atelier. Pour retrouver une page précise — gamme, réalisation,
-              secteur d&apos;intervention —, le{' '}
+              </a>,
+              qui dirige l&apos;atelier. Pour retrouver une page précise (gamme, réalisation,
+              secteur d&apos;intervention), le{' '}
               <a
                 href="/plan-du-site"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"

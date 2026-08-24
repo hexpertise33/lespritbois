@@ -169,7 +169,7 @@ const faq = [
     q: 'Faut-il une autorisation pour construire un pool-house ?',
     r: (
       <>
-        Cela dépend de l&apos;emprise au sol créée. En dessous de 5 m², aucune formalité — sauf en secteur protégé,
+        Cela dépend de l&apos;emprise au sol créée. En dessous de 5 m², aucune formalité, sauf en secteur protégé,
         où la déclaration préalable est due dès le premier mètre carré. De 5 à 20 m², une déclaration
         préalable de travaux. Au-delà de 20 m², un permis de construire. Le seuil relevé à 40 m² ne concerne que les
         extensions accolées à une maison existante en zone urbaine couverte par un PLU : un pool-house détaché au fond du
@@ -284,8 +284,8 @@ export default function ArticlePoolHouseBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>16 juillet 2026</span>

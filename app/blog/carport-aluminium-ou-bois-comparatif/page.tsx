@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -352,8 +352,8 @@ export default function ArticleCarportAluOuBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>31 juillet 2026</span>
@@ -377,7 +377,7 @@ export default function ArticleCarportAluOuBoisPage() {
               Nous sommes bien placés pour le dire sans arrière-pensée : chez L&apos;Esprit Bois, à Libourne, nous
               vendons et posons <strong className="text-primary font-semibold">les deux matières</strong>. Aucune ne
               nous rapporte davantage que l&apos;autre, et sur nos chantiers de Gironde nous conseillons régulièrement
-              l&apos;alu à des clients venus pour du bois — et l&apos;inverse. Voici comment nous tranchons, cas par
+              l&apos;alu à des clients venus pour du bois, et l&apos;inverse. Voici comment nous tranchons, cas par
               cas, sans match nul de complaisance.
             </p>
           </div>
@@ -404,7 +404,7 @@ export default function ArticleCarportAluOuBoisPage() {
                   ['Vous ne voulez rien avoir à faire', 'l’aluminium thermolaqué, sans hésiter : un lavage annuel et le dégagement des évacuations suffisent.'],
                   ['Vous aimez la matière vivante et le sur-mesure', 'le bois : on adapte au centimètre, on répare une pièce isolée, et il vieillit en prenant de la patine.'],
                   ['Vous devez franchir une grande largeur', 'l’aluminium : à section égale, les profilés dégagent la portée avec beaucoup moins de masse apparente.'],
-                  ['Votre priorité est le budget d’entrée', 'le bois, qui démarre plus bas à surface équivalente — l’écart se resserre sur la durée de vie complète.'],
+                  ['Votre priorité est le budget d’entrée', 'le bois, qui démarre plus bas à surface équivalente, l’écart se resserre sur la durée de vie complète.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -455,7 +455,7 @@ export default function ArticleCarportAluOuBoisPage() {
                 de la série 6000, refermés par des platines et des équerres. L&apos;intérêt est mécanique autant
                 qu&apos;esthétique : à résistance équivalente, un profilé creux mais épais et nervuré occupe beaucoup
                 moins de place qu&apos;une poutre bois. Concrètement, on franchit une largeur de deux places sans
-                poteau intermédiaire avec des montants qui restent visuellement discrets — c&apos;est le principal
+                poteau intermédiaire avec des montants qui restent visuellement discrets, c&apos;est le principal
                 argument technique de l&apos;alu, et il est réel.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -493,8 +493,8 @@ export default function ArticleCarportAluOuBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;aluminium joue exactement la carte inverse : la ligne droite, l&apos;arête vive, la surface mate
-                uniforme. Le <strong className="text-primary font-semibold">thermolaquage</strong> — une poudre polyester
-                cuite au four sur le profilé — permet de choisir la{' '}
+                uniforme. Le <strong className="text-primary font-semibold">thermolaquage</strong>, une poudre polyester
+                cuite au four sur le profilé, permet de choisir la{' '}
                 <strong className="text-primary font-semibold">teinte RAL</strong> exacte, avec des finitions lisses,
                 mates ou sablées. Les gris anthracite et gris alu dominent, mais rien n&apos;empêche un noir profond, un
                 blanc, un beige, voire un bicolore avec une teinte différente à l&apos;intérieur et à l&apos;extérieur.
@@ -595,7 +595,7 @@ export default function ArticleCarportAluOuBoisPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Le terrassement et le support', 'dalle béton, plots ou longrines selon la nature du sol — les terrains argileux du Libournais demandent souvent plus de fondation qu’on ne l’imagine.'],
+                  ['Le terrassement et le support', 'dalle béton, plots ou longrines selon la nature du sol, les terrains argileux du Libournais demandent souvent plus de fondation qu’on ne l’imagine.'],
                   ['Le raccordement des eaux pluviales', 'un carport crée une surface de ruissellement : il faut conduire l’eau quelque part, vers un puisard, un regard ou le réseau existant.'],
                   ['Les options', 'éclairage, panneaux latéraux, occultation, bardage d’un côté : c’est le poste le plus élastique, dans les deux matières.'],
                   ['La taxe d’aménagement', 'due selon la nature et la surface de l’ouvrage créé, elle se calcule sur des valeurs revalorisées chaque année et surprend beaucoup de propriétaires.'],
@@ -633,8 +633,8 @@ export default function ArticleCarportAluOuBoisPage() {
                 Couverture, évacuation des eaux et options (éclairage, panneaux latéraux, occultation)
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Un carport bois se couvre le plus souvent en tuiles — la meilleure intégration quand la maison est en
-                tuiles, mais un poids réel à reprendre —, en bac acier léger et économique, en polycarbonate pour laisser
+                Un carport bois se couvre le plus souvent en tuiles (la meilleure intégration quand la maison est en
+                tuiles, mais un poids réel à reprendre), en bac acier léger et économique, en polycarbonate pour laisser
                 passer la lumière, voire en toiture végétalisée si la structure et l&apos;étanchéité sont prévues pour.
                 L&apos;évacuation se fait par une gouttière rapportée et une descente extérieure, qu&apos;on choisit
                 soignée si on ne veut pas gâcher la ligne de l&apos;ouvrage.
@@ -656,7 +656,7 @@ export default function ArticleCarportAluOuBoisPage() {
                 <strong className="text-primary font-semibold">bandeaux LED intégrés</strong> et pilotables, panneaux
                 latéraux pleins ou vitrés, stores zip d&apos;occultation coulissant dans des coulisses dédiées,
                 motorisation et pilotage à distance quand le modèle est bioclimatique. En bois, tout cela est
-                réalisable — nous le faisons — mais les câbles et les rails demandent un travail de menuiserie
+                réalisable, nous le faisons, mais les câbles et les rails demandent un travail de menuiserie
                 supplémentaire pour rester invisibles.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -691,7 +691,7 @@ export default function ArticleCarportAluOuBoisPage() {
                 <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578" className={lienInterne} target="_blank" rel="noopener noreferrer">déclaration préalable</a>{' '}
                 s&apos;impose au-delà, et l&apos;on bascule vers le{' '}
                 <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986" className={lienInterne} target="_blank" rel="noopener noreferrer">permis de construire</a>{' '}
-                à partir de 20 m² — seuil porté à 40 m² pour une extension en zone urbaine couverte
+                à partir de 20 m², seuil porté à 40 m² pour une extension en zone urbaine couverte
                 par un PLU. La taxe d&apos;aménagement peut par ailleurs s&apos;appliquer selon la nature de
                 l&apos;ouvrage.
               </p>
@@ -748,7 +748,7 @@ export default function ArticleCarportAluOuBoisPage() {
                 <strong className="text-primary font-semibold">la solution mixte</strong>. Rien n&apos;interdit une
                 structure porteuse bois et une couverture aluminium avec chéneau intégré, ni des poteaux alu habillés
                 d&apos;un bardage bois côté visible. Sur certains chantiers, c&apos;est le meilleur compromis entre
-                l&apos;aspect voulu et l&apos;entretien accepté — et c&apos;est précisément le genre de réponse qu&apos;on
+                l&apos;aspect voulu et l&apos;entretien accepté, et c&apos;est précisément le genre de réponse qu&apos;on
                 ne peut donner qu&apos;en atelier de conception, pas dans un catalogue.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -809,8 +809,8 @@ export default function ArticleCarportAluOuBoisPage() {
             </h2>
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Nous vendons et posons le bois comme l&apos;aluminium : notre seul intérêt est que votre carport soit le
-              bon, pas qu&apos;il soit d&apos;une matière plutôt que d&apos;une autre. Venez avec vos contraintes —
-              largeur, teinte des menuiseries, entretien accepté, budget global — et nous tranchons ensemble, devant
+              bon, pas qu&apos;il soit d&apos;une matière plutôt que d&apos;une autre. Venez avec vos contraintes (
+              largeur, teinte des menuiseries, entretien accepté, budget global) et nous tranchons ensemble, devant
               votre terrain. L&apos;Esprit Bois, entreprise qualifiée Qualibat, intervient à Libourne et dans toute la
               Gironde, formalités d&apos;urbanisme comprises.
             </p>

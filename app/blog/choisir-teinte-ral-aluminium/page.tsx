@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -335,8 +335,8 @@ export default function ArticleTeinteRalAluminiumPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>6 août 2026</span>
@@ -352,7 +352,7 @@ export default function ArticleTeinteRalAluminiumPage() {
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
                 Une teinte d&apos;aluminium ne se choisit pas vraiment sur un nuancier : elle se choisit sur trois
-                critères. La finition d&apos;abord — mate, satinée ou sablée —, qui change plus l&apos;aspect final que
+                critères. La finition d&apos;abord (mate, satinée ou sablée), qui change plus l&apos;aspect final que
                 le code RAL lui-même. L&apos;exposition ensuite : une teinte foncée plein sud chauffe et dilate. Le
                 raccord au bâti enfin, c&apos;est-à-dire l&apos;accord avec vos menuiseries déjà posées bien plus
                 qu&apos;avec la couleur de vos murs.
@@ -383,10 +383,10 @@ export default function ArticleTeinteRalAluminiumPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['1xxx', 'les jaunes et les beiges — la famille des teintes sable, très utilisée pour s’accorder aux enduits clairs.'],
+                  ['1xxx', 'les jaunes et les beiges, la famille des teintes sable, très utilisée pour s’accorder aux enduits clairs.'],
                   ['5xxx', 'les bleus, de l’azur au bleu nuit.'],
                   ['6xxx', 'les verts, du vert pâle au vert sapin, souvent imposés en secteur protégé.'],
-                  ['7xxx', 'les gris — la famille la plus demandée en extérieur, dont le fameux RAL 7016, gris anthracite.'],
+                  ['7xxx', 'les gris, la famille la plus demandée en extérieur, dont le fameux RAL 7016, gris anthracite.'],
                   ['9xxx', 'les blancs et les noirs, du blanc pur au noir profond.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
@@ -436,7 +436,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 La couleur d&apos;un profilé aluminium n&apos;est pas une peinture appliquée au pinceau. C&apos;est un{' '}
                 <strong className="text-primary font-semibold">thermolaquage</strong> : une poudre polyester est
                 projetée sur le profilé puis cuite au four, où elle polymérise et forme un revêtement solidaire du métal.
-                Avant cela, le profilé passe par une préparation — dégraissage puis traitement de surface — dont
+                Avant cela, le profilé passe par une préparation, dégraissage puis traitement de surface, dont
                 dépend l&apos;accrochage de la poudre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -455,7 +455,7 @@ export default function ArticleTeinteRalAluminiumPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   ['Qualicoat', 'label international qui encadre le laquage lui-même : la préparation de surface, la peinture employée et le process d’application chez le laqueur.'],
-                  ['Qualimarine', 'certification française délivrée par l’ADAL, qui vient en complément et ajoute un contrôle en amont sur l’alliage — notamment ses teneurs en cuivre et en fer. Elle vise les ambiances marines et les atmosphères agressives.'],
+                  ['Qualimarine', 'certification française délivrée par l’ADAL, qui vient en complément et ajoute un contrôle en amont sur l’alliage, notamment ses teneurs en cuivre et en fer. Elle vise les ambiances marines et les atmosphères agressives.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -467,7 +467,7 @@ export default function ArticleTeinteRalAluminiumPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 En Gironde, la question se pose surtout pour les projets proches de l&apos;estuaire ou du littoral, où
-                l&apos;air chargé de sel est bien plus agressif pour un revêtement que la pluie de l&apos;arrière-pays —{' '}
+                l&apos;air chargé de sel est bien plus agressif pour un revêtement que la pluie de l&apos;arrière-pays,{' '}
                 <a
                   href="https://www.qualimarine.fr/"
                   className={lienInterne}
@@ -486,7 +486,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                   l&apos;environnement d&apos;exposition
                 </strong>
                 . Nous ne vous donnerons pas de durée dans un article de blog. Demandez-la à votre fournisseur et,
-                surtout, faites-la écrire sur le devis avec ses conditions — une garantie orale ne vaut rien le jour où
+                surtout, faites-la écrire sur le devis avec ses conditions, une garantie orale ne vaut rien le jour où
                 une teinte ternit.
               </p>
             </section>
@@ -500,8 +500,8 @@ export default function ArticleTeinteRalAluminiumPage() {
                 C&apos;est le paragraphe le plus utile de cet article. Sur un ouvrage extérieur,{' '}
                 <strong className="text-primary font-semibold">
                   la finition pèse plus lourd dans le rendu quotidien que le code RAL
-                </strong>
-                , parce qu&apos;elle décide de la façon dont la surface se salit, se raye et renvoie la lumière.
+                </strong>,
+                parce qu&apos;elle décide de la façon dont la surface se salit, se raye et renvoie la lumière.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-surface-variant shadow-sm">
                 <table className="w-full border-collapse text-body-md">
@@ -583,7 +583,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 {[
                   ['Les gris moyens, les anthracites, les bruns et les teintes désaturées', 'ce sont les meilleurs élèves. Ils pardonnent la poussière, ne datent pas et supportent le passage des saisons sans que l’œil accroche.'],
                   ['Les teintes très vives et saturées (rouges francs, bleus vifs)', 'ce sont elles qui accusent le plus le temps visuellement, et ce sont aussi celles qui se démodent le plus vite. Une teinte que vous adorez aujourd’hui, vous la regarderez encore dans vingt ans.'],
-                  ['Le blanc pur', 'il reste lumineux et léger, il s’accorde à beaucoup de bâtis, mais il rend visible la moindre salissure. En bord de route blanche ou de chemin de vigne, il demande un lavage plus fréquent — ce qui n’est pas grave si vous l’assumez.'],
+                  ['Le blanc pur', 'il reste lumineux et léger, il s’accorde à beaucoup de bâtis, mais il rend visible la moindre salissure. En bord de route blanche ou de chemin de vigne, il demande un lavage plus fréquent, ce qui n’est pas grave si vous l’assumez.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -597,7 +597,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 Le bon réflexe consiste à regarder l&apos;environnement immédiat de l&apos;ouvrage plutôt que le
                 catalogue : un gravier clair qui renvoie la lumière, des arbres qui laissent tomber des résidus, une
                 haie, une allée en terre. Une teinte moyenne, ni très claire ni très sombre, est presque toujours celle
-                qui demandera le moins d&apos;attention — c&apos;est d&apos;ailleurs une des raisons du succès des gris.
+                qui demandera le moins d&apos;attention, c&apos;est d&apos;ailleurs une des raisons du succès des gris.
               </p>
             </section>
 
@@ -619,7 +619,7 @@ export default function ArticleTeinteRalAluminiumPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Le profilé est chaud au toucher', 'sur une pergola anthracite exposée plein sud, un poteau ou une traverse est franchement chaud en milieu d’après-midi. Cela se vit très bien, mais il vaut mieux le savoir avant qu’après — surtout avec de jeunes enfants qui s’appuient sur un montant.'],
+                  ['Le profilé est chaud au toucher', 'sur une pergola anthracite exposée plein sud, un poteau ou une traverse est franchement chaud en milieu d’après-midi. Cela se vit très bien, mais il vaut mieux le savoir avant qu’après, surtout avec de jeunes enfants qui s’appuient sur un montant.'],
                   ['La dilatation devient un sujet', 'l’aluminium travaille avec la température. Sur de grandes pièces sombres, l’écart entre la face exposée et la face à l’ombre peut produire un effet bilame : une déformation temporaire et réversible, qui disparaît quand la pièce refroidit. Ce n’est pas un défaut de fabrication, c’est de la physique.'],
                   ['Les jeux de pose ne s’improvisent pas', 'grandes portées, longues traverses, lames orientables plein sud : les jeux et les cales de dilatation doivent être prévus dès la commande. C’est le genre de point qui distingue une pose soignée d’un montage rapide.'],
                 ].map(([titre, texte]) => (
@@ -632,7 +632,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Faut-il renoncer à l&apos;anthracite plein sud ? Non — nous en posons beaucoup, et ils se comportent
+                Faut-il renoncer à l&apos;anthracite plein sud ? Non, nous en posons beaucoup, et ils se comportent
                 très bien. Mais sur un ouvrage de grande dimension exposé plein sud, une teinte un peu moins sombre est
                 un choix technique confortable autant qu&apos;esthétique. Ce raisonnement rejoint celui que nous
                 détaillons dans notre{' '}
@@ -666,7 +666,7 @@ export default function ArticleTeinteRalAluminiumPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Rappeler la teinte des menuiseries, pas celle des murs', 'c’est notre première règle. Une pergola ou un carport dialogue visuellement avec les fenêtres, les volets, la porte de garage et les descentes d’eau — pas avec la façade. Reprendre la teinte des menuiseries fait entrer l’ouvrage dans la famille du bâti ; se caler sur les murs le fait ressembler à un décor rapporté.'],
+                  ['Rappeler la teinte des menuiseries, pas celle des murs', 'c’est notre première règle. Une pergola ou un carport dialogue visuellement avec les fenêtres, les volets, la porte de garage et les descentes d’eau, pas avec la façade. Reprendre la teinte des menuiseries fait entrer l’ouvrage dans la famille du bâti ; se caler sur les murs le fait ressembler à un décor rapporté.'],
                   ['Se méfier du contraste maximal', 'un noir absolu sur une façade en pierre claire donne un contraste très dur, qui peut fonctionner sur une architecture très contemporaine mais écrase souvent un bâti ancien. Un gris moyen, un brun ou un bronze s’y pose beaucoup plus naturellement.'],
                   ['Regarder la tuile autant que le mur', 'la terre cuite tire vers l’orangé et le brun. Une teinte bronze, brune ou sable entre en résonance avec elle ; un blanc pur ou un bleu franc s’en détache franchement.'],
                   ['Décider dehors, en fin de journée', 'la lumière rasante du soir est la plus révélatrice : c’est là qu’on voit si une teinte se fond ou se dispute avec la façade.'],
@@ -693,8 +693,8 @@ export default function ArticleTeinteRalAluminiumPage() {
                 Vous verrez comment ces accords se traduisent concrètement dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , et notre approche des{' '}
+                </a>,
+                et notre approche des{' '}
                 <a href="/pergolas" className={lienInterne}>
                   pergolas
                 </a>{' '}
@@ -731,7 +731,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 façade, et une teinte claire côté séjour, qui allège la pièce et renvoie la lumière. Il faut le prévoir
                 dès la commande, cela allonge un peu le délai de fabrication et représente, d&apos;après ce que nous
                 constatons sur nos chantiers, un surcoût de l&apos;ordre de quelques pour cent sur le prix de
-                l&apos;ouvrage — variable selon le fabricant. Même logique pour une teinte hors nuancier standard :
+                l&apos;ouvrage, variable selon le fabricant. Même logique pour une teinte hors nuancier standard :
                 c&apos;est faisable, cela se paie et cela se commande à l&apos;avance.
               </p>
               <h3 className="font-headline-sm text-headline-sm text-primary mb-3">
@@ -743,7 +743,7 @@ export default function ArticleTeinteRalAluminiumPage() {
                 <strong className="text-primary font-semibold">
                   même code RAL, même finition, et idéalement le même laqueur.
                 </strong>{' '}
-                Car un même RAL laqué par deux fournisseurs différents peut légèrement différer — la nuance est
+                Car un même RAL laqué par deux fournisseurs différents peut légèrement différer, la nuance est
                 imperceptible sur deux ouvrages éloignés, et parfaitement visible sur deux pièces côte à côte. Quand
                 nous savons qu&apos;un chantier se fera en plusieurs temps, nous cherchons à faire fabriquer les pièces
                 dans un même lot, quitte à les stocker. Et dans tous les cas, nous notons le code, la finition et le
@@ -760,15 +760,15 @@ export default function ArticleTeinteRalAluminiumPage() {
               </p>
               <h3 className="font-headline-sm text-headline-sm text-primary mb-3">La rayure, et sa réparation</h3>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Un thermolaquage se raye — moins qu&apos;on ne le craint, mais cela arrive : un vélo posé contre un
+                Un thermolaquage se raye, moins qu&apos;on ne le craint, mais cela arrive : un vélo posé contre un
                 poteau, un outil qui glisse, un déménagement.{' '}
                 <strong className="text-primary font-semibold">
                   Une rayure superficielle se retouche localement
-                </strong>
-                , au stylo ou à l&apos;aérosol de retouche dans la teinte exacte : c&apos;est l&apos;affaire de quelques
+                </strong>,
+                au stylo ou à l&apos;aérosol de retouche dans la teinte exacte : c&apos;est l&apos;affaire de quelques
                 minutes et cela protège le profilé. Soyons honnêtes cependant : la retouche se voit toujours un peu, et
                 d&apos;autant plus en finition mate, où la reprise ne renvoie pas la lumière comme le reste de la
-                surface. Pour un rendu vraiment invisible, il faut déposer la pièce et la faire relaquer en atelier —
+                surface. Pour un rendu vraiment invisible, il faut déposer la pièce et la faire relaquer en atelier,
                 donc démonter. Notre conseil : réclamez un flacon de retouche à la livraison, et rangez avec lui le code
                 RAL et la finition.
               </p>

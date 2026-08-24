@@ -183,7 +183,7 @@ const jsonld = [
         name: 'Peut-on installer une borne de recharge sous le carport ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui, à condition de le prévoir à la conception. Nous intégrons l'attente électrique dans la structure — fourreau, passage de câble, emplacement du support — pour que la borne soit posée proprement, sans goulotte apparente. La fourniture, le raccordement et la mise en service de la borne relèvent de votre électricien.",
+          text: "Oui, à condition de le prévoir à la conception. Nous intégrons l'attente électrique dans la structure (fourreau, passage de câble, emplacement du support) pour que la borne soit posée proprement, sans goulotte apparente. La fourniture, le raccordement et la mise en service de la borne relèvent de votre électricien.",
         },
       },
       {
@@ -199,7 +199,7 @@ const jsonld = [
         name: 'Êtes-vous qualifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat — une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière —, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat (une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière), et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.",
         },
       },
       {
@@ -564,7 +564,7 @@ export default function CarportsPage() {
                   key={g.id}
                   className="group rounded-2xl overflow-hidden shadow-xl bg-primary hover:shadow-2xl transition-shadow duration-500"
                 >
-                  <a href={`#${g.id}`} className="flex flex-col h-full" aria-label={`${g.titre} — voir cette gamme`}>
+                  <a href={`#${g.id}`} className="flex flex-col h-full" aria-label={`${g.titre}, voir cette gamme`}>
                     <div className="relative aspect-[16/9] overflow-hidden">
                       <img
                         width={g.w}
@@ -606,13 +606,13 @@ export default function CarportsPage() {
           </div>
         </section>
 
-        {/* Gamme 1 — Carport bois + 3 toitures */}
+        {/* Gamme 1, Carport bois + 3 toitures */}
         <section className="py-section-padding bg-surface" id="carport-bois">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
               <div>
                 <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                  Gamme 1 — Le classique
+                  Gamme 1, Le classique
                 </p>
                 <h2 className="font-headline-md text-headline-md text-primary mt-2 mb-6">
                   Carport bois : chaleur naturelle et robustesse
@@ -746,7 +746,7 @@ export default function CarportsPage() {
           </div>
         </section>
 
-        {/* Gamme 2 — Carport aluminium */}
+        {/* Gamme 2, Carport aluminium */}
         <section className="py-section-padding bg-surface-container-low" id="carport-aluminium">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -787,7 +787,7 @@ export default function CarportsPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                  Gamme 2 — Le contemporain
+                  Gamme 2, Le contemporain
                 </p>
                 <h2 className="font-headline-md text-headline-md text-primary mt-2 mb-6">
                   Carport aluminium sur mesure
@@ -807,8 +807,8 @@ export default function CarportsPage() {
                     className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                   >
                     Li-Su des Temps
-                  </a>
-                  , fabriqués sur mesure aux dimensions exactes de votre stationnement.
+                  </a>,
+                  fabriqués sur mesure aux dimensions exactes de votre stationnement.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -858,13 +858,13 @@ export default function CarportsPage() {
           </div>
         </section>
 
-        {/* Gamme 3 — Carport solaire */}
+        {/* Gamme 3, Carport solaire */}
         <section className="py-section-padding bg-primary text-white" id="carport-solaire">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-14">
               <div>
                 <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-2">
-                  Gamme 3 — L'abri qui produit
+                  Gamme 3, L'abri qui produit
                 </p>
                 <h2 className="font-headline-md text-headline-md mt-2 mb-6">
                   Carport solaire : abritez votre voiture, produisez votre électricité
@@ -1039,7 +1039,7 @@ export default function CarportsPage() {
               <h3 className="font-headline-sm text-headline-sm mb-3">Les teintes les plus demandées</h3>
               <p className="text-on-primary-container text-body-md mb-8 max-w-2xl">
                 Bac acier et structure aluminium sont thermolaqués dans la teinte de votre choix. Voici celles que
-                nous posons le plus souvent en Libournais — le nuancier RAL complet reste ouvert.
+                nous posons le plus souvent en Libournais, le nuancier RAL complet reste ouvert.
               </p>
               <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {TEINTES.map((t) => (
@@ -1209,7 +1209,7 @@ export default function CarportsPage() {
           </div>
         </section>
 
-        {/* Notre approche — placée ici, elle éclaire le parcours de chantier qui suit */}
+        {/* Notre approche, placée ici, elle éclaire le parcours de chantier qui suit */}
         <section className="py-section-padding bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-3xl">
@@ -1231,7 +1231,7 @@ export default function CarportsPage() {
                 Installés aux Billaux, à quelques minutes de{' '}
                 <strong className="text-primary font-semibold">Libourne</strong>, nous réalisons des carports sur
                 mesure dans toute la <strong className="text-primary font-semibold">Gironde</strong>. Chaque projet
-                part du terrain : orientation, pente, accès, style de la façade, règles du PLU de votre commune — pas
+                part du terrain : orientation, pente, accès, style de la façade, règles du PLU de votre commune, pas
                 d'un catalogue.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -1241,8 +1241,8 @@ export default function CarportsPage() {
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   un seul interlocuteur
-                </a>
-                , de l'étude à la dernière vis. Entreprise{' '}
+                </a>,
+                de l'étude à la dernière vis. Entreprise{' '}
                 <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, nous couvrons chaque
                 ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>.
               </p>
@@ -1319,8 +1319,8 @@ export default function CarportsPage() {
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 l'ensemble de nos réalisations
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/pergolas"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -1545,8 +1545,8 @@ export default function CarportsPage() {
                 </summary>
                 <p className="text-on-surface-variant text-body-md mt-4">
                   Oui, à condition de le prévoir à la conception. Nous intégrons{' '}
-                  <strong className="text-primary font-semibold">l'attente électrique</strong> dans la structure —
-                  fourreau, passage de câble, emplacement du support — pour que la borne soit posée proprement, sans
+                  <strong className="text-primary font-semibold">l'attente électrique</strong> dans la structure (
+                  fourreau, passage de câble, emplacement du support) pour que la borne soit posée proprement, sans
                   goulotte apparente. La fourniture, le raccordement et la mise en service de la borne relèvent de
                   votre électricien.
                 </p>

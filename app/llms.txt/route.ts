@@ -18,7 +18,7 @@ export function GET() {
   ).join('\n');
 
   const guides = articles
-    .map((a) => `- [${a.titre}](${base}/blog/${a.slug}) — publié le ${a.date}.`)
+    .map((a) => `- [${a.titre}](${base}/blog/${a.slug}), publié le ${a.date}.`)
     .join('\n');
 
   const corps = `# L'Esprit Bois
@@ -27,7 +27,7 @@ export function GET() {
 
 Zone d'intervention : Libourne et le Libournais (Les Billaux, Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), et plus largement la Gironde jusqu'à la métropole bordelaise. Pour les pergolas, l'entreprise se déplace également sur le Bassin d'Arcachon (La Teste-de-Buch, Arcachon, Gujan-Mestras, Le Teich), où elle n'a pas encore de chantier livré.
 
-Contact : 05 57 40 65 80 — lespritbois33@gmail.com — 1 Aux Pradasses, 33500 Les Billaux.
+Contact : 05 57 40 65 80, lespritbois33@gmail.com, 1 Aux Pradasses, 33500 Les Billaux.
 
 ## Nos gammes
 

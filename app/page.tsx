@@ -97,7 +97,7 @@ const jsonld = [
     })),
     /** Qualibat délivre des qualifications ET des certifications : L'Esprit Bois
      *  détient une QUALIFICATION professionnelle, pas une certification.
-     *  Confirmé par David le 22/08/2026 — ne pas repasser à 'certification'. */
+     *  Confirmé par David le 22/08/2026, ne pas repasser à 'certification'. */
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'qualification professionnelle',
@@ -127,7 +127,7 @@ const jsonld = [
       closes: '17:00',
     },
     /** Communes réellement desservies, et non la seule mention « Libourne et la
-     *  Gironde ». La liste reprend celle de `llms.txt` — le Libournais autour de
+     *  Gironde ». La liste reprend celle de `llms.txt`, le Libournais autour de
      *  l'atelier, puis les communes où des chantiers ont effectivement été
      *  livrés (voir /realisations), jusqu'à la métropole bordelaise. */
     areaServed: [
@@ -713,7 +713,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/* Zones d'intervention — chaque secteur a sa page, adossée à ses chantiers */}
+        {/* Zones d'intervention, chaque secteur a sa page, adossée à ses chantiers */}
         <section className="py-20 md:py-24 bg-surface-container-low" id="zones">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-2xl mb-12">
@@ -905,8 +905,8 @@ export default function HomePage() {
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   carports
-                </a>
-                , bardages et{' '}
+                </a>,
+                bardages et{' '}
                 <a
                   href="/constructions-bois"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -1087,7 +1087,7 @@ export default function HomePage() {
                   Nous ne nous contentons pas de construire : nous concevons un lieu de vie. Un seul
                   interlocuteur, du premier croquis à la dernière lame.
                   <span className="block mt-3 text-xs tracking-wide text-secondary-fixed">
-                    Notre engagement —{' '}
+                    Notre engagement,{' '}
                     <a href={GOOGLE.avis} className="underline underline-offset-4 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                       lire les avis de nos clients
                     </a>

@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -335,8 +335,8 @@ export default function ArticleFermerPergolaPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>21 août 2026</span>
@@ -351,7 +351,7 @@ export default function ArticleFermerPergolaPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Fermer une pergola prolonge la saison de quelques mois — mais ne fabrique pas une véranda. Sans
+                Fermer une pergola prolonge la saison de quelques mois, mais ne fabrique pas une véranda. Sans
                 isolation ni rupture de pont thermique, on gagne un abri hors vent et hors pluie, pas une pièce
                 chauffée.
               </strong>{' '}
@@ -359,7 +359,7 @@ export default function ArticleFermerPergolaPage() {
               pergola avant l&apos;hiver ». Le choix ne se décide pas sur un catalogue de rideaux de verre : il se
               décide sur l&apos;usage visé. Si la pièce doit vivre en février, il faut une véranda, et mieux vaut le dire
               franchement que vendre une fermeture qui décevra. Si elle doit simplement servir jusqu&apos;en novembre et
-              redémarrer en mars, alors oui, une fermeture bien choisie change tout — et elle s&apos;installe{' '}
+              redémarrer en mars, alors oui, une fermeture bien choisie change tout, et elle s&apos;installe{' '}
               <strong className="text-primary font-semibold">avant l&apos;automne, pas après</strong>. Voici comment
               trancher, côté par côté.
             </p>
@@ -372,7 +372,7 @@ export default function ArticleFermerPergolaPage() {
             {/* 1. Ce qu'on gagne et ce qu'on ne gagne pas */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Ce qu&apos;on gagne vraiment en fermant une pergola — et ce qu&apos;on ne gagne pas
+                Ce qu&apos;on gagne vraiment en fermant une pergola, et ce qu&apos;on ne gagne pas
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Ce qu&apos;on gagne est réel, et c&apos;est même beaucoup : une pergola bioclimatique lames fermées vous
@@ -456,7 +456,7 @@ export default function ArticleFermerPergolaPage() {
                 {[
                   [
                     'L’encombrement des vantaux empilés',
-                    'ouverts, les panneaux se rangent à une extrémité et mangent de la largeur. Le sens d’empilage se décide en fonction de l’accès à la maison et de la vue à préserver — c’est un choix qu’on ne rattrape pas après la pose.',
+                    'ouverts, les panneaux se rangent à une extrémité et mangent de la largeur. Le sens d’empilage se décide en fonction de l’accès à la maison et de la vue à préserver, c’est un choix qu’on ne rattrape pas après la pose.',
                   ],
                   [
                     'Le rail bas',
@@ -507,8 +507,8 @@ export default function ArticleFermerPergolaPage() {
                 Attention à ne pas confondre deux usages qui emploient le même produit. Dans{' '}
                 <a href="/blog/protection-solaire-brise-soleil-orientable" className={lienInterne}>
                   notre article sur les protections solaires et les brise-soleil orientables
-                </a>
-                , le store zip sert à <strong className="text-primary font-semibold">arrêter le soleil</strong> : on
+                </a>,
+                le store zip sert à <strong className="text-primary font-semibold">arrêter le soleil</strong> : on
                 choisit la toile sur son facteur d&apos;ouverture et sa couleur, pour rafraîchir. Ici, c&apos;est
                 l&apos;inverse : on ferme <strong className="text-primary font-semibold">contre le vent et la pluie</strong>,
                 on cherche à garder un maximum de lumière au moment de l&apos;année où elle manque, et la toile se
@@ -516,10 +516,10 @@ export default function ArticleFermerPergolaPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Côté motorisation, une commande à distance et un automatisme de remontée quand le vent forcit sont, à
-                notre avis, le vrai confort du système — bien plus qu&apos;une manœuvre manuelle qu&apos;on finit par ne
+                notre avis, le vrai confort du système, bien plus qu&apos;une manœuvre manuelle qu&apos;on finit par ne
                 plus faire. Et la question de fin d&apos;été est toujours la même :{' '}
                 <strong className="text-primary font-semibold">laisser ou non les stores en place pour l&apos;hiver ?</strong>{' '}
-                Notre réponse : les laisser, s&apos;ils sont protégés par un coffre — à condition de remonter la toile{' '}
+                Notre réponse : les laisser, s&apos;ils sont protégés par un coffre, à condition de remonter la toile{' '}
                 <em>sèche</em>. Une toile enroulée humide et oubliée jusqu&apos;en mars, c&apos;est une toile qui
                 moisit.
               </p>
@@ -579,7 +579,7 @@ export default function ArticleFermerPergolaPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Sur la teinte, la règle est celle de tous nos ouvrages aluminium : les profilés de fermeture reprennent
                 le RAL thermolaqué de la pergola et, si possible, celui des menuiseries de la maison. Un rail dans un
-                gris différent de la structure se voit immédiatement — nous détaillons ce point dans notre article sur{' '}
+                gris différent de la structure se voit immédiatement, nous détaillons ce point dans notre article sur{' '}
                 <a href="/blog/choisir-teinte-ral-aluminium" className={lienInterne}>
                   le choix de la teinte RAL en aluminium
                 </a>
@@ -600,7 +600,7 @@ export default function ArticleFermerPergolaPage() {
                 w: 825,
                 h: 1100,
                 alt: 'Pergola en aluminium sur terrasse bois, laissée ouverte côté jardin, en Gironde',
-                caption: 'Côté jardin : on garde un côté ouvrable — ventilation et statut de l’ouvrage en dépendent.',
+                caption: 'Côté jardin : on garde un côté ouvrable, ventilation et statut de l’ouvrage en dépendent.',
               }}
             />
 
@@ -631,9 +631,9 @@ export default function ArticleFermerPergolaPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">La condensation enfin</strong>, et c&apos;est le sujet
-                dont personne ne parle avant la vente. De l&apos;air humide — celui d&apos;un hiver girondin, celui d&apos;un
-                repas, celui du jardin arrosé — au contact de surfaces froides — du verre simple, des profilés non
-                isolés — donne de la buée, puis du ruissellement, puis des gouttes sur le mobilier le matin, et une
+                dont personne ne parle avant la vente. De l&apos;air humide, celui d&apos;un hiver girondin, celui d&apos;un
+                repas, celui du jardin arrosé, au contact de surfaces froides, du verre simple, des profilés non
+                isolés, donne de la buée, puis du ruissellement, puis des gouttes sur le mobilier le matin, et une
                 odeur de renfermé si le volume ne s&apos;ouvre jamais. Ce n&apos;est ni un défaut ni une malfaçon :
                 c&apos;est la physique d&apos;un volume fermé non isolé. Quatre réflexes suffisent :
               </p>
@@ -655,8 +655,8 @@ export default function ArticleFermerPergolaPage() {
                 nous avons détaillé les gestes qui comptent dans{' '}
                 <a href="/blog/entretien-aluminium-pergola-veranda-revision-automne" className={lienInterne}>
                   l&apos;entretien d&apos;une pergola et d&apos;une véranda en aluminium
-                </a>{' '}
-                — chéneaux dégagés avant la chute des feuilles, joints vérifiés, motorisation testée. Poser une
+                </a>,{' '}
+               chéneaux dégagés avant la chute des feuilles, joints vérifiés, motorisation testée. Poser une
                 fermeture sur un ouvrage dont les évacuations sont bouchées, c&apos;est enfermer le problème avec soi.
               </p>
             </section>
@@ -697,7 +697,7 @@ export default function ArticleFermerPergolaPage() {
                 article : cela se choisit sur place, avec un appareil prévu pour l&apos;extérieur ou le semi-abrité,
                 installé selon la notice du fabricant, et en gardant à l&apos;esprit qu&apos;un appareil à combustion
                 n&apos;a rien à faire dans un volume qu&apos;on vient précisément de fermer. Pour l&apos;ensemble du
-                traitement de l&apos;espace — sol, abords, éclairage, mobilier —, voyez notre page{' '}
+                traitement de l&apos;espace (sol, abords, éclairage, mobilier), voyez notre page{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
                 </a>{' '}
@@ -714,7 +714,7 @@ export default function ArticleFermerPergolaPage() {
               w={1600}
               h={900}
               alt="Terrasse bois sous une pergola en aluminium, sol en pente vers le jardin, en Gironde"
-              caption="Le sol et l'éclairage décident de l'usage réel en octobre — bien plus qu'un vitrage supplémentaire."
+              caption="Le sol et l'éclairage décident de l'usage réel en octobre, bien plus qu'un vitrage supplémentaire."
             />
 
             {/* 7. Pergola fermée ou véranda */}
@@ -730,18 +730,18 @@ export default function ArticleFermerPergolaPage() {
                 </strong>{' '}
                 : on double presque la durée d&apos;usage pour une fraction du coût d&apos;une construction. Si en
                 revanche vous vous voyez y déjeuner en février, y installer un bureau, y mettre du mobilier
-                d&apos;intérieur et compter dessus comme sur une pièce, alors il faut une véranda — avec des profilés à
+                d&apos;intérieur et compter dessus comme sur une pièce, alors il faut une véranda, avec des profilés à
                 rupture de pont thermique, un vitrage isolant et un vrai traitement du chauffage. C&apos;est le sujet de
                 notre guide{' '}
                 <a href="/blog/veranda-aluminium-isolation-urbanisme-budget" className={lienInterne}>
                   véranda en aluminium : isolation, urbanisme et budget
-                </a>
-                , et c&apos;est là qu&apos;il faut aller si votre réponse est « février ».
+                </a>,
+                et c&apos;est là qu&apos;il faut aller si votre réponse est « février ».
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
                 Le budget aide à trancher, à condition de le regarder côté par côté. Voici les ordres de grandeur{' '}
                 <strong className="text-primary font-semibold">constatés sur nos propres chantiers en 2026</strong>,
-                pose comprise, volontairement larges — un prix au mètre carré de vitrage n&apos;aurait aucun sens sur ce
+                pose comprise, volontairement larges, un prix au mètre carré de vitrage n&apos;aurait aucun sens sur ce
                 type d&apos;ouvrage :
               </p>
               <ul className="space-y-3 mb-5">
@@ -761,7 +761,7 @@ export default function ArticleFermerPergolaPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;arbitrage saute alors aux yeux : additionnez trois ou quatre côtés vitrés haut de gamme et vous
-                entrez dans la zone basse du budget d&apos;une véranda — pour un résultat qui, lui, n&apos;est toujours
+                entrez dans la zone basse du budget d&apos;une véranda, pour un résultat qui, lui, n&apos;est toujours
                 pas une pièce chauffée. C&apos;est le moment de reposer la question de départ, pas après signature.
               </p>
               <h3 className="font-headline-sm text-headline-sm text-primary mt-8 mb-4">
@@ -772,8 +772,8 @@ export default function ArticleFermerPergolaPage() {
                 avant de commander.{' '}
                 <strong className="text-primary font-semibold">
                   Une pergola ou une tonnelle non close échappe à la taxe d&apos;aménagement quelle que soit sa surface
-                </strong>{' '}
-                — c&apos;est précisément le caractère <em>clos et couvert</em> qui déclenche cette taxe, comme
+                </strong>,{' '}
+               c&apos;est précisément le caractère <em>clos et couvert</em> qui déclenche cette taxe, comme
                 l&apos;indique la fiche officielle sur la{' '}
                 <a
                   href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263"
@@ -790,7 +790,7 @@ export default function ArticleFermerPergolaPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Nous ne chiffrons volontairement aucun seuil ici : ces valeurs, la surface prise en compte et
-                l&apos;exonération applicable sont détaillées dans nos deux guides dédiés —{' '}
+                l&apos;exonération applicable sont détaillées dans nos deux guides dédiés,{' '}
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>
                   autorisations d&apos;urbanisme pour un abri, un carport ou une pergola
                 </a>{' '}
@@ -803,8 +803,8 @@ export default function ArticleFermerPergolaPage() {
                 la situation, pas nous et pas votre fournisseur.{' '}
                 <strong className="text-primary font-semibold">
                   Un passage au service urbanisme avant de commander règle la question en une visite
-                </strong>{' '}
-                — et évite la mauvaise surprise un an plus tard.
+                </strong>,{' '}
+               et évite la mauvaise surprise un an plus tard.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un dernier mot sur notre climat, parce qu&apos;il change le calcul.{' '}
@@ -812,14 +812,14 @@ export default function ArticleFermerPergolaPage() {
                   Autour de Libourne et dans toute la Gironde, l&apos;hiver est doux et humide plutôt que froid, avec des
                   vents d&apos;ouest marqués
                 </strong>
-                . Fermer une pergola y rapporte donc beaucoup de jours d&apos;usage — bien plus que sous un climat
-                continental —, mais l&apos;humidité y rend la condensation plus présente qu&apos;ailleurs. Traduction
+                . Fermer une pergola y rapporte donc beaucoup de jours d&apos;usage, bien plus que sous un climat
+                continental, mais l&apos;humidité y rend la condensation plus présente qu&apos;ailleurs. Traduction
                 concrète : ici, on ferme surtout pour couper le vent et la pluie, et on garde impérativement de quoi
                 ventiler. Vous retrouverez cette logique dans notre approche des{' '}
                 <a href="/pergolas" className={lienInterne}>
                   pergolas sur mesure
-                </a>
-                , bois comme aluminium.
+                </a>,
+                bois comme aluminium.
               </p>
             </section>
           </div>
@@ -861,13 +861,13 @@ export default function ArticleFermerPergolaPage() {
               Le mot de la fin
             </span>
             <h2 className="font-headline-md text-headline-md mt-4 mb-6">
-              Fermer, oui — mais pour le bon usage
+              Fermer, oui, mais pour le bon usage
             </h2>
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Fermer une pergola est une excellente idée quand on veut gagner des mois de terrasse, et une mauvaise idée
               quand on espère une pièce chauffée : dans ce cas, c&apos;est une véranda qu&apos;il faut, et nous le
               dirons. Le reste se décide côté par côté, devant votre maison, en regardant d&apos;où vient le vent, où
-              donne la vue et par où l&apos;on passe — sans oublier de vérifier en mairie ce que la fermeture change au
+              donne la vue et par où l&apos;on passe, sans oublier de vérifier en mairie ce que la fermeture change au
               statut de l&apos;ouvrage. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois, à Libourne et
               dans toute la Gironde, et la fermeture se pose avant l&apos;automne, pas après.
             </p>

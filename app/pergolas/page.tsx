@@ -201,7 +201,7 @@ const jsonld = [
         name: 'Êtes-vous qualifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat — une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière —, et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat (une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière), et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.",
         },
       },
     ],
@@ -303,7 +303,7 @@ const OPTIONS = [
   },
 ];
 
-/* Teintes les plus demandées en Libournais — le nuancier complet reste ouvert. */
+/* Teintes les plus demandées en Libournais, le nuancier complet reste ouvert. */
 const TEINTES = [
   { ral: 'RAL 7016', nom: 'Gris anthracite', hex: '#383E42', clair: false },
   { ral: 'RAL 9005', nom: 'Noir foncé', hex: '#0E0E10', clair: false },
@@ -541,7 +541,7 @@ export default function PergolasPage() {
           </div>
         </section>
 
-        {/* Gamme : sommaire visuel — placée au plus haut, le visiteur doit voir les produits d'abord */}
+        {/* Gamme : sommaire visuel, placée au plus haut, le visiteur doit voir les produits d'abord */}
         <section className="py-section-padding bg-surface-container-low" id="gamme" aria-labelledby="titre-gamme">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-3xl mb-12">
@@ -564,7 +564,7 @@ export default function PergolasPage() {
                   <a
                     href={`#${g.id}`}
                     className="block relative h-[460px] lg:h-[560px]"
-                    aria-label={`${g.titre} — voir cette gamme`}
+                    aria-label={`${g.titre}, voir cette gamme`}
                   >
                     <img
                       width={g.w}
@@ -616,13 +616,13 @@ export default function PergolasPage() {
           </div>
         </section>
 
-        {/* Gamme 1 — Pergola bioclimatique */}
+        {/* Gamme 1, Pergola bioclimatique */}
         <section className="py-section-padding bg-surface" id="pergola-bioclimatique">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
               <div>
                 <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                  Gamme 1 — Le pilotage du soleil
+                  Gamme 1, Le pilotage du soleil
                 </p>
                 <h2 className="font-headline-md text-headline-md text-primary mt-2 mb-6">
                   Pergola bioclimatique à lames orientables
@@ -642,8 +642,8 @@ export default function PergolasPage() {
                     className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                   >
                     Li-Su des Temps
-                  </a>
-                  , fabriquée à la commande, sur mesure.
+                  </a>,
+                  fabriquée à la commande, sur mesure.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -758,7 +758,7 @@ export default function PergolasPage() {
           </div>
         </section>
 
-        {/* Gamme 2 — Pergola aluminium à toiture fixe */}
+        {/* Gamme 2, Pergola aluminium à toiture fixe */}
         <section className="py-section-padding bg-surface-container-low" id="pergola-aluminium">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
@@ -799,7 +799,7 @@ export default function PergolasPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                  Gamme 2 — L'abri permanent
+                  Gamme 2, L'abri permanent
                 </p>
                 <h2 className="font-headline-md text-headline-md text-primary mt-2 mb-6">
                   Pergola aluminium à toiture fixe
@@ -829,7 +829,7 @@ export default function PergolasPage() {
                       Polycarbonate translucide
                     </p>
                     <p className="text-on-surface-variant text-body-md">
-                      Laisse passer la lumière tout en coupant les UV. La pièce derrière ne s'assombrit pas — c'est le
+                      Laisse passer la lumière tout en coupant les UV. La pièce derrière ne s'assombrit pas, c'est le
                       choix à privilégier quand la pergola est devant une baie vitrée ou une pièce à vivre.
                     </p>
                   </div>
@@ -954,7 +954,7 @@ export default function PergolasPage() {
           </div>
         </section>
 
-        {/* Gamme 3 — Pergola bois massif */}
+        {/* Gamme 3, Pergola bois massif */}
         <section className="py-section-padding bg-surface" id="pergola-bois">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -995,7 +995,7 @@ export default function PergolasPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                  Gamme 3 — La chaleur de la matière
+                  Gamme 3, La chaleur de la matière
                 </p>
                 <h2 className="font-headline-md text-headline-md text-primary mt-2 mb-6">Pergola bois massif</h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
@@ -1209,7 +1209,7 @@ export default function PergolasPage() {
               <h3 className="font-headline-sm text-headline-sm mb-3">Les teintes les plus demandées</h3>
               <p className="text-on-primary-container text-body-md mb-8 max-w-2xl">
                 Le thermolaquage se fait dans la teinte de votre choix. Voici celles que nous posons le plus souvent
-                en Libournais — le nuancier RAL complet reste ouvert, y compris en finition texturée.
+                en Libournais, le nuancier RAL complet reste ouvert, y compris en finition texturée.
               </p>
               <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {TEINTES.map((t) => (
@@ -1394,7 +1394,7 @@ export default function PergolasPage() {
           </div>
         </section>
 
-        {/* Notre approche — descendue ici : elle éclaire le parcours de chantier qui suit */}
+        {/* Notre approche, descendue ici : elle éclaire le parcours de chantier qui suit */}
         <section className="py-section-padding bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-3xl">
@@ -1408,7 +1408,7 @@ export default function PergolasPage() {
                 <strong className="text-primary font-semibold">
                   Pour profiter de votre terrasse de mars à octobre, trois solutions existent : la pergola
                   bioclimatique à lames orientables, la pergola aluminium à toiture fixe et la pergola en bois
-                  massif — cette dernière se couvrant en claire-voie, en lames fixes ou en toile rétractable.
+                  massif, cette dernière se couvrant en claire-voie, en lames fixes ou en toile rétractable.
                 </strong>{' '}
                 Toutes se posent adossées à la maison ou entièrement autoportées. Ce qui les sépare, c'est la façon
                 dont elles traitent le soleil, la pluie et le budget.
@@ -1417,7 +1417,7 @@ export default function PergolasPage() {
                 Installés aux Billaux, à quelques minutes de{' '}
                 <strong className="text-primary font-semibold">Libourne</strong>, nous concevons et posons ces
                 pergolas sur mesure dans toute la <strong className="text-primary font-semibold">Gironde</strong>.
-                Chaque projet part de l'orientation de votre terrasse, du trajet du soleil et des vents dominants —
+                Chaque projet part de l'orientation de votre terrasse, du trajet du soleil et des vents dominants,
                 pas d'un catalogue.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -1427,8 +1427,8 @@ export default function PergolasPage() {
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   un seul interlocuteur
-                </a>
-                , de l'étude à la dernière lame. Entreprise{' '}
+                </a>,
+                de l'étude à la dernière lame. Entreprise{' '}
                 <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, nous couvrons chaque
                 ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>.
               </p>
@@ -1478,7 +1478,7 @@ export default function PergolasPage() {
               Pergolas réalisées à Libourne et en Gironde
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
-              Cinq de nos chantiers sont en Entre-deux-Mers, où le coteau et le sous-sol calcaire changent la conception : ils sont détaillés sur notre page <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergolas et carports en Entre-deux-Mers</a>. En ville, la contrainte est autre — voir <a href="/amenagement-exterieur-bordeaux-metropole" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">métropole bordelaise</a>.
+              Cinq de nos chantiers sont en Entre-deux-Mers, où le coteau et le sous-sol calcaire changent la conception : ils sont détaillés sur notre page <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergolas et carports en Entre-deux-Mers</a>. En ville, la contrainte est autre, voir <a href="/amenagement-exterieur-bordeaux-metropole" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">métropole bordelaise</a>.
              Et sur le littoral, ce sont le vent, les embruns et les sites classés qui commandent : voir <a href="/pergola-bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergolas sur le Bassin d'Arcachon</a>, ou l'ensemble de nos ouvrages <a href="/bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">sur le Bassin d'Arcachon</a>.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {GALERIE.map((p) => (
@@ -1505,8 +1505,8 @@ export default function PergolasPage() {
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 l'ensemble de nos réalisations
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/carports"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"

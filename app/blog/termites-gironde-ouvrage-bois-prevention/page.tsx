@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -126,7 +126,7 @@ const jsonld = [
         name: "Une terrasse en bois attire-t-elle les termites vers la maison ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Une terrasse correctement conçue — désolidarisée du sol, ventilée en sous-face, sans bois enterré ni débris de chantier laissés dessous — n'est pas un appât. En revanche, un ouvrage en bois posé à même la terre et fermé sur son pourtour crée exactement les conditions recherchées. Si vous découvrez un foyer dans un ouvrage proche du bâti, c'est un signal à faire diagnostiquer sans attendre : ni une contamination certaine de la maison, ni une découverte à ignorer.",
+          text: "Une terrasse correctement conçue (désolidarisée du sol, ventilée en sous-face, sans bois enterré ni débris de chantier laissés dessous) n'est pas un appât. En revanche, un ouvrage en bois posé à même la terre et fermé sur son pourtour crée exactement les conditions recherchées. Si vous découvrez un foyer dans un ouvrage proche du bâti, c'est un signal à faire diagnostiquer sans attendre : ni une contamination certaine de la maison, ni une découverte à ignorer.",
         },
       },
       {
@@ -194,8 +194,8 @@ const faq = [
     q: 'Une terrasse en bois attire-t-elle les termites vers la maison ?',
     r: (
       <>
-        Une terrasse correctement conçue — désolidarisée du sol, ventilée en sous-face, sans bois enterré ni débris de
-        chantier laissés dessous — n&apos;est pas un appât. En revanche, un ouvrage posé à même la terre et fermé sur
+        Une terrasse correctement conçue (désolidarisée du sol, ventilée en sous-face, sans bois enterré ni débris de
+        chantier laissés dessous) n&apos;est pas un appât. En revanche, un ouvrage posé à même la terre et fermé sur
         son pourtour crée exactement les conditions recherchées. Si vous découvrez un foyer dans un ouvrage proche du
         bâti, c&apos;est un signal à faire diagnostiquer sans attendre : ni une contamination certaine de la maison, ni
         une découverte à ignorer.
@@ -295,8 +295,8 @@ export default function ArticleTermitesGirondePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>12 août 2026</span>
@@ -326,7 +326,7 @@ export default function ArticleTermitesGirondePage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Ce qui attire vraiment les termites */}
+            {/* 1, Ce qui attire vraiment les termites */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ce qui attire vraiment les termites (et ce n&apos;est pas l&apos;essence)
@@ -342,8 +342,8 @@ export default function ArticleTermitesGirondePage() {
                 . Un bois sec, ventilé, visible et accessible à l&apos;œil ne remplit aucune de ces conditions.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                C&apos;est pour cela que la question qu&apos;on nous pose le plus — « quelle essence ne craint pas les
-                termites ? » — n&apos;est pas la bonne première question. Elle vient en cinquième position, après
+                C&apos;est pour cela que la question qu&apos;on nous pose le plus, « quelle essence ne craint pas les
+                termites ? », n&apos;est pas la bonne première question. Elle vient en cinquième position, après
                 l&apos;implantation, le contact avec le sol, la ventilation et l&apos;environnement immédiat de
                 l&apos;ouvrage. Un bois réputé plus résistant, posé à même la terre et coffré derrière une plinthe
                 pleine, se retrouve dans des conditions bien plus favorables aux insectes qu&apos;un bois plus ordinaire
@@ -379,7 +379,7 @@ export default function ArticleTermitesGirondePage() {
               </p>
             </section>
 
-            {/* 2 — Contact bois-sol */}
+            {/* 2, Contact bois-sol */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Le contact bois-sol : le défaut de pose n° 1 sur nos chantiers
@@ -401,7 +401,7 @@ export default function ArticleTermitesGirondePage() {
                 sous l&apos;ouvrage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
-                Nos règles de pose, constatées et éprouvées sur nos chantiers en Gironde — ce sont nos usages
+                Nos règles de pose, constatées et éprouvées sur nos chantiers en Gironde, ce sont nos usages
                 d&apos;entreprise, pas des valeurs normatives :
               </p>
               <ul className="space-y-3 mb-5">
@@ -434,7 +434,7 @@ export default function ArticleTermitesGirondePage() {
               caption="Le poteau de droite repose sur son pied métallique, à quelques centimètres du gravier : ni bois enterré, ni scellement dans le béton, et un pied qu'on peut inspecter debout."
             />
 
-            {/* 3 — Ventiler la sous-face */}
+            {/* 3, Ventiler la sous-face */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ventiler la sous-face : pourquoi une terrasse bien ventilée se défend seule
@@ -454,8 +454,8 @@ export default function ArticleTermitesGirondePage() {
                 notre guide{' '}
                 <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
                   structure de terrasse bois : plots, lambourdes et ventilation
-                </a>
-                , qui traite en détail la hauteur de vide, l&apos;entraxe et le drainage. Retenons ce qui compte du point
+                </a>,
+                qui traite en détail la hauteur de vide, l&apos;entraxe et le drainage. Retenons ce qui compte du point
                 de vue des termites :
               </p>
               <ul className="space-y-3 mb-5">
@@ -463,7 +463,7 @@ export default function ArticleTermitesGirondePage() {
                   'Un vide continu sous les lambourdes, jamais interrompu par un remblai ou une chape rapportée après coup.',
                   'Une ventilation traversante : au moins deux côtés opposés ouverts, pour créer un vrai courant d’air et pas une poche fermée.',
                   'Un pourtour qui respire : si l’esthétique impose une finition, une claire-voie ou une grille inox, jamais une plinthe pleine collée au sol.',
-                  'Un fond propre : géotextile et gravier plutôt que terre végétale, et aucun bois abandonné sous l’ouvrage — chutes, cales de réglage, coffrages perdus.',
+                  'Un fond propre : géotextile et gravier plutôt que terre végétale, et aucun bois abandonné sous l’ouvrage, chutes, cales de réglage, coffrages perdus.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -487,7 +487,7 @@ export default function ArticleTermitesGirondePage() {
               caption="Rive laissée ouverte, plots métalliques apparents, sol nu et propre dessous : l'air traverse la structure au lieu de stagner sous le platelage."
             />
 
-            {/* 4 — Réservoirs de cellulose */}
+            {/* 4, Réservoirs de cellulose */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Bûches, souches et bois stockés : les réservoirs qu&apos;on installe soi-même
@@ -498,8 +498,8 @@ export default function ArticleTermitesGirondePage() {
                 <strong className="text-primary font-semibold">
                   une souche laissée en terre après un abattage, un tas de bûches posé à même le sol contre le mur, des
                   palettes oubliées derrière l&apos;abri
-                </strong>
-                , des traverses en bordure de potager, un paillage épais poussé contre un bardage, ou des piquets de
+                </strong>,
+                des traverses en bordure de potager, un paillage épais poussé contre un bardage, ou des piquets de
                 clôture cassés qu&apos;on n&apos;a jamais retirés.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -515,7 +515,7 @@ export default function ArticleTermitesGirondePage() {
                   'Ne jamais stocker le bois de chauffage à même la terre : sur un support non cellulosique (parpaings, plots, structure métallique), surélevé de quelques centimètres.',
                   'Décoller la pile du mur d’au moins 50 cm, pour que l’air passe derrière et qu’on puisse regarder ce qui s’y passe.',
                   'Arracher les souches plutôt que les laisser se décomposer en terre, surtout à proximité du bâti ou d’un ouvrage neuf.',
-                  'Évacuer les bois de chantier, coffrages et palettes dès la fin des travaux — rien d’enterré, rien de laissé sous une structure.',
+                  'Évacuer les bois de chantier, coffrages et palettes dès la fin des travaux, rien d’enterré, rien de laissé sous une structure.',
                   'Tenir les paillages et écorces à distance des pieds de bardage et des lames d’air.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -528,9 +528,9 @@ export default function ArticleTermitesGirondePage() {
                 Quand nous dessinons un{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur complet
-                </a>
-                , cette logique fait partie du plan au même titre que les cheminements ou l&apos;éclairage : on décide
-                où va le bois de chauffage, comment il est surélevé et à quelle distance des murs, avant de construire —
+                </a>,
+                cette logique fait partie du plan au même titre que les cheminements ou l&apos;éclairage : on décide
+                où va le bois de chauffage, comment il est surélevé et à quelle distance des murs, avant de construire,
                 pas trois ans après.
               </p>
             </section>
@@ -543,7 +543,7 @@ export default function ArticleTermitesGirondePage() {
               caption="Le stockage à éviter : posé sur la terre, collé au mur, jamais déplacé. Surélever la pile sur des parpaings et la décaler de 50 cm ne coûte rien et change tout."
             />
 
-            {/* 5 — Essences, classes d'emploi, traitements */}
+            {/* 5, Essences, classes d'emploi, traitements */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Essences, classes d&apos;emploi et traitements : ce qu&apos;ils font et ne font pas
@@ -554,8 +554,8 @@ export default function ArticleTermitesGirondePage() {
                 beaucoup moins.{' '}
                 <strong className="text-primary font-semibold">
                   Mais aucune essence n&apos;est invulnérable si l&apos;ouvrage reste humide et au contact du sol
-                </strong>{' '}
-                — et méfiez-vous de tout discours qui vous promet l&apos;inverse.
+                </strong>,{' '}
+               et méfiez-vous de tout discours qui vous promet l&apos;inverse.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le vocabulaire utile est celui des <strong className="text-primary font-semibold">classes
@@ -569,7 +569,7 @@ export default function ArticleTermitesGirondePage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['La durabilité naturelle concerne le duramen', 'la part tendre et claire du bois (l’aubier) n’en bénéficie pas, quelle que soit l’essence — d’où l’importance du choix de la qualité, pas seulement du nom de l’essence.'],
+                  ['La durabilité naturelle concerne le duramen', 'la part tendre et claire du bois (l’aubier) n’en bénéficie pas, quelle que soit l’essence, d’où l’importance du choix de la qualité, pas seulement du nom de l’essence.'],
                   ['Un traitement de préservation n’est pas un traitement curatif', 'le premier prépare un bois neuf à son exposition, le second combat une infestation déclarée. Ce sont deux métiers différents.'],
                   ['Les coupes et perçages faits sur le chantier ouvrent le bois', 'les recoupes de bois traité doivent être reprises en bout, sinon on offre une entrée non protégée là où on vient de scier.'],
                 ].map(([titre, texte]) => (
@@ -587,8 +587,8 @@ export default function ArticleTermitesGirondePage() {
                   nous concevons et posons des ouvrages en bois, nous ne sommes pas applicateurs de traitement curatif
                 </strong>
                 . Si une infestation est déclarée, c&apos;est une entreprise spécialisée qu&apos;il faut appeler, et un
-                diagnostiqueur certifié pour établir l&apos;état du bâtiment. Notre rôle s&apos;arrête — et se joue
-                entièrement — à la conception et à la mise en œuvre.
+                diagnostiqueur certifié pour établir l&apos;état du bâtiment. Notre rôle s&apos;arrête, et se joue
+                entièrement, à la conception et à la mise en œuvre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Pour choisir l&apos;essence en connaissance de cause, notre guide{' '}
@@ -611,7 +611,7 @@ export default function ArticleTermitesGirondePage() {
               caption="Ici, les lames s'arrêtent au-dessus du soubassement maçonné : derrière elles, la lame d'air sèche la façade, et le bas du bardage ne trempe jamais dans la terre."
             />
 
-            {/* 6 — Ce que la loi demande */}
+            {/* 6, Ce que la loi demande */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Vous en trouvez : ce que la loi vous demande
@@ -632,10 +632,10 @@ export default function ArticleTermitesGirondePage() {
               <ul className="space-y-3 mb-5">
                 {[
                   ['Déclarer en mairie', '« dès que la présence de termite a été détectée, l’occupant, ou à défaut le propriétaire, doit en informer la mairie ». C’est la première démarche, et elle ne coûte rien.'],
-                  ['L’arrêté préfectoral', 'lorsque des foyers sont identifiés, un arrêté préfectoral délimite les zones concernées — articles L. 126-4 à L. 126-6 du code de la construction et de l’habitation. En Gironde, c’est l’arrêté de 2001, applicable à tout le département.'],
-                  ['En cas de vente', 'un état relatif à la présence de termites est joint au dossier de diagnostic technique — articles L. 126-24 et L. 126-25. Il est daté et signé, sa durée de validité est de 6 mois, et il doit être réalisé par une personne certifiée par un organisme accrédité par le Cofrac.'],
-                  ['Les bois de démolition', '« les bois et les matériaux contaminés issus des travaux de démolition doivent être incinérés sur place ou traités avant tout transport » — articles R. 126-2 à R. 126-4. Autrement dit : on ne déplace pas un bois contaminé sans précaution.'],
-                  ['En construction neuve', 'des mesures relatives à la protection contre les termites s’appliquent aux constructions et aménagements neufs — articles R. 131-1 à R. 131-3.'],
+                  ['L’arrêté préfectoral', 'lorsque des foyers sont identifiés, un arrêté préfectoral délimite les zones concernées, articles L. 126-4 à L. 126-6 du code de la construction et de l’habitation. En Gironde, c’est l’arrêté de 2001, applicable à tout le département.'],
+                  ['En cas de vente', 'un état relatif à la présence de termites est joint au dossier de diagnostic technique, articles L. 126-24 et L. 126-25. Il est daté et signé, sa durée de validité est de 6 mois, et il doit être réalisé par une personne certifiée par un organisme accrédité par le Cofrac.'],
+                  ['Les bois de démolition', '« les bois et les matériaux contaminés issus des travaux de démolition doivent être incinérés sur place ou traités avant tout transport », articles R. 126-2 à R. 126-4. Autrement dit : on ne déplace pas un bois contaminé sans précaution.'],
+                  ['En construction neuve', 'des mesures relatives à la protection contre les termites s’appliquent aux constructions et aménagements neufs, articles R. 131-1 à R. 131-3.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -654,8 +654,8 @@ export default function ArticleTermitesGirondePage() {
                   rel="noopener noreferrer"
                 >
                   cartographie nationale termites et mérules
-                </a>{' '}
-                — utile, notamment, si vous possédez un bien hors Gironde et voulez comparer.
+                </a>,{' '}
+               utile, notamment, si vous possédez un bien hors Gironde et voulez comparer.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un mot sur la juste mesure, parce que le sujet se prête aux deux excès. Un foyer découvert dans une
@@ -666,14 +666,14 @@ export default function ArticleTermitesGirondePage() {
               </p>
             </section>
 
-            {/* 7 — Concevoir en Gironde */}
+            {/* 7, Concevoir en Gironde */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Concevoir en Gironde : nos règles de pose sur terrasse, carport et bardage
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Travailler le bois à Libourne et dans toute la Gironde, dans un département entièrement classé en zone à
-                termites, ne nous a jamais fait renoncer au bois — cela nous a fait{' '}
+                termites, ne nous a jamais fait renoncer au bois, cela nous a fait{' '}
                 <strong className="text-primary font-semibold">changer notre manière de le poser</strong>. Voici, ouvrage
                 par ouvrage, ce que cela donne concrètement sur nos chantiers.
               </p>
@@ -683,7 +683,7 @@ export default function ArticleTermitesGirondePage() {
                   ['Carport et abri', 'poteaux sur sabots métalliques, jamais de bois scellé dans le béton, pieds visibles et inspectables, pente et évacuation d’eau étudiées pour que rien ne stagne au pied des appuis.'],
                   ['Bardage', 'lame d’air ventilée continue, grille de pied, garde au sol d’une dizaine de centimètres, et pas de massif végétal ni de paillage poussé contre le bas de la façade.'],
                   ['Clôture et ouvrages de jardin', 'poteaux sur platines ou pieds métalliques quand la configuration le permet, plutôt que scellés en pleine terre ; bois enterré réduit au strict nécessaire.'],
-                  ['Abords', 'stockage du bois de chauffage surélevé et écarté du bâti, souches arrachées, chantier laissé propre — c’est la moitié de la prévention, et elle ne coûte rien.'],
+                  ['Abords', 'stockage du bois de chauffage surélevé et écarté du bâti, souches arrachées, chantier laissé propre, c’est la moitié de la prévention, et elle ne coûte rien.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -709,7 +709,7 @@ export default function ArticleTermitesGirondePage() {
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
                 </a>{' '}
-                : sur la plupart des photos, ce qui protège l&apos;ouvrage est justement ce qui se voit le moins — le
+                : sur la plupart des photos, ce qui protège l&apos;ouvrage est justement ce qui se voit le moins, le
                 vide sous la structure et le pied décollé du sol.
               </p>
             </section>
@@ -769,7 +769,7 @@ export default function ArticleTermitesGirondePage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               La Gironde est classée en zone à termites depuis l&apos;arrêté préfectoral de 2001, et cela ne nous
               empêche pas de construire en bois : cela nous oblige à bien le poser. Rupture de capillarité, garde au
-              sol, sous-face ventilée, abords tenus propres — la prévention se joue à la conception, et aucun produit ne
+              sol, sous-face ventilée, abords tenus propres, la prévention se joue à la conception, et aucun produit ne
               rattrape une pose qui laisse le bois dans la terre. C&apos;est ainsi que nous travaillons chez L&apos;Esprit
               Bois, à Libourne et dans toute la Gironde ; pour le curatif et le diagnostic, nous vous orientons vers des
               professionnels certifiés.

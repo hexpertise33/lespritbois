@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -142,7 +142,7 @@ const jsonld = [
         name: 'Véranda ou extension en ossature bois : laquelle est la plus confortable toute l’année ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "L'extension en ossature bois, sans hésitation, dès lors que la pièce doit être occupée plusieurs heures par jour en toutes saisons. Son enveloppe est isolée de façon homogène — murs, toiture, plancher — et son comportement se rapproche de celui du reste de la maison. Une véranda aluminium peut atteindre un très bon confort, mais cela suppose d'y mettre les moyens dès la conception : profilés à rupture de pont thermique, vitrages adaptés à chaque orientation, toiture traitée et protections solaires. Sans ces postes, elle reste agréable à la mi-saison et difficile à vivre en plein été comme en plein hiver.",
+          text: "L'extension en ossature bois, sans hésitation, dès lors que la pièce doit être occupée plusieurs heures par jour en toutes saisons. Son enveloppe est isolée de façon homogène (murs, toiture, plancher) et son comportement se rapproche de celui du reste de la maison. Une véranda aluminium peut atteindre un très bon confort, mais cela suppose d'y mettre les moyens dès la conception : profilés à rupture de pont thermique, vitrages adaptés à chaque orientation, toiture traitée et protections solaires. Sans ces postes, elle reste agréable à la mi-saison et difficile à vivre en plein été comme en plein hiver.",
         },
       },
       {
@@ -182,7 +182,7 @@ const jsonld = [
         name: 'Peut-on combiner les deux : une extension bois très vitrée ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui, et c'est très souvent la meilleure réponse. On construit une extension en ossature bois isolée, avec des murs pleins sur les côtés utiles pour meubler et ranger, et on ouvre largement une seule façade — celle qui donne sur le jardin ou la piscine — par des baies vitrées aluminium de grande dimension. On récupère la lumière et la vue de la véranda, sans son inconfort d'été, et la pièce reste utilisable à l'identique en février comme en août. C'est un montage que nous proposons régulièrement sur nos chantiers du Libournais.",
+          text: "Oui, et c'est très souvent la meilleure réponse. On construit une extension en ossature bois isolée, avec des murs pleins sur les côtés utiles pour meubler et ranger, et on ouvre largement une seule façade, celle qui donne sur le jardin ou la piscine, par des baies vitrées aluminium de grande dimension. On récupère la lumière et la vue de la véranda, sans son inconfort d'été, et la pièce reste utilisable à l'identique en février comme en août. C'est un montage que nous proposons régulièrement sur nos chantiers du Libournais.",
         },
       },
     ],
@@ -231,7 +231,7 @@ const verdicts = [
   [
     'Budget d’entrée contraint, besoin de surface rapidement',
     'Véranda aluminium',
-    'Le ticket d’entrée démarre plus bas — à condition d’assumer un usage de mi-saison',
+    'Le ticket d’entrée démarre plus bas, à condition d’assumer un usage de mi-saison',
   ],
   [
     'Prolongement d’un séjour plein sud',
@@ -261,7 +261,7 @@ const faq = [
     r: (
       <>
         L&apos;extension en ossature bois, sans hésitation, dès lors que la pièce doit être occupée plusieurs heures par
-        jour en toutes saisons. Son enveloppe est isolée de façon homogène — murs, toiture, plancher — et son
+        jour en toutes saisons. Son enveloppe est isolée de façon homogène (murs, toiture, plancher) et son
         comportement se rapproche de celui du reste de la maison. Une véranda aluminium peut atteindre un très bon
         confort, mais cela suppose d&apos;y mettre les moyens dès la conception : profilés à rupture de pont thermique,
         vitrages adaptés à chaque orientation, toiture traitée et protections solaires. Sans ces postes, elle reste
@@ -324,8 +324,8 @@ const faq = [
     r: (
       <>
         Oui, et c&apos;est très souvent la meilleure réponse. On construit une extension en ossature bois isolée, avec
-        des murs pleins sur les côtés utiles pour meubler et ranger, et on ouvre largement une seule façade — celle qui
-        donne sur le jardin ou la piscine — par des baies vitrées aluminium de grande dimension. On récupère la lumière
+        des murs pleins sur les côtés utiles pour meubler et ranger, et on ouvre largement une seule façade, celle qui
+        donne sur le jardin ou la piscine, par des baies vitrées aluminium de grande dimension. On récupère la lumière
         et la vue de la véranda, sans son inconfort d&apos;été, et la pièce reste utilisable à l&apos;identique en
         février comme en août. C&apos;est un montage que nous proposons régulièrement sur nos chantiers du Libournais.
       </>
@@ -379,8 +379,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>7 août 2026</span>
@@ -397,7 +397,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               <strong className="text-primary font-semibold">
                 Choisissez la véranda aluminium si vous cherchez avant tout de la lumière, une vue sur le jardin et un
                 espace de vie clair, occupé surtout aux belles heures. Choisissez l&apos;extension en ossature bois dès
-                que la pièce doit être une vraie pièce de la maison — chambre, bureau, suite parentale — utilisable à
+                que la pièce doit être une vraie pièce de la maison (chambre, bureau, suite parentale) utilisable à
                 l&apos;identique en février et en août.
               </strong>{' '}
               Autrement dit, la question n&apos;est pas «&nbsp;quel matériau&nbsp;», c&apos;est{' '}
@@ -420,8 +420,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Presque tous les clients qui poussent la porte de notre magasin arrivent avec la question à
-                l&apos;envers. Ils ont déjà choisi une image — la véranda vitrée ouverte sur la piscine, ou le cube bois
-                bardé au design contemporain — et cherchent à la justifier ensuite. Nous faisons systématiquement le
+                l&apos;envers. Ils ont déjà choisi une image (la véranda vitrée ouverte sur la piscine, ou le cube bois
+                bardé au design contemporain) et cherchent à la justifier ensuite. Nous faisons systématiquement le
                 chemin inverse :{' '}
                 <strong className="text-primary font-semibold">
                   qu&apos;est-ce que vous allez faire dans cette pièce, et combien d&apos;heures par jour ?
@@ -434,7 +434,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 {[
                   [
                     'La surface vitrée que vous voulez',
-                    'si l’objectif est de voir le jardin de partout, avec le moins de murs possible, la véranda aluminium est imbattable — c’est son métier. Si vous avez besoin de murs pour poser une bibliothèque, un lit ou un bureau, chaque mètre vitré devient un mètre inutilisable.',
+                    'si l’objectif est de voir le jardin de partout, avec le moins de murs possible, la véranda aluminium est imbattable, c’est son métier. Si vous avez besoin de murs pour poser une bibliothèque, un lit ou un bureau, chaque mètre vitré devient un mètre inutilisable.',
                   ],
                   [
                     'Le nombre d’heures d’occupation par jour',
@@ -450,7 +450,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Le reste — l&apos;esthétique, le budget, l&apos;urbanisme — vient ensuite et se règle. Mais un mauvais
+                Le reste, l&apos;esthétique, le budget, l&apos;urbanisme, vient ensuite et se règle. Mais un mauvais
                 arbitrage sur l&apos;usage ne se rattrape pas : on ne transforme pas après coup une véranda en chambre,
                 et on ne redonne pas à une extension fermée la sensation de volume d&apos;un jardin d&apos;hiver.
               </p>
@@ -459,7 +459,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
             {/* 2. Ce que chacune apporte */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Ce que chacune apporte vraiment — et ce qu&apos;elle coûte en contreparties
+                Ce que chacune apporte vraiment, et ce qu&apos;elle coûte en contreparties
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La <strong className="text-primary font-semibold">véranda aluminium</strong> apporte trois choses que
@@ -478,8 +478,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;<strong className="text-primary font-semibold">extension en ossature bois</strong> joue une tout
-                autre partition. Elle offre une enveloppe isolée homogène — murs, toiture et plancher traités avec la
-                même logique —, des murs porteurs contre lesquels on peut tout poser, une grande liberté de toiture
+                autre partition. Elle offre une enveloppe isolée homogène (murs, toiture et plancher traités avec la
+                même logique), des murs porteurs contre lesquels on peut tout poser, une grande liberté de toiture
                 (toit plat, monopente, prolongement de la pente existante), un vrai sur-mesure au centimètre puisque
                 l&apos;ossature se dessine avant d&apos;être fabriquée, et un bilan carbone favorable, le bois stockant
                 du carbone au lieu d&apos;en émettre pour être produit.
@@ -487,7 +487,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Sa contrepartie principale : elle referme. Une extension bois, même largement ouverte, reste un volume
                 bâti avec des murs pleins. Si votre motivation profonde était de vivre dehors en restant dedans, elle ne
-                vous la donnera pas — sauf à la dessiner très vitrée, ce que nous évoquons en fin d&apos;article.
+                vous la donnera pas, sauf à la dessiner très vitrée, ce que nous évoquons en fin d&apos;article.
               </p>
             </section>
 
@@ -504,7 +504,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 src: '/images/blog/veranda-aluminium-isolation-urbanisme-budget/veranda-aluminium-extension-vitree-exterieur.webp',
                 alt: "Véranda aluminium vitrée du sol au plafond, profilés anthracite ouverts sur une terrasse et un jardin",
                 caption:
-                  "Véranda aluminium : des profilés fins, un maximum de verre — et presque aucun mur contre lequel meubler.",
+                  "Véranda aluminium : des profilés fins, un maximum de verre, et presque aucun mur contre lequel meubler.",
                 w: 1200,
                 h: 800,
               }}
@@ -530,16 +530,16 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 s&apos;obtient en combinant plusieurs leviers : des profilés à{' '}
                 <strong className="text-primary font-semibold">rupture de pont thermique</strong>, un traitement de
                 toiture adapté (panneaux isolés, vitrage de toiture spécifique), des{' '}
-                <strong className="text-primary font-semibold">protections solaires</strong> — stores de toiture,
+                <strong className="text-primary font-semibold">protections solaires</strong> (stores de toiture,
                 brise-soleil orientables, stores zip en façade, motorisés si l&apos;on veut qu&apos;ils servent
-                vraiment —, et une ventilation traversante réelle, pas symbolique : des ouvrants hauts et bas, placés
+                vraiment), et une ventilation traversante réelle, pas symbolique : des ouvrants hauts et bas, placés
                 pour créer un balayage. Chacun de ces postes se chiffre, et c&apos;est précisément pour cela que la
                 véranda «&nbsp;pas chère&nbsp;» n&apos;existe qu&apos;en version mi-saison.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Côté <strong className="text-primary font-semibold">ossature bois</strong>, la question se pose
                 autrement. L&apos;enveloppe isolée sur toute sa surface amortit naturellement les écarts, et le choix
-                des isolants biosourcés apporte un déphasage — le temps que met la chaleur à traverser la paroi — qui
+                des isolants biosourcés apporte un déphasage, le temps que met la chaleur à traverser la paroi, qui
                 décale le pic de chaleur en fin de journée, quand on peut ventiler. Résultat concret sur nos chantiers :
                 une extension bois bien conçue se comporte comme le reste de la maison, alors qu&apos;une véranda a
                 toujours son propre climat, plus contrasté.
@@ -547,8 +547,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Nous ne donnons volontairement aucun chiffre de performance ici : ils dépendent entièrement des produits
                 retenus, de l&apos;orientation et de la composition des parois, et se calculent projet par projet. Le
-                détail produit de la véranda — vitrages selon l&apos;orientation, traitement de toiture, statut
-                thermique — est développé dans notre{' '}
+                détail produit de la véranda, vitrages selon l&apos;orientation, traitement de toiture, statut
+                thermique, est développé dans notre{' '}
                 <a href="/blog/veranda-aluminium-isolation-urbanisme-budget" className={lienInterne}>
                   guide de la véranda en aluminium
                 </a>
@@ -620,7 +620,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 montrer l&apos;insertion du projet dans son environnement. Et le passage au-delà de{' '}
                 <strong className="text-primary font-semibold">150 m² de surface de plancher totale</strong> déclenche à
                 la fois le permis de construire et le{' '}
-                <strong className="text-primary font-semibold">recours obligatoire à un architecte</strong> — un point
+                <strong className="text-primary font-semibold">recours obligatoire à un architecte</strong>, un point
                 qui surprend souvent, car le seuil s&apos;apprécie sur l&apos;existant plus le créé, pas sur la seule
                 extension.
               </p>
@@ -643,12 +643,12 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                   rel="noopener noreferrer"
                 >
                   réglementation environnementale RE2020
-                </a>
-                , avec des exigences qui dépendent de la surface créée. Le point décisif, là encore, n&apos;est pas la
+                </a>,
+                avec des exigences qui dépendent de la surface créée. Le point décisif, là encore, n&apos;est pas la
                 matière mais le <strong className="text-primary font-semibold">statut de la pièce</strong> : une véranda
                 non chauffée et non communicante avec la maison reste un espace tampon, quand une extension chauffée et
                 ouverte sur le séjour est un volume habitable à part entière. Ce statut se décide dès l&apos;esquisse,
-                avec le bureau d&apos;études — c&apos;est lui qui conditionne la conception et le contenu du dossier.
+                avec le bureau d&apos;études, c&apos;est lui qui conditionne la conception et le contenu du dossier.
               </p>
             </section>
 
@@ -673,7 +673,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 </strong>
                 . Le bas de sa fourchette correspond à un modèle de mi-saison, sans traitement de toiture particulier ni
                 protection solaire ni chauffage. Dès qu&apos;on veut une pièce vivable toute l&apos;année, on ajoute la
-                toiture traitée, les brise-soleil ou stores motorisés, un émetteur de chaleur — et l&apos;on arrive
+                toiture traitée, les brise-soleil ou stores motorisés, un émetteur de chaleur, et l&apos;on arrive
                 dans le haut de fourchette, c&apos;est-à-dire au niveau de l&apos;extension bois. L&apos;écart de prix
                 initial, dans les faits, achète surtout du confort en moins.
               </p>
@@ -700,7 +700,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                   ],
                   [
                     'Les finitions intérieures',
-                    'sol, plinthes, peinture, raccord avec le revêtement existant — le poste qu’on découvre le dernier jour du chantier.',
+                    'sol, plinthes, peinture, raccord avec le revêtement existant, le poste qu’on découvre le dernier jour du chantier.',
                   ],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
@@ -712,8 +712,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Le détail poste par poste du prix au m² d&apos;une extension bois — ossature, isolation, bardage,
-                toiture, second œuvre — fait l&apos;objet d&apos;un article dédié :{' '}
+                Le détail poste par poste du prix au m² d&apos;une extension bois (ossature, isolation, bardage,
+                toiture, second œuvre) fait l&apos;objet d&apos;un article dédié :{' '}
                 <a href="/blog/extension-ossature-bois-prix-m2" className={lienInterne}>
                   le prix d&apos;une extension en ossature bois au m²
                 </a>
@@ -740,7 +740,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                   l&apos;essentiel du travail se fait en atelier
                 </strong>
                 . Les murs sont assemblés à plat, à l&apos;abri, aux dimensions du plan ; sur site, on lève, on assemble,
-                on met hors d&apos;eau. Le temps de nuisance réelle chez vous — bruit, poussière, va-et-vient — est donc
+                on met hors d&apos;eau. Le temps de nuisance réelle chez vous (bruit, poussière, va-et-vient) est donc
                 court, et il n&apos;y a pas d&apos;attente de séchage comme sur une maçonnerie traditionnelle.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -808,8 +808,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 <strong className="text-primary font-semibold">
                   l&apos;extension en ossature bois à façade largement vitrée
                 </strong>
-                . On isole l&apos;enveloppe comme une vraie pièce, on garde des murs pleins sur les côtés — pour meubler,
-                ranger, faire passer les réseaux — et on ouvre une seule façade, celle qui donne sur le jardin ou le
+                . On isole l&apos;enveloppe comme une vraie pièce, on garde des murs pleins sur les côtés (pour meubler,
+                ranger, faire passer les réseaux) et on ouvre une seule façade, celle qui donne sur le jardin ou le
                 bassin, par de grandes baies aluminium. La lumière et la vue de la véranda, la stabilité thermique de
                 l&apos;extension. Ce n&apos;est pas un compromis mou : c&apos;est un troisième choix, souvent le
                 meilleur.
@@ -822,8 +822,8 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 comme côté{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur et structures aluminium
-                </a>
-                , de l&apos;étude au chantier, avec un seul interlocuteur.
+                </a>,
+                de l&apos;étude au chantier, avec un seul interlocuteur.
               </p>
             </section>
 
@@ -878,7 +878,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Véranda aluminium ou extension en ossature bois, nous posons les deux : notre seul intérêt est que la
               pièce que vous ajoutez soit celle que vous utiliserez vraiment, en février comme en août. Venez avec vos
-              contraintes — usage visé, orientation, surface, budget global — et nous tranchons ensemble, devant votre
+              contraintes (usage visé, orientation, surface, budget global) et nous tranchons ensemble, devant votre
               maison. L&apos;Esprit Bois, entreprise qualifiée Qualibat, intervient à Libourne et dans toute la Gironde,
               formalités d&apos;urbanisme comprises.
             </p>

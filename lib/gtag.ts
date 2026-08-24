@@ -1,10 +1,10 @@
-// Suivi des conversions Google Ads — compte L'Esprit Bois (client Google Ads « A DE FRANCE »).
+// Suivi des conversions Google Ads, compte L'Esprit Bois (client Google Ads « A DE FRANCE »).
 // Balise Google (gtag.js) chargée globalement dans app/layout.tsx.
 
 /** Identifiant de la balise Google / compte Google Ads. */
 export const GADS_ID = 'AW-18163716378';
 
-/** Propriété Google Analytics 4 « L'Esprit Bois — lesprit-bois.fr »
+/** Propriété Google Analytics 4 « L'Esprit Bois, lesprit-bois.fr »
  *  (compte ECOTOIT, propriété 548157917, flux « Site L'Esprit Bois »). */
 export const GA4_ID = 'G-DBV2Q8X8T2';
 
@@ -53,7 +53,7 @@ export function reportPhoneConversion(): void {
 
 /**
  * Pousse l'événement GA4 `generate_lead` (propriété G-DBV2Q8X8T2).
- * Utilisé uniquement par la landing page Google Ads /devis-pergola — les
+ * Utilisé uniquement par la landing page Google Ads /devis-pergola, les
  * autres formulaires du site (ex. /contact) ne déclenchent que la
  * conversion Google Ads via reportFormConversion, sans cet événement GA4.
  * No-op côté serveur ou si la balise n'est pas encore chargée.

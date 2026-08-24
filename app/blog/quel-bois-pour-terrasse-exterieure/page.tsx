@@ -247,8 +247,8 @@ export default function ArticleQuelBoisTerrassePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>9 juillet 2026</span>
@@ -343,8 +343,8 @@ export default function ArticleQuelBoisTerrassePage() {
                 technologique{' '}
                 <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   FCBA
-                </a>
-                , indique le niveau d&apos;humidité
+                </a>,
+                indique le niveau d&apos;humidité
                 auquel il peut être exposé sans se dégrader. Elle va de la classe 1 (intérieur sec) à la classe 5
                 (immersion en eau de mer). Pour une terrasse, la référence courante est la{' '}
                 <strong className="text-primary font-semibold">classe 4</strong> : un bois capable de rester en contact

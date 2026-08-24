@@ -1,5 +1,5 @@
 // =========================================================================
-// L'ESPRIT BOIS — source unique de vérité : navigation, coordonnées, marque.
+// L'ESPRIT BOIS, source unique de vérité : navigation, coordonnées, marque.
 // Modifier ICI met à jour les 7 pages (nav, footer, données structurées).
 // =========================================================================
 
@@ -45,7 +45,7 @@ export const GOOGLE = {
    *  structurées : `fiche` est une page de résultats, pas une carte. */
   carte: 'https://www.google.com/maps/search/?api=1&query=1+Aux+Pradasses%2C+33500+Les+Billaux',
   /** Lien « laisser un avis ». Pointe pour l'instant sur la fiche, où le bouton
-   *  « Rédiger un avis » se trouve — soit deux clics pour le client.
+   *  « Rédiger un avis » se trouve, soit deux clics pour le client.
    *
    *  À REMPLACER par le lien court officiel, de la forme
    *  https://g.page/r/XXXXXXXXXXXX/review, qui ouvre directement le formulaire
@@ -109,7 +109,7 @@ export const ONGLETS: Onglet[] = [
 ];
 
 /** Identifiant unique de l'entreprise dans le graphe de données structurées.
- *  L'entité complète — adresse, horaires, géolocalisation, catalogue, avis —
+ *  L'entité complète (adresse, horaires, géolocalisation, catalogue, avis)
  *  n'est décrite qu'une seule fois, sur l'accueil. Partout ailleurs on renvoie
  *  vers cet `@id` avec `ENTREPRISE_REF` plutôt que de recopier le bloc : Google
  *  consolide alors un seul et même établissement, au lieu d'en voir neuf aux

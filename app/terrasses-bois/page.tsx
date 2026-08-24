@@ -37,11 +37,11 @@ const FAQ = [
   },
   {
     q: 'Plots ou lambourdes : quelle structure ?',
-    r: "Les plots réglables rattrapent une pente et ventilent la sous-face sans toucher au sol existant : c'est la solution courante sur dalle ou sur terrain stabilisé. Mais un plot posé en surface ne vaut que ce que vaut le sol dessous. Quand celui-ci ne porte pas — sable, remblai, terrain qui imposerait un décaissement —, nous fondons sur vis, vissées jusqu'à trouver de la résistance : c'est ce que nous avons fait à Lacanau. Dans tous les cas, ce qui décide de la durée de vie, c'est la ventilation de la sous-face et la pente d'écoulement, pas l'essence des lames.",
+    r: "Les plots réglables rattrapent une pente et ventilent la sous-face sans toucher au sol existant : c'est la solution courante sur dalle ou sur terrain stabilisé. Mais un plot posé en surface ne vaut que ce que vaut le sol dessous. Quand celui-ci ne porte pas (sable, remblai, terrain qui imposerait un décaissement), nous fondons sur vis, vissées jusqu'à trouver de la résistance : c'est ce que nous avons fait à Lacanau. Dans tous les cas, ce qui décide de la durée de vie, c'est la ventilation de la sous-face et la pente d'écoulement, pas l'essence des lames.",
   },
   {
     q: 'Combien de temps dure une terrasse en bois ?',
-    r: "Sur nos chantiers girondins, une terrasse bien ventilée par-dessous et nettoyée une fois par an se tient quinze à vingt ans, essence selon — c'est notre observation, pas une garantie. Ce qui la tue prématurément, c'est presque toujours l'eau qui stagne sous les lames, pas le soleil. Quand elle vieillit, tout n'est pas à refaire : notre guide sur la rénovation explique comment décider entre poncer, changer les lames et tout déposer.",
+    r: "Sur nos chantiers girondins, une terrasse bien ventilée par-dessous et nettoyée une fois par an se tient quinze à vingt ans, essence selon, c'est notre observation, pas une garantie. Ce qui la tue prématurément, c'est presque toujours l'eau qui stagne sous les lames, pas le soleil. Quand elle vieillit, tout n'est pas à refaire : notre guide sur la rénovation explique comment décider entre poncer, changer les lames et tout déposer.",
   },
   {
     q: 'Intervenez-vous au bord d’une piscine ?',
@@ -193,14 +193,14 @@ export default function TerrassesBoisPage() {
                   refait ; une structure pourrie se dépose.
                 </p>
                 <p>
-                  C&apos;est pour cela que nous commençons par regarder ce qu&apos;il y a en dessous —
+                  C&apos;est pour cela que nous commençons par regarder ce qu&apos;il y a en dessous,
                   sur une terrasse neuve comme sur une terrasse à reprendre. Le choix de l&apos;essence
                   vient après, et il compte moins qu&apos;on ne le croit.
                 </p>
                 <p>
                   Nous travaillons sur plots réglables quand le sol porte et qu&apos;il s&apos;agit de
-                  rattraper une pente sans toucher au terrain. Quand il ne porte pas — sable du
-                  littoral, remblai, terrain en pente qui imposerait un décaissement —, nous fondons sur
+                  rattraper une pente sans toucher au terrain. Quand il ne porte pas (sable du
+                  littoral, remblai, terrain en pente qui imposerait un décaissement), nous fondons sur
                   vis, vissées jusqu&apos;à trouver de la résistance, chaque pied réglable
                   indépendamment. Les essences vont du pin maritime traité en autoclave, local et
                   abordable, à l&apos;ipé pour les abords de bassin.
@@ -241,7 +241,7 @@ export default function TerrassesBoisPage() {
               <a href="/realisations" className={lienInterne}>
                 nos réalisations
               </a>
-              . Sur le littoral, le sable commande tout le reste — fondation, ventilation de la
+              . Sur le littoral, le sable commande tout le reste, fondation, ventilation de la
               sous-face, nuance d&apos;inox : voir{' '}
               <a href="/terrasse-bois-bassin-arcachon" className={lienInterne}>
                 terrasses bois sur le Bassin d&apos;Arcachon
@@ -264,7 +264,7 @@ export default function TerrassesBoisPage() {
                   </div>
                   <div>
                     <p className="font-label-md text-label-md uppercase tracking-[0.15em] text-secondary-dark mb-3">
-                      {c.categorie} — {c.commune}
+                      {c.categorie}, {c.commune}
                     </p>
                     <h3 className="font-headline-md text-headline-md text-primary mb-5">{c.titre}</h3>
                     <div className="font-body-md text-body-md text-on-surface-variant space-y-4">

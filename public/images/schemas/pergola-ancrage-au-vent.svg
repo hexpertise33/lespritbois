@@ -68,5 +68,5 @@
   <text class="lbl" x="358" y="390">massif</text>
   <text class="lbl" x="760" y="390">massif</text>
 
-  <text class="txt" x="40" y="440">Ce sont la section du poteau et le massif qui décident du dimensionnement — pas le modèle de lame.</text>
+  <text class="txt" x="40" y="440">Ce sont la section du poteau et le massif qui décident du dimensionnement, pas le modèle de lame.</text>
 </svg>

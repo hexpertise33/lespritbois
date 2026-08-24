@@ -8,12 +8,12 @@ import DevisStickyBar from '@/components/DevisStickyBar';
 import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Devis pergola gratuit à Libourne — L'Esprit Bois",
+  title: "Devis pergola gratuit à Libourne, L'Esprit Bois",
   description:
     "Devis gratuit sous 48 h pour une pergola sur mesure à Libourne et en Gironde : bioclimatique, aluminium ou bois massif, par une entreprise Qualibat.",
   path: '/devis-pergola',
   ogImage: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
-  ogTitle: 'Pergola sur mesure à Libourne — devis gratuit sous 48h',
+  ogTitle: 'Pergola sur mesure à Libourne, devis gratuit sous 48h',
   ville: 'Libourne',
   noindex: true,
 });
@@ -26,7 +26,7 @@ const PROJET = 'Pergola (landing Ads)';
 const PAGE_LABEL = '/devis-pergola';
 
 /* Comparatif court : juste de quoi rassurer que l'entreprise couvre le
-   besoin du visiteur, peu importe son type de pergola — pas le tableau
+   besoin du visiteur, peu importe son type de pergola, pas le tableau
    complet de /pergolas. Textes et photos raccourcis/repris depuis GAMME
    (app/pergolas/page.tsx). */
 const GAMME_COURTE = [
@@ -59,7 +59,7 @@ const GAMME_COURTE = [
   },
 ] as const;
 
-/* 8 photos, reprises telles quelles de GALERIE (app/pergolas/page.tsx) —
+/* 8 photos, reprises telles quelles de GALERIE (app/pergolas/page.tsx),
    6 chantiers réels + 1 exemple bioclimatique + 1 exemple bois massif, pour
    couvrir les 3 familles. Mêmes fichiers, déjà optimisés et hébergés. */
 const GALERIE_COURTE = [
@@ -119,7 +119,7 @@ export default function DevisPergolaPage() {
       <LandingPergolaHeader />
       <main id="contenu">
         {/* Hero : photo nette dans la colonne de texte (pas de fond plein
-            largeur assombri) — le visiteur doit voir ce qu'on lui vend
+            largeur assombri), le visiteur doit voir ce qu'on lui vend
             avant d'arriver au formulaire, sur mobile comme sur desktop.
             Le formulaire n'est plus forcé en premier sur mobile (retire
             order-first) : ordre naturel partout, texte+photo puis
@@ -128,7 +128,7 @@ export default function DevisPergolaPage() {
           <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div>
               <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">
-                Pergola sur mesure à Libourne et en Gironde — Devis gratuit sous 48h
+                Pergola sur mesure à Libourne et en Gironde, Devis gratuit sous 48h
               </h1>
               <img
                 width="1600"
@@ -261,7 +261,7 @@ export default function DevisPergolaPage() {
           </div>
         </section>
 
-        {/* CTA répété — milieu de page */}
+        {/* CTA répété, milieu de page */}
         <section id="devis-milieu" className="py-section-padding bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-2xl mx-auto">
@@ -303,7 +303,7 @@ export default function DevisPergolaPage() {
           </div>
         </section>
 
-        {/* Mini FAQ — répond aux objections les plus susceptibles de
+        {/* Mini FAQ, répond aux objections les plus susceptibles de
             bloquer avant l'envoi du formulaire. Textes raccourcis depuis la
             FAQ de /pergolas. Pas de JSON-LD FAQPage : page noindex, aucun
             bénéfice SEO, inutile d'alourdir le HTML. */}
@@ -342,7 +342,7 @@ export default function DevisPergolaPage() {
                   <p className="text-on-surface-variant font-body-md text-body-md">
                     Le bois massif apporte chaleur et matière, l&apos;aluminium offre de grandes
                     portées sans entretien. Le choix dépend de votre maison, de l&apos;usage
-                    souhaité et du budget — nous vous conseillons au rendez-vous.
+                    souhaité et du budget, nous vous conseillons au rendez-vous.
                   </p>
                 </div>
               </div>

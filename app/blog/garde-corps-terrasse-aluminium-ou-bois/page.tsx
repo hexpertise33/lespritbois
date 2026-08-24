@@ -34,7 +34,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -310,8 +310,8 @@ export default function ArticleGardeCorpsTerrassePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>4 août 2026</span>
@@ -392,7 +392,7 @@ export default function ArticleGardeCorpsTerrassePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La norme de référence sur le sujet est la{' '}
                 <strong className="text-primary font-semibold">NF P01-012 « Dimensions des garde-corps »</strong>. Elle
-                a été révisée et publiée le 22 novembre 2024, remplaçant une version qui datait de 1988 —{' '}
+                a été révisée et publiée le 22 novembre 2024, remplaçant une version qui datait de 1988,{' '}
                 <a
                   href="https://www.afnor.org/actualites/sante-securite-travail/garde-corps-norme-mieux-proteger-enfants/"
                   className={lienInterne}
@@ -453,8 +453,8 @@ export default function ArticleGardeCorpsTerrassePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un garde-corps aluminium se compose de{' '}
-                <strong className="text-primary font-semibold">profilés extrudés</strong> — montants, main courante,
-                lisse basse — assemblés mécaniquement et recevant un remplissage. L&apos;alliage employé et
+                <strong className="text-primary font-semibold">profilés extrudés</strong> (montants, main courante,
+                lisse basse) assemblés mécaniquement et recevant un remplissage. L&apos;alliage employé et
                 l&apos;épaisseur des profilés font toute la différence entre un ensemble rigide et un ensemble qui vibre
                 sous la main : c&apos;est le premier point à comparer entre deux devis, bien avant la teinte.
               </p>
@@ -464,7 +464,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                 déclinable dans toute la palette{' '}
                 <strong className="text-primary font-semibold">RAL</strong> : gris anthracite pour un rendu
                 contemporain, teintes sable ou bronze pour s&apos;accorder à une façade en pierre. La qualité tient
-                moins à la couleur qu&apos;à la préparation de surface avant laquage — et en Gironde, si le projet se
+                moins à la couleur qu&apos;à la préparation de surface avant laquage, et en Gironde, si le projet se
                 situe près de l&apos;estuaire ou du littoral, demandez explicitement une préparation adaptée à
                 l&apos;ambiance marine : l&apos;air salin est bien plus agressif pour un revêtement que la pluie.
               </p>
@@ -514,8 +514,8 @@ export default function ArticleGardeCorpsTerrassePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le bois garde trois avantages qu&apos;aucun profilé ne lui prendra : il est{' '}
                 <strong className="text-primary font-semibold">chaleureux au toucher comme à l&apos;œil</strong>, il se
-                fabrique en atelier à la dimension exacte de l&apos;ouvrage — y compris sur une terrasse biscornue, un
-                angle non droit ou un limon d&apos;escalier — et il se répare{' '}
+                fabrique en atelier à la dimension exacte de l&apos;ouvrage, y compris sur une terrasse biscornue, un
+                angle non droit ou un limon d&apos;escalier, et il se répare{' '}
                 <strong className="text-primary font-semibold">pièce par pièce</strong> : un barreau abîmé se remplace,
                 une lisse fatiguée se change, sans toucher au reste.
               </p>
@@ -546,7 +546,7 @@ export default function ArticleGardeCorpsTerrassePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Reste l&apos;entretien, qu&apos;il faut assumer honnêtement : sans rien faire, un bois durable grise et
                 continue de tenir, mais l&apos;aspect change. Pour conserver la teinte d&apos;origine, on applique un
-                saturateur ou une lasure à renouveler périodiquement — un ouvrage vertical s&apos;entretient beaucoup
+                saturateur ou une lasure à renouveler périodiquement, un ouvrage vertical s&apos;entretient beaucoup
                 plus vite qu&apos;un platelage, mais il faut le faire. Si vous savez d&apos;avance que vous ne le ferez
                 pas, dites-le nous : nous vous orienterons vers l&apos;aluminium sans discuter.
               </p>
@@ -597,7 +597,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                   comparatif carport aluminium ou bois
                 </a>{' '}
                 : l&apos;aluminium achète de la tranquillité, le bois achète de la chaleur et de la réparabilité. Aucune
-                des deux matières n&apos;est « meilleure » dans l&apos;absolu — mais sur un ouvrage aussi exposé
+                des deux matières n&apos;est « meilleure » dans l&apos;absolu, mais sur un ouvrage aussi exposé
                 qu&apos;un garde-corps, la question « qui va l&apos;entretenir, et à quelle fréquence ? » pèse plus lourd
                 que sur n&apos;importe quel autre élément du jardin.
               </p>
@@ -619,7 +619,7 @@ export default function ArticleGardeCorpsTerrassePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un garde-corps se chiffre au{' '}
                 <strong className="text-primary font-semibold">mètre linéaire posé</strong>. Voici les ordres de grandeur
-                que nous constatons sur nos chantiers en Gironde, à Libourne et alentour — ce sont des repères pour
+                que nous constatons sur nos chantiers en Gironde, à Libourne et alentour, ce sont des repères pour
                 cadrer un projet, pas un tarif :
               </p>
               <ul className="space-y-3 mb-5">
@@ -640,8 +640,8 @@ export default function ArticleGardeCorpsTerrassePage() {
                 Trois postes font sortir un projet de ces fourchettes : la{' '}
                 <strong className="text-primary font-semibold">nature de l&apos;ancrage</strong> (une reprise de
                 structure ou une étanchéité à refaire change complètement la donne), l&apos;
-                <strong className="text-primary font-semibold">accès au chantier</strong> — une terrasse en étage ou en
-                fond de parcelle se travaille plus lentement — et le{' '}
+                <strong className="text-primary font-semibold">accès au chantier</strong>, une terrasse en étage ou en
+                fond de parcelle se travaille plus lentement, et le{' '}
                 <strong className="text-primary font-semibold">développé réel</strong>, c&apos;est-à-dire les angles, les
                 retours et les portillons, qui coûtent plus cher qu&apos;une longue ligne droite.
               </p>
@@ -682,7 +682,7 @@ export default function ArticleGardeCorpsTerrassePage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['La fixation en platine, sur le dessus du plancher', 'simple à mettre en œuvre et facile à contrôler, mais elle mange quelques centimètres de terrasse et impose de percer le plancher — donc de traiter chaque perçage.'],
+                  ['La fixation en platine, sur le dessus du plancher', 'simple à mettre en œuvre et facile à contrôler, mais elle mange quelques centimètres de terrasse et impose de percer le plancher, donc de traiter chaque perçage.'],
                   ['La fixation en applique, en rive', 'le garde-corps se fixe sur la face verticale du nez de dalle ou de la structure. On ne perd pas de surface et l’effort est mieux repris, à condition que la rive soit saine et suffisamment épaisse.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
@@ -694,7 +694,7 @@ export default function ArticleGardeCorpsTerrassePage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Sur un plancher étanché — toit-terrasse, terrasse au-dessus d&apos;un volume habité — chaque perçage
+                Sur un plancher étanché, toit-terrasse, terrasse au-dessus d&apos;un volume habité, chaque perçage
                 traverse une membrane. C&apos;est le scénario le plus délicat : l&apos;infiltration ne se voit pas
                 immédiatement, elle se découvre par une tache au plafond, deux ans plus tard. Là, la fixation en applique
                 ou un dispositif conçu pour ne pas percer l&apos;étanchéité est souvent la bonne réponse ; le choix se
@@ -761,12 +761,12 @@ export default function ArticleGardeCorpsTerrassePage() {
                 voir comment cela se traduit sur nos chantiers dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , et découvrir notre approche globale de l&apos;
+                </a>,
+                et découvrir notre approche globale de l&apos;
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
-                </a>
-                , terrasse, garde-corps et abords menés par un seul interlocuteur.
+                </a>,
+                terrasse, garde-corps et abords menés par un seul interlocuteur.
               </p>
             </section>
           </div>

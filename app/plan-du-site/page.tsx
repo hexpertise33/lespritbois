@@ -7,7 +7,7 @@ import { articles } from '@/lib/data/blog';
 import { ZONES } from '@/lib/data/zones';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Plan du site — toutes nos pages | L'Esprit Bois",
+  title: "Plan du site, toutes nos pages | L'Esprit Bois",
   description:
     "Plan du site L'Esprit Bois : toutes nos pages de gamme, nos réalisations en Gironde et l'ensemble des guides du blog, en un coup d'œil.",
   path: '/plan-du-site',

@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -120,7 +120,7 @@ const jsonld = [
         name: 'Quelle différence entre aluminium primaire et aluminium recyclé ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "L'aluminium primaire part du minerai : bauxite, alumine, puis électrolyse, une étape qui consomme énormément d'électricité. L'aluminium recyclé part de métal existant — chutes de production ou menuiseries déposées — qu'on refond pour couler de nouvelles billettes, avant filage des profilés. Chimiquement, le métal obtenu est le même et conserve ses propriétés mécaniques. La différence se joue sur l'énergie de fabrication et sur la traçabilité de la matière première.",
+          text: "L'aluminium primaire part du minerai : bauxite, alumine, puis électrolyse, une étape qui consomme énormément d'électricité. L'aluminium recyclé part de métal existant, chutes de production ou menuiseries déposées, qu'on refond pour couler de nouvelles billettes, avant filage des profilés. Chimiquement, le métal obtenu est le même et conserve ses propriétés mécaniques. La différence se joue sur l'énergie de fabrication et sur la traçabilité de la matière première.",
         },
       },
       {
@@ -205,8 +205,8 @@ const faq = [
     r: (
       <>
         L&apos;aluminium primaire part du minerai : bauxite, alumine, puis électrolyse, une étape qui consomme
-        énormément d&apos;électricité. L&apos;aluminium recyclé part de métal existant — chutes de production ou
-        menuiseries déposées — qu&apos;on refond pour couler de nouvelles billettes, avant filage des profilés.
+        énormément d&apos;électricité. L&apos;aluminium recyclé part de métal existant, chutes de production ou
+        menuiseries déposées, qu&apos;on refond pour couler de nouvelles billettes, avant filage des profilés.
         Chimiquement, le métal obtenu est le même et conserve ses propriétés mécaniques. La différence se joue sur
         l&apos;énergie de fabrication et sur la traçabilité de la matière première.
       </>
@@ -306,8 +306,8 @@ export default function ArticleAluminiumEcologiquePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>11 août 2026</span>
@@ -322,7 +322,7 @@ export default function ArticleAluminiumEcologiquePage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                L&apos;aluminium neuf coûte cher en énergie, l&apos;aluminium recyclé beaucoup moins — et c&apos;est
+                L&apos;aluminium neuf coûte cher en énergie, l&apos;aluminium recyclé beaucoup moins, et c&apos;est
                 précisément là que la filière française bascule en 2026.
               </strong>{' '}
               Mais cela ne fait pas de l&apos;aluminium l&apos;égal du bois sur le carbone, et nous ne vous raconterons
@@ -348,7 +348,7 @@ export default function ArticleAluminiumEcologiquePage() {
                 choisi une pergola : «{' '}
                 <em>au fond, l&apos;alu, ce n&apos;est pas très écologique, si ?</em> ». La réponse honnête tient en
                 deux temps. Oui, produire de l&apos;aluminium à partir du minerai est lourd : il faut extraire la
-                bauxite, en tirer de l&apos;alumine, puis séparer le métal par électrolyse — une étape qui consomme
+                bauxite, en tirer de l&apos;alumine, puis séparer le métal par électrolyse, une étape qui consomme
                 énormément d&apos;électricité. C&apos;est un fait de procédé, pas une opinion, et aucun fabricant
                 sérieux ne le nie.
               </p>
@@ -357,8 +357,8 @@ export default function ArticleAluminiumEcologiquePage() {
                 <strong className="text-primary font-semibold">
                   refondre de l&apos;aluminium déjà produit ne demande qu&apos;une fraction de l&apos;énergie
                   nécessaire à l&apos;électrolyse de la bauxite
-                </strong>
-                , et le métal obtenu conserve ses propriétés. Autrement dit, l&apos;effort énergétique est concentré
+                </strong>,
+                et le métal obtenu conserve ses propriétés. Autrement dit, l&apos;effort énergétique est concentré
                 une fois, à la première production ; ensuite, la même matière peut resservir indéfiniment. Un profilé
                 de pergola posé aujourd&apos;hui n&apos;est pas un déchet en devenir : c&apos;est un stock de métal
                 immobilisé pour trente ou quarante ans, qui repartira en fonderie ensuite.
@@ -373,8 +373,8 @@ export default function ArticleAluminiumEcologiquePage() {
                   rel="noopener noreferrer"
                 >
                   réglementation environnementale RE2020
-                </a>
-                , l&apos;analyse du cycle de vie des matériaux entre dans le calcul de la construction neuve, et le
+                </a>,
+                l&apos;analyse du cycle de vie des matériaux entre dans le calcul de la construction neuve, et le
                 sujet du carbone des matériaux est monté d&apos;un cran dans toute la filière bâtiment. Ce qui se joue
                 sur les maisons neuves finit toujours par redescendre sur les ouvrages extérieurs que nous posons.
               </p>
@@ -392,7 +392,7 @@ export default function ArticleAluminiumEcologiquePage() {
               <ul className="space-y-3 mb-5">
                 {[
                   ['L’aluminium primaire', 'bauxite extraite, transformée en alumine, puis électrolysée pour obtenir le métal, coulé en billettes. L’étape d’électrolyse est la plus consommatrice, et le mix électrique du pays de production pèse énormément sur le résultat final : le même alliage n’a pas le même bilan selon l’endroit où il est né.'],
-                  ['L’aluminium recyclé', 'du métal déjà existant — chutes d’usinage, profilés de dépose, menuiseries déposées — trié par famille d’alliages, refondu, coulé en nouvelles billettes, puis filé pour donner des profilés neufs. Aucune perte de qualité mécanique à l’arrivée.'],
+                  ['L’aluminium recyclé', 'du métal déjà existant (chutes d’usinage, profilés de dépose, menuiseries déposées) trié par famille d’alliages, refondu, coulé en nouvelles billettes, puis filé pour donner des profilés neufs. Aucune perte de qualité mécanique à l’arrivée.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -405,14 +405,14 @@ export default function ArticleAluminiumEcologiquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une nuance capitale, que les plaquettes commerciales entretiennent volontiers dans le flou : tous les
                 « pourcentages de recyclé » ne se valent pas. Refondre ses propres chutes d&apos;atelier, c&apos;est
-                de la bonne gestion industrielle, mais ce métal n&apos;a jamais quitté l&apos;usine — il n&apos;a évité
+                de la bonne gestion industrielle, mais ce métal n&apos;a jamais quitté l&apos;usine, il n&apos;a évité
                 aucun enfouissement. Reprendre des menuiseries réellement déposées chez des particuliers, trier des
                 profilés vieux de trente ans mêlés à leurs joints, leurs vitrages et leur visserie, c&apos;est un autre
                 métier, bien plus difficile.{' '}
                 <strong className="text-primary font-semibold">
                   C&apos;est cette seconde filière, dite post-consommation, qui fait réellement bouger le bilan
-                </strong>{' '}
-                — et c&apos;est justement celle qui manquait en France.
+                </strong>,{' '}
+               et c&apos;est justement celle qui manquait en France.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Dernier point technique, souvent ignoré : le recyclage de l&apos;aluminium exige un tri par alliage.
@@ -437,7 +437,7 @@ export default function ArticleAluminiumEcologiquePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Jusqu&apos;ici, le maillon faible n&apos;était pas la collecte, mais la destination du métal collecté.
-                Le SNFA — le syndicat national de la construction des fenêtres, façades et activités associées —{' '}
+                Le SNFA, le syndicat national de la construction des fenêtres, façades et activités associées,{' '}
                 <a
                   href="https://bati.zepros.fr/actu-generale/snfa-organise-filiere-recyclage-menuiseries-aluminium-bas-carbone-ici-2030"
                   className={lienInterne}
@@ -445,8 +445,8 @@ export default function ArticleAluminiumEcologiquePage() {
                   rel="noopener noreferrer"
                 >
                   annonce que 96 % des menuiseries aluminium en fin de vie sont déjà collectées
-                </a>
-                , mais qu&apos;une part significative de cette matière part à l&apos;étranger pour y être refondue.
+                </a>,
+                mais qu&apos;une part significative de cette matière part à l&apos;étranger pour y être refondue.
                 Ce n&apos;est donc pas le tri qui manque : c&apos;est la boucle fermée française.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -458,11 +458,11 @@ export default function ArticleAluminiumEcologiquePage() {
                   rel="noopener noreferrer"
                 >
                   Le syndicat vise une capacité de recyclage de 200 000 tonnes par an dès 2026
-                </a>
-                , avec pour objectif de recycler 100 % des menuiseries aluminium déposées d&apos;ici 2030. Deux
+                </a>,
+                avec pour objectif de recycler 100 % des menuiseries aluminium déposées d&apos;ici 2030. Deux
                 fonderies portent cette montée en charge : Coralium, qui vise 40 000 tonnes de billettes bas carbone à
                 horizon 2027, et Aluminium Group Solution, qui annonce 80 000 tonnes par an. Ce sont des objectifs
-                affichés par la filière, pas des résultats acquis — nous les citons comme tels.
+                affichés par la filière, pas des résultats acquis, nous les citons comme tels.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Trois leviers accompagnent le mouvement, et ils sont utiles à connaître quand on compare deux devis :
@@ -535,7 +535,7 @@ export default function ArticleAluminiumEcologiquePage() {
                   À la fabrication, le bois gagne, et il gagne largement.
                 </strong>{' '}
                 C&apos;est une matière renouvelable, peu transformée, qui stocke du carbone pendant toute sa vie en
-                œuvre — un carport en douglas est littéralement un stock de carbone posé dans votre jardin. Et quand
+                œuvre, un carport en douglas est littéralement un stock de carbone posé dans votre jardin. Et quand
                 l&apos;essence pousse à quelques dizaines de kilomètres, comme le pin maritime ou le douglas de notre
                 région, le transport pèse à peine. Nous détaillons cette filière courte dans notre article sur{' '}
                 <a href="/blog/bois-local-pin-maritime-douglas-gironde" className={lienInterne}>
@@ -551,7 +551,7 @@ export default function ArticleAluminiumEcologiquePage() {
                 soleil ; un profilé correctement thermolaqué se lave à l&apos;eau savonneuse et ne demande rien
                 d&apos;autre. Un ouvrage bois exposé, lui, réclame un saturateur régulier, parfois un dégrisage : ce
                 sont des produits, de l&apos;eau et du temps, tous les deux ou trois ans, sur trente ans. Et en fin de
-                vie, la dépose alu vaut de l&apos;argent — donc elle est triée, donc elle repart.
+                vie, la dépose alu vaut de l&apos;argent, donc elle est triée, donc elle repart.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 D&apos;où notre conviction de terrain, qui vaut pour les deux matières :{' '}
@@ -603,7 +603,7 @@ export default function ArticleAluminiumEcologiquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Nous conseillons l&apos;aluminium</strong> quand
                 l&apos;ouvrage doit franchir une grande portée sans multiplier les poteaux ; quand il embarque des
-                fonctions mécaniques — lames orientables, motorisation, capteurs de vent et de pluie — que le bois ne
+                fonctions mécaniques (lames orientables, motorisation, capteurs de vent et de pluie) que le bois ne
                 sait pas porter ; quand l&apos;étanchéité et l&apos;évacuation des eaux doivent être intégrées à la
                 structure elle-même ; quand l&apos;exposition est sévère (bord de piscine, plein sud, projections
                 permanentes) ; et quand le client nous dit clairement qu&apos;il ne veut plus rien entretenir. Une{' '}
@@ -653,7 +653,7 @@ export default function ArticleAluminiumEcologiquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un mot d&apos;honnêteté pour finir : beaucoup d&apos;installateurs ne savent pas encore répondre à ces
                 quatre questions, et nous-mêmes remontons certaines réponses auprès de nos fournisseurs plutôt que de
-                les improviser. Ce n&apos;est pas grave — ce qui compte, c&apos;est qu&apos;on vous dise «{' '}
+                les improviser. Ce n&apos;est pas grave, ce qui compte, c&apos;est qu&apos;on vous dise «{' '}
                 <em>je vérifie et je vous rappelle</em> » plutôt qu&apos;un « oui, c&apos;est recyclable » qui ne vous
                 engage sur rien. Côté bois, la question miroir est tout aussi simple : quelle essence, et poussée où ?
               </p>
@@ -680,7 +680,7 @@ export default function ArticleAluminiumEcologiquePage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Pergola', 'si vous voulez piloter l’ombre — lames orientables, motorisation, évacuation des eaux intégrée —, c’est l’aluminium, sans hésiter. Si vous cherchez une structure chaleureuse sous laquelle faire courir une vigne ou une glycine, le bois reste imbattable et beaucoup plus sobre à fabriquer.'],
+                  ['Pergola', 'si vous voulez piloter l’ombre (lames orientables, motorisation, évacuation des eaux intégrée), c’est l’aluminium, sans hésiter. Si vous cherchez une structure chaleureuse sous laquelle faire courir une vigne ou une glycine, le bois reste imbattable et beaucoup plus sobre à fabriquer.'],
                   ['Carport', 'le bois gagne dans la grande majorité des cas : l’ouvrage est ouvert, ventilé, peu exposé aux projections, et son intégration à une maison girondine est bien meilleure. Nous basculons sur l’aluminium quand la portée est longue, le toit plat, ou quand l’abri doit s’aligner sur des menuiseries déjà thermolaquées.'],
                   ['Garde-corps', 'l’aluminium l’emporte presque toujours : c’est un ouvrage de sécurité, très exposé, sur lequel un entretien oublié n’est pas une option esthétique mais un risque. Sa finesse de profilés préserve aussi la vue, ce qu’une lisse bois ne fait pas.'],
                   ['Véranda et extension', 'une véranda largement vitrée appelle l’aluminium et sa rupture de pont thermique ; une extension qui doit devenir une vraie pièce de la maison, habitée toute l’année, appelle plutôt une ossature bois. Ce sont deux programmes différents, pas deux prix différents pour le même objet.'],
@@ -694,8 +694,8 @@ export default function ArticleAluminiumEcologiquePage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Un dernier conseil très concret : quand vous mélangez les deux matières sur une même maison — et
-                c&apos;est le cas de beaucoup de nos chantiers, terrasse bois plus pergola alu —, l&apos;accord des
+                Un dernier conseil très concret : quand vous mélangez les deux matières sur une même maison (et
+                c&apos;est le cas de beaucoup de nos chantiers, terrasse bois plus pergola alu), l&apos;accord des
                 teintes fait tout. Une teinte RAL bien choisie fait dialoguer le métal avec le bois grisé et la pierre ;
                 mal choisie, elle donne l&apos;impression de deux chantiers étrangers l&apos;un à l&apos;autre. Notre
                 guide sur{' '}
@@ -765,10 +765,10 @@ export default function ArticleAluminiumEcologiquePage() {
             </h2>
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               L&apos;aluminium recyclé change réellement la donne, et la filière française se structure pour cela dès
-              2026 — sans pour autant effacer l&apos;avantage du bois à la fabrication. Le vrai geste écologique reste
+              2026, sans pour autant effacer l&apos;avantage du bois à la fabrication. Le vrai geste écologique reste
               le même dans les deux cas : un ouvrage bien conçu, bien posé, qui tiendra trente ans sans être remplacé.
               C&apos;est l&apos;arbitrage que nous menons avec vous chez L&apos;Esprit Bois, entreprise qualifiée
-              Qualibat, à Libourne et dans toute la Gironde — bois ou aluminium, selon ce que votre projet demande
+              Qualibat, à Libourne et dans toute la Gironde, bois ou aluminium, selon ce que votre projet demande
               vraiment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

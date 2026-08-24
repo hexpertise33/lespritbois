@@ -21,7 +21,7 @@ const boutonTelephone =
  *
  *  Le gabarit est partagé, le contenu ne l'est pas : chaque zone apporte ses
  *  propres chantiers, son propre contexte technique et sa propre FAQ. C'est la
- *  condition pour que ces pages ne soient pas des doorway pages — un même texte
+ *  condition pour que ces pages ne soient pas des doorway pages, un même texte
  *  décliné par commune serait détecté comme tel, et à juste titre. */
 export default function PageZone({ zone }: { zone: Zone }) {
   const chantiers = zone.chantiers
@@ -32,7 +32,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
   const pageLabel = `/${zone.slug}`;
 
   /* Fil d'Ariane : les pages d'offre d'un secteur passent par leur page mère et
-     s'y annoncent par leur ouvrage — « Bassin d'Arcachon / Terrasses bois » —,
+     s'y annoncent par leur ouvrage, « Bassin d'Arcachon / Terrasses bois »,
      les zones sans mère restent directement sous l'accueil sous leur nom. */
   const dernierNiveau = zone.ouvrage ?? zone.nom;
   const filAriane = [
@@ -73,14 +73,14 @@ export default function PageZone({ zone }: { zone: Zone }) {
     {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: `Chantiers réalisés — ${zone.nom}`,
+      name: `Chantiers réalisés, ${zone.nom}`,
       numberOfItems: chantiers.length,
       itemListElement: chantiers.map((c, i) => ({
         '@type': 'ListItem',
         position: i + 1,
         item: {
           '@type': 'CreativeWork',
-          name: `${c.categorie} — ${c.commune} : ${c.titre}`,
+          name: `${c.categorie}, ${c.commune} : ${c.titre}`,
           about: { '@type': 'Place', name: c.commune },
           provider: { '@id': ENTREPRISE_ID },
         },
@@ -139,7 +139,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
               {zone.h1}
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">{zone.chapo}</p>
-            {/* Premier point de contact. Le numéro est un lien tel: — capté par
+            {/* Premier point de contact. Le numéro est un lien tel:, capté par
                 PhoneClickTracker, qui écoute tous les liens tel: du site. */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
               <a href="#devis-bas" className={boutonPlein}>
@@ -203,7 +203,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 {zone.parent ? 'Nos autres ouvrages' : 'Nos ouvrages'} {zone.article} {zone.nom}
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
-                Chaque page traite la contrainte propre à son ouvrage — elles ne se répètent pas.
+                Chaque page traite la contrainte propre à son ouvrage, elles ne se répètent pas.
               </p>
               <ul className="grid md:grid-cols-2 gap-8">
                 {zone.offres.map((o) => (
@@ -269,8 +269,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
                   Commune réelle, contrainte réelle, durée réelle. Ce sont les mêmes fiches que dans{' '}
                   <a href="/realisations" className={lienInterne}>
                     nos réalisations
-                  </a>
-                  , sans réécriture à l&apos;avantage de la page.
+                  </a>,
+                  sans réécriture à l&apos;avantage de la page.
                 </>
               )}
             </p>
@@ -290,7 +290,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                   </div>
                   <div>
                     <p className="font-label-md text-label-md uppercase tracking-[0.15em] text-secondary-dark mb-3">
-                      {c.categorie} — {c.commune}
+                      {c.categorie}, {c.commune}
                     </p>
                     <h3 className="font-headline-md text-headline-md text-primary mb-5">{c.titre}</h3>
                     <div className="font-body-md text-body-md text-on-surface-variant space-y-4">
@@ -316,7 +316,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
             </div>
             {/* Galerie, dans la section des chantiers et non à part : ces photos
                 sont de la preuve, au même titre que la fiche au-dessus. Chaque
-                légende nomme sa commune — c'est ce qui autorise à montrer un
+                légende nomme sa commune, c'est ce qui autorise à montrer un
                 chantier d'ailleurs sur la page d'un secteur où l'on n'a pas
                 encore posé. */}
             {zone.galerie && zone.galerie.length > 0 && (
@@ -403,8 +403,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
               Trois guides signés par{' '}
               <a href="/auteur/david-bertrand" className={lienInterne}>
                 David Bertrand
-              </a>
-              , qui répondent aux questions posées le plus souvent ici.
+              </a>,
+              qui répondent aux questions posées le plus souvent ici.
             </p>
             <ul className="grid md:grid-cols-3 gap-8">
               {zone.guides.map((g) => (
@@ -441,7 +441,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 {zone.parent ? 'Nos autres ouvrages' : 'Nos ouvrages'} {zone.article} {zone.nom}
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
-                Chaque page traite la contrainte propre à son ouvrage — elles ne se répètent pas.
+                Chaque page traite la contrainte propre à son ouvrage, elles ne se répètent pas.
               </p>
               <ul className="grid md:grid-cols-2 gap-8">
                 {zone.offres.map((o) => (

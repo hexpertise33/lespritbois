@@ -6,7 +6,7 @@ import SiteFooter from '@/components/SiteFooter';
 import { CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Qui sommes-nous — charpentiers à Libourne',
+  title: 'Qui sommes-nous, charpentiers à Libourne',
   description:
     "L'Esprit Bois : charpentiers et constructeurs bois aux Billaux, près de Libourne. Qualifiés Qualibat, garantie décennale SMABTP, aucune sous-traitance.",
   keywords:
@@ -34,7 +34,7 @@ const jsonld = [
   {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: "Qui sommes-nous — L'Esprit Bois",
+    name: "Qui sommes-nous, L'Esprit Bois",
     url: 'https://lesprit-bois.fr/qui-sommes-nous',
     description:
       "Présentation de L'Esprit Bois, charpentiers et constructeurs bois installés aux Billaux, près de Libourne : métier, engagements, qualification et méthode de travail.",
@@ -47,7 +47,7 @@ const ENGAGEMENTS = [
     icone: 'verified',
     titre: 'Qualifiés Qualibat',
     texte:
-      "La qualification de référence du bâtiment. Elle s'obtient sur dossier — moyens techniques, références de chantiers, situation financière — et se renouvelle. Ce n'est pas un logo qu'on achète.",
+      "La qualification de référence du bâtiment. Elle s'obtient sur dossier (moyens techniques, références de chantiers, situation financière) et se renouvelle. Ce n'est pas un logo qu'on achète.",
   },
   {
     icone: 'shield',
@@ -74,7 +74,7 @@ const ETAPES = [
     icone: 'design_services',
     titre: 'Le dessin sur mesure',
     texte:
-      "Aucun projet standard. Les dimensions, les essences et les sections sortent de votre lieu et de votre usage. Le devis est détaillé poste par poste — nous ne pratiquons pas le tarif au mètre carré.",
+      "Aucun projet standard. Les dimensions, les essences et les sections sortent de votre lieu et de votre usage. Le devis est détaillé poste par poste, nous ne pratiquons pas le tarif au mètre carré.",
   },
   {
     icone: 'precision_manufacturing',
@@ -126,7 +126,7 @@ export default function QuiSommesNousPage() {
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
               Installés aux Billaux, à cinq minutes de Libourne. Nous ne sommes pas des revendeurs : nous dessinons,
-              nous taillons, nous posons — et nous répondons de ce que nous posons.
+              nous taillons, nous posons, et nous répondons de ce que nous posons.
             </p>
           </div>
         </header>
@@ -157,7 +157,7 @@ export default function QuiSommesNousPage() {
                 assemblage mal pensé se voit au bout de trois hivers, quelle que soit la taille de l&apos;ouvrage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Nous posons aussi des structures aluminium — pergolas bioclimatiques, carports, carports solaires —
+                Nous posons aussi des structures aluminium (pergolas bioclimatiques, carports, carports solaires)
                 fabriquées sur mesure par notre partenaire français{' '}
                 <a
                   href="https://www.lisudestemps.fr/"
@@ -368,7 +368,7 @@ export default function QuiSommesNousPage() {
                     Assurance
                   </dt>
                   <dd className="text-on-surface-variant">
-                    SMABTP — responsabilité civile professionnelle et garantie décennale
+                    SMABTP, responsabilité civile professionnelle et garantie décennale
                   </dd>
                 </div>
                 <div className="flex flex-wrap gap-x-3">
@@ -394,7 +394,7 @@ export default function QuiSommesNousPage() {
               <h3 className="font-headline-sm text-headline-sm text-primary mb-4">Nous rencontrer</h3>
               <p className="text-on-surface-variant text-body-md mb-6">
                 L&apos;atelier est aux Billaux. Voir un ouvrage en cours de fabrication est souvent plus parlant
-                qu&apos;un catalogue — appelez avant de venir, nous sommes régulièrement sur chantier.
+                qu&apos;un catalogue, appelez avant de venir, nous sommes régulièrement sur chantier.
               </p>
               <div className="space-y-4 mb-8">
                 <a

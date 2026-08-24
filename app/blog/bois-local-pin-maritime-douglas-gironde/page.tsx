@@ -296,8 +296,8 @@ export default function ArticleBoisLocalGirondePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>29 juillet 2026</span>
@@ -339,7 +339,7 @@ export default function ArticleBoisLocalGirondePage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Le bois local', 'c’est une question de rayon d’approvisionnement : une forêt et une scierie proches du chantier. Aucune définition réglementaire ne fixe ce rayon, chacun l’entend à sa façon — d’où l’importance de demander la provenance réelle plutôt que de se fier au mot.'],
+                  ['Le bois local', 'c’est une question de rayon d’approvisionnement : une forêt et une scierie proches du chantier. Aucune définition réglementaire ne fixe ce rayon, chacun l’entend à sa façon, d’où l’importance de demander la provenance réelle plutôt que de se fier au mot.'],
                   ['Le bois français', 'c’est une question d’origine nationale : l’arbre a poussé en France et le produit y a été transformé. C’est ce que trace le label Bois de France, dont nous reparlons plus bas.'],
                   ['Le bois certifié PEFC ou FSC', 'c’est une question de gestion durable de la forêt d’origine : renouvellement de la ressource, respect des sols et de la biodiversité, conditions d’exploitation. Ce n’est pas une garantie d’origine géographique.'],
                 ].map(([titre, texte]) => (
@@ -378,7 +378,7 @@ export default function ArticleBoisLocalGirondePage() {
                 Cette forêt n&apos;est pas uniforme. Les feuillus représentent environ 62 % de la surface forestière
                 régionale, et la région est la première de France pour la ressource en chêne et en châtaignier. À
                 l&apos;ouest s&apos;étend le massif cultivé des Landes de Gascogne ; à l&apos;est, la partie limousine
-                concentre les résineux de montagne — douglas, sapins, épicéas, mélèzes — sur environ 262 000 hectares.
+                concentre les résineux de montagne (douglas, sapins, épicéas, mélèzes) sur environ 262 000 hectares.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Concrètement, pour un chantier à Libourne, cette proximité change trois choses :{' '}
@@ -413,7 +413,7 @@ export default function ArticleBoisLocalGirondePage() {
                 Le pin maritime : l&apos;essence girondine par excellence
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Le massif des Landes de Gascogne couvre environ 974 000 hectares — près d&apos;un million — et
+                Le massif des Landes de Gascogne couvre environ 974 000 hectares, près d&apos;un million, et
                 c&apos;est la plus grande forêt cultivée d&apos;Europe occidentale, plantée à plus de 80 % en{' '}
                 <strong className="text-primary font-semibold">pin maritime</strong>. C&apos;est le bois d&apos;ici, au
                 sens le plus littéral : le massif commence à quelques dizaines de kilomètres au sud-ouest de nos
@@ -429,22 +429,22 @@ export default function ArticleBoisLocalGirondePage() {
                 autoclave, il atteint donc la{' '}
                 <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   classe d&apos;emploi 4
-                </a>
-                , celle du contact avec le sol ou l&apos;eau douce.
+                </a>,
+                celle du contact avec le sol ou l&apos;eau douce.
                 Un pin maritime correctement traité est un bois d&apos;extérieur sérieux, pas un pis-aller.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le mot important est « correctement ». Nous exigeons la mention{' '}
                 <strong className="text-primary font-semibold">CTB B+</strong> sur nos approvisionnements : c&apos;est
                 elle qui atteste d&apos;un traitement contrôlé et de la classe d&apos;emploi réellement obtenue. Le sigle
-                « CTB » employé seul, sans le « B+ », ne suffit pas — et il circule beaucoup dans les argumentaires de
+                « CTB » employé seul, sans le « B+ », ne suffit pas, et il circule beaucoup dans les argumentaires de
                 vente. C&apos;est la première chose à faire préciser sur un devis.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Usages où il excelle : ossature, lambourdes, lames de terrasse, clôture, structure d&apos;abri. Ses
                 limites, il faut aussi les dire : c&apos;est un bois nerveux, qui travaille, avec des nœuds visibles et
                 un aspect moins « propre » qu&apos;un résineux de montagne. Sur une terrasse, le choix de l&apos;essence
-                se joue autant sur ce rendu que sur la technique — nous l&apos;avons détaillé dans notre guide sur{' '}
+                se joue autant sur ce rendu que sur la technique, nous l&apos;avons détaillé dans notre guide sur{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   quel bois choisir pour une terrasse extérieure
                 </a>
@@ -468,7 +468,7 @@ export default function ArticleBoisLocalGirondePage() {
                 <strong className="text-primary font-semibold">
                   un bois d&apos;extérieur qui tienne sans traitement chimique.
                 </strong>{' '}
-                Son duramen — le cœur rouge du bois — est naturellement durable et convient à la classe d&apos;emploi 3,
+                Son duramen, le cœur rouge du bois, est naturellement durable et convient à la classe d&apos;emploi 3,
                 celle des ouvrages exposés aux intempéries mais{' '}
                 <strong className="text-primary font-semibold">hors contact du sol</strong>. Une condition, non
                 négociable : purger l&apos;aubier, cette couche périphérique claire qui, elle, n&apos;est pas durable.
@@ -480,7 +480,7 @@ export default function ArticleBoisLocalGirondePage() {
                 Nouvelle-Aquitaine en dispose largement, mais l&apos;essentiel du gisement régional se trouve dans la{' '}
                 <strong className="text-primary font-semibold">partie limousine</strong>, issue des grandes plantations
                 du Fonds forestier national menées entre 1950 et 1980. C&apos;est donc un bois régional plutôt que local
-                au sens strict — nuance que nous préférons énoncer plutôt que de laisser croire que tout pousse à côté de
+                au sens strict, nuance que nous préférons énoncer plutôt que de laisser croire que tout pousse à côté de
                 Libourne.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -515,7 +515,7 @@ export default function ArticleBoisLocalGirondePage() {
                 Le <strong className="text-primary font-semibold">châtaignier</strong> est naturellement durable, sans
                 aucun traitement. Ce n&apos;est pas une découverte : la campagne girondine est pleine de piquets de
                 châtaignier plantés il y a des décennies et toujours debout. Il fait aussi un bardage magnifique, qui
-                prend une patine chaude, et des clôtures pleines de caractère — un usage que nous évoquons dans notre
+                prend une patine chaude, et des clôtures pleines de caractère, un usage que nous évoquons dans notre
                 guide{' '}
                 <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
                   clôture et brise-vue en bois
@@ -526,13 +526,13 @@ export default function ArticleBoisLocalGirondePage() {
                 Ses limites sont réelles, et nous les annonçons avant de proposer : les grandes sections et les grandes
                 longueurs sont plus difficiles à trouver, la disponibilité dépend des lots, et le prix est supérieur à
                 celui d&apos;un résineux régional. Le châtaignier est par ailleurs riche en tanin, ce qui impose de
-                choisir une quincaillerie adaptée — de l&apos;inox de qualité — sous peine de coulures et de réactions
+                choisir une quincaillerie adaptée, de l&apos;inox de qualité, sous peine de coulures et de réactions
                 disgracieuses sur la façade. Rien d&apos;insurmontable, mais ça se prévoit dès le devis.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Le <strong className="text-primary font-semibold">chêne</strong>, lui, reste le feuillu noble par
-                excellence : dense, durable, très stable une fois sec. Nous le réservons aux pièces qui le méritent —
-                poteaux, structures apparentes, ouvrages destinés à traverser les générations — car son coût et sa mise
+                excellence : dense, durable, très stable une fois sec. Nous le réservons aux pièces qui le méritent (
+                poteaux, structures apparentes, ouvrages destinés à traverser les générations) car son coût et sa mise
                 en œuvre sont exigeants.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-surface-variant shadow-sm">
@@ -589,7 +589,7 @@ export default function ArticleBoisLocalGirondePage() {
                 {[
                   'De quelle essence précise s’agit-il, et non pas seulement « du bois traité » ou « du résineux » ?',
                   'Quelle classe d’emploi est visée pour cet usage (contact au sol, exposition, ventilation) ?',
-                  'Le bois est-il traité, et si oui avec quelle certification — CTB B+ pour un autoclave ?',
+                  'Le bois est-il traité, et si oui avec quelle certification, CTB B+ pour un autoclave ?',
                   'D’où vient le bois, et quelle scierie l’a transformé ?',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -603,7 +603,7 @@ export default function ArticleBoisLocalGirondePage() {
                 <strong className="text-primary font-semibold">
                   essence, classe d&apos;emploi, traitement et certification, provenance.
                 </strong>{' '}
-                Un devis qui écrit seulement « fourniture et pose bois » vous empêche de comparer quoi que ce soit — y
+                Un devis qui écrit seulement « fourniture et pose bois » vous empêche de comparer quoi que ce soit, y
                 compris deux offres entre elles.
               </p>
             </section>
@@ -620,8 +620,8 @@ export default function ArticleBoisLocalGirondePage() {
                 Ce qu&apos;on utilise vraiment sur nos chantiers autour de Libourne
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Voici nos arbitrages, sans habillage. Sur la très grande majorité de nos chantiers en Gironde — Libourne,
-                Saint-Émilion, Coutras, la rive droite et jusqu&apos;à la métropole bordelaise —{' '}
+                Voici nos arbitrages, sans habillage. Sur la très grande majorité de nos chantiers en Gironde, Libourne,
+                Saint-Émilion, Coutras, la rive droite et jusqu&apos;à la métropole bordelaise,{' '}
                 <strong className="text-primary font-semibold">
                   le pin maritime traité et le douglas couvrent l&apos;essentiel du besoin
                 </strong>
@@ -639,7 +639,7 @@ export default function ArticleBoisLocalGirondePage() {
                 Et il y a les cas où{' '}
                 <strong className="text-primary font-semibold">nous proposons autre chose que du bois local</strong>.
                 Quand un client cherche une stabilité dimensionnelle maximale sur un platelage très exposé, ou un aspect
-                précis que le douglas ne donnera pas — une teinte, une régularité de fil, une absence de nœuds — un red
+                précis que le douglas ne donnera pas (une teinte, une régularité de fil, une absence de nœuds) un red
                 cedar ou un bois exotique bien sourcé reste techniquement supérieur. Le dire clairement fait partie du
                 travail : nous préférons expliquer l&apos;arbitrage et laisser le client décider en connaissance de
                 cause plutôt que vendre du local qui décevra.
@@ -648,8 +648,8 @@ export default function ArticleBoisLocalGirondePage() {
                 Vous verrez ces essences en situation dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , et l&apos;usage que nous en faisons en structure sur nos{' '}
+                </a>,
+                et l&apos;usage que nous en faisons en structure sur nos{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
                 </a>{' '}

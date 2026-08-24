@@ -35,7 +35,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -357,8 +357,8 @@ export default function ArticleVerandaAluminiumPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>1er août 2026</span>
@@ -373,8 +373,8 @@ export default function ArticleVerandaAluminiumPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Une véranda en aluminium se juge d&apos;abord sur son confort douze mois par an — donc sur la rupture de
-                pont thermique des profilés, la qualité des vitrages et surtout le traitement de la toiture — puis sur
+                Une véranda en aluminium se juge d&apos;abord sur son confort douze mois par an (donc sur la rupture de
+                pont thermique des profilés, la qualité des vitrages et surtout le traitement de la toiture) puis sur
                 son statut d&apos;urbanisme, selon qu&apos;il s&apos;agit d&apos;un espace tampon non chauffé ou
                 d&apos;une vraie extension chauffée. Le prix ne vient qu&apos;après.
               </strong>{' '}
@@ -417,7 +417,7 @@ export default function ArticleVerandaAluminiumPage() {
                 <strong className="text-primary font-semibold">non chauffée, isolable par une menuiserie</strong> reste
                 un espace tampon solarisé : elle échappe à ces exigences tout en améliorant réellement le confort de la
                 pièce qu&apos;elle protège. Le régime exact se confirme avec le service urbanisme de votre commune et,
-                pour une extension chauffée d&apos;une certaine surface, avec un bureau d&apos;études thermiques —
+                pour une extension chauffée d&apos;une certaine surface, avec un bureau d&apos;études thermiques,
                 c&apos;est ce que nous faisons sur nos chantiers plutôt que de vous laisser deviner.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -438,7 +438,7 @@ export default function ArticleVerandaAluminiumPage() {
             {/* Pourquoi l'alu */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Pourquoi l&apos;aluminium s&apos;impose sur une véranda — et où il l&apos;est moins
+                Pourquoi l&apos;aluminium s&apos;impose sur une véranda, et où il l&apos;est moins
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Sur une véranda, la matière de la structure décide de la quantité de lumière. Et c&apos;est là que
@@ -450,7 +450,7 @@ export default function ArticleVerandaAluminiumPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   ['Des profilés fins et rigides', 'ils portent de grandes portées et libèrent la vue ; sur un projet ouvert plein sud, c’est ce qui fait la différence entre une véranda et une cage.'],
-                  ['Un alliage inaltérable', 'l’aluminium ne rouille pas, ne gonfle pas, ne travaille pas avec l’humidité — un vrai atout à proximité des rivières et dans les fonds de vallée du Libournais.'],
+                  ['Un alliage inaltérable', 'l’aluminium ne rouille pas, ne gonfle pas, ne travaille pas avec l’humidité, un vrai atout à proximité des rivières et dans les fonds de vallée du Libournais.'],
                   ['Le thermolaquage', 'la teinte est cuite sur le profilé : elle tient dans le temps, se décline dans toute la palette RAL et permet d’accorder la véranda aux menuiseries et à la toiture existantes, y compris en bicoloration intérieur/extérieur.'],
                   ['Un entretien quasi nul', 'un lavage à l’eau savonneuse une à deux fois par an, sans ponçage ni traitement de surface à reprendre.'],
                 ].map(([titre, texte]) => (
@@ -466,7 +466,7 @@ export default function ArticleVerandaAluminiumPage() {
                 Où l&apos;aluminium est-il moins pertinent ? Chez L&apos;Esprit Bois, nous vendons et posons{' '}
                 <strong className="text-primary font-semibold">le bois et l&apos;aluminium</strong>, nous n&apos;avons
                 donc aucun intérêt à pousser une matière. Et nous le disons franchement : dès que le projet devient une{' '}
-                <em>vraie pièce</em> occupée toute l&apos;année — chambre, bureau permanent, cuisine — une extension en
+                <em>vraie pièce</em> occupée toute l&apos;année (chambre, bureau permanent, cuisine) une extension en
                 ossature bois est supérieure. Elle offre des murs isolés et porteurs, donc des rangements et des
                 meubles au mur, une inertie et un confort d&apos;été bien meilleurs, et une facture de chauffage sans
                 mauvaise surprise.
@@ -488,7 +488,7 @@ export default function ArticleVerandaAluminiumPage() {
               w={825}
               h={1100}
               alt="Profilés aluminium thermolaqués anthracite d’une structure adossée, chantier de L’Esprit Bois à Saint-Pey-de-Castets"
-              caption="La teinte RAL est cuite au four sur le profilé : elle ne s’écaille pas et ne se repeint pas. Ici sur une de nos pergolas aluminium à Saint-Pey-de-Castets — le traitement est identique sur les profilés de véranda."
+              caption="La teinte RAL est cuite au four sur le profilé : elle ne s’écaille pas et ne se repeint pas. Ici sur une de nos pergolas aluminium à Saint-Pey-de-Castets, le traitement est identique sur les profilés de véranda."
             />
 
             {/* Rupture de pont thermique */}
@@ -498,7 +498,7 @@ export default function ArticleVerandaAluminiumPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;aluminium a un défaut connu : c&apos;est un excellent conducteur. Brut, un profilé transmet
-                intégralement le froid extérieur vers l&apos;intérieur — d&apos;où les ruissellements de condensation
+                intégralement le froid extérieur vers l&apos;intérieur, d&apos;où les ruissellements de condensation
                 des anciennes vérandas et cette sensation de paroi glacée en janvier. La réponse technique est la{' '}
                 <strong className="text-primary font-semibold">rupture de pont thermique</strong> : le profilé est
                 composé de deux parties, l&apos;une extérieure et l&apos;autre intérieure, reliées par des{' '}
@@ -509,7 +509,7 @@ export default function ArticleVerandaAluminiumPage() {
                 C&apos;est le premier point à vérifier sur un devis, et il ne se voit pas sur une photo. Une véranda
                 sans rupture de pont thermique peut être très bien fabriquée par ailleurs : elle restera inconfortable
                 et sujette à la condensation dès qu&apos;elle est chauffée. Sur nos projets, plus la barrette est large
-                et travaillée, meilleur est le comportement de la véranda — et plus les menuiseries résistent aux écarts
+                et travaillée, meilleur est le comportement de la véranda, et plus les menuiseries résistent aux écarts
                 de température entre une face plein sud et une face nord.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
@@ -554,7 +554,7 @@ export default function ArticleVerandaAluminiumPage() {
                 <strong className="text-primary font-semibold">c&apos;est la toiture qui décide si votre véranda sera
                 habitable ou non.</strong> Le soleil d&apos;été frappe à la verticale, la chaleur monte et stagne sous
                 le plafond : une toiture mal traitée transforme la plus belle des vérandas en serre à tomates de juin à
-                septembre — et en passoire thermique la nuit d&apos;hiver, puisque c&apos;est aussi par le haut que la
+                septembre, et en passoire thermique la nuit d&apos;hiver, puisque c&apos;est aussi par le haut que la
                 chaleur s&apos;échappe.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
@@ -562,7 +562,7 @@ export default function ArticleVerandaAluminiumPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Le vitrage de toiture à contrôle solaire', 'il conserve la lumière zénithale et la vue sur le ciel, tout en filtrant une part de l’énergie solaire. C’est le choix de ceux qui veulent une véranda lumineuse — à condition de l’accompagner d’une protection mobile.'],
+                  ['Le vitrage de toiture à contrôle solaire', 'il conserve la lumière zénithale et la vue sur le ciel, tout en filtrant une part de l’énergie solaire. C’est le choix de ceux qui veulent une véranda lumineuse, à condition de l’accompagner d’une protection mobile.'],
                   ['Les panneaux sandwich isolants', 'une âme isolante entre deux parements : c’est la solution la plus efficace contre la surchauffe et les déperditions, au prix d’une toiture opaque. Idéale au-dessus d’un coin repas ou d’un bureau.'],
                   ['La toiture mixte', 'notre configuration préférée : des panneaux isolants sur la partie proche de la maison, des zones vitrées en périphérie. On garde la lumière là où elle sert, on isole là où l’on s’installe.'],
                 ].map(([titre, texte]) => (
@@ -579,8 +579,8 @@ export default function ArticleVerandaAluminiumPage() {
                 ne pas avoir prévus dès la conception : une{' '}
                 <strong className="text-primary font-semibold">ventilation haute</strong> (ouvrants de toiture ou
                 lanterneaux motorisés) pour évacuer l&apos;air chaud accumulé au plafond, des{' '}
-                <strong className="text-primary font-semibold">stores de toiture</strong> intérieurs ou extérieurs — les
-                extérieurs, qui arrêtent le rayonnement avant le vitrage, sont bien plus efficaces — et des{' '}
+                <strong className="text-primary font-semibold">stores de toiture</strong> intérieurs ou extérieurs (les
+                extérieurs, qui arrêtent le rayonnement avant le vitrage, sont bien plus efficaces) et des{' '}
                 <strong className="text-primary font-semibold">brise-soleil orientables</strong> en façade sud et ouest.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -634,14 +634,14 @@ export default function ArticleVerandaAluminiumPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Reste le support. Une véranda repose sur une dalle et des fondations dimensionnées pour porter la
-                structure et les vitrages — donc sur une étude du sol et des niveaux, avec un soubassement qui met le
+                structure et les vitrages, donc sur une étude du sol et des niveaux, avec un soubassement qui met le
                 seuil hors d&apos;eau. En Gironde, entre sols argileux sujets au retrait-gonflement et terrains en
                 pente, ce poste n&apos;est jamais une formalité : c&apos;est souvent lui qui explique l&apos;écart entre
                 deux devis. Nous le traitons dans la continuité de nos autres ouvrages d&apos;
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
-                </a>
-                , terrasse et abords compris.
+                </a>,
+                terrasse et abords compris.
               </p>
             </section>
 
@@ -660,8 +660,8 @@ export default function ArticleVerandaAluminiumPage() {
                   rel="noopener noreferrer"
                 >
                   fiche officielle de la déclaration préalable de travaux
-                </a>
-                , à confronter systématiquement au PLU de votre commune.
+                </a>,
+                à confronter systématiquement au PLU de votre commune.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-surface-variant shadow-sm">
                 <table className="w-full border-collapse text-body-md">
@@ -686,7 +686,7 @@ export default function ArticleVerandaAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-6 mb-5">
                 Ces seuils ne sont qu&apos;un point de départ. Le{' '}
                 <strong className="text-primary font-semibold">PLU de votre commune</strong> peut imposer une hauteur
-                maximale, une implantation par rapport aux limites séparatives, un aspect ou une palette de teintes —
+                maximale, une implantation par rapport aux limites séparatives, un aspect ou une palette de teintes,
                 autant de contraintes qui orientent la teinte RAL du thermolaquage et la forme de la toiture. Et dans
                 le Libournais comme à Saint-Émilion, les périmètres de monuments historiques sont fréquents :{' '}
                 <strong className="text-primary font-semibold">l&apos;avis de l&apos;Architecte des Bâtiments de France
@@ -711,8 +711,8 @@ export default function ArticleVerandaAluminiumPage() {
                 le montant applicable à votre projet. Nous détaillons la logique générale des autorisations dans notre{' '}
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>
                   guide des autorisations d&apos;urbanisme 2026
-                </a>
-                , et nous montons le dossier avec vous.
+                </a>,
+                et nous montons le dossier avec vous.
               </p>
             </section>
 
@@ -774,7 +774,7 @@ export default function ArticleVerandaAluminiumPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un réflexe utile : <strong className="text-primary font-semibold">le prix au m² baisse quand la surface
-                augmente.</strong> Les postes fixes — étude, raccord à la maison, chéneaux, amenée de chantier — se
+                augmente.</strong> Les postes fixes (étude, raccord à la maison, chéneaux, amenée de chantier) se
                 répartissent sur plus de mètres carrés. Passer de 12 à 18 m² coûte rarement 50 % de plus, et change
                 radicalement l&apos;usage de la pièce. À l&apos;inverse, une toute petite véranda paie cher chaque mètre
                 carré.
@@ -790,8 +790,8 @@ export default function ArticleVerandaAluminiumPage() {
                 dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , du carport aluminium à l&apos;extension complète.
+                </a>,
+                du carport aluminium à l&apos;extension complète.
               </p>
             </section>
           </div>
@@ -838,7 +838,7 @@ export default function ArticleVerandaAluminiumPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Une véranda en aluminium réussie, c&apos;est un usage tranché dès le départ, des profilés à rupture de
               pont thermique, des vitrages différenciés selon l&apos;orientation, une toiture pensée pour l&apos;été
-              girondin et un raccord à la maison irréprochable. Le reste — la teinte RAL, la motorisation, le budget —
+              girondin et un raccord à la maison irréprochable. Le reste (la teinte RAL, la motorisation, le budget)
               découle de ces décisions. Nous vendons et posons le bois comme l&apos;aluminium : chez L&apos;Esprit
               Bois, entreprise qualifiée Qualibat à Libourne et dans toute la Gironde, nous vous dirons franchement
               laquelle des deux solutions sert le mieux votre projet, formalités d&apos;urbanisme comprises.

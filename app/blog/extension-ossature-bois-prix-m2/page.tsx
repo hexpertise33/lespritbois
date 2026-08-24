@@ -6,7 +6,7 @@ import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 
 // COVER : extension ossature bois L'Esprit Bois bardée en bois vertical, greffée
-// sur une grange en pierre — les contreforts métalliques scellés sont visibles sur
+// sur une grange en pierre, les contreforts métalliques scellés sont visibles sur
 // le pignon. ⚠️ Le chantier est à Clérac, en CHARENTE-MARITIME, pas en Gironde :
 // ne jamais le relégender « en Gironde » ni « près de Libourne ».
 // Voir lib/data/chantiers.ts, entrée 'clerac'.
@@ -45,7 +45,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -331,8 +331,8 @@ export default function ArticleExtensionOssatureBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>23 juillet 2026</span>
@@ -499,8 +499,8 @@ export default function ArticleExtensionOssatureBoisPage() {
                 pousse en quelques jours, n&apos;est qu&apos;une étape.{' '}
                 <strong className="text-primary font-semibold">
                   Comptez plutôt 2 à 4 mois entre le début du chantier et la remise des clés
-                </strong>
-                , selon la surface et le niveau de finition.
+                </strong>,
+                selon la surface et le niveau de finition.
               </p>
               <ul className="space-y-3 mb-5">
                 {[
@@ -527,8 +527,8 @@ export default function ArticleExtensionOssatureBoisPage() {
                   rel="noopener noreferrer"
                 >
                   déclaration préalable
-                </a>
-                , deux à trois mois pour un{' '}
+                </a>,
+                deux à trois mois pour un{' '}
                 <a
                   href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1986"
                   className={lienInterne}

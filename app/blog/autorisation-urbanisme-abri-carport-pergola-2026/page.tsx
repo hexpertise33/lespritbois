@@ -147,7 +147,7 @@ const jsonld = [
 ];
 
 const seuils = [
-  ['Jusqu’à 5 m²', 'Aucune formalité — sauf secteur protégé', 'Aucun', 'En abords de monument ou site classé, la DP est due dès le 1er m²'],
+  ['Jusqu’à 5 m²', 'Aucune formalité, sauf secteur protégé', 'Aucun', 'En abords de monument ou site classé, la DP est due dès le 1er m²'],
   ['De 5 à 20 m²', 'Déclaration préalable (CERFA 16702)', '1 mois', '2 mois si secteur protégé (avis ABF)'],
   ['Au-delà de 20 m²', 'Permis de construire', '2 à 3 mois', 'Toujours nécessaire, quelle que soit la zone'],
   ['Extension en zone U (PLU), jusqu’à 40 m²', 'Déclaration préalable', '1 mois', 'La mairie doit qualifier l’ouvrage d’extension'],
@@ -271,8 +271,8 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>11 juillet 2026</span>
@@ -356,7 +356,7 @@ export default function ArticleAutorisationUrbanisme2026Page() {
               </p>
               <ul className="space-y-3 mb-6">
                 {[
-                  ['Jusqu’à 5 m²', 'aucune formalité d’urbanisme hors secteur protégé — en abords de monument historique ou site classé, la déclaration préalable est due dès le premier mètre carré. Nous recommandons par ailleurs de vérifier le règlement de votre lotissement.'],
+                  ['Jusqu’à 5 m²', 'aucune formalité d’urbanisme hors secteur protégé, en abords de monument historique ou site classé, la déclaration préalable est due dès le premier mètre carré. Nous recommandons par ailleurs de vérifier le règlement de votre lotissement.'],
                   ['De plus de 5 m² à 20 m²', 'une déclaration préalable de travaux est obligatoire, à déposer avec le nouveau formulaire CERFA n°16702.'],
                   ['Au-delà de 20 m²', 'un permis de construire devient nécessaire, avec un dossier plus complet (plan de coupe, notice descriptive, insertion paysagère).'],
                 ].map(([titre, texte]) => (
@@ -473,8 +473,8 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 Dans ces zones, le dossier est systématiquement transmis pour{' '}
                 <strong className="text-primary font-semibold">
                   avis de l&apos;Architecte des Bâtiments de France (ABF)
-                </strong>
-                , qui vérifie l&apos;insertion du projet dans le paysage patrimonial : matériaux, teintes, volumes,
+                </strong>,
+                qui vérifie l&apos;insertion du projet dans le paysage patrimonial : matériaux, teintes, volumes,
                 visibilité depuis un monument. Cette consultation allonge mécaniquement le délai d&apos;instruction à
                 deux mois, contre un mois en zone classique.
               </p>
@@ -564,8 +564,8 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 Toutes ces règles ont un point commun : elles{' '}
                 <strong className="text-primary font-semibold">
                   varient selon le PLU de chaque commune
-                </strong>
-                , sa zone, son règlement de lotissement et sa proximité éventuelle avec un monument ou un site
+                </strong>,
+                sa zone, son règlement de lotissement et sa proximité éventuelle avec un monument ou un site
                 classé. Autour de Libourne, entre communes rurales, zones urbaines et abords du site UNESCO de
                 Saint-Émilion, deux terrains voisins peuvent relever de régimes différents.
               </p>

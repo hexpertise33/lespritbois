@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -299,8 +299,8 @@ export default function ArticleCarportVoitureElectriquePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>20 août 2026</span>
@@ -315,7 +315,7 @@ export default function ArticleCarportVoitureElectriquePage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Le carport est le meilleur endroit pour recharger une voiture électrique — à condition d&apos;y penser
+                Le carport est le meilleur endroit pour recharger une voiture électrique, à condition d&apos;y penser
                 avant de couler les plots. Ce qui coûte cher après coup, ce n&apos;est jamais la borne : c&apos;est le
                 cheminement électrique qu&apos;il faut reprendre, la tranchée à rouvrir et le passage à faire sous un
                 ouvrage déjà monté.
@@ -339,8 +339,8 @@ export default function ArticleCarportVoitureElectriquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une voiture électrique se recharge là où elle dort. Or, dans la très grande majorité des maisons que nous
                 visitons, elle ne dort pas dans le garage : le garage est devenu un atelier, une buanderie, une réserve à
-                vélos et à cartons, et la voiture reste dehors. Le carport, lui, est fait pour une seule chose — abriter
-                un véhicule — et il le fait à la place exacte où la voiture se gare tous les soirs.
+                vélos et à cartons, et la voiture reste dehors. Le carport, lui, est fait pour une seule chose, abriter
+                un véhicule, et il le fait à la place exacte où la voiture se gare tous les soirs.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Trois qualités le rendent particulièrement adapté à la recharge.{' '}
@@ -355,7 +355,7 @@ export default function ArticleCarportVoitureElectriquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Mais l&apos;argument décisif est ailleurs, et il est de nature calendaire :{' '}
                 <strong className="text-primary font-semibold">
-                  un carport, ça se construit — un garage, ça existe déjà.
+                  un carport, ça se construit, un garage, ça existe déjà.
                 </strong>{' '}
                 Équiper un garage existant, c&apos;est toujours partir d&apos;un état de fait qu&apos;on subit : un
                 cheminement à improviser, un mur à percer, une allée à traverser. Construire un carport, c&apos;est
@@ -404,7 +404,7 @@ export default function ArticleCarportVoitureElectriquePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Et si la voiture électrique n&apos;est pas encore là ? Nous posons quand même l&apos;attente, dès lors que
                 le client envisage l&apos;échéance. Un fourreau vide dans une tranchée déjà creusée est de très loin{' '}
-                <strong className="text-primary font-semibold">la ligne la moins chère de tout le devis</strong> — et la
+                <strong className="text-primary font-semibold">la ligne la moins chère de tout le devis</strong>, et la
                 seule qui ne se rattrape pas sans casse.
               </p>
             </section>
@@ -450,7 +450,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                 <strong className="text-primary font-semibold">
                   les eaux de la couverture descendent à l&apos;intérieur des poteaux
                 </strong>
-                . Percer un profilé au mauvais endroit, c&apos;est percer une descente d&apos;eau — avec une fuite qui ne
+                . Percer un profilé au mauvais endroit, c&apos;est percer une descente d&apos;eau, avec une fuite qui ne
                 se déclare qu&apos;au premier gros orage. Sur ces ouvrages, l&apos;emplacement se décide avant la
                 fabrication, pas la perceuse à la main.
               </p>
@@ -460,8 +460,8 @@ export default function ArticleCarportVoitureElectriquePage() {
                 fixé à hauteur de pare-chocs finit toujours par prendre un coup. Et{' '}
                 <strong className="text-primary font-semibold">
                   le câble de recharge ne doit jamais traverser le passage des piétons
-                </strong>
-                , ni celui qui mène à la porte d&apos;entrée. Cela se règle sur le plan, pas sur le chantier.
+                </strong>,
+                ni celui qui mène à la porte d&apos;entrée. Cela se règle sur le plan, pas sur le chantier.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Ces arbitrages supposent évidemment que le carport soit assez grand pour qu&apos;on puisse encore circuler
@@ -490,8 +490,8 @@ export default function ArticleCarportVoitureElectriquePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;idée est séduisante et parfaitement légitime : une surface de toiture inutilisée, plein sud, au
-                droit d&apos;un véhicule à recharger. Nous ne dimensionnons pas d&apos;installation solaire — ce
-                n&apos;est pas notre métier, et nous y revenons plus bas — mais nous dimensionnons la structure qui la
+                droit d&apos;un véhicule à recharger. Nous ne dimensionnons pas d&apos;installation solaire, ce
+                n&apos;est pas notre métier, et nous y revenons plus bas, mais nous dimensionnons la structure qui la
                 porte, et c&apos;est là que tout se joue.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
@@ -500,7 +500,7 @@ export default function ArticleCarportVoitureElectriquePage() {
               <ul className="space-y-3 mb-5">
                 {[
                   ['Une charge permanente supplémentaire', 'une couverture photovoltaïque pèse, et elle pèse tout le temps. Cela se répercute sur les sections, sur le contreventement, sur les ancrages et jusque sur les fondations. Un carport calculé pour une couverture légère ne devient pas porteur parce qu’on l’a décidé après.'],
-                  ['L’orientation et la pente', 'elles cessent d’être un choix purement esthétique et deviennent un paramètre du projet. L’implantation de l’ouvrage sur le terrain s’en trouve parfois modifiée — d’où l’intérêt d’en parler au relevé, pas au montage.'],
+                  ['L’orientation et la pente', 'elles cessent d’être un choix purement esthétique et deviennent un paramètre du projet. L’implantation de l’ouvrage sur le terrain s’en trouve parfois modifiée, d’où l’intérêt d’en parler au relevé, pas au montage.'],
                   ['L’étanchéité et l’évacuation des eaux', 'que les modules soient posés en surimposition ou qu’ils fassent office de couverture, l’eau doit être conduite proprement jusqu’au sol. C’est un travail de couvreur, et il se dessine à la conception.'],
                   ['L’accès pour la maintenance', 'une installation se visite, se nettoie, se dépanne. Un ouvrage sur lequel on ne peut plus intervenir sans nacelle ni démontage devient une charge, pas une ressource.'],
                 ].map(([titre, texte]) => (
@@ -534,7 +534,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                 <strong className="text-primary font-semibold">
                   une couverture photovoltaïque peut modifier la formalité applicable à votre projet
                 </strong>{' '}
-                par rapport au même carport couvert de façon classique. Nous ne donnons pas de seuil ici — les règles
+                par rapport au même carport couvert de façon classique. Nous ne donnons pas de seuil ici, les règles
                 dépendent de la commune et de la zone. Reportez-vous à notre article sur les{' '}
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>
                   autorisations d&apos;urbanisme d&apos;un abri, d&apos;un carport ou d&apos;une pergola
@@ -566,14 +566,14 @@ export default function ArticleCarportVoitureElectriquePage() {
                   rel="noopener noreferrer"
                 >
                   fiche officielle du service public sur le crédit d&apos;impôt pour un système de charge
-                </a>
-                , est le suivant :{' '}
+                </a>,
+                est le suivant :{' '}
                 <strong className="text-primary font-semibold">
                   « Le crédit d&apos;impôt est supprimé pour les dépenses payées à partir du 1ᵉʳ janvier 2026. »
                 </strong>
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Ce dispositif a bel et bien existé, et il était intéressant — au passé. Il valait{' '}
+                Ce dispositif a bel et bien existé, et il était intéressant, au passé. Il valait{' '}
                 <strong className="text-primary font-semibold">75 % des dépenses</strong>, dans la limite de{' '}
                 <strong className="text-primary font-semibold">500 € par système de charge pilotable</strong>, et il ne
                 portait que sur des dépenses <strong className="text-primary font-semibold">facturées et payées avant
@@ -590,13 +590,13 @@ export default function ArticleCarportVoitureElectriquePage() {
                 jour. Nous appliquons sur ce blog une règle sans exception :{' '}
                 <strong className="text-primary font-semibold">
                   un chiffre ne se recopie jamais depuis une page commerciale
-                </strong>
-                , il se vérifie à la source officielle — et quand la source ne dit rien, nous ne disons rien non plus.
+                </strong>,
+                il se vérifie à la source officielle, et quand la source ne dit rien, nous ne disons rien non plus.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deux précisions dans le même esprit. Sur la <strong className="text-primary font-semibold">TVA</strong> :
                 un taux réduit peut s&apos;appliquer selon les cas, mais nous ne citerons pas de pourcentage ici, faute
-                d&apos;une source officielle qui traite explicitement des bornes de recharge — à faire confirmer par votre
+                d&apos;une source officielle qui traite explicitement des bornes de recharge, à faire confirmer par votre
                 installateur et par le service des impôts. Sur la{' '}
                 <strong className="text-primary font-semibold">qualification de l&apos;installateur</strong> : la fiche
                 officielle consultée parle de l&apos;entreprise qui fournit l&apos;équipement ou de son sous-traitant.
@@ -630,7 +630,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                 abonnement et de votre véhicule.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Ce que nous savons faire, en revanche, c&apos;est construire l&apos;ouvrage qui accueillera tout cela — et
+                Ce que nous savons faire, en revanche, c&apos;est construire l&apos;ouvrage qui accueillera tout cela, et
                 le construire de façon que l&apos;électricien trouve, le jour de son intervention, exactement ce dont il a
                 besoin. Voici comment nous répartissons les rôles sur un projet :
               </p>
@@ -683,15 +683,15 @@ export default function ArticleCarportVoitureElectriquePage() {
                 Nous ne donnerons aucun prix de borne ni d&apos;installation électrique : ce n&apos;est pas notre devis,
                 et les fourchettes qui circulent recouvrent des prestations très différentes. En revanche, nous pouvons
                 chiffrer ce qui nous concerne. Sur nos propres chantiers en 2026, la préparation d&apos;un carport à la
-                recharge — fourreau en attente, regard de tirage, réservation dans l&apos;ouvrage et support de fixation —
+                recharge, fourreau en attente, regard de tirage, réservation dans l&apos;ouvrage et support de fixation,
                 représente le plus souvent{' '}
                 <strong className="text-primary font-semibold">
                   un supplément de quelques centaines d&apos;euros
-                </strong>
-                , très variable selon la longueur du cheminement, la nature du sol et ce qu&apos;il faut traverser. Le
+                </strong>,
+                très variable selon la longueur du cheminement, la nature du sol et ce qu&apos;il faut traverser. Le
                 même travail repris après coup, avec réouverture de tranchée et reprise du revêtement, se compte
                 généralement{' '}
-                <strong className="text-primary font-semibold">en plusieurs fois ce montant</strong> — et le résultat est
+                <strong className="text-primary font-semibold">en plusieurs fois ce montant</strong>, et le résultat est
                 rarement aussi propre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
@@ -702,7 +702,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                 {[
                   ['La voiture électrique est déjà là', 'le projet se conçoit avec l’électricien dès le relevé. C’est le cas le plus simple : tout est arbitré avant d’ouvrir le sol, et rien n’est repris.'],
                   ['Elle est envisagée dans quelques années', 'nous posons l’attente et nous nous arrêtons là. Rien n’est branché, rien ne vieillit, et le jour venu l’intervention se limite à tirer un câble dans un fourreau existant.'],
-                  ['Elle n’est pas au programme', 'nous en parlons quand même, une fois, au moment du devis. Sur un ouvrage destiné à durer vingt ans, se fermer cette porte pour économiser une ligne modeste est un mauvais calcul — et la revente du bien la rouvre souvent.'],
+                  ['Elle n’est pas au programme', 'nous en parlons quand même, une fois, au moment du devis. Sur un ouvrage destiné à durer vingt ans, se fermer cette porte pour économiser une ligne modeste est un mauvais calcul, et la revente du bien la rouvre souvent.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -722,7 +722,7 @@ export default function ArticleCarportVoitureElectriquePage() {
                 <a href="/blog/carport-aluminium-ou-bois-comparatif" className={lienInterne}>
                   comparatif carport aluminium ou bois
                 </a>{' '}
-                tranche selon l&apos;usage — nous vendons et posons les deux, donc nous n&apos;avons aucun intérêt à
+                tranche selon l&apos;usage, nous vendons et posons les deux, donc nous n&apos;avons aucun intérêt à
                 pousser l&apos;une plutôt que l&apos;autre. Sur le sujet qui nous occupe ici, les deux matières se
                 préparent aussi bien : la différence tient au moment où l&apos;on décide, pas au matériau.
               </p>
@@ -733,16 +733,16 @@ export default function ArticleCarportVoitureElectriquePage() {
                 au relevé. Vous pouvez voir nos ouvrages finis dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , découvrir notre approche des{' '}
+                </a>,
+                découvrir notre approche des{' '}
                 <a href="/carports" className={lienInterne}>
                   carports sur mesure, bois et aluminium
                 </a>{' '}
                 et l&apos;ensemble de nos{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
-                </a>
-                , de l&apos;étude à la pose.
+                </a>,
+                de l&apos;étude à la pose.
               </p>
             </section>
           </div>
@@ -790,7 +790,7 @@ export default function ArticleCarportVoitureElectriquePage() {
               Tout ce qui compte dans ce sujet se joue avant le premier coup de pelle : un fourreau posé pendant que le
               sol est ouvert, une réservation dessinée avec la structure, un support prévu au bon endroit. Le reste
               appartient à un électricien, et nous le disons volontiers. Si vous construisez un carport à Libourne ou
-              ailleurs en Gironde, parlons de la recharge au moment du relevé — c&apos;est le seul moment où cela ne
+              ailleurs en Gironde, parlons de la recharge au moment du relevé, c&apos;est le seul moment où cela ne
               coûte presque rien.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

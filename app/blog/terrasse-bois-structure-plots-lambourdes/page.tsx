@@ -272,8 +272,8 @@ export default function ArticleStructureTerrasseBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>1er août 2026</span>
@@ -295,7 +295,7 @@ export default function ArticleStructureTerrasseBoisPage() {
               La lame se voit, la structure décide. Sur les terrasses que nous reprenons autour de Libourne, les lames
               sont souvent encore saines en surface alors que la structure, elle, a lâché : lambourdes noircies, plots
               qui se sont enfoncés, rives fermées qui ont piégé l&apos;humidité. Voici, en détail, ce qu&apos;on ne voit
-              plus une fois la terrasse posée — et ce que nous vérifions avant de visser la première lame.
+              plus une fois la terrasse posée, et ce que nous vérifions avant de visser la première lame.
             </p>
           </div>
         </section>
@@ -328,12 +328,12 @@ export default function ArticleStructureTerrasseBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Autrement dit, deux terrasses posées avec exactement la même essence peuvent avoir des trajectoires
-                totalement différentes selon ce qu&apos;il y a dessous. Le choix de l&apos;essence reste important — nous
+                totalement différentes selon ce qu&apos;il y a dessous. Le choix de l&apos;essence reste important, nous
                 le détaillons dans notre guide{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   quel bois choisir pour une terrasse extérieure
-                </a>{' '}
-                — mais c&apos;est un facteur parmi d&apos;autres. La structure, elle, est le facteur qui n&apos;admet
+                </a>,{' '}
+               mais c&apos;est un facteur parmi d&apos;autres. La structure, elle, est le facteur qui n&apos;admet
                 aucun rattrapage : on ne reprend pas une sous-face une fois les lames vissées.
               </p>
             </section>
@@ -378,7 +378,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                 Notre solution par défaut sur une terrasse de plain-pied, c&apos;est le{' '}
                 <strong className="text-primary font-semibold">plot réglable</strong>. Il permet de rattraper couramment
                 plusieurs dizaines de centimètres de dénivelé, de régler chaque appui au millimètre pour obtenir un
-                platelage parfaitement plan, et surtout il crée d&apos;emblée un vide sous la terrasse — donc de la
+                platelage parfaitement plan, et surtout il crée d&apos;emblée un vide sous la terrasse, donc de la
                 ventilation. C&apos;est un poste qui coûte, et qui représente une part importante du prix d&apos;une
                 terrasse posée : c&apos;est aussi celui sur lequel il ne faut jamais rogner.
               </p>
@@ -432,14 +432,14 @@ export default function ArticleStructureTerrasseBoisPage() {
                 pose et des charges prévues. Elles se déterminent à partir du NF DTU 51.4, publié par le{' '}
                 <a href="https://www.cstb.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   CSTB
-                </a>
-                , et des préconisations du fournisseur de la lame, qui indique la portée admissible de son produit.
+                </a>,
+                et des préconisations du fournisseur de la lame, qui indique la portée admissible de son produit.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Cela dit, pour donner un ordre de grandeur de chantier : sur nos terrasses privées courantes, nous
                 restons généralement <strong className="text-primary font-semibold">autour de 40 à 50 cm</strong>{' '}
                 d&apos;entraxe, et nous resserrons systématiquement dès que la lame est fine, tendre, posée en diagonale
-                (la portée réelle augmente alors) ou destinée à recevoir une charge lourde — un spa, une jardinière
+                (la portée réelle augmente alors) ou destinée à recevoir une charge lourde, un spa, une jardinière
                 maçonnée, un plan de cuisson extérieur. Nous préférons ajouter une lambourde que d&apos;expliquer trois
                 ans plus tard pourquoi le platelage « fait le trampoline ».
               </p>
@@ -462,8 +462,8 @@ export default function ArticleStructureTerrasseBoisPage() {
                 <strong className="text-primary font-semibold">
                   Une terrasse en bois est un ouvrage qui doit respirer par-dessous.
                 </strong>{' '}
-                Si l&apos;air ne traverse pas la sous-face, l&apos;humidité s&apos;installe, et tout le reste — essence
-                durable, saturateur, belle visserie — ne fait que retarder l&apos;échéance.
+                Si l&apos;air ne traverse pas la sous-face, l&apos;humidité s&apos;installe, et tout le reste (essence
+                durable, saturateur, belle visserie) ne fait que retarder l&apos;échéance.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Nous ne donnons volontairement pas de ratio d&apos;aération chiffré : le sujet est physique avant
@@ -510,14 +510,14 @@ export default function ArticleStructureTerrasseBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">La pente d&apos;abord.</strong> Une légère pente, donnée
-                à la structure et non à l&apos;œil au moment de poser les lames, oriente l&apos;eau vers l&apos;extérieur
-                — et jamais vers la façade de la maison. Sur un platelage réglé au cordeau, une différence de quelques
+                à la structure et non à l&apos;œil au moment de poser les lames, oriente l&apos;eau vers l&apos;extérieur,
+               et jamais vers la façade de la maison. Sur un platelage réglé au cordeau, une différence de quelques
                 millimètres suffit à décider si l&apos;eau part ou si elle stagne en flaque au même endroit à chaque
                 pluie.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Le jeu entre lames ensuite.</strong> On laisse quelques
-                millimètres — de l&apos;ordre de 3 à 5 mm selon la lame et son humidité à la livraison — pour deux
+                millimètres, de l&apos;ordre de 3 à 5 mm selon la lame et son humidité à la livraison, pour deux
                 raisons cumulées : l&apos;eau doit pouvoir traverser le platelage plutôt que de rester dessus, et le
                 bois doit pouvoir travailler en largeur au fil des saisons. Une lame livrée très humide se rétractera en
                 séchant : le jeu se cale sur cet état réel, pas sur une règle apprise par cœur.
@@ -555,7 +555,7 @@ export default function ArticleStructureTerrasseBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Les vis inox</strong> sont la solution la plus robuste et
                 la plus réparable : une lame abîmée se démonte et se remplace en dix minutes. L&apos;inox est
-                indispensable en extérieur — une vis acier ordinaire rouille, coule et laisse des traînées noires
+                indispensable en extérieur, une vis acier ordinaire rouille, coule et laisse des traînées noires
                 irrattrapables sur la lame, en particulier avec les essences tanniques comme le chêne ou le
                 châtaignier. Le pré-perçage n&apos;est pas une option sur les bois durs : c&apos;est ce qui évite les
                 fentes au bout des lames.
@@ -591,8 +591,8 @@ export default function ArticleStructureTerrasseBoisPage() {
                 Le texte de référence pour ce type d&apos;ouvrage est le{' '}
                 <strong className="text-primary font-semibold">
                   NF DTU 51.4 « Platelages extérieurs en bois »
-                </strong>
-                , dans sa version parue en décembre 2018. Il encadre la conception et la mise en œuvre des platelages, et
+                </strong>,
+                dans sa version parue en décembre 2018. Il encadre la conception et la mise en œuvre des platelages, et
                 c&apos;est lui qui sert de cadre commun entre l&apos;artisan, le fournisseur de lames et le client.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -600,7 +600,7 @@ export default function ArticleStructureTerrasseBoisPage() {
                 texte distingue une <strong className="text-primary font-semibold">conception dite « courante »</strong>,
                 qui couvre la grande majorité des terrasses privées et privilégie la durabilité de l&apos;ouvrage, et
                 une <strong className="text-primary font-semibold">conception dite « développée »</strong>, destinée aux
-                platelages plus chargés — typiquement les lieux publics — où c&apos;est la résistance mécanique qui
+                platelages plus chargés, typiquement les lieux publics, où c&apos;est la résistance mécanique qui
                 prime. Une terrasse de maison relève presque toujours de la première catégorie : l&apos;objectif
                 n&apos;est pas de tenir une foule, c&apos;est de durer.
               </p>
@@ -608,15 +608,15 @@ export default function ArticleStructureTerrasseBoisPage() {
                 Ensuite, la version actuelle intègre le{' '}
                 <strong className="text-primary font-semibold">
                   double lambourdage au droit des aboutages de lames
-                </strong>
-                , avec un jeu qui favorise l&apos;évacuation de l&apos;eau. Concrètement : là où deux lames se
+                </strong>,
+                avec un jeu qui favorise l&apos;évacuation de l&apos;eau. Concrètement : là où deux lames se
                 rejoignent bout à bout, on ne les fait pas mourir sur une seule lambourde partagée, mais sur deux
                 lambourdes accolées avec un espace entre elles. Chaque about a son propre appui, et l&apos;eau qui
-                s&apos;infiltre à la jonction — l&apos;endroit le plus vulnérable d&apos;un platelage — trouve un
+                s&apos;infiltre à la jonction, l&apos;endroit le plus vulnérable d&apos;un platelage, trouve un
                 passage au lieu de rester coincée entre deux bouts de bois.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Pour tout le reste — sections, entraxes, nombre d&apos;appuis, fixations — nous croisons
+                Pour tout le reste, sections, entraxes, nombre d&apos;appuis, fixations, nous croisons
                 systématiquement le DTU et les préconisations du fournisseur de la lame retenue. C&apos;est aussi
                 pourquoi nous refusons de donner un tableau universel : le bon entraxe pour une lame de pin de 21 mm
                 n&apos;est pas celui d&apos;une lame exotique de 21 mm, et ce n&apos;est pas non plus celui d&apos;une
@@ -655,7 +655,7 @@ export default function ArticleStructureTerrasseBoisPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une fois la structure saine, l&apos;entretien devient simple et porte surtout sur la surface : nettoyage
-                doux, saturateur au bon moment, et vigilance pendant les fortes chaleurs — c&apos;est le sujet de notre
+                doux, saturateur au bon moment, et vigilance pendant les fortes chaleurs, c&apos;est le sujet de notre
                 article sur{' '}
                 <a href="/blog/proteger-terrasse-bois-canicule-entretien-ete" className={lienInterne}>
                   la protection d&apos;une terrasse en bois pendant la canicule
@@ -672,8 +672,8 @@ export default function ArticleStructureTerrasseBoisPage() {
                 approche des{' '}
                 <a href="/amenagement-exterieur#terrasses" className={lienInterne}>
                   terrasses bois sur mesure
-                </a>{' '}
-                — de l&apos;étude des niveaux à la dernière lame vissée.
+                </a>,{' '}
+               de l&apos;étude des niveaux à la dernière lame vissée.
               </p>
             </section>
 
@@ -727,7 +727,7 @@ export default function ArticleStructureTerrasseBoisPage() {
               Personne ne vous complimentera jamais sur vos lambourdes. C&apos;est pourtant là que se joue la différence
               entre une terrasse qui traverse quinze saisons sans broncher et une terrasse qu&apos;il faut reprendre au
               bout de cinq ans. Chez L&apos;Esprit Bois, entreprise qualifiée Qualibat à Libourne et dans toute la
-              Gironde, nous commençons toujours par le sol, les niveaux et la ventilation — le choix de la lame vient
+              Gironde, nous commençons toujours par le sol, les niveaux et la ventilation, le choix de la lame vient
               ensuite.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

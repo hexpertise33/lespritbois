@@ -23,7 +23,7 @@ export const metadata: Metadata = buildMetadata({
     "David Bertrand, charpentier Libourne, auteur guides bois, expert bâtiment Gironde, L'Esprit Bois",
   path: '/auteur/david-bertrand',
   ogImage: COVER,
-  ogTitle: 'David Bertrand — qui écrit les guides de ce site',
+  ogTitle: 'David Bertrand, qui écrit les guides de ce site',
   ville: CONTACT.ville,
 });
 
@@ -50,7 +50,7 @@ const jsonld = [
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
     url: AUTEUR.url,
-    name: `${AUTEUR.nom} — auteur des guides`,
+    name: `${AUTEUR.nom}, auteur des guides`,
     mainEntity: {
       '@type': 'Person',
       '@id': AUTEUR_ID,
@@ -165,13 +165,13 @@ export default function AuteurPage() {
                   Les <strong className="text-primary font-semibold">vingt ans d&apos;expérience</strong>{' '}
                   affichés sur ce site sont les siens, pas ceux de la société : ils comptent les
                   chantiers, pas les exercices comptables. La marque L&apos;Esprit Bois est plus jeune
-                  que l&apos;homme qui la dirige, et son immatriculation le montre — nous préférons
+                  que l&apos;homme qui la dirige, et son immatriculation le montre, nous préférons
                   l&apos;écrire que laisser un visiteur le découvrir en vérifiant le SIRET, ce à quoi
                   nous l&apos;invitons par ailleurs.
                 </p>
                 <p>
                   C&apos;est ce qui donne sa matière à ce blog. Les guides répondent aux questions qui
-                  reviennent en rendez-vous — quel bois tient dehors en Gironde, quelle autorisation
+                  reviennent en rendez-vous, quel bois tient dehors en Gironde, quelle autorisation
                   d&apos;urbanisme pour un abri, ce que coûte réellement une extension à ossature bois,
                   pourquoi une terrasse se pense par-dessous. Ce sont les réponses données de vive voix,
                   mises par écrit.
@@ -205,11 +205,11 @@ export default function AuteurPage() {
                   },
                   {
                     t: 'Qualification',
-                    d: 'Qualibat — qualification professionnelle du bâtiment, délivrée après examen des références et des moyens de l’entreprise.',
+                    d: 'Qualibat, qualification professionnelle du bâtiment, délivrée après examen des références et des moyens de l’entreprise.',
                   },
                   {
                     t: 'Assurance',
-                    d: 'SMABTP — responsabilité civile professionnelle et garantie décennale, en cours de validité.',
+                    d: 'SMABTP, responsabilité civile professionnelle et garantie décennale, en cours de validité.',
                   },
                   {
                     t: 'Atelier',
@@ -228,8 +228,8 @@ export default function AuteurPage() {
                 Le détail figure dans nos{' '}
                 <a href="/mentions-legales" className={lienInterne}>
                   mentions légales
-                </a>
-                , et l&apos;entreprise est présentée sur la page{' '}
+                </a>,
+                et l&apos;entreprise est présentée sur la page{' '}
                 <a href="/qui-sommes-nous" className={lienInterne}>
                   qui sommes-nous
                 </a>
@@ -252,7 +252,7 @@ export default function AuteurPage() {
               </h2>
               <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
                 <p>
-                  La règle est de renvoyer chaque seuil réglementaire à sa source officielle —
+                  La règle est de renvoyer chaque seuil réglementaire à sa source officielle,
                   service-public.gouv.fr pour les autorisations d&apos;urbanisme, le FCBA et le CSTB pour
                   les règles de mise en œuvre du bois, Légifrance pour les textes eux-mêmes. Une
                   distance ou une surface taxable qu&apos;on ne peut pas sourcer n&apos;est pas écrite,

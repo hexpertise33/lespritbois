@@ -10,7 +10,7 @@ const COVER = '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.w
 export const metadata: Metadata = buildMetadata({
   title: "Entretien d'une pergola ou d'une véranda en aluminium | Gironde",
   description:
-    "Pergola, véranda et menuiseries en aluminium : ce qu'il faut vraiment vérifier avant l'automne — évacuations, joints, lames, motorisation. En Gironde.",
+    "Pergola, véranda et menuiseries en aluminium : ce qu'il faut vraiment vérifier avant l'automne, évacuations, joints, lames, motorisation. En Gironde.",
   keywords:
     "entretien aluminium, entretien pergola aluminium, nettoyer une pergola bioclimatique, hivernage pergola aluminium, entretien véranda aluminium Gironde, entretien menuiserie aluminium Libourne, nettoyage profilé thermolaqué, évacuation d'eau pergola, entretien store zip, aluminium entretien Gironde",
   path: '/blog/entretien-aluminium-pergola-veranda-revision-automne',
@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -120,7 +120,7 @@ const jsonld = [
         name: 'Faut-il hiverner une pergola en aluminium ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Une structure aluminium n'a pas besoin d'être hivernée : elle ne craint ni le gel ni la pluie. Ce qui se décide avant l'hiver, ce sont les équipements : évacuations dégagées avant la chute des feuilles, lames laissées en position ouverte ou fermée selon l'usage, stores toile remontés et capteur de vent en service. Sur une exposition très ventée, ou si vous n'utilisez plus la terrasse jusqu'au printemps, la dépose d'une toile de store peut se justifier — c'est une question d'exposition, pas de matériau.",
+          text: "Une structure aluminium n'a pas besoin d'être hivernée : elle ne craint ni le gel ni la pluie. Ce qui se décide avant l'hiver, ce sont les équipements : évacuations dégagées avant la chute des feuilles, lames laissées en position ouverte ou fermée selon l'usage, stores toile remontés et capteur de vent en service. Sur une exposition très ventée, ou si vous n'utilisez plus la terrasse jusqu'au printemps, la dépose d'une toile de store peut se justifier, c'est une question d'exposition, pas de matériau.",
         },
       },
       {
@@ -152,7 +152,7 @@ const jsonld = [
         name: 'Que faire si le moteur de ma pergola ou de mon store ne répond plus ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "On commence par le plus simple : pile de télécommande, absence d'obstacle dans la course, capteur de vent ou de pluie encrassé, et une lecture de la notice du fabricant. Au-delà, on s'arrête. Un bruit anormal, un échauffement, une course qui ne va plus en butée, un store qui remonte de travers ou un disjoncteur qui saute imposent de couper l'alimentation et de ne plus actionner l'ouvrage. L'intervention sur un moteur, un coffret, un câblage ou une carte électronique relève de l'installateur ou d'un électricien qualifié — ce n'est pas un geste d'entretien.",
+          text: "On commence par le plus simple : pile de télécommande, absence d'obstacle dans la course, capteur de vent ou de pluie encrassé, et une lecture de la notice du fabricant. Au-delà, on s'arrête. Un bruit anormal, un échauffement, une course qui ne va plus en butée, un store qui remonte de travers ou un disjoncteur qui saute imposent de couper l'alimentation et de ne plus actionner l'ouvrage. L'intervention sur un moteur, un coffret, un câblage ou une carte électronique relève de l'installateur ou d'un électricien qualifié, ce n'est pas un geste d'entretien.",
         },
       },
     ],
@@ -203,7 +203,7 @@ const faq = [
         se décide avant l&apos;hiver, ce sont les équipements : évacuations dégagées avant la chute des feuilles, lames
         laissées en position ouverte ou fermée selon l&apos;usage, stores toile remontés et capteur de vent en service.
         Sur une exposition très ventée, ou si vous n&apos;utilisez plus la terrasse jusqu&apos;au printemps, la dépose
-        d&apos;une toile de store peut se justifier — c&apos;est une question d&apos;exposition, pas de matériau.
+        d&apos;une toile de store peut se justifier, c&apos;est une question d&apos;exposition, pas de matériau.
       </>
     ),
   },
@@ -251,7 +251,7 @@ const faq = [
         échauffement, une course qui ne va plus en butée, un store qui remonte de travers ou un disjoncteur qui saute
         imposent de couper l&apos;alimentation et de ne plus actionner l&apos;ouvrage. L&apos;intervention sur un moteur,
         un coffret, un câblage ou une carte électronique relève de l&apos;installateur ou d&apos;un électricien
-        qualifié — ce n&apos;est pas un geste d&apos;entretien.
+        qualifié, ce n&apos;est pas un geste d&apos;entretien.
       </>
     ),
   },
@@ -304,8 +304,8 @@ export default function ArticleEntretienAluminiumPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>15 août 2026</span>
@@ -327,8 +327,8 @@ export default function ArticleEntretienAluminiumPage() {
               Autrement dit : la seule intervention qui compte vraiment avant l&apos;hiver, c&apos;est de{' '}
               <strong className="text-primary font-semibold">
                 dégager les évacuations avant la chute des feuilles
-              </strong>
-              , pas d&apos;astiquer les profilés. Et c&apos;est maintenant que ça se joue — une fois les chéneaux pleins
+              </strong>,
+              pas d&apos;astiquer les profilés. Et c&apos;est maintenant que ça se joue, une fois les chéneaux pleins
               et les premières grosses pluies passées, la révision ne sert plus à grand-chose. Voici, pièce par pièce, ce
               que nous regardons sur une pergola, une véranda ou des menuiseries aluminium en Gironde, ce qui doit vous
               alerter, et où s&apos;arrête le bricolage.
@@ -339,10 +339,10 @@ export default function ArticleEntretienAluminiumPage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Ce que l'alu demande vraiment */}
+            {/* 1, Ce que l'alu demande vraiment */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Ce que l&apos;aluminium demande vraiment — et ce qu&apos;il ne demande pas
+                Ce que l&apos;aluminium demande vraiment, et ce qu&apos;il ne demande pas
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Commençons par la bonne nouvelle, celle qui explique pourquoi tant de clients choisissent l&apos;alu :{' '}
@@ -359,7 +359,7 @@ export default function ArticleEntretienAluminiumPage() {
                 assurent l&apos;étanchéité entre deux lames ou autour d&apos;un vitrage. Les chéneaux et les descentes qui
                 évacuent l&apos;eau. Les rails et les coulisses dans lesquels glissent une baie ou un store. Le moteur, la
                 télécommande, le capteur de vent. Et le raccord à la maison, ce point de couture entre votre ouvrage et
-                votre façade. Voilà les cinq organes à surveiller — le reste est cosmétique.
+                votre façade. Voilà les cinq organes à surveiller, le reste est cosmétique.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
                 D&apos;où une hiérarchie très simple, que nous répétons à chaque livraison de chantier :
@@ -386,14 +386,14 @@ export default function ArticleEntretienAluminiumPage() {
               </p>
             </section>
 
-            {/* 2 — Thermolaquage */}
+            {/* 2, Thermolaquage */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Le thermolaquage : laver, jamais décaper (et le geste qui l&apos;abîme)
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La teinte de vos profilés n&apos;est pas une peinture appliquée au pinceau : c&apos;est une poudre
-                projetée sur le métal préparé, puis cuite au four. Cette finition est dure et stable — les laqueurs
+                projetée sur le métal préparé, puis cuite au four. Cette finition est dure et stable, les laqueurs
                 sérieux travaillent d&apos;ailleurs sous label de qualité, du type Qualicoat, ou Qualimarine pour les
                 ambiances marines, ce qui en dit long sur la rigueur du process. Mais c&apos;est une{' '}
                 <strong className="text-primary font-semibold">finition, pas une armure</strong> : elle se raye, et
@@ -415,7 +415,7 @@ export default function ArticleEntretienAluminiumPage() {
                 {[
                   'L’éponge grattante ou la poudre à récurer : elles matifient le laquage par micro-rayures, et la trace reste visible en lumière rasante, pour toujours.',
                   'Le solvant, l’acétone, l’alcool ménager, le nettoyant de façade acide ou basique : ils attaquent la finition, parfois en quelques minutes sur une teinte foncée.',
-                  'Le nettoyeur haute pression : il passe derrière les joints, décolle un mastic de raccord, déchausse un joint de lame et chasse l’eau vers l’intérieur. Le laquage résiste — l’étanchéité, non.',
+                  'Le nettoyeur haute pression : il passe derrière les joints, décolle un mastic de raccord, déchausse un joint de lame et chasse l’eau vers l’intérieur. Le laquage résiste, l’étanchéité, non.',
                   'La retouche improvisée au pinceau sur une rayure, avec la première bombe de peinture venue : la teinte ne tombe jamais juste et la reprise se voit plus que la rayure.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -426,8 +426,8 @@ export default function ArticleEntretienAluminiumPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Sur la question précise de la rayure et de la retouche d&apos;un profilé, nous avons déjà détaillé la
-                marche à suivre — codes de teinte, effet de la finition mat, satinée ou sablée sur la discrétion d&apos;une
-                reprise — dans notre article sur{' '}
+                marche à suivre, codes de teinte, effet de la finition mat, satinée ou sablée sur la discrétion d&apos;une
+                reprise, dans notre article sur{' '}
                 <a href="/blog/choisir-teinte-ral-aluminium" className={lienInterne}>
                   le choix de la teinte RAL en aluminium
                 </a>
@@ -441,10 +441,10 @@ export default function ArticleEntretienAluminiumPage() {
               w={825}
               h={1100}
               alt="Poteau en aluminium thermolaqué gris anthracite d'une pergola adossée, finition mate vue de près, chantier en Gironde"
-              caption="La lumière rasante est le meilleur révélateur du laquage : c'est sous cet angle qu'une micro-rayure d'éponge grattante se voit — et qu'elle ne s'efface plus."
+              caption="La lumière rasante est le meilleur révélateur du laquage : c'est sous cet angle qu'une micro-rayure d'éponge grattante se voit, et qu'elle ne s'efface plus."
             />
 
-            {/* 3 — Évacuations */}
+            {/* 3, Évacuations */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Évacuations d&apos;eau : le vrai point de panne d&apos;une pergola ou d&apos;une véranda
@@ -454,7 +454,7 @@ export default function ArticleEntretienAluminiumPage() {
                 oublie souvent qu&apos;une pergola à lames orientables ou une véranda est aussi{' '}
                 <strong className="text-primary font-semibold">un ouvrage de couverture</strong> : quand il pleut, toute
                 l&apos;eau de la surface couverte est collectée par des chéneaux intégrés aux traverses, puis descend
-                dans les poteaux — les descentes sont invisibles, c&apos;est toute l&apos;élégance du système — pour
+                dans les poteaux, les descentes sont invisibles, c&apos;est toute l&apos;élégance du système, pour
                 ressortir en pied par un orifice de quelques centimètres seulement.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -493,8 +493,8 @@ export default function ArticleEntretienAluminiumPage() {
                 Deux règles de sécurité, sans discussion :{' '}
                 <strong className="text-primary font-semibold">
                   on ne monte jamais sur la couverture d&apos;une pergola ou d&apos;une véranda
-                </strong>
-                , et on ne marche jamais sur un panneau de polycarbonate ou sur un vitrage, qui ne sont pas prévus pour
+                </strong>,
+                et on ne marche jamais sur un panneau de polycarbonate ou sur un vitrage, qui ne sont pas prévus pour
                 porter un homme. Tout se fait depuis le sol ou depuis une échelle stable, et à deux quand c&apos;est
                 haut. Si l&apos;accès n&apos;est pas sûr, c&apos;est exactement le moment de nous appeler.
               </p>
@@ -508,19 +508,19 @@ export default function ArticleEntretienAluminiumPage() {
               caption="Le bandeau périphérique n'est pas décoratif : c'est le chéneau qui ramène toute l'eau de la couverture vers les poteaux. Il se contrôle depuis la terrasse, jamais en montant dessus."
             />
 
-            {/* 4 — Organes mobiles */}
+            {/* 4, Organes mobiles */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Lames orientables, stores zip et coulissants : les organes mobiles
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Tout ce qui bouge s&apos;use, et tout ce qui bouge se coince — c&apos;est la deuxième famille de pannes.
+                Tout ce qui bouge s&apos;use, et tout ce qui bouge se coince, c&apos;est la deuxième famille de pannes.
                 Nous ne redétaillons pas ici le fonctionnement de ces équipements : la pergola bioclimatique est traitée
                 de fond en comble dans{' '}
                 <a href="/blog/pergola-bioclimatique-aluminium-guide" className={lienInterne}>
                   notre guide de la pergola bioclimatique en aluminium
-                </a>
-                , et les stores screen à zip, leur tenue au vent et leurs automatismes dans{' '}
+                </a>,
+                et les stores screen à zip, leur tenue au vent et leurs automatismes dans{' '}
                 <a href="/blog/protection-solaire-brise-soleil-orientable" className={lienInterne}>
                   notre comparatif des protections solaires
                 </a>
@@ -542,14 +542,14 @@ export default function ArticleEntretienAluminiumPage() {
                 <strong className="text-primary font-semibold">cesser d&apos;actionner immédiatement</strong> : chaque
                 manœuvre supplémentaire abîme la toile ou la glissière. On dépoussière la coulisse, on rentre la toile
                 sèche plutôt que trempée quand c&apos;est possible, et on décide de l&apos;hiver : chez nous, la toile
-                reste en place, remontée, capteur de vent en service — sauf exposition très ventée ou terrasse laissée à
+                reste en place, remontée, capteur de vent en service, sauf exposition très ventée ou terrasse laissée à
                 l&apos;abandon jusqu&apos;au printemps, où la dépose se justifie.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Les coulissants et les baies.</strong> Neuf fois sur dix,
                 un coulissant devenu dur n&apos;a pas un chariot mort : il a un rail encrassé. On aspire la feuillure
                 basse, on brosse le rail, et surtout on dégage{' '}
-                <strong className="text-primary font-semibold">les petits trous de drainage du seuil</strong> — deux ou
+                <strong className="text-primary font-semibold">les petits trous de drainage du seuil</strong>, deux ou
                 trois orifices discrets, en partie basse, dont l&apos;obstruction fait stagner l&apos;eau dans le
                 dormant et finit par la faire entrer.
               </p>
@@ -571,14 +571,14 @@ export default function ArticleEntretienAluminiumPage() {
               caption="Sur un store à zip, tout se joue dans la coulisse : propre, elle laisse la barre de charge descendre bien droite ; encrassée, elle fait forcer le moteur et abîme la toile."
             />
 
-            {/* 5 — Motorisation */}
+            {/* 5, Motorisation */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Motorisation, capteurs de vent et domotique : la révision qu&apos;on oublie
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est l&apos;angle mort absolu. Une motorisation fonctionne pendant des années sans rien demander,
-                donc personne ne la regarde — jusqu&apos;au jour où l&apos;on découvre, au premier coup de vent, que le{' '}
+                donc personne ne la regarde, jusqu&apos;au jour où l&apos;on découvre, au premier coup de vent, que le{' '}
                 <strong className="text-primary font-semibold">capteur de vent ne tourne plus depuis deux étés</strong>.
                 Or ce capteur est précisément ce qui remonte un store avant qu&apos;il ne se déchire. Le tester en août
                 coûte cinq minutes ; le découvrir en novembre coûte une toile.
@@ -591,7 +591,7 @@ export default function ArticleEntretienAluminiumPage() {
                   'Une manœuvre complète, lente, de chaque équipement motorisé : ouverture totale, fermeture totale, en écoutant. Un bruit nouveau est une information.',
                   'Regarder l’anémomètre : les coupelles doivent tourner librement au moindre souffle. Une toile d’araignée, un nid ou un dépôt suffisent à le bloquer.',
                   'Dépoussiérer délicatement, au chiffon doux et sec, la cellule d’un capteur de pluie, de soleil ou de vent, et dégager la branche qui a poussé devant.',
-                  'Remplacer la pile de la télécommande — cause la plus fréquente et la plus vexante des « pannes » de motorisation.',
+                  'Remplacer la pile de la télécommande, cause la plus fréquente et la plus vexante des « pannes » de motorisation.',
                   'Retrouver et ranger la notice du fabricant, ainsi que la marque et la référence des moteurs : une photo du coffret et de l’étiquette vous fera gagner un temps fou le jour d’un dépannage.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -603,8 +603,8 @@ export default function ArticleEntretienAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Et voici où{' '}
                 <strong className="text-primary font-semibold">notre métier s&apos;arrête et où commence celui d&apos;un
-                autre</strong>{' '}
-                — nous préférons le dire noir sur blanc plutôt que de vous laisser improviser. On n&apos;ouvre pas un
+                autre</strong>,{' '}
+               nous préférons le dire noir sur blanc plutôt que de vous laisser improviser. On n&apos;ouvre pas un
                 coffret, on ne dépose pas un moteur, on ne touche ni au câblage ni à la carte électronique, et on ne
                 force jamais un mécanisme qui résiste. Un bruit anormal, un échauffement, une odeur, une course qui ne va
                 plus en butée, un fin de course déréglé, un disjoncteur qui saute : on coupe l&apos;alimentation, on
@@ -618,7 +618,7 @@ export default function ArticleEntretienAluminiumPage() {
               </p>
             </section>
 
-            {/* 6 — Joints et raccord */}
+            {/* 6, Joints et raccord */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Joints, étanchéité et raccord à la maison
@@ -682,10 +682,10 @@ export default function ArticleEntretienAluminiumPage() {
               caption="Chantier de Saint-Pey-de-Castets : c'est sur cette ligne de couture entre la traverse aluminium et l'enduit que se joue l'étanchéité, pas sur le profilé lui-même."
             />
 
-            {/* 7 — Calendrier Gironde */}
+            {/* 7, Calendrier Gironde */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Notre calendrier d&apos;entretien en Gironde — et quand appeler un professionnel
+                Notre calendrier d&apos;entretien en Gironde, et quand appeler un professionnel
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Notre climat girondin a ses habitudes : un printemps très chargé en pollen, un été poussiéreux, des
@@ -718,8 +718,8 @@ export default function ArticleEntretienAluminiumPage() {
                 Précision qui compte :{' '}
                 <strong className="text-primary font-semibold">
                   ce ne sont ni des obligations, ni une règle, ni une fréquence normative
-                </strong>{' '}
-                — ce sont nos habitudes de chantier, à adapter à votre situation. Une pergola implantée sous un grand
+                </strong>,{' '}
+               ce sont nos habitudes de chantier, à adapter à votre situation. Une pergola implantée sous un grand
                 arbre demandera deux fois plus de passages qu&apos;un ouvrage en plein découvert ; une véranda exposée
                 plein ouest, plus d&apos;attention aux joints qu&apos;une véranda abritée. Regardez votre jardin, pas le
                 calendrier.

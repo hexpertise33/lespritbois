@@ -71,7 +71,7 @@ const CARPORTS_COURTS = [
 ];
 
 /** Galerie. Chaque vignette est un ouvrage réalisé par l'entreprise ou une pièce
- *  exposée sur son dépôt — les visuels fournisseur en ont été retirés. */
+ *  exposée sur son dépôt, les visuels fournisseur en ont été retirés. */
 const GALERIE: Vignette[] = [
   {
     src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
@@ -327,13 +327,13 @@ const jsonld = [
         ...CHANTIERS.map((c, i) => ({
           '@type': 'ListItem',
           position: i + 1,
-          name: `${c.categorie} — ${c.titre}, ${c.commune}`,
+          name: `${c.categorie}, ${c.titre}, ${c.commune}`,
           url: `https://lesprit-bois.fr/realisations#${c.id}`,
         })),
         ...CARPORTS_COURTS.map((c, i) => ({
           '@type': 'ListItem',
           position: CHANTIERS.length + i + 1,
-          name: `Carport — ${c.titre}, ${c.commune}`,
+          name: `Carport, ${c.titre}, ${c.commune}`,
         })),
       ],
     },
@@ -433,7 +433,7 @@ export default function RealisationsPage() {
                 précédent.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Ce qui se répète, c'est la méthode — le relevé avant le dessin, la fabrication en atelier, la pose par
+                Ce qui se répète, c'est la méthode, le relevé avant le dessin, la fabrication en atelier, la pose par
                 nos équipes. Voici ce que chacun de ces chantiers a demandé, sans arrondir les angles.
               </p>
             </div>
@@ -464,7 +464,7 @@ export default function RealisationsPage() {
                 </div>
                 <div className={i % 2 === 1 ? 'lg:order-1' : undefined}>
                   <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                    {c.categorie} — {c.commune}
+                    {c.categorie}, {c.commune}
                   </p>
                   <h3 className="font-headline-md text-headline-md text-primary mt-2 mb-6">{c.titre}</h3>
                   {c.paragraphes.map((p) => (
@@ -561,15 +561,15 @@ export default function RealisationsPage() {
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 carports
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/pergolas"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 pergolas
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/amenagement-exterieur"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"

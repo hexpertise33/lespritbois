@@ -10,7 +10,7 @@ const COVER = '/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-hori
 export const metadata: Metadata = buildMetadata({
   title: "Clôture et brise-vue bois : hauteur et budget",
   description:
-    "Hauteur autorisée, distance à la limite séparative, essences qui tiennent et budget au mètre linéaire — le guide d'un artisan à Libourne (Gironde).",
+    "Hauteur autorisée, distance à la limite séparative, essences qui tiennent et budget au mètre linéaire, le guide d'un artisan à Libourne (Gironde).",
   keywords:
     "clôture en bois, brise-vue bois jardin, hauteur clôture réglementation PLU, clôture bois Gironde, claire-voie bois, clôture bois sur mesure Libourne, déclaration préalable clôture, essence clôture douglas",
   path: '/blog/cloture-brise-vue-bois-guide',
@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -291,8 +291,8 @@ export default function ArticleClotureBriseVueBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>21 juillet 2026</span>
@@ -399,7 +399,7 @@ export default function ArticleClotureBriseVueBoisPage() {
                   permis de construire
                 </a>
                 . Mais le fait qu&apos;elle échappe au
-                permis ne veut pas dire qu&apos;elle échappe à toute formalité — c&apos;est là que beaucoup de
+                permis ne veut pas dire qu&apos;elle échappe à toute formalité, c&apos;est là que beaucoup de
                 particuliers se font surprendre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -453,7 +453,7 @@ export default function ArticleClotureBriseVueBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Notre préférence, pour une clôture sans traitement chimique, va au douglas ou au mélèze certifiés PEFC :
                 ils tiennent naturellement en classe 3, ce qui est exactement l&apos;usage d&apos;une clôture. Le choix
-                fin de l&apos;essence — durabilité, teinte, prix — obéit à la même logique que pour une terrasse : notre
+                fin de l&apos;essence (durabilité, teinte, prix) obéit à la même logique que pour une terrasse : notre
                 guide{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   quel bois choisir pour une terrasse extérieure
@@ -478,7 +478,7 @@ export default function ArticleClotureBriseVueBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le style d&apos;une clôture n&apos;est pas qu&apos;une affaire de goût : il arbitre entre{' '}
                 <strong className="text-primary font-semibold">occultation et ventilation</strong>. Plus vous fermez pour
-                l&apos;intimité, plus vous créez une prise au vent — un paramètre qui compte sur les terrains dégagés de
+                l&apos;intimité, plus vous créez une prise au vent, un paramètre qui compte sur les terrains dégagés de
                 Gironde. Voici comment se situent les grandes familles :
               </p>
               <div className="overflow-x-auto rounded-2xl border border-surface-variant shadow-sm">
@@ -510,8 +510,8 @@ export default function ArticleClotureBriseVueBoisPage() {
                 Pour un tour de terrasse ou de piscine à l&apos;abri des regards, le{' '}
                 <strong className="text-primary font-semibold">panneau plein</strong> ou la{' '}
                 <strong className="text-primary font-semibold">persienne à lames inclinées</strong> sont les plus
-                efficaces. Sur un terrain venté, nous recommandons souvent de laisser respirer la clôture — claire-voie
-                serrée ou lames légèrement espacées — pour qu&apos;elle ne fasse pas voile et ne fatigue pas ses appuis.
+                efficaces. Sur un terrain venté, nous recommandons souvent de laisser respirer la clôture, claire-voie
+                serrée ou lames légèrement espacées, pour qu&apos;elle ne fasse pas voile et ne fatigue pas ses appuis.
                 C&apos;est un arbitrage que nous faisons sur place, en fonction de l&apos;exposition réelle du terrain.
               </p>
             </section>
@@ -562,7 +562,7 @@ export default function ArticleClotureBriseVueBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Une clôture ou un brise-vue s&apos;inscrit presque toujours dans un projet plus large — terrasse, tour de
+                Une clôture ou un brise-vue s&apos;inscrit presque toujours dans un projet plus large, terrasse, tour de
                 piscine, portail, bardage assorti. Nous concevons l&apos;ensemble d&apos;un seul tenant : découvrez notre
                 approche de l&apos;<a href="/amenagement-exterieur" className={lienInterne}>aménagement extérieur</a> et
                 nos <a href="/amenagement-exterieur" className={lienInterne}>bardages bois</a>, pour une clôture qui dialogue avec la
@@ -613,7 +613,7 @@ export default function ArticleClotureBriseVueBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Ces fourchettes sont des ordres de grandeur honnêtes : le juste prix de <em>votre</em> clôture dépend de
                 son linéaire, de son style et de votre sol. Seul un devis établi sur place, après relevé du terrain et
-                de la limite séparative, nous engage — c&apos;est la seule façon de chiffrer sérieusement une clôture bois
+                de la limite séparative, nous engage, c&apos;est la seule façon de chiffrer sérieusement une clôture bois
                 sur mesure à Libourne et alentour.
               </p>
             </section>
@@ -627,7 +627,7 @@ export default function ArticleClotureBriseVueBoisPage() {
                 Une clôture bien conçue demande peu d&apos;entretien, car{' '}
                 <strong className="text-primary font-semibold">l&apos;essentiel se joue à la conception</strong> : essence
                 durable, poteaux désolidarisés du sol, lames qui sèchent vite. Le reste tient à quelques gestes simples,
-                et surtout à un choix de départ — garder la teinte ou laisser griser.
+                et surtout à un choix de départ, garder la teinte ou laisser griser.
               </p>
               <ul className="space-y-3 mb-5">
                 {[

@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -119,7 +119,7 @@ const jsonld = [
         name: "Un bureau de jardin est-il soumis à la taxe d'aménagement ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui dès lors qu'il est clos et couvert et qu'il dépasse 5 m² : les constructions de 5 m² ou moins bénéficient d'une exonération permanente. La taxe se calcule sur la surface taxable multipliée par une valeur forfaitaire fixée par l'État — 892 €/m² hors Île-de-France et 1 011 €/m² en Île-de-France depuis le 1er janvier 2026 — puis par les taux votés par la commune et le département. Une pergola ou une tonnelle non close y échappe, quelle que soit sa surface. Le détail figure sur la fiche officielle service-public.gouv.fr.",
+          text: "Oui dès lors qu'il est clos et couvert et qu'il dépasse 5 m² : les constructions de 5 m² ou moins bénéficient d'une exonération permanente. La taxe se calcule sur la surface taxable multipliée par une valeur forfaitaire fixée par l'État, 892 €/m² hors Île-de-France et 1 011 €/m² en Île-de-France depuis le 1er janvier 2026, puis par les taux votés par la commune et le département. Une pergola ou une tonnelle non close y échappe, quelle que soit sa surface. Le détail figure sur la fiche officielle service-public.gouv.fr.",
         },
       },
       {
@@ -143,7 +143,7 @@ const jsonld = [
         name: "Comment alimenter en électricité un bureau de jardin détaché de la maison ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "L'alimentation d'un bâtiment détaché n'est pas une rallonge : c'est une installation à part entière, avec son propre tableau de protection et une liaison enterrée depuis la maison. Nous ne la réalisons pas nous-mêmes et nous ne conseillons à personne de l'improviser : c'est le métier d'un électricien qualifié. Notre rôle est d'anticiper le passage des réseaux dans le chantier — tranchée, fourreaux, réservations, entrée des gaines — avant que la dalle et le bardage ne soient posés, pour éviter d'avoir à tout rouvrir ensuite.",
+          text: "L'alimentation d'un bâtiment détaché n'est pas une rallonge : c'est une installation à part entière, avec son propre tableau de protection et une liaison enterrée depuis la maison. Nous ne la réalisons pas nous-mêmes et nous ne conseillons à personne de l'improviser : c'est le métier d'un électricien qualifié. Notre rôle est d'anticiper le passage des réseaux dans le chantier (tranchée, fourreaux, réservations, entrée des gaines) avant que la dalle et le bardage ne soient posés, pour éviter d'avoir à tout rouvrir ensuite.",
         },
       },
       {
@@ -159,7 +159,7 @@ const jsonld = [
         name: "Combien de temps entre la décision et la livraison d'un bureau de jardin ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Le chantier lui-même est court — quelques semaines pour un volume ossature bois isolé et fini, hors intervention des autres corps de métier. Ce qui allonge le calendrier, c'est l'instruction du dossier d'urbanisme, à laquelle s'ajoute le délai de recours des tiers et d'affichage sur le terrain. C'est pourquoi une déclaration déposée à la rentrée permet en général de travailler dans son bureau avant l'hiver, alors qu'un projet décidé en novembre glisse presque toujours au printemps suivant.",
+          text: "Le chantier lui-même est court, quelques semaines pour un volume ossature bois isolé et fini, hors intervention des autres corps de métier. Ce qui allonge le calendrier, c'est l'instruction du dossier d'urbanisme, à laquelle s'ajoute le délai de recours des tiers et d'affichage sur le terrain. C'est pourquoi une déclaration déposée à la rentrée permet en général de travailler dans son bureau avant l'hiver, alors qu'un projet décidé en novembre glisse presque toujours au printemps suivant.",
         },
       },
     ],
@@ -213,8 +213,8 @@ const faq = [
       <>
         Oui dès lors qu&apos;il est clos et couvert et qu&apos;il dépasse 5 m² : les constructions de 5 m² ou moins
         bénéficient d&apos;une exonération permanente. La taxe se calcule sur la surface taxable multipliée par une
-        valeur forfaitaire fixée par l&apos;État — 892 €/m² hors Île-de-France et 1 011 €/m² en Île-de-France depuis le
-        1<sup>er</sup> janvier 2026 — puis par les taux votés par la commune et le département. Une pergola ou une
+        valeur forfaitaire fixée par l&apos;État, 892 €/m² hors Île-de-France et 1 011 €/m² en Île-de-France depuis le
+        1<sup>er</sup> janvier 2026, puis par les taux votés par la commune et le département. Une pergola ou une
         tonnelle non close y échappe, quelle que soit sa surface. Le détail figure sur la{' '}
         <a
           href="https://www.service-public.gouv.fr/particuliers/vosdroits/F23263"
@@ -261,8 +261,8 @@ const faq = [
         L&apos;alimentation d&apos;un bâtiment détaché n&apos;est pas une rallonge : c&apos;est une installation à part
         entière, avec son propre tableau de protection et une liaison enterrée depuis la maison. Nous ne la réalisons pas
         nous-mêmes et nous ne conseillons à personne de l&apos;improviser : c&apos;est le métier d&apos;un électricien
-        qualifié. Notre rôle est d&apos;anticiper le passage des réseaux dans le chantier — tranchée, fourreaux,
-        réservations, entrée des gaines — avant que la dalle et le bardage ne soient posés, pour éviter d&apos;avoir à
+        qualifié. Notre rôle est d&apos;anticiper le passage des réseaux dans le chantier (tranchée, fourreaux,
+        réservations, entrée des gaines) avant que la dalle et le bardage ne soient posés, pour éviter d&apos;avoir à
         tout rouvrir ensuite.
       </>
     ),
@@ -284,7 +284,7 @@ const faq = [
     q: "Combien de temps entre la décision et la livraison d'un bureau de jardin ?",
     r: (
       <>
-        Le chantier lui-même est court — quelques semaines pour un volume ossature bois isolé et fini, hors intervention
+        Le chantier lui-même est court, quelques semaines pour un volume ossature bois isolé et fini, hors intervention
         des autres corps de métier. Ce qui allonge le calendrier, c&apos;est l&apos;instruction du dossier
         d&apos;urbanisme, à laquelle s&apos;ajoute le délai de recours des tiers et d&apos;affichage sur le terrain.
         C&apos;est pourquoi une déclaration déposée à la rentrée permet en général de travailler dans son bureau avant
@@ -340,8 +340,8 @@ export default function ArticleBureauJardinBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>19 août 2026</span>
@@ -359,11 +359,11 @@ export default function ArticleBureauJardinBoisPage() {
                 Ce qui coûte cher dans un bureau de jardin, ce n&apos;est pas l&apos;ossature : c&apos;est tout ce qui le
                 rend habitable. Isolation, menuiseries, électricité et raccordements.
               </strong>{' '}
-              Un abri de jardin devient un bureau le jour où on l&apos;isole et où on l&apos;alimente — et c&apos;est ce
+              Un abri de jardin devient un bureau le jour où on l&apos;isole et où on l&apos;alimente, et c&apos;est ce
               jour-là, précisément, que l&apos;urbanisme et la taxe d&apos;aménagement s&apos;invitent au projet. Nous
               recevons chaque rentrée des demandes qui commencent par « juste un petit abri aménagé au fond du jardin »
-              et qui, une fois le besoin réel posé — y travailler tous les jours, en janvier, sans se geler ni entendre
-              la maison —, deviennent une vraie petite construction. Voici, à partir de ce que nous construisons en
+              et qui, une fois le besoin réel posé (y travailler tous les jours, en janvier, sans se geler ni entendre
+              la maison), deviennent une vraie petite construction. Voici, à partir de ce que nous construisons en
               Gironde, ce qui change, ce que la loi exige, et où part réellement l&apos;argent.
             </p>
           </div>
@@ -372,7 +372,7 @@ export default function ArticleBureauJardinBoisPage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Abri, bureau, studio */}
+            {/* 1, Abri, bureau, studio */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Abri, bureau, studio : ce qui change dès qu&apos;on veut y travailler l&apos;hiver
@@ -384,7 +384,7 @@ export default function ArticleBureauJardinBoisPage() {
                 <strong className="text-primary font-semibold">bureau de jardin</strong> est une pièce de travail :
                 enveloppe isolée, menuiseries vitrées, électricité, chauffage, éclairage. Un{' '}
                 <strong className="text-primary font-semibold">studio de jardin</strong> ajoute l&apos;eau et les
-                évacuations, donc un point d&apos;eau ou des sanitaires — et un niveau d&apos;exigence encore supérieur,
+                évacuations, donc un point d&apos;eau ou des sanitaires, et un niveau d&apos;exigence encore supérieur,
                 côté réseaux comme côté urbanisme.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
@@ -419,8 +419,8 @@ export default function ArticleBureauJardinBoisPage() {
                 un simple rangement est tranché dans{' '}
                 <a href="/blog/abri-jardin-bois-kit-ou-sur-mesure" className={lienInterne}>
                   notre guide de l&apos;abri de jardin en bois
-                </a>
-                , et la pièce accolée à la maison est traitée dans{' '}
+                </a>,
+                et la pièce accolée à la maison est traitée dans{' '}
                 <a href="/blog/extension-ossature-bois-prix-m2" className={lienInterne}>
                   notre guide de l&apos;extension en ossature bois
                 </a>
@@ -438,7 +438,7 @@ export default function ArticleBureauJardinBoisPage() {
               caption="Le basculement se joue là : un abri range, un bureau se chauffe, s'éclaire, se ventile et s'habite toute l'année."
             />
 
-            {/* 2 — Autorisation */}
+            {/* 2, Autorisation */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 L&apos;autorisation : déclaration préalable, permis, et ce que le PLU ajoute
@@ -517,7 +517,7 @@ export default function ArticleBureauJardinBoisPage() {
               </p>
             </section>
 
-            {/* 3 — Taxe d'aménagement */}
+            {/* 3, Taxe d'aménagement */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 La taxe d&apos;aménagement : le coût qu&apos;on découvre après coup
@@ -547,7 +547,7 @@ export default function ArticleBureauJardinBoisPage() {
                 </strong>
                 . On multiplie la surface taxable par cette valeur, puis par les taux votés localement : une part
                 communale et une part départementale. En Gironde comme ailleurs, ces taux se vérifient auprès de la
-                mairie — ils changent d&apos;une commune à l&apos;autre et peuvent être revus par délibération.
+                mairie, ils changent d&apos;une commune à l&apos;autre et peuvent être revus par délibération.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deux points méritent d&apos;être connus avant de dessiner quoi que ce soit :
@@ -556,7 +556,7 @@ export default function ArticleBureauJardinBoisPage() {
                 {[
                   [
                     'L’exonération des 5 m² et moins',
-                    'toute construction dont la surface taxable ne dépasse pas 5 m² bénéficie d’une exonération permanente. C’est peu — moins qu’un vrai poste de travail confortable — mais c’est bon à savoir pour un local technique annexe.',
+                    'toute construction dont la surface taxable ne dépasse pas 5 m² bénéficie d’une exonération permanente. C’est peu, moins qu’un vrai poste de travail confortable, mais c’est bon à savoir pour un local technique annexe.',
                   ],
                   [
                     'Le critère « clos et couvert »',
@@ -576,7 +576,7 @@ export default function ArticleBureauJardinBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Notre honnêteté de constructeur nous oblige à le dire : cette taxe ne doit pas décider seule de votre
                 projet, mais elle doit figurer dans votre enveloppe dès le premier jour, aux côtés des frais de dossier.
-                Chiffrez-la avec votre mairie <em>avant</em> d&apos;arrêter la surface — parfois, un mètre carré de moins
+                Chiffrez-la avec votre mairie <em>avant</em> d&apos;arrêter la surface, parfois, un mètre carré de moins
                 sur le plan change le régime d&apos;autorisation autant que la note finale.
               </p>
             </section>
@@ -589,7 +589,7 @@ export default function ArticleBureauJardinBoisPage() {
               caption="Un bureau de jardin se construit comme une petite maison : l'enveloppe se joue entre les montants, pas après coup."
             />
 
-            {/* 4 — Isolation, chauffage, confort */}
+            {/* 4, Isolation, chauffage, confort */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Isolation, chauffage et confort : le vrai écart de prix
@@ -611,7 +611,7 @@ export default function ArticleBureauJardinBoisPage() {
                 {[
                   [
                     'Les six faces',
-                    'murs, toiture et plancher. Le plancher est le plus souvent oublié dans les offres bon marché — c’est pourtant par lui qu’on a froid aux pieds toute la journée d’hiver.',
+                    'murs, toiture et plancher. Le plancher est le plus souvent oublié dans les offres bon marché, c’est pourtant par lui qu’on a froid aux pieds toute la journée d’hiver.',
                   ],
                   [
                     'La gestion de la vapeur d’eau',
@@ -655,10 +655,10 @@ export default function ArticleBureauJardinBoisPage() {
               w={825}
               h={1100}
               alt="Grande baie vitrée toute hauteur dans un bardage bois vertical, sous un large débord de toiture, chantier d'extension bois à Génissac (Gironde)"
-              caption="La grande baie fait le charme du bureau de jardin — et son point faible en été, sans débord ni protection solaire."
+              caption="La grande baie fait le charme du bureau de jardin, et son point faible en été, sans débord ni protection solaire."
             />
 
-            {/* 5 — Électricité et réseaux */}
+            {/* 5, Électricité et réseaux */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Électricité et réseaux : alimenter une construction détachée
@@ -703,13 +703,13 @@ export default function ArticleBureauJardinBoisPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Le jour où l&apos;on ajoute l&apos;eau et une évacuation — cas du studio de jardin plutôt que du bureau —
+                Le jour où l&apos;on ajoute l&apos;eau et une évacuation, cas du studio de jardin plutôt que du bureau,
                 le projet change encore de dimension : raccordement, pente d&apos;évacuation, mise hors gel. Cela se
                 décide au tout début, jamais en cours de chantier.
               </p>
             </section>
 
-            {/* 6 — Ossature, bardage, implantation */}
+            {/* 6, Ossature, bardage, implantation */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ossature, bardage et implantation dans le jardin
@@ -723,7 +723,7 @@ export default function ArticleBureauJardinBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Côté peau, le bardage bois joue deux rôles : il protège la paroi et il décide de l&apos;allure du
                 bâtiment. Le choix de l&apos;essence, du profil et de la finition (bois laissé griser ou saturé) mérite
-                d&apos;être fait sérieusement — nous le détaillons dans{' '}
+                d&apos;être fait sérieusement, nous le détaillons dans{' '}
                 <a href="/blog/bardage-bois-facade-essences-pose" className={lienInterne}>
                   notre guide du bardage bois en façade
                 </a>
@@ -736,7 +736,7 @@ export default function ArticleBureauJardinBoisPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   'L’orientation : une baie plein sud est agréable en hiver et éblouissante en été ; le nord donne la lumière la plus stable pour un écran.',
-                  'La distance à la maison : plus elle est courte, moins la tranchée et le trajet quotidien coûtent — mais trop près, on perd la coupure recherchée.',
+                  'La distance à la maison : plus elle est courte, moins la tranchée et le trajet quotidien coûtent, mais trop près, on perd la coupure recherchée.',
                   'Le sol et l’eau : un point bas où l’eau stagne se corrige avant de construire, par le terrassement et le drainage, jamais après.',
                   'Le voisinage : vue, ombre portée et bruit se regardent depuis chez le voisin autant que depuis chez soi.',
                 ].map((item) => (
@@ -751,7 +751,7 @@ export default function ArticleBureauJardinBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un bureau de jardin appelle presque toujours d&apos;autres ouvrages : un cheminement praticable en hiver,
                 une terrasse devant la baie, parfois un claustra pour l&apos;intimité. Nous menons l&apos;ensemble avec
-                un seul interlocuteur — voyez nos{' '}
+                un seul interlocuteur, voyez nos{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
                 </a>{' '}
@@ -771,7 +771,7 @@ export default function ArticleBureauJardinBoisPage() {
               caption="La ventilation de la lame d'air et le soubassement qui éloigne le bois des projections font plus que la finition."
             />
 
-            {/* 7 — Kit ou sur-mesure, budget, durée de vie */}
+            {/* 7, Kit ou sur-mesure, budget, durée de vie */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Kit ou sur-mesure, budget et durée de vie (Libourne, Gironde)
@@ -780,10 +780,10 @@ export default function ArticleBureauJardinBoisPage() {
                 Le débat kit contre sur-mesure est déjà tranché dans{' '}
                 <a href="/blog/abri-jardin-bois-kit-ou-sur-mesure" className={lienInterne}>
                   notre guide de l&apos;abri de jardin
-                </a>
-                , et il se transpose ici avec une nuance de taille : sur un ouvrage isolé et alimenté, le kit ne fait
+                </a>,
+                et il se transpose ici avec une nuance de taille : sur un ouvrage isolé et alimenté, le kit ne fait
                 qu&apos;une partie du travail. Il livre une coque. Restent la préparation du sol, l&apos;isolation
-                complète, les menuiseries, les finitions intérieures, l&apos;électricité et le dossier d&apos;urbanisme —
+                complète, les menuiseries, les finitions intérieures, l&apos;électricité et le dossier d&apos;urbanisme,
                 c&apos;est-à-dire l&apos;essentiel du coût et la totalité des points où un chantier se rate.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -831,7 +831,7 @@ export default function ArticleBureauJardinBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;ordre de grandeur à retenir, constaté sur nos propres chantiers :{' '}
                 <strong className="text-primary font-semibold">
-                  la part « habitabilité » — isolation, menuiseries, électricité, finitions — pèse couramment autant que
+                  la part « habitabilité » (isolation, menuiseries, électricité, finitions) pèse couramment autant que
                   l&apos;ossature, la couverture et le bardage réunis.
                 </strong>{' '}
                 C&apos;est pourquoi un bureau de jardin isolé et fini se compare au budget d&apos;une petite extension
@@ -843,7 +843,7 @@ export default function ArticleBureauJardinBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Enfin, la durée de vie. Un ouvrage en ossature bois correctement fondé, ventilé et couvert vieillit très
-                bien sous le climat girondin — humide l&apos;hiver, chaud et sec l&apos;été. Ce qui tue une annexe de
+                bien sous le climat girondin, humide l&apos;hiver, chaud et sec l&apos;été. Ce qui tue une annexe de
                 jardin, ce n&apos;est presque jamais le bois : c&apos;est l&apos;eau qui remonte d&apos;un sol mal
                 préparé, une paroi qui ne respire pas, ou une couverture sans débord. Autour de Libourne, du Libournais
                 jusqu&apos;à l&apos;Entre-deux-Mers, nous voyons les mêmes causes revenir. Vous pouvez juger notre façon
@@ -899,7 +899,7 @@ export default function ArticleBureauJardinBoisPage() {
               Un bureau de jardin réussi, c&apos;est une petite construction traitée comme telle : fondée sérieusement,
               isolée sur ses six faces, alimentée dans les règles, déclarée en mairie et budgétée taxe comprise. C&apos;est
               le projet que nous menons chez L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute
-              la Gironde — de l&apos;étude d&apos;implantation au dossier d&apos;urbanisme, puis du chantier à la
+              la Gironde, de l&apos;étude d&apos;implantation au dossier d&apos;urbanisme, puis du chantier à la
               livraison. Si la déclaration part maintenant, vous travaillez au calme avant l&apos;hiver.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

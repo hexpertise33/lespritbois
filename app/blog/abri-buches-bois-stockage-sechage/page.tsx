@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -141,7 +141,7 @@ const jsonld = [
         name: "Peut-on adosser un abri à bûches au mur de la maison ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Nous le déconseillons. Une pile de bûches plaquée contre une façade bloque le séchage du côté du mur, retient l'humidité contre l'enduit et constitue surtout une réserve de cellulose humide au contact du bâti — un point d'appel classique pour les termites, très présents en Gironde. Mieux vaut adosser l'abri à un mur de dépendance, à un carport ou le laisser autoportant, avec une lame d'air à l'arrière.",
+          text: "Nous le déconseillons. Une pile de bûches plaquée contre une façade bloque le séchage du côté du mur, retient l'humidité contre l'enduit et constitue surtout une réserve de cellulose humide au contact du bâti, un point d'appel classique pour les termites, très présents en Gironde. Mieux vaut adosser l'abri à un mur de dépendance, à un carport ou le laisser autoportant, avec une lame d'air à l'arrière.",
         },
       },
       {
@@ -149,7 +149,7 @@ const jsonld = [
         name: "Abri à bûches en kit ou sur mesure : que choisir ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Le kit convient pour un petit appoint d'agrément, à condition de vérifier qu'il est ajouré et surélevé — beaucoup de modèles d'entrée de gamme sont trop peu profonds et trop fermés. Dès qu'il s'agit de stocker deux campagnes de chauffage, d'épouser une limite de terrain ou de prolonger un carport existant, le sur-mesure devient plus rationnel : on cale le volume sur la consommation réelle et la longueur de bûche commandée.",
+          text: "Le kit convient pour un petit appoint d'agrément, à condition de vérifier qu'il est ajouré et surélevé, beaucoup de modèles d'entrée de gamme sont trop peu profonds et trop fermés. Dès qu'il s'agit de stocker deux campagnes de chauffage, d'épouser une limite de terrain ou de prolonger un carport existant, le sur-mesure devient plus rationnel : on cale le volume sur la consommation réelle et la longueur de bûche commandée.",
         },
       },
     ],
@@ -233,7 +233,7 @@ const faq = [
     r: (
       <>
         Nous le déconseillons. Une pile de bûches plaquée contre une façade bloque le séchage du côté du mur, retient
-        l&apos;humidité contre l&apos;enduit et constitue surtout une réserve de cellulose humide au contact du bâti — un
+        l&apos;humidité contre l&apos;enduit et constitue surtout une réserve de cellulose humide au contact du bâti, un
         point d&apos;appel classique pour les{' '}
         <a href="/blog/termites-gironde-ouvrage-bois-prevention" className={lienInterne}>
           termites, très présents en Gironde
@@ -247,8 +247,8 @@ const faq = [
     q: 'Abri à bûches en kit ou sur mesure : que choisir ?',
     r: (
       <>
-        Le kit convient pour un petit appoint d&apos;agrément, à condition de vérifier qu&apos;il est ajouré et surélevé
-        — beaucoup de modèles d&apos;entrée de gamme sont trop peu profonds et trop fermés. Dès qu&apos;il s&apos;agit de
+        Le kit convient pour un petit appoint d&apos;agrément, à condition de vérifier qu&apos;il est ajouré et surélevé,
+       beaucoup de modèles d&apos;entrée de gamme sont trop peu profonds et trop fermés. Dès qu&apos;il s&apos;agit de
         stocker deux campagnes de chauffage, d&apos;épouser une limite de terrain ou de prolonger un carport existant, le
         sur-mesure devient plus rationnel : on cale le volume sur la consommation réelle et la longueur de bûche
         commandée.
@@ -303,8 +303,8 @@ export default function ArticleAbriBuchesPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>14 août 2026</span>
@@ -325,7 +325,7 @@ export default function ArticleAbriBuchesPage() {
               Autrement dit, un toit bien débordant et des côtés largement ajourés valent mieux qu&apos;un coffre bien
               fermé. Deux idées reçues nous coûtent des hivers entiers de mauvaise combustion : croire qu&apos;une bûche
               livrée « prête à brûler » l&apos;est réellement, et croire qu&apos;un abri fermé sur ses quatre côtés
-              protège mieux — alors qu&apos;il fait pourrir le bois au lieu de le sécher. Voici, à partir de ce que nous
+              protège mieux, alors qu&apos;il fait pourrir le bois au lieu de le sécher. Voici, à partir de ce que nous
               construisons sur nos chantiers en Gironde, comment concevoir, dimensionner et implanter un abri à bûches
               qui travaille vraiment pour vous.
             </p>
@@ -335,7 +335,7 @@ export default function ArticleAbriBuchesPage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Ce qu'un abri à bûches doit faire */}
+            {/* 1, Ce qu'un abri à bûches doit faire */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ce qu&apos;un abri à bûches doit faire (et ce n&apos;est pas juste couvrir)
@@ -356,7 +356,7 @@ export default function ArticleAbriBuchesPage() {
                 </strong>
                 . La troisième compte plus qu&apos;on ne croit : un abri au fond du jardin, derrière une pelouse
                 détrempée, finit par être délaissé au profit d&apos;un tas de bûches posé sous une bâche près de la
-                porte — c&apos;est-à-dire la pire solution possible.
+                porte, c&apos;est-à-dire la pire solution possible.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 La bâche, justement, mérite qu&apos;on s&apos;y arrête. Une bâche posée sur un tas et rabattue sur les
@@ -367,7 +367,7 @@ export default function ArticleAbriBuchesPage() {
               </p>
             </section>
 
-            {/* 2 — Le séchage */}
+            {/* 2, Le séchage */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Le séchage : le seuil d&apos;humidité qui change tout
@@ -388,7 +388,7 @@ export default function ArticleAbriBuchesPage() {
                   les bûches 18 mois minimum après la coupe.
                 </strong>{' '}
                 Elle précise aussi les conditions de stockage : à l&apos;abri de la pluie, dans un endroit bien aéré, et
-                sans contact direct avec le sol — sur des palettes, par exemple.
+                sans contact direct avec le sol, sur des palettes, par exemple.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Retenez surtout les mots « bien aéré » et « sans contact direct avec le sol ». Ce sont eux qui
@@ -407,7 +407,7 @@ export default function ArticleAbriBuchesPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Dernier point d&apos;honnêteté : une bûche vendue « prête à brûler » ne l&apos;est presque jamais au sens
-                strict. Certains fournisseurs pratiquent un séchage accéléré et le documentent — dans ce cas, tant mieux.
+                strict. Certains fournisseurs pratiquent un séchage accéléré et le documentent, dans ce cas, tant mieux.
                 Mais un bois livré en vrac, fendu depuis peu, continue de perdre de l&apos;eau chez vous. Un humidimètre
                 de poche, planté dans une bûche fraîchement refendue plutôt que sur sa face extérieure, coûte quelques
                 euros et met tout le monde d&apos;accord.
@@ -422,7 +422,7 @@ export default function ArticleAbriBuchesPage() {
               caption="Les fentes en étoile visibles au bout des rondins sont un bon indice de terrain : elles n'apparaissent qu'une fois que la bûche a vraiment commencé à perdre son eau."
             />
 
-            {/* 3 — Les cinq règles */}
+            {/* 3, Les cinq règles */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Les cinq règles de conception d&apos;un abri qui sèche vraiment
@@ -480,7 +480,7 @@ export default function ArticleAbriBuchesPage() {
               caption="Le stockage compartimenté à claire-voie règle deux problèmes d'un coup : l'air traverse chaque case, et chaque case correspond à une campagne de chauffage."
             />
 
-            {/* 4 — Quel volume construire */}
+            {/* 4, Quel volume construire */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Quel volume construire : dimensionner selon sa consommation
@@ -493,9 +493,9 @@ export default function ArticleAbriBuchesPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   "Partez de ce que vous consommez déjà. Si vous vous chauffez au bois depuis quelques hivers, vous savez combien de livraisons vous passez dans la saison : c'est votre unité de référence, bien plus fiable qu'un calcul théorique.",
-                  "Demandez à votre fournisseur le volume empilé, pas seulement le volume vendu. C'est lui qui sait ce que représente sa livraison une fois rangée en rangs serrés — posez-lui la question avant de construire, pas après.",
+                  "Demandez à votre fournisseur le volume empilé, pas seulement le volume vendu. C'est lui qui sait ce que représente sa livraison une fois rangée en rangs serrés, posez-lui la question avant de construire, pas après.",
                   "Doublez pour tenir les 18 mois de séchage. L'abri doit accueillir la campagne en cours et celle qui sèche. C'est ce doublement, et non la consommation elle-même, qui décide de la taille finale.",
-                  "Mesurez la longueur de bûche commandée : 33, 40, 50 cm — c'est elle qui fixe la profondeur utile de l'abri, donc la portée des lambourdes et l'aplomb de la pile.",
+                  "Mesurez la longueur de bûche commandée : 33, 40, 50 cm, c'est elle qui fixe la profondeur utile de l'abri, donc la portée des lambourdes et l'aplomb de la pile.",
                   "Prévoyez une réserve d'accès : un bout de plancher libre pour poser un panier, une hache ou le petit bois d'allumage, sinon il finira par terre, dans l'humidité.",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -522,7 +522,7 @@ export default function ArticleAbriBuchesPage() {
               </p>
             </section>
 
-            {/* 5 — Implantation */}
+            {/* 5, Implantation */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Adossé, autoportant, intégré à un carport : quelle implantation
@@ -561,7 +561,7 @@ export default function ArticleAbriBuchesPage() {
                 . On prolonge la charpente existante d&apos;un appentis, on récupère la même couverture, la même teinte
                 et le même rythme de poteaux : l&apos;ensemble se lit comme un seul ouvrage, la voiture est abritée, le
                 bois aussi, et l&apos;accès est déjà stabilisé puisqu&apos;on y roule. C&apos;est aussi le moment le plus
-                économique pour le faire, à condition d&apos;y penser au moment de dessiner le carport — nous détaillons
+                économique pour le faire, à condition d&apos;y penser au moment de dessiner le carport, nous détaillons
                 cette structure dans notre{' '}
                 <a href="/blog/carport-bois-guide" className={lienInterne}>
                   guide du carport en bois
@@ -587,10 +587,10 @@ export default function ArticleAbriBuchesPage() {
               caption="Un de nos carports bois en appentis, en Gironde. C'est cette charpente que l'on prolonge d'une travée pour loger le bois : même couverture, même rythme de poteaux, accès déjà stabilisé."
             />
 
-            {/* 6 — Où le poser */}
+            {/* 6, Où le poser */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Où le poser dans le jardin — et pourquoi jamais contre le mur de la maison
+                Où le poser dans le jardin, et pourquoi jamais contre le mur de la maison
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est le réflexe le plus répandu, et celui que nous déconseillons le plus fermement :{' '}
@@ -622,7 +622,7 @@ export default function ArticleAbriBuchesPage() {
               <ul className="space-y-3 mb-5">
                 {[
                   "Un sol qui ne retient pas l'eau : point haut du terrain, sol drainant ou drainé, jamais une cuvette où l'eau stagne après l'orage.",
-                  "Un cheminement praticable en hiver : allée, dalle, gravillon stabilisé — on va y aller par temps de pluie, de nuit, les bras chargés.",
+                  "Un cheminement praticable en hiver : allée, dalle, gravillon stabilisé, on va y aller par temps de pluie, de nuit, les bras chargés.",
                   "Une distance raisonnable à la maison : assez près pour que ce soit tenable au quotidien, assez loin pour ne pas coller le bois au bâti.",
                   "Un dégagement à l'arrière : quelques centimètres de lame d'air suffisent si l'abri est adossé, mais ils sont indispensables.",
                   "Pas sous un arbre à feuillage dense : la couverture s'encombre, l'ombre permanente entretient l'humidité et la mousse.",
@@ -641,8 +641,8 @@ export default function ArticleAbriBuchesPage() {
                 C&apos;est le travail que nous menons en{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
-                </a>
-                , plutôt que de poser un abri là où il reste de la place.
+                </a>,
+                plutôt que de poser un abri là où il reste de la place.
               </p>
             </section>
 
@@ -654,7 +654,7 @@ export default function ArticleAbriBuchesPage() {
               caption="Sur nos chantiers en Gironde, aucun bois ne repose directement sur le terrain : ici des plots réglables sous une terrasse, exactement le principe à reprendre sous le plancher d'un abri à bûches."
             />
 
-            {/* 7 — Kit ou sur-mesure, budget, durée de vie */}
+            {/* 7, Kit ou sur-mesure, budget, durée de vie */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Kit ou sur-mesure, budget et durée de vie de l&apos;abri (Libourne, Gironde)
@@ -678,8 +678,8 @@ export default function ArticleAbriBuchesPage() {
                 <strong className="text-primary font-semibold">
                   d&apos;un petit abri en kit à quelques centaines d&apos;euros jusqu&apos;à plusieurs milliers d&apos;euros
                   pour un ouvrage sur mesure, long, compartimenté et couvert comme la maison
-                </strong>{' '}
-                — fourchettes constatées sur nos propres chantiers en 2026. Ce qui fait bouger le prix, ce n&apos;est
+                </strong>,{' '}
+               fourchettes constatées sur nos propres chantiers en 2026. Ce qui fait bouger le prix, ce n&apos;est
                 presque jamais le volume de bois stocké : c&apos;est la couverture retenue, le nombre de poteaux et
                 d&apos;appuis, la préparation du sol, et le fait de raccorder ou non l&apos;abri à un ouvrage existant.
                 Seul un relevé sur place permet de chiffrer sérieusement.
@@ -703,8 +703,8 @@ export default function ArticleAbriBuchesPage() {
                 construisons ces abris comme les autres ouvrages de notre atelier :{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   en construction bois sur mesure
-                </a>
-                , dessinés pour le terrain et pour la vraie consommation du foyer. Vous en verrez le vocabulaire et les
+                </a>,
+                dessinés pour le terrain et pour la vraie consommation du foyer. Vous en verrez le vocabulaire et les
                 finitions dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
@@ -756,7 +756,7 @@ export default function ArticleAbriBuchesPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Toit débordant, côtés ajourés, pile surélevée, profondeur limitée et volume calé sur deux campagnes : cinq
               décisions prises au dessin, et votre bois arrive sec dans le poêle chaque hiver. C&apos;est ce que nous
-              construisons chez L&apos;Esprit Bois, à Libourne et dans toute la Gironde — en abri autonome ou en
+              construisons chez L&apos;Esprit Bois, à Libourne et dans toute la Gironde, en abri autonome ou en
               prolongement d&apos;un carport, avec un relevé sur votre terrain avant tout chiffrage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

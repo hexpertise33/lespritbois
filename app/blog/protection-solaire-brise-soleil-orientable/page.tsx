@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -339,8 +339,8 @@ export default function ArticleProtectionSolairePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>10 août 2026</span>
@@ -357,7 +357,7 @@ export default function ArticleProtectionSolairePage() {
               <strong className="text-primary font-semibold">
                 Une protection solaire n&apos;est efficace que si elle arrête le rayonnement dehors, avant le vitrage :
                 un store intérieur ne fait que gérer une chaleur déjà entrée. Ensuite, tout se joue sur
-                l&apos;orientation de la façade — au sud, le soleil d&apos;été passe haut et un brise-soleil orientable
+                l&apos;orientation de la façade, au sud, le soleil d&apos;été passe haut et un brise-soleil orientable
                 ou une casquette fixe suffisent à couper le direct ; à l&apos;ouest et au sud-ouest, il arrive rasant en
                 fin de journée et seule une toile verticale, un store screen à zip ou un tablier descendu tient
                 vraiment.
@@ -372,7 +372,7 @@ export default function ArticleProtectionSolairePage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Pourquoi l'extérieur change tout */}
+            {/* 1, Pourquoi l'extérieur change tout */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Pourquoi une protection extérieure change tout (et pas un store intérieur)
@@ -411,7 +411,7 @@ export default function ArticleProtectionSolairePage() {
                 >
                   confort d&apos;été
                 </a>{' '}
-                un objectif à part entière — une garantie de confort en cas de forte chaleur. C&apos;est pour cela
+                un objectif à part entière, une garantie de confort en cas de forte chaleur. C&apos;est pour cela
                 qu&apos;on voit aujourd&apos;hui, sur les maisons neuves très vitrées, des brise-soleil orientables
                 prévus dès le dépôt du permis, et non ajoutés trois étés plus tard dans l&apos;urgence.
               </p>
@@ -422,10 +422,10 @@ export default function ArticleProtectionSolairePage() {
               w={768}
               h={512}
               alt="Protection solaire extérieure à toile microperforée descendue devant un vitrage, vue depuis l'intérieur"
-              caption="Vu de l'intérieur : la toile est dehors, devant le verre. C'est là que le rayonnement doit être arrêté — un store posé côté pièce arrive après la bataille."
+              caption="Vu de l'intérieur : la toile est dehors, devant le verre. C'est là que le rayonnement doit être arrêté, un store posé côté pièce arrive après la bataille."
             />
 
-            {/* 2 — Lire sa façade */}
+            {/* 2, Lire sa façade */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Lire sa façade avant de choisir : sud, ouest, est, nord
@@ -437,7 +437,7 @@ export default function ArticleProtectionSolairePage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Plein sud', 'en été, le soleil passe haut au-dessus de la maison. Un dispositif horizontal — casquette, débord de toiture, lames fixes, tablier partiellement descendu — suffit à couper le direct aux heures les plus chaudes. Et en hiver, le soleil bas passe dessous et vient chauffer gratuitement la pièce : c’est exactement ce qu’on cherche.'],
+                  ['Plein sud', 'en été, le soleil passe haut au-dessus de la maison. Un dispositif horizontal (casquette, débord de toiture, lames fixes, tablier partiellement descendu) suffit à couper le direct aux heures les plus chaudes. Et en hiver, le soleil bas passe dessous et vient chauffer gratuitement la pièce : c’est exactement ce qu’on cherche.'],
                   ['Ouest et sud-ouest', 'le vrai problème sous nos latitudes. En juillet-août, de la fin d’après-midi jusqu’au coucher, le rayonnement arrive presque à l’horizontale, dans l’axe de la baie. Aucun débord de toit ne l’arrête. Il faut une surface verticale devant le vitrage : store screen, tablier de brise-soleil descendu lames fermées, ou lames verticales orientées.'],
                   ['Est', 'soleil du matin, sur une maison encore fraîche de la nuit : moins pénalisant thermiquement, mais souvent gênant pour l’éblouissement dans une cuisine ou un bureau. Une protection légère, réglable, suffit.'],
                   ['Nord', 'rarement nécessaire. On n’y installe une protection que pour un besoin d’intimité ou de lumière diffuse, pas pour la chaleur.'],
@@ -462,7 +462,7 @@ export default function ArticleProtectionSolairePage() {
               </p>
             </section>
 
-            {/* 3 — BSO */}
+            {/* 3, BSO */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Le brise-soleil orientable (BSO) : régler l&apos;ombre sans occulter
@@ -481,7 +481,7 @@ export default function ArticleProtectionSolairePage() {
                 la descente et l&apos;orientation. Deux modes de pose coexistent : en neuf ou en rénovation lourde, le
                 coffre s&apos;intègre dans l&apos;épaisseur de l&apos;isolation et disparaît complètement ; en
                 rénovation simple, il se pose en applique et reste visible. Dans ce second cas, la teinte n&apos;est pas
-                anecdotique — un coffre thermolaqué dans le{' '}
+                anecdotique, un coffre thermolaqué dans le{' '}
                 <a href="/blog/choisir-teinte-ral-aluminium" className={lienInterne}>
                   RAL de vos menuiseries
                 </a>{' '}
@@ -489,7 +489,7 @@ export default function ArticleProtectionSolairePage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Ses limites, nous les disons aussi : c&apos;est un ouvrage mécanisé, donc plus cher qu&apos;une toile,
-                il demande une alimentation électrique, et il doit se relever au-delà d&apos;un certain seuil de vent —
+                il demande une alimentation électrique, et il doit se relever au-delà d&apos;un certain seuil de vent,
                 d&apos;où le capteur dont nous parlons plus bas. Sur une baie très large, on scinde en deux tabliers
                 plutôt que d&apos;étirer un tablier unique au-delà du raisonnable.
               </p>
@@ -512,7 +512,7 @@ export default function ArticleProtectionSolairePage() {
               }}
             />
 
-            {/* 4 — Store screen */}
+            {/* 4, Store screen */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Le store screen extérieur : la toile microperforée pour les grandes baies
@@ -520,10 +520,10 @@ export default function ArticleProtectionSolairePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le store screen, c&apos;est une{' '}
                 <strong className="text-primary font-semibold">toile technique microperforée</strong> tendue devant le
-                vitrage, guidée par des coulisses — les meilleures versions étant les modèles à zip, où la toile est
+                vitrage, guidée par des coulisses, les meilleures versions étant les modèles à zip, où la toile est
                 maintenue par une glissière continue sur toute sa hauteur. Le tissage laisse passer une part de lumière :
                 de l&apos;intérieur, on continue de voir dehors, en tamisé, comme derrière des lunettes de soleil.
-                L&apos;ouverture de la toile — sa densité de perforation — décide de cet équilibre entre vue conservée
+                L&apos;ouverture de la toile, sa densité de perforation, décide de cet équilibre entre vue conservée
                 et rayonnement arrêté ; c&apos;est le choix que nous faisons avec vous, échantillon en main.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -537,14 +537,14 @@ export default function ArticleProtectionSolairePage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Ses limites sont franches. Pas de réglage d&apos;angle : on module par la hauteur de descente, c&apos;est
-                tout. La toile est un consommable — pas fragile, mais elle vieillit et finit par se remplacer, sans
+                tout. La toile est un consommable, pas fragile, mais elle vieillit et finit par se remplacer, sans
                 toucher au coffre ni aux coulisses. Et le soir, dès que l&apos;éclairage intérieur est allumé, une toile
                 claire ne protège plus vraiment des regards : ce n&apos;est pas un occultant, ce n&apos;est pas un
                 volet.
               </p>
             </section>
 
-            {/* 5 — Brise-soleil fixe */}
+            {/* 5, Brise-soleil fixe */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Brise-soleil fixe, casquette et lames architecturales : zéro mécanique
@@ -557,7 +557,7 @@ export default function ArticleProtectionSolairePage() {
                   rien à motoriser, rien à remonter avant un coup de vent, rien à réparer
                 </strong>
                 . On dessine l&apos;ombre une fois pour toutes, avec la profondeur d&apos;avancée et l&apos;écartement
-                des lames comme seuls réglages — figés à la conception.
+                des lames comme seuls réglages, figés à la conception.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le principe de dimensionnement est simple à énoncer : l&apos;ouvrage est calculé pour intercepter le
@@ -571,7 +571,7 @@ export default function ArticleProtectionSolairePage() {
                 l&apos;ombre que vous n&apos;avez pas demandée. Le dessin doit être arrêté en amont, idéalement lors
                 d&apos;une construction, d&apos;une extension ou d&apos;une reprise de façade. Et la fixation mérite
                 autant d&apos;attention que le dessin : platines, reprise sur un élément porteur, traitement du passage
-                à travers une isolation extérieure — un brise-soleil fixe pèse et prend le vent, il ne se cheville pas
+                à travers une isolation extérieure, un brise-soleil fixe pèse et prend le vent, il ne se cheville pas
                 dans un doublage.
               </p>
             </section>
@@ -584,7 +584,7 @@ export default function ArticleProtectionSolairePage() {
               caption="Sur un brise-soleil fixe, tout se décide au dessin : la profondeur d'avancée et l'écartement des lames sont les deux seuls réglages, et ils sont figés."
             />
 
-            {/* 6 — Vent, automatismes, entretien */}
+            {/* 6, Vent, automatismes, entretien */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Vent, automatismes et entretien : ce qui fait durer une protection solaire en Gironde
@@ -610,7 +610,7 @@ export default function ArticleProtectionSolairePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Au-delà de la sécurité, l&apos;automatisme est ce qui rend la protection réellement efficace. Une sonde
                 d&apos;ensoleillement, une programmation horaire ou un scénario domotique ferment la protection{' '}
-                <em>avant</em> que la façade ne chauffe, y compris maison vide — exactement le geste que recommande
+                <em>avant</em> que la façade ne chauffe, y compris maison vide, exactement le geste que recommande
                 l&apos;ADEME, et exactement celui qu&apos;on oublie de faire à la main. Un capteur de température
                 intérieure, un pilotage depuis le téléphone, une remontée automatique au coucher du soleil : ce sont des
                 options peu coûteuses au moment de la pose, très chères à rajouter après.
@@ -620,7 +620,7 @@ export default function ArticleProtectionSolairePage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  'Laver les profilés thermolaqués une à deux fois par an à l’eau tiède savonneuse, chiffon doux — jamais de produit abrasif, de solvant ni de nettoyeur haute pression sur une finition ou une toile.',
+                  'Laver les profilés thermolaqués une à deux fois par an à l’eau tiède savonneuse, chiffon doux, jamais de produit abrasif, de solvant ni de nettoyeur haute pression sur une finition ou une toile.',
                   'Dégager les coulisses : gravillons, poussières agricoles, nids d’insectes. Une coulisse encrassée fatigue le moteur bien avant d’immobiliser le tablier.',
                   'Vérifier une fois par an les joints, les brosses de coulisse, les fixations et la manœuvre complète, capteur de vent compris.',
                   'Sur un store screen, contrôler l’état de la toile et son enroulement : c’est la seule pièce d’usure, remplaçable sans changer le coffre.',
@@ -641,7 +641,7 @@ export default function ArticleProtectionSolairePage() {
               caption="Coffre et coulisses thermolaqués dans la teinte de la structure : c'est aussi la coulisse qui tient la toile au vent, d'où l'intérêt d'un guidage à zip."
             />
 
-            {/* 7 — Budget et arbitrage */}
+            {/* 7, Budget et arbitrage */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Budget 2026 et arbitrage : protection solaire, pergola bioclimatique ou véranda ?
@@ -649,7 +649,7 @@ export default function ArticleProtectionSolairePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Voici les ordres de grandeur que nous constatons{' '}
                 <strong className="text-primary font-semibold">sur nos propres chantiers en 2026</strong>, pose comprise,
-                pour une baie de séjour courante — ce ne sont pas des tarifs de marché, et ils bougent beaucoup avec la
+                pour une baie de séjour courante, ce ne sont pas des tarifs de marché, et ils bougent beaucoup avec la
                 largeur, la hauteur, le type de pose et le niveau d&apos;automatisme :
               </p>
               <ul className="space-y-3 mb-6">
@@ -699,8 +699,8 @@ export default function ArticleProtectionSolairePage() {
                 réponse est une{' '}
                 <a href="/pergolas" className={lienInterne}>
                   pergola bioclimatique
-                </a>{' '}
-                — qui, en ombrant l&apos;espace extérieur devant la baie, protège d&apos;ailleurs souvent le vitrage par
+                </a>,{' '}
+               qui, en ombrant l&apos;espace extérieur devant la baie, protège d&apos;ailleurs souvent le vitrage par
                 la même occasion. Nous détaillons ce produit, ses lames orientables de toiture et ses stores latéraux
                 dans notre{' '}
                 <a href="/blog/pergola-bioclimatique-aluminium-guide" className={lienInterne}>
@@ -710,7 +710,7 @@ export default function ArticleProtectionSolairePage() {
                 <a href="/blog/veranda-aluminium-isolation-urbanisme-budget" className={lienInterne}>
                   véranda aluminium
                 </a>{' '}
-                qu&apos;il faut regarder — avec, là aussi, la question du confort d&apos;été à traiter dès la
+                qu&apos;il faut regarder, avec, là aussi, la question du confort d&apos;été à traiter dès la
                 conception.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -724,21 +724,21 @@ export default function ArticleProtectionSolairePage() {
                   rel="noopener noreferrer"
                 >
                   déclaration préalable de travaux
-                </a>
-                , et certains PLU imposent des teintes. Nous vérifions le règlement avant d&apos;arrêter le RAL et le
+                </a>,
+                et certains PLU imposent des teintes. Nous vérifions le règlement avant d&apos;arrêter le RAL et le
                 dessin.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Une précision qui compte, à Libourne comme ailleurs en Gironde :{' '}
                 <strong className="text-primary font-semibold">nous vendons et posons le bois et l&apos;aluminium</strong>
-                . Nous n&apos;avons donc aucun intérêt à vous pousser vers une matière plutôt qu&apos;une autre — sur les
+                . Nous n&apos;avons donc aucun intérêt à vous pousser vers une matière plutôt qu&apos;une autre, sur les
                 protections solaires, l&apos;aluminium s&apos;impose simplement par la finesse des profilés, la
                 motorisation et l&apos;absence d&apos;entretien de surface, et nous le disons sans détour. Vous pouvez
                 voir nos ouvrages alu et bois dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , et l&apos;ensemble de nos prestations sur la page{' '}
+                </a>,
+                et l&apos;ensemble de nos prestations sur la page{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
                 </a>
@@ -790,7 +790,7 @@ export default function ArticleProtectionSolairePage() {
               Arrêter le soleil dehors, avant le vitrage, puis choisir le dispositif selon l&apos;orientation : brise-soleil
               orientable au sud pour doser la lumière, store screen à zip sur les grandes baies d&apos;ouest, brise-soleil
               fixe quand on ne veut aucune mécanique. C&apos;est le diagnostic que nous menons chez L&apos;Esprit Bois,
-              entreprise qualifiée Qualibat à Libourne et dans toute la Gironde — protections solaires, pergolas
+              entreprise qualifiée Qualibat à Libourne et dans toute la Gironde, protections solaires, pergolas
               bioclimatiques et vérandas aluminium, formalités d&apos;urbanisme comprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

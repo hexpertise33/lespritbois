@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="L'Esprit Bois — le blog"
+          title="L'Esprit Bois, le blog"
           href="/rss.xml"
         />
 
@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-surface font-body-md text-on-surface antialiased">
-        {/* Balise Google (gtag.js) — suivi des conversions Google Ads */}
+        {/* Balise Google (gtag.js), suivi des conversions Google Ads */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GADS_ID}`}
           strategy="afterInteractive"

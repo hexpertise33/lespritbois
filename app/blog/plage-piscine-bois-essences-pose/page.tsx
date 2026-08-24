@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -136,7 +136,7 @@ const jsonld = [
         name: "Faut-il une autorisation d'urbanisme pour créer une plage de piscine en bois ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Une plage de plain-pied, qui ne crée ni emprise ni surélévation, est en principe dispensée de formalité — sauf en secteur protégé (abords d'un monument historique, site patrimonial remarquable, site classé), où une déclaration préalable redevient nécessaire. Dès que la plage est surélevée, couverte ou associée à un abri, elle relève de la déclaration préalable, voire du permis de construire selon la surface et le PLU de la commune. La règle locale prime : nous vérifions au service urbanisme de la mairie avant d'engager le chantier.",
+          text: "Une plage de plain-pied, qui ne crée ni emprise ni surélévation, est en principe dispensée de formalité, sauf en secteur protégé (abords d'un monument historique, site patrimonial remarquable, site classé), où une déclaration préalable redevient nécessaire. Dès que la plage est surélevée, couverte ou associée à un abri, elle relève de la déclaration préalable, voire du permis de construire selon la surface et le PLU de la commune. La règle locale prime : nous vérifions au service urbanisme de la mairie avant d'engager le chantier.",
         },
       },
       {
@@ -144,7 +144,7 @@ const jsonld = [
         name: "La plage doit-elle tenir compte du dispositif de sécurité de la piscine ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui, et c'est l'erreur de conception la plus fréquente. Toute piscine enterrée ou semi-enterrée non close, à usage privatif, doit être équipée d'au moins un dispositif de sécurité normalisé — barrière, alarme, couverture ou abri — au titre de la loi n° 2003-9 du 3 janvier 2003, codifiée au Code de la construction et de l'habitation. Une plage, un banc, un coffre ou un bac à plantes qui permettrait à un jeune enfant de franchir la barrière annule l'effet du dispositif : l'implantation du mobilier et des niveaux se dessine en même temps que la plage.",
+          text: "Oui, et c'est l'erreur de conception la plus fréquente. Toute piscine enterrée ou semi-enterrée non close, à usage privatif, doit être équipée d'au moins un dispositif de sécurité normalisé (barrière, alarme, couverture ou abri) au titre de la loi n° 2003-9 du 3 janvier 2003, codifiée au Code de la construction et de l'habitation. Une plage, un banc, un coffre ou un bac à plantes qui permettrait à un jeune enfant de franchir la barrière annule l'effet du dispositif : l'implantation du mobilier et des niveaux se dessine en même temps que la plage.",
         },
       },
       {
@@ -235,7 +235,7 @@ const faq = [
     q: "Faut-il une autorisation d'urbanisme pour créer une plage de piscine en bois ?",
     r: (
       <>
-        Une plage de plain-pied, qui ne crée ni emprise ni surélévation, est en principe dispensée de formalité — sauf
+        Une plage de plain-pied, qui ne crée ni emprise ni surélévation, est en principe dispensée de formalité, sauf
         en secteur protégé (abords d&apos;un monument historique, site patrimonial remarquable, site classé), où une
         déclaration préalable redevient nécessaire. Dès que la plage est surélevée, couverte ou associée à un abri, elle
         relève de la déclaration préalable, voire du permis de construire selon la surface et le PLU de la commune. La
@@ -248,8 +248,8 @@ const faq = [
     r: (
       <>
         Oui, et c&apos;est l&apos;erreur de conception la plus fréquente. Toute piscine enterrée ou semi-enterrée non
-        close, à usage privatif, doit être équipée d&apos;au moins un dispositif de sécurité normalisé — barrière,
-        alarme, couverture ou abri — au titre de la loi n° 2003-9 du 3 janvier 2003, codifiée au Code de la construction
+        close, à usage privatif, doit être équipée d&apos;au moins un dispositif de sécurité normalisé (barrière,
+        alarme, couverture ou abri) au titre de la loi n° 2003-9 du 3 janvier 2003, codifiée au Code de la construction
         et de l&apos;habitation. Une plage, un banc, un coffre ou un bac à plantes qui permettrait à un jeune enfant de
         franchir la barrière annule l&apos;effet du dispositif : l&apos;implantation du mobilier et des niveaux se
         dessine en même temps que la plage.
@@ -315,8 +315,8 @@ export default function ArticlePlagePiscineBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>2 août 2026</span>
@@ -338,7 +338,7 @@ export default function ArticlePlagePiscineBoisPage() {
                 sud.
               </strong>{' '}
               C&apos;est la nuance que nous passons le plus de temps à expliquer devant un bassin, en août, autour de
-              Libourne : le client cherche un bois « spécial piscine » alors que le sujet est ailleurs — dans le
+              Libourne : le client cherche un bois « spécial piscine » alors que le sujet est ailleurs, dans le
               comportement de la lame quand elle sèche en deux heures après trois plongeons, dans la manière dont
               l&apos;eau quitte la plage, et dans ce qui se passe sous les lames. Voici comment nous choisissons
               l&apos;essence, la pose et le raccord au bassin en conséquence.
@@ -386,7 +386,7 @@ export default function ArticlePlagePiscineBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un mot sur le chlore, puisque c&apos;est la question qui revient toujours. L&apos;eau qui atteint la
                 plage est de l&apos;eau de bassin déjà très diluée, projetée en gouttes puis évaporée : elle ne
-                « brûle » pas le bois. Le sel des piscines au sel, en revanche, est un vrai sujet —{' '}
+                « brûle » pas le bois. Le sel des piscines au sel, en revanche, est un vrai sujet,{' '}
                 <strong className="text-primary font-semibold">mais pour les métaux, pas pour le bois</strong>. Il
                 attaque la visserie, les équerres et la quincaillerie ordinaire. C&apos;est la fixation qu&apos;il faut
                 monter en gamme, pas l&apos;essence qu&apos;il faut changer.
@@ -402,7 +402,7 @@ export default function ArticlePlagePiscineBoisPage() {
                 Deux exigences se cumulent. D&apos;abord la{' '}
                 <strong className="text-primary font-semibold">classe d&apos;emploi 4</strong> : une lame qui reçoit
                 des projections en permanence n&apos;est plus dans la même situation qu&apos;une terrasse ordinaire, et
-                doit être naturellement durable ou traitée pour cet usage — les classes d&apos;emploi et la durabilité
+                doit être naturellement durable ou traitée pour cet usage, les classes d&apos;emploi et la durabilité
                 des essences sont documentées par{' '}
                 <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   l&apos;institut technologique FCBA
@@ -443,7 +443,7 @@ export default function ArticlePlagePiscineBoisPage() {
                 compromis pour la plupart des projets girondins. Les{' '}
                 <strong className="text-primary font-semibold">exotiques</strong> et les{' '}
                 <strong className="text-primary font-semibold">bois modifiés</strong> restent, techniquement, ce qui
-                tuile le moins — mais on les paie, et les teintes foncées chauffent.
+                tuile le moins, mais on les paie, et les teintes foncées chauffent.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-5">
                 Nous posons aussi du <strong className="text-primary font-semibold">composite</strong>, et nous le
@@ -494,8 +494,8 @@ export default function ArticlePlagePiscineBoisPage() {
                 Deuxième sujet, très concret en Gironde :{' '}
                 <strong className="text-primary font-semibold">l&apos;échauffement</strong>. Les teintes foncées et les
                 exotiques denses emmagasinent la chaleur, et une plage plein sud en août peut devenir impraticable pieds
-                nus aux heures chaudes. C&apos;est un argument sérieux en faveur des teintes claires — douglas, mélèze,
-                pin, garapa — dans la bande la plus fréquentée, quitte à réserver un bois foncé aux abords ombragés ou
+                nus aux heures chaudes. C&apos;est un argument sérieux en faveur des teintes claires (douglas, mélèze,
+                pin, garapa) dans la bande la plus fréquentée, quitte à réserver un bois foncé aux abords ombragés ou
                 aux zones de circulation secondaires.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -529,7 +529,7 @@ export default function ArticlePlagePiscineBoisPage() {
                 un jeu de dilatation continu sur tout le pourtour, calculé selon l&apos;essence et le taux
                 d&apos;humidité des lames à la livraison. Sans lui, la plage pousse sur le bassin l&apos;été et se
                 déchausse l&apos;hiver. Deux écoles cohabitent : la lame qui arrive au ras de la margelle en la laissant
-                lire, ou la lame qui remplace la margelle et forme un chant net au-dessus du bassin — la seconde est
+                lire, ou la lame qui remplace la margelle et forme un chant net au-dessus du bassin, la seconde est
                 plus belle et beaucoup plus exigeante en découpe.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -541,7 +541,7 @@ export default function ArticlePlagePiscineBoisPage() {
                   tout ce qui devra être ouvert un jour doit être démontable sans dévisser la moitié de la plage.
                 </strong>{' '}
                 Concrètement, cela veut dire des trappes de visite intégrées au calepinage au-dessus des pièces
-                techniques et du local, avec un cadre indépendant, un jeu propre et des vis accessibles — pas une trappe
+                techniques et du local, avec un cadre indépendant, un jeu propre et des vis accessibles, pas une trappe
                 bricolée après coup en sciant trois lames.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -559,7 +559,7 @@ export default function ArticlePlagePiscineBoisPage() {
               w={1200}
               h={802}
               alt="Raccord d'une plage de piscine à la margelle en pierre claire, skimmer intégré et lames arrêtées à jeu constant"
-              caption="Angle de bassin : la margelle reçoit le skimmer et les projecteurs, les lames s'arrêtent à jeu constant devant elle. Ce sont ces quelques centimètres qui absorbent le travail du bois — et qui prennent le plus de temps à poser."
+              caption="Angle de bassin : la margelle reçoit le skimmer et les projecteurs, les lames s'arrêtent à jeu constant devant elle. Ce sont ces quelques centimètres qui absorbent le travail du bois, et qui prennent le plus de temps à poser."
             />
 
             {/* 5. Sous-face */}
@@ -568,8 +568,8 @@ export default function ArticlePlagePiscineBoisPage() {
                 La sous-face : ce que l&apos;eau de la piscine change sous les lames
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Les fondamentaux d&apos;une structure de terrasse — plots réglables, lambourdes dimensionnées et bien
-                appuyées, ventilation croisée, sol drainant — ne changent pas ici, et nous les détaillons dans notre
+                Les fondamentaux d&apos;une structure de terrasse (plots réglables, lambourdes dimensionnées et bien
+                appuyées, ventilation croisée, sol drainant) ne changent pas ici, et nous les détaillons dans notre
                 article sur{' '}
                 <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
                   la structure d&apos;une terrasse en bois
@@ -589,7 +589,7 @@ export default function ArticlePlagePiscineBoisPage() {
                 <strong className="text-primary font-semibold">Les fixations passent en inox A4.</strong> C&apos;est
                 non négociable sur une piscine au sel, et fortement conseillé partout ailleurs en bord de bassin. Une
                 visserie ordinaire, même inox d&apos;entrée de gamme, se pique, coule et laisse des traînées noires
-                irrattrapables sur une lame claire — sans parler de la tenue mécanique à long terme. Le surcoût se
+                irrattrapables sur une lame claire, sans parler de la tenue mécanique à long terme. Le surcoût se
                 compte en dizaines d&apos;euros, la reprise en centaines.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -611,9 +611,9 @@ export default function ArticlePlagePiscineBoisPage() {
                 Commençons par le point non négociable. Toute piscine enterrée ou semi-enterrée non close, à usage
                 privatif, doit être équipée d&apos;
                 <strong className="text-primary font-semibold">
-                  au moins un dispositif de sécurité normalisé — barrière, alarme, couverture ou abri
+                  au moins un dispositif de sécurité normalisé (barrière, alarme, couverture ou abri
                 </strong>{' '}
-                — au titre de la{' '}
+               ) au titre de la{' '}
                 <a
                   href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000776783"
                   className={lienInterne}
@@ -621,8 +621,8 @@ export default function ArticlePlagePiscineBoisPage() {
                   rel="noopener noreferrer"
                 >
                   loi n° 2003-9 du 3 janvier 2003
-                </a>
-                , codifiée au Code de la construction et de l&apos;habitation.
+                </a>,
+                codifiée au Code de la construction et de l&apos;habitation.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;erreur de conception que nous voyons le plus souvent n&apos;est pas l&apos;absence de dispositif,
@@ -637,7 +637,7 @@ export default function ArticlePlagePiscineBoisPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Côté urbanisme, la logique est simple à retenir. Une{' '}
                 <strong className="text-primary font-semibold">plage de plain-pied</strong>, qui ne crée ni emprise ni
-                surélévation, est en principe dispensée de formalité — sauf en secteur protégé (abords d&apos;un
+                surélévation, est en principe dispensée de formalité, sauf en secteur protégé (abords d&apos;un
                 monument historique, site patrimonial remarquable, site classé), où une{' '}
                 <a
                   href="https://www.service-public.gouv.fr/particuliers/vosdroits/F17578"
@@ -677,9 +677,9 @@ export default function ArticlePlagePiscineBoisPage() {
               </p>
               <ul className="space-y-3 mb-5">
                 {[
-                  ['Pin maritime traité classe 4', 'environ 95 à 140 €/m² posé — l’entrée de gamme sérieuse, en ressource locale.'],
-                  ['Douglas ou mélèze', 'environ 120 à 170 €/m² posé — le compromis le plus fréquent sur nos chantiers girondins.'],
-                  ['Essence exotique', 'environ 200 à 280 €/m² posé — pour une stabilité et une longévité maximales.'],
+                  ['Pin maritime traité classe 4', 'environ 95 à 140 €/m² posé, l’entrée de gamme sérieuse, en ressource locale.'],
+                  ['Douglas ou mélèze', 'environ 120 à 170 €/m² posé, le compromis le plus fréquent sur nos chantiers girondins.'],
+                  ['Essence exotique', 'environ 200 à 280 €/m² posé, pour une stabilité et une longévité maximales.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-secondary-dark text-[22px] mt-0.5" aria-hidden="true">check_circle</span>
@@ -704,8 +704,8 @@ export default function ArticlePlagePiscineBoisPage() {
                 le sens des fibres, eau claire, jamais de nettoyeur haute pression qui décape les fibres tendres et
                 ouvre le bois), un{' '}
                 <strong className="text-primary font-semibold">saturateur tous les deux à trois ans</strong> si vous
-                tenez à la teinte d&apos;origine — sachant qu&apos;en plein sud, le grisaillement va plus vite
-                qu&apos;ailleurs et qu&apos;il n&apos;altère en rien la solidité —, un{' '}
+                tenez à la teinte d&apos;origine (sachant qu&apos;en plein sud, le grisaillement va plus vite
+                qu&apos;ailleurs et qu&apos;il n&apos;altère en rien la solidité), un{' '}
                 <strong className="text-primary font-semibold">passage de vis en début de saison</strong> pour resserrer
                 ce qui a bougé, et un{' '}
                 <strong className="text-primary font-semibold">dégagement des feuilles à l&apos;automne</strong>, en
@@ -715,12 +715,12 @@ export default function ArticlePlagePiscineBoisPage() {
                 Vous pouvez voir comment cela se traduit sur le terrain dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , et découvrir notre approche des terrasses et plages de bassin sur mesure sur notre page{' '}
+                </a>,
+                et découvrir notre approche des terrasses et plages de bassin sur mesure sur notre page{' '}
                 <a href="/terrasses-bois" className={lienInterne}>
                   aménagement extérieur
-                </a>{' '}
-                — de l&apos;étude des niveaux au dernier ajustage sur margelle.
+                </a>,{' '}
+               de l&apos;étude des niveaux au dernier ajustage sur margelle.
               </p>
             </section>
 
@@ -775,7 +775,7 @@ export default function ArticlePlagePiscineBoisPage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Choisir « le bois qui résiste au chlore » ne règle rien. Ce qui fait une plage de piscine agréable dans
               dix ans, c&apos;est une essence stable, une surface confortable pieds nus, une eau qui s&apos;éloigne du
-              bassin et une sous-face qui respire — plus des détails que personne ne remarque : jeu de dilatation,
+              bassin et une sous-face qui respire, plus des détails que personne ne remarque : jeu de dilatation,
               visserie inox A4, trappes démontables. Chez L&apos;Esprit Bois, entreprise qualifiée Qualibat à Libourne
               et dans toute la Gironde, nous relevons les niveaux, le dispositif de sécurité du bassin et les
               contraintes d&apos;urbanisme avant de parler de lames.

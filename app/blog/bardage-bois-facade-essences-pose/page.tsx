@@ -293,8 +293,8 @@ export default function ArticleBardageBoisFacadePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>28 juillet 2026</span>
@@ -311,7 +311,7 @@ export default function ArticleBardageBoisFacadePage() {
               <strong className="text-primary font-semibold">
                 L&apos;essence décide de l&apos;aspect et du prix de votre bardage bois ; c&apos;est la pose qui décide de
                 sa durée de vie. Douglas ou pin maritime pour une façade en circuit court girondin, mélèze pour un brun
-                plus dense, red cedar pour le haut de gamme — mais quelle que soit l&apos;essence retenue, tout se joue
+                plus dense, red cedar pour le haut de gamme, mais quelle que soit l&apos;essence retenue, tout se joue
                 sur une lame d&apos;air ventilée d&apos;au moins 20 mm derrière les lames, avec entrée d&apos;air basse et
                 sortie haute.
               </strong>{' '}
@@ -349,7 +349,7 @@ export default function ArticleBardageBoisFacadePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Troisième atout, moins visible : la légèreté. Un bardage bois pèse une fraction de ce que pèse un
                 parement maçonné. Sur une extension, une surélévation ou une façade dont on ne veut pas reprendre les
-                fondations, c&apos;est un argument décisif — la même logique que celle qui fait choisir
+                fondations, c&apos;est un argument décisif, la même logique que celle qui fait choisir
                 l&apos;ossature bois pour agrandir, détaillée dans notre guide sur{' '}
                 <a href="/blog/extension-ossature-bois-prix-m2" className={lienInterne}>
                   le prix au m² d&apos;une extension en ossature bois
@@ -361,7 +361,7 @@ export default function ArticleBardageBoisFacadePage() {
                 l&apos;analyse de cycle de vie de la RE2020 pour le carbone qu&apos;il stocke. Cela dit, poser un bardage
                 bois sur une maison individuelle existante ne relève d&apos;aucune obligation réglementaire.{' '}
                 <strong className="text-primary font-semibold">C&apos;est un choix, pas une contrainte</strong> : mieux
-                vaut le faire pour de bonnes raisons — l&apos;aspect, la protection, l&apos;isolation — que parce
+                vaut le faire pour de bonnes raisons, l&apos;aspect, la protection, l&apos;isolation, que parce
                 qu&apos;on croit y être obligé.
               </p>
             </section>
@@ -369,7 +369,7 @@ export default function ArticleBardageBoisFacadePage() {
             <Figure
               src="/images/source-adefrance/aggrandissement-accueil.webp"
               alt="Bardage bois vertical posé sur une extension accolée à un bâtiment ancien en pierre, chantier bardage bois en Gironde"
-              caption="Sur une reprise de bâti ancien, le bardage vient mourir contre la maçonnerie : ce sont ces jonctions — angle sur pierre, arase basse, raccord sous-toiture — qui prennent le plus de temps de pose."
+              caption="Sur une reprise de bâti ancien, le bardage vient mourir contre la maçonnerie : ce sont ces jonctions (angle sur pierre, arase basse, raccord sous-toiture) qui prennent le plus de temps de pose."
             />
 
             {/* Essences */}
@@ -425,7 +425,7 @@ export default function ArticleBardageBoisFacadePage() {
                 <strong className="text-primary font-semibold">pin maritime</strong> est l&apos;essence emblématique du
                 massif des Landes de Gascogne, à deux pas de nos chantiers, et le douglas dispose d&apos;une filière
                 solide en Nouvelle-Aquitaine. À performance équivalente en façade, un bois qui a parcouru cent
-                kilomètres nous paraît plus cohérent qu&apos;un bois qui a traversé un océan — sans dogmatisme : sur une
+                kilomètres nous paraît plus cohérent qu&apos;un bois qui a traversé un océan, sans dogmatisme : sur une
                 façade très exposée ou un projet architectural précis, le red cedar garde ses arguments.
               </p>
             </section>
@@ -472,8 +472,8 @@ export default function ArticleBardageBoisFacadePage() {
                 même logique s&apos;applique au sol : nous l&apos;expliquons en détail dans notre guide sur{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   le choix du bois pour une terrasse extérieure
-                </a>
-                , où la classe d&apos;emploi monte encore d&apos;un cran.
+                </a>,
+                où la classe d&apos;emploi monte encore d&apos;un cran.
               </p>
             </section>
 
@@ -514,7 +514,7 @@ export default function ArticleBardageBoisFacadePage() {
                 visuellement le bâtiment et reste la pose la plus courante ; le{' '}
                 <strong className="text-primary font-semibold">vertical</strong> élance une façade, évacue
                 remarquablement bien l&apos;eau de ruissellement, mais impose une ossature croisée derrière. Ce choix a
-                donc une conséquence directe sur la structure de pose — et parfois sur le budget.
+                donc une conséquence directe sur la structure de pose, et parfois sur le budget.
               </p>
             </section>
 
@@ -666,7 +666,7 @@ export default function ArticleBardageBoisFacadePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le dossier doit présenter la façade concernée, le matériau retenu, la teinte, le sens de pose et
                 l&apos;intégration au bâti existant et à son environnement. Autrement dit, les décisions techniques que
-                nous venons de passer en revue — essence, profil, horizontal ou vertical, finition — sont aussi des
+                nous venons de passer en revue (essence, profil, horizontal ou vertical, finition) sont aussi des
                 décisions administratives : mieux vaut les arrêter avant de déposer, plutôt que de devoir reprendre le
                 dossier.
               </p>
@@ -724,7 +724,7 @@ export default function ArticleBardageBoisFacadePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 C&apos;est pourquoi nous chiffrons toujours après visite : deux maisons voisines, même surface de
                 façade, même essence, peuvent aboutir à des devis sensiblement différents. Le contraire relèverait de
-                l&apos;approximation. Le même principe s&apos;applique aux autres ouvrages bois — nous l&apos;expliquons
+                l&apos;approximation. Le même principe s&apos;applique aux autres ouvrages bois, nous l&apos;expliquons
                 aussi dans notre comparatif{' '}
                 <a href="/blog/abri-jardin-bois-kit-ou-sur-mesure" className={lienInterne}>
                   abri de jardin en kit ou sur-mesure
@@ -747,7 +747,7 @@ export default function ArticleBardageBoisFacadePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un bardage bois en Gironde intérieure n&apos;a pas les mêmes contraintes qu&apos;un bardage sur le
                 Bassin. Ici, pas d&apos;embruns : la classe 3.1 suffit dans la plupart des situations, et l&apos;ennemi
-                numéro un n&apos;est pas le sel mais l&apos;humidité qui stagne — pieds de façade mal dégagés, végétation
+                numéro un n&apos;est pas le sel mais l&apos;humidité qui stagne, pieds de façade mal dégagés, végétation
                 plaquée contre le mur, gouttières qui débordent, lame d&apos;air obstruée. C&apos;est là que nous
                 regardons en premier quand nous venons voir une façade à habiller.
               </p>
@@ -808,7 +808,7 @@ export default function ArticleBardageBoisFacadePage() {
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
               Choisissez l&apos;essence pour son aspect, son origine et votre budget ; choisissez votre poseur pour la
               ventilation qu&apos;il saura ménager derrière les lames. C&apos;est ce diagnostic que nous menons chez
-              L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde — essence, profil de
+              L&apos;Esprit Bois, entreprise qualifiée Qualibat, à Libourne et dans toute la Gironde, essence, profil de
               pose, déclaration préalable et budget compris.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

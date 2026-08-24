@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -76,7 +76,7 @@ const jsonld = [
     headline:
       "Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment",
     description:
-      "Terrasse, bardage, clôture et brise-vue, carport, abri de jardin : chacun demande un traitement et une fréquence différents. Quand la fenêtre d'automne se ferme, ce que fait vraiment un saturateur, une huile, une lasure ou un dégriseur, les gestes qui gâchent le travail et ce qu'on peut faire soi-même — le guide d'un artisan à Libourne, en Gironde.",
+      "Terrasse, bardage, clôture et brise-vue, carport, abri de jardin : chacun demande un traitement et une fréquence différents. Quand la fenêtre d'automne se ferme, ce que fait vraiment un saturateur, une huile, une lasure ou un dégriseur, les gestes qui gâchent le travail et ce qu'on peut faire soi-même, le guide d'un artisan à Libourne, en Gironde.",
     image: 'https://lesprit-bois.fr' + COVER,
     author: AUTEUR_REF,
     publisher: {
@@ -114,7 +114,7 @@ const jsonld = [
         name: "Est-il trop tard pour traiter son bois si l'automne est déjà avancé ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Souvent, oui — et c'est une bonne nouvelle, parce que ne rien faire vaut mieux que mal faire. Un saturateur ne pénètre que dans un bois sec, appliqué par temps doux, sans pluie annoncée derrière. Quand le bois ne parvient plus à sécher entre deux averses, quand les matinées sont humides et les journées courtes, le produit reste en surface : il ne protège pas, il fait une pellicule qui partira au premier hiver et qu'il faudra décaper au printemps. Mieux vaut nettoyer, dégager ce qui retient l'eau, et reporter l'application au printemps suivant.",
+          text: "Souvent, oui, et c'est une bonne nouvelle, parce que ne rien faire vaut mieux que mal faire. Un saturateur ne pénètre que dans un bois sec, appliqué par temps doux, sans pluie annoncée derrière. Quand le bois ne parvient plus à sécher entre deux averses, quand les matinées sont humides et les journées courtes, le produit reste en surface : il ne protège pas, il fait une pellicule qui partira au premier hiver et qu'il faudra décaper au printemps. Mieux vaut nettoyer, dégager ce qui retient l'eau, et reporter l'application au printemps suivant.",
         },
       },
       {
@@ -122,7 +122,7 @@ const jsonld = [
         name: 'Faut-il traiter une terrasse et un bardage à la même fréquence ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Non, et c'est l'erreur la plus fréquente. Une terrasse reçoit l'eau à plat, on marche dessus et on y traîne des meubles : la protection s'y use vite, et un passage annuel ou tous les deux ans est courant. Un bardage est vertical, il s'égoutte tout seul et personne ne le piétine : il tient beaucoup plus longtemps, et ce qui l'abîme, ce sont ses points singuliers — bas de bardage, appuis de fenêtre, retours de tableau. Une clôture prend le vent et l'eau des deux côtés, un carport ne souffre en général que par ses pieds de poteaux. C'est l'exposition de l'ouvrage qui décide, jamais le calendrier.",
+          text: "Non, et c'est l'erreur la plus fréquente. Une terrasse reçoit l'eau à plat, on marche dessus et on y traîne des meubles : la protection s'y use vite, et un passage annuel ou tous les deux ans est courant. Un bardage est vertical, il s'égoutte tout seul et personne ne le piétine : il tient beaucoup plus longtemps, et ce qui l'abîme, ce sont ses points singuliers, bas de bardage, appuis de fenêtre, retours de tableau. Une clôture prend le vent et l'eau des deux côtés, un carport ne souffre en général que par ses pieds de poteaux. C'est l'exposition de l'ouvrage qui décide, jamais le calendrier.",
         },
       },
       {
@@ -130,7 +130,7 @@ const jsonld = [
         name: 'Mon bois est devenu gris : faut-il le traiter en urgence ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Non. Le grisaillement est un phénomène de surface, esthétique et réversible : il n'enlève rien à la solidité de l'ouvrage. Ce qui doit vous alerter, c'est l'eau qui stagne, les fentes qui s'ouvrent, les extrémités de lames qui noircissent et les zones molles au pied d'un poteau. On traite pour l'eau, pas pour la couleur. Si vous souhaitez retrouver la teinte d'origine, c'est un travail de rénovation à part entière — dégrisage, ponçage, parfois remplacement de lames — que nous détaillons dans notre guide de rénovation de terrasse.",
+          text: "Non. Le grisaillement est un phénomène de surface, esthétique et réversible : il n'enlève rien à la solidité de l'ouvrage. Ce qui doit vous alerter, c'est l'eau qui stagne, les fentes qui s'ouvrent, les extrémités de lames qui noircissent et les zones molles au pied d'un poteau. On traite pour l'eau, pas pour la couleur. Si vous souhaitez retrouver la teinte d'origine, c'est un travail de rénovation à part entière (dégrisage, ponçage, parfois remplacement de lames) que nous détaillons dans notre guide de rénovation de terrasse.",
         },
       },
       {
@@ -146,7 +146,7 @@ const jsonld = [
         name: 'Saturateur, huile ou lasure : lequel choisir pour un ouvrage extérieur ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Le saturateur pénètre dans le bois sans former de film : il se recharge par-dessus sans décapage, ce qui en fait la solution la plus simple à entretenir sur les ouvrages horizontaux, terrasses en tête. L'huile fonctionne sur le même principe, en plus nourrissant, mais elle marque davantage. La lasure, elle, forme un film : elle tient bien sur du vertical protégé — un bardage sous débord, une porte d'abri — mais s'écaille sur une surface piétinée et impose un décapage complet à la reprise. Le dégriseur n'est pas un traitement : c'est un nettoyant qui prépare le bois avant traitement. Dans tous les cas, la notice du fabricant fait foi pour son produit.",
+          text: "Le saturateur pénètre dans le bois sans former de film : il se recharge par-dessus sans décapage, ce qui en fait la solution la plus simple à entretenir sur les ouvrages horizontaux, terrasses en tête. L'huile fonctionne sur le même principe, en plus nourrissant, mais elle marque davantage. La lasure, elle, forme un film : elle tient bien sur du vertical protégé (un bardage sous débord, une porte d'abri) mais s'écaille sur une surface piétinée et impose un décapage complet à la reprise. Le dégriseur n'est pas un traitement : c'est un nettoyant qui prépare le bois avant traitement. Dans tous les cas, la notice du fabricant fait foi pour son produit.",
         },
       },
       {
@@ -172,7 +172,7 @@ const parOuvrage = [
     'Bardage',
     'Les points singuliers : bas de bardage, appuis, retours de tableau',
     'Contrôle des zones basses ; traitement seulement si la teinte compte',
-    'Espacé — plusieurs années entre deux passages',
+    'Espacé, plusieurs années entre deux passages',
   ],
   [
     'Clôture et brise-vue',
@@ -190,7 +190,7 @@ const parOuvrage = [
     'Abri de jardin, abri à bûches',
     'Le contact au sol, la stagnation derrière les bûches ou les outils',
     'Vérifier plots et ventilation avant de penser au produit',
-    'Rare — la ventilation prime sur le traitement',
+    'Rare, la ventilation prime sur le traitement',
   ],
 ];
 
@@ -199,7 +199,7 @@ const faq = [
     q: "Est-il trop tard pour traiter son bois si l'automne est déjà avancé ?",
     r: (
       <>
-        Souvent, oui — et c&apos;est une bonne nouvelle, parce que ne rien faire vaut mieux que mal faire. Un saturateur
+        Souvent, oui, et c&apos;est une bonne nouvelle, parce que ne rien faire vaut mieux que mal faire. Un saturateur
         ne pénètre que dans un bois sec, appliqué par temps doux, sans pluie annoncée derrière. Quand le bois ne parvient
         plus à sécher entre deux averses, quand les matinées sont humides et les journées courtes, le produit reste en
         surface : il ne protège pas, il fait une pellicule qui partira au premier hiver et qu&apos;il faudra décaper au
@@ -215,7 +215,7 @@ const faq = [
         Non, et c&apos;est l&apos;erreur la plus fréquente. Une terrasse reçoit l&apos;eau à plat, on marche dessus et on
         y traîne des meubles : la protection s&apos;y use vite, et un passage annuel ou tous les deux ans est courant. Un
         bardage est vertical, il s&apos;égoutte tout seul et personne ne le piétine : il tient beaucoup plus longtemps, et
-        ce qui l&apos;abîme, ce sont ses points singuliers — bas de bardage, appuis de fenêtre, retours de tableau. Une
+        ce qui l&apos;abîme, ce sont ses points singuliers, bas de bardage, appuis de fenêtre, retours de tableau. Une
         clôture prend le vent et l&apos;eau des deux côtés, un carport ne souffre en général que par ses pieds de
         poteaux. C&apos;est l&apos;exposition de l&apos;ouvrage qui décide, jamais le calendrier.
       </>
@@ -229,7 +229,7 @@ const faq = [
         de l&apos;ouvrage. Ce qui doit vous alerter, c&apos;est l&apos;eau qui stagne, les fentes qui s&apos;ouvrent, les
         extrémités de lames qui noircissent et les zones molles au pied d&apos;un poteau. On traite pour l&apos;eau, pas
         pour la couleur. Si vous souhaitez retrouver la teinte d&apos;origine, c&apos;est un travail de rénovation à part
-        entière — dégrisage, ponçage, parfois remplacement de lames — que nous détaillons dans notre{' '}
+        entière (dégrisage, ponçage, parfois remplacement de lames) que nous détaillons dans notre{' '}
         <a href="/blog/renover-terrasse-bois-existante" className={lienInterne}>
           guide de rénovation de terrasse
         </a>
@@ -256,7 +256,7 @@ const faq = [
         Le saturateur pénètre dans le bois sans former de film : il se recharge par-dessus sans décapage, ce qui en fait
         la solution la plus simple à entretenir sur les ouvrages horizontaux, terrasses en tête. L&apos;huile fonctionne
         sur le même principe, en plus nourrissant, mais elle marque davantage. La lasure, elle, forme un film : elle
-        tient bien sur du vertical protégé — un bardage sous débord, une porte d&apos;abri — mais s&apos;écaille sur une
+        tient bien sur du vertical protégé, un bardage sous débord, une porte d&apos;abri, mais s&apos;écaille sur une
         surface piétinée et impose un décapage complet à la reprise. Le dégriseur n&apos;est pas un traitement : c&apos;est
         un nettoyant qui prépare le bois avant traitement. Dans tous les cas, la notice du fabricant fait foi pour son
         produit.
@@ -323,8 +323,8 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>22 août 2026</span>
@@ -339,7 +339,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
           <div className="max-w-3xl mx-auto px-6 md:px-16">
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
               <strong className="text-primary font-semibold">
-                Il reste quelques semaines pour traiter ses bois extérieurs — après, ce n&apos;est plus la peine.
+                Il reste quelques semaines pour traiter ses bois extérieurs, après, ce n&apos;est plus la peine.
               </strong>{' '}
               Un saturateur ne pénètre que sur un bois sec, par temps doux, et sans pluie derrière : passé l&apos;automne,
               le produit reste en surface et part au premier hiver. Et tant qu&apos;à ouvrir le pot, autant savoir ce
@@ -351,8 +351,8 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               stagne, les fibres qui gonflent puis se fendent, et les points où l&apos;eau ne repart jamais. Dernière
               précision, et elle compte : ce guide{' '}
               <strong className="text-primary font-semibold">ne parle pas que de terrasse</strong>. Il s&apos;adresse au
-              propriétaire d&apos;ouvrages en bois — terrasse, bardage, clôture et brise-vue, carport, abri de jardin,
-              abri à bûches — parce qu&apos;aucun de ces ouvrages ne demande le même traitement ni la même fréquence.
+              propriétaire d&apos;ouvrages en bois (terrasse, bardage, clôture et brise-vue, carport, abri de jardin,
+              abri à bûches) parce qu&apos;aucun de ces ouvrages ne demande le même traitement ni la même fréquence.
             </p>
           </div>
         </section>
@@ -360,10 +360,10 @@ export default function ArticleTraiterBoisAvantHiverPage() {
         {/* Corps */}
         <article className="pb-section-padding bg-surface">
           <div className="max-w-3xl mx-auto px-6 md:px-16 space-y-14">
-            {/* 1 — Pourquoi l'automne */}
+            {/* 1, Pourquoi l'automne */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Pourquoi l&apos;automne — et pourquoi ça devient inutile passé une certaine date
+                Pourquoi l&apos;automne, et pourquoi ça devient inutile passé une certaine date
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La fin de l&apos;été et le début de l&apos;automne réunissent, en Gironde, les trois conditions qu&apos;un
@@ -385,13 +385,13 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 C&apos;est pour cette raison que nous disons régulièrement à nos clients, en octobre ou en novembre, de{' '}
                 <em>ne pas</em> traiter. Ne rien faire n&apos;abîme rien : un bois nu passe l&apos;hiver, il grise, c&apos;est
-                tout. Un bois mal traité, lui, se paie deux fois — une fois en produit perdu, une fois en ponçage. Si la
+                tout. Un bois mal traité, lui, se paie deux fois, une fois en produit perdu, une fois en ponçage. Si la
                 fenêtre est passée, le bon geste d&apos;automne devient un geste de nettoyage et de dégagement, que nous
                 détaillons plus bas, et l&apos;application se reporte au printemps.
               </p>
             </section>
 
-            {/* 2 — L'eau, pas la couleur */}
+            {/* 2, L'eau, pas la couleur */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ce qu&apos;on traite vraiment : l&apos;eau, pas la couleur
@@ -403,8 +403,8 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 de l&apos;ouvrage. Le sujet est tranché en détail dans notre guide de{' '}
                 <a href="/blog/renover-terrasse-bois-existante" className={lienInterne}>
                   rénovation d&apos;une terrasse existante
-                </a>{' '}
-                — on n&apos;y revient pas ici.
+                </a>,{' '}
+               on n&apos;y revient pas ici.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Ce qui abîme un ouvrage, c&apos;est l&apos;eau. Plus précisément :{' '}
@@ -414,7 +414,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 Le bois absorbe, gonfle, puis sèche et se rétracte. Répétez ce cycle des dizaines de fois par an et les
                 fibres finissent par céder : une fente s&apos;ouvre, l&apos;eau y entre plus profondément, la fente
                 s&apos;élargit, et vous avez ouvert une autoroute vers le cœur de la pièce. Un traitement pénétrant ne
-                rend pas le bois imperméable — rien ne le fait — mais il ralentit franchement cette absorption, donc le
+                rend pas le bois imperméable, rien ne le fait, mais il ralentit franchement cette absorption, donc le
                 cycle.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -443,7 +443,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                   l&apos;institut technologique FCBA
                 </a>
                 . Un bois choisi pour son exposition demandera toujours moins d&apos;entretien qu&apos;un bois rattrapé
-                au produit — c&apos;est le sujet de notre article sur{' '}
+                au produit, c&apos;est le sujet de notre article sur{' '}
                 <a href="/blog/quel-bois-pour-terrasse-exterieure" className={lienInterne}>
                   le choix des essences pour l&apos;extérieur
                 </a>
@@ -459,7 +459,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               caption="Les fentes suivent le fil et s'ouvrent d'abord autour des nœuds ; les graviers coincés dans les jeux entre lames, eux, gardent l'eau bien après l'averse."
             />
 
-            {/* 3 — Les conditions */}
+            {/* 3, Les conditions */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Les conditions qui décident du résultat : bois sec, temps doux, pas de pluie derrière
@@ -476,7 +476,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 « Sec » mérite une précision, parce que c&apos;est le piège le plus courant. Un bois sec en surface
                 n&apos;est pas un bois sec. Après une pluie, il faut plusieurs journées franchement sèches pour que
-                l&apos;eau reparte de l&apos;épaisseur des lames — et bien davantage sur une terrasse peu ventilée en
+                l&apos;eau reparte de l&apos;épaisseur des lames, et bien davantage sur une terrasse peu ventilée en
                 sous-face, ou sur une clôture entourée de végétation. Un bois lavé le matin et traité l&apos;après-midi,
                 c&apos;est de l&apos;eau qu&apos;on enferme sous le produit.
               </p>
@@ -484,14 +484,14 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 L&apos;automne ajoute son propre piège : la rosée. Les matinées se lèvent humides même quand la journée
                 s&apos;annonce belle. Ce que nous conseillons à nos clients, c&apos;est d&apos;attendre que le bois ait
                 réellement perdu son humidité de nuit avant de commencer, et de finir assez tôt dans la journée pour que
-                le produit ait le temps de prendre avant la rosée du soir. Le reste — dilution, nombre de couches, délai
-                entre deux passes, entretien du matériel — est propre à chaque produit :{' '}
+                le produit ait le temps de prendre avant la rosée du soir. Le reste (dilution, nombre de couches, délai
+                entre deux passes, entretien du matériel) est propre à chaque produit :{' '}
                 <strong className="text-primary font-semibold">la notice du fabricant fait foi</strong>, et elle prime
                 sur tout ce qu&apos;on peut lire ailleurs, y compris ici.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Dernier point, valable toute l&apos;année : on ne traite jamais un bois sale. Mousses, dépôts verts,
-                pollens, résidus gras d&apos;un barbecue — tout ce qui reste sous le produit y reste durablement, et la
+                pollens, résidus gras d&apos;un barbecue, tout ce qui reste sous le produit y reste durablement, et la
                 mousse recouverte continue de travailler à l&apos;abri. Nettoyage doux d&apos;abord, séchage complet
                 ensuite, produit en dernier. Et si l&apos;ouvrage sort d&apos;un été de plein soleil, notre guide de{' '}
                 <a href="/blog/proteger-terrasse-bois-canicule-entretien-ete" className={lienInterne}>
@@ -502,7 +502,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               </p>
             </section>
 
-            {/* 4 — Chaque ouvrage */}
+            {/* 4, Chaque ouvrage */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Terrasse, bardage, clôture, carport : chacun son traitement et sa fréquence
@@ -545,7 +545,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 et des tables. C&apos;est le seul de la liste sur lequel un passage rapproché se justifie vraiment. À
                 l&apos;inverse, <strong className="text-primary font-semibold">le bardage</strong> est vertical : il
                 s&apos;égoutte seul, personne ne l&apos;use, et il peut tenir des années sans intervention. Le regarder
-                comme une terrasse verticale conduit à le traiter beaucoup trop souvent — pour rien. Ce qu&apos;il faut y
+                comme une terrasse verticale conduit à le traiter beaucoup trop souvent, pour rien. Ce qu&apos;il faut y
                 surveiller, ce sont ses points singuliers, ceux dont nous parlons dans notre guide du{' '}
                 <a href="/blog/bardage-bois-facade-essences-pose" className={lienInterne}>
                   bardage bois en façade
@@ -557,7 +557,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 Ils prennent le vent et l&apos;eau sur leurs deux faces, et surtout ils vivent au contact du sol et de la
                 végétation : un lierre qui monte, une haie qui touche, un massif arrosé au pied d&apos;un poteau
                 entretiennent une humidité permanente qu&apos;aucun produit ne compense. Dégager la base et tailler ce
-                qui touche vaut mieux qu&apos;une couche supplémentaire — le sujet est développé dans notre guide{' '}
+                qui touche vaut mieux qu&apos;une couche supplémentaire, le sujet est développé dans notre guide{' '}
                 <a href="/blog/cloture-brise-vue-bois-guide" className={lienInterne}>
                   clôture et brise-vue en bois
                 </a>
@@ -566,15 +566,15 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 <strong className="text-primary font-semibold">Le carport, la pergola et l&apos;abri de jardin</strong>,
-                enfin, sont les ouvrages les moins demandeurs — à une condition : qu&apos;ils aient été bien conçus. Une
+                enfin, sont les ouvrages les moins demandeurs, à une condition : qu&apos;ils aient été bien conçus. Une
                 structure ventilée, une toiture qui évacue, des poteaux désolidarisés du sol par des pieds métalliques,
                 et le traitement de surface redevient un choix esthétique. Ce qui compte, sur ces ouvrages, c&apos;est le
                 contrôle d&apos;automne : dégager les feuilles de la couverture et des évacuations, et inspecter les
                 pieds de poteaux. Même logique pour{' '}
                 <a href="/blog/abri-buches-bois-stockage-sechage" className={lienInterne}>
                   l&apos;abri à bûches
-                </a>
-                , où la ventilation prime largement sur le produit.
+                </a>,
+                où la ventilation prime largement sur le produit.
               </p>
             </section>
 
@@ -586,7 +586,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               caption="Les couvre-joints ferment le jeu entre lames et le soubassement maçonné tient le bois à l'écart des rejaillissements du sol : deux détails de pose qui espacent l'entretien plus sûrement qu'une couche de produit."
             />
 
-            {/* 5 — Les produits */}
+            {/* 5, Les produits */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Saturateur, huile, lasure, dégriseur : ce que chaque produit fait vraiment
@@ -602,8 +602,8 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 {[
                   ['Le saturateur', 'pénétrant. Il ne fait pas de film, ne s’écaille donc pas, et s’use en s’éclaircissant progressivement. Son immense avantage : on le recharge par-dessus après un simple nettoyage, sans décapage. C’est la solution la plus raisonnable sur tout ce qui est horizontal et piétiné.'],
                   ['L’huile', 'pénétrante elle aussi, plus nourrissante, avec un rendu souvent plus profond. En contrepartie, elle marque davantage les taches et retient plus la poussière. Le choix est autant affaire de goût que de technique.'],
-                  ['La lasure', 'filmogène. Elle tient très bien sur du vertical protégé — un bardage sous débord, une porte d’abri, un volet — mais sur une surface piétinée ou en plein soleil, le film finit par craqueler, et la reprise impose alors un décapage complet. Nous ne la conseillons pas sur une terrasse.'],
-                  ['Le dégriseur', 'ce n’est pas un traitement. C’est un nettoyant qui redonne au bois sa teinte avant application. Il se rince soigneusement, et le bois doit ensuite sécher complètement — ce qui, en arrière-saison, suffit parfois à faire sortir le chantier de la fenêtre.'],
+                  ['La lasure', 'filmogène. Elle tient très bien sur du vertical protégé (un bardage sous débord, une porte d’abri, un volet) mais sur une surface piétinée ou en plein soleil, le film finit par craqueler, et la reprise impose alors un décapage complet. Nous ne la conseillons pas sur une terrasse.'],
+                  ['Le dégriseur', 'ce n’est pas un traitement. C’est un nettoyant qui redonne au bois sa teinte avant application. Il se rince soigneusement, et le bois doit ensuite sécher complètement, ce qui, en arrière-saison, suffit parfois à faire sortir le chantier de la fenêtre.'],
                   ['Le vernis et la peinture', 'ils créent le film le plus étanche… et le plus fragile en extérieur. Sous nos climats, l’eau finit par passer par un défaut, et elle ne peut plus repartir. Nous les réservons à des ouvrages abrités.'],
                 ].map(([titre, texte]) => (
                   <li key={titre} className="flex items-start gap-3">
@@ -615,7 +615,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Vous ne trouverez ici ni marque, ni rendement au mètre carré, ni durée de tenue annoncée — et c&apos;est
+                Vous ne trouverez ici ni marque, ni rendement au mètre carré, ni durée de tenue annoncée, et c&apos;est
                 volontaire. Ces valeurs varient d&apos;une formulation à l&apos;autre, et la seule source qui engage
                 quelqu&apos;un, c&apos;est la notice du produit que vous avez entre les mains. Une seule règle
                 transversale, en revanche :{' '}
@@ -634,10 +634,10 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               caption="Chaque poteau est relevé sur un pied métallique galvanisé : les quelques centimètres de vide sous le bois suffisent à lui éviter de pomper l'eau du gravier."
             />
 
-            {/* 6 — Les gestes qui gâchent */}
+            {/* 6, Les gestes qui gâchent */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
-                Les gestes qui gâchent le travail — le nettoyeur haute pression en tête
+                Les gestes qui gâchent le travail, le nettoyeur haute pression en tête
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Commençons par celui qui nous coûte le plus de rattrapages.{' '}
@@ -646,7 +646,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 </strong>{' '}
                 Le jet ne se contente pas d&apos;enlever la saleté : il attaque la matière, creuse le bois tendre entre
                 les cernes et laisse une surface pelucheuse, hérissée de fibres relevées. Le résultat est spectaculaire
-                le jour même — le bois n&apos;a jamais paru si propre — et désastreux ensuite : une surface ouverte boit
+                le jour même, le bois n&apos;a jamais paru si propre, et désastreux ensuite : une surface ouverte boit
                 l&apos;eau, retient la saleté et grise plus vite. On répare au ponçage, ce qui coûte bien plus cher que
                 le nettoyage économisé.
               </p>
@@ -687,7 +687,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               caption="Les têtes de pointes marquent le bois de traînées sombres : une coulure autour d'une fixation trahit une lame qui ne sèche plus entre deux pluies."
             />
 
-            {/* 7 — Soi-même ou nous */}
+            {/* 7, Soi-même ou nous */}
             <section>
               <h2 className="font-headline-md text-headline-md text-primary mb-5">
                 Ce qu&apos;on peut faire soi-même, ce qu&apos;on nous confie (Libourne, Gironde)
@@ -705,7 +705,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 Ce qu&apos;on nous confie relève d&apos;autre chose. D&apos;abord la hauteur : un bardage de façade
                 impose un échafaudage ou une nacelle, et une façade entière n&apos;est pas une échelle posée contre un
                 mur. Ensuite le rattrapage : quand le bois est trop marqué pour un simple entretien, il faut dégriser,
-                poncer, parfois remplacer des lames, et l&apos;ordre des opérations compte autant que le produit — c&apos;est
+                poncer, parfois remplacer des lames, et l&apos;ordre des opérations compte autant que le produit, c&apos;est
                 le sujet de notre guide de{' '}
                 <a href="/blog/renover-terrasse-bois-existante" className={lienInterne}>
                   rénovation de terrasse
@@ -717,7 +717,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 Côté budget, et pour rester honnête : sur nos propres chantiers en 2026, autour de Libourne, un nettoyage
                 doux suivi d&apos;une application de saturateur sur une terrasse accessible se situe le plus souvent{' '}
                 <strong className="text-primary font-semibold">entre 15 et 35 € du mètre carré</strong>, produit compris.
-                Un rattrapage complet — dégrisage, ponçage, puis traitement — se situe plutôt{' '}
+                Un rattrapage complet (dégrisage, ponçage, puis traitement) se situe plutôt{' '}
                 <strong className="text-primary font-semibold">entre 30 et 60 € du mètre carré</strong>. Sur un bardage,
                 ce n&apos;est plus la surface qui commande mais l&apos;accès : le poste échafaudage peut peser autant que
                 le reste. Ce sont des ordres de grandeur constatés, pas un tarif : seul un devis établi après avoir vu
@@ -728,16 +728,16 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 sur ceux que nous découvrons. Vous pouvez voir le type d&apos;ouvrages dont nous parlons dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
-                </a>
-                , et découvrir notre approche de{' '}
+                </a>,
+                et découvrir notre approche de{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   l&apos;aménagement extérieur
                 </a>{' '}
                 et des{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
-                </a>{' '}
-                — parce qu&apos;un ouvrage bien conçu, ventilé et bien posé est celui qui vous demandera le moins de
+                </a>,{' '}
+               parce qu&apos;un ouvrage bien conçu, ventilé et bien posé est celui qui vous demandera le moins de
                 traitement au fil des années.
               </p>
             </section>
@@ -788,7 +788,7 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               sans dommage, un bois mal traité se paie deux fois. Et n&apos;oubliez pas que votre terrasse, votre
               bardage, votre clôture et votre carport ne demandent ni le même produit ni le même rythme. Chez L&apos;Esprit
               Bois, entreprise qualifiée Qualibat installée près de Libourne, nous entretenons, diagnostiquons et
-              rénovons les ouvrages en bois dans toute la Gironde — y compris ceux que nous n&apos;avons pas construits.
+              rénovons les ouvrages en bois dans toute la Gironde, y compris ceux que nous n&apos;avons pas construits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

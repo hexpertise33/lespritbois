@@ -6,7 +6,7 @@ import { CONTACT } from '@/lib/data/navigation';
 /**
  * Barre CTA flottante, mobile uniquement : téléphone + lien vers le
  * formulaire du bas de page. N'apparaît qu'une fois le héros (repéré par
- * l'attribut data-devis-hero) sorti de l'écran — évite un doublon avec le
+ * l'attribut data-devis-hero) sorti de l'écran, évite un doublon avec le
  * CTA déjà visible en haut de page. Positionnée sous la bannière cookies
  * (z-[200] dans ConsentBanner) : celle-ci reste au-dessus tant qu'elle est
  * affichée, cette barre prend le relais dès qu'elle est fermée, sans code

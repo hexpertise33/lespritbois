@@ -176,7 +176,7 @@ const jsonld = [
         name: 'Êtes-vous qualifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat — une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière —, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat (une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière), et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.",
         },
       },
     ],
@@ -837,7 +837,7 @@ export default function ConstructionsBoisPage() {
               Constructions réalisées à Libourne et en Gironde
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
-              Trois de ces chantiers — la toiture conservée à Génissac, la maison de 150 m² à Rauzan, et la grange reprise à Clérac, juste au-delà de la limite départementale — sont racontés en détail sur notre page <a href="/constructeur-ossature-bois-gironde" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">constructeur à ossature bois en Gironde</a>, avec le point dur de chacun.
+              Trois de ces chantiers (la toiture conservée à Génissac, la maison de 150 m² à Rauzan, et la grange reprise à Clérac, juste au-delà de la limite départementale) sont racontés en détail sur notre page <a href="/constructeur-ossature-bois-gironde" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">constructeur à ossature bois en Gironde</a>, avec le point dur de chacun.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
@@ -885,8 +885,8 @@ export default function ConstructionsBoisPage() {
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 l'ensemble de nos réalisations
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/amenagement-exterieur"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -1021,8 +1021,8 @@ export default function ConstructionsBoisPage() {
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   un seul interlocuteur
-                </a>
-                , de l'étude à la mise hors d'air.
+                </a>,
+                de l'étude à la mise hors d'air.
               </p>
             </div>
           </div>

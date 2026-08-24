@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -289,8 +289,8 @@ export default function ArticleDimensionsCarportPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>8 août 2026</span>
@@ -307,14 +307,14 @@ export default function ArticleDimensionsCarportPage() {
               <strong className="text-primary font-semibold">
                 La cote qui rate un carport n&apos;est presque jamais la longueur : c&apos;est la hauteur libre sous
                 traverse et la place de manœuvre pour ouvrir les portières. Avant de comparer le moindre kit, mesurez
-                votre véhicule réel — rétroviseurs dépliés, hauteur avec barres, coffre de toit ou porte-vélos — puis
+                votre véhicule réel (rétroviseurs dépliés, hauteur avec barres, coffre de toit ou porte-vélos) puis
                 ajoutez le dégagement nécessaire pour descendre de voiture.
               </strong>{' '}
               Un carport aux bonnes cotes sur le papier devient inutilisable dès qu&apos;on y met un SUV chargé, un
               utilitaire ou un van aménagé. Sur nos chantiers en Gironde, nous voyons régulièrement des abris tout neufs
               où l&apos;on n&apos;ouvre plus la portière conducteur qu&apos;à moitié, ou sous lesquels on ne rentre plus
               dès qu&apos;on a monté le coffre de toit pour partir en vacances. Voici comment poser les bonnes cotes,
-              dans le bon ordre, que votre carport soit en bois ou en aluminium — nous vendons et posons les deux.
+              dans le bon ordre, que votre carport soit en bois ou en aluminium, nous vendons et posons les deux.
             </p>
           </div>
         </section>
@@ -335,7 +335,7 @@ export default function ArticleDimensionsCarportPage() {
                 3,5 t et de moins de 1,90 m de hauteur : elle{' '}
                 <strong className="text-primary font-semibold">ne s&apos;applique pas à un carport privé</strong>. Et
                 elle décrit un minimum vital de parking urbain, pas un confort de maison. Elle reste un excellent
-                plancher — on ne descend pas en dessous — mais un mauvais objectif.
+                plancher, on ne descend pas en dessous, mais un mauvais objectif.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Confrontons-la aux voitures que nos clients garent réellement. Un SUV compact 2026 comme la{' '}
@@ -345,7 +345,7 @@ export default function ArticleDimensionsCarportPage() {
                 du kit, ni en tête de fiche technique : la{' '}
                 <strong className="text-primary font-semibold">largeur rétroviseurs dépliés</strong>, qui atteint
                 environ 2,08 à 2,11 m sur ces deux modèles. Dans une place de 2,50 m, il reste donc une vingtaine de
-                centimètres de chaque côté — de quoi passer, pas de quoi vivre.
+                centimètres de chaque côté, de quoi passer, pas de quoi vivre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deuxième piège des kits : la dimension annoncée. Un carport « 3 × 5 m » désigne très souvent la{' '}
@@ -379,14 +379,14 @@ export default function ArticleDimensionsCarportPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est de très loin l&apos;erreur la plus fréquente, et la plus difficile à rattraper une fois
                 l&apos;ouvrage posé. Une fiche produit annonce une{' '}
-                <strong className="text-primary font-semibold">hauteur hors tout</strong> — du sol au faîtage ou au
+                <strong className="text-primary font-semibold">hauteur hors tout</strong>, du sol au faîtage ou au
                 point haut de la couverture. Ce qui vous intéresse, c&apos;est la{' '}
                 <strong className="text-primary font-semibold">hauteur libre sous traverse</strong> : la distance entre
                 le sol fini et le point le plus bas de la structure, c&apos;est-à-dire la poutre, la panne basse, le
                 chéneau ou la gouttière. Entre les deux, il peut manquer 30, 40, parfois 60 cm.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Le repère des 1,90 m des parkings publics — la hauteur maximale des véhicules visés par la norme — est
+                Le repère des 1,90 m des parkings publics, la hauteur maximale des véhicules visés par la norme, est
                 très parlant : c&apos;est exactement pour cette raison que tant de SUV équipés d&apos;un coffre de toit
                 se retrouvent bloqués à l&apos;entrée d&apos;un parking souterrain. Un véhicule de 1,64 m de haut
                 dépasse facilement 1,95 à 2,05 m une fois les barres et le coffre montés, davantage avec un porte-vélos
@@ -435,13 +435,13 @@ export default function ArticleDimensionsCarportPage() {
                 <strong className="text-primary font-semibold">la largeur du véhicule rétroviseurs dépliés</strong>, le{' '}
                 <strong className="text-primary font-semibold">débattement des portières</strong>, et la{' '}
                 <strong className="text-primary font-semibold">marge d&apos;imprécision</strong> du stationnement
-                quotidien — parce que personne ne se gare au centimètre, surtout de nuit, sous la pluie, avec les
+                quotidien, parce que personne ne se gare au centimètre, surtout de nuit, sous la pluie, avec les
                 courses à décharger.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Faites le test le plus simple qui soit : garez-vous, ouvrez la portière conducteur comme vous
-                l&apos;ouvrez habituellement, et mesurez. Une ouverture confortable — celle qui permet de sortir sans
-                se contorsionner, d&apos;installer un enfant dans un siège auto ou de descendre avec une canne — demande
+                l&apos;ouvrez habituellement, et mesurez. Une ouverture confortable, celle qui permet de sortir sans
+                se contorsionner, d&apos;installer un enfant dans un siège auto ou de descendre avec une canne, demande
                 sur nos chantiers de l&apos;ordre de 60 à 80 cm entre le flanc du véhicule et l&apos;obstacle. Sur un
                 carport de 3 m de largeur libre où l&apos;on gare un SUV de 2,10 m rétroviseurs dépliés, il reste moins
                 de 45 cm à répartir des deux côtés : on ouvre à moitié.
@@ -480,7 +480,7 @@ export default function ArticleDimensionsCarportPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Un carport ne se dimensionne pas en surface mais en{' '}
                 <strong className="text-primary font-semibold">programme</strong> : ce que vous y mettez, et ce que vous
-                y ferez. Le piège classique du deux voitures est arithmétique — on double la largeur d&apos;une place et
+                y ferez. Le piège classique du deux voitures est arithmétique, on double la largeur d&apos;une place et
                 on oublie que quatre portières s&apos;ouvrent, dont deux face à face au centre. Voici les trames dont
                 nous partons, à ajuster ensuite sur votre véhicule et votre terrain :
               </p>
@@ -511,7 +511,7 @@ export default function ArticleDimensionsCarportPage() {
               </div>
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-6 mb-5">
                 Ces fourchettes sont des ordres de grandeur relevés sur nos chantiers girondins, à confronter à vos
-                propres mesures — elles n&apos;ont aucune valeur réglementaire. Deux remarques les accompagnent presque
+                propres mesures, elles n&apos;ont aucune valeur réglementaire. Deux remarques les accompagnent presque
                 toujours.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -525,12 +525,12 @@ export default function ArticleDimensionsCarportPage() {
                 Vélos, poubelles, bois de chauffage, et de plus en plus{' '}
                 <strong className="text-primary font-semibold">une borne de recharge</strong> avec son câble : autant
                 d&apos;usages qui grignotent la largeur si on ne leur a pas donné leur propre bande. Un carport pensé
-                comme un abri à tout faire se dessine différemment d&apos;un simple couvre-voiture — c&apos;est aussi ce
+                comme un abri à tout faire se dessine différemment d&apos;un simple couvre-voiture, c&apos;est aussi ce
                 que nous traitons dans notre{' '}
                 <a href="/blog/carport-bois-guide" className={lienInterne}>
                   guide du carport en bois
-                </a>
-                , côté conception et intégration.
+                </a>,
+                côté conception et intégration.
               </p>
             </section>
 
@@ -551,12 +551,12 @@ export default function ArticleDimensionsCarportPage() {
                 Nous posons le bois et l&apos;aluminium, et sur le plan strictement dimensionnel la différence est
                 nette : elle porte sur la{' '}
                 <strong className="text-primary font-semibold">portée franchissable sans appui intermédiaire</strong>.
-                C&apos;est la seule question que nous traitons ici — le budget, l&apos;entretien et l&apos;esthétique
+                C&apos;est la seule question que nous traitons ici, le budget, l&apos;entretien et l&apos;esthétique
                 sont abordés ailleurs.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Côté <strong className="text-primary font-semibold">aluminium</strong>, les profilés porteurs — poutres
-                de rive et chevrons en alliage, souvent avec chéneau intégré — franchissent de plus grandes portées à
+                Côté <strong className="text-primary font-semibold">aluminium</strong>, les profilés porteurs (poutres
+                de rive et chevrons en alliage, souvent avec chéneau intégré) franchissent de plus grandes portées à
                 section visible constante. Concrètement, sur un abri deux voitures, cela permet fréquemment de{' '}
                 <strong className="text-primary font-semibold">supprimer le poteau intermédiaire</strong> et de libérer
                 complètement le passage central, celui-là même où s&apos;ouvrent les deux portières face à face. La
@@ -564,8 +564,8 @@ export default function ArticleDimensionsCarportPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Côté <strong className="text-primary font-semibold">bois</strong>, franchir la même largeur suppose une
-                poutre de section nettement plus importante — visuellement présente, et qui mange par le bas quelques
-                centimètres de hauteur libre — ou bien une{' '}
+                poutre de section nettement plus importante (visuellement présente, et qui mange par le bas quelques
+                centimètres de hauteur libre) ou bien une{' '}
                 <strong className="text-primary font-semibold">trame assumée</strong>, avec un poteau intermédiaire et
                 un entraxe de pannes calé sur cette trame. Ce n&apos;est ni un défaut ni une fatalité : c&apos;est un
                 paramètre à intégrer <em>avant</em> de figer le plan de stationnement, pour que le poteau tombe entre
@@ -617,13 +617,13 @@ export default function ArticleDimensionsCarportPage() {
                 <strong className="text-primary font-semibold">
                   matérialisez au sol l&apos;emprise du futur carport
                 </strong>{' '}
-                — quatre piquets, une cordelette ou un trait de peinture temporaire — puis garez-vous dedans pendant une
+                (quatre piquets, une cordelette ou un trait de peinture temporaire) puis garez-vous dedans pendant une
                 semaine, matin et soir. Vous saurez très vite si l&apos;implantation tient, bien avant d&apos;engager le
                 moindre euro. Nous faisons exactement cela lors de nos visites, mètre en main, avec le client au volant.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Dernier point, réglementaire cette fois : votre PLU peut imposer des reculs par rapport aux limites
-                séparatives ou à l&apos;alignement de la voie, et ces règles varient d&apos;une commune à l&apos;autre —
+                séparatives ou à l&apos;alignement de la voie, et ces règles varient d&apos;une commune à l&apos;autre,
                 à vérifier au service urbanisme de votre mairie avant de figer l&apos;implantation. Pour les formalités
                 elles-mêmes, nous les détaillons dans notre article dédié :{' '}
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>
@@ -654,7 +654,7 @@ export default function ArticleDimensionsCarportPage() {
                 <strong className="text-primary font-semibold">Le débord de toit</strong> d&apos;abord. Sous nos pluies
                 girondines, souvent portées par le vent d&apos;ouest, une couverture qui s&apos;arrête au nu du poteau
                 laisse la pluie battre sur les portières et sur celui qui descend. Sur nos chantiers, nous prévoyons de
-                l&apos;ordre de 20 à 40 cm de débord, davantage du côté exposé au vent dominant — ordre de grandeur, à
+                l&apos;ordre de 20 à 40 cm de débord, davantage du côté exposé au vent dominant, ordre de grandeur, à
                 ajuster selon l&apos;implantation et la hauteur de l&apos;abri.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -663,9 +663,9 @@ export default function ArticleDimensionsCarportPage() {
                 conséquence directe et trop souvent oubliée :{' '}
                 <strong className="text-primary font-semibold">
                   la hauteur libre utile se mesure au point bas
-                </strong>
-                , pas au point haut ni à la moyenne. Un abri annoncé « 2,50 m » peut n&apos;offrir que 2,10 m sous la
-                gouttière basse — c&apos;est précisément là que passe le coffre de toit.
+                </strong>,
+                pas au point haut ni à la moyenne. Un abri annoncé « 2,50 m » peut n&apos;offrir que 2,10 m sous la
+                gouttière basse, c&apos;est précisément là que passe le coffre de toit.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">L&apos;évacuation</strong> enfin, qui ne se traite pas de
@@ -674,7 +674,7 @@ export default function ArticleDimensionsCarportPage() {
                 l&apos;étanchéité des raccords et le point de rejet au sol se calent dès l&apos;étude. En bois, la
                 gouttière est rapportée sous la rive : elle descend de quelques centimètres, qu&apos;il faut déduire de
                 la hauteur libre annoncée. Dans les deux cas, on décide{' '}
-                <em>où part l&apos;eau</em> avant de poser : vers un regard, une noue, un massif drainant — jamais au
+                <em>où part l&apos;eau</em> avant de poser : vers un regard, une noue, un massif drainant, jamais au
                 pied du poteau ni en travers de l&apos;allée, où elle gèlera en janvier.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -732,8 +732,8 @@ export default function ArticleDimensionsCarportPage() {
               Un carport dimensionné sur votre voiture, pas sur un catalogue
             </h2>
             <p className="text-on-primary-container font-body-lg text-body-lg mb-10">
-              Retenez l&apos;ordre des opérations : mesurez votre véhicule réel — rétroviseurs dépliés, hauteur
-              accessoires montés —, ajoutez le dégagement des portières, vérifiez la hauteur libre au point bas, puis
+              Retenez l&apos;ordre des opérations : mesurez votre véhicule réel (rétroviseurs dépliés, hauteur
+              accessoires montés), ajoutez le dégagement des portières, vérifiez la hauteur libre au point bas, puis
               seulement ensuite choisissez la trame et la matière. C&apos;est ce relevé que nous menons chez
               L&apos;Esprit Bois, mètre en main et client au volant, à Libourne et dans toute la Gironde, en bois comme
               en aluminium.

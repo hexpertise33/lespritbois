@@ -33,7 +33,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -337,8 +337,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>30 juillet 2026</span>
@@ -400,7 +400,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 <a href="/blog/pergola-bois-ou-bioclimatique" className={lienInterne}>
                   comparatif pergola bois ou bioclimatique
                 </a>{' '}
-                traite ce choix en détail — nous vendons et posons les deux, cet article-ci se consacre à
+                traite ce choix en détail, nous vendons et posons les deux, cet article-ci se consacre à
                 l&apos;aluminium.
               </p>
             </section>
@@ -435,8 +435,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Mais le vrai sujet, en Gironde, c&apos;est l&apos;
                 <strong className="text-primary font-semibold">orientation</strong>. Nos terrasses libournaises regardent
-                très souvent le sud ou l&apos;ouest, et la gêne principale n&apos;est pas le soleil de midi — que les
-                lames arrêtent sans difficulté — mais le{' '}
+                très souvent le sud ou l&apos;ouest, et la gêne principale n&apos;est pas le soleil de midi, que les
+                lames arrêtent sans difficulté, mais le{' '}
                 <strong className="text-primary font-semibold">soleil rasant de fin de journée</strong>, celui de 18 h à
                 21 h en juillet, qui passe sous la toiture quel que soit l&apos;angle des lames. La réponse tient
                 rarement dans le toit : elle est latérale (store zip, panneau, claustra) et se décide au moment du plan,
@@ -451,7 +451,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               w={1100}
               h={825}
               alt="Store vertical descendu sur le côté d'une pergola aluminium adossée, chantier de L'Esprit Bois à Saint-Pey-de-Castets"
-              caption="Un de nos chantiers, à Saint-Pey-de-Castets : adossée, la pergola prolonge le séjour, et c'est le store latéral — non la couverture — qui coupe le soleil rasant."
+              caption="Un de nos chantiers, à Saint-Pey-de-Castets : adossée, la pergola prolonge le séjour, et c'est le store latéral, non la couverture, qui coupe le soleil rasant."
             />
 
             {/* 3. Qualité */}
@@ -486,8 +486,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 <strong className="text-primary font-semibold">
                   quelle classe de résistance au vent a été testée sur ce modèle, dans quelle dimension, et pouvez-vous
                   fournir le procès-verbal d&apos;essai
-                </strong>{' '}
-                — une pergola de 3 × 3 m et la même en 6 × 4 m ne se comportent pas de la même façon. Même exigence pour
+                </strong>,{' '}
+               une pergola de 3 × 3 m et la même en 6 × 4 m ne se comportent pas de la même façon. Même exigence pour
                 la charge de neige : une note de calcul, pas une affirmation commerciale. Un fournisseur sérieux sort ces
                 documents sans se faire prier.
               </p>
@@ -507,7 +507,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 Motorisation, capteurs et domotique : jusqu&apos;où aller ?
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                La motorisation des lames est l&apos;option la plus vendue, et souvent à raison — mais tout le monde
+                La motorisation des lames est l&apos;option la plus vendue, et souvent à raison, mais tout le monde
                 n&apos;a pas besoin du même niveau d&apos;équipement. Voici comment se situent les quatre configurations
                 que nous rencontrons :
               </p>
@@ -548,8 +548,8 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 Deux conseils de chantier que l&apos;on nous remercie souvent d&apos;avoir donnés à temps.{' '}
                 <strong className="text-primary font-semibold">
                   Faites passer l&apos;alimentation électrique et les fourreaux avant la pose
-                </strong>{' '}
-                — même si vous choisissez des lames manuelles aujourd&apos;hui : rattraper une alimentation dans une
+                </strong>,{' '}
+               même si vous choisissez des lames manuelles aujourd&apos;hui : rattraper une alimentation dans une
                 terrasse carrelée, c&apos;est casser. Et{' '}
                 <strong className="text-primary font-semibold">
                   gardez un accès de maintenance et une commande de secours
@@ -589,7 +589,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 façade. Devant une maison de pierre blonde du Libournais, un anthracite franc structure sans concurrencer
                 la pierre ; sur un enduit clair et des volets gris, une teinte proche de celle des fenêtres fait
                 disparaître l&apos;ouvrage. Selon les gammes, une{' '}
-                <strong className="text-primary font-semibold">bicoloration</strong> est possible — sombre à
+                <strong className="text-primary font-semibold">bicoloration</strong> est possible, sombre à
                 l&apos;extérieur, clair à l&apos;intérieur des lames pour renvoyer la lumière sous la terrasse : c&apos;est
                 souvent le meilleur des deux mondes.
               </p>
@@ -646,7 +646,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 réglementaires comme le confort thermique ne s&apos;examinent plus de la même manière : un volume fermé
                 et vitré appelle une réflexion sur les surchauffes d&apos;été, le chauffage et, selon les cas, sur les
                 règles applicables aux surfaces closes et couvertes. Ce n&apos;est ni mieux ni moins bien, c&apos;est un
-                autre ouvrage — autant le savoir avant de commander une structure qui devra l&apos;accueillir.
+                autre ouvrage, autant le savoir avant de commander une structure qui devra l&apos;accueillir.
               </p>
             </section>
 
@@ -739,7 +739,7 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 après relevé sur place nous engage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
-                L&apos;entretien, en revanche, est le grand argument de l&apos;aluminium — à condition de ne pas le
+                L&apos;entretien, en revanche, est le grand argument de l&apos;aluminium, à condition de ne pas le
                 confondre avec « rien à faire » :
               </p>
               <ul className="space-y-3 mb-5">

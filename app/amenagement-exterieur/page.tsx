@@ -119,7 +119,7 @@ const jsonld = [
         name: 'Êtes-vous qualifiés et assurés ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat — une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière —, et chacun de nos ouvrages est couvert par notre garantie décennale.",
+          text: "Oui. L'Esprit Bois est une entreprise qualifiée Qualibat (une qualification professionnelle, délivrée après examen de nos références, de nos moyens techniques et de notre situation financière), et chacun de nos ouvrages est couvert par notre garantie décennale.",
         },
       },
     ],
@@ -349,8 +349,8 @@ export default function AmenagementExterieurPage() {
                     className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                   >
                     terrasses bois à Libourne et en Gironde
-                  </a>
-                  , avec deux chantiers détaillés et le choix des essences.
+                  </a>,
+                  avec deux chantiers détaillés et le choix des essences.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -561,7 +561,7 @@ export default function AmenagementExterieurPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Un aménagement extérieur se juge rarement sur ce qui se voit. Ce qui décide de sa durée de vie, c'est
-                ce qu'il y a dessous — et cela change à chaque terrain.
+                ce qu'il y a dessous, et cela change à chaque terrain.
               </p>
             </div>
 
@@ -580,7 +580,7 @@ export default function AmenagementExterieurPage() {
                 </div>
                 <div>
                   <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                    Lacanau — Terrasse en pin US
+                    Lacanau, Terrasse en pin US
                   </p>
                   <h3 className="font-headline-sm text-headline-sm text-primary mt-2 mb-5">
                     Quand le sol ne porte pas
@@ -617,7 +617,7 @@ export default function AmenagementExterieurPage() {
                 </div>
                 <div className="lg:order-1">
                   <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                    Moulon — Plage de piscine en ipé
+                    Moulon, Plage de piscine en ipé
                   </p>
                   <h3 className="font-headline-sm text-headline-sm text-primary mt-2 mb-5">
                     Affleurer la margelle sur toute la longueur
@@ -653,15 +653,15 @@ export default function AmenagementExterieurPage() {
                 </div>
                 <div>
                   <p className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark mb-2">
-                    Montussan — Cuisine d'été couverte
+                    Montussan, Cuisine d'été couverte
                   </p>
                   <h3 className="font-headline-sm text-headline-sm text-primary mt-2 mb-5">
                     Une pose en tunnel, sans jeu de montage
                   </h3>
                   <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                     Le client voulait un espace bar couvert, avec plancha et plan de travail, dans une cour fermée sur
-                    ses côtés. Une <strong className="text-primary font-semibold">pose en tunnel</strong> — entre deux
-                    ouvrages existants, sans possibilité de reculer pour ajuster — ne pardonne pas l'approximation.
+                    ses côtés. Une <strong className="text-primary font-semibold">pose en tunnel</strong> (entre deux
+                    ouvrages existants, sans possibilité de reculer pour ajuster) ne pardonne pas l'approximation.
                   </p>
                   <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                     Il n'y a pas de jeu de montage : la structure entre au millimètre, ou elle n'entre pas. Toutes les
@@ -713,7 +713,7 @@ export default function AmenagementExterieurPage() {
                   existante, un béton maigre, un terrain compacté depuis longtemps.
                 </p>
                 <p className="text-on-surface-variant text-body-md">
-                  Sur un remblai récent ou un sol sableux, elle se paie en tassements différentiels — la terrasse
+                  Sur un remblai récent ou un sol sableux, elle se paie en tassements différentiels, la terrasse
                   descend par endroits, et le rattrapage revient chaque année.
                 </p>
               </article>
@@ -742,7 +742,7 @@ export default function AmenagementExterieurPage() {
             </div>
             <p className="mt-10 font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
               Le choix se fait sur place, après un relevé. Un terrain argileux du Libournais, un remblai récent et le
-              sable de la côte n'appellent pas la même réponse — et personne ne peut trancher depuis un catalogue.
+              sable de la côte n'appellent pas la même réponse, et personne ne peut trancher depuis un catalogue.
             </p>
           </div>
         </section>
@@ -884,15 +884,15 @@ export default function AmenagementExterieurPage() {
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 l'ensemble de nos réalisations
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/pergolas"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
               >
                 pergolas
-              </a>
-              , nos{' '}
+              </a>,
+              nos{' '}
               <a
                 href="/carports"
                 className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
@@ -1029,8 +1029,8 @@ export default function AmenagementExterieurPage() {
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   un seul interlocuteur
-                </a>
-                , de l'étude à la pose.
+                </a>,
+                de l'étude à la pose.
               </p>
             </div>
           </div>

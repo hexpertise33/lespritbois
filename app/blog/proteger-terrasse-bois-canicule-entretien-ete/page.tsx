@@ -303,8 +303,8 @@ export default function ArticleTerrasseBoisCaniculePage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>20 juillet 2026</span>
@@ -605,12 +605,12 @@ export default function ArticleTerrasseBoisCaniculePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Trois principes suffisent ici. Les{' '}
-                <strong className="text-primary font-semibold">essences denses et naturellement durables</strong> — une
+                <strong className="text-primary font-semibold">essences denses et naturellement durables</strong>, une
                 durabilité étudiée par l&apos;institut technologique{' '}
                 <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   FCBA
-                </a>{' '}
-                — encaissent mieux l&apos;alternance sécheresse et humidité : elles bougent moins et fissurent moins. Un{' '}
+                </a>,{' '}
+               encaissent mieux l&apos;alternance sécheresse et humidité : elles bougent moins et fissurent moins. Un{' '}
                 <strong className="text-primary font-semibold">bois clair chauffe nettement moins qu&apos;un bois
                 foncé</strong>, ce qui change tout pour une terrasse où l&apos;on marche pieds nus. Et surtout, la pose
                 pèse autant que l&apos;essence : une ventilation franche sous les lames, un espacement respecté entre
@@ -665,8 +665,8 @@ export default function ArticleTerrasseBoisCaniculePage() {
                 les quinze années suivantes. C&apos;est toute notre approche de l&apos;{' '}
                 <a href="/terrasses-bois" className={lienInterne}>
                   aménagement extérieur
-                </a>
-                , et vous en verrez le résultat dans{' '}
+                </a>,
+                et vous en verrez le résultat dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
                 </a>

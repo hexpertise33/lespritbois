@@ -32,7 +32,7 @@ function Figure({
   src: string;
   alt: string;
   caption: string;
-  /** Dimensions réelles du fichier — à vérifier, sinon la réservation d'espace est fausse. */
+  /** Dimensions réelles du fichier, à vérifier, sinon la réservation d'espace est fausse. */
   w: number;
   h: number;
 }) {
@@ -163,7 +163,7 @@ const jsonld = [
         name: 'Faut-il une autorisation pour installer un abri de jardin ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "En principe, en dessous de 5 m² d'emprise au sol aucune formalité n'est due — sauf en secteur protégé, où la déclaration préalable s'impose dès le premier mètre carré —, entre 5 et 20 m² une déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre commune peut durcir ces règles, et une taxe d'aménagement au taux communal (souvent 1 à 5 %) s'applique dès la déclaration préalable. Nous vérifions ces formalités avant d'engager le projet.",
+          text: "En principe, en dessous de 5 m² d'emprise au sol aucune formalité n'est due (sauf en secteur protégé, où la déclaration préalable s'impose dès le premier mètre carré), entre 5 et 20 m² une déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre commune peut durcir ces règles, et une taxe d'aménagement au taux communal (souvent 1 à 5 %) s'applique dès la déclaration préalable. Nous vérifions ces formalités avant d'engager le projet.",
         },
       },
       {
@@ -233,7 +233,7 @@ const faq = [
     q: 'Faut-il une autorisation pour installer un abri de jardin ?',
     r: (
       <>
-        En principe, en dessous de 5 m² d&apos;emprise au sol aucune formalité n&apos;est due — sauf en secteur protégé, où la déclaration préalable s&apos;impose dès le premier mètre carré —, entre 5 et 20 m² une
+        En principe, en dessous de 5 m² d&apos;emprise au sol aucune formalité n&apos;est due (sauf en secteur protégé, où la déclaration préalable s&apos;impose dès le premier mètre carré) ; entre 5 et 20 m² une
         déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre
         commune peut durcir ces règles, et une taxe d&apos;aménagement au taux communal (souvent 1 à 5 %) s&apos;applique
         dès la déclaration préalable. Nous vérifions ces formalités avant d&apos;engager le projet.
@@ -310,8 +310,8 @@ export default function ArticleAbriJardinBoisPage() {
                   className="underline underline-offset-4 decoration-white/30 hover:decoration-secondary hover:text-white transition-colors"
                 >
                   David Bertrand
-                </a>
-                , L&apos;Esprit Bois
+                </a>,
+                L&apos;Esprit Bois
               </span>
               <span className="text-secondary">·</span>
               <span>26 juillet 2026</span>
@@ -352,7 +352,7 @@ export default function ArticleAbriJardinBoisPage() {
                 le prix d&apos;entrée et le délai, mais contraint par des dimensions figées, une essence et une
                 quincaillerie standard, et une durée de vie qui dépend beaucoup de la qualité du modèle et du montage. Le
                 sur-mesure est un ouvrage conçu et posé par un artisan : dimensions libres, essence choisie selon la
-                classe d&apos;emploi, ancrage et ventilation soignés, intégration au bâti — pour un budget nettement plus
+                classe d&apos;emploi, ancrage et ventilation soignés, intégration au bâti, pour un budget nettement plus
                 élevé.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
@@ -404,7 +404,7 @@ export default function ArticleAbriJardinBoisPage() {
                 <strong className="text-primary font-semibold">kits bois d&apos;environ 4 m² à partir de 600 €</strong> en
                 grande surface de bricolage, en bois brut, hors dalle et hors pose. Le montage se fait en un week-end à
                 deux, avec un outillage courant. Pour un usage occasionnel et un budget serré, c&apos;est un choix
-                parfaitement défendable — nous ne dirons jamais le contraire.
+                parfaitement défendable, nous ne dirons jamais le contraire.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Ses limites, elles, tiennent à sa nature de produit standardisé. Les dimensions sont figées : on prend la
@@ -429,9 +429,9 @@ export default function ArticleAbriJardinBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Faire fabriquer un abri sur-mesure, ce n&apos;est pas payer plus cher le même objet : c&apos;est changer
-                de logique. On part de <strong className="text-primary font-semibold">votre besoin réel</strong> — la
+                de logique. On part de <strong className="text-primary font-semibold">votre besoin réel</strong>, la
                 surface juste, la hauteur sous toiture utile, l&apos;emplacement de la porte, une avancée pour ranger le
-                bois — et de <strong className="text-primary font-semibold">votre terrain</strong>. Rien n&apos;est
+                bois, et de <strong className="text-primary font-semibold">votre terrain</strong>. Rien n&apos;est
                 imposé par un catalogue.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
@@ -439,7 +439,7 @@ export default function ArticleAbriJardinBoisPage() {
                 choisie selon la classe d&apos;emploi et non selon un prix d&apos;appel. Ensuite l&apos;
                 <strong className="text-primary font-semibold">ancrage et la ventilation</strong> : poteaux et lambourdes
                 désolidarisés du sol par des pieds métalliques, dalle ou plots drainés, lame d&apos;air derrière le
-                bardage — les détails qui font qu&apos;un abri traverse les hivers girondins sans pourrir par le bas.
+                bardage, les détails qui font qu&apos;un abri traverse les hivers girondins sans pourrir par le bas.
                 Enfin l&apos;<strong className="text-primary font-semibold">intégration</strong> : teinte et bardage
                 accordés à la maison, toiture cohérente, raccord avec une terrasse, un carport ou une clôture existante.
               </p>
@@ -457,7 +457,7 @@ export default function ArticleAbriJardinBoisPage() {
               w={825}
               h={1100}
               alt="Bardage bois douglas raccordé à la maison existante avec grande baie vitrée, chantier L'Esprit Bois en Gironde"
-              caption="Sur-mesure : bardage douglas et teinte accordés au bâti existant — l'ouvrage se raccorde à la maison au lieu d'y être simplement posé."
+              caption="Sur-mesure : bardage douglas et teinte accordés au bâti existant, l'ouvrage se raccorde à la maison au lieu d'y être simplement posé."
             />
 
             {/* 4. Quelle essence */}
@@ -632,7 +632,7 @@ export default function ArticleAbriJardinBoisPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Côté entretien, comptez un saturateur environ une fois par an les deux à trois premières années, puis tous
-                les deux à trois ans selon l&apos;exposition — ou laissez le bois griser sans crainte pour la solidité.
+                les deux à trois ans selon l&apos;exposition, ou laissez le bois griser sans crainte pour la solidité.
                 Vous verrez comment tout cela se traduit sur le terrain dans{' '}
                 <a href="/realisations" className={lienInterne}>nos réalisations en Gironde</a>. Les mêmes principes
                 d&apos;ancrage et de ventilation valent d&apos;ailleurs pour un abri voiture : notre{' '}

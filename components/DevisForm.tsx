@@ -9,13 +9,13 @@ type InstanceId = 'haut' | 'milieu' | 'bas';
 const PARAMETRES_SUIVIS = ['utm_source', 'utm_medium', 'utm_campaign', 'gclid'] as const;
 
 /**
- * Construit la mention d'origine ajoutée à l'e-mail de lead : la position du
- * CTA sur la page, plus les paramètres UTM/gclid présents dans l'URL
- * courante (lus au moment du submit, sans jamais rediriger la page — donc
- * sans jamais perdre le gclid que Google Ads a besoin de retrouver).
+ * Construit la mention d'origine ajoutée à l'e-mail de lead : la page, la
+ * position du CTA sur cette page, plus les paramètres UTM/gclid présents dans
+ * l'URL courante (lus au moment du submit, sans jamais rediriger la page —
+ * donc sans jamais perdre le gclid que Google Ads a besoin de retrouver).
  */
-function construireOrigine(instanceId: InstanceId): string {
-  const base = `Page : /devis-pergola (formulaire ${instanceId})`;
+function construireOrigine(pageLabel: string, instanceId: InstanceId): string {
+  const base = `Page : ${pageLabel} (formulaire ${instanceId})`;
   if (typeof window === 'undefined') return base;
   const params = new URLSearchParams(window.location.search);
   const trouves = PARAMETRES_SUIVIS.map((cle) => {
@@ -25,7 +25,22 @@ function construireOrigine(instanceId: InstanceId): string {
   return trouves.length > 0 ? `${base} — ${trouves.join(', ')}` : base;
 }
 
-export default function LandingPergolaForm({ instanceId }: { instanceId: InstanceId }) {
+/**
+ * Formulaire de devis en page, réutilisable hors de la landing publicitaire.
+ *
+ * `projet` et `pageLabel` sont obligatoires : sans eux, un lead venu d'une page
+ * de zone arriverait étiqueté « Pergola (landing Ads) — /devis-pergola » et
+ * l'attribution serait perdue.
+ */
+export default function DevisForm({
+  instanceId,
+  projet,
+  pageLabel,
+}: {
+  instanceId: InstanceId;
+  projet: string;
+  pageLabel: string;
+}) {
   const [etat, setEtat] = useState<Etat>('idle');
   const [erreur, setErreur] = useState<string | null>(null);
 
@@ -41,8 +56,8 @@ export default function LandingPergolaForm({ instanceId }: { instanceId: Instanc
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...donnees,
-          projet: 'Pergola (landing Ads)',
-          source: construireOrigine(instanceId),
+          projet,
+          source: construireOrigine(pageLabel, instanceId),
         }),
       });
 

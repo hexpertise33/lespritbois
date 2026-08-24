@@ -1,12 +1,21 @@
 import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
+import DevisForm from '@/components/DevisForm';
+import DevisStickyBar from '@/components/DevisStickyBar';
+import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import { CHANTIERS } from '@/lib/data/chantiers';
 import { CONTACT, ENTREPRISE_ID, ENTREPRISE_REF, SITE } from '@/lib/data/navigation';
 import type { Zone } from '@/lib/data/zones';
 
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
+
+const boutonPlein =
+  'inline-flex items-center justify-center bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95';
+
+const boutonTelephone =
+  'inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/10 transition-all active:scale-95';
 
 /** Gabarit commun aux pages de zone.
  *
@@ -20,15 +29,28 @@ export default function PageZone({ zone }: { zone: Zone }) {
     .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
   const url = `${SITE.url}/${zone.slug}`;
+  const pageLabel = `/${zone.slug}`;
+
+  /* Fil d'Ariane : les pages d'offre d'un secteur passent par leur page mère et
+     s'y annoncent par leur ouvrage — « Bassin d'Arcachon / Terrasses bois » —,
+     les zones sans mère restent directement sous l'accueil sous leur nom. */
+  const dernierNiveau = zone.ouvrage ?? zone.nom;
+  const filAriane = [
+    { nom: 'Accueil', item: `${SITE.url}/` },
+    ...(zone.parent ? [{ nom: zone.parent.nom, item: `${SITE.url}/${zone.parent.slug}` }] : []),
+    { nom: dernierNiveau, item: url },
+  ];
 
   const jsonld = [
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${SITE.url}/` },
-        { '@type': 'ListItem', position: 2, name: zone.nom, item: url },
-      ],
+      itemListElement: filAriane.map((e, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: e.nom,
+        item: e.item,
+      })),
     },
     {
       '@context': 'https://schema.org',
@@ -71,7 +93,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
       <JsonLd data={jsonld} />
       <SiteNav page="realisations" />
       <main id="contenu">
-        <header className="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
+        <header
+          data-devis-hero
+          className="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden"
+        >
           <div className="absolute inset-0 z-0">
             <img
               width={zone.coverW}
@@ -89,10 +114,23 @@ export default function PageZone({ zone }: { zone: Zone }) {
               <a href="/" className="hover:text-secondary-fixed transition-colors">
                 Accueil
               </a>
+              {zone.parent && (
+                <>
+                  <span className="mx-2 text-secondary" aria-hidden="true">
+                    /
+                  </span>
+                  <a
+                    href={`/${zone.parent.slug}`}
+                    className="hover:text-secondary-fixed transition-colors"
+                  >
+                    {zone.parent.nom}
+                  </a>
+                </>
+              )}
               <span className="mx-2 text-secondary" aria-hidden="true">
                 /
               </span>
-              <span className="text-secondary-fixed">{zone.nom}</span>
+              <span className="text-secondary-fixed">{dernierNiveau}</span>
             </p>
             <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
               Zone d&apos;intervention
@@ -101,6 +139,22 @@ export default function PageZone({ zone }: { zone: Zone }) {
               {zone.h1}
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">{zone.chapo}</p>
+            {/* Premier point de contact. Le numéro est un lien tel: — capté par
+                PhoneClickTracker, qui écoute tous les liens tel: du site. */}
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
+              <a href="#devis-bas" className={boutonPlein}>
+                Demander mon étude gratuite
+              </a>
+              <a href={CONTACT.telHref} className={boutonTelephone}>
+                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+                  call
+                </span>
+                {CONTACT.telAffiche}
+              </a>
+            </div>
+            <p className="font-body-md text-body-md text-white/70 mt-5">
+              Relevé et devis gratuits, déplacement compris.
+            </p>
           </div>
         </header>
 
@@ -115,6 +169,66 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 {zone.contexte.paragraphes.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pages d'offre du secteur. Ne s'affiche que sur une page mère : c'est
+            ce qui distingue un hub de secteur d'une page de zone ordinaire. */}
+        {zone.offres && zone.offres.length > 0 && (
+          <section className="py-20 md:py-28 bg-surface-container">
+            <div className="max-w-container-max mx-auto px-6 md:px-16">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
+                {zone.parent ? 'Nos autres ouvrages' : 'Nos ouvrages'} {zone.article} {zone.nom}
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
+                Chaque page traite la contrainte propre à son ouvrage — elles ne se répètent pas.
+              </p>
+              <ul className="grid md:grid-cols-2 gap-8">
+                {zone.offres.map((o) => (
+                  <li key={o.slug} className="border-t-2 border-secondary/40 pt-5">
+                    <a
+                      href={`/${o.slug}`}
+                      className="font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors"
+                    >
+                      {o.titre}
+                    </a>
+                    <p className="font-body-md text-body-md text-on-surface-variant mt-3">
+                      {o.resume}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {/* Relance après les contraintes techniques : c'est l'endroit de la page
+            où le visiteur vient de comprendre qu'il y a des pièges, et le moment
+            où il est le plus disposé à les faire traiter par quelqu'un d'autre. */}
+        <section className="py-14 md:py-16 bg-primary text-on-primary">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+              <div className="max-w-2xl">
+                <h2 className="font-headline-sm text-headline-sm mb-3">
+                  Vous vous reconnaissez dans un de ces points ?
+                </h2>
+                <p className="font-body-md text-body-md text-on-primary/80">
+                  C&apos;est le relevé qui tranche, pas le téléphone : dimensionnement, autorisations,
+                  accès au chantier. Il est gratuit et sans engagement.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 lg:ml-auto shrink-0">
+                <a href="#devis-bas" className={boutonPlein}>
+                  Décrire mon projet
+                </a>
+                <a href={CONTACT.telHref} className={boutonTelephone}>
+                  <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+                    call
+                  </span>
+                  {CONTACT.telAffiche}
+                </a>
               </div>
             </div>
           </div>
@@ -180,6 +294,20 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 </article>
               ))}
             </div>
+            {/* Rappel discret : le visiteur vient de lire une preuve, pas un
+                argumentaire. Une phrase suffit, un bandeau ferait redite avec
+                celui du dessus. */}
+            <p className="font-body-md text-body-md text-on-surface-variant mt-14">
+              Vous voulez le même niveau de détail sur votre projet ?{' '}
+              <a href="#devis-bas" className={lienInterne}>
+                Décrivez-le nous
+              </a>{' '}
+              ou appelez le{' '}
+              <a href={CONTACT.telHref} className={lienInterne}>
+                {CONTACT.telAffiche}
+              </a>
+              .
+            </p>
           </div>
         </section>
 
@@ -281,26 +409,34 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-20 md:py-28 bg-surface">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 text-center">
-            <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
-              Un projet dans le secteur ?
-            </h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
-              Le relevé et le devis sont gratuits, sans engagement. Appelez-nous au{' '}
-              {CONTACT.telAffiche} ou décrivez votre projet en ligne.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95"
-            >
-              Demander mon étude gratuite
-            </a>
+        {/* Formulaire en page. Il remplace l'ancien lien vers /contact : envoyer
+            le visiteur vers un autre formulaire coûtait un clic à l'endroit de
+            la page où il est le plus décidé. L'ancre #devis-bas est celle que
+            visent la barre mobile et le pop-up. */}
+        <section id="devis-bas" className="py-20 md:py-28 bg-primary text-on-primary">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="font-headline-md text-headline-md mb-4 text-center">
+                Un projet {zone.article} {zone.nom} ?
+              </h2>
+              <p className="font-body-md text-body-md text-on-primary/80 mb-8 text-center">
+                Le relevé et le devis sont gratuits, sans engagement. Vous pouvez aussi appeler
+                directement le{' '}
+                <a href={CONTACT.telHref} className="underline underline-offset-4">
+                  {CONTACT.telAffiche}
+                </a>
+                .
+              </p>
+              <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
+                <DevisForm instanceId="bas" projet={zone.projet} pageLabel={pageLabel} />
+              </div>
+            </div>
           </div>
         </section>
       </main>
       <SiteFooter />
+      <DevisStickyBar />
+      <DevisDesktopPopup pageLabel={pageLabel} />
     </>
   );
 }

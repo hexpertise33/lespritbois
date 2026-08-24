@@ -16,6 +16,25 @@ export type Zone = {
   slug: string;
   /** Nom du secteur tel qu'un habitant le dit. */
   nom: string;
+  /** Article et préposition qui précèdent `nom` dans une phrase : « sur le »
+   *  Bassin d'Arcachon, « dans l' » Entre-deux-Mers, « en » Gironde. Sans lui,
+   *  les titres générés par le gabarit seraient agrammaticaux. */
+  article: string;
+  /** Ouvrage traité, sur une page d'offre d'un secteur qui en compte plusieurs.
+   *  Sert de dernier niveau du fil d'Ariane, sous la page mère : le secteur y est
+   *  déjà nommé, le répéter donnerait « Bassin d'Arcachon / Bassin d'Arcachon ». */
+  ouvrage?: string;
+  /** Page mère du secteur, quand celui-ci a plusieurs pages d'offre. */
+  parent?: { slug: string; nom: string };
+  /** Pages d'offre du secteur : toutes depuis la page mère, les autres depuis
+   *  une page d'offre. Chacune doit traiter une contrainte technique distincte —
+   *  quatre pages qui redisent la même chose sont des doorway pages, quel que
+   *  soit le soin mis à l'écriture. */
+  offres?: { slug: string; titre: string; resume: string }[];
+  /** Libellé du projet transmis à /api/contact par le formulaire de la page.
+   *  C'est lui qui permet de distinguer un lead du Bassin d'un lead de la
+   *  landing publicitaire dans la boîte mail. */
+  projet: string;
   /** Communes citées, de la plus proche de l'atelier à la plus lointaine. */
   communes: string[];
   title: string;
@@ -55,6 +74,8 @@ export const ZONES: Zone[] = [
   {
     slug: 'pergola-carport-entre-deux-mers',
     nom: 'Entre-deux-Mers',
+    article: "dans l'",
+    projet: 'Pergola ou carport — Entre-deux-Mers',
     communes: [
       'Génissac',
       'Moulon',
@@ -128,6 +149,8 @@ export const ZONES: Zone[] = [
   {
     slug: 'constructeur-ossature-bois-gironde',
     nom: 'Gironde',
+    article: 'en',
+    projet: 'Ossature bois — Gironde',
     communes: ['Génissac', 'Rauzan', 'Libourne', 'Les Billaux', 'Coutras', 'Castillon-la-Bataille'],
     title: 'Constructeur ossature bois en Gironde : extension et maison',
     description:
@@ -192,6 +215,8 @@ export const ZONES: Zone[] = [
   {
     slug: 'amenagement-exterieur-bordeaux-metropole',
     nom: 'métropole bordelaise',
+    article: 'sur la',
+    projet: 'Aménagement extérieur — métropole bordelaise',
     communes: ['Bordeaux', 'Cenon', 'Lormont', 'Floirac', 'Artigues-près-Bordeaux', 'Carbon-Blanc', 'Montussan'],
     title: 'Pergola et aménagement extérieur en métropole bordelaise',
     description:
@@ -256,6 +281,18 @@ export const ZONES: Zone[] = [
   {
     slug: 'pergola-bassin-arcachon',
     nom: "Bassin d'Arcachon",
+    article: 'sur le',
+    ouvrage: 'Pergolas',
+    parent: { slug: 'bassin-arcachon', nom: "Bassin d'Arcachon" },
+    offres: [
+      {
+        slug: 'terrasse-bois-bassin-arcachon',
+        titre: 'Terrasses bois sur le Bassin',
+        resume:
+          "Le sable ne porte pas : ce que ça change à la fondation, aux fixations et à la déclaration préalable.",
+      },
+    ],
+    projet: "Pergola — Bassin d'Arcachon",
     communes: [
       'La Teste-de-Buch',
       'Arcachon',
@@ -279,12 +316,13 @@ export const ZONES: Zone[] = [
     coverAlt:
       "Pergola aluminium anthracite équipée d'un store screen à zip, guidage latéral visible, réalisée par L'Esprit Bois",
     contexte: {
-      titre: 'Trois contraintes que le Bassin ajoute à une pergola',
+      titre: 'Quatre contraintes que le Bassin ajoute à une pergola',
       paragraphes: [
         "La première est le vent. Une pergola bioclimatique n'est pas une toiture : c'est une surface qui prend au vent, et ses lames orientables encore davantage. Sur une façade exposée aux entrées maritimes, ce n'est pas la lame qui décide du dimensionnement, c'est l'ancrage — nombre de poteaux, section, type de massif. Nous ne donnerons pas ici de vitesse de référence : le zonage réglementaire se lit à la commune, et l'exposition réelle d'une parcelle abritée par la forêt n'a rien à voir avec celle d'une façade ouverte sur l'eau. C'est un calcul, pas un abaque, et il se fait après le relevé.",
         "La deuxième est l'air salin. Un profilé aluminium thermolaqué tient très bien dehors, mais en ambiance marine la question n'est plus la teinte, c'est la préparation de surface et l'alliage. Le label Qualicoat couvre le laquage ; Qualimarine, délivré par l'ADAL, ajoute un contrôle en amont sur l'alliage lui-même — teneurs en cuivre et en fer — et vise précisément les ambiances marines. Sur le Bassin, nous demandons la qualification du laqueur et nous faisons écrire la garantie du laquage sur le devis. Le détail est dans notre guide sur le choix des teintes RAL.",
         "La troisième est le dossier d'urbanisme, et c'est celle qu'on sous-estime. Le Bassin concentre les protections : la Ville d'Hiver d'Arcachon est un site classé depuis 1985, la dune du Pilat et la forêt communale de La Teste-de-Buch le sont également. Dans un périmètre protégé, l'exonération applicable sous 5 m² ne joue plus : la déclaration préalable est due dès le premier mètre carré, et le dossier passe par l'avis de l'Architecte des Bâtiments de France, ce qui porte l'instruction à deux mois. Une pergola commandée en mars pour l'été se prépare en janvier.",
-        "Rien de tout cela n'empêche quoi que ce soit. Mais un devis qui ignore ces trois points est un devis qu'il faudra refaire.",
+        "La quatrième ne se voit pas au devis, elle se voit au bout de deux ans : l'évacuation de l'eau. Une pergola bioclimatique n'évacue pas par une gouttière apparente mais par ses propres poteaux, à travers des sections étroites. Sur le Bassin, ces sections reçoivent ce que la pinède envoie — aiguilles de pin, pollen au printemps — et ce que le vent porte depuis la plage. Une descente qui s'engorge ne fuit pas immédiatement : elle déborde en lame par un angle, toujours le même, et c'est la façade qui prend. Nous posons donc des accès de nettoyage plutôt que des sections fermées, et nous le disons au client : ici, ce point demande un coup d'œil deux fois par an. Un installateur qui promet zéro entretien sur une parcelle sous pinède ne l'a pas regardée.",
+        "Rien de tout cela n'empêche quoi que ce soit. Mais un devis qui ignore ces quatre points est un devis qu'il faudra refaire.",
       ],
     },
     chantiers: ['lacanau'],
@@ -327,8 +365,218 @@ export const ZONES: Zone[] = [
         r: "Presque toujours, et plus tôt qu'ailleurs. Le Bassin concentre les sites classés — la Ville d'Hiver d'Arcachon depuis 1985, la dune du Pilat, la forêt communale de La Teste-de-Buch. Dans ces périmètres, l'exonération sous 5 m² ne s'applique pas : la déclaration préalable est due dès le premier mètre carré, avec avis de l'Architecte des Bâtiments de France et deux mois d'instruction. Nous vérifions la situation de votre parcelle au relevé.",
       },
       {
+        q: 'Une pergola bioclimatique demande-t-elle de l’entretien ici ?',
+        r: "Un peu plus qu'à l'intérieur des terres, et pas là où on l'attend. La structure en aluminium thermolaqué ne demande rien d'autre qu'un lavage. Ce qui demande de l'attention, c'est l'évacuation de l'eau : elle passe par les poteaux, en sections étroites, et sous pinède elle reçoit des aiguilles de pin et du pollen. Un coup d'œil deux fois par an suffit — à condition que la pergola ait été posée avec des accès de nettoyage. Demandez ce point avant de signer, il ne figure sur aucun devis.",
+      },
+      {
         q: 'L’aluminium résiste-t-il aux embruns ?',
         r: "Bien, s'il est préparé pour. Le thermolaquage seul ne dit rien de l'alliage : c'est la qualification du laqueur qui compte, Qualicoat pour le laquage et Qualimarine — délivré par l'ADAL — pour les ambiances marines, qui ajoute un contrôle sur les teneurs en cuivre et en fer. Demandez cette qualification et faites écrire la garantie du laquage sur le devis : elle varie beaucoup d'un fournisseur à l'autre.",
+      },
+    ],
+  },
+
+  // -----------------------------------------------------------------------
+  // Terrasses bois — Bassin d'Arcachon.
+  //
+  // Deuxième page d'offre du secteur, ouverte le 24/08/2026 avant le carport
+  // parce que c'est la seule offre pour laquelle l'entreprise a une preuve
+  // littorale réelle : Lacanau, sur sable, en vis de fondation. La page le dit
+  // et ne prétend pas que Lacanau soit le Bassin.
+  // -----------------------------------------------------------------------
+  {
+    slug: 'terrasse-bois-bassin-arcachon',
+    nom: "Bassin d'Arcachon",
+    article: 'sur le',
+    ouvrage: 'Terrasses bois',
+    parent: { slug: 'bassin-arcachon', nom: "Bassin d'Arcachon" },
+    offres: [
+      {
+        slug: 'pergola-bassin-arcachon',
+        titre: 'Pergolas sur le Bassin',
+        resume:
+          "Le vent, les embruns et l'avis de l'Architecte des Bâtiments de France : les trois points qu'un devis de pergola oublie ici.",
+      },
+    ],
+    projet: "Terrasse bois — Bassin d'Arcachon",
+    communes: [
+      'La Teste-de-Buch',
+      'Arcachon',
+      'Gujan-Mestras',
+      'Le Teich',
+      'Biganos',
+      'Andernos-les-Bains',
+      'Lège-Cap-Ferret',
+    ],
+    title: "Terrasse bois sur le Bassin d'Arcachon : sable et sel",
+    description:
+      "Terrasse bois sur le Bassin d'Arcachon : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand la déclaration préalable devient due.",
+    keywords:
+      "terrasse bois Bassin d'Arcachon, terrasse bois Arcachon, terrasse bois Gujan-Mestras, terrasse bois Cap-Ferret, terrasse La Teste-de-Buch, terrasse sur sable",
+    h1: "Terrasses bois sur le Bassin d'Arcachon",
+    chapo:
+      "Nous n'avons pas encore posé de terrasse sur le Bassin. Mais nous en avons posé une sur le sable, à Lacanau : c'est la même question de portance, et c'est elle qui commande tout le reste.",
+    cover: '/images/terrasse-bois-plots-gironde-1.webp',
+    coverW: 950,
+    coverH: 1267,
+    coverAlt:
+      "Terrasse bois posée sur sol sableux, plinthe de rive fermant la structure sur ses quatre côtés, chantier de L'Esprit Bois à Lacanau",
+    contexte: {
+      titre: 'Quatre choses que le sable change à une terrasse',
+      paragraphes: [
+        "La première est la portance, et c'est de loin la plus coûteuse à ignorer. Le sable ne porte pas mal : il porte inégalement. Une terrasse posée sur des plots réglables simplement déposés en surface tient parfaitement le jour de la réception, puis descend là où le sable se tasse le plus — et pas ailleurs. Au bout de deux hivers, ce n'est plus un niveau qu'on rattrape, c'est une gîte. À Lacanau, nous sommes allés chercher un sol qui tient : la terrasse repose sur des vis de fondation, vissées jusqu'à trouver de la résistance. La pose est plus longue au départ et elle supprime le rattrapage annuel.",
+        "La deuxième est que le sable ne reste pas dehors. Il s'installe sous le platelage, remonte entre les lames, et finit par former un matelas qui retient l'humidité contre la structure. La plinthe de rive posée à Lacanau referme l'ouvrage sur ses quatre côtés pour cette raison — pas pour l'esthétique, même si la ligne y gagne. Attention toutefois à ce qu'on referme : une sous-face de terrasse doit rester ventilée, sans quoi c'est elle qui pourrit, et pas les lames qu'on regarde. Fermer la rive sans étouffer la sous-face est un arbitrage de pose, pas un détail de finition.",
+        "La troisième est le sel, et il ne s'attaque pas à ce qu'on croit. L'air salin n'attaque pas le bois : il attaque la visserie. Les fixations d'un platelage extérieur se font en inox, mais la nuance compte en bord de mer — l'inox A4, allié au molybdène, est celle qui est retenue en ambiance marine, là où l'A2 suffit à l'intérieur des terres. C'est un poste invisible sur un devis, quelques dizaines d'euros de différence, et c'est ce qui décide de l'aspect de la terrasse dans dix ans. Demandez la nuance, pas seulement le mot « inox ».",
+        "La quatrième est l'urbanisme, et elle réserve une mauvaise surprise ici. Une terrasse de plain-pied, non couverte et non surélevée, ne crée pas d'emprise au sol : elle ne demande aucune formalité, quelle que soit sa surface. Sauf en périmètre protégé — et le Bassin en concentre, avec la Ville d'Hiver d'Arcachon classée depuis 1985, la dune du Pilat et la forêt communale de La Teste-de-Buch. L'article R. 421-11 du code de l'urbanisme y fait tomber cette dispense : ce qui est normalement exonéré de toute formalité repasse en déclaration préalable. Ajoutez qu'aucun texte ne fixe la hauteur à partir de laquelle une terrasse cesse d'être « de plain-pied » : c'est l'instruction communale qui apprécie, et elle apprécie sévèrement dans ces secteurs.",
+        "Aucun de ces quatre points n'empêche de faire une belle terrasse sur le Bassin. Mais un devis qui n'en parle d'aucun est un devis qui n'est pas venu voir le terrain.",
+      ],
+    },
+    chantiers: ['lacanau'],
+    chantiersTitre: 'Notre terrasse posée sur le sable',
+    chantiersIntro:
+      "Lacanau est sur la côte océane et non sur le Bassin : nous ne prétendrons pas le contraire. Mais c'est le même sable et la même question de portance, et c'est le seul chantier que nous puissions vous montrer pour en parler.",
+    guides: [
+      {
+        slug: 'terrasse-bois-structure-plots-lambourdes',
+        titre: 'Structure : plots, lambourdes et ventilation',
+        pourquoi:
+          "Ce qu'on ne voit plus une fois les lames posées — et c'est là que se joue la durée de vie sur sol sableux.",
+      },
+      {
+        slug: 'quel-bois-pour-terrasse-exterieure',
+        titre: 'Quel bois pour une terrasse extérieure ?',
+        pourquoi:
+          'Le guide essence par essence, à lire avant de trancher entre pin traité et bois naturellement durable.',
+      },
+      {
+        slug: 'proteger-terrasse-bois-canicule-entretien-ete',
+        titre: 'Protéger sa terrasse de la canicule',
+        pourquoi:
+          "Sur le Bassin, le platelage prend le plein soleil et le sel : l'entretien d'été n'y est pas optionnel.",
+      },
+    ],
+    acces:
+      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Le relevé et le devis sont gratuits, déplacement compris. Sur une terrasse, ce relevé sert d'abord à une chose : savoir sur quoi on va fonder. C'est la seule question qui coûte cher si on y répond après la pose.",
+    faq: [
+      {
+        q: 'Faut-il une autorisation pour une terrasse à Arcachon ou au Cap-Ferret ?',
+        r: "Cela dépend d'abord de la terrasse. De plain-pied, non couverte et non surélevée, elle ne crée pas d'emprise au sol et ne demande aucune formalité, quelle que soit sa surface. Mais en site classé ou aux abords d'un monument historique — la Ville d'Hiver d'Arcachon, la dune du Pilat, la forêt communale de La Teste-de-Buch —, l'article R. 421-11 du code de l'urbanisme fait tomber cette dispense et la déclaration préalable redevient due. Nous vérifions la situation de votre parcelle au relevé.",
+      },
+      {
+        q: 'Plots réglables ou vis de fondation sur un terrain sableux ?',
+        r: "Des vis de fondation, dans la très grande majorité des cas. Un plot réglable déposé en surface reprend la charge sur le sable tel qu'il est : il ne descend pas partout à la même vitesse, et c'est le tassement différentiel qui déforme la terrasse, pas la charge elle-même. Une vis se visse jusqu'à trouver de la résistance. C'est ce que nous avons fait à Lacanau, et c'est ce que nous proposerons sur le Bassin.",
+      },
+      {
+        q: 'Quelle essence tient le mieux en bord de mer ?',
+        r: "La question de l'essence arrive après celle de la mise en œuvre, et c'est souvent l'inverse qu'on entend. Le sel n'attaque pas le bois : il attaque les fixations, d'où l'inox A4 plutôt que l'A2. Ce qui use le platelage en bord de mer, c'est l'UV et l'alternance humide-sec. Un pin traité correctement posé et ventilé tiendra mieux qu'un bois exotique posé sur une sous-face qui ne respire pas. Notre guide par essence détaille les cas.",
+      },
+      {
+        q: 'Vous déplacez-vous jusqu’au Bassin pour une terrasse ?',
+        r: "Oui, et nous le disons franchement : c'est un secteur que nous voulons développer, où nous n'avons pas encore posé. Le relevé et le devis sont gratuits, déplacement compris. Vous ne trouverez pas ici de liste de références locales, parce qu'elle n'existe pas encore — vous trouverez le chantier de Lacanau, sur sable, et ce que nous en avons appris.",
+      },
+    ],
+  },
+
+  // -----------------------------------------------------------------------
+  // Page mère du Bassin d'Arcachon.
+  //
+  // Seul secteur du site à porter plusieurs pages d'offre, donc le seul à
+  // avoir besoin d'une mère. Elle traite les contraintes à un niveau
+  // synthétique et renvoie à la page qui approfondit chacune : si elle se met
+  // à redire ce que disent ses filles, le groupe entier devient redondant.
+  // -----------------------------------------------------------------------
+  {
+    slug: 'bassin-arcachon',
+    nom: "Bassin d'Arcachon",
+    article: 'sur le',
+    offres: [
+      {
+        slug: 'pergola-bassin-arcachon',
+        titre: 'Pergolas sur le Bassin',
+        resume:
+          "Le vent qui décide de l'ancrage, les embruns qui décident du laquage, et l'avis de l'Architecte des Bâtiments de France qui décide du calendrier.",
+      },
+      {
+        slug: 'terrasse-bois-bassin-arcachon',
+        titre: 'Terrasses bois sur le Bassin',
+        resume:
+          "Le sable qui ne porte pas, la sous-face qu'il faut garder ventilée, et la nuance d'inox qui décide de l'aspect dans dix ans.",
+      },
+    ],
+    projet: "Projet extérieur — Bassin d'Arcachon",
+    communes: [
+      'La Teste-de-Buch',
+      'Arcachon',
+      'Gujan-Mestras',
+      'Le Teich',
+      'Biganos',
+      'Andernos-les-Bains',
+      'Lège-Cap-Ferret',
+    ],
+    title: "Aménagement extérieur bois sur le Bassin d'Arcachon",
+    description:
+      "Pergola, terrasse et aménagement extérieur sur le Bassin d'Arcachon : ce que le sable, le vent, le sel et les sites classés changent à un ouvrage en bois.",
+    keywords:
+      "aménagement extérieur Bassin d'Arcachon, artisan bois Bassin d'Arcachon, pergola Arcachon, terrasse bois Arcachon, menuisier extérieur La Teste-de-Buch, Cap-Ferret",
+    h1: "Aménagement extérieur bois sur le Bassin d'Arcachon",
+    chapo:
+      "Nous nous déplaçons sur le Bassin depuis notre atelier des Billaux. Nous n'y avons pas encore posé, et nous préférons l'écrire : voici ce que le terrain impose, ouvrage par ouvrage, plutôt qu'une liste de références que nous n'avons pas.",
+    cover: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    coverW: 1600,
+    coverH: 900,
+    coverAlt:
+      "Pergola aluminium anthracite au-dessus d'une terrasse bois en enfilade le long d'une maison, réalisée par L'Esprit Bois",
+    contexte: {
+      titre: "Ce que le Bassin change, quel que soit l'ouvrage",
+      paragraphes: [
+        "Le sol, d'abord. Le sable ne porte pas mal, il porte inégalement : une structure fondée en surface descend là où le sable se tasse le plus, et nulle part ailleurs. Ce n'est pas la charge qui déforme un ouvrage sur le littoral, c'est le tassement différentiel. Terrasse, carport ou pergola, la réponse est la même — aller chercher un sol qui tient plutôt que se poser sur celui qu'on voit.",
+        "Le vent, ensuite. Une pergola bioclimatique n'est pas une toiture : c'est une surface qui prend au vent, et ses lames orientables davantage encore. Sur une façade exposée aux entrées maritimes, c'est l'ancrage qui commande le dimensionnement, pas la lame. Nous n'écrirons pas ici de vitesse de référence : le zonage se lit à la commune, et une parcelle abritée par la forêt n'a rien à voir avec une façade ouverte sur l'eau. C'est un calcul, il se fait après le relevé.",
+        "Le sel, qui n'attaque jamais ce qu'on croit. Il ne s'en prend pas au bois mais aux métaux : la visserie d'un platelage, l'alliage d'un profilé aluminium. D'un côté l'inox A4 plutôt que l'A2 ; de l'autre la qualification du laqueur — Qualicoat pour le laquage, Qualimarine délivré par l'ADAL pour les ambiances marines. Deux postes invisibles sur un devis, et deux postes qui décident de l'aspect de l'ouvrage dans dix ans.",
+        "L'urbanisme, enfin, et c'est le point le plus sous-estimé. Le Bassin concentre les protections : la Ville d'Hiver d'Arcachon est un site classé depuis 1985, la dune du Pilat et la forêt communale de La Teste-de-Buch le sont également. Dans ces périmètres, les exonérations de droit commun tombent — l'article R. 421-11 du code de l'urbanisme remet en déclaration préalable ce qui en serait normalement dispensé, et le dossier passe par l'avis de l'Architecte des Bâtiments de France. Une pergola commandée en mars pour l'été se prépare en janvier.",
+        "Chacun de ces quatre points se traite différemment selon l'ouvrage. C'est pourquoi nous avons une page par ouvrage plutôt qu'une page qui dirait tout à moitié.",
+      ],
+    },
+    chantiers: ['lacanau'],
+    chantiersTitre: 'Notre chantier littoral le plus proche',
+    chantiersIntro:
+      "Nous n'avons pas encore de chantier sur le Bassin. Notre référence côtière est à Lacanau, sur la côte océane — ce n'est pas le Bassin, et c'est une terrasse. Mais le sol y pose exactement la même question, et c'est celle qu'il faut poser à tout artisan qui se déplace chez vous.",
+    guides: [
+      {
+        slug: 'autorisation-urbanisme-abri-carport-pergola-2026',
+        titre: 'Quelle autorisation d’urbanisme en 2026 ?',
+        pourquoi:
+          'Les seuils de droit commun, à connaître avant de découvrir que le périmètre protégé les fait tomber.',
+      },
+      {
+        slug: 'bois-local-pin-maritime-douglas-gironde',
+        titre: 'Bois local en Gironde : que vaut la filière ?',
+        pourquoi:
+          'Le pin maritime des Landes de Gascogne pousse sur le même sable — durabilité réelle, et cas où nous proposons autre chose.',
+      },
+      {
+        slug: 'traiter-bois-exterieur-avant-hiver',
+        titre: 'Traiter ses bois avant l’hiver',
+        pourquoi:
+          "Sur le littoral, l'alternance humide-sec use plus vite qu'à l'intérieur des terres : la fenêtre de traitement compte.",
+      },
+    ],
+    acces:
+      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Le relevé et le devis sont gratuits, déplacement compris — nous ne facturons pas la distance, nous en tenons compte dans l'organisation du chantier, en préparant davantage en atelier pour réduire le nombre de journées sur place.",
+    faq: [
+      {
+        q: 'Intervenez-vous vraiment sur le Bassin d’Arcachon ?',
+        r: "Oui, et nous préférons annoncer la situation plutôt que de la laisser deviner : c'est un secteur que nous développons, où nous n'avons pas encore posé. Le relevé et le devis sont gratuits, déplacement compris. Ce que vous ne trouverez pas ici, c'est une liste de vingt références locales — vous le verriez au premier rendez-vous.",
+      },
+      {
+        q: 'Quels ouvrages réalisez-vous sur le secteur ?',
+        r: "Pergolas et terrasses bois pour l'instant, chacune traitée sur sa propre page parce que le Bassin ne leur pose pas les mêmes problèmes. Carports et extensions à ossature bois font partie de nos gammes et nous les réalisons ailleurs en Gironde ; nous ouvrirons leurs pages pour le Bassin quand nous aurons de quoi les écrire autrement qu'en généralités.",
+      },
+      {
+        q: 'Le déplacement depuis Libourne est-il facturé ?',
+        r: "Non. Comptez un peu plus d'une heure de route depuis notre atelier des Billaux : le relevé et le devis restent gratuits, déplacement compris. La distance ne se retrouve pas en ligne sur le devis, elle se retrouve dans l'organisation — nous préparons davantage en atelier pour réduire le nombre de journées sur place.",
+      },
+      {
+        q: 'Faut-il une autorisation pour un ouvrage extérieur sur le Bassin ?',
+        r: "Plus souvent qu'ailleurs, et plus tôt. Les seuils de droit commun — déclaration préalable de 5 à 20 m², permis au-delà — cessent de s'appliquer en site classé et aux abords des monuments historiques : l'article R. 421-11 du code de l'urbanisme y remet en déclaration préalable ce qui en serait normalement dispensé, avec avis de l'Architecte des Bâtiments de France. Le Bassin concentre ces périmètres. Nous vérifions la situation de la parcelle au relevé.",
       },
     ],
   },

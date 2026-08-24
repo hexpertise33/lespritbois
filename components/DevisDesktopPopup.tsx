@@ -3,22 +3,25 @@
 import { useEffect, useState } from 'react';
 import { CONTACT } from '@/lib/data/navigation';
 
-const SESSION_KEY = 'lb-devis-pergola-popup-shown';
-
 /**
  * Pop-up de relance, desktop uniquement (voir la classe `hidden md:flex`
- * sur la racine ci-dessous) : sur mobile, LandingPergolaStickyBar affiche
- * déjà en permanence téléphone + bouton devis dès que le héros est
- * dépassé, un pop-up identique y ferait doublon. Se déclenche une seule
- * fois par session au premier passage sous les 70% de défilement de la
- * page, mémorisé en sessionStorage (pas localStorage, qui persisterait
- * entre les visites).
+ * sur la racine ci-dessous) : sur mobile, DevisStickyBar affiche déjà en
+ * permanence téléphone + bouton devis dès que le héros est dépassé, un
+ * pop-up identique y ferait doublon. Se déclenche une seule fois par
+ * session au premier passage sous les 70% de défilement de la page,
+ * mémorisé en sessionStorage (pas localStorage, qui persisterait entre les
+ * visites).
+ *
+ * La clé de session est dérivée de `pageLabel` : sans cela, un visiteur qui
+ * a vu le pop-up sur une page de zone ne le verrait plus sur la landing
+ * publicitaire dans la même session, et inversement.
  */
-export default function LandingPergolaDesktopPopup() {
+export default function DevisDesktopPopup({ pageLabel }: { pageLabel: string }) {
   const [visible, setVisible] = useState(false);
+  const sessionKey = `lb-devis-popup-shown:${pageLabel}`;
 
   useEffect(() => {
-    if (sessionStorage.getItem(SESSION_KEY)) return;
+    if (sessionStorage.getItem(sessionKey)) return;
 
     function onScroll() {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -26,14 +29,14 @@ export default function LandingPergolaDesktopPopup() {
       const progression = window.scrollY / scrollable;
       if (progression >= 0.7) {
         setVisible(true);
-        sessionStorage.setItem(SESSION_KEY, '1');
+        sessionStorage.setItem(sessionKey, '1');
         window.removeEventListener('scroll', onScroll);
       }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [sessionKey]);
 
   useEffect(() => {
     if (!visible) return;

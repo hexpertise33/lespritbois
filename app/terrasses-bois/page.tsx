@@ -241,6 +241,11 @@ export default function TerrassesBoisPage() {
               <a href="/realisations" className={lienInterne}>
                 nos réalisations
               </a>
+              . Sur le littoral, le sable commande tout le reste — fondation, ventilation de la
+              sous-face, nuance d&apos;inox : voir{' '}
+              <a href="/terrasse-bois-bassin-arcachon" className={lienInterne}>
+                terrasses bois sur le Bassin d&apos;Arcachon
+              </a>
               .
             </p>
             <div className="space-y-16">

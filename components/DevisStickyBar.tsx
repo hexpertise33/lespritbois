@@ -7,12 +7,16 @@ import { CONTACT } from '@/lib/data/navigation';
  * Barre CTA flottante, mobile uniquement : téléphone + lien vers le
  * formulaire du bas de page. N'apparaît qu'une fois le héros (repéré par
  * l'attribut data-devis-hero) sorti de l'écran — évite un doublon avec le
- * CTA déjà visible en haut de la landing page. Positionnée sous la
- * bannière cookies (z-[200] dans ConsentBanner) : celle-ci reste au-dessus
- * tant qu'elle est affichée, cette barre prend le relais dès qu'elle est
- * fermée, sans code de coordination entre les deux composants.
+ * CTA déjà visible en haut de page. Positionnée sous la bannière cookies
+ * (z-[200] dans ConsentBanner) : celle-ci reste au-dessus tant qu'elle est
+ * affichée, cette barre prend le relais dès qu'elle est fermée, sans code
+ * de coordination entre les deux composants.
+ *
+ * Utilisée par la landing publicitaire comme par les pages de zone : les
+ * deux ancres qu'elle vise (data-devis-hero et #devis-bas) sont les mêmes
+ * des deux côtés.
  */
-export default function LandingPergolaStickyBar() {
+export default function DevisStickyBar() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

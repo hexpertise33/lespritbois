@@ -3,9 +3,9 @@ import { buildMetadata } from '@/lib/metadata';
 import { CONTACT } from '@/lib/data/navigation';
 import LandingPergolaHeader from '@/components/LandingPergolaHeader';
 import LandingPergolaFooter from '@/components/LandingPergolaFooter';
-import LandingPergolaForm from '@/components/LandingPergolaForm';
-import LandingPergolaStickyBar from '@/components/LandingPergolaStickyBar';
-import LandingPergolaDesktopPopup from '@/components/LandingPergolaDesktopPopup';
+import DevisForm from '@/components/DevisForm';
+import DevisStickyBar from '@/components/DevisStickyBar';
+import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 
 export const metadata: Metadata = buildMetadata({
   title: "Devis pergola gratuit à Libourne — L'Esprit Bois",
@@ -17,6 +17,13 @@ export const metadata: Metadata = buildMetadata({
   ville: 'Libourne',
   noindex: true,
 });
+
+/* Étiquettes d'attribution des leads. Valeurs historiques de cette landing,
+   conservées telles quelles : elles alimentent l'e-mail de lead et la clé de
+   session du pop-up, et servaient de constantes en dur avant que les
+   composants Devis* soient partagés avec les pages de zone. */
+const PROJET = 'Pergola (landing Ads)';
+const PAGE_LABEL = '/devis-pergola';
 
 /* Comparatif court : juste de quoi rassurer que l'entreprise couvre le
    besoin du visiteur, peu importe son type de pergola — pas le tableau
@@ -148,7 +155,7 @@ export default function DevisPergolaPage() {
               <h2 className="font-headline-sm text-headline-sm text-primary mb-6">
                 Recevez votre devis gratuit
               </h2>
-              <LandingPergolaForm instanceId="haut" />
+              <DevisForm instanceId="haut" projet={PROJET} pageLabel={PAGE_LABEL} />
             </div>
           </div>
         </header>
@@ -262,7 +269,7 @@ export default function DevisPergolaPage() {
                 <h2 className="font-headline-sm text-headline-sm text-primary mb-6 text-center">
                   Recevez votre devis gratuit
                 </h2>
-                <LandingPergolaForm instanceId="milieu" />
+                <DevisForm instanceId="milieu" projet={PROJET} pageLabel={PAGE_LABEL} />
               </div>
             </div>
           </div>
@@ -351,15 +358,15 @@ export default function DevisPergolaPage() {
                 Prêt à profiter de votre terrasse autrement ?
               </h2>
               <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
-                <LandingPergolaForm instanceId="bas" />
+                <DevisForm instanceId="bas" projet={PROJET} pageLabel={PAGE_LABEL} />
               </div>
             </div>
           </div>
         </section>
       </main>
       <LandingPergolaFooter />
-      <LandingPergolaStickyBar />
-      <LandingPergolaDesktopPopup />
+      <DevisStickyBar />
+      <DevisDesktopPopup pageLabel={PAGE_LABEL} />
     </>
   );
 }

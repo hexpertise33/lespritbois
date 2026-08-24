@@ -113,11 +113,18 @@ export const ZONES: Zone[] = [
     h1: 'Pergolas, carports et terrasses en Entre-deux-Mers',
     chapo:
       "Cinq de nos douze chantiers documentés sont en Entre-deux-Mers. C'est le secteur où nous posons le plus, et celui dont les terrains nous ont le plus appris.",
-    cover: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-5.webp',
-    coverW: 825,
-    coverH: 1100,
+    /* Couverture changée le 24/08/2026. La précédente était une photo en
+       portrait (825 × 1100) : dans un bandeau large, `object-cover` n'en gardait
+       qu'une bande centrale, la façade, et le voile du héros achevait de la
+       noircir. Celle-ci fait 1200 × 646, presque le format du bandeau, donc
+       quasiment aucun recadrage. Elle montre en plus les vis de fondation au
+       pied des poteaux, c'est-à-dire l'argument que défendent le texte et le
+       schéma juste en dessous. */
+    cover: '/images/source-adefrance/Carport-bois-Libourne-3.webp',
+    coverW: 1200,
+    coverH: 646,
     coverAlt:
-      "Pergola aluminium anthracite adossée à une maison, vue depuis le jardin, réalisée à Saint-Pey-de-Castets en Entre-deux-Mers",
+      "Carport bois autoporté à couverture bac acier pour trois véhicules, posé sur terrain en pente à Capian, vis de fondation visibles au pied des poteaux",
     contexte: {
       titre: 'Ce que le relief de l’Entre-deux-Mers impose à un ouvrage',
       paragraphes: [

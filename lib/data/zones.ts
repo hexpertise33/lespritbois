@@ -535,11 +535,16 @@ export const ZONES: Zone[] = [
     h1: "Terrasses bois sur le Bassin d'Arcachon",
     chapo:
       "Nous n'avons pas encore posé de terrasse sur le Bassin. Mais nous en avons posé une sur le sable, à Lacanau : c'est la même question de portance, et c'est elle qui commande tout le reste.",
-    cover: '/images/terrasse-bois-plots-gironde-1.webp',
-    coverW: 950,
-    coverH: 1267,
+    /* Couverture en paysage : le bandeau du héros est deux fois plus large que
+       haut, une photo en portrait y perdrait la moitié de sa hauteur (voir
+       `verifieCouvertures` en bas de ce fichier). Celle-ci montre la vis de
+       fondation sous la rive et le sable tout autour, c'est-à-dire l'argument
+       de la page. */
+    cover: '/images/terrasse-bois-plots-gironde-2.webp',
+    coverW: 1200,
+    coverH: 900,
     coverAlt:
-      "Terrasse bois posée sur sol sableux, plinthe de rive fermant la structure sur ses quatre côtés, chantier de L'Esprit Bois à Lacanau",
+      "Terrasse bois posée sur sable devant une maison à bardage noir, vis de fondation visible sous la plinthe de rive, chantier de L'Esprit Bois à Lacanau",
     contexte: {
       titre: 'Quatre choses que le sable change à une terrasse',
       paragraphes: [
@@ -568,12 +573,12 @@ export const ZONES: Zone[] = [
           'Lacanau, le sable vient jusqu\'à la rive du platelage, et la pinède commence derrière la maison.',
       },
       {
-        src: '/images/terrasse-bois-plots-gironde-3.webp',
-        w: 1000,
-        h: 1333,
-        alt: "Jonction entre le platelage bois et le mur de la maison, marche de rive visible, chantier de L'Esprit Bois à Lacanau",
+        src: '/images/terrasse-bois-plots-gironde-1.webp',
+        w: 950,
+        h: 1267,
+        alt: "Terrasse bois posée sur sol sableux, plinthe de rive fermant la structure sur ses quatre côtés, chantier de L'Esprit Bois à Lacanau",
         legende:
-          'Lacanau, la jonction au bâti et la marche de rive, réglées après avoir trouvé le niveau porteur.',
+          'Lacanau, la plinthe de rive referme l\'ouvrage sur ses quatre côtés, pour que le sable ne s\'installe pas sous le platelage.',
       },
       {
         src: '/images/terrasse-bois-pool-house-noir.webp',
@@ -761,5 +766,52 @@ export const ZONES: Zone[] = [
     ],
   },
 ];
+
+/** Format approximatif du bandeau de héros sur un écran large : le conteneur
+ *  fait environ 1424 × 746 px, soit 1,9. */
+const FORMAT_HERO = 1.9;
+
+/** Part minimale de la hauteur de la photo qui doit rester visible dans le
+ *  bandeau. En dessous, on ne montre plus une photo mais une bande prélevée en
+ *  son milieu, et ce qu'elle contient relève de la chance. */
+const PART_MINIMALE = 0.5;
+
+/** Refuse une couverture de zone trop haute pour le bandeau du héros.
+ *
+ *  Constaté le 24/08/2026 sur la zone Entre-deux-Mers : sa couverture était une
+ *  photo en portrait de 825 × 1100. `object-cover` n'en gardait qu'une bande
+ *  centrale, ici la façade de la maison, et le voile du héros (0,9 à 0,6
+ *  d'opacité) achevait de l'éteindre. Le héros s'affichait comme un rectangle
+ *  noir, et rien dans le code ne le signalait.
+ *
+ *  Même politique que le contrôle de longueur des balises dans `lib/metadata.ts`
+ *  : on échoue franchement au build et en développement, on se contente d'un
+ *  avertissement en production, une page en ligne ne devant jamais tomber pour
+ *  un motif d'affichage. */
+function verifieCouvertures(zones: Zone[]) {
+  const ecarts = zones
+    .map((z) => {
+      const part = Math.min(z.coverW / z.coverH / FORMAT_HERO, 1);
+      if (part >= PART_MINIMALE) return null;
+      return (
+        `${z.slug} : couverture ${z.coverW}×${z.coverH}, ` +
+        `le bandeau n'en garderait que ${Math.round(part * 100)} % de la hauteur ` +
+        `(minimum ${PART_MINIMALE * 100} %). Prenez une photo au moins aussi large que haute.`
+      );
+    })
+    .filter((x): x is string => x !== null);
+
+  if (ecarts.length === 0) return;
+
+  const message = '[ZONES] couverture inadaptée au bandeau du héros\n  ' + ecarts.join('\n  ');
+  const bloquant =
+    process.env.NEXT_PHASE === 'phase-production-build' ||
+    process.env.NODE_ENV === 'development';
+
+  if (bloquant) throw new Error(message);
+  console.warn(message);
+}
+
+verifieCouvertures(ZONES);
 
 export const getZone = (slug: string) => ZONES.find((z) => z.slug === slug);

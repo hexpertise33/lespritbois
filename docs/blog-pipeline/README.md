@@ -1,34 +1,42 @@
 # Pipeline éditorial — Blog L'Esprit Bois
 
-Mémoire de la routine de publication (2 articles/semaine, **mardi & jeudi**).
+Mémoire de la routine de publication (**un article tous les deux jours**, voir
+le test de cadence juste en dessous).
 
 ---
 
-## 🛑 À LIRE AVANT TOUTE RÉDACTION — le créneau est-il déjà servi ?
+## 🛑 À LIRE AVANT TOUTE RÉDACTION — le test de cadence
 
-**Des articles peuvent avoir été écrits À L'AVANCE, plusieurs jours avant leur
-date.** C'est arrivé le 11/08/2026 : David a demandé dans la même soirée les
-articles du 12/08 et du 13/08, tous deux rédigés, déployés et vérifiés en 200 ce
-soir-là. Le tableau « Sujets » fait foi.
+**Cadence depuis le 24/08/2026 : un article tous les deux jours.** La tâche
+planifiée se déclenche tous les jours à 8h ; c'est ce test, et lui seul, qui
+décide si elle publie. Il n'y a plus de jour « avec créneau » ni de jour « sans
+créneau », plus de mardi ni de vendredi à retenir.
 
-**Test à faire en premier, avant de choisir un sujet :**
+Cherche dans **tout** `lib/data/blog.ts` — pas seulement la première entrée :
 
-1. Y a-t-il, **n'importe où** dans `lib/data/blog.ts` (pas seulement en première
-   position), une entrée dont la `date` est **celle du jour** ?
-2. Si oui, son URL `https://lesprit-bois.fr/blog/<slug>` répond-elle **200** ?
+1. Une entrée porte-t-elle la date d'**aujourd'hui** ?
+2. Une entrée porte-t-elle la date d'**hier** ?
 
-**Si les deux réponses sont oui : NE RIEN PUBLIER.** Le créneau du jour est déjà
-servi. Signale-le dans ton résumé et arrête-toi là. Le quota est d'un article par
-jour ; en publier un second créerait deux articles à la même date.
+**Une seule réponse « oui » suffit à tout arrêter : ne publie rien**, signale-le
+dans le résumé et arrête-toi là. Pas de veille, pas de rédaction, pas de build,
+pas de deploy.
+
+**Deux réponses « non » : publie un article, daté d'aujourd'hui.**
 
 ⚠️ **Ne teste pas seulement la première entrée du tableau.** C'était la règle
-écrite après le double déclenchement du 10/08, et elle est **insuffisante** : dès
-qu'un article est écrit en avance, la première entrée porte une date *future*, le
-test échoue, et la tâche publie un article en trop. C'est la date recherchée dans
-tout le tableau qui compte, pas la position.
+écrite après le double déclenchement du 10/08, et elle s'est révélée
+insuffisante : dès qu'un article était écrit en avance, la première entrée
+portait une date future et le test échouait. C'est la présence d'une entrée à la
+bonne date, **n'importe où** dans le tableau, qui compte — pas sa position.
 
-Si aucune entrée ne porte la date du jour, le créneau est libre : déroule la
-routine normalement.
+ℹ️ Le test se rattrape tout seul : si une exécution saute, deux jours passent
+sans article et la suivante publie. Inutile de rattraper à la main, et
+**interdit de rattraper en publiant deux articles d'un coup**.
+
+ℹ️ **Pour repasser à un article par jour**, il suffit de supprimer la question 2
+(« une entrée porte-t-elle la date d'hier ? »), ici et dans le SKILL.md de la
+tâche. Rien d'autre ne change.
+
 
 ---
 
@@ -62,7 +70,7 @@ confortable ni d'un run qui a du temps devant lui.
 
 ---
 
-## Routine planifiée — deux publications par semaine
+## Routine planifiée — un article tous les deux jours
 
 Depuis le 26/07/2026, le blog fonctionne en **auto-publication sans relecture**.
 Tâche planifiée locale `article-quotidien-lespritbois` : elle choisit un sujet
@@ -72,29 +80,41 @@ voisins**, build, commit, push ET déploie en prod (`npm run deploy`), vérifie 
 HTTP 200, puis passe le sujet à `publié` ci-dessous. Gérable depuis la section
 « Scheduled » de l'app.
 
-⚙️ **Cadence ramenée à deux articles par semaine le 22/08/2026** — cron
-`0 8 * * 2,5` (mardi et vendredi 8h, heure locale), contre `0 8 * * *`
-auparavant. Décision de David sur l'audit SEO du 22/08, qui a constaté
-**20 articles publiés en 23 jours et aucune page commerciale créée** sur la même
-période : 33 guides pour 5 pages de gamme.
+⚙️ **Cadence : un article tous les deux jours, depuis le 24/08/2026** — cron
+`0 8 * * *` (déclenchement quotidien), la publication étant filtrée par le test
+de tête de fichier. Cette formulation remplace le cron `0 8 * * 2,5` (mardi et
+vendredi) posé le 22/08, qui donnait le bon volume mais obligeait à raisonner
+sur le jour de la semaine : les notes « prochain créneau » du présent fichier
+s'en sont retrouvées en contradiction avec le cron dès le 23/08. Motif du
+changement : lisibilité, pas volume — deux articles par semaine et un article
+tous les deux jours sont des rythmes voisins.
+
+La décision de ralentir, elle, date du 22/08 et tient toujours. Elle a été prise
+sur l'audit SEO du jour, qui a constaté **20 articles publiés en 23 jours et
+aucune page commerciale créée** sur la même période : 33 guides pour 5 pages de
+gamme.
 
 Les trois motifs, dans l'ordre :
 
 1. **Le maillage ne suivait pas.** Les articles récents recevaient 2 à 3 liens
    internes contextuels, contre 19 à 45 pour les pages de gamme. Publier plus
-   vite qu'on ne maille produit des pages quasi orphelines. D'où la nouvelle
-   étape 4 bis de la routine : deux liens rétroactifs posés depuis des articles
-   voisins, dans le même commit que l'article.
+   vite qu'on ne maille produit des pages quasi orphelines. D'où l'étape 4 bis
+   de la routine : deux liens rétroactifs posés depuis des articles voisins,
+   dans le même commit que l'article.
 2. **Le retour commercial est indirect.** Un lecteur de guide est à deux clics
    de `/contact`. Le temps libéré va aux pages de gamme et aux pages de zone.
 3. **Le rythme est un signal.** 3 500 mots par jour pour un artisan seul
    correspond au profil décrit par Google sous *scaled content abuse*. Le
    contenu est sourcé et honnête ; la cadence, elle, se lit dans le sitemap.
 
-⚠️ **Ne pas compenser en publiant deux articles d'un coup.** Un run = un
-article ; les jours sans créneau, la routine ne tourne pas. La règle « jamais
-d'article en avance » du 22/08 reste entière : une réserve pleine n'autorise ni
-à prendre de l'avance, ni à rattraper.
+S'y ajoute un quatrième motif, apparu depuis : **la réserve de sujets est vide
+et les créneaux saturent** (terrasse clos à cinq articles, carport à quatre). Un
+rythme quotidien force à inventer un angle chaque jour, au risque que deux
+articles se cannibalisent.
+
+⚠️ **Ne pas compenser en publiant deux articles d'un coup.** Un run = au plus un
+article. La règle « jamais d'article en avance » du 22/08 reste entière : une
+réserve pleine n'autorise ni à prendre de l'avance, ni à rattraper.
 
 L'ancienne veille bihebdomadaire `veille-blog-lespritbois` (Temps 1 sans
 publication) est **désactivée** : l'auto-publication la remplace, la veille
@@ -858,6 +878,13 @@ tâche planifiée mérite d'être revérifiée dans la section « Scheduled ».
 (2) La note ci-dessous annonce le prochain article pour le **24/08**, qui est un
 **lundi** : avec la cadence à deux articles par semaine, le prochain créneau
 cohérent est le **mardi 25/08**. La date retenue reste à confirmer.
+
+✅ **Les deux points ont été tranchés par David le 24/08/2026 : passage à un
+article tous les deux jours, cron quotidien.** Sa réponse — « on ne comprend
+pas » — visait la lisibilité du calendrier, pas le volume. Le calendrier
+hebdomadaire disparaît donc au profit d'un test à deux dates (aujourd'hui /
+hier), et le cron repasse à `0 8 * * *` : la question « quel jour sommes-nous »
+ne se pose plus, ni pour la tâche ni pour nous. Voir le bloc de tête.
 
 🛑 **RÉSERVE VIDE au 23/08/2026 — veille obligatoire avant le prochain article.**
 Le claustra, seule idée restante, a été republié ce jour (voir ci-dessous). Le

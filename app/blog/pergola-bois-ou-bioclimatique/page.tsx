@@ -493,7 +493,10 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                 En contrepartie, c&apos;est un{' '}
                 <strong className="text-primary font-semibold">ouvrage mécanisé</strong> : le budget démarre plus haut,
                 et la motorisation demande un contrôle périodique. L&apos;aluminium ne pourrit pas, mais un moteur et des
-                joints restent des pièces d&apos;usure à surveiller.
+                joints restent des pièces d&apos;usure à surveiller. Si vous en êtes déjà à comparer des propositions
+                chiffrées, ce sont surtout{' '}
+                <a href="/blog/comparer-devis-pergola-postes-prix" className={lienInterne}>les postes qui expliquent l&apos;écart entre deux devis de pergola</a>{' '}
+                qu&apos;il faut regarder, à commencer par le support.
               </p>
             </section>
 

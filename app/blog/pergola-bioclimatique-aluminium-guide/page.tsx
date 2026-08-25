@@ -462,7 +462,9 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Deux pergolas peuvent se ressembler trait pour trait sur un catalogue et se comporter très différemment
                 au bout de trois hivers. Voici les points sur lesquels nous regardons, et que nous vous invitons à faire
-                figurer noir sur blanc dans tout devis, chez nous comme ailleurs :
+                figurer noir sur blanc dans tout devis, chez nous comme ailleurs. Ils recoupent{' '}
+                <a href="/blog/comparer-devis-pergola-postes-prix" className={lienInterne}>les postes qui font vraiment varier le prix d&apos;une pergola d&apos;un devis à l&apos;autre</a>{' '}
+                :
               </p>
               <ul className="space-y-3 mb-5">
                 {[

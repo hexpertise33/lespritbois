@@ -460,7 +460,7 @@ export default function ArticleComparerDevisPergolaPage() {
               w={825}
               h={1100}
               alt="Pied de poteau d'une pergola aluminium adossée descendant au droit d'une terrasse bois, chantier en Gironde"
-              caption="Chantier de Saint-Pey-de-Castets : ce qu'on voit du pied de poteau ne dit rien de l'appui coulé dessous, et c'est pourtant cette ligne-là qu'il faut chercher sur le devis."
+              caption="Chantier de Saint-Pey-de-Castets : les lames ont été découpées au droit du poteau, et l'appui qui le reprend se trouve sous la terrasse, invisible une fois le platelage refermé. Sur le devis, il tient en une ligne."
             />
 
             {/* 3. La structure */}
@@ -600,8 +600,8 @@ export default function ArticleComparerDevisPergolaPage() {
               src="/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-6.webp"
               w={825}
               h={1100}
-              alt="Raccord d'une pergola aluminium adossée sur la façade : profilé de tête, chéneau périphérique et couverture translucide, chantier en Gironde"
-              caption="À Saint-Pey-de-Castets, la couverture vient se raccorder juste sous le débord de toit de la maison : c'est ce débord qui a fixé la hauteur sous poutre disponible."
+              alt="Raccord d'une pergola aluminium adossée sur la façade : profilé de tête fixé au mur et poutre de rive, chantier en Gironde"
+              caption="À Saint-Pey-de-Castets, la couverture se raccorde au mur juste sous le débord de toit de la maison : c'est ce point de couture, et pas le milieu de la toiture, qui décide de l'étanchéité."
             />
 
             {/* 6. Hors devis */}

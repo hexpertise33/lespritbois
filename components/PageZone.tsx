@@ -176,7 +176,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                         className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
                       >
                         <span
-                          className="material-symbols-outlined text-secondary-dark text-[40px]! leading-none"
+                          className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
                           aria-hidden="true"
                         >
                           {t.icone}

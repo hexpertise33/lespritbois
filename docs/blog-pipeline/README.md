@@ -125,15 +125,45 @@ publication) est **désactivée** : l'auto-publication la remplace, la veille
 Un seul temps, entièrement automatique (routine `article-quotidien-lespritbois`) :
 choix du sujet (réserve ci-dessous → sinon veille web pour un angle neuf, en
 recoupant `lib/data/blog.ts` pour éviter les doublons) → rédaction
-(`redacteur-bois`) → images (`iconographe-bois`) → `npm run build` → commit +
-push → `npm run deploy` → contrôle HTTP 200 → ping IndexNow → sujet marqué `publié`.
+(`redacteur-bois`) → images (`iconographe-bois`) → maillage rétroactif → `npm run
+build` → commit + push → `npm run deploy` → contrôle HTTP 200 → **signalement aux
+moteurs (étape 8 bis)** → sujet marqué `publié`.
 
-Ping IndexNow (notifie Bing/Yandex/Naver de la nouvelle URL, clé déposée dans
+### Signalement aux moteurs — les deux gestes de l'étape 8 bis
+
+**1. Ping IndexNow** (Bing, Yandex, Naver — clé déposée dans
 `public/a0b43b04a9254681af50f9e95240c80b.txt`) :
 
 ```
-curl -s "https://api.indexnow.org/indexnow?url=https://lesprit-bois.fr/blog/<slug>&key=a0b43b04a9254681af50f9e95240c80b"
+curl -s -o /dev/null -w "%{http_code}\n" "https://api.indexnow.org/indexnow?url=https://lesprit-bois.fr/blog/<slug>&key=a0b43b04a9254681af50f9e95240c80b"
 ```
+
+**2. Demande d'indexation Google Search Console** — exigence posée par David le
+**25/08/2026** : chaque article part en demande d'indexation dès sa mise en
+ligne. ⚠️ Google **n'utilise pas IndexNow** : le geste 1 ne dispense pas du 2.
+
+Trois faits à connaître avant de chercher à l'automatiser autrement :
+
+- **Aucune API ne fait ce geste.** L'API Indexing de Google est officiellement
+  réservée aux pages `JobPosting` et `BroadcastEvent` — pas aux articles.
+- **Le ping sitemap `google.com/ping?sitemap=` est mort** : Google l'a supprimé
+  en 2023. L'appeler ne fait rien du tout.
+- Le seul chemin réel est **l'interface Search Console**, pilotée par les outils
+  Chrome sur le navigateur de David, où `sasecotoit@gmail.com` est connecté.
+
+C'est donc une étape **best-effort et non bloquante** : l'article est déjà en
+ligne et vérifié en 200 quand elle s'exécute. Les échecs attendus — **quota
+Search Console atteint** (constaté le 22/08 : l'interface a cessé d'accepter les
+saisies après 4 URL), Chrome fermé, session expirée, interface modifiée — se
+consignent dans le résumé et ici, et David reprend la main en trente secondes.
+Ne jamais redéployer pour ça, ne jamais déclarer une demande faite sans avoir vu
+la confirmation à l'écran.
+
+📌 **`RESOURCE_ID` Search Console : pas encore relevé.** Le premier run qui fera
+l'étape le lira dans le sélecteur de propriété
+(`sc-domain:lesprit-bois.fr` ou `https://lesprit-bois.fr/`) et **le consignera
+ici**, pour que les suivants aillent directement à l'inspection d'URL :
+`https://search.google.com/search-console/inspect?resource_id=<RESOURCE_ID>&id=<URL encodée>`
 
 Garde-fous automatiques (pas de relecture humaine) : build bloquant, vérification
 200 après deploy, anti-doublon de slug/angle et de cover, prudence factuelle

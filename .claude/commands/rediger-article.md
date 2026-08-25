@@ -39,8 +39,22 @@ défaut, demande-lui laquelle des propositions du dernier
    Si 404, c'est presque toujours l'erreur de deploy ci-dessus (bundle non
    reconstruit) ou un cache edge : relance `npm run deploy` et réessaie. Ne
    déclare l'article publié que sur un 200 confirmé.
-9. **Mémoire.** Passe le sujet à `publié` dans le tableau de
-   `docs/blog-pipeline/README.md` et committe cette mise à jour.
+9. **Signalement aux moteurs.** Une fois le 200 confirmé, et jamais avant :
+   - **IndexNow** (Bing/Yandex/Naver) —
+     `curl -s -o /dev/null -w "%{http_code}\n" "https://api.indexnow.org/indexnow?url=https://lesprit-bois.fr/blog/<slug>&key=a0b43b04a9254681af50f9e95240c80b"`
+   - **Demande d'indexation Google Search Console**, via les outils Chrome sur le
+     navigateur où `sasecotoit@gmail.com` est connecté : inspection de l'URL puis
+     « Demander une indexation ». ⚠️ Google n'utilise pas IndexNow, et aucune API
+     ne fait ce geste (l'API Indexing est réservée aux `JobPosting`/
+     `BroadcastEvent`, le ping sitemap est supprimé depuis 2023). Étape
+     **non bloquante** : quota atteint ou Chrome fermé, on le signale et on
+     passe — l'article est déjà en ligne. Ne jamais déclarer la demande faite
+     sans avoir vu la confirmation.
+   Détail complet : section « Signalement aux moteurs » de
+   `docs/blog-pipeline/README.md`.
+10. **Mémoire.** Passe le sujet à `publié` dans le tableau de
+   `docs/blog-pipeline/README.md`, note le résultat des deux signalements, et
+   committe cette mise à jour.
 
 ## Garde-fous
 - Ne publie qu'UN article par exécution, sauf demande explicite.
@@ -48,3 +62,5 @@ défaut, demande-lui laquelle des propositions du dernier
 - Déploie toujours via `npm run deploy` (build + deploy), jamais `deploy` seul.
 - Signale à l'utilisateur l'URL finale (`https://lesprit-bois.fr/blog/<slug>`),
   et seulement après avoir confirmé un HTTP 200 (étape 8).
+- Chaque article part en IndexNow **et** en demande d'indexation Search Console
+  (étape 9). Un échec de la demande GSC ne remet jamais la publication en cause.

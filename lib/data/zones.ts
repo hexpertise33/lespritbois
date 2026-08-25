@@ -30,7 +30,17 @@ export type Zone = {
    *  une page d'offre. Chacune doit traiter une contrainte technique distincte,
    *  quatre pages qui redisent la même chose sont des doorway pages, quel que
    *  soit le soin mis à l'écriture. */
-  offres?: { slug: string; titre: string; resume: string }[];
+  offres?: {
+    slug: string;
+    titre: string;
+    resume: string;
+    /** Vignette de la carte. Sur une page mère, les offres sont la charge utile :
+     *  deux lignes de texte ne suffisent pas, il faut des cartes qu'on voie. */
+    src?: string;
+    w?: number;
+    h?: number;
+    alt?: string;
+  }[];
   /** Libellé du projet transmis à /api/contact par le formulaire de la page.
    *  C'est lui qui permet de distinguer un lead du Bassin d'un lead de la
    *  landing publicitaire dans la boîte mail. */
@@ -49,6 +59,17 @@ export type Zone = {
   /** Ce qui distingue vraiment ce secteur, techniquement. Pas du remplissage
    *  géographique : la raison pour laquelle un chantier y est différent. */
   contexte: { titre: string; paragraphes: string[] };
+  /** Variante du contexte en tuiles, pour les pages mères.
+   *
+   *  Une page mère s'oriente, elle ne se lit pas : son rôle est d'envoyer le
+   *  visiteur sur la bonne page d'offre en quelques secondes. Quatre paragraphes
+   *  d'affilée, soit environ 400 mots sans respiration, faisaient exactement
+   *  l'inverse. Quand ce champ est renseigné, il remplace `contexte.paragraphes`
+   *  à l'affichage ; le texte long reste sur les pages d'offre, qui sont faites
+   *  pour la profondeur. */
+  contexteTuiles?: { titre: string; texte: string }[];
+  /** Phrase de bascule sous les tuiles, qui justifie l'existence des pages filles. */
+  contexteChute?: string;
   /** Schéma technique illustrant l'argument central de la page, affiché juste
    *  après le contexte. Dessiné, pas photographié : sur un sujet comme la
    *  reprise de charge sous le sable, aucune photo ne montre ce qui compte,
@@ -652,13 +673,21 @@ export const ZONES: Zone[] = [
         slug: 'pergola-bassin-arcachon',
         titre: 'Pergolas sur le Bassin',
         resume:
-          "Le vent qui décide de l'ancrage, les embruns qui décident du laquage, et l'avis de l'Architecte des Bâtiments de France qui décide du calendrier.",
+          "Le vent décide de l'ancrage, les embruns du laquage, l'Architecte des Bâtiments de France du calendrier.",
+        src: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
+        w: 1100,
+        h: 825,
+        alt: "Pergola aluminium anthracite équipée d'un store screen à zip, guidage latéral visible, réalisée par L'Esprit Bois",
       },
       {
         slug: 'terrasse-bois-bassin-arcachon',
         titre: 'Terrasses bois sur le Bassin',
         resume:
-          "Le sable qui ne porte pas, la sous-face qu'il faut garder ventilée, et la nuance d'inox qui décide de l'aspect dans dix ans.",
+          "Le sable ne porte pas, la sous-face doit rester ventilée, et la nuance d'inox décide de l'aspect dans dix ans.",
+        src: '/images/terrasse-bois-plots-gironde-2.webp',
+        w: 1200,
+        h: 900,
+        alt: "Terrasse bois posée sur sable devant une maison à bardage noir, vis de fondation visible sous la plinthe de rive, chantier de L'Esprit Bois à Lacanau",
       },
     ],
     projet: "Projet extérieur, Bassin d'Arcachon",
@@ -687,13 +716,33 @@ export const ZONES: Zone[] = [
     contexte: {
       titre: "Ce que le Bassin change, quel que soit l'ouvrage",
       paragraphes: [
-        "Le sol, d'abord. Le sable ne porte pas mal, il porte inégalement : une structure fondée en surface descend là où le sable se tasse le plus, et nulle part ailleurs. Ce n'est pas la charge qui déforme un ouvrage sur le littoral, c'est le tassement différentiel. Terrasse, carport ou pergola, la réponse est la même, aller chercher un sol qui tient plutôt que se poser sur celui qu'on voit.",
-        "Le vent, ensuite. Une pergola bioclimatique n'est pas une toiture : c'est une surface qui prend au vent, et ses lames orientables davantage encore. Sur une façade exposée aux entrées maritimes, c'est l'ancrage qui commande le dimensionnement, pas la lame. Nous n'écrirons pas ici de vitesse de référence : le zonage se lit à la commune, et une parcelle abritée par la forêt n'a rien à voir avec une façade ouverte sur l'eau. C'est un calcul, il se fait après le relevé.",
-        "Le sel, qui n'attaque jamais ce qu'on croit. Il ne s'en prend pas au bois mais aux métaux : la visserie d'un platelage, l'alliage d'un profilé aluminium. D'un côté l'inox A4 plutôt que l'A2 ; de l'autre la qualification du laqueur, Qualicoat pour le laquage, Qualimarine délivré par l'ADAL pour les ambiances marines. Deux postes invisibles sur un devis, et deux postes qui décident de l'aspect de l'ouvrage dans dix ans.",
-        "L'urbanisme, enfin, et c'est le point le plus sous-estimé. Le Bassin concentre les protections : la Ville d'Hiver d'Arcachon est un site classé depuis 1985, la dune du Pilat et la forêt communale de La Teste-de-Buch le sont également. Dans ces périmètres, les exonérations de droit commun tombent, l'article R. 421-11 du code de l'urbanisme remet en déclaration préalable ce qui en serait normalement dispensé, et le dossier passe par l'avis de l'Architecte des Bâtiments de France. Une pergola commandée en mars pour l'été se prépare en janvier.",
-        "Chacun de ces quatre points se traite différemment selon l'ouvrage. C'est pourquoi nous avons une page par ouvrage plutôt qu'une page qui dirait tout à moitié.",
+        "Le sable ne porte pas mal, il porte inégalement : une structure fondée en surface descend là où le sable se tasse, et nulle part ailleurs. Le vent commande l'ancrage plutôt que la lame. Le sel n'attaque pas le bois mais les métaux. Et les sites classés font tomber les exonérations d'urbanisme dès le premier mètre carré.",
       ],
     },
+    contexteTuiles: [
+      {
+        titre: 'Le sol',
+        texte:
+          "Le sable ne porte pas mal, il porte inégalement. Une structure fondée en surface descend là où le sable se tasse, et nulle part ailleurs.",
+      },
+      {
+        titre: 'Le vent',
+        texte:
+          "Une pergola prend au vent, ses lames orientables davantage encore. C'est l'ancrage qui commande le dimensionnement, jamais la lame.",
+      },
+      {
+        titre: 'Le sel',
+        texte:
+          "Il n'attaque pas le bois mais les métaux : la visserie d'un platelage, l'alliage d'un profilé. Inox A4 d'un côté, laqueur qualifié de l'autre.",
+      },
+      {
+        titre: "L'urbanisme",
+        texte:
+          "Ville d'Hiver, dune du Pilat, forêt de La Teste : en site classé, les exonérations tombent. Déclaration préalable, avis de l'ABF, deux mois d'instruction.",
+      },
+    ],
+    contexteChute:
+      "Chacun de ces quatre points se traite différemment selon l'ouvrage. C'est pourquoi nous avons une page par ouvrage plutôt qu'une page qui dirait tout à moitié.",
     galerie: [
       {
         src: '/images/terrasse-bois-plots-gironde-4.webp',

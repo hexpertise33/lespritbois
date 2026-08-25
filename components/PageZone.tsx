@@ -161,15 +161,42 @@ export default function PageZone({ zone }: { zone: Zone }) {
         {/* Contexte technique du secteur */}
         <section className="py-20 md:py-28 bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl">
-              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8">
+            <div className={zone.contexteTuiles ? '' : 'max-w-3xl'}>
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8 max-w-3xl">
                 {zone.contexte.titre}
               </h2>
-              <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
-                {zone.contexte.paragraphes.map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
-              </div>
+              {/* Une page mère s'oriente, elle ne se lit pas : ses contraintes
+                  passent en tuiles, la prose reste aux pages d'offre. */}
+              {zone.contexteTuiles ? (
+                <>
+                  <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-8">
+                    {zone.contexteTuiles.map((t, i) => (
+                      <li key={t.titre} className="border-t-2 border-secondary/40 pt-5">
+                        <p className="font-label-md text-label-md text-secondary-dark mb-2">
+                          {String(i + 1).padStart(2, '0')}
+                        </p>
+                        <h3 className="font-title-md text-title-md text-on-surface mb-3">
+                          {t.titre}
+                        </h3>
+                        <p className="font-body-md text-body-md text-on-surface-variant">
+                          {t.texte}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                  {zone.contexteChute && (
+                    <p className="font-body-lg text-body-lg text-on-surface-variant mt-12 max-w-3xl">
+                      {zone.contexteChute}
+                    </p>
+                  )}
+                </>
+              ) : (
+                <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
+                  {zone.contexte.paragraphes.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Schéma technique, à la suite immédiate du texte qu'il illustre.
@@ -207,16 +234,31 @@ export default function PageZone({ zone }: { zone: Zone }) {
               </p>
               <ul className="grid md:grid-cols-2 gap-8">
                 {zone.offres.map((o) => (
-                  <li key={o.slug} className="border-t-2 border-secondary/40 pt-5">
-                    <a
-                      href={`/${o.slug}`}
-                      className="font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors"
-                    >
-                      {o.titre}
+                  <li key={o.slug} className={o.src ? '' : 'border-t-2 border-secondary/40 pt-5'}>
+                    <a href={`/${o.slug}`} className="group block">
+                      {o.src && (
+                        <div className="rounded-2xl overflow-hidden shadow-xl aspect-[3/2] mb-5">
+                          <img
+                            width={o.w}
+                            height={o.h}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                            src={o.src}
+                            alt={o.alt ?? ''}
+                          />
+                        </div>
+                      )}
+                      <span className="block font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary-dark transition-colors">
+                        {o.titre}
+                      </span>
+                      <span className="block font-body-md text-body-md text-on-surface-variant mt-3">
+                        {o.resume}
+                      </span>
+                      <span className="inline-block font-label-md text-label-md text-secondary-dark mt-4 underline underline-offset-4 decoration-secondary/40 group-hover:decoration-secondary transition-colors">
+                        Voir la page
+                      </span>
                     </a>
-                    <p className="font-body-md text-body-md text-on-surface-variant mt-3">
-                      {o.resume}
-                    </p>
                   </li>
                 ))}
               </ul>
@@ -445,16 +487,31 @@ export default function PageZone({ zone }: { zone: Zone }) {
               </p>
               <ul className="grid md:grid-cols-2 gap-8">
                 {zone.offres.map((o) => (
-                  <li key={o.slug} className="border-t-2 border-secondary/40 pt-5">
-                    <a
-                      href={`/${o.slug}`}
-                      className="font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors"
-                    >
-                      {o.titre}
+                  <li key={o.slug} className={o.src ? '' : 'border-t-2 border-secondary/40 pt-5'}>
+                    <a href={`/${o.slug}`} className="group block">
+                      {o.src && (
+                        <div className="rounded-2xl overflow-hidden shadow-xl aspect-[3/2] mb-5">
+                          <img
+                            width={o.w}
+                            height={o.h}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                            src={o.src}
+                            alt={o.alt ?? ''}
+                          />
+                        </div>
+                      )}
+                      <span className="block font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary-dark transition-colors">
+                        {o.titre}
+                      </span>
+                      <span className="block font-body-md text-body-md text-on-surface-variant mt-3">
+                        {o.resume}
+                      </span>
+                      <span className="inline-block font-label-md text-label-md text-secondary-dark mt-4 underline underline-offset-4 decoration-secondary/40 group-hover:decoration-secondary transition-colors">
+                        Voir la page
+                      </span>
                     </a>
-                    <p className="font-body-md text-body-md text-on-surface-variant mt-3">
-                      {o.resume}
-                    </p>
                   </li>
                 ))}
               </ul>

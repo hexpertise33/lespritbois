@@ -167,11 +167,26 @@ consignent dans le résumé et ici, et David reprend la main en trente secondes.
 Ne jamais redéployer pour ça, ne jamais déclarer une demande faite sans avoir vu
 la confirmation à l'écran.
 
-📌 **`RESOURCE_ID` Search Console : pas encore relevé.** Le premier run qui fera
-l'étape le lira dans le sélecteur de propriété
-(`sc-domain:lesprit-bois.fr` ou `https://lesprit-bois.fr/`) et **le consignera
-ici**, pour que les suivants aillent directement à l'inspection d'URL :
-`https://search.google.com/search-console/inspect?resource_id=<RESOURCE_ID>&id=<URL encodée>`
+📌 **`RESOURCE_ID` Search Console : `sc-domain:lesprit-bois.fr`.** Relevé le
+25/08/2026. La propriété est de type domaine et non préfixe d'URL, ce qui couvre
+`http`, `https`, `www` et les sous-domaines d'un seul tenant. Dans une query
+string il s'encode `sc-domain%3Alesprit-bois.fr`. Plus besoin de passer par le
+sélecteur de propriété, les runs attaquent directement l'inspection d'URL :
+
+```
+https://search.google.com/search-console/inspect?resource_id=sc-domain%3Alesprit-bois.fr&id=<URL encodée>
+```
+
+Le rapport des sitemaps se lit à la même adresse racine, utile pour vérifier que
+Google a relu le fichier après une mise en ligne :
+
+```
+https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Alesprit-bois.fr
+```
+
+État constaté le 25/08/2026 : sitemap envoyé le 02/08/2026, relu le 25/08/2026,
+« Opération effectuée », 53 URL découvertes, 38 pages indexées. Aucune exclusion
+pour robots.txt ni pour balise `noindex`.
 
 Garde-fous automatiques (pas de relecture humaine) : build bloquant, vérification
 200 après deploy, anti-doublon de slug/angle et de cover, prudence factuelle

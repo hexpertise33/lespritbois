@@ -210,6 +210,45 @@ Garde-fous automatiques (pas de relecture humaine) : build bloquant, vérificati
 Publication manuelle ponctuelle toujours possible via `/rediger-article`.
 Voir la charte : `docs/blog-pipeline/ligne-editoriale.md`.
 
+✅ **Article du 25/08 : maillage rétroactif rattrapé et indexation demandée.**
+Deux sessions ont travaillé le même créneau en parallèle ce soir-là. La première
+a écrit, illustré, buildé, déployé et vérifié `comparer-devis-pergola-postes-prix`
+(commits `95e0be2` et `4c1a332`) — travail complet, sauf **l'étape 4 bis, qui a
+été sautée** : l'article n'avait aucun lien entrant contextuel, seulement
+l'index `/blog`. Rattrapé en `1ecbd71` par deux liens posés dans le fil du texte
+depuis `pergola-bois-ou-bioclimatique` et `pergola-bioclimatique-aluminium-guide`,
+aux deux endroits où ces articles parlent déjà de budget et de contenu de devis.
+Vérifié en prod après deploy (version `89bafa1c`) : les trois URL en 200, et le
+lien entrant présent dans le HTML servi.
+
+Trois légendes ont aussi été corrigées au passage, l'iconographe ayant relu les
+photos en zoom : l'appui « coulé » sous la terrasse, le « chéneau périphérique »
+et le débord de toit qui aurait fixé la hauteur sous poutre — **aucune des trois
+n'est lisible sur l'image**. Remplacées par ce que la photo montre vraiment.
+C'est le même contrôle qui avait été demandé en août sur les légendes mensongères.
+
+**Indexation (première application de l'étape 8 bis)** : IndexNow **200**, et
+**demande d'indexation Search Console confirmée à l'écran** (« Indexation
+demandée · Cette URL a été ajoutée à une file d'attente d'exploration
+prioritaire »), via `sc-domain:lesprit-bois.fr`. ⚠️ **Le lien profond vers
+l'inspection d'URL ne fonctionne pas** (`/search-console/inspect?resource_id=…&id=…`
+renvoie un 404 Google) : passer par
+`https://search.google.com/search-console?resource_id=sc-domain:lesprit-bois.fr`
+puis coller l'URL dans la barre d'inspection en haut. À corriger dans les runs
+suivants plutôt que de refaire l'essai.
+
+ℹ️ Relevé au passage dans l'inspection, **sans gravité mais à surveiller** : la
+page était déjà « Explorée, actuellement non indexée » (exploration du 25/08 à
+21:03:44), avec « Aucun sitemap référent détecté » et « Aucune page d'origine
+détectée ». C'est le comportement normal d'une page de deux heures, dont le
+sitemap n'a pas encore été relu et qui n'avait alors aucun lien entrant — ce que
+l'étape 4 bis vient précisément de corriger. À revérifier dans quelques jours.
+
+⚠️ **Bug hors périmètre, signalé par l'iconographe** : le logo `publisher` du
+JSON-LD pointe vers `/images/source-adefrance/logo2026.png`, **qui n'existe pas
+sur le disque**, et **34 fichiers de `app/`** référencent ce chemin mort. C'est
+une image cassée pour Google sur tout le site, pas seulement sur cet article.
+
 ## Sujets en réserve prioritaires
 
 Toute la réserve **bois** a été consommée au 29/07/2026 : dernier sujet

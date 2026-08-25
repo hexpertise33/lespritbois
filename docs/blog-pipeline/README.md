@@ -170,12 +170,27 @@ la confirmation à l'écran.
 📌 **`RESOURCE_ID` Search Console : `sc-domain:lesprit-bois.fr`.** Relevé le
 25/08/2026. La propriété est de type domaine et non préfixe d'URL, ce qui couvre
 `http`, `https`, `www` et les sous-domaines d'un seul tenant. Dans une query
-string il s'encode `sc-domain%3Alesprit-bois.fr`. Plus besoin de passer par le
-sélecteur de propriété, les runs attaquent directement l'inspection d'URL :
+string il s'encode `sc-domain%3Alesprit-bois.fr`. Il évite le sélecteur de
+propriété : toute adresse Search Console portant ce `resource_id` ouvre
+directement la bonne propriété.
 
-```
-https://search.google.com/search-console/inspect?resource_id=sc-domain%3Alesprit-bois.fr&id=<URL encodée>
-```
+⚠️ **L'inspection d'URL ne se construit pas à la main.** Passer l'URL de la page
+dans `&id=` renvoie un 404 : vérifié le 25/08/2026. Le paramètre `id` de la page
+d'inspection est un identifiant opaque attribué par Google
+(`&id=HWnMunXEnrigrNM_Uf2dPw`), pas l'URL encodée. Le chemin qui marche :
+
+1. ouvrir `https://search.google.com/search-console?resource_id=sc-domain%3Alesprit-bois.fr` ;
+2. cliquer le champ « Inspecter n'importe quelle URL » tout en haut, saisir
+   l'URL complète et valider par Entrée. Viser le champ aux coordonnées plutôt
+   que par référence d'élément, la saisie ne prend pas toujours autrement ;
+3. attendre l'inspection, puis cliquer « Demander une indexation » ;
+4. Google lance d'abord un test de l'URL active, qui dure une trentaine de
+   secondes. La confirmation « Indexation demandée, cette URL a été ajoutée à
+   une file d'attente d'exploration prioritaire » n'arrive qu'après. Ne rien
+   déclarer avant de l'avoir vue.
+
+Renvoyer plusieurs fois la même URL ne sert à rien : Google précise que cela ne
+modifie ni sa priorité ni sa position dans la file.
 
 Le rapport des sitemaps se lit à la même adresse racine, utile pour vérifier que
 Google a relu le fichier après une mise en ligne :

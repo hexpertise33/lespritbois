@@ -927,17 +927,10 @@ ne se pose plus, ni pour la tâche ni pour nous. Voir le bloc de tête.
 📌 **Veille du 24/08/2026 faite à la demande de David** —
 `docs/blog-pipeline/2026-08-24.md`, 2 propositions au statut `proposé`, écrites
 après que la republication du claustra ait vidé la réserve.
-**(A, recommandée)** « Éclairer sa terrasse et sa pergola »
-(`eclairage-exterieur-terrasse-pergola`) : ce qui se décide pendant les travaux
-— points d'alimentation, gaines en attente, intégration aux profilés — et ce qui
-relève de l'électricien. Saisonnier (les soirées raccourcissent) sans être un
-énième angle « préparer l'hiver », et **explicitement dans l'offre** :
-`/pergolas` vend l'« éclairage LED » et `/carports` l'« éclairage intégré ».
-Trois faits vérifiés chez Promotelec le 24/08 (NF C 15-100 applicable, 30 mA,
-IP 44 à 67) ; Consuel, NF EN 60598 et les volumes de bassin **non vérifiés, à ne
-pas citer**. ⚠️ Le dépôt n'a aucune photo de nuit : cover et 1-2 figures en libre
-de droits, le reste en vraies photos de chantier.
-**(B)** « Comparer trois devis de pergola »
+~~**(A)** « Éclairer sa terrasse et sa pergola »
+(`eclairage-exterieur-terrasse-pergola`)~~ → **écartée par David le 25/08**, voir
+plus bas. La fiche reste dans `2026-08-24.md` pour mémoire ; ne pas la ressortir.
+**(B, retenue pour le 25/08)** « Comparer trois devis de pergola »
 (`comparer-devis-pergola-postes-prix`) : le poste absent est presque toujours le
 support. Proposition la plus utile commercialement (elle alimente
 `/devis-pergola`), et la plus sûre côté images — zéro téléchargement.
@@ -945,11 +938,20 @@ support. Proposition la plus utile commercialement (elle alimente
 de comparateurs commerciaux. Seules nos fourchettes « constatées sur nos
 chantiers » ont droit de cité.
 
-ℹ️ **Réserve après cette veille** : A pour le 25/08, B pour le 27/08. Restent
-ensuite **cuisine d'été** (dans l'offre mais hors saison, à programmer
+🛑 **La proposition A (éclairage extérieur) est ÉCARTÉE — David, 25/08/2026.**
+Elle était recommandée pour le créneau du jour ; il n'en veut pas. **Ne pas la
+reproposer**, sous cet angle ni sous un autre, sauf si David rouvre lui-même le
+sujet. Elle rejoint la liste des sujets refusés malgré un bon potentiel de
+recherche : portail aluminium (12/08) et terrasse composite (21/08). Le réflexe
+à garder de ces trois cas : un sujet peut être bien référençable, saisonnier et
+même mentionné sur le site, et rester un mauvais sujet pour l'entreprise.
+
+ℹ️ **Réserve après cette veille** : **B passe au 25/08** (le créneau du jour).
+Restent ensuite **cuisine d'été** (dans l'offre mais hors saison, à programmer
 février-mars) et **les aides financières véranda/pergola** (écartée faute de
 source primaire — rien d'explicite sur service-public.fr ni anah.fr, tout le
-reste vient de poseurs). Prévoir une nouvelle veille vers le **29/08**.
+reste vient de poseurs). Autrement dit la réserve est **vide dès que B sera
+publiée** : nouvelle veille nécessaire pour le créneau suivant.
 
 ✅ **Republication du claustra le 23/08/2026, à la date du jour.** David :
 « publie l'article du 23 demain avec le claustra ». Restauration des fichiers
@@ -1249,8 +1251,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-21 | publié  | Fermer sa pergola bioclimatique pour l'hiver : rideaux de verre, stores et ce que ça change vraiment | fermer-pergola-bioclimatique-hiver-rideau-verre |
 | 2026-08-22 | publié  | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
 | 2026-08-23 | publié  | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
-| 2026-08-25 | proposé | Éclairer sa terrasse et sa pergola : ce qui se décide pendant les travaux, et ce qui ne se rattrape plus après | eclairage-exterieur-terrasse-pergola |
-| 2026-08-27 | proposé | Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart | comparer-devis-pergola-postes-prix |
+| 2026-08-25 | écarté  | Éclairer sa terrasse et sa pergola (refusé par David le 25/08, ne pas reproposer) | eclairage-exterieur-terrasse-pergola |
+| 2026-08-25 | proposé | Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart | comparer-devis-pergola-postes-prix |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

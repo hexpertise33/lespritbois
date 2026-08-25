@@ -715,11 +715,16 @@ export const ZONES: Zone[] = [
     h1: "Aménagement extérieur bois sur le Bassin d'Arcachon",
     chapo:
       "Nous nous déplaçons sur le Bassin depuis notre atelier des Billaux. Nous n'y avons pas encore posé, et nous préférons l'écrire : voici ce que le terrain impose, ouvrage par ouvrage, plutôt qu'une liste de références que nous n'avons pas.",
-    cover: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
-    coverW: 1600,
-    coverH: 900,
+    /* Seule couverture du site qui montre un lieu et non un ouvrage. C'est
+       assumé : cette page est une page mère, elle annonce un secteur. L'alt le
+       dit explicitement pour qu'on ne puisse pas la lire comme une réalisation,
+       la page reposant tout entière sur le fait que nous n'y avons pas encore
+       posé. Photo fournie par David, libre de droits (confirmé le 25/08/2026). */
+    cover: '/images/bassin-arcachon-passes-dune-du-pilat.jpg',
+    coverW: 1400,
+    coverH: 933,
     coverAlt:
-      "Pergola aluminium anthracite au-dessus d'une terrasse bois en enfilade le long d'une maison, réalisée par L'Esprit Bois",
+      "Vue aérienne des passes du Bassin d'Arcachon, bancs de sable découverts et dune du Pilat en arrière-plan : le secteur où intervient L'Esprit Bois",
     contexte: {
       titre: "Ce que le Bassin change, quel que soit l'ouvrage",
       paragraphes: [

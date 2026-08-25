@@ -82,9 +82,9 @@ const jsonld = [
       name: "L'Esprit Bois",
       logo: {
         '@type': 'ImageObject',
-        url: 'https://lesprit-bois.fr/images/source-adefrance/logo2026.png',
-        width: 350,
-        height: 150,
+        url: 'https://lesprit-bois.fr/icon-512.png',
+        width: 512,
+        height: 512,
       },
     },
     datePublished: '2026-08-14',

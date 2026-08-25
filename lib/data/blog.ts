@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'comparer-devis-pergola-postes-prix',
+    titre:
+      "Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart",
+    extrait:
+      "Trois devis « pour la même pergola » vont couramment du simple au double, et l'écart ne vient presque jamais de la marge : il vient de ce que chacun a mis, ou n'a pas mis, dans le prix, à commencer par le support, le poste le plus souvent absent et celui qui décide de la tenue de l'ouvrage. Dalle, massifs et fixation sur terrasse existante, portée libre et section des profilés, nombre de moteurs, évacuation des eaux et raccord à la maison, exclusions à faire écrire : la grille de lecture poste par poste et six questions à poser avant de signer, par un artisan à Libourne (Gironde).",
+    date: '2026-08-25',
+    categorie: 'Guide · Devis pergola',
+    image: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-4.webp',
+    imageLargeur: 825,
+    imageHauteur: 1100,
+  },
+  {
     slug: 'claustra-bois-separation-jardin',
     titre:
       "Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture",

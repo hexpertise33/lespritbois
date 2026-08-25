@@ -151,6 +151,14 @@ Trois faits à connaître avant de chercher à l'automatiser autrement :
 - Le seul chemin réel est **l'interface Search Console**, pilotée par les outils
   Chrome sur le navigateur de David, où `sasecotoit@gmail.com` est connecté.
 
+✅ **Accès autorisé en permanence.** David a donné l'accès en conversation le
+**25/08/2026** : la routine ouvre Search Console dans son Chrome et clique
+« Demander une indexation » **sans redemander la permission** à chaque run.
+Portée strictement limitée à ce geste, sur les URL de `lesprit-bois.fr` : pas de
+suppression d'URL, pas de modification des paramètres ni des utilisateurs de la
+propriété, pas de sitemap redéclaré, aucune action sur un autre site ni ailleurs
+dans le compte Google, et jamais de saisie de mot de passe.
+
 C'est donc une étape **best-effort et non bloquante** : l'article est déjà en
 ligne et vérifié en 200 quand elle s'exécute. Les échecs attendus — **quota
 Search Console atteint** (constaté le 22/08 : l'interface a cessé d'accepter les

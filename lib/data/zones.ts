@@ -67,7 +67,14 @@ export type Zone = {
    *  l'inverse. Quand ce champ est renseigné, il remplace `contexte.paragraphes`
    *  à l'affichage ; le texte long reste sur les pages d'offre, qui sont faites
    *  pour la profondeur. */
-  contexteTuiles?: { titre: string; texte: string }[];
+  contexteTuiles?: {
+    titre: string;
+    texte: string;
+    /** Nom d'icône Material Symbols. ⚠️ La police est sous-ensemblée à 64
+     *  glyphes (voir app/globals.css) : un nom absent s'affiche en toutes
+     *  lettres à l'écran. */
+    icone: string;
+  }[];
   /** Phrase de bascule sous les tuiles, qui justifie l'existence des pages filles. */
   contexteChute?: string;
   /** Schéma technique illustrant l'argument central de la page, affiché juste
@@ -722,21 +729,25 @@ export const ZONES: Zone[] = [
     contexteTuiles: [
       {
         titre: 'Le sol',
+        icone: 'layers',
         texte:
           "Le sable ne porte pas mal, il porte inégalement. Une structure fondée en surface descend là où le sable se tasse, et nulle part ailleurs.",
       },
       {
         titre: 'Le vent',
+        icone: 'air',
         texte:
           "Une pergola prend au vent, ses lames orientables davantage encore. C'est l'ancrage qui commande le dimensionnement, jamais la lame.",
       },
       {
         titre: 'Le sel',
+        icone: 'water_drop',
         texte:
           "Il n'attaque pas le bois mais les métaux : la visserie d'un platelage, l'alliage d'un profilé. Inox A4 d'un côté, laqueur qualifié de l'autre.",
       },
       {
         titre: "L'urbanisme",
+        icone: 'description',
         texte:
           "Ville d'Hiver, dune du Pilat, forêt de La Teste : en site classé, les exonérations tombent. Déclaration préalable, avis de l'ABF, deux mois d'instruction.",
       },

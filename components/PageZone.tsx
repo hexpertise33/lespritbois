@@ -169,13 +169,19 @@ export default function PageZone({ zone }: { zone: Zone }) {
                   passent en tuiles, la prose reste aux pages d'offre. */}
               {zone.contexteTuiles ? (
                 <>
-                  <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-8">
-                    {zone.contexteTuiles.map((t, i) => (
-                      <li key={t.titre} className="border-t-2 border-secondary/40 pt-5">
-                        <p className="font-label-md text-label-md text-secondary-dark mb-2">
-                          {String(i + 1).padStart(2, '0')}
-                        </p>
-                        <h3 className="font-title-md text-title-md text-on-surface mb-3">
+                  <ul className="grid sm:grid-cols-2 gap-6">
+                    {zone.contexteTuiles.map((t) => (
+                      <li
+                        key={t.titre}
+                        className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
+                      >
+                        <span
+                          className="material-symbols-outlined text-secondary-dark text-[40px]! leading-none"
+                          aria-hidden="true"
+                        >
+                          {t.icone}
+                        </span>
+                        <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
                           {t.titre}
                         </h3>
                         <p className="font-body-md text-body-md text-on-surface-variant">

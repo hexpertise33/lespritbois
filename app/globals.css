@@ -44,6 +44,8 @@
   --font-label-md: var(--font-manrope), system-ui, sans-serif;
   --font-headline-md: var(--font-playfair), Georgia, serif;
   --font-headline-sm: var(--font-playfair), Georgia, serif;
+  --font-display-md: var(--font-playfair), Georgia, serif;
+  --font-display-md-mobile: var(--font-playfair), Georgia, serif;
   --font-display-lg: var(--font-playfair), Georgia, serif;
   --font-display-lg-mobile: var(--font-playfair), Georgia, serif;
 
@@ -68,6 +70,21 @@
   --text-headline-md: 32px;
   --text-headline-md--line-height: 40px;
   --text-headline-md--font-weight: 600;
+
+  /* Palier intermédiaire des titres de section, entre headline-md et display-lg.
+     Ajouté le 25/08/2026 : les classes `font-display-md`, `text-display-md` et
+     `text-display-md-mobile` étaient employées 45 fois dans PageZone,
+     /terrasses-bois et la page auteur, mais les jetons n'existaient pas. Tous
+     ces titres retombaient donc sur 16 px en Manrope, la police du corps de
+     texte, au lieu du Playfair d'affichage. */
+  --text-display-md-mobile: 32px;
+  --text-display-md-mobile--line-height: 40px;
+  --text-display-md-mobile--font-weight: 700;
+
+  --text-display-md: 44px;
+  --text-display-md--line-height: 52px;
+  --text-display-md--letter-spacing: -0.01em;
+  --text-display-md--font-weight: 700;
 
   --text-display-lg-mobile: 40px;
   --text-display-lg-mobile--line-height: 48px;

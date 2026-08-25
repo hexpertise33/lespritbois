@@ -1267,7 +1267,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-22 | publié  | Traiter ses bois avant l'hiver : la dernière fenêtre de l'année, et ce qu'on traite vraiment | traiter-bois-exterieur-avant-hiver |
 | 2026-08-23 | publié  | Claustra en bois : cacher un vis-à-vis, un local technique ou un coin de terrasse sans construire une clôture | claustra-bois-separation-jardin |
 | 2026-08-25 | écarté  | Éclairer sa terrasse et sa pergola (refusé par David le 25/08, ne pas reproposer) | eclairage-exterieur-terrasse-pergola |
-| 2026-08-25 | proposé | Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart | comparer-devis-pergola-postes-prix |
+| 2026-08-25 | publié  | Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart | comparer-devis-pergola-postes-prix |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 
 ## Idées de sujets en réserve

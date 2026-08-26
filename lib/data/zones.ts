@@ -839,33 +839,39 @@ export const ZONES: Zone[] = [
     },
     title: "Extension et maison ossature bois, Bassin d'Arcachon",
     description:
-      "Extension et maison à ossature bois sur le Bassin d'Arcachon. Conception, fabrication et pose par la même équipe, dossier d'urbanisme compris. Devis sous 48 h.",
+      "Extension et maison à ossature bois sur le Bassin d'Arcachon. Tout sur mesure : toit traditionnel ou toit plat, isolation fibre de bois. Devis sous 48 heures.",
     keywords:
-      "extension ossature bois Bassin d'Arcachon, maison ossature bois Arcachon, constructeur bois Bassin d'Arcachon, agrandissement maison bois La Teste-de-Buch, maison bois Gujan-Mestras, surélévation bois Cap-Ferret",
+      "extension ossature bois Bassin d'Arcachon, maison ossature bois Arcachon, maison ossature bois toit plat, extension bois sur mesure Gironde, constructeur bois Bassin d'Arcachon, agrandissement maison bois La Teste-de-Buch, surélévation bois Cap-Ferret",
     h1: "Extensions et maisons à ossature bois sur le Bassin d'Arcachon",
     chapo:
-      "Gagner la pièce qui manque, ouvrir la maison sur le jardin, ou construire la maison entière. Nous dessinons, nous fabriquons à l'atelier et nous posons, avec la même équipe du premier croquis à la réception, dossier d'urbanisme compris.",
+      "Gagner la pièce qui manque, ouvrir la maison sur le jardin, ou construire la maison entière. Tout est sur mesure, rien n'est sur catalogue. Nous dessinons, nous fabriquons à l'atelier et nous posons, du premier croquis à la réception.",
     cover: '/images/chantiers/extension-ossature-bois-bardage-douglas-maison-pierre-gironde.webp',
     coverW: 1400,
     coverH: 923,
     coverAlt:
       "Extension à ossature bois achevée, bardage douglas vertical et couverture en tuiles raccordée à une maison ancienne en pierre, terrasse en pierre devant, chantier de L'Esprit Bois en Gironde",
     composition: {
-      titre: "Ce que comprend une construction à ossature bois",
+      titre: 'Une construction à ossature bois, entièrement à la carte',
       chapo:
-        "La structure est en bois, le reste se choisit. Voici les postes que comprend l'ouvrage et ceux sur lesquels vous décidez, pour que vous puissiez comparer nos devis à ceux que vous recevrez ailleurs.",
+        "Nous ne vendons pas de modèle sur catalogue. Tout est fait sur mesure : la structure est en bois, et chaque poste au-dessus se décide avec vous. Voici ce qui compose l'ouvrage, et sur quoi vous choisissez.",
       elements: [
         {
           icone: 'grid_goldenratio',
           titre: 'La structure, en ossature bois',
           texte:
-            "Taillée et assemblée à blanc à notre atelier des Billaux, puis levée chez vous. C'est notre métier d'origine, sur une extension comme sur une maison entière.",
+            "Dessinée pour votre projet, taillée et assemblée à blanc à notre atelier des Billaux, puis levée chez vous. C'est notre métier d'origine, sur une extension comme sur une maison entière.",
+        },
+        {
+          icone: 'roofing',
+          titre: 'La toiture, traditionnelle ou toit plat',
+          texte:
+            "Charpente traditionnelle avec couverture en tuiles, ou toiture-terrasse à faible pente. Les deux se conçoivent sur la même ossature, et le choix se fait avec l'allure voulue et ce qu'autorise le plan local d'urbanisme.",
         },
         {
           icone: 'layers',
-          titre: 'L\'isolation, en matériaux naturels',
+          titre: "L'isolation, en fibre de bois ou à votre choix",
           texte:
-            "Nous isolons en matériaux naturels, posés en même temps que l'ossature plutôt que rapportés après coup. L'isolation fait partie de l'ouvrage, elle n'est pas une option en fin de devis.",
+            "Nous posons de la fibre de bois, un isolant naturel, et nous mettons en œuvre tout autre isolant si vous en préférez un. Elle est posée en même temps que l'ossature, pas rapportée après coup : elle fait partie de l'ouvrage.",
         },
         {
           icone: 'house_siding',
@@ -881,15 +887,9 @@ export const ZONES: Zone[] = [
         },
         {
           icone: 'check_circle',
-          titre: "Livré hors d'eau hors d'air, isolation comprise",
+          titre: 'Jusqu\'où nous allons, vous le décidez',
           texte:
-            "C'est le point d'arrivée courant : la coquille est close, couverte et isolée, et le second œuvre revient aux artisans de votre choix.",
-        },
-        {
-          icone: 'tune',
-          titre: 'Ou clé en main, si vous préférez',
-          texte:
-            "Nous allons aussi jusqu'aux finitions intérieures, comme à Génissac et à Rauzan. Les deux se chiffrent, et le devis dit exactement ce que couvre chacun.",
+            "Hors d'eau hors d'air isolation comprise, et le second œuvre revient aux artisans de votre choix. Ou clé en main, finitions intérieures comprises, comme à Génissac et à Rauzan. Les deux se chiffrent, et le devis dit exactement ce que couvre chacun.",
         },
       ],
     },
@@ -1028,7 +1028,7 @@ export const ZONES: Zone[] = [
       },
       {
         q: 'Construisez-vous aussi des maisons neuves, ou seulement des extensions ?',
-        r: "Les deux, et c'est le même métier. Notre chantier de Rauzan est une maison de 150 m² mêlant ossature bois et maçonnerie, conçue et réalisée par nos équipes. Dans les deux cas la structure est en ossature bois, l'isolation est en matériaux naturels et posée avec elle, et la finition extérieure se choisit : bardage bois, bardage métal, fibro-ciment ou enduit. Nous posons aussi les menuiseries, en bois, en PVC ou en aluminium. Nous livrons hors d'eau hors d'air isolation comprise, ou clé en main si vous préférez.",
+        r: "Les deux, et c'est le même métier. Notre chantier de Rauzan est une maison de 150 m² mêlant ossature bois et maçonnerie, conçue et réalisée par nos équipes. Dans les deux cas tout est sur mesure : la structure est en ossature bois, la toiture est traditionnelle ou en toit plat, l'isolation est en fibre de bois ou dans l'isolant de votre choix, et la finition extérieure se décide entre bardage bois, bardage métal, fibro-ciment et enduit. Nous posons aussi les menuiseries, en bois, en PVC ou en aluminium. Nous livrons hors d'eau hors d'air isolation comprise, ou clé en main si vous préférez.",
       },
       {
         q: 'Combien de temps dure le chantier, à une heure de votre atelier ?',

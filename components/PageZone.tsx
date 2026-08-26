@@ -1,98 +1,112 @@
-import JsonLd from '@/components/JsonLd';
-import SiteNav from '@/components/SiteNav';
-import SiteFooter from '@/components/SiteFooter';
-import DevisForm from '@/components/DevisForm';
-import Etoiles from '@/components/Etoiles';
-import DevisStickyBar from '@/components/DevisStickyBar';
-import DevisDesktopPopup from '@/components/DevisDesktopPopup';
-import { CHANTIERS } from '@/lib/data/chantiers';
-import { avisPour, NOTE_GOOGLE } from '@/lib/data/avis';
-import { CONTACT, ENTREPRISE_ID, ENTREPRISE_REF, GOOGLE, SITE } from '@/lib/data/navigation';
-import type { Zone } from '@/lib/data/zones';
+import JsonLd from "@/components/JsonLd";
+import SiteNav from "@/components/SiteNav";
+import SiteFooter from "@/components/SiteFooter";
+import DevisForm from "@/components/DevisForm";
+import Etoiles from "@/components/Etoiles";
+import DevisStickyBar from "@/components/DevisStickyBar";
+import DevisDesktopPopup from "@/components/DevisDesktopPopup";
+import { CHANTIERS } from "@/lib/data/chantiers";
+import { avisPour, NOTE_GOOGLE } from "@/lib/data/avis";
+import {
+  CONTACT,
+  ENTREPRISE_ID,
+  ENTREPRISE_REF,
+  GOOGLE,
+  SITE,
+} from "@/lib/data/navigation";
+import type { Zone } from "@/lib/data/zones";
 
 const lienInterne =
-  'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
+  "text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors";
 
 const boutonPlein =
-  'inline-flex items-center justify-center bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95';
+  "inline-flex items-center justify-center bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95";
 
 const boutonTelephone =
-  'inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/10 transition-all active:scale-95';
+  "inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/10 transition-all active:scale-95";
 
 const boutonPleinSombre =
-  'inline-flex items-center justify-center bg-primary text-on-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95';
+  "inline-flex items-center justify-center bg-primary text-on-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95";
 
 const boutonTelephoneClair =
-  'inline-flex items-center justify-center gap-2 border border-outline-variant text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all active:scale-95';
+  "inline-flex items-center justify-center gap-2 border border-outline-variant text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all active:scale-95";
 
 /** Ce qui rassure avant qu'on ait lu la page. Posé juste sous le héros : un
  *  visiteur qui ne connaît pas l'entreprise cherche d'abord à savoir s'il peut
  *  lui confier un chantier, pas à apprendre la réglementation. */
 const GARANTIES = [
   {
-    icone: 'verified',
-    titre: 'Entreprise qualifiée Qualibat',
-    texte: 'La qualification reconnue du bâtiment',
+    icone: "verified",
+    titre: "Entreprise qualifiée Qualibat",
+    texte: "La qualification reconnue du bâtiment",
   },
-  { icone: 'shield', titre: 'Garantie décennale', texte: 'Vos ouvrages couverts pendant dix ans' },
   {
-    icone: 'handshake',
-    titre: 'Un seul interlocuteur',
+    icone: "shield",
+    titre: "Garantie décennale",
+    texte: "Vos ouvrages couverts pendant dix ans",
+  },
+  {
+    icone: "handshake",
+    titre: "Un seul interlocuteur",
     texte: "De l'étude à la pose, sans sous-traitance",
   },
-  { icone: 'schedule', titre: 'Devis sous 48 heures', texte: 'Relevé sur place gratuit' },
+  {
+    icone: "schedule",
+    titre: "Devis sous 48 heures",
+    texte: "Relevé sur place gratuit",
+  },
 ];
 
 /** Le déroulé, identique sur toutes les zones : c'est la promesse de méthode
  *  qui lève l'objection de la distance et celle de l'engagement. */
 const ETAPES = [
   {
-    icone: 'call',
-    titre: 'Le premier échange',
+    icone: "call",
+    titre: "Le premier échange",
     texte:
       "Dix minutes au téléphone pour cadrer le besoin, le budget et le calendrier. Si le projet n'est pas pour nous, nous le disons tout de suite.",
   },
   {
-    icone: 'straighten',
-    titre: 'Le relevé sur place',
+    icone: "straighten",
+    titre: "Le relevé sur place",
     texte:
-      'Gratuit, déplacement compris. Dimensions réelles, nature du sol, accès au chantier, règles qui pèsent sur votre parcelle. Rien ne se décide au téléphone.',
+      "Gratuit, déplacement compris. Dimensions réelles, nature du sol, accès au chantier, règles qui pèsent sur votre parcelle. Rien ne se décide au téléphone.",
   },
   {
-    icone: 'design_services',
-    titre: 'La conception',
+    icone: "design_services",
+    titre: "La conception",
     texte:
       "Nous dessinons, et vous voyez votre projet avant qu'il existe. Les arbitrages de surface, de coût et de matière se font là, pas sur le chantier.",
   },
   {
-    icone: 'description',
-    titre: 'Le devis, sous 48 heures',
+    icone: "description",
+    titre: "Le devis, sous 48 heures",
     texte:
-      'Poste par poste, sans ligne fourre-tout. Vous voyez ce que vous payez et ce que vous ne payez pas. Sans engagement.',
+      "Poste par poste, sans ligne fourre-tout. Vous voyez ce que vous payez et ce que vous ne payez pas. Sans engagement.",
   },
   {
-    icone: 'approval',
+    icone: "approval",
     titre: "Le dossier d'urbanisme",
     texte:
       "Déclaration préalable ou permis de construire, nous montons le dossier et nous le suivons jusqu'à l'obtention, avis de l'Architecte des Bâtiments de France compris.",
   },
   {
-    icone: 'precision_manufacturing',
+    icone: "precision_manufacturing",
     titre: "La fabrication à l'atelier",
     texte:
       "L'ossature est taillée et assemblée à blanc chez nous, aux Billaux. C'est ce qui réduit le nombre de journées de chantier chez vous.",
   },
   {
-    icone: 'construction',
-    titre: 'Le montage et les finitions',
+    icone: "construction",
+    titre: "Le montage et les finitions",
     texte:
-      'La même équipe lève, couvre, bardage et finitions. Hors d\'eau hors d\'air ou clé en main, vous choisissez où nous nous arrêtons.',
+      "La même équipe lève, couvre, bardage et finitions. Hors d'eau hors d'air ou clé en main, vous choisissez où nous nous arrêtons.",
   },
   {
-    icone: 'shield',
-    titre: 'La livraison, et après',
+    icone: "shield",
+    titre: "La livraison, et après",
     texte:
-      'Réception avec vous, puis garantie décennale sur dix ans. Un seul interlocuteur du premier croquis à la dernière lame, et après.',
+      "Réception avec vous, puis garantie décennale sur dix ans. Un seul interlocuteur du premier croquis à la dernière lame, et après.",
   },
 ];
 
@@ -102,26 +116,26 @@ const ETAPES = [
  *  invérifiable : ils décrivent notre organisation. */
 const APPORTS = [
   {
-    icone: 'design_services',
-    titre: 'Nous concevons, nous fabriquons, nous posons',
+    icone: "design_services",
+    titre: "Nous concevons, nous fabriquons, nous posons",
     texte:
       "Nous ne sommes pas des revendeurs. Le dessin, la taille de l'ossature et la pose sont faits par la même maison, donc personne ne peut renvoyer la responsabilité sur le maillon d'à côté.",
   },
   {
-    icone: 'person',
-    titre: 'Un seul interlocuteur, du croquis à la réception',
+    icone: "person",
+    titre: "Un seul interlocuteur, du croquis à la réception",
     texte:
-      'Vous savez toujours qui appeler, et cette personne connaît votre dossier. Aucune étape n\'est sous-traitée, il n\'y a donc pas de coordination à faire de votre côté.',
+      "Vous savez toujours qui appeler, et cette personne connaît votre dossier. Aucune étape n'est sous-traitée, il n'y a donc pas de coordination à faire de votre côté.",
   },
   {
-    icone: 'approval',
+    icone: "approval",
     titre: "Le dossier d'urbanisme, nous nous en chargeons",
     texte:
       "Déclaration préalable, permis de construire, avis de l'Architecte des Bâtiments de France : nous montons le dossier et nous le suivons. C'est ce dont nos clients nous remercient le plus souvent.",
   },
   {
-    icone: 'description',
-    titre: 'Un devis lisible, poste par poste',
+    icone: "description",
+    titre: "Un devis lisible, poste par poste",
     texte:
       "Vous voyez ce que vous payez et ce que vous ne payez pas, sans ligne fourre-tout. C'est ce qui permet de comparer nos devis à ceux que vous recevrez ailleurs, ligne par ligne.",
   },
@@ -134,23 +148,30 @@ const APPORTS = [
  */
 function Picto({
   nom,
-  taille = 'grand',
-  forme = 'carre',
+  taille = "grand",
+  forme = "carre",
 }: {
   nom: string;
-  taille?: 'grand' | 'petit';
-  forme?: 'carre' | 'rond';
+  taille?: "grand" | "petit";
+  forme?: "carre" | "rond";
 }) {
-  const taillePastille = taille === 'grand' ? 'w-14 h-14' : 'w-11 h-11';
-  const arrondi = forme === 'rond' ? 'rounded-full' : taille === 'grand' ? 'rounded-2xl' : 'rounded-xl';
+  const taillePastille = taille === "grand" ? "w-14 h-14" : "w-11 h-11";
+  const arrondi =
+    forme === "rond"
+      ? "rounded-full"
+      : taille === "grand"
+        ? "rounded-2xl"
+        : "rounded-xl";
   const boite = `${taillePastille} ${arrondi}`;
-  const glyphe = taille === 'grand' ? 'text-[30px]' : 'text-[24px]';
+  const glyphe = taille === "grand" ? "text-[30px]" : "text-[24px]";
   return (
     <span
       className={`inline-flex items-center justify-center shrink-0 bg-secondary/15 text-secondary-dark ${boite}`}
       aria-hidden="true"
     >
-      <span className={`material-symbols-outlined leading-none ${glyphe}`}>{nom}</span>
+      <span className={`material-symbols-outlined leading-none ${glyphe}`}>
+        {nom}
+      </span>
     </span>
   );
 }
@@ -159,19 +180,19 @@ function Picto({
  *  contient que 63 glyphes, d'où cette table courte plutôt qu'un choix
  *  libre : une icône hors liste s'afficherait en toutes lettres. */
 const PICTOS_GUIDES: [RegExp, string][] = [
-  [/prix|budget|devis|comparer/, 'description'],
-  [/bardage|facade/, 'house_siding'],
-  [/terrasse|plage|lame/, 'deck'],
-  [/pergola|store|brise-soleil|solaire/, 'blinds'],
-  [/veranda|baie|menuiserie/, 'door_sliding'],
-  [/urbanisme|autorisation|permis|declaration/, 'approval'],
-  [/toiture|couverture|charpente/, 'roofing'],
-  [/carport|abri/, 'home_work'],
-  [/bois|essence|douglas|entretien/, 'layers'],
+  [/prix|budget|devis|comparer/, "description"],
+  [/bardage|facade/, "house_siding"],
+  [/terrasse|plage|lame/, "deck"],
+  [/pergola|store|brise-soleil|solaire/, "blinds"],
+  [/veranda|baie|menuiserie/, "door_sliding"],
+  [/urbanisme|autorisation|permis|declaration/, "approval"],
+  [/toiture|couverture|charpente/, "roofing"],
+  [/carport|abri/, "home_work"],
+  [/bois|essence|douglas|entretien/, "layers"],
 ];
 
 function pictoGuide(slug: string) {
-  return PICTOS_GUIDES.find(([motif]) => motif.test(slug))?.[1] ?? 'lightbulb';
+  return PICTOS_GUIDES.find(([motif]) => motif.test(slug))?.[1] ?? "lightbulb";
 }
 
 /** Gabarit commun aux pages de zone.
@@ -197,58 +218,60 @@ export default function PageZone({ zone }: { zone: Zone }) {
      ce sont simplement les trois plus étoffés. */
   const avis = avisPour(zone.avisSujets ?? []);
   const filAriane = [
-    { nom: 'Accueil', item: `${SITE.url}/` },
-    ...(zone.parent ? [{ nom: zone.parent.nom, item: `${SITE.url}/${zone.parent.slug}` }] : []),
+    { nom: "Accueil", item: `${SITE.url}/` },
+    ...(zone.parent
+      ? [{ nom: zone.parent.nom, item: `${SITE.url}/${zone.parent.slug}` }]
+      : []),
     { nom: dernierNiveau, item: url },
   ];
 
   const jsonld = [
     {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
       itemListElement: filAriane.map((e, i) => ({
-        '@type': 'ListItem',
+        "@type": "ListItem",
         position: i + 1,
         name: e.nom,
         item: e.item,
       })),
     },
     {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
+      "@context": "https://schema.org",
+      "@type": "Service",
       name: zone.h1,
       url,
       provider: ENTREPRISE_REF,
-      areaServed: zone.communes.map((c) => ({ '@type': 'City', name: c })),
+      areaServed: zone.communes.map((c) => ({ "@type": "City", name: c })),
       description: zone.description,
     },
     {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
       mainEntity: zone.faq.map((f) => ({
-        '@type': 'Question',
+        "@type": "Question",
         name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.r },
+        acceptedAnswer: { "@type": "Answer", text: f.r },
       })),
     },
     {
-      '@context': 'https://schema.org',
-      '@type': 'ItemList',
+      "@context": "https://schema.org",
+      "@type": "ItemList",
       // Le nom de la liste énumère les communes réellement livrées, jamais la
       // zone de la page : sur le Bassin d'Arcachon nous n'avons pas encore de
       // chantier, et les exemples montrés sont à l'intérieur des terres. Nommer
       // la liste d'après la zone y affirmerait le contraire dans les données
       // structurées, alors que le texte visible dit l'inverse.
-      name: `Chantiers réalisés : ${[...new Set(chantiers.map((c) => c.commune))].join(', ')}`,
+      name: `Chantiers réalisés : ${[...new Set(chantiers.map((c) => c.commune))].join(", ")}`,
       numberOfItems: chantiers.length,
       itemListElement: chantiers.map((c, i) => ({
-        '@type': 'ListItem',
+        "@type": "ListItem",
         position: i + 1,
         item: {
-          '@type': 'CreativeWork',
+          "@type": "CreativeWork",
           name: `${c.categorie}, ${c.commune} : ${c.titre}`,
-          about: { '@type': 'Place', name: c.commune },
-          provider: { '@id': ENTREPRISE_ID },
+          about: { "@type": "Place", name: c.commune },
+          provider: { "@id": ENTREPRISE_ID },
         },
       })),
     },
@@ -259,7 +282,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
      avant toute considération technique : c'est la question que se pose un
      visiteur qui a plusieurs devis en main. */
   const sectionApports = (
-    <section className="py-20 md:py-28 bg-surface" aria-labelledby="titre-apports">
+    <section
+      className="py-20 md:py-28 bg-surface"
+      aria-labelledby="titre-apports"
+    >
       <div className="max-w-container-max mx-auto px-6 md:px-16">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center mb-12">
           <div className="max-w-2xl">
@@ -270,8 +296,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
               Pourquoi confier votre projet à L&apos;Esprit Bois
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Vingt ans de bois, une seule équipe, et rien de sous-traité. Voici ce que ça change
-              concrètement pour vous.
+              Vingt ans de bois, une seule équipe, et rien de sous-traité. Voici
+              ce que ça change concrètement pour vous.
             </p>
           </div>
           {zone.visuelApports && (
@@ -293,8 +319,12 @@ export default function PageZone({ zone }: { zone: Zone }) {
               className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
             >
               <Picto nom={a.icone} />
-              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">{a.titre}</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant">{a.texte}</p>
+              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
+                {a.titre}
+              </h3>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                {a.texte}
+              </p>
             </li>
           ))}
         </ul>
@@ -306,7 +336,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
      visiteur vient d'apprendre à qui il a affaire, il veut maintenant savoir
      ce qu'il achète et où s'arrête la prestation. */
   const sectionComposition = zone.composition ? (
-    <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-composition">
+    <section
+      className="py-20 md:py-28 bg-surface-container"
+      aria-labelledby="titre-composition"
+    >
       <div className="max-w-container-max mx-auto px-6 md:px-16">
         <div className="max-w-3xl mb-12">
           <h2
@@ -326,8 +359,12 @@ export default function PageZone({ zone }: { zone: Zone }) {
               className="bg-surface rounded-2xl p-8 border border-surface-variant"
             >
               <Picto nom={e.icone} />
-              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">{e.titre}</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant">{e.texte}</p>
+              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
+                {e.titre}
+              </h3>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                {e.texte}
+              </p>
             </li>
           ))}
         </ul>
@@ -344,7 +381,11 @@ export default function PageZone({ zone }: { zone: Zone }) {
             droite qui donne l'impression d'une page inachevée. */}
         <div
           className={
-            zone.contexteTuiles ? '' : zone.contexteBlocs ? 'max-w-4xl' : 'max-w-3xl'
+            zone.contexteTuiles
+              ? ""
+              : zone.contexteBlocs
+                ? "max-w-4xl"
+                : "max-w-3xl"
           }
         >
           <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8 max-w-3xl">
@@ -378,55 +419,59 @@ export default function PageZone({ zone }: { zone: Zone }) {
             </>
           ) : zone.contexteBlocs ? (
             <>
-            {/* Même texte que la prose, mais découpé et titré, et surtout
+              {/* Même texte que la prose, mais découpé et titré, et surtout
                 suivi à chaque fois de ce que nous en faisons. Sans cette
                 dernière ligne la page énonce des difficultés sans dire
                 qu'elle sait les traiter, ce qui inquiète au lieu de
                 rassurer. */}
-            <ul className="space-y-6">
-              {zone.contexteBlocs.map((b, i) => (
-                <li
-                  key={b.titre}
-                  className="bg-white rounded-2xl border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden"
-                >
-                  <div className="p-8 md:p-10">
-                    <div className="flex items-start gap-5">
-                      <Picto nom={b.icone} />
-                      <div>
-                        <h3 className="font-title-md text-title-md text-on-surface mb-3">
-                          {b.titre}
-                        </h3>
-                        <p className="font-body-lg text-body-lg text-on-surface-variant">
-                          {zone.contexte.paragraphes[i]}
-                        </p>
+              <ul className="space-y-6">
+                {zone.contexteBlocs.map((b, i) => (
+                  <li
+                    key={b.titre}
+                    className="bg-white rounded-2xl border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden"
+                  >
+                    <div className="p-8 md:p-10">
+                      <div className="flex items-start gap-5">
+                        <Picto nom={b.icone} />
+                        <div>
+                          <h3 className="font-title-md text-title-md text-on-surface mb-3">
+                            {b.titre}
+                          </h3>
+                          <p className="font-body-lg text-body-lg text-on-surface-variant">
+                            {zone.contexte.paragraphes[i]}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p className="bg-surface-container border-t border-surface-variant px-8 md:px-10 py-5 font-body-md text-body-md text-on-surface flex items-start gap-3">
-                    <span
-                      className="material-symbols-outlined text-secondary-dark text-[22px] leading-none shrink-0"
-                      aria-hidden="true"
-                    >
-                      check_circle
-                    </span>
-                    <span>
-                      <strong className="font-semibold">Ce que nous faisons : </strong>
-                      {b.reponse}
-                    </span>
-                  </p>
-                </li>
-              ))}
-            </ul>
-            {zone.contexte.paragraphes.length > zone.contexteBlocs.length && (
-              /* Les pages du Bassin terminent leur contexte par une phrase
+                    <p className="bg-surface-container border-t border-surface-variant px-8 md:px-10 py-5 font-body-md text-body-md text-on-surface flex items-start gap-3">
+                      <span
+                        className="material-symbols-outlined text-secondary-dark text-[22px] leading-none shrink-0"
+                        aria-hidden="true"
+                      >
+                        check_circle
+                      </span>
+                      <span>
+                        <strong className="font-semibold">
+                          Ce que nous faisons :{" "}
+                        </strong>
+                        {b.reponse}
+                      </span>
+                    </p>
+                  </li>
+                ))}
+              </ul>
+              {zone.contexte.paragraphes.length > zone.contexteBlocs.length && (
+                /* Les pages du Bassin terminent leur contexte par une phrase
                  de synthèse : ce n'est pas une contrainte, elle n'a donc pas
                  de bloc, mais elle ne doit pas disparaître pour autant. */
-              <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-10 max-w-3xl">
-                {zone.contexte.paragraphes.slice(zone.contexteBlocs.length).map((t, i) => (
-                  <p key={i}>{t}</p>
-                ))}
-              </div>
-            )}
+                <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-10 max-w-3xl">
+                  {zone.contexte.paragraphes
+                    .slice(zone.contexteBlocs.length)
+                    .map((t, i) => (
+                      <p key={i}>{t}</p>
+                    ))}
+                </div>
+              )}
             </>
           ) : (
             <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
@@ -436,7 +481,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
             </div>
           )}
         </div>
-    
+
         {/* Schéma technique, à la suite immédiate du texte qu'il illustre.
             Volontairement pleine largeur : c'est une figure à lire, pas une
             vignette d'accompagnement. */}
@@ -472,8 +517,9 @@ export default function PageZone({ zone }: { zone: Zone }) {
               Vous vous reconnaissez dans un de ces points ?
             </h2>
             <p className="font-body-md text-body-md text-on-primary/80">
-              C&apos;est le relevé qui tranche, pas le téléphone : dimensionnement, autorisations,
-              accès au chantier. Il est gratuit et sans engagement.
+              C&apos;est le relevé qui tranche, pas le téléphone :
+              dimensionnement, autorisations, accès au chantier. Il est gratuit
+              et sans engagement.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 lg:ml-auto shrink-0">
@@ -481,7 +527,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
               Décrire mon projet
             </a>
             <a href={CONTACT.telHref} className={boutonTelephone}>
-              <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+              <span
+                className="material-symbols-outlined text-[20px]"
+                aria-hidden="true"
+              >
                 call
               </span>
               {CONTACT.telAffiche}
@@ -495,7 +544,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
   /* * Le déroulé. Placé après les preuves : le visiteur est convaincu du
      savoir-faire, il veut maintenant savoir à quoi il s'engage. * */
   const sectionDeroule = (
-    <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-deroule">
+    <section
+      className="py-20 md:py-28 bg-surface-container"
+      aria-labelledby="titre-deroule"
+    >
       <div className="max-w-container-max mx-auto px-6 md:px-16">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center mb-12">
           <div className="max-w-2xl">
@@ -506,7 +558,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
               Comment ça se passe, du premier appel à la remise des clés
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Huit étapes, aucune sous-traitance, et rien à payer avant le devis.
+              Huit étapes, aucune sous-traitance, et rien à payer avant le
+              devis.
             </p>
           </div>
           {zone.visuelDeroule && (
@@ -531,13 +584,15 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 className="absolute top-6 right-7 font-display-md text-[40px] leading-none text-primary/10"
                 aria-hidden="true"
               >
-                {String(i + 1).padStart(2, '0')}
+                {String(i + 1).padStart(2, "0")}
               </span>
               <Picto nom={e.icone} />
               <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
                 {e.titre}
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant">{e.texte}</p>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                {e.texte}
+              </p>
             </li>
           ))}
         </ol>
@@ -546,7 +601,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
             Lancer mon étude gratuite
           </a>
           <a href={CONTACT.telHref} className={boutonTelephoneClair}>
-            <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+            <span
+              className="material-symbols-outlined text-[20px]"
+              aria-hidden="true"
+            >
               call
             </span>
             {CONTACT.telAffiche}
@@ -577,85 +635,104 @@ export default function PageZone({ zone }: { zone: Zone }) {
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
-          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
-            <p className="font-label-md text-label-md text-white/60 mb-6">
-              <a href="/" className="hover:text-secondary-fixed transition-colors">
-                Accueil
-              </a>
-              {zone.parent && (
-                <>
-                  <span className="mx-2 text-secondary" aria-hidden="true">
-                    /
-                  </span>
-                  <a
-                    href={`/${zone.parent.slug}`}
-                    className="hover:text-secondary-fixed transition-colors"
-                  >
-                    {zone.parent.nom}
-                  </a>
-                </>
-              )}
-              <span className="mx-2 text-secondary" aria-hidden="true">
-                /
-              </span>
-              <span className="text-secondary-fixed">{dernierNiveau}</span>
-            </p>
-            {/* La promesse prend la place de la surtitre : le fil d'Ariane
+          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:items-center">
+            <div>
+              <p className="font-label-md text-label-md text-white/60 mb-6">
+                <a
+                  href="/"
+                  className="hover:text-secondary-fixed transition-colors"
+                >
+                  Accueil
+                </a>
+                {zone.parent && (
+                  <>
+                    <span className="mx-2 text-secondary" aria-hidden="true">
+                      /
+                    </span>
+                    <a
+                      href={`/${zone.parent.slug}`}
+                      className="hover:text-secondary-fixed transition-colors"
+                    >
+                      {zone.parent.nom}
+                    </a>
+                  </>
+                )}
+                <span className="mx-2 text-secondary" aria-hidden="true">
+                  /
+                </span>
+                <span className="text-secondary-fixed">{dernierNiveau}</span>
+              </p>
+              {/* La promesse prend la place de la surtitre : le fil d'Ariane
                 dit déjà de quel type de page il s'agit, alors qu'une pastille
                 translucide posée sous le chapô se perdait sur la photo. Fond
                 plein et texte foncé pour qu'elle tienne sur n'importe quelle
                 image, sans imiter le bouton d'appel qui reste orange. */}
-            {zone.bulle ? (
-              <p className="inline-flex items-center gap-3 rounded-full bg-white p-2 pr-7 shadow-lg">
-                <Picto nom="design_services" taille="petit" forme="rond" />
-                <span className="font-body-md text-body-md font-semibold text-primary">
-                  {zone.bulle}
-                </span>
-              </p>
-            ) : (
               <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
                 Zone d&apos;intervention
               </span>
-            )}
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
-              {zone.h1}
-            </h1>
-            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">{zone.chapo}</p>
-            {/* Premier point de contact. Le numéro est un lien tel:, capté par
+              <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
+                {zone.h1}
+              </h1>
+              <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
+                {zone.chapo}
+              </p>
+              {/* Premier point de contact. Le numéro est un lien tel:, capté par
                 PhoneClickTracker, qui écoute tous les liens tel: du site. */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
-              <a href="#devis-bas" className={boutonPlein}>
-                Demander mon étude gratuite
-              </a>
-              <a href={CONTACT.telHref} className={boutonTelephone}>
-                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
-                  call
-                </span>
-                {CONTACT.telAffiche}
-              </a>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
+                <a href="#devis-bas" className={boutonPlein}>
+                  Demander mon étude gratuite
+                </a>
+                <a href={CONTACT.telHref} className={boutonTelephone}>
+                  <span
+                    className="material-symbols-outlined text-[20px]"
+                    aria-hidden="true"
+                  >
+                    call
+                  </span>
+                  {CONTACT.telAffiche}
+                </a>
+              </div>
+              <p className="font-body-md text-body-md text-white/70 mt-5">
+                Relevé et devis gratuits, déplacement compris.
+              </p>
             </div>
-            <p className="font-body-md text-body-md text-white/70 mt-5">
-              Relevé et devis gratuits, déplacement compris.
-            </p>
+            {/* L'encart de promesse. Une pastille seule au milieu de la photo
+                flottait comme une infobulle égarée : il lui fallait de la
+                matière pour équilibrer la colonne de texte. Sous lg il passe
+                en dessous des boutons, faute de place à côté. */}
+            {zone.bulle && (
+              <aside className="mt-10 lg:mt-0 lg:w-80 rounded-2xl bg-white/95 backdrop-blur-sm shadow-2xl p-8">
+                <Picto nom="design_services" forme="rond" />
+                <p className="font-headline-sm text-headline-sm text-primary mt-5">
+                  {zone.bulle}
+                </p>
+              </aside>
+            )}
           </div>
         </header>
 
         {/* Réassurance immédiate. Avant de lire quoi que ce soit sur la
             technique, le visiteur doit savoir à qui il a affaire. */}
-        <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
+        <section
+          className="bg-surface border-b border-surface-variant"
+          aria-label="Nos garanties"
+        >
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {GARANTIES.map((g) => (
               <div key={g.titre} className="flex items-center gap-4">
                 <Picto nom={g.icone} taille="petit" />
                 <div>
-                  <p className="font-label-md text-label-md text-primary">{g.titre}</p>
-                  <p className="font-body-md text-body-md text-on-surface-variant">{g.texte}</p>
+                  <p className="font-label-md text-label-md text-primary">
+                    {g.titre}
+                  </p>
+                  <p className="font-body-md text-body-md text-on-surface-variant">
+                    {g.texte}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </section>
-
 
         {/* L'ordre change selon le rôle de la page.
 
@@ -682,20 +759,27 @@ export default function PageZone({ zone }: { zone: Zone }) {
           <section className="py-20 md:py-28 bg-surface-container">
             <div className="max-w-container-max mx-auto px-6 md:px-16">
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
-                {zone.parent ? 'Nos autres ouvrages' : 'Nos ouvrages'} {zone.article} {zone.nom}
+                {zone.parent ? "Nos autres ouvrages" : "Nos ouvrages"}{" "}
+                {zone.article} {zone.nom}
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
-                Chaque page traite la contrainte propre à son ouvrage, elles ne se répètent pas.
+                Chaque page traite la contrainte propre à son ouvrage, elles ne
+                se répètent pas.
               </p>
               <ul className="grid md:grid-cols-2 gap-8">
                 {zone.offres.map((o) => (
-                  <li key={o.slug} className={o.src ? '' : 'border-t-2 border-secondary/40 pt-5'}>
+                  <li
+                    key={o.slug}
+                    className={
+                      o.src ? "" : "border-t-2 border-secondary/40 pt-5"
+                    }
+                  >
                     <a href={`/${o.slug}`} className="group block">
                       {/* Sans vignette, la carte n'avait aucun repère visuel :
                           le picto de l'ouvrage prend cette place. */}
                       {!o.src && (
                         <span className="block mb-4">
-                          <Picto nom={o.icone ?? 'home_work'} taille="petit" />
+                          <Picto nom={o.icone ?? "home_work"} taille="petit" />
                         </span>
                       )}
                       {o.src && (
@@ -707,7 +791,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                             decoding="async"
                             className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                             src={o.src}
-                            alt={o.alt ?? ''}
+                            alt={o.alt ?? ""}
                           />
                         </div>
                       )}
@@ -728,7 +812,6 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </section>
         )}
 
-
         {!zone.parent && sectionRelance}
 
         {/* Les chantiers réels du secteur */}
@@ -741,23 +824,27 @@ export default function PageZone({ zone }: { zone: Zone }) {
                   documentée. */}
               {zone.chantiersTitre ??
                 (chantiers.length === 1
-                  ? 'Notre chantier dans le secteur'
-                  : 'Nos chantiers dans le secteur')}
+                  ? "Notre chantier dans le secteur"
+                  : "Nos chantiers dans le secteur")}
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-14 max-w-2xl">
               {zone.chantiersIntro ?? (
                 <>
-                  Commune réelle, contrainte réelle, durée réelle. Ce sont les mêmes fiches que dans{' '}
+                  Commune réelle, contrainte réelle, durée réelle. Ce sont les
+                  mêmes fiches que dans{" "}
                   <a href="/realisations" className={lienInterne}>
                     nos réalisations
-                  </a>,
-                  sans réécriture à l&apos;avantage de la page.
+                  </a>
+                  , sans réécriture à l&apos;avantage de la page.
                 </>
               )}
             </p>
             <div className="space-y-16">
               {chantiers.map((c) => (
-                <article key={c.id} className="grid lg:grid-cols-2 gap-10 items-start">
+                <article
+                  key={c.id}
+                  className="grid lg:grid-cols-2 gap-10 items-start"
+                >
                   <div className="rounded-2xl overflow-hidden shadow-xl">
                     <img
                       width={c.w}
@@ -773,7 +860,9 @@ export default function PageZone({ zone }: { zone: Zone }) {
                     <p className="font-label-md text-label-md uppercase tracking-[0.15em] text-secondary-dark mb-3">
                       {c.categorie}, {c.commune}
                     </p>
-                    <h3 className="font-headline-md text-headline-md text-primary mb-5">{c.titre}</h3>
+                    <h3 className="font-headline-md text-headline-md text-primary mb-5">
+                      {c.titre}
+                    </h3>
                     <div className="font-body-md text-body-md text-on-surface-variant space-y-4">
                       {c.paragraphes.slice(0, 2).map((p, i) => (
                         <p key={i}>{p}</p>
@@ -829,11 +918,11 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 argumentaire. Une phrase suffit, un bandeau ferait redite avec
                 celui du dessus. */}
             <p className="font-body-md text-body-md text-on-surface-variant mt-14">
-              Vous voulez le même niveau de détail sur votre projet ?{' '}
+              Vous voulez le même niveau de détail sur votre projet ?{" "}
               <a href="#devis-bas" className={lienInterne}>
                 Décrivez-le nous
-              </a>{' '}
-              ou appelez le{' '}
+              </a>{" "}
+              ou appelez le{" "}
               <a href={CONTACT.telHref} className={lienInterne}>
                 {CONTACT.telAffiche}
               </a>
@@ -848,7 +937,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
 
             Aucun balisage Review ni aggregateRating ici : la note globale reste
             déclarée sur l'accueil uniquement, voir lib/data/avis.ts. */}
-        <section className="py-20 md:py-28 bg-surface" aria-labelledby="titre-avis">
+        <section
+          className="py-20 md:py-28 bg-surface"
+          aria-labelledby="titre-avis"
+        >
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
               <div className="max-w-2xl">
@@ -859,8 +951,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
                   Ce qu&apos;en disent nos clients
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant">
-                  {NOTE_GOOGLE.note} sur 5 sur Google, sur {NOTE_GOOGLE.nombre} avis. Nous les
-                  reproduisons tels quels.
+                  {NOTE_GOOGLE.note} sur 5 sur Google, sur {NOTE_GOOGLE.nombre}{" "}
+                  avis. Nous les reproduisons tels quels.
                 </p>
               </div>
               <a
@@ -882,13 +974,14 @@ export default function PageZone({ zone }: { zone: Zone }) {
                   <blockquote className="font-body-md text-body-md text-on-surface-variant grow">
                     {a.texte}
                   </blockquote>
-                  <p className="font-label-md text-label-md text-primary mt-6">{a.nom}</p>
+                  <p className="font-label-md text-label-md text-primary mt-6">
+                    {a.nom}
+                  </p>
                 </li>
               ))}
             </ul>
           </div>
         </section>
-
 
         {/* Sur une page d'offre, les contraintes du secteur arrivent ici, une
             fois les preuves passées : elles restent sur la page, elles ne
@@ -918,22 +1011,24 @@ export default function PageZone({ zone }: { zone: Zone }) {
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
                 Depuis l&apos;atelier des Billaux
               </h2>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">{zone.acces}</p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                {zone.acces}
+              </p>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Communes citées sur cette page : {zone.communes.join(', ')}. Nos gammes complètes sont
-                détaillées sur{' '}
+                Communes citées sur cette page : {zone.communes.join(", ")}. Nos
+                gammes complètes sont détaillées sur{" "}
                 <a href="/pergolas" className={lienInterne}>
                   pergolas
                 </a>
-                ,{' '}
+                ,{" "}
                 <a href="/carports" className={lienInterne}>
                   carports
                 </a>
-                ,{' '}
+                ,{" "}
                 <a href="/amenagement-exterieur" className={lienInterne}>
                   aménagement extérieur
-                </a>{' '}
-                et{' '}
+                </a>{" "}
+                et{" "}
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
                 </a>
@@ -950,15 +1045,18 @@ export default function PageZone({ zone }: { zone: Zone }) {
               À lire avant de se lancer dans le secteur
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
-              Trois guides signés par{' '}
+              Trois guides signés par{" "}
               <a href="/auteur/david-bertrand" className={lienInterne}>
                 David Bertrand
-              </a>,
-              qui répondent aux questions posées le plus souvent ici.
+              </a>
+              , qui répondent aux questions posées le plus souvent ici.
             </p>
             <ul className="grid md:grid-cols-3 gap-8">
               {zone.guides.map((g) => (
-                <li key={g.slug} className="border-t-2 border-secondary/40 pt-6">
+                <li
+                  key={g.slug}
+                  className="border-t-2 border-secondary/40 pt-6"
+                >
                   <Picto nom={pictoGuide(g.slug)} taille="petit" />
                   <a
                     href={`/blog/${g.slug}`}
@@ -973,7 +1071,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
               ))}
             </ul>
             <p className="font-body-md text-body-md text-on-surface-variant mt-10">
-              L&apos;ensemble des guides est sur{' '}
+              L&apos;ensemble des guides est sur{" "}
               <a href="/blog" className={lienInterne}>
                 notre blog
               </a>
@@ -989,20 +1087,27 @@ export default function PageZone({ zone }: { zone: Zone }) {
           <section className="py-20 md:py-28 bg-surface-container">
             <div className="max-w-container-max mx-auto px-6 md:px-16">
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
-                {zone.parent ? 'Nos autres ouvrages' : 'Nos ouvrages'} {zone.article} {zone.nom}
+                {zone.parent ? "Nos autres ouvrages" : "Nos ouvrages"}{" "}
+                {zone.article} {zone.nom}
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
-                Chaque page traite la contrainte propre à son ouvrage, elles ne se répètent pas.
+                Chaque page traite la contrainte propre à son ouvrage, elles ne
+                se répètent pas.
               </p>
               <ul className="grid md:grid-cols-2 gap-8">
                 {zone.offres.map((o) => (
-                  <li key={o.slug} className={o.src ? '' : 'border-t-2 border-secondary/40 pt-5'}>
+                  <li
+                    key={o.slug}
+                    className={
+                      o.src ? "" : "border-t-2 border-secondary/40 pt-5"
+                    }
+                  >
                     <a href={`/${o.slug}`} className="group block">
                       {/* Sans vignette, la carte n'avait aucun repère visuel :
                           le picto de l'ouvrage prend cette place. */}
                       {!o.src && (
                         <span className="block mb-4">
-                          <Picto nom={o.icone ?? 'home_work'} taille="petit" />
+                          <Picto nom={o.icone ?? "home_work"} taille="petit" />
                         </span>
                       )}
                       {o.src && (
@@ -1014,7 +1119,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                             decoding="async"
                             className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                             src={o.src}
-                            alt={o.alt ?? ''}
+                            alt={o.alt ?? ""}
                           />
                         </div>
                       )}
@@ -1056,7 +1161,9 @@ export default function PageZone({ zone }: { zone: Zone }) {
                       expand_more
                     </span>
                   </summary>
-                  <p className="font-body-md text-body-md text-on-surface-variant mt-4">{f.r}</p>
+                  <p className="font-body-md text-body-md text-on-surface-variant mt-4">
+                    {f.r}
+                  </p>
                 </details>
               ))}
             </div>
@@ -1067,22 +1174,32 @@ export default function PageZone({ zone }: { zone: Zone }) {
             le visiteur vers un autre formulaire coûtait un clic à l'endroit de
             la page où il est le plus décidé. L'ancre #devis-bas est celle que
             visent la barre mobile et le pop-up. */}
-        <section id="devis-bas" className="py-20 md:py-28 bg-primary text-on-primary">
+        <section
+          id="devis-bas"
+          className="py-20 md:py-28 bg-primary text-on-primary"
+        >
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-headline-md text-headline-md mb-4 text-center">
                 Un projet {zone.article} {zone.nom} ?
               </h2>
               <p className="font-body-md text-body-md text-on-primary/80 mb-8 text-center">
-                Le relevé et le devis sont gratuits, sans engagement. Vous pouvez aussi appeler
-                directement le{' '}
-                <a href={CONTACT.telHref} className="underline underline-offset-4">
+                Le relevé et le devis sont gratuits, sans engagement. Vous
+                pouvez aussi appeler directement le{" "}
+                <a
+                  href={CONTACT.telHref}
+                  className="underline underline-offset-4"
+                >
                   {CONTACT.telAffiche}
                 </a>
                 .
               </p>
               <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-xl">
-                <DevisForm instanceId="bas" projet={zone.projet} pageLabel={pageLabel} />
+                <DevisForm
+                  instanceId="bas"
+                  projet={zone.projet}
+                  pageLabel={pageLabel}
+                />
               </div>
             </div>
           </div>

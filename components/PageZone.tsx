@@ -48,27 +48,82 @@ const GARANTIES = [
 const ETAPES = [
   {
     icone: 'call',
-    titre: 'Vous nous appelez',
+    titre: 'Le premier échange',
     texte:
-      "Dix minutes au téléphone pour cadrer le besoin et vérifier que nous sommes le bon interlocuteur. Si le projet n'est pas pour nous, nous le disons tout de suite.",
+      "Dix minutes au téléphone pour cadrer le besoin, le budget et le calendrier. Si le projet n'est pas pour nous, nous le disons tout de suite.",
   },
   {
     icone: 'straighten',
-    titre: 'Nous venons relever',
+    titre: 'Le relevé sur place',
     texte:
-      "Sur place, gratuitement, déplacement compris. C'est le relevé qui tranche : dimensions réelles, nature du sol, accès au chantier, contraintes d'urbanisme de la parcelle.",
+      'Gratuit, déplacement compris. Dimensions réelles, nature du sol, accès au chantier, règles qui pèsent sur votre parcelle. Rien ne se décide au téléphone.',
+  },
+  {
+    icone: 'design_services',
+    titre: 'La conception',
+    texte:
+      "Nous dessinons, et vous voyez votre projet avant qu'il existe. Les arbitrages de surface, de coût et de matière se font là, pas sur le chantier.",
   },
   {
     icone: 'description',
-    titre: 'Vous recevez le devis',
+    titre: 'Le devis, sous 48 heures',
     texte:
-      'Sous 48 heures, poste par poste, sans ligne fourre-tout. Vous voyez ce que vous payez et ce que vous ne payez pas. Sans engagement.',
+      'Poste par poste, sans ligne fourre-tout. Vous voyez ce que vous payez et ce que vous ne payez pas. Sans engagement.',
+  },
+  {
+    icone: 'approval',
+    titre: "Le dossier d'urbanisme",
+    texte:
+      "Déclaration préalable ou permis de construire, nous montons le dossier et nous le suivons jusqu'à l'obtention, avis de l'Architecte des Bâtiments de France compris.",
+  },
+  {
+    icone: 'precision_manufacturing',
+    titre: "La fabrication à l'atelier",
+    texte:
+      "L'ossature est taillée et assemblée à blanc chez nous, aux Billaux. C'est ce qui réduit le nombre de journées de chantier chez vous.",
   },
   {
     icone: 'construction',
-    titre: 'Nous fabriquons et posons',
+    titre: 'Le montage et les finitions',
     texte:
-      "La même équipe du premier croquis à la dernière lame. L'ouvrage est préparé à l'atelier des Billaux, ce qui réduit le nombre de journées chez vous.",
+      'La même équipe lève, couvre, bardage et finitions. Hors d\'eau hors d\'air ou clé en main, vous choisissez où nous nous arrêtons.',
+  },
+  {
+    icone: 'shield',
+    titre: 'La livraison, et après',
+    texte:
+      'Réception avec vous, puis garantie décennale sur dix ans. Un seul interlocuteur du premier croquis à la dernière lame, et après.',
+  },
+];
+
+/** Ce que nous apportons de plus. La question que se pose un visiteur qui
+ *  a trois devis sur la table n'est pas « est-ce faisable » mais « pourquoi
+ *  eux ». Ces quatre points sont la réponse, et aucun n'est une promesse
+ *  invérifiable : ils décrivent notre organisation. */
+const APPORTS = [
+  {
+    icone: 'design_services',
+    titre: 'Nous concevons, nous fabriquons, nous posons',
+    texte:
+      "Nous ne sommes pas des revendeurs. Le dessin, la taille de l'ossature et la pose sont faits par la même maison, donc personne ne peut renvoyer la responsabilité sur le maillon d'à côté.",
+  },
+  {
+    icone: 'person',
+    titre: 'Un seul interlocuteur, du croquis à la réception',
+    texte:
+      'Vous savez toujours qui appeler, et cette personne connaît votre dossier. Aucune étape n\'est sous-traitée, il n\'y a donc pas de coordination à faire de votre côté.',
+  },
+  {
+    icone: 'approval',
+    titre: "Le dossier d'urbanisme, nous nous en chargeons",
+    texte:
+      "Déclaration préalable, permis de construire, avis de l'Architecte des Bâtiments de France : nous montons le dossier et nous le suivons. C'est ce dont nos clients nous remercient le plus souvent.",
+  },
+  {
+    icone: 'tune',
+    titre: 'Vous choisissez où nous nous arrêtons',
+    texte:
+      "Hors d'eau hors d'air, pour garder le second œuvre à vos artisans, ou clé en main finitions comprises. Les deux se chiffrent, et le devis dit exactement ce que couvre chacun.",
   },
 ];
 
@@ -151,6 +206,269 @@ export default function PageZone({ zone }: { zone: Zone }) {
       })),
     },
   ];
+
+  /* * Contexte technique du secteur * */
+  /* Pourquoi nous plutôt qu'un autre. Placée juste après les garanties,
+     avant toute considération technique : c'est la question que se pose un
+     visiteur qui a plusieurs devis en main. */
+  const sectionApports = (
+    <section className="py-20 md:py-28 bg-surface" aria-labelledby="titre-apports">
+      <div className="max-w-container-max mx-auto px-6 md:px-16">
+        <div className="max-w-3xl mb-12">
+          <h2
+            id="titre-apports"
+            className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+          >
+            Pourquoi confier votre projet à L&apos;Esprit Bois
+          </h2>
+          <p className="font-body-lg text-body-lg text-on-surface-variant">
+            Vingt ans de bois, une seule équipe, et rien de sous-traité. Voici ce que ça change
+            concrètement pour vous.
+          </p>
+        </div>
+        <ul className="grid sm:grid-cols-2 gap-6">
+          {APPORTS.map((a) => (
+            <li
+              key={a.titre}
+              className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
+            >
+              <span
+                className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
+                aria-hidden="true"
+              >
+                {a.icone}
+              </span>
+              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">{a.titre}</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant">{a.texte}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+
+  const sectionContexte = (
+    <section className="py-20 md:py-28 bg-surface">
+      <div className="max-w-container-max mx-auto px-6 md:px-16">
+        {/* Les blocs tiennent une mesure un peu plus large que la prose :
+            le texte y est déjà retrait par la gouttière de l'icône, et une
+            colonne de prose sur une page pleine largeur laisse un vide à
+            droite qui donne l'impression d'une page inachevée. */}
+        <div
+          className={
+            zone.contexteTuiles ? '' : zone.contexteBlocs ? 'max-w-4xl' : 'max-w-3xl'
+          }
+        >
+          <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8 max-w-3xl">
+            {zone.contexte.titre}
+          </h2>
+          {/* Une page mère s'oriente, elle ne se lit pas : ses contraintes
+              passent en tuiles, la prose reste aux pages d'offre. */}
+          {zone.contexteTuiles ? (
+            <>
+              <ul className="grid sm:grid-cols-2 gap-6">
+                {zone.contexteTuiles.map((t) => (
+                  <li
+                    key={t.titre}
+                    className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
+                  >
+                    <span
+                      className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
+                      aria-hidden="true"
+                    >
+                      {t.icone}
+                    </span>
+                    <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
+                      {t.titre}
+                    </h3>
+                    <p className="font-body-md text-body-md text-on-surface-variant">
+                      {t.texte}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+              {zone.contexteChute && (
+                <p className="font-body-lg text-body-lg text-on-surface-variant mt-12 max-w-3xl">
+                  {zone.contexteChute}
+                </p>
+              )}
+            </>
+          ) : zone.contexteBlocs ? (
+            <>
+            {/* Même texte que la prose, mais découpé et titré, et surtout
+                suivi à chaque fois de ce que nous en faisons. Sans cette
+                dernière ligne la page énonce des difficultés sans dire
+                qu'elle sait les traiter, ce qui inquiète au lieu de
+                rassurer. */}
+            <ul className="space-y-6">
+              {zone.contexteBlocs.map((b, i) => (
+                <li
+                  key={b.titre}
+                  className="bg-white rounded-2xl border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden"
+                >
+                  <div className="p-8 md:p-10">
+                    <div className="flex items-start gap-5">
+                      <span
+                        className="material-symbols-outlined text-secondary-dark text-[40px] leading-none shrink-0"
+                        aria-hidden="true"
+                      >
+                        {b.icone}
+                      </span>
+                      <div>
+                        <h3 className="font-title-md text-title-md text-on-surface mb-3">
+                          {b.titre}
+                        </h3>
+                        <p className="font-body-lg text-body-lg text-on-surface-variant">
+                          {zone.contexte.paragraphes[i]}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="bg-surface-container border-t border-surface-variant px-8 md:px-10 py-5 font-body-md text-body-md text-on-surface flex items-start gap-3">
+                    <span
+                      className="material-symbols-outlined text-secondary-dark text-[22px] leading-none shrink-0"
+                      aria-hidden="true"
+                    >
+                      check_circle
+                    </span>
+                    <span>
+                      <strong className="font-semibold">Ce que nous faisons : </strong>
+                      {b.reponse}
+                    </span>
+                  </p>
+                </li>
+              ))}
+            </ul>
+            {zone.contexte.paragraphes.length > zone.contexteBlocs.length && (
+              /* Les pages du Bassin terminent leur contexte par une phrase
+                 de synthèse : ce n'est pas une contrainte, elle n'a donc pas
+                 de bloc, mais elle ne doit pas disparaître pour autant. */
+              <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-10 max-w-3xl">
+                {zone.contexte.paragraphes.slice(zone.contexteBlocs.length).map((t, i) => (
+                  <p key={i}>{t}</p>
+                ))}
+              </div>
+            )}
+            </>
+          ) : (
+            <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
+              {zone.contexte.paragraphes.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          )}
+        </div>
+    
+        {/* Schéma technique, à la suite immédiate du texte qu'il illustre.
+            Volontairement pleine largeur : c'est une figure à lire, pas une
+            vignette d'accompagnement. */}
+        {zone.schema && (
+          <figure className="mt-16">
+            <img
+              width={zone.schema.w}
+              height={zone.schema.h}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-2xl border border-outline-variant bg-surface"
+              src={zone.schema.src}
+              alt={zone.schema.alt}
+            />
+            <figcaption className="font-body-md text-body-md text-on-surface-variant mt-4 max-w-3xl">
+              {zone.schema.legende}
+            </figcaption>
+          </figure>
+        )}
+      </div>
+    </section>
+  );
+
+  /* * Relance après les contraintes techniques : c'est l'endroit de la page
+     où le visiteur vient de comprendre qu'il y a des pièges, et le moment
+     où il est le plus disposé à les faire traiter par quelqu'un d'autre. * */
+  const sectionRelance = (
+    <section className="py-14 md:py-16 bg-primary text-on-primary">
+      <div className="max-w-container-max mx-auto px-6 md:px-16">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+          <div className="max-w-2xl">
+            <h2 className="font-headline-sm text-headline-sm mb-3">
+              Vous vous reconnaissez dans un de ces points ?
+            </h2>
+            <p className="font-body-md text-body-md text-on-primary/80">
+              C&apos;est le relevé qui tranche, pas le téléphone : dimensionnement, autorisations,
+              accès au chantier. Il est gratuit et sans engagement.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 lg:ml-auto shrink-0">
+            <a href="#devis-bas" className={boutonPlein}>
+              Décrire mon projet
+            </a>
+            <a href={CONTACT.telHref} className={boutonTelephone}>
+              <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+                call
+              </span>
+              {CONTACT.telAffiche}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+
+  /* * Le déroulé. Placé après les preuves : le visiteur est convaincu du
+     savoir-faire, il veut maintenant savoir à quoi il s'engage. * */
+  const sectionDeroule = (
+    <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-deroule">
+      <div className="max-w-container-max mx-auto px-6 md:px-16">
+        <div className="max-w-3xl mb-12">
+          <h2
+            id="titre-deroule"
+            className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+          >
+            Comment ça se passe, du premier appel à la remise des clés
+          </h2>
+          <p className="font-body-lg text-body-lg text-on-surface-variant">
+            Huit étapes, aucune sous-traitance, et rien à payer avant le devis.
+          </p>
+        </div>
+        <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {ETAPES.map((e, i) => (
+            <li
+              key={e.titre}
+              className="relative bg-surface rounded-2xl p-8 border border-surface-variant"
+            >
+              <span
+                className="absolute top-6 right-7 font-display-md text-[40px] leading-none text-primary/10"
+                aria-hidden="true"
+              >
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <span
+                className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
+                aria-hidden="true"
+              >
+                {e.icone}
+              </span>
+              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
+                {e.titre}
+              </h3>
+              <p className="font-body-md text-body-md text-on-surface-variant">{e.texte}</p>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-12 flex flex-col sm:flex-row gap-4">
+          <a href="#devis-bas" className={boutonPleinSombre}>
+            Lancer mon étude gratuite
+          </a>
+          <a href={CONTACT.telHref} className={boutonTelephoneClair}>
+            <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+              call
+            </span>
+            {CONTACT.telAffiche}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 
   return (
     <>
@@ -243,139 +561,24 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </div>
         </section>
 
-        {/* Contexte technique du secteur */}
-        <section className="py-20 md:py-28 bg-surface">
-          <div className="max-w-container-max mx-auto px-6 md:px-16">
-            {/* Les blocs tiennent une mesure un peu plus large que la prose :
-                le texte y est déjà retrait par la gouttière de l'icône, et une
-                colonne de prose sur une page pleine largeur laisse un vide à
-                droite qui donne l'impression d'une page inachevée. */}
-            <div
-              className={
-                zone.contexteTuiles ? '' : zone.contexteBlocs ? 'max-w-4xl' : 'max-w-3xl'
-              }
-            >
-              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8 max-w-3xl">
-                {zone.contexte.titre}
-              </h2>
-              {/* Une page mère s'oriente, elle ne se lit pas : ses contraintes
-                  passent en tuiles, la prose reste aux pages d'offre. */}
-              {zone.contexteTuiles ? (
-                <>
-                  <ul className="grid sm:grid-cols-2 gap-6">
-                    {zone.contexteTuiles.map((t) => (
-                      <li
-                        key={t.titre}
-                        className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
-                      >
-                        <span
-                          className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
-                          aria-hidden="true"
-                        >
-                          {t.icone}
-                        </span>
-                        <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
-                          {t.titre}
-                        </h3>
-                        <p className="font-body-md text-body-md text-on-surface-variant">
-                          {t.texte}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                  {zone.contexteChute && (
-                    <p className="font-body-lg text-body-lg text-on-surface-variant mt-12 max-w-3xl">
-                      {zone.contexteChute}
-                    </p>
-                  )}
-                </>
-              ) : zone.contexteBlocs ? (
-                <>
-                {/* Même texte que la prose, mais découpé et titré, et surtout
-                    suivi à chaque fois de ce que nous en faisons. Sans cette
-                    dernière ligne la page énonce des difficultés sans dire
-                    qu'elle sait les traiter, ce qui inquiète au lieu de
-                    rassurer. */}
-                <ul className="space-y-6">
-                  {zone.contexteBlocs.map((b, i) => (
-                    <li
-                      key={b.titre}
-                      className="bg-white rounded-2xl border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden"
-                    >
-                      <div className="p-8 md:p-10">
-                        <div className="flex items-start gap-5">
-                          <span
-                            className="material-symbols-outlined text-secondary-dark text-[40px] leading-none shrink-0"
-                            aria-hidden="true"
-                          >
-                            {b.icone}
-                          </span>
-                          <div>
-                            <h3 className="font-title-md text-title-md text-on-surface mb-3">
-                              {b.titre}
-                            </h3>
-                            <p className="font-body-lg text-body-lg text-on-surface-variant">
-                              {zone.contexte.paragraphes[i]}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <p className="bg-surface-container border-t border-surface-variant px-8 md:px-10 py-5 font-body-md text-body-md text-on-surface flex items-start gap-3">
-                        <span
-                          className="material-symbols-outlined text-secondary-dark text-[22px] leading-none shrink-0"
-                          aria-hidden="true"
-                        >
-                          check_circle
-                        </span>
-                        <span>
-                          <strong className="font-semibold">Ce que nous faisons : </strong>
-                          {b.reponse}
-                        </span>
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-                {zone.contexte.paragraphes.length > zone.contexteBlocs.length && (
-                  /* Les pages du Bassin terminent leur contexte par une phrase
-                     de synthèse : ce n'est pas une contrainte, elle n'a donc pas
-                     de bloc, mais elle ne doit pas disparaître pour autant. */
-                  <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-10 max-w-3xl">
-                    {zone.contexte.paragraphes.slice(zone.contexteBlocs.length).map((t, i) => (
-                      <p key={i}>{t}</p>
-                    ))}
-                  </div>
-                )}
-                </>
-              ) : (
-                <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
-                  {zone.contexte.paragraphes.map((p, i) => (
-                    <p key={i}>{p}</p>
-                  ))}
-                </div>
-              )}
-            </div>
 
-            {/* Schéma technique, à la suite immédiate du texte qu'il illustre.
-                Volontairement pleine largeur : c'est une figure à lire, pas une
-                vignette d'accompagnement. */}
-            {zone.schema && (
-              <figure className="mt-16">
-                <img
-                  width={zone.schema.w}
-                  height={zone.schema.h}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-auto rounded-2xl border border-outline-variant bg-surface"
-                  src={zone.schema.src}
-                  alt={zone.schema.alt}
-                />
-                <figcaption className="font-body-md text-body-md text-on-surface-variant mt-4 max-w-3xl">
-                  {zone.schema.legende}
-                </figcaption>
-              </figure>
-            )}
-          </div>
-        </section>
+        {/* L'ordre change selon le rôle de la page.
+
+            Sur une page d'offre, on donne envie avant d'avertir : ce que nous
+            apportons, puis le déroulé du projet du premier appel à la
+            livraison, puis les preuves. Les contraintes du secteur viennent
+            plus bas, quand la confiance est faite.
+
+            Sur la page mère, qui sert à s'orienter et non à se décider, le
+            contexte du secteur reste en tête. */}
+        {zone.parent ? (
+          <>
+            {sectionApports}
+            {sectionDeroule}
+          </>
+        ) : (
+          sectionContexte
+        )}
 
         {/* Sur la page mère, les pages d'offre sont la charge utile : elles
             viennent juste après le contexte, avant toute relance. */}
@@ -422,35 +625,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </section>
         )}
 
-        {/* Relance après les contraintes techniques : c'est l'endroit de la page
-            où le visiteur vient de comprendre qu'il y a des pièges, et le moment
-            où il est le plus disposé à les faire traiter par quelqu'un d'autre. */}
-        <section className="py-14 md:py-16 bg-primary text-on-primary">
-          <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
-              <div className="max-w-2xl">
-                <h2 className="font-headline-sm text-headline-sm mb-3">
-                  Vous vous reconnaissez dans un de ces points ?
-                </h2>
-                <p className="font-body-md text-body-md text-on-primary/80">
-                  C&apos;est le relevé qui tranche, pas le téléphone : dimensionnement, autorisations,
-                  accès au chantier. Il est gratuit et sans engagement.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 lg:ml-auto shrink-0">
-                <a href="#devis-bas" className={boutonPlein}>
-                  Décrire mon projet
-                </a>
-                <a href={CONTACT.telHref} className={boutonTelephone}>
-                  <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
-                    call
-                  </span>
-                  {CONTACT.telAffiche}
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        {!zone.parent && sectionRelance}
 
         {/* Les chantiers réels du secteur */}
         <section className="py-20 md:py-28 bg-surface-container">
@@ -606,59 +782,15 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </div>
         </section>
 
-        {/* Le déroulé. Placé après les preuves : le visiteur est convaincu du
-            savoir-faire, il veut maintenant savoir à quoi il s'engage. */}
-        <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-deroule">
-          <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl mb-12">
-              <h2
-                id="titre-deroule"
-                className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
-              >
-                Comment ça se passe
-              </h2>
-              <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Quatre étapes, aucune sous-traitance, et rien à payer avant le devis.
-              </p>
-            </div>
-            <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {ETAPES.map((e, i) => (
-                <li
-                  key={e.titre}
-                  className="relative bg-surface rounded-2xl p-8 border border-surface-variant"
-                >
-                  <span
-                    className="absolute top-6 right-7 font-display-md text-[40px] leading-none text-primary/10"
-                    aria-hidden="true"
-                  >
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <span
-                    className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
-                    aria-hidden="true"
-                  >
-                    {e.icone}
-                  </span>
-                  <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
-                    {e.titre}
-                  </h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant">{e.texte}</p>
-                </li>
-              ))}
-            </ol>
-            <div className="mt-12 flex flex-col sm:flex-row gap-4">
-              <a href="#devis-bas" className={boutonPleinSombre}>
-                Lancer mon étude gratuite
-              </a>
-              <a href={CONTACT.telHref} className={boutonTelephoneClair}>
-                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
-                  call
-                </span>
-                {CONTACT.telAffiche}
-              </a>
-            </div>
-          </div>
-        </section>
+
+        {/* Les contraintes du secteur, une fois les preuves passées. Elles
+            restent sur la page, elles ne l'ouvrent plus. */}
+        {zone.parent && (
+          <>
+            {sectionContexte}
+            {sectionRelance}
+          </>
+        )}
 
         {/* Accès et méthode */}
         <section className="py-20 md:py-28 bg-surface">

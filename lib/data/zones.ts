@@ -36,6 +36,9 @@ export type Zone = {
     slug: string;
     titre: string;
     resume: string;
+    /** Picto affiché quand la carte n'a pas de vignette. À prendre dans le
+     *  sous-ensemble de police embarqué, sinon le nom s'affiche en clair. */
+    icone?: string;
     /** Vignette de la carte. Sur une page mère, les offres sont la charge utile :
      *  deux lignes de texte ne suffisent pas, il faut des cartes qu'on voie. */
     src?: string;
@@ -411,12 +414,14 @@ export const ZONES: Zone[] = [
       {
         slug: 'terrasse-bois-bassin-arcachon',
         titre: 'Terrasses bois sur le Bassin',
+        icone: 'deck',
         resume:
           "Le sable ne porte pas : ce que ça change à la fondation, aux fixations et à la déclaration préalable.",
       },
       {
         slug: 'extension-ossature-bois-bassin-arcachon',
         titre: 'Extensions et maisons bois sur le Bassin',
+        icone: 'home_work',
         resume:
           "Gagner une pièce, ouvrir sur le jardin ou construire la maison entière : conception, fabrication et pose par la même équipe.",
       },
@@ -583,12 +588,14 @@ export const ZONES: Zone[] = [
       {
         slug: 'pergola-bassin-arcachon',
         titre: 'Pergolas sur le Bassin',
+        icone: 'blinds',
         resume:
           "Le vent, les embruns et l'avis de l'Architecte des Bâtiments de France : les trois points qu'un devis de pergola oublie ici.",
       },
       {
         slug: 'extension-ossature-bois-bassin-arcachon',
         titre: 'Extensions et maisons bois sur le Bassin',
+        icone: 'home_work',
         resume:
           "Gagner une pièce, ouvrir sur le jardin ou construire la maison entière : conception, fabrication et pose par la même équipe.",
       },
@@ -758,12 +765,14 @@ export const ZONES: Zone[] = [
       {
         slug: 'pergola-bassin-arcachon',
         titre: 'Pergolas sur le Bassin',
+        icone: 'blinds',
         resume:
           "Le vent décide de l'ancrage, les embruns du laquage, l'Architecte des Bâtiments de France du calendrier.",
       },
       {
         slug: 'terrasse-bois-bassin-arcachon',
         titre: 'Terrasses bois sur le Bassin',
+        icone: 'deck',
         resume:
           "Le sable ne porte pas, la sous-face doit rester ventilée, et la nuance d'inox décide de l'aspect dans dix ans.",
       },
@@ -935,6 +944,7 @@ export const ZONES: Zone[] = [
       {
         slug: 'pergola-bassin-arcachon',
         titre: 'Pergolas sur le Bassin',
+        icone: 'blinds',
         resume:
           "Le vent décide de l'ancrage, les embruns du laquage, l'Architecte des Bâtiments de France du calendrier.",
         src: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
@@ -945,6 +955,7 @@ export const ZONES: Zone[] = [
       {
         slug: 'terrasse-bois-bassin-arcachon',
         titre: 'Terrasses bois sur le Bassin',
+        icone: 'deck',
         resume:
           "Le sable ne porte pas, la sous-face doit rester ventilée, et la nuance d'inox décide de l'aspect dans dix ans.",
         src: '/images/terrasse-bois-plots-gironde-2.webp',
@@ -955,6 +966,7 @@ export const ZONES: Zone[] = [
       {
         slug: 'extension-ossature-bois-bassin-arcachon',
         titre: 'Extensions et maisons bois sur le Bassin',
+        icone: 'home_work',
         resume:
           "Gagner une pièce, ouvrir sur le jardin ou construire la maison entière : conception, fabrication et pose par la même équipe.",
         src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg',

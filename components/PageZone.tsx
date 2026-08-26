@@ -127,6 +127,43 @@ const APPORTS = [
   },
 ];
 
+/**
+ * Un picto sur sa pastille. Les glyphes posés à nu se perdaient sur le fond
+ * clair des cartes ; la pastille leur donne une assise et rend les tuiles
+ * plus vivantes, sans ajouter de couleur au reste de la charte.
+ */
+function Picto({ nom, taille = 'grand' }: { nom: string; taille?: 'grand' | 'petit' }) {
+  const boite = taille === 'grand' ? 'w-14 h-14 rounded-2xl' : 'w-11 h-11 rounded-xl';
+  const glyphe = taille === 'grand' ? 'text-[30px]' : 'text-[24px]';
+  return (
+    <span
+      className={`inline-flex items-center justify-center shrink-0 bg-secondary/15 text-secondary-dark ${boite}`}
+      aria-hidden="true"
+    >
+      <span className={`material-symbols-outlined leading-none ${glyphe}`}>{nom}</span>
+    </span>
+  );
+}
+
+/** Le picto d'un guide se déduit de son sujet. La police embarquée ne
+ *  contient que 63 glyphes, d'où cette table courte plutôt qu'un choix
+ *  libre : une icône hors liste s'afficherait en toutes lettres. */
+const PICTOS_GUIDES: [RegExp, string][] = [
+  [/prix|budget|devis|comparer/, 'description'],
+  [/bardage|facade/, 'house_siding'],
+  [/terrasse|plage|lame/, 'deck'],
+  [/pergola|store|brise-soleil|solaire/, 'blinds'],
+  [/veranda|baie|menuiserie/, 'door_sliding'],
+  [/urbanisme|autorisation|permis|declaration/, 'approval'],
+  [/toiture|couverture|charpente/, 'roofing'],
+  [/carport|abri/, 'home_work'],
+  [/bois|essence|douglas|entretien/, 'layers'],
+];
+
+function pictoGuide(slug: string) {
+  return PICTOS_GUIDES.find(([motif]) => motif.test(slug))?.[1] ?? 'lightbulb';
+}
+
 /** Gabarit commun aux pages de zone.
  *
  *  Le gabarit est partagé, le contenu ne l'est pas : chaque zone apporte ses
@@ -232,12 +269,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
               key={a.titre}
               className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
             >
-              <span
-                className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
-                aria-hidden="true"
-              >
-                {a.icone}
-              </span>
+              <Picto nom={a.icone} />
               <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">{a.titre}</h3>
               <p className="font-body-md text-body-md text-on-surface-variant">{a.texte}</p>
             </li>
@@ -272,12 +304,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                     key={t.titre}
                     className="bg-white rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500"
                   >
-                    <span
-                      className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
-                      aria-hidden="true"
-                    >
-                      {t.icone}
-                    </span>
+                    <Picto nom={t.icone} />
                     <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
                       {t.titre}
                     </h3>
@@ -308,12 +335,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 >
                   <div className="p-8 md:p-10">
                     <div className="flex items-start gap-5">
-                      <span
-                        className="material-symbols-outlined text-secondary-dark text-[40px] leading-none shrink-0"
-                        aria-hidden="true"
-                      >
-                        {b.icone}
-                      </span>
+                      <Picto nom={b.icone} />
                       <div>
                         <h3 className="font-title-md text-title-md text-on-surface mb-3">
                           {b.titre}
@@ -442,12 +464,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
               >
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <span
-                className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
-                aria-hidden="true"
-              >
-                {e.icone}
-              </span>
+              <Picto nom={e.icone} />
               <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
                 {e.titre}
               </h3>
@@ -546,12 +563,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
           <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {GARANTIES.map((g) => (
               <div key={g.titre} className="flex items-center gap-4">
-                <span
-                  className="material-symbols-outlined text-secondary-dark text-[32px] shrink-0"
-                  aria-hidden="true"
-                >
-                  {g.icone}
-                </span>
+                <Picto nom={g.icone} taille="petit" />
                 <div>
                   <p className="font-label-md text-label-md text-primary">{g.titre}</p>
                   <p className="font-body-md text-body-md text-on-surface-variant">{g.texte}</p>
@@ -595,6 +607,13 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 {zone.offres.map((o) => (
                   <li key={o.slug} className={o.src ? '' : 'border-t-2 border-secondary/40 pt-5'}>
                     <a href={`/${o.slug}`} className="group block">
+                      {/* Sans vignette, la carte n'avait aucun repère visuel :
+                          le picto de l'ouvrage prend cette place. */}
+                      {!o.src && (
+                        <span className="block mb-4">
+                          <Picto nom={o.icone ?? 'home_work'} taille="petit" />
+                        </span>
+                      )}
                       {o.src && (
                         <div className="rounded-2xl overflow-hidden shadow-xl aspect-[3/2] mb-5">
                           <img
@@ -839,10 +858,11 @@ export default function PageZone({ zone }: { zone: Zone }) {
             </p>
             <ul className="grid md:grid-cols-3 gap-8">
               {zone.guides.map((g) => (
-                <li key={g.slug} className="border-t-2 border-secondary/40 pt-5">
+                <li key={g.slug} className="border-t-2 border-secondary/40 pt-6">
+                  <Picto nom={pictoGuide(g.slug)} taille="petit" />
                   <a
                     href={`/blog/${g.slug}`}
-                    className="font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors"
+                    className="block font-title-md text-title-md text-on-surface hover:text-secondary-dark transition-colors mt-4"
                   >
                     {g.titre}
                   </a>
@@ -878,6 +898,13 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 {zone.offres.map((o) => (
                   <li key={o.slug} className={o.src ? '' : 'border-t-2 border-secondary/40 pt-5'}>
                     <a href={`/${o.slug}`} className="group block">
+                      {/* Sans vignette, la carte n'avait aucun repère visuel :
+                          le picto de l'ouvrage prend cette place. */}
+                      {!o.src && (
+                        <span className="block mb-4">
+                          <Picto nom={o.icone ?? 'home_work'} taille="petit" />
+                        </span>
+                      )}
                       {o.src && (
                         <div className="rounded-2xl overflow-hidden shadow-xl aspect-[3/2] mb-5">
                           <img

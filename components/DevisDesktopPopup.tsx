@@ -78,7 +78,9 @@ export default function DevisDesktopPopup({
           <span aria-hidden="true">&times;</span>
         </button>
         <h2 className="font-headline-sm text-headline-sm text-primary mb-3">
-          Une question avant de vous lancer ?
+          {/* Espace insécable : sans elle, le pop-up est trop étroit et rejette
+              le point d'interrogation seul sur la ligne suivante. */}
+          Une question avant de vous lancer{'\u00a0'}?
         </h2>
         <p className="text-on-surface-variant font-body-md text-body-md mb-6">
           Appelez-nous directement, ou recevez votre devis gratuit sous 48h.

@@ -20,6 +20,7 @@
     .txt     { font: 13px system-ui, -apple-system, sans-serif; fill: #5b5651; }
     .lbl     { font: 600 13px system-ui, -apple-system, sans-serif; fill: #9a5a24; }
     .lblg    { font: 600 13px system-ui, -apple-system, sans-serif; fill: #6f665c; }
+    .note    { font: 12px system-ui, -apple-system, sans-serif; fill: #5b5651; }
   </style>
 
   <defs>
@@ -80,12 +81,12 @@
   <text class="lbl" x="196" y="240">50 m</text>
 
   <!-- cartouche d'explication -->
-  <rect class="cartouche" x="712" y="128" width="196" height="204" rx="8"/>
-  <text class="txt" x="728" y="156">Le disque de 50 m se compte</text>
-  <text class="txt" x="728" y="176">depuis la construction, pas</text>
-  <text class="txt" x="728" y="196">depuis la limite de propriété.</text>
-  <text class="txt" x="728" y="240">La part hachurée tombe chez</text>
-  <text class="txt" x="728" y="260">le voisin et reste à votre</text>
-  <text class="txt" x="728" y="280">charge : son accès se demande</text>
-  <text class="txt" x="728" y="300">par lettre recommandée.</text>
+  <rect class="cartouche" x="700" y="128" width="220" height="172" rx="8"/>
+  <text class="note" x="716" y="154">Le disque de 50 m se compte</text>
+  <text class="note" x="716" y="172">depuis la construction, pas</text>
+  <text class="note" x="716" y="190">depuis la limite de propriété.</text>
+  <text class="note" x="716" y="220">La part hachurée tombe chez</text>
+  <text class="note" x="716" y="238">le voisin et reste à votre</text>
+  <text class="note" x="716" y="256">charge : son accès se demande</text>
+  <text class="note" x="716" y="274">par lettre recommandée.</text>
 </svg>

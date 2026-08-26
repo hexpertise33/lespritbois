@@ -93,6 +93,14 @@ export type Zone = {
    *  peut pas illustrer sa méthode avec une ossature. */
   visuelApports?: { src: string; w: number; h: number; alt: string };
   visuelDeroule?: { src: string; w: number; h: number; alt: string };
+  /** Ce que comprend l'ouvrage, poste par poste. Un visiteur qui compare des
+   *  devis a besoin de savoir où s'arrête la prestation et quels choix lui
+   *  restent : structure, isolation, finition extérieure, menuiseries. */
+  composition?: {
+    titre: string;
+    chapo: string;
+    elements: { icone: string; titre: string; texte: string }[];
+  };
   /** Sujets servant à choisir les avis clients affichés sur la page. */
   avisSujets?: Avis['sujets'];
   /** Schéma technique illustrant l'argument central de la page, affiché juste
@@ -842,6 +850,49 @@ export const ZONES: Zone[] = [
     coverH: 923,
     coverAlt:
       "Extension à ossature bois achevée, bardage douglas vertical et couverture en tuiles raccordée à une maison ancienne en pierre, terrasse en pierre devant, chantier de L'Esprit Bois en Gironde",
+    composition: {
+      titre: "Ce que comprend une construction à ossature bois",
+      chapo:
+        "La structure est en bois, le reste se choisit. Voici les postes que comprend l'ouvrage et ceux sur lesquels vous décidez, pour que vous puissiez comparer nos devis à ceux que vous recevrez ailleurs.",
+      elements: [
+        {
+          icone: 'grid_goldenratio',
+          titre: 'La structure, en ossature bois',
+          texte:
+            "Taillée et assemblée à blanc à notre atelier des Billaux, puis levée chez vous. C'est notre métier d'origine, sur une extension comme sur une maison entière.",
+        },
+        {
+          icone: 'layers',
+          titre: 'L\'isolation, en matériaux naturels',
+          texte:
+            "Nous isolons en matériaux naturels, posés en même temps que l'ossature plutôt que rapportés après coup. L'isolation fait partie de l'ouvrage, elle n'est pas une option en fin de devis.",
+        },
+        {
+          icone: 'house_siding',
+          titre: 'La finition extérieure, à votre main',
+          texte:
+            "Bardage bois, bardage métal, fibro-ciment ou enduit. Les quatre se posent sur la même ossature : le choix se fait avec l'exposition de la façade et ce qu'autorise le plan local d'urbanisme.",
+        },
+        {
+          icone: 'door_sliding',
+          titre: 'Les menuiseries, posées par nous',
+          texte:
+            "Bois, PVC ou aluminium, selon le budget, la teinte voulue et l'exposition. Nous les posons nous-mêmes, ce qui évite le renvoi de responsabilité classique entre le charpentier et le menuisier.",
+        },
+        {
+          icone: 'check_circle',
+          titre: "Livré hors d'eau hors d'air, isolation comprise",
+          texte:
+            "C'est le point d'arrivée courant : la coquille est close, couverte et isolée, et le second œuvre revient aux artisans de votre choix.",
+        },
+        {
+          icone: 'tune',
+          titre: 'Ou clé en main, si vous préférez',
+          texte:
+            "Nous allons aussi jusqu'aux finitions intérieures, comme à Génissac et à Rauzan. Les deux se chiffrent, et le devis dit exactement ce que couvre chacun.",
+        },
+      ],
+    },
     contexte: {
       titre: "Ce que le littoral ajoute, et que nous vérifions pour vous",
       paragraphes: [
@@ -912,6 +963,22 @@ export const ZONES: Zone[] = [
           "Ce qu'il y a dessous, avant le bardage. Ce que vous ne verrez plus est ce qui décide de la durée de vie de l'ouvrage.",
       },
       {
+        src: '/images/chantiers/ossature-bois-couverture-tuiles-posee-gironde.webp',
+        w: 1200,
+        h: 900,
+        alt: "Couverture en tuiles posée sur une construction à ossature bois, vue depuis le faîtage, chantier de L'Esprit Bois en Gironde",
+        legende:
+          "La couverture aussi. Charpente, zinguerie et tuiles sont posées par la même équipe que l'ossature, sans coordination à faire de votre côté.",
+      },
+      {
+        src: '/images/chantiers/ossature-bois-pignon-bardage-douglas-acheve-gironde.webp',
+        w: 1200,
+        h: 900,
+        alt: "Pignon d'une construction à ossature bois achevée, bardage douglas vertical et débord de toiture, chantier de L'Esprit Bois en Gironde",
+        legende:
+          "Le pignon achevé. Le douglas est laissé brut : il grisera en quelques années, sans rien perdre de sa tenue.",
+      },
+      {
         src: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
         w: 1600,
         h: 1200,
@@ -961,7 +1028,7 @@ export const ZONES: Zone[] = [
       },
       {
         q: 'Construisez-vous aussi des maisons neuves, ou seulement des extensions ?',
-        r: "Les deux, et c'est le même métier. Notre chantier de Rauzan est une maison de 150 m² mêlant ossature bois et maçonnerie, conçue et réalisée par nos équipes. Sur une construction neuve comme sur une extension, vous choisissez où nous nous arrêtons : hors d'eau hors d'air, pour garder le second œuvre à vos artisans, ou clé en main finitions comprises.",
+        r: "Les deux, et c'est le même métier. Notre chantier de Rauzan est une maison de 150 m² mêlant ossature bois et maçonnerie, conçue et réalisée par nos équipes. Dans les deux cas la structure est en ossature bois, l'isolation est en matériaux naturels et posée avec elle, et la finition extérieure se choisit : bardage bois, bardage métal, fibro-ciment ou enduit. Nous posons aussi les menuiseries, en bois, en PVC ou en aluminium. Nous livrons hors d'eau hors d'air isolation comprise, ou clé en main si vous préférez.",
       },
       {
         q: 'Combien de temps dure le chantier, à une heure de votre atelier ?',

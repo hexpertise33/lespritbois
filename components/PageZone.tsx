@@ -120,10 +120,10 @@ const APPORTS = [
       "Déclaration préalable, permis de construire, avis de l'Architecte des Bâtiments de France : nous montons le dossier et nous le suivons. C'est ce dont nos clients nous remercient le plus souvent.",
   },
   {
-    icone: 'tune',
-    titre: 'Vous choisissez où nous nous arrêtons',
+    icone: 'description',
+    titre: 'Un devis lisible, poste par poste',
     texte:
-      "Hors d'eau hors d'air, pour garder le second œuvre à vos artisans, ou clé en main finitions comprises. Les deux se chiffrent, et le devis dit exactement ce que couvre chacun.",
+      "Vous voyez ce que vous payez et ce que vous ne payez pas, sans ligne fourre-tout. C'est ce qui permet de comparer nos devis à ceux que vous recevrez ailleurs, ligne par ligne.",
   },
 ];
 
@@ -291,6 +291,39 @@ export default function PageZone({ zone }: { zone: Zone }) {
       </div>
     </section>
   );
+
+  /* Ce que comprend l'ouvrage. Placée juste après « pourquoi nous » : le
+     visiteur vient d'apprendre à qui il a affaire, il veut maintenant savoir
+     ce qu'il achète et où s'arrête la prestation. */
+  const sectionComposition = zone.composition ? (
+    <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-composition">
+      <div className="max-w-container-max mx-auto px-6 md:px-16">
+        <div className="max-w-3xl mb-12">
+          <h2
+            id="titre-composition"
+            className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+          >
+            {zone.composition.titre}
+          </h2>
+          <p className="font-body-lg text-body-lg text-on-surface-variant">
+            {zone.composition.chapo}
+          </p>
+        </div>
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {zone.composition.elements.map((e) => (
+            <li
+              key={e.titre}
+              className="bg-surface rounded-2xl p-8 border border-surface-variant"
+            >
+              <Picto nom={e.icone} />
+              <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">{e.titre}</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant">{e.texte}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ) : null;
 
   const sectionContexte = (
     <section className="py-20 md:py-28 bg-surface">
@@ -612,6 +645,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
         {zone.parent ? (
           <>
             {sectionApports}
+            {sectionComposition}
             {sectionDeroule}
           </>
         ) : (
@@ -848,6 +882,7 @@ export default function PageZone({ zone }: { zone: Zone }) {
         ) : (
           <>
             {sectionApports}
+            {sectionComposition}
             {sectionDeroule}
           </>
         )}

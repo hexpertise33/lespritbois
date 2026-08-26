@@ -132,8 +132,18 @@ const APPORTS = [
  * clair des cartes ; la pastille leur donne une assise et rend les tuiles
  * plus vivantes, sans ajouter de couleur au reste de la charte.
  */
-function Picto({ nom, taille = 'grand' }: { nom: string; taille?: 'grand' | 'petit' }) {
-  const boite = taille === 'grand' ? 'w-14 h-14 rounded-2xl' : 'w-11 h-11 rounded-xl';
+function Picto({
+  nom,
+  taille = 'grand',
+  forme = 'carre',
+}: {
+  nom: string;
+  taille?: 'grand' | 'petit';
+  forme?: 'carre' | 'rond';
+}) {
+  const taillePastille = taille === 'grand' ? 'w-14 h-14' : 'w-11 h-11';
+  const arrondi = forme === 'rond' ? 'rounded-full' : taille === 'grand' ? 'rounded-2xl' : 'rounded-xl';
+  const boite = `${taillePastille} ${arrondi}`;
   const glyphe = taille === 'grand' ? 'text-[30px]' : 'text-[24px]';
   return (
     <span
@@ -596,13 +606,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
                 plein et texte foncé pour qu'elle tienne sur n'importe quelle
                 image, sans imiter le bouton d'appel qui reste orange. */}
             {zone.bulle ? (
-              <p className="inline-flex items-center gap-3 rounded-full bg-white pl-5 pr-7 py-3.5 shadow-lg">
-                <span
-                  className="material-symbols-outlined text-secondary-dark text-[26px] leading-none"
-                  aria-hidden="true"
-                >
-                  design_services
-                </span>
+              <p className="inline-flex items-center gap-3 rounded-full bg-white p-2 pr-7 shadow-lg">
+                <Picto nom="design_services" taille="petit" forme="rond" />
                 <span className="font-body-md text-body-md font-semibold text-primary">
                   {zone.bulle}
                 </span>

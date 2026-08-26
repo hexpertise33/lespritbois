@@ -87,6 +87,12 @@ export type Zone = {
    *  une page qui énumère des difficultés sans dire qu'elle sait les traiter
    *  inquiète le visiteur au lieu de le mettre en confiance. */
   contexteBlocs?: { icone: string; titre: string; reponse: string }[];
+  /** Photos qui accompagnent les deux sections du haut de page. Sans elles,
+   *  le visiteur traverse trois écrans de texte et de cartes avant de voir
+   *  un seul ouvrage. Chaque zone donne les siennes : une page pergola ne
+   *  peut pas illustrer sa méthode avec une ossature. */
+  visuelApports?: { src: string; w: number; h: number; alt: string };
+  visuelDeroule?: { src: string; w: number; h: number; alt: string };
   /** Sujets servant à choisir les avis clients affichés sur la page. */
   avisSujets?: Avis['sujets'];
   /** Schéma technique illustrant l'argument central de la page, affiché juste
@@ -436,6 +442,18 @@ export const ZONES: Zone[] = [
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
+    visuelApports: {
+      src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+      w: 1600,
+      h: 900,
+      alt: "Pergola aluminium posée sur une terrasse en bois, lames orientables et structure anthracite, réalisation de L'Esprit Bois près de Libourne",
+    },
+    visuelDeroule: {
+      src: '/images/pergola-terrasse-bois-libourne-1.webp',
+      w: 1200,
+      h: 900,
+      alt: "Pergola et terrasse bois attenantes à une maison, ouvrage réalisé par L'Esprit Bois en Gironde",
+    },
     title: "Pergola sur le Bassin d'Arcachon : vent, embruns, site classé",
     description:
       "Pergola bioclimatique ou aluminium sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
@@ -610,6 +628,18 @@ export const ZONES: Zone[] = [
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
+    visuelApports: {
+      src: '/images/terrasse-bois-plots-gironde-2.webp',
+      w: 1200,
+      h: 900,
+      alt: "Terrasse bois posée sur plots devant une maison, lames alignées et plinthe de rive fermée, réalisation de L'Esprit Bois en Gironde",
+    },
+    visuelDeroule: {
+      src: '/images/pool-house-bois-terrasse-piscine-libourne.webp',
+      w: 1200,
+      h: 800,
+      alt: "Terrasse bois bordant une piscine avec pool house, réalisation de L'Esprit Bois près de Libourne",
+    },
     title: "Terrasse bois sur le Bassin d'Arcachon : sable et sel",
     description:
       "Terrasse bois sur le Bassin d'Arcachon : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand la déclaration préalable devient due.",
@@ -787,6 +817,18 @@ export const ZONES: Zone[] = [
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
+    visuelApports: {
+      src: '/images/chantiers/ossature-bois-bardage-douglas-debord-toiture-gironde.webp',
+      w: 1100,
+      h: 825,
+      alt: "Construction à ossature bois en cours de bardage douglas, débord de toiture et charpente apparente, chantier de L'Esprit Bois en Gironde",
+    },
+    visuelDeroule: {
+      src: '/images/chantiers/ossature-bois-chantier-bardage-en-cours-gironde.webp',
+      w: 1100,
+      h: 825,
+      alt: "Chantier d'ossature bois sous ciel bleu, échelle appuyée contre la façade en cours de bardage, équipe de L'Esprit Bois en Gironde",
+    },
     title: "Extension et maison ossature bois, Bassin d'Arcachon",
     description:
       "Extension et maison à ossature bois sur le Bassin d'Arcachon. Conception, fabrication et pose par la même équipe, dossier d'urbanisme compris. Devis sous 48 h.",
@@ -879,9 +921,9 @@ export const ZONES: Zone[] = [
       },
     ],
     chantiers: ['genissac', 'clerac', 'rauzan'],
-    chantiersTitre: 'Deux extensions et une maison, en Gironde',
+    chantiersTitre: 'Nos extensions et nos maisons à ossature bois',
     chantiersIntro:
-      "Nous n'avons pas encore construit sur le Bassin, et nous préférons l'écrire : ces trois chantiers sont à l'intérieur des terres. Ils disent en revanche exactement ce que nous savons faire, du raccord sur un bâti ancien à la maison complète de 150 m².",
+      "Nous n'avons pas encore construit sur le Bassin, et nous préférons l'écrire : les chantiers ci-dessous sont à l'intérieur des terres. En voici trois parmi ceux que nous documentons, du raccord sur un bâti ancien à la maison complète de 150 m².",
     guides: [
       {
         slug: 'extension-ossature-bois-prix-m2',

@@ -251,17 +251,30 @@ export default function PageZone({ zone }: { zone: Zone }) {
   const sectionApports = (
     <section className="py-20 md:py-28 bg-surface" aria-labelledby="titre-apports">
       <div className="max-w-container-max mx-auto px-6 md:px-16">
-        <div className="max-w-3xl mb-12">
-          <h2
-            id="titre-apports"
-            className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
-          >
-            Pourquoi confier votre projet à L&apos;Esprit Bois
-          </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Vingt ans de bois, une seule équipe, et rien de sous-traité. Voici ce que ça change
-            concrètement pour vous.
-          </p>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center mb-12">
+          <div className="max-w-2xl">
+            <h2
+              id="titre-apports"
+              className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+            >
+              Pourquoi confier votre projet à L&apos;Esprit Bois
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant">
+              Vingt ans de bois, une seule équipe, et rien de sous-traité. Voici ce que ça change
+              concrètement pour vous.
+            </p>
+          </div>
+          {zone.visuelApports && (
+            <img
+              width={zone.visuelApports.w}
+              height={zone.visuelApports.h}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-2xl shadow-xl"
+              src={zone.visuelApports.src}
+              alt={zone.visuelApports.alt}
+            />
+          )}
         </div>
         <ul className="grid sm:grid-cols-2 gap-6">
           {APPORTS.map((a) => (
@@ -441,16 +454,29 @@ export default function PageZone({ zone }: { zone: Zone }) {
   const sectionDeroule = (
     <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-deroule">
       <div className="max-w-container-max mx-auto px-6 md:px-16">
-        <div className="max-w-3xl mb-12">
-          <h2
-            id="titre-deroule"
-            className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
-          >
-            Comment ça se passe, du premier appel à la remise des clés
-          </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Huit étapes, aucune sous-traitance, et rien à payer avant le devis.
-          </p>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center mb-12">
+          <div className="max-w-2xl">
+            <h2
+              id="titre-deroule"
+              className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+            >
+              Comment ça se passe, du premier appel à la remise des clés
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant">
+              Huit étapes, aucune sous-traitance, et rien à payer avant le devis.
+            </p>
+          </div>
+          {zone.visuelDeroule && (
+            <img
+              width={zone.visuelDeroule.w}
+              height={zone.visuelDeroule.h}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-2xl shadow-xl"
+              src={zone.visuelDeroule.src}
+              alt={zone.visuelDeroule.alt}
+            />
+          )}
         </div>
         <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {ETAPES.map((e, i) => (
@@ -651,10 +677,14 @@ export default function PageZone({ zone }: { zone: Zone }) {
         <section className="py-20 md:py-28 bg-surface-container">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
+              {/* Le titre ne chiffre plus les chantiers. Annoncer « nos 3
+                  chantiers » plafonne ce que le visiteur imagine de
+                  l'entreprise, alors que la page n'en montre qu'une sélection
+                  documentée. */}
               {zone.chantiersTitre ??
                 (chantiers.length === 1
                   ? 'Notre chantier dans le secteur'
-                  : `Nos ${chantiers.length} chantiers dans le secteur`)}
+                  : 'Nos chantiers dans le secteur')}
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-14 max-w-2xl">
               {zone.chantiersIntro ?? (
@@ -802,12 +832,23 @@ export default function PageZone({ zone }: { zone: Zone }) {
         </section>
 
 
-        {/* Les contraintes du secteur, une fois les preuves passées. Elles
-            restent sur la page, elles ne l'ouvrent plus. */}
-        {zone.parent && (
+        {/* Sur une page d'offre, les contraintes du secteur arrivent ici, une
+            fois les preuves passées : elles restent sur la page, elles ne
+            l'ouvrent plus.
+
+            Sur la page mère, qui a ouvert sur son contexte, ce sont au
+            contraire la méthode et le déroulé qui viennent après les preuves.
+            Toutes les pages de zone les portent donc, seule leur place
+            change. */}
+        {zone.parent ? (
           <>
             {sectionContexte}
             {sectionRelance}
+          </>
+        ) : (
+          <>
+            {sectionApports}
+            {sectionDeroule}
           </>
         )}
 

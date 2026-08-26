@@ -73,7 +73,12 @@ export default function PageZone({ zone }: { zone: Zone }) {
     {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: `Chantiers réalisés, ${zone.nom}`,
+      // Le nom de la liste énumère les communes réellement livrées, jamais la
+      // zone de la page : sur le Bassin d'Arcachon nous n'avons pas encore de
+      // chantier, et les exemples montrés sont à l'intérieur des terres. Nommer
+      // la liste d'après la zone y affirmerait le contraire dans les données
+      // structurées, alors que le texte visible dit l'inverse.
+      name: `Chantiers réalisés : ${[...new Set(chantiers.map((c) => c.commune))].join(', ')}`,
       numberOfItems: chantiers.length,
       itemListElement: chantiers.map((c, i) => ({
         '@type': 'ListItem',

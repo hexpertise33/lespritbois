@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img"
+     aria-labelledby="titre desc">
+  <title id="titre">L'obligation de débroussaillement de 50 mètres autour d'une construction</title>
+  <desc id="desc">Vue en plan de deux parcelles voisines sous pinède. Le disque de 50 mètres
+    à débroussailler, centré sur la maison, franchit la limite de propriété : la part qui tombe
+    chez le voisin est hachurée. Une bande de 6 mètres de part et d'autre du chemin d'accès
+    privé est également à traiter.</desc>
+
+  <style>
+    .fond    { fill: #faf7f2; }
+    .foret   { fill: #eae4da; }
+    .zone    { fill: #e3ac77; fill-opacity: 0.35; }
+    .maison  { fill: #5b5651; }
+    .acces   { fill: #b9b1a6; }
+    .limite  { stroke: #1f1c19; stroke-width: 3; fill: none; }
+    .parcelle{ stroke: #8a8177; stroke-width: 1.5; fill: none; }
+    .fin     { stroke: #5b5651; stroke-width: 1.5; fill: none; }
+    .cartouche { fill: #ffffff; stroke: #ddd5c8; stroke-width: 1.5; }
+    .titre   { font: 600 19px Georgia, serif; fill: #1f1c19; }
+    .txt     { font: 13px system-ui, -apple-system, sans-serif; fill: #5b5651; }
+    .lbl     { font: 600 13px system-ui, -apple-system, sans-serif; fill: #9a5a24; }
+    .lblg    { font: 600 13px system-ui, -apple-system, sans-serif; fill: #6f665c; }
+  </style>
+
+  <defs>
+    <pattern id="hachure" width="9" height="9" patternUnits="userSpaceOnUse"
+             patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#b8712c" stroke-width="2.4"/>
+    </pattern>
+    <clipPath id="chezLeVoisin">
+      <rect x="426" y="118" width="270" height="290"/>
+    </clipPath>
+  </defs>
+
+  <rect class="fond" width="960" height="460"/>
+
+  <text class="titre" x="36" y="36">Ce que le débroussaillement oblige à faire</text>
+  <text class="txt"   x="36" y="60">Vue en plan. Sous pinède, la zone à traiter ne s'arrête pas à votre clôture.</text>
+
+  <!-- massif forestier -->
+  <rect class="foret" x="36" y="78" width="888" height="346"/>
+  <text class="lblg" x="52" y="99">massif boisé de plus de 0,5 hectare</text>
+
+  <!-- parcelles -->
+  <g class="parcelle" stroke-dasharray="6 5">
+    <rect x="96"  y="118" width="330" height="290"/>
+    <rect x="426" y="118" width="270" height="290"/>
+  </g>
+  <text class="lblg" x="110" y="140">votre parcelle</text>
+  <text class="lblg" x="440" y="140">parcelle voisine</text>
+
+  <!-- zone des 50 mètres, centrée sur la maison -->
+  <circle class="zone" cx="330" cy="250" r="150"/>
+  <g clip-path="url(#chezLeVoisin)">
+    <circle cx="330" cy="250" r="150" fill="url(#hachure)" fill-opacity="0.5"/>
+  </g>
+
+  <!-- limite séparative, en trait plein -->
+  <path class="limite" d="M426 118 v290"/>
+  <text class="lbl" x="440" y="340">à votre charge</text>
+  <text class="lblg" x="440" y="384">limite de propriété</text>
+
+  <!-- accès privé et sa bande de 6 mètres -->
+  <rect class="acces" x="316" y="250" width="28" height="158"/>
+  <g class="fin">
+    <path d="M288 392 h84"/>
+    <path d="M294 386 l-6 6 6 6"/><path d="M366 386 l6 6 -6 6"/>
+    <path d="M288 380 v24"/><path d="M372 380 v24"/>
+  </g>
+  <text class="lbl" x="120" y="396">6 m de chaque côté</text>
+  <text class="lblg" x="150" y="368">accès privé</text>
+
+  <!-- maison et cote des 50 mètres -->
+  <rect class="maison" x="286" y="219" width="88" height="62"/>
+  <text class="txt" x="300" y="255" fill="#faf7f2">maison</text>
+  <g class="fin">
+    <path d="M330 250 H180"/>
+    <path d="M186 244 l-6 6 6 6"/>
+  </g>
+  <text class="lbl" x="196" y="240">50 m</text>
+
+  <!-- cartouche d'explication -->
+  <rect class="cartouche" x="712" y="128" width="196" height="204" rx="8"/>
+  <text class="txt" x="728" y="156">Le disque de 50 m se compte</text>
+  <text class="txt" x="728" y="176">depuis la construction, pas</text>
+  <text class="txt" x="728" y="196">depuis la limite de propriété.</text>
+  <text class="txt" x="728" y="240">La part hachurée tombe chez</text>
+  <text class="txt" x="728" y="260">le voisin et reste à votre</text>
+  <text class="txt" x="728" y="280">charge : son accès se demande</text>
+  <text class="txt" x="728" y="300">par lettre recommandée.</text>
+</svg>

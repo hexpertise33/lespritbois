@@ -405,6 +405,12 @@ export const ZONES: Zone[] = [
         resume:
           "Le sable ne porte pas : ce que ça change à la fondation, aux fixations et à la déclaration préalable.",
       },
+      {
+        slug: 'extension-ossature-bois-bassin-arcachon',
+        titre: 'Extensions ossature bois sur le Bassin',
+        resume:
+          "Le sable qui se tasse contre une maison déjà stabilisée, la loi Littoral, et l'obligation de débroussailler sur cinquante mètres.",
+      },
     ],
     projet: "Pergola, Bassin d'Arcachon",
     communes: [
@@ -544,6 +550,12 @@ export const ZONES: Zone[] = [
         resume:
           "Le vent, les embruns et l'avis de l'Architecte des Bâtiments de France : les trois points qu'un devis de pergola oublie ici.",
       },
+      {
+        slug: 'extension-ossature-bois-bassin-arcachon',
+        titre: 'Extensions ossature bois sur le Bassin',
+        resume:
+          "Le sable qui se tasse contre une maison déjà stabilisée, la loi Littoral, et l'obligation de débroussailler sur cinquante mètres.",
+      },
     ],
     projet: "Terrasse bois, Bassin d'Arcachon",
     communes: [
@@ -664,6 +676,148 @@ export const ZONES: Zone[] = [
   },
 
   // -----------------------------------------------------------------------
+  // Extensions à ossature bois, Bassin d'Arcachon.
+  //
+  // Vague 2, ouverte le 26/08/2026. La condition posée le 24/08 est levée :
+  // les deux pages neuves de la vague 1 étaient indexées en moins de 48 heures.
+  // L'ossature passe avant le carport parce que Search Console montre que la
+  // demande girondine qui rapporte est là (« maison en bois gironde »,
+  // « ossature bois », « construction maison bois gironde »), et non sur les
+  // pergolas ou les carports.
+  // -----------------------------------------------------------------------
+  {
+    slug: 'extension-ossature-bois-bassin-arcachon',
+    nom: "Bassin d'Arcachon",
+    article: 'sur le',
+    ouvrage: 'Extensions ossature bois',
+    parent: { slug: 'bassin-arcachon', nom: "Bassin d'Arcachon" },
+    offres: [
+      {
+        slug: 'pergola-bassin-arcachon',
+        titre: 'Pergolas sur le Bassin',
+        resume:
+          "Le vent décide de l'ancrage, les embruns du laquage, l'Architecte des Bâtiments de France du calendrier.",
+      },
+      {
+        slug: 'terrasse-bois-bassin-arcachon',
+        titre: 'Terrasses bois sur le Bassin',
+        resume:
+          "Le sable ne porte pas, la sous-face doit rester ventilée, et la nuance d'inox décide de l'aspect dans dix ans.",
+      },
+    ],
+    projet: "Extension ossature bois — Bassin d'Arcachon",
+    communes: [
+      'La Teste-de-Buch',
+      'Arcachon',
+      'Gujan-Mestras',
+      'Le Teich',
+      'Biganos',
+      'Andernos-les-Bains',
+      'Lège-Cap-Ferret',
+    ],
+    title: "Extension ossature bois sur le Bassin d'Arcachon",
+    description:
+      "Extension à ossature bois sur le Bassin d'Arcachon : ce que le sable, la loi Littoral et l'obligation de débroussailler sur 50 mètres changent à un projet.",
+    keywords:
+      "extension ossature bois Bassin d'Arcachon, agrandissement maison bois Arcachon, extension bois La Teste-de-Buch, constructeur ossature bois Gujan-Mestras, surélévation bois Cap-Ferret",
+    h1: "Extensions à ossature bois sur le Bassin d'Arcachon",
+    chapo:
+      "Nous n'avons pas encore construit sur le Bassin, et nous préférons l'écrire. Nos extensions sont à l'intérieur des terres. Voici donc ce que le littoral ajoute à un projet d'agrandissement, sous pinède et en commune littorale.",
+    cover: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg',
+    coverW: 1200,
+    coverH: 900,
+    coverAlt:
+      "Extension à ossature bois bardée avec grande baie vitrée posée, terrasse en cours de ferraillage, chantier de L'Esprit Bois à Génissac",
+    contexte: {
+      titre: "Ce que le Bassin ajoute à un projet d'extension",
+      paragraphes: [
+        "Le sol, d'abord, et il ne pose pas ici la même question qu'à une terrasse. Une extension pèse : elle descend des charges permanentes dans un sable qui porte inégalement, souvent avec une nappe proche. Le risque n'est pas que l'ouvrage s'effondre, il est qu'il ne bouge pas comme la maison à laquelle il s'accroche. Un différentiel de tassement de quelques millimètres entre l'existant, fondé il y a trente ans, et l'extension neuve suffit à fissurer le raccord. C'est pour cela que nous sondons avant de dessiner, et que nous refusons de chiffrer une extension sur le littoral sans être venus voir le terrain.",
+        "La loi Littoral, ensuite, et c'est elle qui décide si le projet est possible avant même de parler de bois. La loi du 3 janvier 1986 s'applique aux communes riveraines du Bassin. Deux règles pèsent sur un agrandissement : hors des espaces déjà urbanisés, l'article L. 121-16 du code de l'urbanisme interdit les constructions dans une bande de cent mètres à compter de la limite haute du rivage, et le plan local d'urbanisme peut porter cette bande au-delà de cent mètres quand la sensibilité des milieux le justifie. S'y ajoute le principe de continuité avec l'urbanisation existante. Une parcelle constructible pour une maison ne l'est donc pas automatiquement pour tout agrandissement, et cela se vérifie parcelle par parcelle, pas à l'échelle de la commune.",
+        "Le débroussaillement, enfin, et c'est le point que presque personne n'annonce avant la signature. En Gironde, l'obligation légale s'applique dans les bois, forêts et landes de plus d'un demi-hectare, ainsi que dans une bande de deux cents mètres autour d'eux, ce qui couvre l'essentiel des parcelles sous pinède du Bassin. Elle impose de débroussailler sur cinquante mètres de profondeur autour des constructions, et six mètres de part et d'autre des accès privés. La zone ne s'arrête pas à votre clôture : quand elle déborde chez le voisin, l'obligation reste la vôtre, et il faut lui demander l'accès par lettre recommandée. Depuis l'arrêté préfectoral du 17 octobre 2025, le manquement est sanctionné jusqu'à cinquante euros par mètre carré non débroussaillé, et l'assurance peut appliquer une franchise supplémentaire allant jusqu'à cinq mille euros après un sinistre.",
+        "Le calendrier, pour finir. Une extension relève du permis de construire bien plus souvent qu'un abri, et dans les périmètres protégés du Bassin le dossier passe par l'avis de l'Architecte des Bâtiments de France, ce qui allonge l'instruction. Au-delà de cent cinquante mètres carrés de surface de plancher, le recours à un architecte devient obligatoire. Nous vérifions ces trois points au relevé, avant de dessiner.",
+      ],
+    },
+    schema: {
+      src: '/images/schemas/debroussaillement-50-metres-extension.svg',
+      w: 960,
+      h: 460,
+      alt: "Vue en plan d'une parcelle sous pinède : la zone de débroussaillement de 50 mètres autour de la maison déborde sur la parcelle voisine, avec une bande de 6 mètres le long de l'accès privé",
+      legende:
+        "C'est la règle la moins anticipée d'un projet sous pinède, et la seule qui vous oblige à parler à votre voisin. Le disque des cinquante mètres se compte depuis la construction, pas depuis la limite de propriété : la part qui tombe chez le voisin reste à votre charge, et son accès se demande par lettre recommandée.",
+    },
+    galerie: [
+      {
+        src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-chantier-gironde.jpg',
+        w: 1200,
+        h: 900,
+        alt: "Ossature bois en cours de levage contre une maison existante dont la toiture d'origine a été conservée, chantier de L'Esprit Bois à Génissac",
+        legende:
+          'Génissac : ossature en cours de levage, toiture conservée. Les cotes du rampant ont été relevées point par point avant le dessin.',
+      },
+      {
+        src: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
+        w: 1600,
+        h: 1200,
+        alt: "Maison à ossature bois de 150 m² avec garage, mêlant ossature et maçonnerie traditionnelle, construite par L'Esprit Bois à Rauzan",
+        legende:
+          'Rauzan : 150 m² mêlant ossature bois et maçonnerie. Faire cohabiter deux modes constructifs suppose de caler les niveaux finis très tôt.',
+      },
+      {
+        src: '/images/bardage-bois-douglas-gironde.webp',
+        w: 1000,
+        h: 1333,
+        alt: 'Bardage bois en douglas posé à claire-voie sur une façade, veinage et nœuds visibles',
+        legende:
+          "Le bardage est ce que le vent salé attaque en premier : sa pose et son essence se décident avec l'exposition de la façade.",
+      },
+    ],
+    chantiers: ['genissac'],
+    chantiersTitre: 'Notre extension la plus démonstrative',
+    chantiersIntro:
+      "Nous n'avons pas encore d'extension sur le Bassin. Celle de Génissac est à l'intérieur des terres, et nous ne prétendrons pas le contraire. Mais elle porte la question qui compte ici : greffer du neuf sur un existant qui a déjà bougé, sans que le raccord travaille.",
+    guides: [
+      {
+        slug: 'extension-ossature-bois-prix-m2',
+        titre: "Extension ossature bois : le prix au m²",
+        pourquoi:
+          "Les postes qui font le budget d'un agrandissement, à lire avant de comparer des devis sur le Bassin.",
+      },
+      {
+        slug: 'veranda-ou-extension-ossature-bois',
+        titre: 'Véranda ou extension à ossature bois ?',
+        pourquoi:
+          "Deux réponses très différentes au même besoin de surface, et l'une des deux se chauffe toute l'année.",
+      },
+      {
+        slug: 'bardage-bois-facade-essences-pose',
+        titre: 'Bardage bois : essences et pose',
+        pourquoi:
+          "Ce que le vent salé attaque en premier sur une façade neuve, et comment le bardage y répond.",
+      },
+    ],
+    acces:
+      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Sur une extension, cette distance se gère en préparant davantage en atelier : l'ossature est taillée et assemblée à blanc chez nous, puis levée sur place en quelques jours. Le relevé et l'étude de faisabilité sont gratuits, déplacement compris.",
+    faq: [
+      {
+        q: 'Peut-on agrandir une maison située près du rivage du Bassin ?',
+        r: "Cela dépend de la parcelle, et la réponse se lit avant de dessiner. La loi Littoral du 3 janvier 1986 s'applique aux communes riveraines du Bassin. Hors des espaces déjà urbanisés, l'article L. 121-16 du code de l'urbanisme interdit les constructions dans une bande de cent mètres depuis la limite haute du rivage, et le plan local d'urbanisme peut élargir cette bande quand la sensibilité des milieux le justifie. S'y ajoute le principe de continuité avec l'urbanisation existante. Nous vérifions la situation exacte de votre parcelle au relevé.",
+      },
+      {
+        q: 'Qu’est-ce que l’obligation de débroussaillement change à mon projet ?',
+        r: "Beaucoup plus qu'on ne le croit, et cela ne concerne pas que le chantier. En Gironde, l'obligation s'applique dans les bois, forêts et landes de plus d'un demi-hectare et dans une bande de deux cents mètres autour d'eux. Il faut débroussailler sur cinquante mètres autour des constructions et six mètres de part et d'autre des accès privés. Quand la zone déborde sur la parcelle voisine, l'obligation reste la vôtre et l'accès se demande par lettre recommandée. Depuis l'arrêté préfectoral du 17 octobre 2025, le manquement est sanctionné jusqu'à cinquante euros par mètre carré, et l'assurance peut appliquer une franchise supplémentaire après un sinistre.",
+      },
+      {
+        q: 'Le sable pose-t-il un problème pour une extension ?',
+        r: "Le problème n'est pas la portance en soi, c'est le différentiel. Une extension descend des charges permanentes dans un sol qui se tasse inégalement, contre une maison fondée il y a des décennies et déjà stabilisée. Quelques millimètres d'écart entre les deux suffisent à fissurer le raccord. C'est la raison pour laquelle nous sondons avant de dessiner et refusons de chiffrer une extension sur le littoral sans être venus sur place.",
+      },
+      {
+        q: 'Combien de temps dure le chantier, à une heure de votre atelier ?',
+        r: "Le levage lui-même est court, quelques jours pour une ossature préparée en atelier. Ce qui allonge le calendrier est en amont : l'instruction du permis, l'avis de l'Architecte des Bâtiments de France en périmètre protégé, et l'étude de sol. Nous compensons la distance en préparant davantage chez nous, ce qui réduit le nombre de journées sur place plutôt que d'ajouter des allers-retours.",
+      },
+    ],
+  },
+
+  // -----------------------------------------------------------------------
   // Page mère du Bassin d'Arcachon.
   //
   // Seul secteur du site à porter plusieurs pages d'offre, donc le seul à
@@ -695,6 +849,16 @@ export const ZONES: Zone[] = [
         w: 1200,
         h: 900,
         alt: "Terrasse bois posée sur sable devant une maison à bardage noir, vis de fondation visible sous la plinthe de rive, chantier de L'Esprit Bois à Lacanau",
+      },
+      {
+        slug: 'extension-ossature-bois-bassin-arcachon',
+        titre: 'Extensions ossature bois sur le Bassin',
+        resume:
+          "Le sable qui se tasse contre une maison déjà stabilisée, la loi Littoral, et l'obligation de débroussailler sur cinquante mètres.",
+        src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg',
+        w: 1200,
+        h: 900,
+        alt: "Extension à ossature bois bardée avec grande baie vitrée posée, chantier de L'Esprit Bois à Génissac",
       },
     ],
     projet: "Projet extérieur, Bassin d'Arcachon",

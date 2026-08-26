@@ -7,6 +7,8 @@ import DevisStickyBar from '@/components/DevisStickyBar';
 import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import ContactForm from '@/components/ContactForm';
 import { AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { AVIS } from '@/lib/data/avis';
+import Etoiles from '@/components/Etoiles';
 import { ZONES } from '@/lib/data/zones';
 
 export const metadata: Metadata = buildMetadata({
@@ -23,33 +25,6 @@ export const metadata: Metadata = buildMetadata({
 
 /* Avis Google réels, repris dans le JSON-LD (aggregateRating) et dans le
    bandeau défilant plus bas. Doit rester déclaré avant `jsonld`. */
-const AVIS = [
-  {
-    nom: 'clément Baudon',
-    texte:
-      "Commande faite 2 jours avant les congés. On a pu avoir la totalité de la fourniture pour notre terrasse. Super conseil pour le plan de pose. Énorme avantage : l'expérience du vendeur, pour le rendu esthétique comme la mise en place.",
-  },
-  {
-    nom: 'Damien',
-    texte:
-      "Merci à David et toute son équipe pour leurs conseils. Ils m'ont aidé sur la conception d'une pergola et le résultat est parfait.",
-  },
-  {
-    nom: 'Guillaume Marie-Catherine',
-    texte: 'Malgré un timing ultra serré, le permis de construire a été déposé dans les temps !',
-  },
-  {
-    nom: 'thuy tran',
-    texte:
-      "Merci pour la modélisation 3D des chalets et pour les précieux conseils sur l'architecture, l'optimisation de l'espace et des coûts.",
-  },
-  {
-    nom: 'Georgia Flores',
-    texte:
-      "Merci infiniment à Manon et ses collègues pour le travail sur mes plans d'agrandissement. Projet mené jusqu'à l'obtention du permis. De bons conseils.",
-  },
-  { nom: 'Bérengère Coste', texte: "Entreprise sérieuse et à l'écoute." },
-];
 
 const jsonld = [
   {
@@ -432,13 +407,7 @@ function LogoGoogle({ className }: { className?: string }) {
 function CarteAvis({ nom, texte }: { nom: string; texte: string }) {
   return (
     <figure className="shrink-0 w-[320px] md:w-[380px] mx-3 bg-surface rounded-2xl border border-surface-variant p-8 flex flex-col">
-      <div className="flex items-center gap-1 text-secondary-dark mb-4" aria-hidden="true">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <span key={i} className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }} aria-hidden="true">
-            star
-          </span>
-        ))}
-      </div>
+      <Etoiles className="text-secondary-dark mb-4" />
       <blockquote className="font-body-md text-body-md text-on-surface-variant leading-relaxed flex-1">
         « {texte} »
       </blockquote>
@@ -981,17 +950,7 @@ export default function HomePage() {
               <div className="text-left">
                 <div className="flex items-center gap-3">
                   <span className="font-display-lg text-[34px] leading-none text-primary">5,0</span>
-                  <span className="flex items-center gap-0.5 text-secondary-dark" aria-hidden="true">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <span
-                        key={i}
-                        className="material-symbols-outlined text-[22px]"
-                        style={{ fontVariationSettings: "'FILL' 1" }} aria-hidden="true"
-                      >
-                        star
-                      </span>
-                    ))}
-                  </span>
+                  <Etoiles taille={22} className="text-secondary-dark" />
                 </div>
                 <p className="text-on-surface-variant text-sm mt-1.5">
                   Basé sur <strong className="text-on-surface">6 avis</strong> ·{' '}

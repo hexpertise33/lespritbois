@@ -44,6 +44,8 @@
   --font-label-md: var(--font-manrope), system-ui, sans-serif;
   --font-headline-md: var(--font-playfair), Georgia, serif;
   --font-headline-sm: var(--font-playfair), Georgia, serif;
+  --font-title-lg: var(--font-playfair), Georgia, serif;
+  --font-title-md: var(--font-playfair), Georgia, serif;
   --font-display-md: var(--font-playfair), Georgia, serif;
   --font-display-md-mobile: var(--font-playfair), Georgia, serif;
   --font-display-lg: var(--font-playfair), Georgia, serif;
@@ -62,6 +64,19 @@
   --text-label-md--line-height: 20px;
   --text-label-md--letter-spacing: 0.05em;
   --text-label-md--font-weight: 600;
+
+  /* Palier des titres de carte, entre le corps de texte et headline-sm.
+     Il était employé à huit endroits (tuiles et blocs des pages de zone,
+     titres des accordéons, cartes de l'accueil) sans avoir jamais été
+     déclaré : ces titres s'affichaient donc à la taille du texte courant,
+     sans hiérarchie visible. Même défaut que display-md avant lui. */
+  --text-title-md: 20px;
+  --text-title-md--line-height: 28px;
+  --text-title-md--font-weight: 600;
+
+  --text-title-lg: 22px;
+  --text-title-lg--line-height: 30px;
+  --text-title-lg--font-weight: 600;
 
   --text-headline-sm: 24px;
   --text-headline-sm--line-height: 32px;

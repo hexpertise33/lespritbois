@@ -2,10 +2,12 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import DevisForm from '@/components/DevisForm';
+import Etoiles from '@/components/Etoiles';
 import DevisStickyBar from '@/components/DevisStickyBar';
 import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import { CHANTIERS } from '@/lib/data/chantiers';
-import { CONTACT, ENTREPRISE_ID, ENTREPRISE_REF, SITE } from '@/lib/data/navigation';
+import { avisPour, NOTE_GOOGLE } from '@/lib/data/avis';
+import { CONTACT, ENTREPRISE_ID, ENTREPRISE_REF, GOOGLE, SITE } from '@/lib/data/navigation';
 import type { Zone } from '@/lib/data/zones';
 
 const lienInterne =
@@ -16,6 +18,59 @@ const boutonPlein =
 
 const boutonTelephone =
   'inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/10 transition-all active:scale-95';
+
+const boutonPleinSombre =
+  'inline-flex items-center justify-center bg-primary text-on-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary hover:text-primary transition-all active:scale-95';
+
+const boutonTelephoneClair =
+  'inline-flex items-center justify-center gap-2 border border-outline-variant text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all active:scale-95';
+
+/** Ce qui rassure avant qu'on ait lu la page. Posé juste sous le héros : un
+ *  visiteur qui ne connaît pas l'entreprise cherche d'abord à savoir s'il peut
+ *  lui confier un chantier, pas à apprendre la réglementation. */
+const GARANTIES = [
+  {
+    icone: 'verified',
+    titre: 'Entreprise qualifiée Qualibat',
+    texte: 'La qualification reconnue du bâtiment',
+  },
+  { icone: 'shield', titre: 'Garantie décennale', texte: 'Vos ouvrages couverts pendant dix ans' },
+  {
+    icone: 'handshake',
+    titre: 'Un seul interlocuteur',
+    texte: "De l'étude à la pose, sans sous-traitance",
+  },
+  { icone: 'schedule', titre: 'Devis sous 48 heures', texte: 'Relevé sur place gratuit' },
+];
+
+/** Le déroulé, identique sur toutes les zones : c'est la promesse de méthode
+ *  qui lève l'objection de la distance et celle de l'engagement. */
+const ETAPES = [
+  {
+    icone: 'call',
+    titre: 'Vous nous appelez',
+    texte:
+      "Dix minutes au téléphone pour cadrer le besoin et vérifier que nous sommes le bon interlocuteur. Si le projet n'est pas pour nous, nous le disons tout de suite.",
+  },
+  {
+    icone: 'straighten',
+    titre: 'Nous venons relever',
+    texte:
+      "Sur place, gratuitement, déplacement compris. C'est le relevé qui tranche : dimensions réelles, nature du sol, accès au chantier, contraintes d'urbanisme de la parcelle.",
+  },
+  {
+    icone: 'description',
+    titre: 'Vous recevez le devis',
+    texte:
+      'Sous 48 heures, poste par poste, sans ligne fourre-tout. Vous voyez ce que vous payez et ce que vous ne payez pas. Sans engagement.',
+  },
+  {
+    icone: 'construction',
+    titre: 'Nous fabriquons et posons',
+    texte:
+      "La même équipe du premier croquis à la dernière lame. L'ouvrage est préparé à l'atelier des Billaux, ce qui réduit le nombre de journées chez vous.",
+  },
+];
 
 /** Gabarit commun aux pages de zone.
  *
@@ -35,6 +90,10 @@ export default function PageZone({ zone }: { zone: Zone }) {
      s'y annoncent par leur ouvrage, « Bassin d'Arcachon / Terrasses bois »,
      les zones sans mère restent directement sous l'accueil sous leur nom. */
   const dernierNiveau = zone.ouvrage ?? zone.nom;
+
+  /* Les trois avis les plus proches du sujet de la page. Sans `avisSujets`,
+     ce sont simplement les trois plus étoffés. */
+  const avis = avisPour(zone.avisSujets ?? []);
   const filAriane = [
     { nom: 'Accueil', item: `${SITE.url}/` },
     ...(zone.parent ? [{ nom: zone.parent.nom, item: `${SITE.url}/${zone.parent.slug}` }] : []),
@@ -163,10 +222,39 @@ export default function PageZone({ zone }: { zone: Zone }) {
           </div>
         </header>
 
+        {/* Réassurance immédiate. Avant de lire quoi que ce soit sur la
+            technique, le visiteur doit savoir à qui il a affaire. */}
+        <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {GARANTIES.map((g) => (
+              <div key={g.titre} className="flex items-center gap-4">
+                <span
+                  className="material-symbols-outlined text-secondary-dark text-[32px] shrink-0"
+                  aria-hidden="true"
+                >
+                  {g.icone}
+                </span>
+                <div>
+                  <p className="font-label-md text-label-md text-primary">{g.titre}</p>
+                  <p className="font-body-md text-body-md text-on-surface-variant">{g.texte}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Contexte technique du secteur */}
         <section className="py-20 md:py-28 bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className={zone.contexteTuiles ? '' : 'max-w-3xl'}>
+            {/* Les blocs tiennent une mesure un peu plus large que la prose :
+                le texte y est déjà retrait par la gouttière de l'icône, et une
+                colonne de prose sur une page pleine largeur laisse un vide à
+                droite qui donne l'impression d'une page inachevée. */}
+            <div
+              className={
+                zone.contexteTuiles ? '' : zone.contexteBlocs ? 'max-w-4xl' : 'max-w-3xl'
+              }
+            >
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8 max-w-3xl">
                 {zone.contexte.titre}
               </h2>
@@ -200,6 +288,63 @@ export default function PageZone({ zone }: { zone: Zone }) {
                       {zone.contexteChute}
                     </p>
                   )}
+                </>
+              ) : zone.contexteBlocs ? (
+                <>
+                {/* Même texte que la prose, mais découpé et titré, et surtout
+                    suivi à chaque fois de ce que nous en faisons. Sans cette
+                    dernière ligne la page énonce des difficultés sans dire
+                    qu'elle sait les traiter, ce qui inquiète au lieu de
+                    rassurer. */}
+                <ul className="space-y-6">
+                  {zone.contexteBlocs.map((b, i) => (
+                    <li
+                      key={b.titre}
+                      className="bg-white rounded-2xl border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden"
+                    >
+                      <div className="p-8 md:p-10">
+                        <div className="flex items-start gap-5">
+                          <span
+                            className="material-symbols-outlined text-secondary-dark text-[40px] leading-none shrink-0"
+                            aria-hidden="true"
+                          >
+                            {b.icone}
+                          </span>
+                          <div>
+                            <h3 className="font-title-md text-title-md text-on-surface mb-3">
+                              {b.titre}
+                            </h3>
+                            <p className="font-body-lg text-body-lg text-on-surface-variant">
+                              {zone.contexte.paragraphes[i]}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="bg-surface-container border-t border-surface-variant px-8 md:px-10 py-5 font-body-md text-body-md text-on-surface flex items-start gap-3">
+                        <span
+                          className="material-symbols-outlined text-secondary-dark text-[22px] leading-none shrink-0"
+                          aria-hidden="true"
+                        >
+                          check_circle
+                        </span>
+                        <span>
+                          <strong className="font-semibold">Ce que nous faisons : </strong>
+                          {b.reponse}
+                        </span>
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+                {zone.contexte.paragraphes.length > zone.contexteBlocs.length && (
+                  /* Les pages du Bassin terminent leur contexte par une phrase
+                     de synthèse : ce n'est pas une contrainte, elle n'a donc pas
+                     de bloc, mais elle ne doit pas disparaître pour autant. */
+                  <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6 mt-10 max-w-3xl">
+                    {zone.contexte.paragraphes.slice(zone.contexteBlocs.length).map((t, i) => (
+                      <p key={i}>{t}</p>
+                    ))}
+                  </div>
+                )}
                 </>
               ) : (
                 <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
@@ -411,6 +556,107 @@ export default function PageZone({ zone }: { zone: Zone }) {
               </a>
               .
             </p>
+          </div>
+        </section>
+
+        {/* Avis clients. Les chantiers montrent ce que nous savons faire, les
+            avis disent comment ça s'est passé : les deux preuves se tiennent,
+            elles se suivent donc.
+
+            Aucun balisage Review ni aggregateRating ici : la note globale reste
+            déclarée sur l'accueil uniquement, voir lib/data/avis.ts. */}
+        <section className="py-20 md:py-28 bg-surface" aria-labelledby="titre-avis">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+              <div className="max-w-2xl">
+                <h2
+                  id="titre-avis"
+                  className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+                >
+                  Ce qu&apos;en disent nos clients
+                </h2>
+                <p className="font-body-lg text-body-lg text-on-surface-variant">
+                  {NOTE_GOOGLE.note} sur 5 sur Google, sur {NOTE_GOOGLE.nombre} avis. Nous les
+                  reproduisons tels quels.
+                </p>
+              </div>
+              <a
+                href={GOOGLE.fiche}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${lienInterne} font-label-md text-label-md shrink-0`}
+              >
+                Lire les avis sur Google
+              </a>
+            </div>
+            <ul className="grid md:grid-cols-3 gap-6">
+              {avis.map((a) => (
+                <li
+                  key={a.nom}
+                  className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant flex flex-col"
+                >
+                  <Etoiles className="text-secondary-dark mb-4" />
+                  <blockquote className="font-body-md text-body-md text-on-surface-variant grow">
+                    {a.texte}
+                  </blockquote>
+                  <p className="font-label-md text-label-md text-primary mt-6">{a.nom}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Le déroulé. Placé après les preuves : le visiteur est convaincu du
+            savoir-faire, il veut maintenant savoir à quoi il s'engage. */}
+        <section className="py-20 md:py-28 bg-surface-container" aria-labelledby="titre-deroule">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2
+                id="titre-deroule"
+                className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4"
+              >
+                Comment ça se passe
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Quatre étapes, aucune sous-traitance, et rien à payer avant le devis.
+              </p>
+            </div>
+            <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {ETAPES.map((e, i) => (
+                <li
+                  key={e.titre}
+                  className="relative bg-surface rounded-2xl p-8 border border-surface-variant"
+                >
+                  <span
+                    className="absolute top-6 right-7 font-display-md text-[40px] leading-none text-primary/10"
+                    aria-hidden="true"
+                  >
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <span
+                    className="material-symbols-outlined text-secondary-dark text-[40px] leading-none"
+                    aria-hidden="true"
+                  >
+                    {e.icone}
+                  </span>
+                  <h3 className="font-title-md text-title-md text-on-surface mt-4 mb-3">
+                    {e.titre}
+                  </h3>
+                  <p className="font-body-md text-body-md text-on-surface-variant">{e.texte}</p>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
+              <a href="#devis-bas" className={boutonPleinSombre}>
+                Lancer mon étude gratuite
+              </a>
+              <a href={CONTACT.telHref} className={boutonTelephoneClair}>
+                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+                  call
+                </span>
+                {CONTACT.telAffiche}
+              </a>
+            </div>
           </div>
         </section>
 

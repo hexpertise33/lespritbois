@@ -12,6 +12,8 @@
 // attendez le premier chantier.
 // =========================================================================
 
+import type { Avis } from '@/lib/data/avis';
+
 export type Zone = {
   slug: string;
   /** Nom du secteur tel qu'un habitant le dit. */
@@ -77,6 +79,13 @@ export type Zone = {
   }[];
   /** Phrase de bascule sous les tuiles, qui justifie l'existence des pages filles. */
   contexteChute?: string;
+  /** Les paragraphes de `contexte` rendus en blocs titrés, chacun suivi de ce
+   *  que nous faisons de la contrainte. Un bloc par paragraphe, dans l'ordre :
+   *  une page qui énumère des difficultés sans dire qu'elle sait les traiter
+   *  inquiète le visiteur au lieu de le mettre en confiance. */
+  contexteBlocs?: { icone: string; titre: string; reponse: string }[];
+  /** Sujets servant à choisir les avis clients affichés sur la page. */
+  avisSujets?: Avis['sujets'];
   /** Schéma technique illustrant l'argument central de la page, affiché juste
    *  après le contexte. Dessiné, pas photographié : sur un sujet comme la
    *  reprise de charge sous le sable, aucune photo ne montre ce qui compte,
@@ -445,6 +454,33 @@ export const ZONES: Zone[] = [
         "Rien de tout cela n'empêche quoi que ce soit. Mais un devis qui ignore ces quatre points est un devis qu'il faudra refaire.",
       ],
     },
+    avisSujets: ['pergola', 'conception', 'permis'],
+    contexteBlocs: [
+      {
+        icone: 'air',
+        titre: 'Le vent, qui décide de la fixation avant la lame',
+        reponse:
+          "nous dimensionnons l'ancrage pour votre façade et son exposition réelle, relevée sur place. Ce n'est pas un supplément, c'est la condition pour que la structure tienne.",
+      },
+      {
+        icone: 'palette',
+        titre: "L'air salin, qui s'attaque au laquage avant la teinte",
+        reponse:
+          "nous choisissons la préparation de surface et l'alliage pour une ambiance marine, et nous vous disons lequel des deux labels couvre quoi. Vous savez ce que garantit la garantie.",
+      },
+      {
+        icone: 'approval',
+        titre: "L'urbanisme, et l'avis de l'Architecte des Bâtiments de France",
+        reponse:
+          "nous vérifions le périmètre de protection de votre parcelle avant de dessiner, puis nous montons et suivons le dossier. Nos clients nous écrivent que leur permis est passé dans les temps.",
+      },
+      {
+        icone: 'water_drop',
+        titre: "L'évacuation de l'eau, qui ne se voit qu'au bout de deux ans",
+        reponse:
+          "nous prévoyons les sections et l'accès aux descentes dès la conception, pour que l'entretien reste possible sans démonter la pergola.",
+      },
+    ],
     schema: {
       src: '/images/schemas/pergola-ancrage-au-vent.svg',
       w: 960,
@@ -595,6 +631,33 @@ export const ZONES: Zone[] = [
         "Aucun de ces quatre points n'empêche de faire une belle terrasse sur le Bassin. Mais un devis qui n'en parle d'aucun est un devis qui n'est pas venu voir le terrain.",
       ],
     },
+    avisSujets: ['terrasse', 'conception'],
+    contexteBlocs: [
+      {
+        icone: 'layers',
+        titre: 'La portance, la plus coûteuse à ignorer',
+        reponse:
+          "nous sondons le sable avant de chiffrer et nous fondons en conséquence, en vis ou en plots selon ce que le terrain dit. C'est le poste qu'un devis fait au téléphone ne peut pas deviner.",
+      },
+      {
+        icone: 'air',
+        titre: 'Le sable, qui ne reste pas dehors',
+        reponse:
+          "nous fermons la rive et nous gardons la sous-face ventilée, comme à Lacanau. La structure reste sèche, donc elle dure.",
+      },
+      {
+        icone: 'precision_manufacturing',
+        titre: "Le sel, qui s'attaque à la visserie et non au bois",
+        reponse:
+          "nous posons en inox de la nuance adaptée au bord de mer et nous l'écrivons sur le devis. Vous pouvez comparer poste à poste avec les autres devis que vous recevrez.",
+      },
+      {
+        icone: 'approval',
+        titre: "L'urbanisme, et la mauvaise surprise du littoral",
+        reponse:
+          "nous vérifions ce que votre parcelle impose réellement avant les travaux, plutôt que de vous laisser découvrir une formalité après coup.",
+      },
+    ],
     schema: {
       src: '/images/schemas/terrasse-plots-ou-vis-sur-sable.svg',
       w: 960,
@@ -737,6 +800,33 @@ export const ZONES: Zone[] = [
         "Le calendrier, pour finir. Une extension relève du permis de construire bien plus souvent qu'un abri, et dans les périmètres protégés du Bassin le dossier passe par l'avis de l'Architecte des Bâtiments de France, ce qui allonge l'instruction. Au-delà de cent cinquante mètres carrés de surface de plancher, le recours à un architecte devient obligatoire. Nous vérifions ces trois points au relevé, avant de dessiner.",
       ],
     },
+    avisSujets: ['extension', 'ossature', 'permis', 'conception'],
+    contexteBlocs: [
+      {
+        icone: 'layers',
+        titre: 'Le sol, et le poids que vous allez lui ajouter',
+        reponse:
+          "nous sondons le terrain avant de dessiner, et nous fondons l'extension pour qu'elle bouge comme la maison, pas contre elle. Nous ne chiffrons jamais une extension sur le littoral sans être venus voir.",
+      },
+      {
+        icone: 'map',
+        titre: 'La loi Littoral, qui décide avant vous',
+        reponse:
+          "nous lisons le plan local d'urbanisme de votre commune et la situation exacte de votre parcelle au relevé. Vous savez si le projet est possible avant d'avoir dépensé un euro.",
+      },
+      {
+        icone: 'fence',
+        titre: "Le débroussaillement, l'obligation que personne n'annonce",
+        reponse:
+          "nous vous disons dès la visite ce que la règle impose sur votre parcelle, ce qui déborde chez le voisin, et comment le lui demander. Vous ne le découvrez pas après la signature.",
+      },
+      {
+        icone: 'approval',
+        titre: "Le calendrier, et l'avis de l'Architecte des Bâtiments de France",
+        reponse:
+          "nous montons le dossier et nous le suivons jusqu'à l'obtention. Nos clients nous écrivent que leur permis a été déposé dans les temps, y compris sur des délais serrés.",
+      },
+    ],
     schema: {
       src: '/images/schemas/debroussaillement-50-metres-extension.svg',
       w: 960,

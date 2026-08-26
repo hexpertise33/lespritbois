@@ -590,28 +590,32 @@ export default function PageZone({ zone }: { zone: Zone }) {
               </span>
               <span className="text-secondary-fixed">{dernierNiveau}</span>
             </p>
-            <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
-              Zone d&apos;intervention
-            </span>
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
-              {zone.h1}
-            </h1>
-            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">{zone.chapo}</p>
-            {/* La promesse en une ligne, détachée du chapô. Un visiteur qui ne
-                lit que trois mots doit repartir avec celui-là. */}
-            {zone.bulle && (
-              <p className="mt-7 inline-flex items-center gap-3 rounded-full bg-white/15 border border-white/25 backdrop-blur-sm pl-4 pr-6 py-3 text-white">
+            {/* La promesse prend la place de la surtitre : le fil d'Ariane
+                dit déjà de quel type de page il s'agit, alors qu'une pastille
+                translucide posée sous le chapô se perdait sur la photo. Fond
+                plein et texte foncé pour qu'elle tienne sur n'importe quelle
+                image, sans imiter le bouton d'appel qui reste orange. */}
+            {zone.bulle ? (
+              <p className="inline-flex items-center gap-3 rounded-full bg-white pl-5 pr-7 py-3.5 shadow-lg">
                 <span
-                  className="material-symbols-outlined text-secondary-fixed text-[24px] leading-none"
+                  className="material-symbols-outlined text-secondary-dark text-[26px] leading-none"
                   aria-hidden="true"
                 >
                   design_services
                 </span>
-                <span className="font-label-md text-label-md normal-case tracking-normal">
+                <span className="font-body-md text-body-md font-semibold text-primary">
                   {zone.bulle}
                 </span>
               </p>
+            ) : (
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
+                Zone d&apos;intervention
+              </span>
             )}
+            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
+              {zone.h1}
+            </h1>
+            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">{zone.chapo}</p>
             {/* Premier point de contact. Le numéro est un lien tel:, capté par
                 PhoneClickTracker, qui écoute tous les liens tel: du site. */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">

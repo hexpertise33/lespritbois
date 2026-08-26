@@ -597,6 +597,21 @@ export default function PageZone({ zone }: { zone: Zone }) {
               {zone.h1}
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">{zone.chapo}</p>
+            {/* La promesse en une ligne, détachée du chapô. Un visiteur qui ne
+                lit que trois mots doit repartir avec celui-là. */}
+            {zone.bulle && (
+              <p className="mt-7 inline-flex items-center gap-3 rounded-full bg-white/15 border border-white/25 backdrop-blur-sm pl-4 pr-6 py-3 text-white">
+                <span
+                  className="material-symbols-outlined text-secondary-fixed text-[24px] leading-none"
+                  aria-hidden="true"
+                >
+                  design_services
+                </span>
+                <span className="font-label-md text-label-md normal-case tracking-normal">
+                  {zone.bulle}
+                </span>
+              </p>
+            )}
             {/* Premier point de contact. Le numéro est un lien tel:, capté par
                 PhoneClickTracker, qui écoute tous les liens tel: du site. */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">

@@ -91,6 +91,9 @@ export type Zone = {
    *  le visiteur traverse trois écrans de texte et de cartes avant de voir
    *  un seul ouvrage. Chaque zone donne les siennes : une page pergola ne
    *  peut pas illustrer sa méthode avec une ossature. */
+  /** La promesse de la page, en une ligne, affichée en pastille sous le
+   *  chapô du héros. Ce que doit retenir un visiteur qui ne lit rien d'autre. */
+  bulle?: string;
   visuelApports?: { src: string; w: number; h: number; alt: string };
   visuelDeroule?: { src: string; w: number; h: number; alt: string };
   /** Ce que comprend l'ouvrage, poste par poste. Un visiteur qui compare des
@@ -462,6 +465,7 @@ export const ZONES: Zone[] = [
       h: 900,
       alt: "Pergola et terrasse bois attenantes à une maison, ouvrage réalisé par L'Esprit Bois en Gironde",
     },
+    bulle: "Une pergola sur mesure, dessinée pour votre façade",
     title: "Pergola sur le Bassin d'Arcachon : vent, embruns, site classé",
     description:
       "Pergola bioclimatique ou aluminium sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
@@ -648,6 +652,7 @@ export const ZONES: Zone[] = [
       h: 800,
       alt: "Terrasse bois bordant une piscine avec pool house, réalisation de L'Esprit Bois près de Libourne",
     },
+    bulle: "Une terrasse sur mesure, dessinée pour votre terrain",
     title: "Terrasse bois sur le Bassin d'Arcachon : sable et sel",
     description:
       "Terrasse bois sur le Bassin d'Arcachon : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand la déclaration préalable devient due.",
@@ -837,6 +842,7 @@ export const ZONES: Zone[] = [
       h: 825,
       alt: "Chantier d'ossature bois sous ciel bleu, échelle appuyée contre la façade en cours de bardage, équipe de L'Esprit Bois en Gironde",
     },
+    bulle: "Une construction sur mesure, selon vos propres souhaits",
     title: "Extension et maison ossature bois, Bassin d'Arcachon",
     description:
       "Extension et maison à ossature bois sur le Bassin d'Arcachon. Tout sur mesure : toit traditionnel ou toit plat, isolation fibre de bois. Devis sous 48 heures.",
@@ -1094,6 +1100,7 @@ export const ZONES: Zone[] = [
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
+    bulle: "Des ouvrages sur mesure, selon vos propres souhaits",
     title: "Aménagement extérieur bois sur le Bassin d'Arcachon",
     description:
       "Pergola, terrasse et aménagement extérieur sur le Bassin d'Arcachon : ce que le sable, le vent, le sel et les sites classés changent à un ouvrage en bois.",

@@ -591,8 +591,13 @@ export default function ArticleExtensionOssatureBoisPage() {
                 <a href="/blog/autorisation-urbanisme-abri-carport-pergola-2026" className={lienInterne}>
                   guide 2026 des autorisations d&apos;urbanisme
                 </a>{' '}
-                : une lecture utile avant de dessiner votre projet. De notre côté, nous vérifions systématiquement le PLU
-                et montons le dossier avec vous.
+                : une lecture utile avant de dessiner votre projet. Et si le PLU ou la taille de la parcelle vous
+                interdisent de consommer davantage d&apos;emprise au sol, l&apos;agrandissement se cherche par le haut :
+                c&apos;est tout l&apos;objet de{' '}
+                <a href="/blog/surelevation-ossature-bois-maison" className={lienInterne}>
+                  surélever sa maison en ossature bois
+                </a>
+                . De notre côté, nous vérifions systématiquement le PLU et montons le dossier avec vous.
               </p>
             </section>
 

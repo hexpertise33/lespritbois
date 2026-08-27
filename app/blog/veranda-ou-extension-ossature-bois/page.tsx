@@ -765,7 +765,13 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 Dernier point, très concret : vivre chez soi pendant les travaux. Une extension accolée à un séjour
                 suppose d&apos;ouvrir une baie dans un mur porteur, à un moment précis du planning ; nous organisons
                 cette ouverture le plus tard possible, une fois le volume neuf hors d&apos;eau, pour que la maison ne
-                reste jamais ouverte aux intempéries. Vous pouvez voir comment cela se traduit sur le terrain dans{' '}
+                reste jamais ouverte aux intempéries. La contrainte devient le sujet principal dès qu&apos;on agrandit
+                par le haut, puisque c&apos;est alors la toiture qu&apos;il faut déposer : nous expliquons comment se
+                gère{' '}
+                <a href="/blog/surelevation-ossature-bois-maison" className={lienInterne}>
+                  la mise hors d&apos;eau d&apos;une surélévation en ossature bois
+                </a>
+                . Vous pouvez voir comment cela se traduit sur le terrain dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
                 </a>

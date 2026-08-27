@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'surelevation-ossature-bois-maison',
+    titre:
+      "Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter",
+    extrait:
+      "Une surélévation ne se décide pas sur la surface qu'on veut gagner mais sur ce que la maison peut déjà porter : fondations, murs porteurs et plancher haut commandent le projet, et c'est une étude de structure, confiée à un bureau d'études, qui tranche avant le premier dessin. La légèreté de l'ossature bois est précisément ce qui rend l'opération possible là où la maçonnerie serait exclue. Surélever ou s'étendre au sol selon le terrain et le PLU, seuils de déclaration préalable et de permis, hauteur maximale qui ne se devine pas, dépose de la toiture et mise hors d'eau, escalier, réseaux et raccords de façade : le guide d'un artisan à Libourne (Gironde).",
+    date: '2026-08-27',
+    categorie: 'Guide · Surélévation bois',
+    image: '/images/chantiers/ossature-bois-couverture-tuiles-posee-gironde.webp',
+    imageLargeur: 1200,
+    imageHauteur: 900,
+  },
+  {
     slug: 'comparer-devis-pergola-postes-prix',
     titre:
       "Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart",

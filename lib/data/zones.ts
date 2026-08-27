@@ -91,9 +91,10 @@ export type Zone = {
    *  le visiteur traverse trois écrans de texte et de cartes avant de voir
    *  un seul ouvrage. Chaque zone donne les siennes : une page pergola ne
    *  peut pas illustrer sa méthode avec une ossature. */
-  /** La promesse de la page, en une ligne, affichée en pastille sous le
-   *  chapô du héros. Ce que doit retenir un visiteur qui ne lit rien d'autre. */
-  bulle?: string;
+  /** Fragment du `h1` mis en couleur. Sert à porter la promesse dans le
+   *  titre lui-même plutôt que dans un encart posé à côté : c'est la seule
+   *  ligne que tout le monde lit. Doit apparaître tel quel dans `h1`. */
+  accent?: string;
   visuelApports?: { src: string; w: number; h: number; alt: string };
   visuelDeroule?: { src: string; w: number; h: number; alt: string };
   /** Ce que comprend l'ouvrage, poste par poste. Un visiteur qui compare des
@@ -465,13 +466,13 @@ export const ZONES: Zone[] = [
       h: 900,
       alt: "Pergola et terrasse bois attenantes à une maison, ouvrage réalisé par L'Esprit Bois en Gironde",
     },
-    bulle: "Une pergola sur mesure, dessinée pour votre façade",
     title: "Pergola sur le Bassin d'Arcachon : vent, embruns, site classé",
     description:
       "Pergola bioclimatique ou aluminium sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
     keywords:
       "pergola Bassin d'Arcachon, pergola La Teste-de-Buch, pergola bioclimatique Arcachon, pergola Gujan-Mestras, pergola Cap-Ferret, store extérieur Bassin d'Arcachon",
-    h1: "Pergolas sur le Bassin d'Arcachon",
+    accent: 'sur mesure',
+    h1: "Pergolas sur mesure sur le Bassin d'Arcachon",
     chapo:
       "Nous nous déplaçons sur le Bassin pour les pergolas. Autant le dire tout de suite : nous n'y avons pas encore posé, voici donc ce que nous savons du terrain, pas une liste de références que nous n'avons pas.",
     cover: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
@@ -652,13 +653,13 @@ export const ZONES: Zone[] = [
       h: 800,
       alt: "Terrasse bois bordant une piscine avec pool house, réalisation de L'Esprit Bois près de Libourne",
     },
-    bulle: "Une terrasse sur mesure, dessinée pour votre terrain",
     title: "Terrasse bois sur le Bassin d'Arcachon : sable et sel",
     description:
       "Terrasse bois sur le Bassin d'Arcachon : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand la déclaration préalable devient due.",
     keywords:
       "terrasse bois Bassin d'Arcachon, terrasse bois Arcachon, terrasse bois Gujan-Mestras, terrasse bois Cap-Ferret, terrasse La Teste-de-Buch, terrasse sur sable",
-    h1: "Terrasses bois sur le Bassin d'Arcachon",
+    accent: 'sur mesure',
+    h1: "Terrasses bois sur mesure sur le Bassin d'Arcachon",
     chapo:
       "Nous n'avons pas encore posé de terrasse sur le Bassin. Mais nous en avons posé une sur le sable, à Lacanau : c'est la même question de portance, et c'est elle qui commande tout le reste.",
     /* Couverture en paysage : le bandeau du héros est deux fois plus large que
@@ -842,13 +843,13 @@ export const ZONES: Zone[] = [
       h: 825,
       alt: "Chantier d'ossature bois sous ciel bleu, échelle appuyée contre la façade en cours de bardage, équipe de L'Esprit Bois en Gironde",
     },
-    bulle: "Une construction sur mesure, selon vos propres souhaits",
     title: "Extension et maison ossature bois, Bassin d'Arcachon",
     description:
       "Extension et maison à ossature bois sur le Bassin d'Arcachon. Tout sur mesure : toit traditionnel ou toit plat, isolation fibre de bois. Devis sous 48 heures.",
     keywords:
       "extension ossature bois Bassin d'Arcachon, maison ossature bois Arcachon, maison ossature bois toit plat, extension bois sur mesure Gironde, constructeur bois Bassin d'Arcachon, agrandissement maison bois La Teste-de-Buch, surélévation bois Cap-Ferret",
-    h1: "Extensions et maisons à ossature bois sur le Bassin d'Arcachon",
+    accent: 'sur mesure',
+    h1: "Extensions et maisons à ossature bois, sur mesure, sur le Bassin d'Arcachon",
     chapo:
       "Gagner la pièce qui manque, ouvrir la maison sur le jardin, ou construire la maison entière. Tout est sur mesure, rien n'est sur catalogue. Nous dessinons, nous fabriquons à l'atelier et nous posons, du premier croquis à la réception.",
     cover: '/images/chantiers/extension-ossature-bois-bardage-douglas-maison-pierre-gironde.webp',
@@ -1100,13 +1101,13 @@ export const ZONES: Zone[] = [
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
-    bulle: "Des ouvrages sur mesure, selon vos propres souhaits",
     title: "Aménagement extérieur bois sur le Bassin d'Arcachon",
     description:
       "Pergola, terrasse et aménagement extérieur sur le Bassin d'Arcachon : ce que le sable, le vent, le sel et les sites classés changent à un ouvrage en bois.",
     keywords:
       "aménagement extérieur Bassin d'Arcachon, artisan bois Bassin d'Arcachon, pergola Arcachon, terrasse bois Arcachon, menuisier extérieur La Teste-de-Buch, Cap-Ferret",
-    h1: "Aménagement extérieur bois sur le Bassin d'Arcachon",
+    accent: 'sur mesure',
+    h1: "Aménagements extérieurs bois sur mesure sur le Bassin d'Arcachon",
     chapo:
       "Nous nous déplaçons sur le Bassin depuis notre atelier des Billaux. Nous n'y avons pas encore posé, et nous préférons l'écrire : voici ce que le terrain impose, ouvrage par ouvrage, plutôt qu'une liste de références que nous n'avons pas.",
     /* Seule couverture du site qui montre un lieu et non un ouvrage. C'est

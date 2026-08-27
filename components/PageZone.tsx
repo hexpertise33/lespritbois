@@ -635,79 +635,76 @@ export default function PageZone({ zone }: { zone: Zone }) {
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
-          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:items-center">
-            <div>
-              <p className="font-label-md text-label-md text-white/60 mb-6">
-                <a
-                  href="/"
-                  className="hover:text-secondary-fixed transition-colors"
-                >
-                  Accueil
-                </a>
-                {zone.parent && (
-                  <>
-                    <span className="mx-2 text-secondary" aria-hidden="true">
-                      /
-                    </span>
-                    <a
-                      href={`/${zone.parent.slug}`}
-                      className="hover:text-secondary-fixed transition-colors"
-                    >
-                      {zone.parent.nom}
-                    </a>
-                  </>
-                )}
-                <span className="mx-2 text-secondary" aria-hidden="true">
-                  /
-                </span>
-                <span className="text-secondary-fixed">{dernierNiveau}</span>
-              </p>
-              {/* La promesse prend la place de la surtitre : le fil d'Ariane
+          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
+            <p className="font-label-md text-label-md text-white/60 mb-6">
+              <a
+                href="/"
+                className="hover:text-secondary-fixed transition-colors"
+              >
+                Accueil
+              </a>
+              {zone.parent && (
+                <>
+                  <span className="mx-2 text-secondary" aria-hidden="true">
+                    /
+                  </span>
+                  <a
+                    href={`/${zone.parent.slug}`}
+                    className="hover:text-secondary-fixed transition-colors"
+                  >
+                    {zone.parent.nom}
+                  </a>
+                </>
+              )}
+              <span className="mx-2 text-secondary" aria-hidden="true">
+                /
+              </span>
+              <span className="text-secondary-fixed">{dernierNiveau}</span>
+            </p>
+            {/* La promesse prend la place de la surtitre : le fil d'Ariane
                 dit déjà de quel type de page il s'agit, alors qu'une pastille
                 translucide posée sous le chapô se perdait sur la photo. Fond
                 plein et texte foncé pour qu'elle tienne sur n'importe quelle
                 image, sans imiter le bouton d'appel qui reste orange. */}
-              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
-                Zone d&apos;intervention
-              </span>
-              <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
-                {zone.h1}
-              </h1>
-              <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-                {zone.chapo}
-              </p>
-              {/* Premier point de contact. Le numéro est un lien tel:, capté par
+            <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
+              Zone d&apos;intervention
+            </span>
+            {/* Le fragment `accent` du titre passe en couleur. C'est le seul
+                endroit où la promesse est portée : dans le titre, donc lue par
+                tout le monde, sans rien à caser ailleurs dans le bandeau. */}
+            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
+              {zone.accent && zone.h1.includes(zone.accent) ? (
+                <>
+                  {zone.h1.slice(0, zone.h1.indexOf(zone.accent))}
+                  <span className="text-secondary-fixed">{zone.accent}</span>
+                  {zone.h1.slice(zone.h1.indexOf(zone.accent) + zone.accent.length)}
+                </>
+              ) : (
+                zone.h1
+              )}
+            </h1>
+            <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
+              {zone.chapo}
+            </p>
+            {/* Premier point de contact. Le numéro est un lien tel:, capté par
                 PhoneClickTracker, qui écoute tous les liens tel: du site. */}
-              <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
-                <a href="#devis-bas" className={boutonPlein}>
-                  Demander mon étude gratuite
-                </a>
-                <a href={CONTACT.telHref} className={boutonTelephone}>
-                  <span
-                    className="material-symbols-outlined text-[20px]"
-                    aria-hidden="true"
-                  >
-                    call
-                  </span>
-                  {CONTACT.telAffiche}
-                </a>
-              </div>
-              <p className="font-body-md text-body-md text-white/70 mt-5">
-                Relevé et devis gratuits, déplacement compris.
-              </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
+              <a href="#devis-bas" className={boutonPlein}>
+                Demander mon étude gratuite
+              </a>
+              <a href={CONTACT.telHref} className={boutonTelephone}>
+                <span
+                  className="material-symbols-outlined text-[20px]"
+                  aria-hidden="true"
+                >
+                  call
+                </span>
+                {CONTACT.telAffiche}
+              </a>
             </div>
-            {/* L'encart de promesse. Une pastille seule au milieu de la photo
-                flottait comme une infobulle égarée : il lui fallait de la
-                matière pour équilibrer la colonne de texte. Sous lg il passe
-                en dessous des boutons, faute de place à côté. */}
-            {zone.bulle && (
-              <aside className="mt-10 lg:mt-0 lg:w-80 rounded-2xl bg-white/95 backdrop-blur-sm shadow-2xl p-8">
-                <Picto nom="design_services" forme="rond" />
-                <p className="font-headline-sm text-headline-sm text-primary mt-5">
-                  {zone.bulle}
-                </p>
-              </aside>
-            )}
+            <p className="font-body-md text-body-md text-white/70 mt-5">
+              Relevé et devis gratuits, déplacement compris.
+            </p>
           </div>
         </header>
 

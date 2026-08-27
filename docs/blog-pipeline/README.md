@@ -249,6 +249,96 @@ JSON-LD pointe vers `/images/source-adefrance/logo2026.png`, **qui n'existe pas
 sur le disque**, et **34 fichiers de `app/`** référencent ce chemin mort. C'est
 une image cassée pour Google sur tout le site, pas seulement sur cet article.
 
+**Créneau du 27/08/2026 servi — réserve vide, sujet trouvé hors réserve.** La
+veille du 24/08 notait « B tient le 27/08 », mais B (comparatif de devis de
+pergola) avait été **promue au 25/08** après le retrait de la proposition A par
+David : la réserve était donc **vide** ce matin, à l'exception de la cuisine
+d'été (hors saison, programmée février-mars) et des aides financières (bloquée
+sur sourcing). Test de cadence passé : aucune entrée au 27/08 ni au 26/08, la
+dernière datant du 25/08.
+
+Le sujet a été trouvé **dans l'offre plutôt que par veille web** : la
+**surélévation à ossature bois**, publiée sous `surelevation-ossature-bois-maison`.
+`/constructions-bois` lui consacre un bloc dédié et une question de FAQ depuis
+toujours, et **aucun des 36 articles ne la traitait**. Elle ne cannibalise ni
+`extension-ossature-bois-prix-m2` (agrandissement au sol) ni
+`veranda-ou-extension-ossature-bois` (choix de la matière) : le mot-clé est
+vertical, et c'est l'existant qui commande. Elle tombe en plein dans ce que
+l'audit du 22/08 désigne comme la demande réelle, l'ossature bois en Gironde.
+
+Thèse : une surélévation ne se décide pas sur la surface qu'on veut gagner mais
+sur ce que la maison peut porter, l'étude de structure tranchant avant le premier
+dessin ; second axe, on ouvre la toiture, donc la mise hors d'eau commande le
+calendrier. Sept sections : surélever ou s'étendre au sol, ce que l'existant doit
+porter, pourquoi l'ossature bois, urbanisme et hauteur du PLU, dépose de toiture
+et mise hors d'eau, escalier/réseaux/raccords, budget et déroulé en Gironde.
+
+Prudence factuelle : deux sources vérifiées le jour même, service-public.gouv.fr
+**F36777** (DP jusqu'à 40 m² en zone U dotée d'un PLU, 20 m² sinon, permis
+au-delà, permis dès 20 m² créés si le total dépasse 150 m², architecte au-delà de
+150 m² de surface de plancher totale après travaux) et **F23263** (taxe
+d'aménagement 2026 : 892 €/m² hors IDF, 1 011 € en IDF, abattement de 50 % sur
+les 100 premiers m² d'une résidence principale, exonération ≤ 5 m²). Aucune
+hauteur de PLU chiffrée, renvoi mairie. Aucun poids au m², aucune charge
+admissible, aucun ratio béton/bois, aucun DTU, aucun Eurocode, aucun décret,
+aucun seuil RE2020, aucun délai d'instruction chiffré. Limite de métier posée
+noir sur blanc : l'étude de structure est l'affaire d'un bureau d'études.
+
+⚠️ **Un chiffre inventé a été retiré avant le build.** Le rédacteur avait écrit
+qu'une surélévation revient « couramment de 10 à 30 % de plus » qu'une extension
+au sol, présenté comme constaté sur nos chantiers 2026, **et l'a signalé lui-même
+comme une inférence sans donnée interne**. Les trois occurrences (JSON-LD FAQ,
+FAQ visible, corps) ont été remplacées par une formulation qualitative. À retenir :
+la réserve spontanée d'un sous-agent sur un chiffre est un signal, pas une
+formalité.
+
+✅ **Images : cinq vraies photos de chantier, zéro téléchargement.** Le lot
+`public/images/chantiers/` (8 photos d'ossature bois girondines) n'avait jamais
+servi de cover à un article. Cover inédite :
+`chantiers/ossature-bois-couverture-tuiles-posee-gironde.webp` (1200 × 900).
+⚠️ **Le dépôt n'a aucune photo de surélévation réelle, ni de levage à la grue** :
+les cinq visuels montrent des constructions et une extension. L'iconographe a
+réécrit l'`alt` du hero et les quatre légendes du squelette, qui décrivaient des
+scènes inexistantes (jonction arase/lisse basse, mur levé à la grue, mise hors
+d'eau). Chaque légende dit désormais ce que l'image montre, puis le principe
+transposable, sans jamais présenter une construction neuve comme une
+surélévation. Même contrôle que le 25/08.
+
+**Maillage rétroactif (étape 4 bis) fait dans le même commit** : un lien depuis
+`extension-ossature-bois-prix-m2`, à l'endroit où l'article dit que le PLU peut
+durcir emprise et gabarits, et un depuis `veranda-ou-extension-ossature-bois`, à
+l'endroit où il explique qu'on ne laisse jamais la maison ouverte aux
+intempéries. Les deux liens ont été **vérifiés présents dans le HTML servi** en
+prod, pas seulement dans le source.
+
+Build normal dans `~/Projets/lespritbois` (64 pages), version `1e40e63b`.
+**Trois salves de curl en 200 d'emblée, aucun 404**, et les cinq images en 200.
+IndexNow **200**. **Demande d'indexation Search Console confirmée à l'écran**
+(« Indexation demandée · Cette URL a été ajoutée à une file d'attente
+d'exploration prioritaire »), sans quota atteint.
+
+📌 **Le lien profond d'inspection marche, à condition de ne pas le fabriquer.**
+Confirmation de la note du 25/08 : on ouvre
+`https://search.google.com/search-console?resource_id=sc-domain:lesprit-bois.fr`,
+on clique le champ d'inspection en haut **aux coordonnées** (~458, 20), on saisit
+l'URL et on valide. Google réécrit alors l'adresse avec son `id` opaque à lui.
+L'inspection a répondu en une quinzaine de secondes, et la confirmation
+d'indexation en une trentaine après le clic.
+
+ℹ️ Relevé au passage, **normal pour une page d'une heure** : « Cette URL n'a pas
+été indexée », « Aucun sitemap référent détecté », « Aucune page d'origine
+détectée ». C'est le même constat qu'au 25/08 ; les deux liens de l'étape 4 bis
+sont précisément là pour y remédier.
+
+➡️ **Prochain créneau : le 29/08** (test de cadence : le 28/08 doit s'arrêter,
+une entrée portant la date d'hier). ⚠️ **La réserve est vide** : il ne reste que
+la **cuisine d'été** (hors saison, à sortir en février-mars) et les **aides
+financières véranda/pergola** (bloquée faute de source primaire, à ne pas rouvrir
+sans). Une **veille web est obligatoire au prochain run**, comme le prévoyait
+déjà la note du 24/08. Après deux articles bois (23/08 claustra, 27/08
+surélévation) encadrant un sujet pergola, l'alternance appelle plutôt un sujet
+**aluminium**.
+
 ## Sujets en réserve prioritaires
 
 Toute la réserve **bois** a été consommée au 29/07/2026 : dernier sujet
@@ -1323,6 +1413,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-25 | écarté  | Éclairer sa terrasse et sa pergola (refusé par David le 25/08, ne pas reproposer) | eclairage-exterieur-terrasse-pergola |
 | 2026-08-25 | publié  | Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart | comparer-devis-pergola-postes-prix |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
+| 2026-08-27 | publié  | Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter | surelevation-ossature-bois-maison |
 
 ## Idées de sujets en réserve
 

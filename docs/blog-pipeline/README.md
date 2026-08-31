@@ -249,6 +249,81 @@ JSON-LD pointe vers `/images/source-adefrance/logo2026.png`, **qui n'existe pas
 sur le disque**, et **34 fichiers de `app/`** référencent ce chemin mort. C'est
 une image cassée pour Google sur tout le site, pas seulement sur cet article.
 
+**Créneau du 31/08/2026 servi — la proposition A du 27/08 consommée.** Test de
+cadence passé : aucune entrée au 31/08 ni au 30/08 dans `lib/data/blog.ts`, la
+dernière datant du 27/08. ⚠️ Le **créneau du 29/08 n'a pas été servi** : la
+veille du 27/08 avait laissé sa proposition A prête et datée « 2026-08-29 », mais
+aucun run n'a publié ce jour-là. Conformément à la règle, **rien n'a été rattrapé
+en double** : le run du jour a simplement pris la proposition A et l'a datée du
+**31/08**, date du jour. La ligne du tableau « Sujets » a été redatée en
+conséquence.
+
+Publié : `garanties-sav-pergola-veranda-aluminium`, « Dans huit ans, qui répare
+votre pergola ? Garanties, pièces détachées et SAV ». Alternance respectée :
+27/08 bois (surélévation), 31/08 aluminium. Commit `8f2ac83`, deploy version
+`95dfe8f1-44c0-41ff-9856-9e2aa696b2af`, **200 confirmé trois fois** sur
+`https://lesprit-bois.fr/blog/garanties-sav-pergola-veranda-aluminium`, et les
+cinq images vérifiées en 200 sur le domaine.
+
+Thèse : ce qui tombe en panne sur une pergola en aluminium, ce n'est jamais la
+structure mais le moteur, un capteur, un vérin de lames ou un store zip. Ce sont
+des **éléments d'équipement dissociables**, donc du ressort de la garantie de bon
+fonctionnement de **deux ans**, pas de la décennale de dix ans mise en avant sur
+les plaquettes. Angle d'**après-signature**, complémentaire de l'article du 25/08
+sur les devis, qui est celui d'avant-signature.
+
+**Prudence factuelle, resserrée sur ce sujet.** Seule source chiffrée citée,
+revérifiée ce jour : `entreprendre.service-public.gouv.fr/vosdroits/F2034`
+(parfait achèvement 1 an, bon fonctionnement 2 ans sur les éléments d'équipement
+dissociables, décennale 10 ans sur la solidité ou l'impropriété à destination,
+et seuls les travaux déclarés au contrat d'assurance du constructeur sont
+couverts). Aucune durée de garantie commerciale chiffrée : les « 25 ans de
+laquage » et les « 5 ans de mécanismes » sont des arguments de poseurs qu'aucune
+source primaire n'étaye. Aucune qualification juridique tranchée non plus :
+l'article écrit noir sur blanc qu'il ne dira jamais « votre pergola est couverte
+par la décennale », cela relève du cas d'espèce et du juge. Aucun article du code
+civil, aucun DTU, aucune norme, aucun Uw, aucun prix de pièce ni de déplacement.
+**À conserver comme modèle pour tout sujet garanties.**
+
+Images : cinq visuels aluminium déjà au dépôt, aucun téléchargement. Cover
+inédite `realisations/pergola-aluminium-toit-polycarbonate-libourne-6.webp`
+(825 × 1100). Trois arbitrages de l'iconographe, tous dans le sens du contrôle
+des 25 et 27/08 sur les légendes : `terrasse-bois-pergola-aluminium-libourne-7`
+écartée de la figure 1 (elle **ne montre aucune lame**, la légende prévue aurait
+décrit un organe absent), `Carport-aluminium-Libourne-1` écarté (bardage bois
+dominant, sujet non alu) et `-2` écarté (piqué faible). Constat utile pour la
+suite : **aucune photo maison ne montre de pergola bioclimatique à lames
+orientables** — les huit clichés `realisations/` sont des toitures polycarbonate
+ou verre. D'où le recours au visuel fournisseur, en légende produit neutre, dès
+qu'une figure doit montrer des lames.
+
+Maillage rétroactif (étape 4 bis) : deux liens contextuels posés dans le fil du
+texte, depuis `comparer-devis-pergola-postes-prix` (à la fin des six questions à
+poser avant de signer, comme septième question d'après-signature) et
+`pergola-bioclimatique-aluminium-guide` (là où il conseille de garder le coffret
+moteur accessible).
+
+**Indexation : IndexNow 200. ❌ Demande Search Console NON FAITE.** L'extension
+Claude in Chrome **n'était pas connectée** au moment du run (deux tentatives,
+même réponse « Claude in Chrome is not connected ») : c'est la cause n° 2 prévue
+par l'étape 8 bis §3, l'exécution planifiée tournant sans Chrome disponible.
+Conformément à la consigne, **rien n'a été redéployé et rien n'a été prétendu** :
+l'article est en ligne et vérifié. 👉 **Geste manuel de trente secondes pour
+David** : ouvrir
+`https://search.google.com/search-console?resource_id=sc-domain:lesprit-bois.fr`,
+coller `https://lesprit-bois.fr/blog/garanties-sav-pergola-veranda-aluminium`
+dans la barre d'inspection en haut, puis « Demander une indexation ».
+
+**Réserve après ce run : une proposition.** Il reste la **proposition B** du
+27/08, `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire` (bois, ossature),
+au statut `proposé` et sans date. Elle tient le prochain créneau, et respecte
+l'alternance puisque aujourd'hui était un jour aluminium. La meilleure piste
+suivante reste **la maison en A**, repérée le 27/08 et jamais traitée.
+
+⚠️ Toujours ouvert, hors périmètre de ce run : le logo `publisher` du JSON-LD
+pointe vers `/images/source-adefrance/logo2026.png`, **qui n'existe pas sur le
+disque**, dans **34 fichiers de `app/`**. Signalé le 25/08, non corrigé depuis.
+
 **Créneau du 27/08/2026 servi — réserve vide, sujet trouvé hors réserve.** La
 veille du 24/08 notait « B tient le 27/08 », mais B (comparatif de devis de
 pergola) avait été **promue au 25/08** après le retrait de la proposition A par
@@ -1414,6 +1489,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-25 | publié  | Trois devis de pergola, trois prix : les postes qui expliquent vraiment l'écart | comparer-devis-pergola-postes-prix |
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 | 2026-08-27 | publié  | Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter | surelevation-ossature-bois-maison |
+| 2026-08-31 | publié  | Dans huit ans, qui répare votre pergola ? Garanties, pièces détachées et SAV | garanties-sav-pergola-veranda-aluminium |
+| à placer   | proposé | « Livré hors d'eau hors d'air » : ce que vous recevez, et ce qu'il vous reste à faire | hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire |
 
 ## Idées de sujets en réserve
 

@@ -557,7 +557,11 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                   gardez un accès de maintenance et une commande de secours
                 </strong>{' '}
                 : un moteur se remplace, à condition que le coffret et la platine restent atteignables sans démonter la
-                moitié de la toiture.
+                moitié de la toiture. Reste la question qu&apos;on se pose le jour de la panne, et pas avant :{' '}
+                <a href="/blog/garanties-sav-pergola-veranda-aluminium" className={lienInterne}>
+                  quelle garantie couvre un moteur de pergola, et où trouver la pièce des années plus tard
+                </a>
+                .
               </p>
             </section>
 

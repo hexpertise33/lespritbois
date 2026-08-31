@@ -668,7 +668,13 @@ export default function ArticleComparerDevisPergolaPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Une entreprise qui répond précisément à ces six questions vous donne, de fait, un devis comparable. Une
                 entreprise qui n&apos;a pas vu votre terrasse ne peut répondre ni à la première, ni à la troisième, ni à
-                la cinquième, et c&apos;est une information en soi.
+                la cinquième, et c&apos;est une information en soi. Il en existe une septième, qu&apos;on pose rarement
+                parce qu&apos;elle regarde l&apos;après-signature :{' '}
+                <a href="/blog/garanties-sav-pergola-veranda-aluminium" className={lienInterne}>
+                  ce que couvrent vraiment les garanties d&apos;une pergola, et qui viendra changer la pièce dans huit
+                  ans
+                </a>
+                .
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 De notre côté, la démarche est toujours la même : relevé sur place, croquis coté, puis{' '}

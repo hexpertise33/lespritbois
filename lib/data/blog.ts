@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'garanties-sav-pergola-veranda-aluminium',
+    titre:
+      'Dans huit ans, qui répare votre pergola ? Garanties, pièces détachées et SAV',
+    extrait:
+      "Sur une pergola en aluminium, ce qui tombe en panne n'est presque jamais la structure mais le moteur, un capteur, un vérin de lames ou un store zip : des éléments d'équipement dissociables, couverts par la garantie de bon fonctionnement de deux ans et non par la décennale de dix ans qu'on vous montre en rendez-vous. La bonne question avant de signer n'est donc pas « combien d'années de garantie ? » mais « dans huit ans, qui vient, et avec quelle pièce ? » : les trois garanties légales et leur point de départ, ce que vaut vraiment une garantie commerciale de fabricant, la disponibilité des pièces détachées et les mentions à faire écrire sur le devis, par un artisan à Libourne (Gironde).",
+    date: '2026-08-31',
+    categorie: 'Guide · Garanties et SAV',
+    image: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-6.webp',
+    imageLargeur: 825,
+    imageHauteur: 1100,
+  },
+  {
     slug: 'surelevation-ossature-bois-maison',
     titre:
       "Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter",

@@ -244,10 +244,17 @@ détectée ». C'est le comportement normal d'une page de deux heures, dont le
 sitemap n'a pas encore été relu et qui n'avait alors aucun lien entrant — ce que
 l'étape 4 bis vient précisément de corriger. À revérifier dans quelques jours.
 
-⚠️ **Bug hors périmètre, signalé par l'iconographe** : le logo `publisher` du
-JSON-LD pointe vers `/images/source-adefrance/logo2026.png`, **qui n'existe pas
-sur le disque**, et **34 fichiers de `app/`** référencent ce chemin mort. C'est
-une image cassée pour Google sur tout le site, pas seulement sur cet article.
+⚠️→✅ **Bug hors périmètre, signalé par l'iconographe, CORRIGÉ le soir même** :
+le logo `publisher` du JSON-LD pointait vers
+`/images/source-adefrance/logo2026.png`, **qui n'existe pas sur le disque**, dans
+**34 fichiers de `app/`**, avec des dimensions inventées par-dessus (350 × 150).
+C'était une image cassée pour Google sur tout le blog. Corrigé par le commit
+`291ef96` du 25/08 à 21h37 : chemin remplacé par `/icon-512.png`, la marque déjà
+servie à la racine, avec ses dimensions réelles de 512 × 512, et aucun fichier
+nouveau à déployer. Le gabarit `carport-bois-guide` faisant partie des fichiers
+corrigés, les articles suivants héritent du bon chemin. Revérifié le 31/08 :
+aucune occurrence de `logo2026` ne subsiste, et l'URL répond 200 en production.
+**Ne pas reproposer cette correction.**
 
 **Créneau du 31/08/2026 servi — la proposition A du 27/08 consommée.** Test de
 cadence passé : aucune entrée au 31/08 ni au 30/08 dans `lib/data/blog.ts`, la
@@ -320,9 +327,23 @@ au statut `proposé` et sans date. Elle tient le prochain créneau, et respecte
 l'alternance puisque aujourd'hui était un jour aluminium. La meilleure piste
 suivante reste **la maison en A**, repérée le 27/08 et jamais traitée.
 
-⚠️ Toujours ouvert, hors périmètre de ce run : le logo `publisher` du JSON-LD
-pointe vers `/images/source-adefrance/logo2026.png`, **qui n'existe pas sur le
-disque**, dans **34 fichiers de `app/`**. Signalé le 25/08, non corrigé depuis.
+✅ **Logo `publisher` : rien à corriger, l'alerte était périmée.** Le résumé de
+ce run l'avait d'abord annoncée « toujours ouverte » : c'était faux, la note du
+25/08 avait simplement été recopiée sans être revérifiée. Le bug a été corrigé
+**le soir même de son signalement**, par le commit `291ef96`. Vérifié aujourd'hui
+sur trois plans : les **36** blocs `logo:` de `app/` et `lib/` pointent tous vers
+`https://lesprit-bois.fr/icon-512.png` (aucune occurrence de `logo2026` ne
+subsiste nulle part) ; le fichier `public/icon-512.png` fait bien **512 × 512**,
+donc les dimensions déclarées sont exactes ; et l'URL répond **200** en
+`image/png` en production, JSON-LD servi à l'appui. Audit complémentaire refait
+au passage : les **83 chemins d'images littéraux** de `app/`, `lib/` et
+`components/` existent tous sur disque, **aucun manquant**.
+
+📌 **Leçon de méthode, à appliquer aux prochains runs** : une alerte trouvée dans
+le README est datée, pas vivante. Avant de la recopier dans une nouvelle note,
+la revérifier sur le code, sinon on la fait vivre indéfiniment. La règle mémoire
+« si une note nomme un fichier ou un drapeau, vérifier qu'il existe encore »
+s'applique aussi aux bugs qu'elle signale.
 
 **Créneau du 27/08/2026 servi — réserve vide, sujet trouvé hors réserve.** La
 veille du 24/08 notait « B tient le 27/08 », mais B (comparatif de devis de

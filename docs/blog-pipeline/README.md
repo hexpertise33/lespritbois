@@ -310,6 +310,29 @@ poser avant de signer, comme septième question d'après-signature) et
 `pergola-bioclimatique-aluminium-guide` (là où il conseille de garder le coffret
 moteur accessible).
 
+🔎 **Voies d'accès à Search Console : les trois testées le 31/08, les trois
+fermées.** À lire avant de retenter, pour ne pas refaire le tour.
+
+| Voie | État constaté le 31/08 |
+|---|---|
+| Extension **Claude in Chrome** | non connectée (4 tentatives). C'est la voie normale, celle qui a marché le 25/08. |
+| Pont **Control Chrome** | `open_url` fonctionne (Chrome s'ouvre au bon endroit), mais `execute_javascript` et `get_page_content` répondent « Chrome is not running » : le réglage **Présentation ▸ Développeur ▸ Autoriser JavaScript depuis les Apple Events** est désactivé dans Chrome. |
+| **computer-use** | refusé par conception : un navigateur ne peut être accordé qu'en **lecture seule**, donc voir l'écran oui, cliquer et taper non. |
+
+⚠️ **Le lien profond d'inspection est bien mort, re-testé ce jour, ne pas
+réessayer.** `/search-console/inspect?resource_id=…&id=…` renvoie un **404
+Google** (titre de page « Error 404 (Introuvable) »), et la variante sans `id`,
+`/search-console/inspect?resource_id=…`, **redirige vers la vue d'ensemble**.
+Aucune des deux n'ouvre l'outil d'inspection. Le seul chemin reste : ouvrir
+`https://search.google.com/search-console?resource_id=sc-domain:lesprit-bois.fr`
+puis **coller l'URL dans la barre d'inspection en haut**.
+
+👉 **Pour rendre l'étape 8 bis automatisable de nouveau**, une seule des deux
+suffit : reconnecter l'extension Claude in Chrome (panneau latéral de Chrome,
+même compte que l'app), ou cocher *Autoriser JavaScript depuis les Apple Events*
+dans le menu Développeur de Chrome. Sans l'une des deux, tous les runs planifiés
+échoueront sur cette étape et l'article restera à signaler à la main.
+
 **Indexation : IndexNow 200. ❌ Demande Search Console NON FAITE.** L'extension
 Claude in Chrome **n'était pas connectée** au moment du run (deux tentatives,
 même réponse « Claude in Chrome is not connected ») : c'est la cause n° 2 prévue

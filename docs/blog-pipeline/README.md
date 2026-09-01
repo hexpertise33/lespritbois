@@ -167,19 +167,37 @@ consignent dans le résumé et ici, et David reprend la main en trente secondes.
 Ne jamais redéployer pour ça, ne jamais déclarer une demande faite sans avoir vu
 la confirmation à l'écran.
 
-📌 **`RESOURCE_ID` Search Console : `sc-domain:lesprit-bois.fr`.** Relevé le
-25/08/2026. La propriété est de type domaine et non préfixe d'URL, ce qui couvre
-`http`, `https`, `www` et les sous-domaines d'un seul tenant. Dans une query
-string il s'encode `sc-domain%3Alesprit-bois.fr`. Il évite le sélecteur de
-propriété : toute adresse Search Console portant ce `resource_id` ouvre
-directement la bonne propriété.
+📌 **`RESOURCE_ID` Search Console : `https://lesprit-bois.fr/`.** ⚠️ **Corrigé le
+01/09/2026 — la valeur notée le 25/08 était fausse.** Le README indiquait
+`sc-domain:lesprit-bois.fr` et décrivait une propriété de type domaine : cette
+propriété **n'existe pas**, et toute adresse la portant renvoie « Désolé, vous
+n'avez pas accès à cette propriété ». La propriété réelle est de type **préfixe
+d'URL**, `https://lesprit-bois.fr/`, qui s'encode `https%3A%2F%2Flesprit-bois.fr%2F`
+dans une query string.
+
+⚠️ **Deuxième piège, à connaître avant de retenter : le compte.** Chrome ouvre
+Search Console sur `dbertrand33570@gmail.com` (`/u/0/`), **qui n'a aucun accès à
+la propriété**. Le compte propriétaire est `sasecotoit@gmail.com`, en **`/u/1/`**.
+Un run qui oublie le préfixe verra le même écran de refus que s'il s'était trompé
+de `resource_id`, et conclura à tort que l'accès est perdu. **Ne jamais rejouer
+une authentification pour ça** : la session est déjà ouverte, il suffit du bon
+préfixe. `&authuser=sasecotoit@gmail.com` marche aussi et redirige vers `/u/1/`.
+
+✅ **L'adresse qui marche, à recopier telle quelle :**
+
+```
+https://search.google.com/u/1/search-console?resource_id=https%3A%2F%2Flesprit-bois.fr%2F
+```
 
 ⚠️ **L'inspection d'URL ne se construit pas à la main.** Passer l'URL de la page
-dans `&id=` renvoie un 404 : vérifié le 25/08/2026. Le paramètre `id` de la page
-d'inspection est un identifiant opaque attribué par Google
-(`&id=HWnMunXEnrigrNM_Uf2dPw`), pas l'URL encodée. Le chemin qui marche :
+dans `&id=` renvoie un 404 : vérifié le 25/08, puis **re-vérifié le 01/09 avec le
+`resource_id` corrigé**, pour écarter l'hypothèse que le 404 venait seulement de
+la mauvaise propriété. Ce n'était pas le cas : le 404 persiste. Le paramètre `id`
+de la page d'inspection est un identifiant opaque attribué par Google
+(`&id=XnVnLzmJbCU5yCpIu_XZyA`), pas l'URL encodée. **Ne pas refaire cet essai.**
+Le chemin qui marche :
 
-1. ouvrir `https://search.google.com/search-console?resource_id=sc-domain%3Alesprit-bois.fr` ;
+1. ouvrir `https://search.google.com/u/1/search-console?resource_id=https%3A%2F%2Flesprit-bois.fr%2F` ;
 2. cliquer le champ « Inspecter n'importe quelle URL » tout en haut, saisir
    l'URL complète et valider par Entrée. Viser le champ aux coordonnées plutôt
    que par référence d'élément, la saisie ne prend pas toujours autrement ;
@@ -196,8 +214,14 @@ Le rapport des sitemaps se lit à la même adresse racine, utile pour vérifier 
 Google a relu le fichier après une mise en ligne :
 
 ```
-https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Alesprit-bois.fr
+https://search.google.com/u/1/search-console/sitemaps?resource_id=https%3A%2F%2Flesprit-bois.fr%2F
 ```
+
+État relevé le 01/09/2026 : `/sitemap.xml`, envoyé le 02/08/2026, **relu le
+01/09/2026**, « Opération effectuée », **57 pages découvertes**, 0 vidéo. Le
+sitemap est donc bien déclaré sur la bonne propriété et Google le relit : la
+correction du `RESOURCE_ID` ne remet pas en cause les relevés de trafic et
+d'indexation notés en août, qui portaient déjà sur cette propriété.
 
 État constaté le 25/08/2026 : sitemap envoyé le 02/08/2026, relu le 25/08/2026,
 « Opération effectuée », 53 URL découvertes, 38 pages indexées. Aucune exclusion
@@ -333,16 +357,23 @@ même compte que l'app), ou cocher *Autoriser JavaScript depuis les Apple Events
 dans le menu Développeur de Chrome. Sans l'une des deux, tous les runs planifiés
 échoueront sur cette étape et l'article restera à signaler à la main.
 
-**Indexation : IndexNow 200. ❌ Demande Search Console NON FAITE.** L'extension
-Claude in Chrome **n'était pas connectée** au moment du run (deux tentatives,
-même réponse « Claude in Chrome is not connected ») : c'est la cause n° 2 prévue
-par l'étape 8 bis §3, l'exécution planifiée tournant sans Chrome disponible.
-Conformément à la consigne, **rien n'a été redéployé et rien n'a été prétendu** :
-l'article est en ligne et vérifié. 👉 **Geste manuel de trente secondes pour
-David** : ouvrir
-`https://search.google.com/search-console?resource_id=sc-domain:lesprit-bois.fr`,
-coller `https://lesprit-bois.fr/blog/garanties-sav-pergola-veranda-aluminium`
-dans la barre d'inspection en haut, puis « Demander une indexation ».
+**Indexation : IndexNow 200 le 31/08. Demande Search Console ✅ FAITE le
+01/09/2026**, au lendemain, l'extension Claude in Chrome n'ayant pas été
+joignable pendant le run lui-même. Confirmation relevée à l'écran : « **Indexation
+demandée · Cette URL a été ajoutée à une file d'attente d'exploration
+prioritaire** ». État constaté juste avant la demande : « Cette URL n'a pas été
+indexée par Google », « Aucun sitemap référent détecté », « Aucune page d'origine
+détectée » — normal pour une page d'un jour, dont le sitemap n'avait pas encore
+été relu et dont les deux liens entrants de l'étape 4 bis vivent sur des pages
+que Google n'a pas ré-explorées.
+
+📌 **C'est ce rattrapage qui a mis au jour le mauvais `RESOURCE_ID` du README**
+(voir le bloc corrigé plus haut) : la première tentative du 01/09 a échoué sur un
+« Désolé, vous n'avez pas accès à cette propriété », d'abord parce que Chrome
+était sur `dbertrand33570@gmail.com`, puis parce que `sc-domain:lesprit-bois.fr`
+n'existe pas. Les deux corrections sont désormais écrites en tête de section.
+**Leçon** : un écran de refus d'accès ne veut pas dire que l'autorisation est
+perdue, il veut d'abord dire qu'on frappe à la mauvaise porte.
 
 **Réserve après ce run : une proposition.** Il reste la **proposition B** du
 27/08, `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire` (bois, ossature),

@@ -280,6 +280,72 @@ corrigés, les articles suivants héritent du bon chemin. Revérifié le 31/08 :
 aucune occurrence de `logo2026` ne subsiste, et l'URL répond 200 en production.
 **Ne pas reproposer cette correction.**
 
+**Créneau du 02/09/2026 servi D'AVANCE, le 01/09 — dérogation explicite de
+David.** ⚠️ C'est le seul cas où le garde-fou « jamais d'article en avance »
+cède, et il faut que ce soit écrit noir sur blanc : David a demandé en
+conversation, le 01/09, « publie l'article de demain maintenant ». La règle
+prévoit exactement cette exception, et rappelle qu'elle **ne se déduit jamais du
+contexte** : ni d'une réserve confortable, ni d'un run qui a du temps devant lui.
+**Sans cette phrase de David, ce run n'aurait rien publié**, le test de cadence
+bloquant le 01/09 (article daté du 31/08, donc « hier »).
+
+Date retenue : **2026-09-02**, pas le 01/09. C'est « l'article de demain » qui
+était demandé, et cette date préserve la cadence d'un jour sur deux (31/08 puis
+02/09). Le dater du jour aurait collé deux articles. Le test de cadence du run
+planifié du 02/09 trouvera cette entrée comme datée d'aujourd'hui et **ne
+republiera pas** : c'est le comportement voulu, et c'est précisément pourquoi le
+test cherche la date **n'importe où** dans le tableau plutôt qu'en première
+position.
+
+Publié : `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire`. Commit
+`cbe60db`, deploy version `94d5186c-a55c-4cbf-b6a2-6e1413900cfd`, **200 confirmé
+trois fois**, cinq images vérifiées en 200, `datePublished` servi = `2026-09-02`.
+Alternance respectée : 31/08 aluminium, 02/09 bois. **La réserve est maintenant
+vide** : c'était la dernière proposition de la veille du 27/08.
+
+Thèse : hors d'eau hors d'air n'est pas un niveau de finition mais une
+**frontière contractuelle**. L'expression revient dix fois sur
+`/constructions-bois` et n'était expliquée nulle part sur le blog, alors que
+c'est la question du premier rendez-vous.
+
+Prudence factuelle : trois liens externes, tous en liste blanche et vers trois
+fiches différentes (F2034 garanties, FCBA durabilité, F1986 permis). **Aucun
+pourcentage de second œuvre**, c'est le chiffre que tout le monde invente. Aucun
+seuil RE2020, aucun DTU, aucun décret. Limite de métier posée : électricité et
+gaz relèvent de professionnels qualifiés, la dommages-ouvrage se vérifie **avant**
+de décider de faire soi-même. La section 5 renvoie l'exposé des trois garanties
+à l'article du 31/08 au lieu de le refaire.
+
+Images : cinq photos de chantier ossature bois du dépôt, aucun téléchargement.
+Cover inédite `chantiers/ossature-bois-interieur-douglas-porte-vitree-gironde.webp`
+(1200 × 900), qui montre littéralement l'état hors d'air. ⚠️ **Écart assumé sur
+la figure 4, à retenir** : le pignon prévu par la veille
+(`ossature-bois-pignon-bardage-douglas-acheve-gironde.webp`) a été écarté parce
+que sa baie est **encore fermée par la membrane** et que deux échelles sont
+appuyées en façade : l'ouvrage n'y est pas hors d'air, et la légende attendue
+aurait été fausse. Remplacé par
+`chantiers/ossature-bois-bardage-douglas-facade-tuiles-gironde.webp`. Deux autres
+légendes reformulées pour ne décrire que ce que la photo montre. Aucune commune
+écrite : les fichiers de `chantiers/` ne figurent pas dans la table des communes
+réelles.
+
+Maillage rétroactif (étape 4 bis) : deux liens contextuels dans le fil du texte,
+depuis `extension-ossature-bois-prix-m2` (là où le prix au m² annonce inclure le
+second œuvre courant) et `surelevation-ossature-bois-maison` (là où l'article
+annonce son périmètre de livraison). 📌 **Les FAQ n'ont pas été touchées, et ne
+doivent pas l'être** : leur texte est jumelé au JSON-LD `FAQPage`, et y glisser
+un lien désaligne les deux. Poser les liens rétroactifs dans le corps.
+
+**Indexation : IndexNow 200, et demande Search Console ✅ FAITE**, confirmation
+relevée à l'écran (« Indexation demandée · Cette URL a été ajoutée à une file
+d'attente d'exploration prioritaire »), avec l'adresse corrigée le matin même.
+Deux notes de manipulation : **la première saisie dans la barre d'inspection ne
+prend pas** si l'on tape juste après le chargement — cliquer le champ, attendre
+deux secondes, taper, puis Entrée dans un appel séparé. Et le clic sur
+« Demander une indexation » déclenche un **test de l'URL active d'une bonne
+minute** (« Ce processus peut durer une minute ou deux ») : attendre la bannière
+verte, ne rien conclure avant.
+
 **Créneau du 31/08/2026 servi — la proposition A du 27/08 consommée.** Test de
 cadence passé : aucune entrée au 31/08 ni au 30/08 dans `lib/data/blog.ts`, la
 dernière datant du 27/08. ⚠️ Le **créneau du 29/08 n'a pas été servi** : la
@@ -375,10 +441,10 @@ n'existe pas. Les deux corrections sont désormais écrites en tête de section.
 **Leçon** : un écran de refus d'accès ne veut pas dire que l'autorisation est
 perdue, il veut d'abord dire qu'on frappe à la mauvaise porte.
 
-**Réserve après ce run : une proposition.** Il reste la **proposition B** du
-27/08, `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire` (bois, ossature),
-au statut `proposé` et sans date. Elle tient le prochain créneau, et respecte
-l'alternance puisque aujourd'hui était un jour aluminium. La meilleure piste
+**Réserve après ce run : une proposition** ~~qui tient le prochain créneau~~ →
+**consommée dès le 01/09** (voir la note du 02/09 ci-dessus) : la proposition B
+du 27/08, `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire`, a été publiée
+d'avance sur demande de David. **La réserve est donc vide.** La meilleure piste
 suivante reste **la maison en A**, repérée le 27/08 et jamais traitée.
 
 ✅ **Logo `publisher` : rien à corriger, l'alerte était périmée.** Le résumé de
@@ -1565,7 +1631,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-20 | publié  | Carport et voiture électrique : borne de recharge, cheminement électrique et toiture photovoltaïque | carport-voiture-electrique-borne-recharge |
 | 2026-08-27 | publié  | Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter | surelevation-ossature-bois-maison |
 | 2026-08-31 | publié  | Dans huit ans, qui répare votre pergola ? Garanties, pièces détachées et SAV | garanties-sav-pergola-veranda-aluminium |
-| à placer   | proposé | « Livré hors d'eau hors d'air » : ce que vous recevez, et ce qu'il vous reste à faire | hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire |
+| 2026-09-02 | publié  | « Livré hors d'eau hors d'air » : ce que vous recevez, et ce qu'il vous reste à faire | hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire |
 
 ## Idées de sujets en réserve
 

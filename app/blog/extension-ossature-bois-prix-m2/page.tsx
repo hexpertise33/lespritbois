@@ -375,7 +375,13 @@ export default function ArticleExtensionOssatureBoisPage() {
                   2 500 €/m² en 2026
                 </strong>
                 . Ce prix comprend l&apos;ossature, l&apos;isolation, le bardage, la toiture, les menuiseries et le
-                second œuvre courant, mais il dépend fortement de ce que vous mettez dedans.
+                second œuvre courant, mais il dépend fortement de ce que vous mettez dedans. C&apos;est d&apos;ailleurs
+                la première chose à vérifier sur un devis, car une livraison arrêtée au clos couvert ne recouvre pas le
+                même périmètre :{' '}
+                <a href="/blog/hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire" className={lienInterne}>
+                  ce que contient exactement un ouvrage livré hors d&apos;eau hors d&apos;air, et les lots qui restent
+                </a>
+                .
               </p>
               <ul className="space-y-3 mb-5">
                 {[

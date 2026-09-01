@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire',
+    titre:
+      "Livré hors d'eau hors d'air : ce que vous recevez, et ce qu'il vous reste à faire",
+    extrait:
+      "Hors d'eau hors d'air n'est pas un niveau de finition, c'est une frontière contractuelle : vous recevez un bâtiment clos, couvert, isolé et étanche à l'air, et tout ce qui rend la maison habitable reste à faire. Ce que recouvrent les deux étapes, ce que contient exactement notre livraison, les lots de second œuvre qui restent, ce qu'on peut raisonnablement faire soi-même et ce qu'il faut confier, la réception et les garanties à ce stade précis, l'ordre dans lequel attaquer le chantier et l'effet réel sur le budget : le guide d'un constructeur à ossature bois à Libourne (Gironde).",
+    date: '2026-09-02',
+    categorie: 'Guide · Ossature bois',
+    image: '/images/chantiers/ossature-bois-interieur-douglas-porte-vitree-gironde.webp',
+    imageLargeur: 1200,
+    imageHauteur: 900,
+  },
+  {
     slug: 'garanties-sav-pergola-veranda-aluminium',
     titre:
       'Dans huit ans, qui répare votre pergola ? Garanties, pièces détachées et SAV',

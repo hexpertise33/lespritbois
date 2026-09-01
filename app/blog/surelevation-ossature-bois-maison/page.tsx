@@ -810,8 +810,12 @@ export default function ArticleSurelevationOssatureBoisPage() {
                 </strong>
                 , c&apos;est-à-dire une coquille close, couverte et étanche à l&apos;air, ossature, charpente,
                 couverture, pare-pluie, bardage, isolation, menuiseries extérieures et frein-vapeur continu. Les
-                cloisons, l&apos;électricité, la plomberie, le chauffage et les revêtements restent à vos artisans. Ce
-                n&apos;est pas une lacune, c&apos;est un choix : nous préférons exceller sur la partie qui tient
+                cloisons, l&apos;électricité, la plomberie, le chauffage et les revêtements restent à vos artisans. Si
+                cette frontière vous paraît floue, elle mérite d&apos;être posée à plat avant de signer :{' '}
+                <a href="/blog/hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire" className={lienInterne}>
+                  ce que vous recevez au stade hors d&apos;eau hors d&apos;air, lot par lot
+                </a>
+                . Ce n&apos;est pas une lacune, c&apos;est un choix : nous préférons exceller sur la partie qui tient
                 cinquante ans et qu&apos;on ne reprend pas. Le détail de cet engagement est sur notre page{' '}
                 <a href="/constructions-bois" className={lienInterne}>
                   construction et surélévation à ossature bois

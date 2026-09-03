@@ -280,6 +280,100 @@ corrigés, les articles suivants héritent du bon chemin. Revérifié le 31/08 :
 aucune occurrence de `logo2026` ne subsiste, et l'URL répond 200 en production.
 **Ne pas reproposer cette correction.**
 
+**03/09/2026 — run bloqué par le test de cadence, angle alu préparé pour le
+04/09.** Le run planifié du 03/09 s'est arrêté sans rien publier : `lib/data/blog.ts`
+ne porte aucune entrée du 03/09, mais bien une du **02/09** (« hier »). Comportement
+voulu, rien à corriger. David a demandé dans la foulée de **préparer l'angle
+aluminium du prochain créneau et de le mettre en réserve**, celle-ci étant vide
+depuis le 01/09.
+
+🎯 **Proposition retenue — statut `proposé`, pour le créneau du 04/09/2026 :
+l'aluminium en bord de Bassin d'Arcachon.**
+
+| | |
+|---|---|
+| **Slug** | `pergola-aluminium-bord-de-mer-bassin-arcachon` |
+| **Titre SEO** | « Aluminium et air salin : bien choisir au Bassin d'Arcachon » (58 caractères, dans la fenêtre 30–65) |
+| **Mot-clé principal** | pergola aluminium bord de mer |
+| **Secondaires** | air salin et embruns · thermolaquage Qualimarine · aluminium Bassin d'Arcachon · pergola littoral Gironde · corrosion galvanique visserie |
+| **Matière** | aluminium — l'alternance est respectée (31/08 alu, 02/09 bois, 04/09 alu) |
+| **Ville SEO** | Libourne, avec ancrage explicite Bassin d'Arcachon |
+
+**Pourquoi cet angle et pas un autre.** La réserve alu ne proposait plus que
+« clôture aluminium vs bois », largement consommé depuis par
+`cloture-aluminium-lames-occultantes-guide` et
+`garde-corps-terrasse-aluminium-ou-bois`. Trois raisons de retenir le littoral :
+
+1. **Il sert une zone qu'on veut développer.** Le site a déjà quatre pages
+   Arcachon (`/bassin-arcachon`, `/pergola-bassin-arcachon`,
+   `/terrasse-bois-bassin-arcachon`, `/extension-ossature-bois-bassin-arcachon`)
+   et le blog ne leur envoie presque rien. C'est le premier article qui aurait
+   une raison honnête de pointer vers `/pergola-bassin-arcachon`.
+2. **Le sujet est vierge et le besoin est réel.** L'air salin n'apparaît nulle
+   part comme sujet : une seule mention dans l'article garanties, deux dans
+   l'article entretien. C'est pourtant la première question d'un client du
+   Bassin, et elle se joue **au devis**, pas à l'entretien.
+3. **Il reste dans l'offre.** Pergolas et carports sont sur nos pages services.
+   Contrairement au portail alu, écarté le 12/08 pour cette raison exacte, on ne
+   promet rien qu'on ne pose pas.
+
+**Plan pressenti (6 `<h2>`)** — à confirmer par le rédacteur :
+
+1. Ce que l'air salin fait réellement à un profilé thermolaqué
+2. À quelle distance de l'eau la question se pose vraiment (Arès, Andernos, Le Teich, La Teste : le Bassin n'est pas une zone homogène)
+3. Ce qu'il faut exiger au devis : laquage, prétraitement, label du laqueur
+4. Le détail qui décide : visserie et couples de métaux
+5. L'entretien littoral, et en quoi il diffère de notre routine d'automne
+6. Vent et exposition : ce que le Bassin ajoute au sel
+
+⚠️ **Garde-fous propres à ce sujet — à relire avant d'écrire.**
+
+- **Ne pas refaire l'exposé des labels.** `choisir-teinte-ral-aluminium` explique
+  déjà Qualicoat et Qualimarine (8 occurrences). Le nouvel article les **cite et
+  renvoie** vers lui ; il traite l'implantation, pas le nuancier.
+- **Ne pas refaire la routine d'entretien.**
+  `entretien-aluminium-pergola-veranda-revision-automne` tient le geste courant.
+  Ici, uniquement **ce que le littoral change** (fréquence, rinçage à l'eau
+  claire, points de rétention du sel).
+- **Qualicoat et Qualimarine sont des labels du laqueur, pas nos certifications.**
+  Même règle que PEFC et CTB B+ : on écrit « profilés laqués sous label
+  Qualimarine », jamais « nous sommes certifiés Qualimarine ».
+- 🚫 **Chiffres à NE PAS reprendre.** La veille les a fait remonter, mais ils
+  viennent de blogs commerciaux, sans source primaire : « 80 microns minimum »,
+  « 20 à 30 ans de résistance », « agression saline jusqu'à 20 km, 50 km en
+  atmosphère humide », « quatre nettoyages par an ». À traiter **qualitativement**
+  (« plus près de l'eau, plus souvent »), ou pas du tout. Rappel de la règle :
+  épaisseurs, Uw/Ug, durées de garantie, DTU et normes exigent une source
+  primaire vérifiée.
+- ✅ **Sources vérifiées le 03/09, réutilisables telles quelles** : Qualimarine
+  est un label **français délivré par l'ADAL**, organisme accrédité **COFRAC**
+  (ISO/CEI 17065), là où **Qualicoat est international** ; il vise les
+  menuiseries thermolaquées exposées aux **atmosphères sévères** (bord de mer,
+  zones industrielles polluées) ; il repose sur un **prétraitement chimique
+  renforcé** avant laquage, qui élimine la couche superficielle du profilé ; il
+  est né à la suite de la vague de sinistres en zone littorale **à partir de
+  1996**. Références : [qualimarine.fr](https://www.qualimarine.fr/),
+  [ADAL](https://www.adal-aluminium.fr/thermolaquage-qualimarine/),
+  [Profils Systèmes](https://www.profils-systemes.com/design-couleurs-labels/labels-garanties-de-laquage-des-profiles/label-qualimarine).
+- ⚠️ **Visserie inox A2/A4 et corrosion galvanique** : le principe (éviter le
+  couple aluminium / acier zingué, qui finit en coulures de rouille sur le
+  profilé) est solide, mais **la source est un blog**. Soit le rédacteur trouve
+  une source primaire, soit il l'écrit comme une **pratique de pose** de
+  l'entreprise, sans norme ni référence chiffrée.
+
+**Maillage (étape 4 bis) — les deux liens rétroactifs sont déjà repérés** :
+depuis `choisir-teinte-ral-aluminium`, au passage sur Qualimarine, et depuis
+`entretien-aluminium-pergola-veranda-revision-automne`, là où il évoque le bord
+de mer. Les deux phrases existent déjà, il n'y aura pas de paragraphe à
+fabriquer. Sortants : `/pergola-bassin-arcachon` et `/bassin-arcachon`.
+
+**Images** : `source-adefrance/Pergolas-aluminium-Libourne-1..9.webp` en priorité.
+⚠️ Aucune fausse géolocalisation : ce sont des chantiers de Libourne et de sa
+région, **pas des chantiers du Bassin**. Les légendes doivent rester exactes, la
+règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi pour
+l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
+article alu.
+
 **Créneau du 02/09/2026 servi D'AVANCE, le 01/09 — dérogation explicite de
 David.** ⚠️ C'est le seul cas où le garde-fou « jamais d'article en avance »
 cède, et il faut que ce soit écrit noir sur blanc : David a demandé en
@@ -300,8 +394,9 @@ position.
 Publié : `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire`. Commit
 `cbe60db`, deploy version `94d5186c-a55c-4cbf-b6a2-6e1413900cfd`, **200 confirmé
 trois fois**, cinq images vérifiées en 200, `datePublished` servi = `2026-09-02`.
-Alternance respectée : 31/08 aluminium, 02/09 bois. **La réserve est maintenant
-vide** : c'était la dernière proposition de la veille du 27/08.
+Alternance respectée : 31/08 aluminium, 02/09 bois. ~~**La réserve est maintenant
+vide**~~ : c'était la dernière proposition de la veille du 27/08. → **Regarnie le
+03/09** par l'angle « aluminium en bord de Bassin » (note en tête de section).
 
 Thèse : hors d'eau hors d'air n'est pas un niveau de finition mais une
 **frontière contractuelle**. L'expression revient dix fois sur
@@ -1632,6 +1727,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-27 | publié  | Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter | surelevation-ossature-bois-maison |
 | 2026-08-31 | publié  | Dans huit ans, qui répare votre pergola ? Garanties, pièces détachées et SAV | garanties-sav-pergola-veranda-aluminium |
 | 2026-09-02 | publié  | « Livré hors d'eau hors d'air » : ce que vous recevez, et ce qu'il vous reste à faire | hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire |
+| 2026-09-04 | proposé | Aluminium et air salin : bien choisir au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 
 ## Idées de sujets en réserve
 
@@ -1639,6 +1735,16 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 vend et pose le bois **et** l'aluminium (les pages `/pergolas` et `/carports` le
 disent déjà largement). Le blog couvre donc les deux matières. Voir la section
 « Thèmes » et « Comparatifs bois / aluminium » de `ligne-editoriale.md`.
+
+🎯 **En réserve, statut `proposé` (03/09/2026), pour le créneau du 04/09 :
+l'aluminium en bord de Bassin d'Arcachon** — slug
+`pergola-aluminium-bord-de-mer-bassin-arcachon`. C'est **la seule proposition
+vivante** de cette liste : tout le reste ci-dessous est consommé. Le brief
+complet (plan, mots-clés, sources vérifiées, chiffres interdits, liens de
+l'étape 4 bis) est dans la note du 03/09, en tête de section — **la lire avant
+d'écrire**, elle contient les garde-fous anti-doublon avec
+`choisir-teinte-ral-aluminium` et
+`entretien-aluminium-pergola-veranda-revision-automne`.
 
 Réserve aluminium et mixte (le sujet « pergola bioclimatique aluminium » a été
 consommé le 30/07/2026 sous `pergola-bioclimatique-aluminium-guide` : angle
@@ -1679,10 +1785,10 @@ recentrer sur la véranda) :
   décret : c'est le **statut** (espace tampon non chauffé vs extension chauffée
   communicante) qui décide, pas la matière. Ne pas refaire de sujet
   « agrandir : véranda ou extension ».
-- **Entretien d'une pergola / véranda aluminium** : thermolaquage, joints,
-  motorisation — le pendant alu de nos articles d'entretien bois. ⚠️ Angle à
-  resserrer sur l'entretien pur : le produit véranda et le produit pergola
-  bioclimatique sont désormais tous deux couverts.
+- ~~**Entretien d'une pergola / véranda aluminium** : thermolaquage, joints,
+  motorisation — le pendant alu de nos articles d'entretien bois.~~ → consommé le
+  **15/08/2026** sous `entretien-aluminium-pergola-veranda-revision-automne`. Ne
+  pas refaire de sujet « entretenir son alu ».
 - ~~**Choisir la teinte de son aluminium** : nuancier RAL, mat/sablé, teintes qui
   vieillissent bien, accord avec une maison girondine~~ → consommé le 06/08/2026
   sous `choisir-teinte-ral-aluminium` (lecture d'un code RAL Classic, ce
@@ -1702,8 +1808,10 @@ recentrer sur la véranda) :
   chantiers », arbitrage avec la pergola bioclimatique). Aucun facteur solaire,
   seuil DH ni classe de vent cité. Ne pas refaire de sujet « protéger ses baies
   du soleil ».
-- **Clôture aluminium vs bois** : durabilité, entretien, coût dans le temps
-  (distinct de `cloture-brise-vue-bois-guide`). ⚠️ Le volet **garde-corps** de
+- ~~**Clôture aluminium vs bois** : durabilité, entretien, coût dans le temps
+  (distinct de `cloture-brise-vue-bois-guide`).~~ → **épuisé** : le volet clôture a
+  été consommé le **13/08/2026** sous `cloture-aluminium-lames-occultantes-guide`,
+  et le portail assorti reste hors offre (voir la note du 12/08). ⚠️ Le volet **garde-corps** de
   cette idée a été consommé le 03/08/2026 sous
   `garde-corps-terrasse-aluminium-ou-bois` (sécurité d'un plancher surélevé,
   norme NF P01-012 révisée, remplissages, entretien sur quinze ans, ancrage) :

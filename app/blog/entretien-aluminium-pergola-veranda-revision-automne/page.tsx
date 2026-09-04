@@ -395,7 +395,11 @@ export default function ArticleEntretienAluminiumPage() {
                 La teinte de vos profilés n&apos;est pas une peinture appliquée au pinceau : c&apos;est une poudre
                 projetée sur le métal préparé, puis cuite au four. Cette finition est dure et stable, les laqueurs
                 sérieux travaillent d&apos;ailleurs sous label de qualité, du type Qualicoat, ou Qualimarine pour les
-                ambiances marines, ce qui en dit long sur la rigueur du process. Mais c&apos;est une{' '}
+                ambiances marines, ce qui en dit long sur la rigueur du process et change tout pour{' '}
+                <a href="/blog/pergola-aluminium-bord-de-mer-bassin-arcachon" className={lienInterne}>
+                  une pergola aluminium posée en bord de Bassin d&apos;Arcachon
+                </a>
+                . Mais c&apos;est une{' '}
                 <strong className="text-primary font-semibold">finition, pas une armure</strong> : elle se raye, et
                 surtout elle se ternit définitivement si on l&apos;agresse.
               </p>

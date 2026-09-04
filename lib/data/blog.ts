@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'pergola-aluminium-bord-de-mer-bassin-arcachon',
+    titre:
+      "Aluminium en bord de mer : bien choisir sa pergola au Bassin d'Arcachon",
+    extrait:
+      "En bord de Bassin, ce qui décide de la tenue d'une pergola en aluminium n'est ni la marque du fabricant ni la teinte choisie, mais le prétraitement de surface appliqué avant le laquage et la visserie qui tient l'ouvrage : l'aluminium ne rouille pas, c'est l'interface entre le métal et sa laque qui souffre. Corrosion filiforme, exposition réelle d'Arès au Teich, mentions à faire écrire au devis, label Qualimarine du laqueur, couples de métaux et visserie inox, entretien littoral et tenue au vent : le guide d'un artisan de Libourne, en Gironde.",
+    date: '2026-09-04',
+    categorie: 'Guide · Aluminium',
+    image: '/images/source-adefrance/construction-pool-house-aluminium-libourne-3.webp',
+    imageLargeur: 1200,
+    imageHauteur: 800,
+  },
+  {
     slug: 'hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire',
     titre:
       "Livré hors d'eau hors d'air : ce que vous recevez, et ce qu'il vous reste à faire",

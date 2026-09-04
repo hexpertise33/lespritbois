@@ -476,7 +476,11 @@ export default function ArticleTeinteRalAluminiumPage() {
                 >
                   la certification Qualimarine
                 </a>{' '}
-                détaille ce qu&apos;elle couvre. Autour de Libourne, en zone de vignes et de rivière, la contrainte est
+                détaille ce qu&apos;elle couvre, et nous avons repris ailleurs{' '}
+                <a href="/blog/pergola-aluminium-bord-de-mer-bassin-arcachon" className={lienInterne}>
+                  ce qu&apos;il faut exiger au devis pour de l&apos;aluminium en bord de Bassin d&apos;Arcachon
+                </a>
+                . Autour de Libourne, en zone de vignes et de rivière, la contrainte est
                 moindre, mais nous demandons quand même la certification du laqueur : cela ne coûte rien de vérifier.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">

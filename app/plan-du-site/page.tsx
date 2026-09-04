@@ -27,6 +27,7 @@ const RUBRIQUES: { titre: string; liens: Lien[] }[] = [
       { titre: 'Aménagement extérieur', url: '/amenagement-exterieur' },
       { titre: 'Terrasses bois', url: '/terrasses-bois' },
       { titre: 'Constructions bois', url: '/constructions-bois' },
+      { titre: 'Extension de maison en bois', url: '/devis-extension' },
     ],
   },
   {

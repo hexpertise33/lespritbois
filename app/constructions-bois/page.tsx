@@ -578,6 +578,16 @@ export default function ConstructionsBoisPage() {
                 <strong className="text-primary font-semibold">jonction</strong>, et une jonction, ça se rate en
                 six endroits. Voici comment nous les traitons.
               </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mt-4">
+                Si c'est précisément une extension que vous avez en tête, tout est réuni sur notre page{' '}
+                <a
+                  href="/devis-extension"
+                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  extension de maison en bois en Gironde
+                </a>{' '}
+                : les chantiers, les délais réels et le devis gratuit.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

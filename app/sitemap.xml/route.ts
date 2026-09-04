@@ -18,6 +18,7 @@ const PAGES_STATIQUES: { chemin: string; lastmod: string }[] = [
   { chemin: '/constructions-bois', lastmod: '2026-08-25' },
   { chemin: '/amenagement-exterieur', lastmod: '2026-08-25' },
   { chemin: '/terrasses-bois', lastmod: '2026-08-25' },
+  { chemin: '/devis-extension', lastmod: '2026-09-04' },
   { chemin: '/realisations', lastmod: '2026-08-25' },
   { chemin: '/blog', lastmod: '2026-08-24' },
   { chemin: '/contact', lastmod: '2026-08-24' },

@@ -287,8 +287,11 @@ voulu, rien à corriger. David a demandé dans la foulée de **préparer l'angle
 aluminium du prochain créneau et de le mettre en réserve**, celle-ci étant vide
 depuis le 01/09.
 
-🎯 **Proposition retenue — statut `proposé`, pour le créneau du 04/09/2026 :
-l'aluminium en bord de Bassin d'Arcachon.**
+🎯 ✅ **PUBLIÉ le 04/09/2026** (statut `publié`, cette proposition n'est plus
+en réserve) **: l'aluminium en bord de Bassin d'Arcachon.**
+
+> Compte rendu du run en fin de section, sous « Run du 04/09/2026 ». La
+> réserve est de nouveau **vide** : le prochain run devra faire sa veille.
 
 | | |
 |---|---|
@@ -373,6 +376,47 @@ région, **pas des chantiers du Bassin**. Les légendes doivent rester exactes, 
 règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi pour
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
+
+**Run du 04/09/2026 : publié, indexation demandée, réserve de nouveau vide.**
+Test de cadence passé sans ambiguïté : aucune entrée du 04/09 ni du 03/09 dans
+`lib/data/blog.ts` (la plus récente était le 02/09). Publication de
+`pergola-aluminium-bord-de-mer-bassin-arcachon`, sur l'angle mis en réserve la
+veille, sans veille web supplémentaire : la proposition du 03/09 était complète,
+plan et garde-fous compris.
+
+Commit `fa80e05`, deploy version `e8da4bea-6b58-49d9-8f2c-d9b006d89f4a`,
+**200 confirmé trois fois**, six images vérifiées en 200, `datePublished` servi
+= `2026-09-04`, présence dans `/sitemap.xml` vérifiée. Alternance respectée :
+31/08 alu, 02/09 bois, 04/09 alu.
+
+**Étape 8 bis, les deux gestes ont abouti.** IndexNow : **200**. Search Console :
+**demande d'indexation confirmée à l'écran** (« Indexation demandée · Cette URL a
+été ajoutée à une file d'attente d'exploration prioritaire »). Le mode d'emploi
+corrigé le 01/09 fonctionne tel qu'il est écrit : `/u/1/` + `resource_id=`
+`https%3A%2F%2Flesprit-bois.fr%2F`, puis saisie dans le champ d'inspection en
+haut. **Une précision à ajouter pour les runs suivants : viser le champ à
+x ≈ 450, y ≈ 20 dans un cadre 1568 × 734.** Un premier clic à x ≈ 700 tombe à
+droite du champ, la frappe part dans le vide et rien ne le signale. L'inspection
+a renvoyé « Cette URL n'a pas été indexée par Google », avec « Aucun sitemap
+référent détecté » et « Aucune page d'origine détectée » : comportement normal
+d'une page d'une heure, identique au relevé du 25/08.
+
+**Iconographie : les séries `Pergolas-aluminium-Libourne-*` ont été écartées**,
+contrairement à ce que la proposition du 03/09 recommandait. Le réaudit visuel du
+12/08 classe les neuf fichiers comme visuels fournisseur LI-SU, dont une scène
+méditerranéenne : inutilisables dès qu'une légende parle de « nos ouvrages » ou
+de Gironde. Les cinq figures viennent donc de `realisations/` (chantiers réels de
+Saint-Pey-de-Castets) et la COVER de
+`source-adefrance/construction-pool-house-aluminium-libourne-3.webp`, non
+géolocalisée faute de commune confirmée. ⚠️ **À retenir pour la prochaine
+proposition alu :** ne plus orienter l'iconographe vers `Pergolas-aluminium-*`.
+
+⚠️ **Réserve d'iconographie à surveiller** : quatre des cinq figures viennent du
+même chantier. La banque de photos alu réellement utilisable est étroite, et
+l'iconographe estime qu'elle sera épuisée en trois articles alu de plus. Il
+manque en particulier tout gros plan de visserie, de platine ou de boulonnerie.
+
+**La réserve est de nouveau vide** : le prochain run devra faire sa veille web.
 
 **Créneau du 02/09/2026 servi D'AVANCE, le 01/09 — dérogation explicite de
 David.** ⚠️ C'est le seul cas où le garde-fou « jamais d'article en avance »
@@ -1727,6 +1771,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-08-27 | publié  | Surélever sa maison en ossature bois : ce que l'existant doit pouvoir porter | surelevation-ossature-bois-maison |
 | 2026-08-31 | publié  | Dans huit ans, qui répare votre pergola ? Garanties, pièces détachées et SAV | garanties-sav-pergola-veranda-aluminium |
 | 2026-09-02 | publié  | « Livré hors d'eau hors d'air » : ce que vous recevez, et ce qu'il vous reste à faire | hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire |
+| 2026-09-04 | publié  | Aluminium en bord de mer : bien choisir sa pergola au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 | 2026-09-04 | proposé | Aluminium et air salin : bien choisir au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 
 ## Idées de sujets en réserve

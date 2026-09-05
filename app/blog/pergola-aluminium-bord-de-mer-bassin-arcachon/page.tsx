@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter';
 /* COVER : pergola bioclimatique aluminium, lames orientables vues de dessous
    (source-adefrance, 1200 x 800). Visuel d'ouvrage aluminium dont la commune
    n'est pas confirmée : jamais géolocalisé, ni ici ni dans l'alt. */
-const COVER = '/images/source-adefrance/construction-pool-house-aluminium-libourne-3.webp';
+const COVER = '/images/pergola-terrasse-bois-libourne-1.webp';
 
 export const metadata: Metadata = buildMetadata({
   title: "Aluminium et air salin : bien choisir au Bassin d'Arcachon",
@@ -269,12 +269,12 @@ export default function ArticlePergolaAluminiumBordDeMerPage() {
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
-              height="800"
+              height="900"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
               src={COVER}
-              alt="Pergola bioclimatique en aluminium thermolaqué, lames orientables et structure anthracite ouvertes sur le ciel"
+              alt="Pergola en aluminium thermolaqué anthracite adossée à une maison, poteaux et poutre visibles, à Saint-Pey-de-Castets en Gironde"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>

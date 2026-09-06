@@ -312,7 +312,12 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 <strong className="text-primary font-semibold">l&apos;emprise au sol</strong>. C&apos;est la
                 projection verticale de la construction sur le terrain, poteaux compris. Un carport ouvert sur quatre
                 poteaux crée de l&apos;emprise au sol au même titre qu&apos;un abri fermé, même s&apos;il n&apos;a pas
-                de murs : c&apos;est la surface couverte par le toit, vue du ciel, qui compte.
+                de murs : c&apos;est la surface couverte par le toit, vue du ciel, qui compte. C&apos;est aussi pour
+                cela qu&apos;un{' '}
+                <a href="/blog/garage-ossature-bois-permis-dalle-budget" className={lienInterne}>
+                  garage en ossature bois s&apos;instruit sur son emprise au sol et non sur sa surface de plancher
+                </a>{' '}
+                : le stationnement est déduit du calcul de la surface de plancher, l&apos;emprise, elle, reste entière.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est un point que beaucoup de particuliers ignorent en achetant un abri de jardin en kit :{' '}

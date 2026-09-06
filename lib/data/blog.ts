@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'garage-ossature-bois-permis-dalle-budget',
+    titre:
+      "Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit",
+    extrait:
+      "Un garage en ossature bois n'est pas un carport avec des murs : en fermant le volume, c'est l'emprise au sol qui commande l'autorisation (déclaration préalable jusqu'à 20 m², permis de construire au-delà), la taxe d'aménagement s'applique puisqu'un garage détaché n'en est pas exonéré, et un volume clos non chauffé qui abrite une voiture mouillée condense s'il n'est pas ventilé. Urbanisme et PLU, fiscalité, dalle et lisse basse hors d'eau, ossature, bardage ventilé et couverture, portes, attente pour une future borne de recharge et budget poste par poste : le guide d'un artisan à Libourne, en Gironde.",
+    date: '2026-09-06',
+    categorie: 'Guide · Constructions bois',
+    image: '/images/chantiers/ossature-bois-bardage-douglas-facade-tuiles-gironde.webp',
+    imageLargeur: 1200,
+    imageHauteur: 900,
+  },
+  {
     slug: 'pergola-aluminium-bord-de-mer-bassin-arcachon',
     titre:
       "Aluminium en bord de mer : bien choisir sa pergola au Bassin d'Arcachon",

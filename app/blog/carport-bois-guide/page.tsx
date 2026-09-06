@@ -384,7 +384,12 @@ export default function ArticleCarportBoisPage() {
                 Chez L&apos;Esprit Bois, nous voyons souvent des clients hésiter entre carport et garage : dans la
                 plupart des cas, un carport bois bien intégré couvre le besoin réel (protéger le véhicule au quotidien)
                 pour une fraction du budget. Et rien n&apos;empêche de le concevoir semi-fermé, avec un côté bardé pour
-                ranger vélos, bois de chauffage ou local technique.
+                ranger vélos, bois de chauffage ou local technique. Quand le besoin est vraiment de fermer, mieux vaut
+                connaître{' '}
+                <a href="/blog/garage-ossature-bois-permis-dalle-budget" className={lienInterne}>
+                  ce que change le passage au garage en ossature bois, du permis à la dalle
+                </a>{' '}
+                : le volume clos ne se déclare pas, ne se taxe pas et ne se ventile pas comme un abri ouvert.
               </p>
             </section>
 

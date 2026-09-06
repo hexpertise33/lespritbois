@@ -377,6 +377,73 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 06/09/2026 : publié, indexation demandée, réserve toujours vide.**
+Test de cadence passé : aucune entrée du 06/09 ni du 05/09 dans `lib/data/blog.ts`
+(la plus récente était le 04/09). La réserve étant vide, veille web courte pour
+choisir l'angle, puis publication de `garage-ossature-bois-permis-dalle-budget`,
+« Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit ».
+Alternance respectée : 02/09 bois, 04/09 alu, 06/09 bois.
+
+Commit `41d135b`, deploy version `3cec17d0-212a-4627-9d9a-454f2a91ae70`,
+**200 confirmé trois fois**, six images vérifiées en 200, `datePublished` servi
+= `2026-09-06`, présence dans `/sitemap.xml` vérifiée, et les deux liens
+rétroactifs vérifiés présents dans le HTML servi.
+
+**Pourquoi ce sujet.** Le créneau carport est clos à quatre articles et le
+créneau terrasse à cinq, mais le **garage fermé** n'avait jamais été traité :
+c'est un ouvrage distinct du carport, pas un carport avec des murs. Trois points
+sourcés portent l'article, et ils sont réutilisables :
+
+- **L'article R111-22 du code de l'urbanisme déduit du calcul de la surface de
+  plancher « les surfaces de plancher aménagées en vue du stationnement des
+  véhicules motorisés ou non, y compris les rampes d'accès et les aires de
+  manœuvres ».** Un garage ne crée donc quasiment pas de surface de plancher,
+  mais il crée bien de l'emprise au sol, et c'est elle qui déclenche
+  l'autorisation. Point non évident, vérifié sur Légifrance.
+- **Un garage détaché n'est pas exonéré de taxe d'aménagement.** L'exonération de
+  plein droit (art. 1635 quater D du CGI, 11°) ne vise que les surfaces de
+  stationnement « strictement comprises ou intégrées dans la projection verticale
+  de l'emprise du bâtiment » ; le BOFiP exclut explicitement les « garages
+  autonomes » et « garages boxes ». Vérifié sur bofip.impots.gouv.fr
+  (BOI-IF-TU-10-20-30-170).
+- **Valeurs 2026 vérifiées, seules autorisées** : valeur forfaitaire de la surface
+  de construction **892 €/m² hors Île-de-France**, exonération de plein droit
+  **≤ 5 m²**, emplacement de stationnement extérieur **2 928 €/emplacement**.
+  ⚠️ L'article **ne tranche pas** quelle assiette exacte s'applique à un garage
+  détaché (au m² clos et couvert, ou au forfait par emplacement) : le texte
+  renvoie à des modalités réglementaires, et le calcul est renvoyé au service
+  urbanisme et au simulateur des taxes d'urbanisme d'impots.gouv.fr. **Ne pas
+  trancher ce point dans un futur article sans source nouvelle.**
+
+Dalle, ossature et couverture traités qualitativement : aucune épaisseur, aucun
+dosage béton, aucune section de ferraillage, aucune règle NF C 15-100 chiffrée.
+
+**Étape 8 bis, les deux gestes ont abouti.** IndexNow : **200**. Search Console :
+**demande d'indexation confirmée à l'écran** (« Indexation demandée · Cette URL a
+été ajoutée à une file d'attente d'exploration prioritaire »). Le mode d'emploi
+du 01/09 et la précision de coordonnées du 04/09 fonctionnent tels quels :
+`/u/1/` + `resource_id=https%3A%2F%2Flesprit-bois.fr%2F`, puis **clic dans le
+champ d'inspection à x ≈ 450, y ≈ 20 dans un cadre 1568 × 700**, saisie et
+Entrée. L'inspection a renvoyé « Cette URL n'a pas été indexée par Google », avec
+« Aucun sitemap référent détecté » et « Aucune page d'origine détectée » :
+comportement normal d'une page d'une heure, identique aux relevés du 25/08 et du
+04/09.
+
+ℹ️ **Iconographie : la réserve alu signalée le 04/09 n'a pas été entamée**, le
+sujet étant bois. Les six visuels viennent tous de chantiers maison
+(`chantiers/` et `source-adefrance/`), sans téléchargement ni IA. Un recadrage
+paysage 880 × 700 du levage sur dalle a été produit et déposé sous
+`public/images/blog/garage-ossature-bois-permis-dalle-budget/` : l'original
+portrait 880 × 1100 occupait plus de 1000 px de haut en pleine largeur.
+⚠️ **Le dépôt ne contient aucune photo de garage** : pas de porte sectionnelle,
+pas d'intérieur équipé, pas de dalle en cours de coulage. Les légendes le disent
+pour ce que les photos sont (une annexe autonome, une extension, un carport) et
+n'affirment rien d'invisible. C'est le sujet qui gagnerait le plus à être
+re-illustré si David a un chantier de garage en archive.
+
+**La réserve reste vide** : le prochain run devra faire sa veille web. Le créneau
+suivant tombe le 08/09 (le 07/09 s'arrêtera, une entrée portant la date d'hier).
+
 **Run du 04/09/2026 : publié, indexation demandée, réserve de nouveau vide.**
 Test de cadence passé sans ambiguïté : aucune entrée du 04/09 ni du 03/09 dans
 `lib/data/blog.ts` (la plus récente était le 02/09). Publication de
@@ -1773,6 +1840,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-02 | publié  | « Livré hors d'eau hors d'air » : ce que vous recevez, et ce qu'il vous reste à faire | hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire |
 | 2026-09-04 | publié  | Aluminium en bord de mer : bien choisir sa pergola au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 | 2026-09-04 | proposé | Aluminium et air salin : bien choisir au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
+| 2026-09-06 | publié  | Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit | garage-ossature-bois-permis-dalle-budget |
 
 ## Idées de sujets en réserve
 
@@ -1781,10 +1849,16 @@ vend et pose le bois **et** l'aluminium (les pages `/pergolas` et `/carports` le
 disent déjà largement). Le blog couvre donc les deux matières. Voir la section
 « Thèmes » et « Comparatifs bois / aluminium » de `ligne-editoriale.md`.
 
-🎯 **En réserve, statut `proposé` (03/09/2026), pour le créneau du 04/09 :
-l'aluminium en bord de Bassin d'Arcachon** — slug
-`pergola-aluminium-bord-de-mer-bassin-arcachon`. C'est **la seule proposition
-vivante** de cette liste : tout le reste ci-dessous est consommé. Le brief
+⚠️ **La réserve est VIDE au 06/09/2026.** La dernière proposition vivante,
+l'aluminium en bord de Bassin, a été publiée le 04/09. Le run du 06/09 a donc
+fait sa propre veille et publié `garage-ossature-bois-permis-dalle-budget` (le
+garage fermé, angle bois jamais traité, distinct du créneau carport clos à quatre
+articles). **Le prochain run devra à son tour faire sa veille web.**
+
+~~🎯 **En réserve, statut `proposé` (03/09/2026), pour le créneau du 04/09 :
+l'aluminium en bord de Bassin d'Arcachon**~~ → **consommé le 04/09/2026** sous
+`pergola-aluminium-bord-de-mer-bassin-arcachon`. Slug
+`pergola-aluminium-bord-de-mer-bassin-arcachon`. Le brief
 complet (plan, mots-clés, sources vérifiées, chiffres interdits, liens de
 l'étape 4 bis) est dans la note du 03/09, en tête de section — **la lire avant
 d'écrire**, elle contient les garde-fous anti-doublon avec

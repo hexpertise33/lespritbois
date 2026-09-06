@@ -443,7 +443,12 @@ export default function ArticleExtensionOssatureBoisPage() {
                 À cela s&apos;ajoute un atout esthétique que nous constatons à chaque chantier : le bois dialogue avec
                 tout, une maison en pierre ancienne comme un pavillon des années 80. C&apos;est le sens même de notre
                 travail de <a href="/constructions-bois" className={lienInterne}>construction bois</a> : ajouter du
-                volume sans trahir l&apos;existant.
+                volume sans trahir l&apos;existant. Pour chiffrer votre cas précis plutôt qu&apos;une fourchette,
+                passez par notre page{' '}
+                <a href="/devis-extension" className={lienInterne}>
+                  extension de maison en bois en Gironde
+                </a>{' '}
+                : nous venons relever l&apos;existant, puis nous remettons un devis poste par poste.
               </p>
             </section>
 
@@ -781,7 +786,7 @@ export default function ArticleExtensionOssatureBoisPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/constructions-bois"
+                href="/devis-extension"
                 className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95"
               >
                 Demander mon étude gratuite

@@ -822,8 +822,12 @@ export default function ArticleVerandaOuExtensionBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Nous concevons et posons les deux familles d&apos;ouvrages : côté{' '}
+                <a href="/devis-extension" className={lienInterne}>
+                  extension de maison en bois
+                </a>{' '}
+                et{' '}
                 <a href="/constructions-bois" className={lienInterne}>
-                  constructions et extensions bois
+                  construction à ossature bois
                 </a>{' '}
                 comme côté{' '}
                 <a href="/amenagement-exterieur" className={lienInterne}>
@@ -890,7 +894,7 @@ export default function ArticleVerandaOuExtensionBoisPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/constructions-bois"
+                href="/devis-extension"
                 className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95"
               >
                 Demander mon étude gratuite

@@ -325,7 +325,7 @@ const GAMMES = [
       },
       {
         nom: 'Extension & surélévation',
-        href: '/constructions-bois',
+        href: '/devis-extension',
         src: '/images/source-adefrance/aggrandissement-accueil.webp',
         alt: 'Extension bois bardée accolée à un bâtiment en pierre, Gironde',
         w: 768,
@@ -879,8 +879,14 @@ export default function HomePage() {
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   carports
-                </a>,
-                bardages et{' '}
+                </a>, bardages,{' '}
+                <a
+                  href="/devis-extension"
+                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  extensions de maison en bois
+                </a>{' '}
+                et{' '}
                 <a
                   href="/constructions-bois"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"

@@ -377,7 +377,13 @@ export default function ArticleSurelevationOssatureBoisPage() {
                   véranda ou extension en ossature bois
                 </a>{' '}
                 aide à qualifier la pièce que vous voulez vraiment obtenir. Si l&apos;une de ces deux réponses convient à
-                votre terrain, prenez-la : la surélévation est le chemin le plus exigeant des trois.
+                votre terrain, prenez-la : la surélévation est le chemin le plus exigeant des trois. Nous menons
+                l&apos;agrandissement au sol comme la montée d&apos;un niveau, et la démarche est détaillée sur notre
+                page{' '}
+                <a href="/devis-extension" className={lienInterne}>
+                  extension et surélévation de maison en bois en Gironde
+                </a>
+                .
               </p>
             </section>
 

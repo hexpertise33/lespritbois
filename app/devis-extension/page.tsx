@@ -146,13 +146,19 @@ const PROMESSES = [
   },
 ] as const;
 
-/* Ni l'extension bardée douglas sur mur en pierre (fond du hero) ni le
-   pignon achevé (illustration du chantier de Clérac plus bas) ne sont ici :
+/* Le pool house du hero n'est pas ici, ni le
+   pignon achevé qui illustre le chantier de Clérac plus bas :
    les remettre en vignette ferait doublon.
    Le rendu 3D `interieur-...-sejour-lumineux.webp` a été retiré : c'est une
    image de synthèse, pas un chantier, elle n'a rien à faire dans une
    galerie de réalisations. */
 const GALERIE = [
+  {
+    src: '/images/chantiers/extension-ossature-bois-bardage-douglas-maison-pierre-gironde.webp',
+    w: 1400,
+    h: 923,
+    alt: "Extension à ossature bois achevée, bardage douglas et couverture en tuiles raccordée à une maison ancienne en pierre, terrasse en travertin, réalisation de L'Esprit Bois en Gironde",
+  },
   {
     src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-baie-vitree-libourne.jpg',
     w: 1200,
@@ -301,26 +307,30 @@ export default function DevisExtensionPage() {
             la lisibilité du titre, s'efface au centre là où se trouve le
             bardage, et laisse la carte du formulaire flotter sur une image
             nette à droite.
-            pt-32/md:pt-40 : SiteNav est en `fixed top-0 z-50`, le hero doit
-            dégager sa hauteur sous peine de voir le h1 passer dessous.
+            Le hero est volontairement haut (pb-56 sur desktop) : avec
+            `object-cover`, plus le bandeau est bas, plus la photo est rognée
+            en haut et en bas. À cette hauteur l'image se voit presque
+            entière au lieu d'être cadrée serré sur son centre.
+            Le grand padding haut sert aussi à dégager `SiteNav`, en
+            `fixed top-0 z-50`, sans quoi le h1 passe dessous.
             `data-devis-hero` est lu par DevisStickyBar pour n'afficher la
             barre qu'une fois le hero sorti de l'écran : sans lui, doublon
             avec le formulaire encore visible. */}
         <header
           data-devis-hero
-          className="relative pt-36 pb-28 md:pt-48 md:pb-40 overflow-hidden"
+          className="relative pt-36 pb-32 md:pt-52 md:pb-56 overflow-hidden"
         >
           <div className="absolute inset-0 z-0">
             <img
-              width="1400"
-              height="923"
+              width="1200"
+              height="800"
               fetchPriority="high"
               decoding="async"
               className="w-full h-full object-cover"
-              src="/images/chantiers/extension-ossature-bois-bardage-douglas-maison-pierre-gironde.webp"
-              alt="Extension à ossature bois achevée, bardage douglas et couverture en tuiles raccordée à une maison ancienne en pierre, terrasse en travertin, réalisation de L'Esprit Bois en Gironde"
+              src="/images/pool-house-bois-terrasse-piscine-libourne.webp"
+              alt="Pool house en bois à toiture tuiles et terrasse bois au bord d'une piscine, réalisé par L'Esprit Bois en Gironde"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/30 to-black/10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/62 via-black/22 to-black/5"></div>
           </div>
           <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
             <p className="font-label-md text-label-md text-white/60 mb-5">

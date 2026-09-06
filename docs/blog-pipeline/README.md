@@ -773,6 +773,14 @@ pergola bioclimatique, véranda, extension, protections solaires) : voir « Idé
 de sujets en réserve » plus bas. C'est là que doivent piocher les prochains
 articles.
 
+✅ **Seconde recharge aluminium le 06/09/2026, à la demande de David** : cinq
+angles neufs au statut `proposé` (couverture de toiture, évacuation des eaux
+pluviales, pose sur terrasse bois existante, remplacement d'une véranda
+ancienne, délais de fabrication et de pose). Ils sont détaillés, avec plan,
+mots-clés, garde-fous anti-doublon et liens d'étape 4 bis, **en tête de la
+section « Idées de sujets en réserve »**. Le prochain run n'a donc pas à faire
+de veille web : il prend le premier angle disponible et le date du jour même.
+
 ✅ **Panne iCloud RÉSOLUE le 13/08/2026 — le dépôt a déménagé.** Le dossier de
 travail est désormais **`~/Projets/lespritbois`**, hors iCloud. `npm run build`
 y passe en **17 s**, contre un figeage indéfini auparavant. Le contournement
@@ -1849,11 +1857,161 @@ vend et pose le bois **et** l'aluminium (les pages `/pergolas` et `/carports` le
 disent déjà largement). Le blog couvre donc les deux matières. Voir la section
 « Thèmes » et « Comparatifs bois / aluminium » de `ligne-editoriale.md`.
 
-⚠️ **La réserve est VIDE au 06/09/2026.** La dernière proposition vivante,
-l'aluminium en bord de Bassin, a été publiée le 04/09. Le run du 06/09 a donc
-fait sa propre veille et publié `garage-ossature-bois-permis-dalle-budget` (le
-garage fermé, angle bois jamais traité, distinct du créneau carport clos à quatre
-articles). **Le prochain run devra à son tour faire sa veille web.**
+✅ **Réserve rechargée le 06/09/2026 : cinq angles aluminium, statut `proposé`.**
+La réserve était vide depuis la publication du bord de Bassin le 04/09 ; le run
+du 06/09 a dû faire sa propre veille et a publié
+`garage-ossature-bois-permis-dalle-budget`. Les cinq angles ci-dessous ont été
+recoupés un par un avec `lib/data/blog.ts` (39 articles) **et** avec le texte des
+articles alu déjà en ligne : aucun ne recouvre un sujet publié. Ils sont classés
+par priorité. **Ils ne sont pas datés** : chaque run prend le premier disponible
+et le date du jour même, jamais en avance (voir la règle en tête de fichier).
+
+⚠️ **Correction d'une note périmée plus bas dans cette section.** Le paragraphe
+carport affirme encore que la « voiture électrique sous carport » est un angle
+vierge : c'est faux depuis le **20/08/2026**, il a été publié sous
+`carport-voiture-electrique-borne-recharge` (fourreaux et réservations, place de
+la borne selon la trappe, couverture photovoltaïque, limite avec le métier
+d'électricien, aide fiscale supprimée au 01/01/2026). Le créneau carport reste
+donc clos, et **la motorisation d'accès n'est plus un angle utile** puisque le
+portail est hors offre (note du 12/08). Ne pas repartir de cette note.
+
+### A. Quelle couverture pour une pergola ou un carport aluminium ?
+
+**Le trou le plus net de la réserve alu.** Le mot « polycarbonate » n'apparaît
+aujourd'hui dans tout le blog que dans des **noms de fichiers d'images** : le
+choix du matériau de toiture n'est traité nulle part, alors que c'est la
+première question posée en magasin après la teinte.
+
+- **Thèse à tenir** : on ne choisit pas une couverture sur son prix mais sur ce
+  qu'on veut en dessous. Lames orientables si l'usage change dans la journée,
+  verre si la pièce doit rester lumineuse toute l'année, polycarbonate si
+  l'ouvrage abrite une voiture et pas des gens, panneau sandwich isolé si on
+  cherche l'ombre fraîche et le silence.
+- **Plan pressenti** : ce que chaque matériau laisse passer (lumière, chaleur,
+  bruit de pluie) · lames orientables · verre feuilleté · polycarbonate
+  alvéolaire · panneau sandwich isolé · tôle nervurée · nettoyage et
+  vieillissement de chacun · le tableau de décision par usage.
+- **Slug proposé** : `couverture-pergola-carport-toiture-materiaux`
+- **Mots-clés** : couverture pergola aluminium · toiture carport polycarbonate ·
+  verre ou polycarbonate pergola · pergola Libourne · carport Gironde
+- **Garde-fous anti-doublon** : `pergola-bioclimatique-aluminium-guide` traite
+  déjà les lames orientables comme **produit** — ici elles ne sont qu'une option
+  de couverture parmi cinq, à traiter en quelques lignes avec un lien vers le
+  guide. Ne pas refaire la protection solaire
+  (`protection-solaire-brise-soleil-orientable`) ni la fermeture d'hiver
+  (`fermer-pergola-bioclimatique-hiver-rideau-verre`).
+- **Prudence factuelle** : aucun facteur solaire, aucun coefficient thermique,
+  aucune épaisseur normative, aucune classe de résistance à la grêle sans source
+  vérifiée. Le comparatif se tient très bien en qualitatif.
+- **Étape 4 bis** : liens depuis `pergola-bioclimatique-aluminium-guide` et
+  `comparer-devis-pergola-postes-prix`.
+
+### B. Où part l'eau de votre pergola ?
+
+**Angle jamais traité, et pourtant systématique en rendez-vous.** Une pergola à
+toiture fermée transforme une surface perméable en surface ruisselante, et
+l'eau tombe forcément quelque part. `comparer-devis-pergola-postes-prix`
+mentionne l'évacuation comme **ligne de devis** ; personne n'a écrit où l'eau va.
+
+- **Thèse à tenir** : le poteau à descente intégrée n'est pas une solution
+  d'évacuation, c'est un début de tuyau. La question est ce qui se passe au pied
+  du poteau.
+- **Plan pressenti** : ce que change une toiture fermée sur le ruissellement ·
+  poteaux à descente intégrée et leurs limites · les trois destinations
+  possibles (réseau, infiltration à la parcelle, récupération) · le voisin et
+  l'écoulement · ce que le PLU impose parfois sur la gestion à la parcelle · les
+  erreurs qui se voient au bout d'un hiver · ce qu'on écrit au devis.
+- **Slug proposé** : `evacuation-eaux-pluviales-pergola-carport`
+- **Mots-clés** : évacuation eaux pluviales pergola · descente intégrée poteau ·
+  gestion eaux pluviales parcelle · pergola Libourne · Gironde
+- **Prudence factuelle — le point sensible de cet angle.** L'écoulement des eaux
+  entre fonds voisins relève du code civil (article 640 souvent cité) : **à
+  vérifier par WebSearch avant d'écrire**, et à formuler prudemment. Aucun débit,
+  aucun dimensionnement de descente, aucune surface de rétention chiffrée sans
+  source. Le PLU varie d'une commune à l'autre : renvoyer en mairie, ne jamais
+  généraliser depuis Libourne.
+- **Étape 4 bis** : liens depuis `comparer-devis-pergola-postes-prix` et
+  `carport-aluminium-ou-bois-comparatif`.
+
+### C. Poser une pergola aluminium sur une terrasse en bois existante
+
+**Le seul sujet où nos deux matières se croisent physiquement**, et le cas le
+plus fréquent chez nos clients : la terrasse est déjà là, la pergola vient
+après. Aucun article ne le traite ; `terrasse-bois-structure-plots-lambourdes`
+construit la terrasse, il ne pose rien dessus.
+
+- **Thèse à tenir** : on ne pose jamais une pergola *sur* une terrasse bois. On
+  la pose *à travers* : les platines descendent chercher un appui dur, et le
+  platelage est traversé, jamais chargé.
+- **Plan pressenti** : pourquoi une lambourde ne reprend pas une descente de
+  charge · aller chercher le sol dur (plot béton dédié, massif, dalle
+  existante) · traverser le platelage proprement et refaire l'étanchéité du
+  perçage · le cas de la terrasse sur plots réglables · le cas de la terrasse
+  surélevée sur pilotis · ce qu'on refuse de faire et pourquoi · ce que ça
+  change au planning quand la terrasse est neuve.
+- **Slug proposé** : `poser-pergola-aluminium-terrasse-bois-existante`
+- **Mots-clés** : pergola sur terrasse bois · ancrage pergola aluminium ·
+  platine pergola terrasse · pergola Libourne · terrasse Gironde
+- **Garde-fous anti-doublon** : `comparer-devis-pergola-postes-prix` parle déjà
+  du support comme **poste de prix** (« dalle, massifs, reprise d'appui sur une
+  terrasse existante ») et prévient qu'on ignore l'épaisseur d'une dalle
+  existante. Cet article-ci est **technique de pose**, pas budget : renvoyer sur
+  le devis pour les prix plutôt que de les rejouer.
+- **Étape 4 bis** : liens depuis `terrasse-bois-structure-plots-lambourdes` et
+  `comparer-devis-pergola-postes-prix`.
+
+### D. Remplacer une véranda ou une pergola vieillissante par de l'aluminium
+
+**Pendant alu de `renover-terrasse-bois-existante`**, qui n'a pas d'équivalent
+côté aluminium. Marché réel : les vérandas posées dans les années 1990 arrivent
+en fin de vie en Gironde.
+
+- **Thèse à tenir** : la valeur d'une rénovation se joue sur ce qu'on garde. La
+  dalle et le muret d'allège survivent presque toujours ; la structure et
+  l'étanchéité, presque jamais.
+- **Plan pressenti** : les signes qu'une véranda est en fin de vie · ce qui se
+  garde et ce qui part · la dépose, sujet à part entière · le raccord à la
+  façade, point faible numéro un · reposer sur une dalle qu'on n'a pas coulée ·
+  urbanisme d'une réfection à l'identique et cas où l'aspect change · le budget
+  face à celui d'un ouvrage neuf.
+- **Slug proposé** : `remplacer-veranda-ancienne-aluminium-renovation`
+- **Mots-clés** : remplacer une véranda · rénovation véranda aluminium · dépose
+  ancienne véranda · véranda Libourne · Gironde
+- **Prudence factuelle** : une toiture de véranda ancienne peut comporter des
+  matériaux qui relèvent d'une dépose réglementée (fibrociment). **Ne rien
+  affirmer sans WebSearch** et rester au niveau « faire identifier avant de
+  déposer, ce n'est pas un chantier de bricolage ». Côté urbanisme, ne pas
+  rejouer les seuils de `veranda-aluminium-isolation-urbanisme-budget` : lier.
+- **Étape 4 bis** : liens depuis `veranda-aluminium-isolation-urbanisme-budget`
+  et `renover-terrasse-bois-existante`.
+
+### E. Combien de temps prend un chantier aluminium, et où passe le délai
+
+**Angle « coulisses » que le blog n'a jamais pris**, alors que la question tombe
+à chaque devis signé. Utile aussi en réassurance : il montre qu'on maîtrise une
+chaîne d'atelier.
+
+- **Thèse à tenir** : la pose se compte en jours, le délai en semaines. Ce qui
+  fait attendre un client n'est presque jamais le chantier, c'est la fabrication
+  sur mesure et le passage au thermolaquage.
+- **Plan pressenti** : les étapes entre la signature et la pose · pourquoi une
+  teinte hors stock rallonge · ce qui se prépare pendant l'attente (support,
+  fourreaux, terrassement) · le jour de la pose, heure par heure · ce qui décale
+  vraiment un chantier (relevé faux, accès, météo, autorisation en retard) · ce
+  qu'on s'engage à écrire dans le planning.
+- **Slug proposé** : `delai-chantier-pergola-aluminium-fabrication-pose`
+- **Mots-clés** : délai pose pergola aluminium · délai fabrication véranda ·
+  déroulé chantier pergola · Libourne · Gironde
+- **Prudence factuelle** : ne donner que **nos** délais, présentés comme les
+  nôtres et comme des ordres de grandeur. Aucun délai « du marché », aucune
+  durée de thermolaquage industrielle, aucun engagement contractuel chiffré.
+- **Étape 4 bis** : liens depuis `comparer-devis-pergola-postes-prix` et
+  `garanties-sav-pergola-veranda-aluminium`.
+
+**Après ces cinq angles**, la réserve alu retombe à zéro et le run suivant
+reprendra la veille web. Penser aussi à l'alternance des matières : cinq angles
+alu d'affilée déséquilibreraient le blog, il faut intercaler des sujets bois
+trouvés en veille, comme l'a fait le run du 06/09.
 
 ~~🎯 **En réserve, statut `proposé` (03/09/2026), pour le créneau du 04/09 :
 l'aluminium en bord de Bassin d'Arcachon**~~ → **consommé le 04/09/2026** sous
@@ -1880,10 +2038,16 @@ recentrer sur la véranda) :
   08/08/2026 sous `dimensions-carport-taille-hauteur` (hauteur libre sous
   traverse, dégagement des portières, trames selon le programme, portée et
   position des poteaux, implantation et manœuvre, pente et débord). Le créneau
-  carport est **clos à quatre articles** ; les seuls angles encore vierges
-  identifiés sont la **voiture électrique sous carport** (borne de recharge,
-  cheminement électrique, toiture photovoltaïque — exige des sources vérifiées
-  côté électrique) et la **motorisation d'accès**.
+  carport est **clos à quatre articles**. ⚠️ Cette note listait encore deux
+  angles « vierges » : ils ne le sont plus. ~~**Voiture électrique sous
+  carport**~~ → consommé le **20/08/2026** sous
+  `carport-voiture-electrique-borne-recharge` (fourreaux et réservations posés
+  pendant le chantier, place de la borne selon la trappe et le sens de
+  stationnement, ce qu'impose une couverture photovoltaïque, limite avec le
+  métier d'électricien, aide fiscale supprimée au 01/01/2026).
+  ~~**Motorisation d'accès**~~ → sans objet : le portail est **hors offre**
+  (note du 12/08). Le créneau carport est donc **entièrement clos** : ne pas y
+  chercher d'angle, la réserve alu du 06/09 est en tête de section.
 - ~~**Véranda aluminium** : usages, isolation, urbanisme et budget~~ → consommé
   le 01/08/2026 sous `veranda-aluminium-isolation-urbanisme-budget` (rupture de
   pont thermique et vitrages, toiture et surchauffe d'été, étanchéité et

@@ -377,6 +377,63 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 09/09/2026 : publié, indexation demandée, réserve entamée (A consommé).**
+Test de cadence passé : aucune entrée du 09/09 ni du 08/09 dans `lib/data/blog.ts`
+(la plus récente était le 06/09). Le créneau du 08/09 annoncé par le run du 06/09
+n'a pas été servi : conformément à la règle, **rien n'a été rattrapé en double**,
+le run du jour a simplement publié un article daté du jour. La réserve ayant été
+rechargée le 06/09, **aucune veille web n'a été nécessaire** : l'angle A a été
+pris tel quel, plan et garde-fous compris.
+
+Publié : `couverture-pergola-carport-toiture-materiaux`, « Quelle couverture
+choisir pour une pergola ou un carport aluminium ? ». Commit `c0dbd7c`, deploy
+version `45e1013f-e2d5-4e01-bd52-886bd7eedb28`, **200 confirmé trois fois**, six
+images vérifiées en 200, `datePublished` servi = `2026-09-09`, présence dans
+`/sitemap.xml` vérifiée, et les deux liens rétroactifs vérifiés présents dans le
+HTML servi. Alternance respectée : 04/09 alu, 06/09 bois, 09/09 alu.
+
+**Étape 8 bis, les deux gestes ont abouti.** IndexNow : **200**. Search Console :
+**demande d'indexation confirmée à l'écran** (« Indexation demandée · Cette URL a
+été ajoutée à une file d'attente d'exploration prioritaire »). Le mode d'emploi
+du 01/09 fonctionne tel qu'il est écrit, coordonnées comprises : `/u/1/` +
+`resource_id=https%3A%2F%2Flesprit-bois.fr%2F`, clic dans le champ d'inspection à
+**x ≈ 450, y ≈ 20 dans un cadre 1568 × 723**, deux secondes d'attente, saisie,
+Entrée. L'inspection a renvoyé « Cette URL n'a pas été indexée par Google », avec
+« Aucun sitemap référent détecté » et « Aucune page d'origine détectée » :
+comportement normal d'une page d'une heure, identique aux relevés du 25/08, du
+04/09 et du 06/09.
+
+**Iconographie : deux photos de banque assumées, et pourquoi.** Quatre des six
+figures viennent de chantiers maison (`realisations/` et `source-adefrance/`).
+Les deux autres ont été téléchargées sous licence Pexels dans
+`public/images/blog/couverture-pergola-carport-toiture-materiaux/` : **nous
+n'avons aucune couverture en verre feuilleté ni aucune tôle nervurée en
+archive**, et illustrer la section « verre » avec une plaque translucide de
+chantier aurait été un faux. Ni géolocalisation, ni « nos ouvrages » dans ces
+deux légendes. La série fournisseur `Pergolas-aluminium-Libourne-1..9` n'a pas
+été touchée, conformément à la note du 04/09, et les quatre
+`Carport-aluminium-Libourne-*` ont été **ouverts un par un puis écartés** : `-1`
+est dominé par un bardage bois, `-2` est flou et sa toiture opaque, `-3` a une
+sous-face opaque, `-4` est la scène méditerranéenne déjà consommée en cover.
+
+⚠️ **Deux légendes réécrites par rapport aux intentions du rédacteur**, même
+contrôle que le 25/08 et le 02/09 : le « chéneau intégré » de la figure 1 n'est
+pas visible sur la photo (le dépôt n'a toujours aucun gros plan de quincaillerie,
+constat répété depuis le 15/08), et rien ne permet d'affirmer qu'il y a une âme
+isolante derrière la sous-face opaque du duo. Les légendes ne décrivent donc que
+ce qui se voit.
+
+⚠️ **COVER portrait, cas nouveau à connaître** :
+`realisations/pergola-aluminium-terrasse-bois-libourne-5.webp` fait **825 × 1100**.
+C'est sans effet sur le rendu (le hero comme la carte d'index sont en
+`object-cover` sur un conteneur à hauteur fixe), mais les `imageLargeur` /
+`imageHauteur` de `blog.ts` doivent bien porter les dimensions réelles, pas le
+1200 × 900 par défaut.
+
+**Réserve restante : B, C, D et E** (eaux pluviales de pergola, pose sur terrasse
+bois existante, remplacement de véranda, délais de chantier). Toutes alu : le
+prochain créneau devrait intercaler un sujet bois, trouvé en veille.
+
 **Run du 06/09/2026 : publié, indexation demandée, réserve toujours vide.**
 Test de cadence passé : aucune entrée du 06/09 ni du 05/09 dans `lib/data/blog.ts`
 (la plus récente était le 04/09). La réserve étant vide, veille web courte pour
@@ -441,8 +498,10 @@ pour ce que les photos sont (une annexe autonome, une extension, un carport) et
 n'affirment rien d'invisible. C'est le sujet qui gagnerait le plus à être
 re-illustré si David a un chantier de garage en archive.
 
-**La réserve reste vide** : le prochain run devra faire sa veille web. Le créneau
-suivant tombe le 08/09 (le 07/09 s'arrêtera, une entrée portant la date d'hier).
+~~**La réserve reste vide** : le prochain run devra faire sa veille web. Le créneau
+suivant tombe le 08/09 (le 07/09 s'arrêtera, une entrée portant la date d'hier).~~
+→ Réserve rechargée le 06/09 par cinq angles alu. **Le créneau du 08/09 n'a pas
+été servi** ; le run suivant a publié le 09/09 (voir « Run du 09/09/2026 »).
 
 **Run du 04/09/2026 : publié, indexation demandée, réserve de nouveau vide.**
 Test de cadence passé sans ambiguïté : aucune entrée du 04/09 ni du 03/09 dans
@@ -1849,6 +1908,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-04 | publié  | Aluminium en bord de mer : bien choisir sa pergola au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 | 2026-09-04 | proposé | Aluminium et air salin : bien choisir au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 | 2026-09-06 | publié  | Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit | garage-ossature-bois-permis-dalle-budget |
+| 2026-09-09 | publié  | Quelle couverture choisir pour une pergola ou un carport aluminium ? | couverture-pergola-carport-toiture-materiaux |
 
 ## Idées de sujets en réserve
 
@@ -1875,7 +1935,13 @@ d'électricien, aide fiscale supprimée au 01/01/2026). Le créneau carport rest
 donc clos, et **la motorisation d'accès n'est plus un angle utile** puisque le
 portail est hors offre (note du 12/08). Ne pas repartir de cette note.
 
-### A. Quelle couverture pour une pergola ou un carport aluminium ?
+### ~~A. Quelle couverture pour une pergola ou un carport aluminium ?~~ ✅ PUBLIÉ le 09/09/2026
+
+> Consommé par le run du 09/09 sous le slug prévu,
+> `couverture-pergola-carport-toiture-materiaux`. Statut `publié`, cet angle
+> n'est plus en réserve. Compte rendu du run en tête de fichier. Restent B, C,
+> D et E, mais **penser à intercaler un sujet bois** au prochain créneau :
+> 04/09 alu, 06/09 bois, 09/09 alu.
 
 **Le trou le plus net de la réserve alu.** Le mot « polycarbonate » n'apparaît
 aujourd'hui dans tout le blog que dans des **noms de fichiers d'images** : le

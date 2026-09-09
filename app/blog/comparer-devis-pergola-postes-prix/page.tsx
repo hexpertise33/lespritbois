@@ -529,7 +529,12 @@ export default function ArticleComparerDevisPergolaPage() {
                 surface. Une ligne « toiture à lames orientables » peut recouvrir des réalités très différentes : lames
                 simple paroi ou à double peau, commande manuelle par manivelle ou motorisée, un moteur ou deux selon la
                 largeur, télécommande seule ou pilotage intégré à la domotique de la maison, avec ou sans capteur de
-                pluie.
+                pluie. Et avant même de comparer les lignes, encore faut-il savoir{' '}
+                <a href="/blog/couverture-pergola-carport-toiture-materiaux" className={lienInterne}>
+                  quel matériau de couverture correspond à l&apos;usage
+                </a>{' '}
+                : verre, polycarbonate, panneau isolé et lames orientables ne se chiffrent pas dans le même ordre de
+                grandeur.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 À côté de la couverture, les équipements font le reste de l&apos;écart, et ce sont eux qui basculent le

@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'couverture-pergola-carport-toiture-materiaux',
+    titre:
+      'Quelle couverture choisir pour une pergola ou un carport aluminium ?',
+    extrait:
+      "On ne choisit pas une couverture sur son prix mais sur ce qu'on veut vivre en dessous : lames orientables si l'usage change dans la journée, verre feuilleté si la pièce derrière doit rester lumineuse toute l'année, polycarbonate alvéolaire si l'ouvrage abrite une voiture et pas des gens, panneau sandwich isolé pour l'ombre fraîche et le silence, tôle nervurée pour un abri utilitaire assumé. Ce que chaque matériau laisse passer en lumière, en chaleur et en bruit de pluie, ce qu'il demande au nettoyage et dans le temps, et le tableau de décision par usage : le guide d'un artisan à Libourne, en Gironde.",
+    date: '2026-09-09',
+    categorie: 'Guide · Aluminium',
+    image: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-5.webp',
+    imageLargeur: 825,
+    imageHauteur: 1100,
+  },
+  {
     slug: 'garage-ossature-bois-permis-dalle-budget',
     titre:
       "Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit",

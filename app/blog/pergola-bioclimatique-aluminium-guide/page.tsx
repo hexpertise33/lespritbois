@@ -395,8 +395,12 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 <strong className="text-primary font-semibold">toile</strong> se replie mais n&apos;offre qu&apos;un
                 réglage tout ou rien, et sa toile vieillit ; une pergola à{' '}
                 <strong className="text-primary font-semibold">toiture fixe</strong> (panneaux, tuiles, bac acier)
-                protège bien mais plonge la pièce voisine dans l&apos;ombre toute l&apos;année. La bioclimatique est la
-                seule à faire varier son propre couvert. Si vous hésitez encore sur la matière elle-même, notre{' '}
+                protège bien mais plonge la pièce voisine dans l&apos;ombre toute l&apos;année, à moins de jouer sur le
+                matériau du couvert : c&apos;est tout l&apos;objet de notre guide sur{' '}
+                <a href="/blog/couverture-pergola-carport-toiture-materiaux" className={lienInterne}>
+                  le choix de la couverture d&apos;une pergola ou d&apos;un carport
+                </a>
+                . La bioclimatique, elle, est la seule à faire varier son propre couvert. Si vous hésitez encore sur la matière elle-même, notre{' '}
                 <a href="/blog/pergola-bois-ou-bioclimatique" className={lienInterne}>
                   comparatif pergola bois ou bioclimatique
                 </a>{' '}

@@ -6,10 +6,12 @@
   "description": "L'Esprit Bois — créateur d'espaces extérieurs. Site vitrine immersif.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run lastmod && next build",
     "start": "next start",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "preview": "npm run lastmod && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "npm run lastmod && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "lastmod": "node scripts/gen-lastmod.mjs",
+    "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.0.0",

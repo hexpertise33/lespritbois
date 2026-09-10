@@ -1,6 +1,7 @@
 import { SITE } from '@/lib/data/navigation';
 import { articles } from '@/lib/data/blog';
 import { ZONES } from '@/lib/data/zones';
+import lastmods from '@/lib/data/lastmod.json';
 
 /**
  * Sitemap servi sur /sitemap.xml via un route handler (et non la convention
@@ -10,64 +11,56 @@ import { ZONES } from '@/lib/data/zones';
  */
 export const dynamic = 'force-static';
 
-/** lastmod = date du dernier changement de contenu notable de la page. */
-const PAGES_STATIQUES: { chemin: string; lastmod: string }[] = [
-  { chemin: '', lastmod: '2026-08-25' },
-  { chemin: '/pergolas', lastmod: '2026-08-25' },
-  { chemin: '/carports', lastmod: '2026-08-25' },
-  { chemin: '/constructions-bois', lastmod: '2026-08-25' },
-  { chemin: '/amenagement-exterieur', lastmod: '2026-08-25' },
-  { chemin: '/terrasses-bois', lastmod: '2026-08-25' },
-  { chemin: '/devis-extension', lastmod: '2026-09-04' },
-  { chemin: '/realisations', lastmod: '2026-08-25' },
-  { chemin: '/blog', lastmod: '2026-08-24' },
-  { chemin: '/contact', lastmod: '2026-08-24' },
-  { chemin: '/qui-sommes-nous', lastmod: '2026-08-24' },
-  { chemin: '/auteur/david-bertrand', lastmod: '2026-08-24' },
-  { chemin: '/mentions-legales', lastmod: '2026-08-22' },
-  { chemin: '/politique-de-confidentialite', lastmod: '2026-08-22' },
-  { chemin: '/plan-du-site', lastmod: '2026-08-24' },
+/**
+ * Quelles pages figurent au sitemap, hors zones et hors articles.
+ * `/devis-pergola` en est volontairement absente : elle est en noindex.
+ */
+const PAGES_STATIQUES = [
+  '',
+  '/pergolas',
+  '/carports',
+  '/constructions-bois',
+  '/amenagement-exterieur',
+  '/terrasses-bois',
+  '/devis-extension',
+  '/realisations',
+  '/blog',
+  '/contact',
+  '/qui-sommes-nous',
+  '/auteur/david-bertrand',
+  '/mentions-legales',
+  '/politique-de-confidentialite',
+  '/plan-du-site',
 ];
 
 /**
- * lastmod des pages de zone. Une entrée par zone, et non une date partagée :
- * une zone retouchée seule ne doit pas rajeunir les cinq autres. Le gabarit
- * commun `components/PageZone.tsx` compte aussi, une refonte du gabarit change
- * bien les six pages.
+ * Les dates ne se saisissent plus à la main : `lib/data/lastmod.json` est
+ * régénéré depuis l'historique git avant chaque build par
+ * `scripts/gen-lastmod.mjs`. Le 10/09/2026, la table manuelle qui vivait ici
+ * faisait mentir 41 des 62 pages ; elle ne pouvait pas suivre le rythme.
+ * Route absente de la carte : pas de lastmod, plutôt qu'une date fausse.
  */
-const LASTMOD_ZONES: Record<string, string> = {
-  'pergola-carport-entre-deux-mers': '2026-08-25',
-  'constructeur-ossature-bois-gironde': '2026-08-25',
-  'amenagement-exterieur-bordeaux-metropole': '2026-08-25',
-  'pergola-bassin-arcachon': '2026-08-25',
-  'terrasse-bois-bassin-arcachon': '2026-08-25',
-  'bassin-arcachon': '2026-08-25',
-};
-
-/** Zone absente du tableau : pas de lastmod plutôt qu'une date fausse. */
-const lastmodZone = (slug: string): string | null => LASTMOD_ZONES[slug] ?? null;
+const lastmod = (chemin: string): string | null =>
+  (lastmods as Record<string, string>)[chemin] ?? null;
 
 export function GET() {
   const base = SITE.url.replace(/\/+$/, '');
 
-  const entrees = [
+  const chemins = [
     // Racine sans slash final : Next normalise ainsi la canonical, le sitemap doit dire la même chose.
-    ...PAGES_STATIQUES.map((p) => ({ loc: `${base}${p.chemin}`, lastmod: p.lastmod as string | null })),
-    ...ZONES.map((z) => ({ loc: `${base}/${z.slug}`, lastmod: lastmodZone(z.slug) })),
-    ...articles.map((article) => ({
-      loc: `${base}/blog/${article.slug}`,
-      lastmod: article.date || null,
-    })),
+    ...PAGES_STATIQUES,
+    ...ZONES.map((z) => `/${z.slug}`),
+    ...articles.map((article) => `/blog/${article.slug}`),
   ];
 
   const corps =
     '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    entrees
-      .map(
-        (u) =>
-          `  <url><loc>${u.loc}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ''}</url>`,
-      )
+    chemins
+      .map((chemin) => {
+        const d = lastmod(chemin);
+        return `  <url><loc>${base}${chemin}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`;
+      })
       .join('\n') +
     '\n</urlset>\n';
 

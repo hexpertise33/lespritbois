@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dateDernierCommit, dateBlocZone, calculeLastmod, ecrireLastmod } from './lastmod.mjs';
+import path from 'node:path';
+import { tmpdir } from 'node:os';
+import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { dateDernierCommit, dateBlocZone, calculeLastmod, ecrireLastmod, garantitFichierCarte } from './lastmod.mjs';
 
 test('dateDernierCommit rend une date ISO courte pour un fichier suivi', () => {
   const d = dateDernierCommit(['app/page.tsx']);
@@ -41,4 +44,19 @@ test('ecrireLastmod refuse une carte vide plutot que d ecraser le fichier', () =
   // Sans git (archive, CI sans historique), mieux vaut garder l'ancien fichier
   // que publier un sitemap sans aucune date.
   assert.throws(() => ecrireLastmod({}), /vide/i);
+});
+
+test('garantitFichierCarte crée une carte vide quand le fichier manque', () => {
+  // Le fichier n'est plus commité : sans lui, l'import du sitemap ne résout pas
+  // et le build casse. Mieux vaut un sitemap sans dates qu'un build à terre.
+  const tmp = path.join(mkdtempSync(path.join(tmpdir(), 'lastmod-')), 'carte.json');
+  assert.equal(garantitFichierCarte(tmp), true);
+  assert.deepEqual(JSON.parse(readFileSync(tmp, 'utf8')), {});
+});
+
+test('garantitFichierCarte n écrase pas une carte déjà présente', () => {
+  const tmp = path.join(mkdtempSync(path.join(tmpdir(), 'lastmod-')), 'carte.json');
+  writeFileSync(tmp, JSON.stringify({ '/pergolas': '2026-09-06' }));
+  assert.equal(garantitFichierCarte(tmp), false);
+  assert.deepEqual(JSON.parse(readFileSync(tmp, 'utf8')), { '/pergolas': '2026-09-06' });
 });

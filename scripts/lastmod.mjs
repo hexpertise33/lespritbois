@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -96,12 +96,25 @@ export const FICHIER_CARTE = 'lib/data/lastmod.json';
 
 /**
  * Écrit la carte. Refuse une carte vide : sans historique git (archive, CI sans
- * `.git`), garder le fichier commité vaut mieux qu'un sitemap sans aucune date.
+ * `.git`), conserver la carte déjà présente vaut mieux que l'écraser de dates
+ * manquantes. Si aucune n'existe, `garantitFichierCarte` prend le relais.
  */
 export function ecrireLastmod(carte) {
   const routes = Object.keys(carte);
-  if (routes.length === 0) throw new Error('Carte lastmod vide : fichier conservé en l\'état.');
+  if (routes.length === 0) throw new Error('Carte lastmod vide : rien à écrire.');
   const trie = Object.fromEntries(routes.sort().map((r) => [r, carte[r]]));
   writeFileSync(path.join(RACINE, FICHIER_CARTE), JSON.stringify(trie, null, 2) + '\n');
   return routes.length;
+}
+
+/**
+ * Garantit qu'une carte existe à ce chemin. Le fichier n'est pas versionné :
+ * sur un clone frais sans git utilisable, l'import du sitemap ne résoudrait pas
+ * et le build tomberait. Une carte vide donne un sitemap sans `lastmod`, ce qui
+ * reste un sitemap valide. Rend true si le fichier a dû être créé.
+ */
+export function garantitFichierCarte(chemin = path.join(RACINE, FICHIER_CARTE)) {
+  if (existsSync(chemin)) return false;
+  writeFileSync(chemin, '{}\n');
+  return true;
 }

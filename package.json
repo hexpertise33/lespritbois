@@ -5,7 +5,7 @@
   "private": true,
   "description": "L'Esprit Bois — créateur d'espaces extérieurs. Site vitrine immersif.",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run lastmod && next dev",
     "build": "npm run lastmod && next build",
     "start": "next start",
     "preview": "npm run lastmod && opennextjs-cloudflare build && opennextjs-cloudflare preview",

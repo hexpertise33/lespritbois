@@ -7,6 +7,9 @@ dist/
 next-env.d.ts
 .wrangler/
 
+# généré au build depuis git par scripts/gen-lastmod.mjs
+lib/data/lastmod.json
+
 # dependencies
 node_modules/
 

@@ -25,7 +25,7 @@ export const metadata: Metadata = buildMetadata({
     'carport Libourne, carport Gironde, carport bois, carport aluminium, carport solaire, abri voiture Libourne, carport toiture plate, carport bac acier, carport adossé, carport autoporté',
   path: '/carports',
   ogImage: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
-  ogTitle: 'Carports sur mesure à Libourne (33) : bois, aluminium, solaire',
+  ogTitle: 'Carports sur mesure en Gironde : bois, aluminium, solaire',
   ville: 'Libourne',
 });
 

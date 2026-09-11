@@ -653,9 +653,14 @@ export const ZONES: Zone[] = [
       h: 800,
       alt: "Terrasse bois bordant une piscine avec pool house, réalisation de L'Esprit Bois près de Libourne",
     },
-    title: "Terrasse bois sur le Bassin d'Arcachon : sable et sel",
+    /* La demande est communale et non régionale : « terrasse bois la teste de
+       buch » 64 impressions, « terrasse bois arcachon » 55, « terrasse bois
+       gujan mestras » 11, quand le titre ne nommait aucune commune. Cap Ferret
+       pèse 44 impressions mais ne figure pas dans `communes` : ne pas le
+       revendiquer tant qu'il n'y est pas. */
+    title: "Terrasse bois La Teste, Arcachon, Gujan : le sable et le sel",
     description:
-      "Terrasse bois sur le Bassin d'Arcachon : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand la déclaration préalable devient due.",
+      "Terrasse bois à La Teste-de-Buch, Arcachon et Gujan-Mestras : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand déclarer.",
     keywords:
       "terrasse bois Bassin d'Arcachon, terrasse bois Arcachon, terrasse bois Gujan-Mestras, terrasse bois Cap-Ferret, terrasse La Teste-de-Buch, terrasse sur sable",
     accent: 'sur mesure',

@@ -14,9 +14,13 @@ const PROJET = 'Carport';
 const PAGE_LABEL = '/carports';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Carport bois, alu & solaire à Libourne (33)",
+  /* Balises alignées sur la demande réelle (Search Console, 90 j au 11/09/2026) :
+     « Gironde » apparaît dans 9 des 10 premières requêtes et manquait au titre,
+     qui disait « Libourne » ; et « carport bois » pèse 219 impressions contre 5
+     à « carport alu », que l'ancien titre mettait sur le même plan. */
+  title: "Carport bois sur mesure en Gironde : adossé ou autoporté",
   description:
-    "Carport bois, aluminium ou solaire, sur mesure : conception en atelier et pose par nos équipes à Libourne et dans toute la Gironde. Étude gratuite.",
+    "Carport bois adossé ou autoporté, une ou deux voitures, camping-car : conçu en atelier et posé par nos équipes partout en Gironde. Étude gratuite.",
   keywords:
     'carport Libourne, carport Gironde, carport bois, carport aluminium, carport solaire, abri voiture Libourne, carport toiture plate, carport bac acier, carport adossé, carport autoporté',
   path: '/carports',

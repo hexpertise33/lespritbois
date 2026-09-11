@@ -1,66 +1,47 @@
 import { SITE } from '@/lib/data/navigation';
 import { articles } from '@/lib/data/blog';
-import { ZONES } from '@/lib/data/zones';
-import lastmods from '@/lib/data/lastmod.json';
+import carte from '@/lib/data/lastmod.json';
 
 /**
  * Sitemap servi sur /sitemap.xml via un route handler (et non la convention
  * `app/sitemap.ts`, incompatible avec l'apostrophe du chemin du projet).
- * Toute page listée ici et tout article ajouté à `lib/data/blog.ts` y apparaît
- * automatiquement, avec sa date.
+ *
+ * Plus aucune liste ni aucune date ne se saisit ici : `lib/data/lastmod.json`
+ * est régénéré depuis git avant chaque build par `scripts/gen-lastmod.mjs`.
+ *
+ * Deux portes distinctes, et c'est voulu :
+ *  - les pages entrent d'office, sauf celles qui se déclarent noindex. Une page
+ *    publiée ne peut donc plus rester absente du sitemap par simple oubli, ce
+ *    qui est arrivé à /devis-extension le 04/09/2026 ;
+ *  - les articles, eux, restent commandés par `lib/data/blog.ts`. Un brouillon
+ *    déposé dans `app/blog/` sans y être déclaré n'entre pas : le 25/08/2026,
+ *    un article en cours de rédaction était en ligne sans être publié.
  */
 export const dynamic = 'force-static';
 
-/**
- * Quelles pages figurent au sitemap, hors zones et hors articles.
- * `/devis-pergola` en est volontairement absente : elle est en noindex.
- */
-const PAGES_STATIQUES = [
-  '',
-  '/pergolas',
-  '/carports',
-  '/constructions-bois',
-  '/amenagement-exterieur',
-  '/terrasses-bois',
-  '/devis-extension',
-  '/realisations',
-  '/blog',
-  '/contact',
-  '/qui-sommes-nous',
-  '/auteur/david-bertrand',
-  '/mentions-legales',
-  '/politique-de-confidentialite',
-  '/plan-du-site',
-];
-
-/**
- * Les dates ne se saisissent plus à la main : `lib/data/lastmod.json` est
- * régénéré depuis l'historique git avant chaque build par
- * `scripts/gen-lastmod.mjs`. Le 10/09/2026, la table manuelle qui vivait ici
- * faisait mentir 41 des 62 pages ; elle ne pouvait pas suivre le rythme.
- * Route absente de la carte : pas de lastmod, plutôt qu'une date fausse.
- */
-const lastmod = (chemin: string): string | null =>
-  (lastmods as Record<string, string>)[chemin] ?? null;
+const pages: Record<string, string | null> = carte.pages;
+const datesArticles: Record<string, string | null> = carte.articles;
 
 export function GET() {
   const base = SITE.url.replace(/\/+$/, '');
 
-  const chemins = [
+  const entrees: { chemin: string; lastmod: string | null }[] = [
     // Racine sans slash final : Next normalise ainsi la canonical, le sitemap doit dire la même chose.
-    ...PAGES_STATIQUES,
-    ...ZONES.map((z) => `/${z.slug}`),
-    ...articles.map((article) => `/blog/${article.slug}`),
+    ...Object.keys(pages).map((chemin) => ({ chemin, lastmod: pages[chemin] })),
+    ...articles.map((article) => ({
+      chemin: `/blog/${article.slug}`,
+      lastmod: datesArticles[`/blog/${article.slug}`] ?? null,
+    })),
   ];
 
   const corps =
     '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    chemins
-      .map((chemin) => {
-        const d = lastmod(chemin);
-        return `  <url><loc>${base}${chemin}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`;
-      })
+    entrees
+      .map(
+        ({ chemin, lastmod }) =>
+          `  <url><loc>${base}${chemin}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`,
+      )
       .join('\n') +
     '\n</urlset>\n';
 

@@ -2,25 +2,40 @@
 /**
  * Régénère `lib/data/lastmod.json` depuis l'historique git, avant chaque build.
  *
- * Les dates du sitemap étaient tenues à la main : le 10/09/2026, 41 des 62 pages
- * annonçaient une date antérieure à leur vraie dernière modification. Une table
- * manuelle ne tient pas le rythme de publication, git le sait déjà.
+ * Le fichier porte deux choses :
+ *  - `pages`    : quelles routes appartiennent au sitemap, et leur date. La
+ *                 liste se déduit de `app/`, moins les pages qui se déclarent
+ *                 noindex. Plus rien à compléter à la main.
+ *  - `articles` : les dates des articles. Leur appartenance reste décidée par
+ *                 `lib/data/blog.ts`, qui est la porte éditoriale : un brouillon
+ *                 posé dans `app/blog/` mais non déclaré ne doit pas entrer.
  *
  * Le fichier produit n'est pas versionné : il se régénère, et le voir dans
- * chaque diff n'apprenait rien. D'où la garantie ci-dessous, sans laquelle un
- * clone frais sans git ferait tomber le build sur un import non résolu.
+ * chaque diff n'apprenait rien.
  */
-import { calculeLastmod, ecrireLastmod, garantitFichierCarte, FICHIER_CARTE } from './lastmod.mjs';
+import {
+  calculeLastmod,
+  calculeMembres,
+  ecrireLastmod,
+  gitDisponible,
+  verifieDates,
+  FICHIER_CARTE,
+} from './lastmod.mjs';
 
-try {
-  const n = ecrireLastmod(calculeLastmod());
-  console.log(`lastmod : ${n} routes datées depuis git -> ${FICHIER_CARTE}`);
-} catch (e) {
-  // Ne jamais bloquer un déploiement pour un champ qui n'est qu'un indice.
-  console.warn(`lastmod : ${e.message}`);
-  console.warn(
-    garantitFichierCarte()
-      ? `lastmod : ${FICHIER_CARTE} créé vide, le sitemap sortira sans dates.`
-      : `lastmod : ${FICHIER_CARTE} laissé tel quel, les dates peuvent dater.`,
-  );
+// Sans git on perd les dates, jamais les pages : l'appartenance ne se lit que
+// dans `app/`. Un sitemap complet sans dates reste un bon sitemap.
+if (!gitDisponible()) {
+  const n = ecrireLastmod(calculeMembres());
+  console.warn(`lastmod : git indisponible, ${n} routes listées sans date.`);
+  process.exit(0);
 }
+
+const carte = calculeLastmod();
+
+// git a répondu : une carte presque vide est une anomalie, pas un mode dégradé.
+// On laisse l'exception remonter pour interrompre le build.
+verifieDates(carte);
+const n = ecrireLastmod(carte);
+console.log(
+  `lastmod : ${Object.keys(carte.pages).length} pages + ${Object.keys(carte.articles).length} articles datés depuis git -> ${FICHIER_CARTE}`,
+);

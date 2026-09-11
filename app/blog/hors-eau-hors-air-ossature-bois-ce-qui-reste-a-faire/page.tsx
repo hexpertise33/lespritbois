@@ -364,9 +364,14 @@ export default function ArticleHorsEauHorsAirPage() {
                 n&apos;a publié la liste officielle de ce que l&apos;expression contient. C&apos;est une{' '}
                 <strong className="text-primary font-semibold">définition contractuelle</strong>, et elle varie
                 d&apos;une entreprise à l&apos;autre : certains y incluent le bardage, d&apos;autres non ; certains
-                livrent l&apos;isolation, d&apos;autres s&apos;arrêtent au frein-vapeur. D&apos;où la seule règle qui
-                vaille quand vous comparez deux offres : ne comparez pas deux fois la même formule, comparez deux listes
-                écrites.
+                livrent l&apos;isolation, d&apos;autres s&apos;arrêtent au frein-vapeur. Quand elle est incluse,
+                regardez aussi de près{' '}
+                <a href="/blog/isolation-ossature-bois-entre-montants" className={lienInterne}>
+                  quel isolant est prévu entre les montants
+                </a>{' '}
+                : deux devis peuvent annoncer le même hors d&apos;air avec des remplissages qui n&apos;ont ni le même
+                comportement en été, ni le même prix. D&apos;où la seule règle qui vaille quand vous comparez deux
+                offres : ne comparez pas deux fois la même formule, comparez deux listes écrites.
               </p>
             </section>
 

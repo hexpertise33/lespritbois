@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'isolation-ossature-bois-entre-montants',
+    titre: "Isolation d'une ossature bois : quel isolant entre les montants ?",
+    extrait:
+      "Dans une ossature bois, l'isolant n'est pas rapporté contre un mur, il fait partie du mur : ce qu'on met entre les montants décide du confort d'été, de la durabilité de la paroi et du prix, et le choix n'est plus réversible une fois les doublages fermés. Ce que le NF DTU 31.2 couvre et ce qu'il ne couvre pas encore, ce qui sépare vraiment laine minérale, fibre de bois et ouate de cellulose, les ponts thermiques d'ossature, la continuité du frein-vapeur et ce que la RE2020 demande à une extension : le guide d'un constructeur à ossature bois à Libourne (Gironde).",
+    date: '2026-09-11',
+    categorie: 'Guide · Ossature bois',
+    image:
+      '/images/blog/isolation-ossature-bois-entre-montants/isolant-entre-montants-ossature-bois-chantier.webp',
+    imageLargeur: 1120,
+    imageHauteur: 840,
+  },
+  {
     slug: 'couverture-pergola-carport-toiture-materiaux',
     titre:
       'Quelle couverture choisir pour une pergola ou un carport aluminium ?',

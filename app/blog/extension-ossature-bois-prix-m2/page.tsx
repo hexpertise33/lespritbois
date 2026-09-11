@@ -374,8 +374,12 @@ export default function ArticleExtensionOssatureBoisPage() {
                   une extension en ossature bois sur mesure, posée et finie, se situe le plus souvent entre 1 700 et
                   2 500 €/m² en 2026
                 </strong>
-                . Ce prix comprend l&apos;ossature, l&apos;isolation, le bardage, la toiture, les menuiseries et le
-                second œuvre courant, mais il dépend fortement de ce que vous mettez dedans. C&apos;est d&apos;ailleurs
+                . Ce prix comprend l&apos;ossature,{' '}
+                <a href="/blog/isolation-ossature-bois-entre-montants" className={lienInterne}>
+                  l&apos;isolation logée entre les montants
+                </a>
+                , le bardage, la toiture, les menuiseries et le second œuvre courant, mais il dépend fortement de ce que
+                vous mettez dedans. C&apos;est d&apos;ailleurs
                 la première chose à vérifier sur un devis, car une livraison arrêtée au clos couvert ne recouvre pas le
                 même périmètre :{' '}
                 <a href="/blog/hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire" className={lienInterne}>

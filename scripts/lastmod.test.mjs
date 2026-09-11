@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
 import { existsSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
-import { dateDernierCommit, dateBlocZone, calculeLastmod, ecrireLastmod, bornesDesZones, estNoindex, routesDuSite, verifieDates, calculeMembres, gitDisponible, parseStatut, aujourdHui, fichiersModifies } from './lastmod.mjs';
+import { dateDernierCommit, dateBlocZone, calculeLastmod, ecrireLastmod, bornesDesZones, estNoindex, routesDuSite, verifieDates, calculeMembres, gitDisponible, parseStatut, aujourdHui, fichiersModifies, fichiersSurveilles } from './lastmod.mjs';
 
 test('dateDernierCommit rend une date ISO courte pour un fichier suivi', () => {
   const d = dateDernierCommit(['app/page.tsx']);
@@ -158,4 +158,17 @@ test('fichiersModifies ne rend que des chemins qui existent vraiment', () => {
       `chemin inexistant, parsing décalé : ${chemin}`,
     );
   }
+});
+
+test('fichiersSurveilles ajoute zones.ts pour une zone, pas pour une page ordinaire', () => {
+  // La date d'une zone vient de `git log -L` sur son bloc, qui ignore l'arbre
+  // de travail : sans surveiller zones.ts, une zone modifiée et non commitée
+  // annonçait encore son ancienne date. Constaté le 11/09/2026.
+  const zone = fichiersSurveilles({ fichier: 'app/bassin-arcachon/page.tsx', estZone: true });
+  assert.ok(zone.includes('lib/data/zones.ts'), 'zones.ts doit être surveillé pour une zone');
+  assert.ok(zone.includes('components/PageZone.tsx'));
+
+  const ordinaire = fichiersSurveilles({ fichier: 'app/contact/page.tsx', estZone: false });
+  assert.ok(!ordinaire.includes('lib/data/zones.ts'));
+  assert.deepEqual(ordinaire, ['app/contact/page.tsx']);
 });

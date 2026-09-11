@@ -75,6 +75,22 @@ export function routesDuSite() {
   return routes;
 }
 
+/**
+ * Fichiers dont une modification non commitée doit rajeunir la page. Distinct
+ * des sources qui la datent : `zones.ts` n'entre pas dans le calcul de la date
+ * d'une zone, sinon commiter une zone rajeunirait les six autres, mais il doit
+ * être surveillé, car `git log -L` ignore l'arbre de travail. Une retouche non
+ * commitée de `zones.ts` rajeunit donc toutes les zones : c'est grossier, mais
+ * temporaire, et bien meilleur qu'une date périmée.
+ */
+export function fichiersSurveilles({ fichier, estZone, sourcesEnPlus = [] }) {
+  return [
+    fichier,
+    ...sourcesEnPlus,
+    ...(estZone ? [GABARIT_ZONE, ZONES_TS] : []),
+  ];
+}
+
 /** Une page qui se déclare noindex n'a rien à faire au sitemap. */
 export function estNoindex(fichier) {
   return /\bnoindex:\s*true\b/.test(readFileSync(path.join(RACINE, fichier), 'utf8'));
@@ -151,9 +167,11 @@ export function calculeLastmod() {
     if (!(route in bloc)) continue;
     const slug = route.slice(1);
     const estZone = slugsZones.has(slug);
-    const sources = [fichier, ...(SOURCES_EN_PLUS[route] ?? []), ...(estZone ? [GABARIT_ZONE] : [])];
+    const sourcesEnPlus = SOURCES_EN_PLUS[route] ?? [];
+    const sources = [fichier, ...sourcesEnPlus, ...(estZone ? [GABARIT_ZONE] : [])];
     const dates = [dateDernierCommit(sources), estZone ? dateBlocZone(slug) : null].filter(Boolean);
-    if (sources.some((f) => modifies.has(f))) dates.push(aujourdHui());
+    const surveilles = fichiersSurveilles({ fichier, estZone, sourcesEnPlus });
+    if (surveilles.some((f) => modifies.has(f))) dates.push(aujourdHui());
     // Date inconnue : la route reste, avec null. La faire disparaître du
     // sitemap serait un remède pire que le mal.
     bloc[route] = dates.sort().at(-1) ?? null;

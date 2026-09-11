@@ -377,6 +377,107 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 11/09/2026 : publié, indexation demandée, réserve alu intacte (B à E).**
+Test de cadence passé : aucune entrée du 11/09 ni du 10/09 dans `lib/data/blog.ts`
+(la plus récente était le 09/09). La réserve ne contenait que des angles
+**aluminium** alors que l'alternance appelait un sujet **bois** (06/09 bois,
+09/09 alu) : veille web courte pour trouver l'angle, réserve laissée intacte.
+
+Publié : `isolation-ossature-bois-entre-montants`, « Isolation d'une ossature
+bois : quel isolant entre les montants ? ». Commit `5e0e7d5`, deploy version
+`64ed46b3-855f-4192-9d67-0b15566f04d5`, **200 confirmé trois fois**, six images
+vérifiées en 200, `datePublished` servi = `2026-09-11`, présence dans
+`/sitemap.xml` vérifiée, et les deux liens rétroactifs vérifiés présents dans le
+HTML servi.
+
+**Pourquoi ce sujet.** Trou franc, mesuré avant d'écrire : **« laine de bois » et
+« ouate de cellulose » n'apparaissaient nulle part sur les 40 articles**, alors
+que l'isolant est la première question posée après le devis d'ossature, et que
+la demande réelle en Gironde est l'ossature bois. Le sujet sert
+`/constructions-bois` et `/constructeur-ossature-bois-gironde`, et il se branche
+proprement sur l'article du 02/09 : l'isolation est exactement ce qui se joue au
+moment du hors d'air.
+
+**Trois faits sourcés portent l'article, réutilisables tels quels.**
+
+- ⭐ **Le NF DTU 31.2 ne couvre pas encore les isolants à base de fibres de bois.**
+  Le CSTB écrit : « Une révision du NF DTU 31.2 est en cours. Elle concerne la
+  possibilité d'y introduire les isolants à base de fibres de bois », révision
+  initiée après une décision de la CCFAT de faire passer dans le domaine
+  traditionnel les panneaux et rouleaux de fibres de bois pour l'ITI de murs de
+  locaux chauffés à faible et moyenne hygrométrie. En attendant, ces isolants
+  relèvent d'un **Avis Technique ou d'un DTA**. Source :
+  [CSTB, révision des NF DTU 27.1 et 31.2](https://www.cstb.fr/toutes-les-actualites/revision-nf-dtu-27-1-31-2).
+  C'est le point contre-intuitif de l'article (« maison bois » ≠ « isolant bois
+  d'office »), traité sans faire le procès de la fibre de bois : un isolant sous
+  Avis Technique se pose très bien, c'est un document à demander au devis.
+  ⚠️ **Fait daté** : la révision étant en cours, à revérifier avant de le
+  réutiliser dans un futur article.
+- **RE2020 et extensions** : applicable aux permis et déclarations préalables
+  déposés depuis le **1er janvier 2022** pour une extension de maison
+  individuelle de surface de référence **≥ 80 m²**, et depuis le **1er janvier
+  2023** aux **autres extensions de bâtiments résidentiels**. Source :
+  [portail RT-RE bâtiment, champ et calendrier d'application](https://rt-re-batiment.developpement-durable.gouv.fr/champ-et-calendrier-d-application-a1222.html).
+  ⚠️ L'article **ne détaille aucun indicateur** (Bbio, Ic construction, DH) et ne
+  donne aucun seuil de performance : le cas particulier est renvoyé au service
+  urbanisme et au bureau d'études thermiques. Ne pas aller plus loin sans source.
+- **Continuité du frein-vapeur et de l'étanchéité à l'air** : fiches pathologie
+  de l'[AQC sur les défauts d'étanchéité à l'air](https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/defauts-etancheite-air/)
+  et sur les [désordres structurels des ossatures en bois](https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/desordres-structurels-ossatures-bois/).
+
+🚫 **Aucune valeur R, lambda, épaisseur, Sd, déphasage, densité, Q4 ni prix
+d'isolant.** Tout le comparatif laine minérale / fibre de bois / ouate est
+qualitatif. C'est le sujet où la tentation du chiffre est la plus forte de tout
+le blog : les runs suivants doivent tenir la même ligne.
+
+**Étape 8 bis, les deux gestes ont abouti.** IndexNow : **200**. Search Console :
+**demande d'indexation confirmée à l'écran** (« Indexation demandée · Cette URL a
+été ajoutée à une file d'attente d'exploration prioritaire »). Le mode d'emploi
+du 01/09 avec les coordonnées du 04/09 fonctionne toujours tel quel : `/u/1/` +
+`resource_id=https%3A%2F%2Flesprit-bois.fr%2F`, clic dans le champ d'inspection à
+**x ≈ 450, y ≈ 20 dans un cadre 1568 × 723**, deux secondes d'attente, saisie,
+Entrée, puis « Demander une indexation » **à x ≈ 1090, y ≈ 234** dans le même
+cadre. Compter une trentaine de secondes entre le clic et la confirmation.
+L'inspection a renvoyé « Cette URL n'a pas été indexée par Google », « Aucun
+sitemap référent détecté », « Aucune page d'origine détectée » : comportement
+normal d'une page d'une heure, identique aux relevés du 25/08 au 09/09.
+
+**Iconographie : cinq visuels maison sur six, et une permutation de cover
+décidée après coup.** Deux recadrages inédits ont été produits dans
+`public/images/blog/isolation-ossature-bois-entre-montants/`, dont un tiré de
+`contenu-source/photos-chantiers-non-publiees/` (jamais servi sur le site
+jusqu'ici). La sixième figure est une photo Pexels libre de droits pour la laine
+minérale, légendée « Photo d'illustration », sans commune ni « nos chantiers ».
+
+⚠️ **Permutation de cover, à retenir comme contrôle.** L'iconographe avait retenu
+`/images/ossature-bois-isolation-fibre-gironde.webp` en cover : inédite comme
+cover au sens strict du contrôle (aucun `image:` de `blog.ts`), mais **déjà
+présente dans le corps de six pages du site**, dont trois articles de blog et
+`/constructions-bois`. Elle montre par ailleurs des caissons **vides**, ce que
+l'iconographe a correctement relevé en zoom. La cover est donc le recadrage
+`isolant-entre-montants-ossature-bois-chantier.webp` (1120 × 840), qui montre
+réellement l'isolant en place, et l'image des caissons ouverts est descendue en
+figure 1 avec une légende reformulée. 📌 **Le contrôle anti-doublon de cover
+gagnerait à regarder aussi les `src` du corps des pages, pas seulement les
+`image:` de `blog.ts`.**
+
+⚠️ Deux légendes ont encore été réécrites par l'iconographe pour ne décrire que
+ce qui se voit, même contrôle que les 25/08, 02/09 et 09/09 : le matériau de
+remplissage de la figure 1 n'est pas identifiable (la légende parle du
+remplissage, pas de la famille d'isolant), et la membrane de la figure 5 porte
+la mention lisible « membrane d'étanchéité à l'air », donc un **pare-vapeur** et
+non un frein-vapeur hygrovariable : la légende le dit ainsi.
+
+ℹ️ **Écart de route relevé par le rédacteur** : `/extensions` **n'existe pas**
+dans le dépôt, contrairement à ce que la consigne de la routine laissait croire.
+Les cibles réelles sont `/constructions-bois` et
+`/constructeur-ossature-bois-gironde`. À ne plus demander.
+
+**Réserve après ce run : B, C, D et E, inchangées** (eaux pluviales de pergola,
+pose sur terrasse bois existante, remplacement de véranda, délais de chantier
+alu). Toutes aluminium : le prochain créneau peut en prendre une, l'alternance
+le permet puisque le 11/09 était bois.
+
 **Run du 09/09/2026 : publié, indexation demandée, réserve entamée (A consommé).**
 Test de cadence passé : aucune entrée du 09/09 ni du 08/09 dans `lib/data/blog.ts`
 (la plus récente était le 06/09). Le créneau du 08/09 annoncé par le run du 06/09
@@ -1909,6 +2010,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-04 | proposé | Aluminium et air salin : bien choisir au Bassin d'Arcachon | pergola-aluminium-bord-de-mer-bassin-arcachon |
 | 2026-09-06 | publié  | Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit | garage-ossature-bois-permis-dalle-budget |
 | 2026-09-09 | publié  | Quelle couverture choisir pour une pergola ou un carport aluminium ? | couverture-pergola-carport-toiture-materiaux |
+| 2026-09-11 | publié  | Isolation d'une ossature bois : quel isolant entre les montants ? | isolation-ossature-bois-entre-montants |
 
 ## Idées de sujets en réserve
 

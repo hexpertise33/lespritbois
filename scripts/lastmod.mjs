@@ -5,8 +5,10 @@ import path from 'node:path';
 
 const RACINE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-const git = (args) =>
-  execFileSync('git', ['--no-pager', ...args], { cwd: RACINE, encoding: 'utf8' }).trim();
+const gitBrut = (args) =>
+  execFileSync('git', ['--no-pager', ...args], { cwd: RACINE, encoding: 'utf8' });
+
+const git = (args) => gitBrut(args).trim();
 
 /** Date du dernier commit ayant touché l'un des chemins, au format AAAA-MM-JJ. */
 export function dateDernierCommit(chemins) {
@@ -80,6 +82,33 @@ export function estNoindex(fichier) {
 
 const estArticle = (route) => route.startsWith('/blog/');
 
+/** Date du jour dans le fuseau local. `toISOString()` daterait de la veille
+ *  une modification faite après minuit, l'heure française étant en avance. */
+export function aujourdHui() {
+  return new Date().toLocaleDateString('sv-SE');
+}
+
+/**
+ * Chemins cités par `git status --porcelain`, modifiés, ajoutés ou non suivis.
+ * Un renommage `R  ancien -> nouveau` ne retient que la destination.
+ */
+export function parseStatut(sortie) {
+  const chemins = new Set();
+  for (const ligne of sortie.split('\n')) {
+    if (ligne.length < 4) continue;
+    const chemin = ligne.slice(3).trim();
+    chemins.add(chemin.includes(' -> ') ? chemin.split(' -> ')[1] : chemin);
+  }
+  return chemins;
+}
+
+/** Fichiers que l'arbre de travail a changés sans que git les ait enregistrés. */
+export function fichiersModifies() {
+  // Surtout pas `git()` ici : son trim mange l'espace de tête de la première
+  // ligne et décale la découpe du préfixe de statut d'un caractère.
+  return parseStatut(gitBrut(['status', '--porcelain']));
+}
+
 /** git est-il utilisable ici ? Une archive ou un CI sans `.git` dit non. */
 export function gitDisponible() {
   try {
@@ -112,6 +141,10 @@ export function calculeMembres() {
  */
 export function calculeLastmod() {
   const slugsZones = new Set(bornesDesZones().map((z) => z.slug));
+  // Le déploiement construit depuis l'arbre de travail, pas depuis le dernier
+  // commit : une page modifiée et non commitée est bien servie modifiée, elle
+  // doit donc être datée d'aujourd'hui et non de son dernier commit.
+  const modifies = fichiersModifies();
   const carte = calculeMembres();
   for (const { route, fichier } of routesDuSite()) {
     const bloc = estArticle(route) ? carte.articles : carte.pages;
@@ -120,6 +153,7 @@ export function calculeLastmod() {
     const estZone = slugsZones.has(slug);
     const sources = [fichier, ...(SOURCES_EN_PLUS[route] ?? []), ...(estZone ? [GABARIT_ZONE] : [])];
     const dates = [dateDernierCommit(sources), estZone ? dateBlocZone(slug) : null].filter(Boolean);
+    if (sources.some((f) => modifies.has(f))) dates.push(aujourdHui());
     // Date inconnue : la route reste, avec null. La faire disparaître du
     // sitemap serait un remède pire que le mal.
     bloc[route] = dates.sort().at(-1) ?? null;

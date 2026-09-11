@@ -2,8 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
-import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
-import { dateDernierCommit, dateBlocZone, calculeLastmod, ecrireLastmod, bornesDesZones, estNoindex, routesDuSite, verifieDates, calculeMembres, gitDisponible } from './lastmod.mjs';
+import { existsSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { dateDernierCommit, dateBlocZone, calculeLastmod, ecrireLastmod, bornesDesZones, estNoindex, routesDuSite, verifieDates, calculeMembres, gitDisponible, parseStatut, aujourdHui, fichiersModifies } from './lastmod.mjs';
 
 test('dateDernierCommit rend une date ISO courte pour un fichier suivi', () => {
   const d = dateDernierCommit(['app/page.tsx']);
@@ -121,4 +121,41 @@ test('calculeMembres liste les mêmes routes que calculeLastmod, sans dates', ()
 
 test('gitDisponible répond vrai dans le dépôt', () => {
   assert.equal(gitDisponible(), true);
+});
+
+test('parseStatut lit les chemins, y compris les renommages', () => {
+  const sortie = [
+    ' M app/page.tsx',
+    '?? scripts/nouveau.mjs',
+    'A  lib/data/truc.ts',
+    'R  app/vieux/page.tsx -> app/neuf/page.tsx',
+    'MM components/PageZone.tsx',
+  ].join('\n');
+  assert.deepEqual(
+    [...parseStatut(sortie)].sort(),
+    ['app/neuf/page.tsx', 'app/page.tsx', 'components/PageZone.tsx', 'lib/data/truc.ts', 'scripts/nouveau.mjs'],
+  );
+});
+
+test('parseStatut rend un ensemble vide sur un arbre propre', () => {
+  assert.equal(parseStatut('').size, 0);
+});
+
+test('aujourdHui rend la date locale, pas UTC', () => {
+  // En France l'heure locale est en avance sur UTC : une modification faite
+  // après minuit serait datée de la veille avec toISOString().
+  assert.equal(aujourdHui(), new Date().toLocaleDateString('sv-SE'));
+  assert.match(aujourdHui(), /^\d{4}-\d{2}-\d{2}$/);
+});
+
+test('fichiersModifies ne rend que des chemins qui existent vraiment', () => {
+  // Le trim global de git() mangeait l'espace de tête de la première ligne et
+  // décalait slice(3) d'un caractère : `app/x` devenait `pp/x`. Un test sur
+  // une sortie bien formée ne le voyait pas, un chemin inexistant si.
+  for (const chemin of fichiersModifies()) {
+    assert.ok(
+      existsSync(new URL(`../${chemin}`, import.meta.url)),
+      `chemin inexistant, parsing décalé : ${chemin}`,
+    );
+  }
 });

@@ -377,6 +377,86 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 13/09/2026 : publié, indexation demandée, réserve entamée (B consommé).**
+Test de cadence passé : aucune entrée du 13/09 ni du 12/09 dans `lib/data/blog.ts`
+(la plus récente était le 11/09). Le 11/09 étant un sujet bois, l'alternance
+appelait l'aluminium : la réserve a été servie dans l'ordre de priorité, angle B.
+
+Publié : `evacuation-eaux-pluviales-pergola-carport`, « Où part l'eau de votre
+pergola ? L'évacuation des eaux pluviales ». Commit `4d46a14`, deploy version
+`6d761bbd-a437-453e-8988-db66267c7f40`, **200 confirmé trois fois**, sept images
+vérifiées en 200, `datePublished` servi = `2026-09-13`, présence dans
+`/sitemap.xml` vérifiée, et les deux liens rétroactifs vérifiés présents dans le
+HTML servi.
+
+**Trois sources primaires, aucune valeur chiffrée.** Le brief prévenait que le
+point sensible était le droit de l'écoulement entre voisins : vérifié avant
+d'écrire, et réduit à trois textes, chacun lié à sa page Légifrance.
+
+- **Article 640 du code civil** : les fonds inférieurs reçoivent les eaux qui
+  découlent **naturellement, sans que la main de l'homme y ait contribué** ; le
+  propriétaire supérieur **ne peut rien faire qui aggrave la servitude**.
+  [LEGIARTI000006429847](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429847).
+  C'est le pivot de l'article : une couverture neuve qui concentre l'eau, c'est
+  précisément de la main de l'homme.
+- **Article 681 du code civil**, texte exact vérifié par WebFetch (version en
+  vigueur depuis 1804), citable entre guillemets : « Tout propriétaire doit
+  établir des toits de manière que les eaux pluviales s'écoulent sur son terrain
+  ou sur la voie publique ; il ne peut les faire verser sur le fonds de son
+  voisin. »
+  [LEGIARTI000006430256](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430256).
+- **Article L2224-10 du CGCT** (zonage pluvial) : les communes ou leurs EPCI
+  délimitent, après enquête publique, des zones où des mesures doivent être
+  prises pour **limiter l'imperméabilisation des sols** et maîtriser le débit et
+  l'écoulement des eaux pluviales.
+  [LEGIARTI000046783819](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046783819).
+  Conclusion tenue dans l'article : ça se vérifie **en mairie, commune par
+  commune**, jamais par généralisation depuis Libourne.
+
+🚫 **Aucun débit, section de descente, volume de cuve, surface de rétention,
+coefficient de ruissellement, pluviométrie ni prix.** Même ligne que le 11/09 sur
+les isolants : c'est un sujet où la tentation du chiffre est forte et où le
+qualitatif suffit.
+
+**Étape 8 bis, les deux gestes ont abouti.** IndexNow : **200**. Search Console :
+**demande d'indexation confirmée à l'écran** (« Indexation demandée · Cette URL a
+été ajoutée à une file d'attente d'exploration prioritaire »). Le mode d'emploi
+tient toujours : `/u/1/` + `resource_id=https%3A%2F%2Flesprit-bois.fr%2F`, clic
+dans le champ d'inspection **à x ≈ 440, y ≈ 20 dans un cadre 1523 × 784**,
+saisie, Entrée, dix secondes d'inspection, puis « Demander une indexation » **à
+x ≈ 1040, y ≈ 226**, et une trentaine de secondes avant la confirmation.
+L'inspection a renvoyé « Cette URL n'a pas été indexée par Google », « Aucun
+sitemap référent détecté », « Aucune page d'origine détectée » : comportement
+normal d'une page d'une heure, identique à tous les relevés depuis le 25/08.
+
+⚠️ **Iconographie : la réserve de photos alu est épuisée.** Trois recadrages
+inédits ont été produits dans
+`public/images/blog/evacuation-eaux-pluviales-pergola-carport/` à partir de
+`pergola-terrasse-bois-libourne-2/3/4.webp`, trois photos Pexels libres de droits
+comblent le reste (réseau en tranchée, fût de récupération, flaque stagnante),
+et la figure 5 est un **visuel fournisseur LI-SU** (`Carport-aluminium-Libourne-2.webp`),
+légendé **sans commune ni « nos chantiers »** puisque ce n'est pas un chantier de
+l'entreprise. 📌 **Constat à retenir : il ne reste plus aucune photo de chantier
+aluminium inutilisée hors covers déjà prises.** Le prochain article alu devra
+repartir sur des recadrages ou sur du libre de droits, à moins que les lots de
+`contenu-source/` non traités ne soient dépouillés d'ici là.
+
+ℹ️ **Le contrôle anti-doublon de cover a servi, dans sa version renforcée du
+11/09.** La photo maison la plus évidente (`pergola-terrasse-bois-libourne-2.webp`)
+n'était la cover d'aucun article mais était **déjà servie dans trois pages** :
+c'est donc un recadrage paysage inédit (900 × 720) qui fait la cover. Le contrôle
+étendu aux `src` du corps des pages, décidé après l'incident du 11/09, est
+désormais appliqué.
+
+⚠️ **Six légendes sur sept ont été réécrites par l'iconographe**, plus que
+d'habitude : le brief demandait des dispositifs (chéneau en gros plan, dauphin,
+regard ouvert, cuve avec trop-plein, affouillement au pied d'un poteau) qu'**aucune
+photo disponible ne montre**. Les légendes décrivent donc ce qui se voit, et la
+figure du pied de poteau, qui montre le poteau s'arrêtant au ras du platelage,
+sert finalement mieux la thèse de l'article que le gros plan demandé. 📌 Leçon
+pour les briefs suivants : demander des cadrages plutôt que des dispositifs
+précis quand le fonds photo est contraint.
+
 **Run du 11/09/2026 : publié, indexation demandée, réserve alu intacte (B à E).**
 Test de cadence passé : aucune entrée du 11/09 ni du 10/09 dans `lib/data/blog.ts`
 (la plus récente était le 09/09). La réserve ne contenait que des angles
@@ -473,10 +553,10 @@ dans le dépôt, contrairement à ce que la consigne de la routine laissait croi
 Les cibles réelles sont `/constructions-bois` et
 `/constructeur-ossature-bois-gironde`. À ne plus demander.
 
-**Réserve après ce run : B, C, D et E, inchangées** (eaux pluviales de pergola,
-pose sur terrasse bois existante, remplacement de véranda, délais de chantier
-alu). Toutes aluminium : le prochain créneau peut en prendre une, l'alternance
-le permet puisque le 11/09 était bois.
+~~**Réserve après ce run : B, C, D et E, inchangées**~~ → **B consommé le
+13/09/2026.** Restent C, D et E (pose sur terrasse bois existante, remplacement
+de véranda, délais de chantier alu), toutes aluminium : le prochain créneau
+devra intercaler un sujet bois trouvé en veille.
 
 **Run du 09/09/2026 : publié, indexation demandée, réserve entamée (A consommé).**
 Test de cadence passé : aucune entrée du 09/09 ni du 08/09 dans `lib/data/blog.ts`
@@ -2011,6 +2091,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-06 | publié  | Garage en ossature bois : ce qu'on déclare, ce qu'on paie, ce qu'on prévoit | garage-ossature-bois-permis-dalle-budget |
 | 2026-09-09 | publié  | Quelle couverture choisir pour une pergola ou un carport aluminium ? | couverture-pergola-carport-toiture-materiaux |
 | 2026-09-11 | publié  | Isolation d'une ossature bois : quel isolant entre les montants ? | isolation-ossature-bois-entre-montants |
+| 2026-09-13 | publié  | Où part l'eau de votre pergola ? L'évacuation des eaux pluviales | evacuation-eaux-pluviales-pergola-carport |
 
 ## Idées de sujets en réserve
 
@@ -2074,7 +2155,13 @@ première question posée en magasin après la teinte.
 - **Étape 4 bis** : liens depuis `pergola-bioclimatique-aluminium-guide` et
   `comparer-devis-pergola-postes-prix`.
 
-### B. Où part l'eau de votre pergola ?
+### ~~B. Où part l'eau de votre pergola ?~~ ✅ PUBLIÉ le 13/09/2026
+
+> Consommé par le run du 13/09 sous le slug prévu,
+> `evacuation-eaux-pluviales-pergola-carport`. Statut `publié`, cet angle n'est
+> plus en réserve. Compte rendu du run en tête de fichier. **Restent C, D et E**,
+> toutes aluminium : le prochain créneau devra intercaler un sujet bois trouvé en
+> veille (11/09 bois, 13/09 alu).
 
 **Angle jamais traité, et pourtant systématique en rendez-vous.** Une pergola à
 toiture fermée transforme une surface perméable en surface ruisselante, et

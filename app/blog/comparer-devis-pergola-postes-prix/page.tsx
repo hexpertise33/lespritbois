@@ -582,7 +582,11 @@ export default function ArticleComparerDevisPergolaPage() {
                 carrés de toiture. Cette eau descend dans les poteaux, par des descentes intégrées, et ressort en bas.{' '}
                 <strong className="text-primary font-semibold">La vraie question du devis est : et ensuite ?</strong>{' '}
                 Raccordement à un regard, création d&apos;un drain, caniveau, rejet en pied de poteau sur la terrasse,
-                ce ne sont ni le même travail ni le même prix, et l&apos;un des trois est un problème différé.
+                ce ne sont ni le même travail ni le même prix, et l&apos;un des trois est un problème différé. Le détail de{' '}
+                <a href="/blog/evacuation-eaux-pluviales-pergola-carport" className={lienInterne}>
+                  ce qu&apos;on fait de l&apos;eau au pied du poteau, du réseau à l&apos;infiltration à la parcelle
+                </a>
+                , se lit avant de comparer cette ligne d&apos;un devis à l&apos;autre.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Le raccord à la façade est l&apos;autre zone où les devis divergent sans que cela se voie. Une pergola

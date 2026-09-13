@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'evacuation-eaux-pluviales-pergola-carport',
+    titre: "Où part l'eau de votre pergola ? L'évacuation des eaux pluviales",
+    extrait:
+      "Une pergola couverte ou un carport transforment une surface perméable en surface ruisselante, et le poteau à descente intégrée n'est pas une solution d'évacuation : c'est un début de tuyau qui s'arrête à quelques centimètres du sol, la vraie question étant ce qui se passe au pied du poteau. Les trois destinations possibles de l'eau (réseau, infiltration à la parcelle, récupération), ce que les articles 640 et 681 du code civil imposent vis-à-vis du voisin, ce que le zonage pluvial de votre commune peut exiger, les désordres qui se voient au bout d'un hiver et ce qu'on écrit au devis : le guide d'un artisan à Libourne, en Gironde.",
+    date: '2026-09-13',
+    categorie: 'Guide · Aluminium',
+    image:
+      '/images/blog/evacuation-eaux-pluviales-pergola-carport/pergola-aluminium-toiture-fermee-terrasse-bois-gironde.webp',
+    imageLargeur: 900,
+    imageHauteur: 720,
+  },
+  {
     slug: 'isolation-ossature-bois-entre-montants',
     titre: "Isolation d'une ossature bois : quel isolant entre les montants ?",
     extrait:

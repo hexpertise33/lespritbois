@@ -464,7 +464,12 @@ export default function ArticleCouverturePergolaCarportPage() {
                 <a href="https://www.cstb.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   Centre scientifique et technique du bâtiment
                 </a>
-                . Une belle plaque mal évacuée fait une flaque devant la porte-fenêtre.
+                . Une belle plaque mal évacuée fait une flaque devant la porte-fenêtre, et la descente intégrée au poteau ne
+                règle que la moitié du trajet :{' '}
+                <a href="/blog/evacuation-eaux-pluviales-pergola-carport" className={lienInterne}>
+                  où part vraiment l&apos;eau d&apos;une pergola, une fois arrivée au pied du poteau
+                </a>
+                .
               </p>
             </section>
 

@@ -443,6 +443,10 @@ export default function ArticleComparerDevisPergolaPage() {
                 <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
                   la structure d&apos;une terrasse en bois, plots et lambourdes
                 </a>
+                , et la méthode de pose elle-même, platines et traversée du platelage, dans celui sur{' '}
+                <a href="/blog/poser-pergola-aluminium-terrasse-bois-existante" className={lienInterne}>
+                  poser une pergola aluminium sur une terrasse en bois existante
+                </a>
                 . Tant qu&apos;on n&apos;a pas soulevé deux lames pour regarder dessous, on ne chiffre pas : on devine.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">

@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'poser-pergola-aluminium-terrasse-bois-existante',
+    titre: 'Poser une pergola aluminium sur une terrasse en bois existante',
+    extrait:
+      "On ne pose jamais une pergola aluminium sur une terrasse en bois : on la pose à travers, les poteaux traversant le platelage pour aller chercher un appui dur en dessous, plot béton dédié, massif ou dalle existante, et le platelage n'est jamais chargé. Pourquoi une lambourde ne reprend pas une descente de charge, comment traverser proprement et refaire l'étanchéité du perçage, les cas de la terrasse sur plots réglables et de la terrasse sur pilotis, et ce qu'on refuse de faire : la méthode de pose d'un artisan à Libourne, en Gironde.",
+    date: '2026-09-14',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/realisations/terrasse-bois-pergola-aluminium-libourne-7.webp',
+    imageLargeur: 825,
+    imageHauteur: 1100,
+  },
+  {
     slug: 'evacuation-eaux-pluviales-pergola-carport',
     titre: "Où part l'eau de votre pergola ? L'évacuation des eaux pluviales",
     extrait:

@@ -405,8 +405,12 @@ export default function ArticleStructureTerrasseBoisPage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La lambourde, c&apos;est la pièce de bois qui reçoit les lames et transmet les charges aux appuis.
-                C&apos;est elle qui travaille. Quatre paramètres la caractérisent, et tous doivent être cohérents entre
-                eux.
+                C&apos;est elle qui travaille, et c&apos;est aussi pour cela qu&apos;elle ne peut pas encaisser n&apos;importe
+                quoi : une descente de charge ponctuelle, comme un poteau de pergola, ne se pose jamais dessus, elle{' '}
+                <a href="/blog/poser-pergola-aluminium-terrasse-bois-existante" className={lienInterne}>
+                  traverse le platelage pour aller chercher un appui dur
+                </a>
+                . Quatre paramètres caractérisent la lambourde, et tous doivent être cohérents entre eux.
               </p>
               <ul className="space-y-3 mb-5">
                 {[

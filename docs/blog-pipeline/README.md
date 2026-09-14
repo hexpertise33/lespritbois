@@ -377,6 +377,56 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 14/09/2026 : publié HORS CADENCE sur demande explicite, réserve entamée (C consommé).**
+⚠️ **Le test de cadence n'est pas passé, et c'est assumé.** `lib/data/blog.ts`
+portait une entrée du 13/09, donc la question 2 du test répondait « oui » : le run
+planifié du matin s'est arrêté sans rien publier, correctement. David a ensuite
+demandé en conversation, explicitement, de publier l'angle C dans la foulée. C'est
+la seule dérogation prévue, et elle ne se déduit jamais du contexte. Conséquence
+assumée : deux articles sur deux jours consécutifs (13/09 et 14/09), ce que la
+cadence d'un jour sur deux cherche précisément à éviter depuis l'audit du 22/08.
+**L'article porte bien la date du jour, 2026-09-14 : aucune date future.**
+
+Publié : `poser-pergola-aluminium-terrasse-bois-existante`, « Poser une pergola
+aluminium sur une terrasse en bois existante ». Commit `3f56e0b`, deploy version
+`37dd1a6d-65dc-4163-adf4-79bebbad1f33`, **200 confirmé trois fois**, cinq images
+vérifiées en 200, `datePublished` servi = `2026-09-14`, présence dans
+`/sitemap.xml` vérifiée, et les deux liens rétroactifs vérifiés présents dans le
+HTML servi. IndexNow **200**. Search Console : **« Indexation demandée » vue à
+l'écran**, propriété `https://lesprit-bois.fr/` sur `/u/1/`.
+
+**Aucune valeur chiffrée, deux sources.** Le brief interdisait toute dimension de
+platine, charge admissible, section normative, profondeur de massif et tout prix
+(renvoi vers `comparer-devis-pergola-postes-prix` pour le budget). Tenu : l'article
+reste qualitatif de bout en bout. Deux liens seulement, pris dans la liste vérifiée
+de `ligne-editoriale.md` : CSTB (règles de l'art) et FCBA (durabilité du bois de
+coupe).
+
+✅ **Iconographie : la réserve alu n'était pas si épuisée qu'annoncé le 13/09.**
+L'alerte du 13/09 visait les `source-adefrance/Pergolas-aluminium-*` (visuels
+fournisseur LI-SU filigranés, ou pergolas sur terrasse carrelée). Mais le dossier
+`realisations/` contenait encore une photo « pergola alu au-dessus d'un platelage
+bois » jamais utilisée en cover :
+`realisations/terrasse-bois-pergola-aluminium-libourne-7.webp`. Zéro banque
+d'images, zéro IA, cinq photos maison dont trois recadrages déposés sous
+`public/images/blog/<slug>/`. ⚠️ Cette cover apparaît en revanche dans le **corps**
+de `/pergolas`, `/realisations`, `lib/data/zones.ts` et de trois articles alu :
+réutilisation en corps, jamais en cover, ce qui reste conforme.
+
+ℹ️ **Le sitemap n'est PAS à compléter à la main pour un article.** Le rédacteur a
+signalé l'inverse en fin de mission : c'est faux et il ne faut pas le refaire.
+`app/sitemap.xml/route.ts` importe `articles` depuis `lib/data/blog.ts` et génère
+les entrées `/blog/<slug>` automatiquement. La liste en dur ne concerne que les
+pages statiques hors blog. Vérifié sur le build et sur le sitemap servi en prod.
+
+ℹ️ **Deux corrections de gabarit à connaître.** Le rédacteur avait remplacé
+`key={img.src}` par `key={i}` dans `DuoFigure`, parce que deux marqueurs
+`__IMAGE_A_SOURCER__` identiques provoquent une collision de clés React tant que
+les vraies images ne sont pas posées ; l'iconographe l'a bien remis en
+`key={img.src}` après sourcing. Et l'insertion de l'entrée `blog.ts` par script a
+d'abord écrit des échappements `\u00e0` littéraux, valides en TypeScript mais
+incohérents avec le reste du fichier : reconvertis en caractères accentués réels.
+
 **Run du 13/09/2026 : publié, indexation demandée, réserve entamée (B consommé).**
 Test de cadence passé : aucune entrée du 13/09 ni du 12/09 dans `lib/data/blog.ts`
 (la plus récente était le 11/09). Le 11/09 étant un sujet bois, l'alternance
@@ -554,9 +604,9 @@ Les cibles réelles sont `/constructions-bois` et
 `/constructeur-ossature-bois-gironde`. À ne plus demander.
 
 ~~**Réserve après ce run : B, C, D et E, inchangées**~~ → **B consommé le
-13/09/2026.** Restent C, D et E (pose sur terrasse bois existante, remplacement
-de véranda, délais de chantier alu), toutes aluminium : le prochain créneau
-devra intercaler un sujet bois trouvé en veille.
+13/09/2026**, ~~restent C, D et E~~ → **C consommé le 14/09/2026.** Restent
+**D et E** (remplacement de véranda, délais de chantier alu), toutes deux
+aluminium : le prochain créneau devra intercaler un sujet bois trouvé en veille.
 
 **Run du 09/09/2026 : publié, indexation demandée, réserve entamée (A consommé).**
 Test de cadence passé : aucune entrée du 09/09 ni du 08/09 dans `lib/data/blog.ts`
@@ -2092,6 +2142,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-09 | publié  | Quelle couverture choisir pour une pergola ou un carport aluminium ? | couverture-pergola-carport-toiture-materiaux |
 | 2026-09-11 | publié  | Isolation d'une ossature bois : quel isolant entre les montants ? | isolation-ossature-bois-entre-montants |
 | 2026-09-13 | publié  | Où part l'eau de votre pergola ? L'évacuation des eaux pluviales | evacuation-eaux-pluviales-pergola-carport |
+| 2026-09-14 | publié  | Poser une pergola aluminium sur une terrasse en bois existante | poser-pergola-aluminium-terrasse-bois-existante |
 
 ## Idées de sujets en réserve
 
@@ -2188,7 +2239,15 @@ mentionne l'évacuation comme **ligne de devis** ; personne n'a écrit où l'eau
 - **Étape 4 bis** : liens depuis `comparer-devis-pergola-postes-prix` et
   `carport-aluminium-ou-bois-comparatif`.
 
-### C. Poser une pergola aluminium sur une terrasse en bois existante
+### ~~C. Poser une pergola aluminium sur une terrasse en bois existante~~ ✅ PUBLIÉ le 14/09/2026
+
+> Consommé par le run du 14/09 sous le slug prévu,
+> `poser-pergola-aluminium-terrasse-bois-existante`. Statut `publié`, cet angle
+> n'est plus en réserve. ⚠️ Publié **hors cadence**, sur demande explicite de
+> David en conversation : le 13/09 portait déjà un article, le test d'un jour sur
+> deux aurait normalement bloqué le run. Compte rendu en tête de fichier.
+> **Restent D et E**, toutes deux aluminium.
+
 
 **Le seul sujet où nos deux matières se croisent physiquement**, et le cas le
 plus fréquent chez nos clients : la terrasse est déjà là, la pergola vient

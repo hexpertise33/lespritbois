@@ -121,6 +121,36 @@ export default function ContactForm({ pageLabel }: { pageLabel?: string }) {
           />
         </div>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="space-y-2">
+          <label className="font-label-md text-label-md text-primary" htmlFor="email">
+            E-mail
+          </label>
+          <input
+            id="email"
+            name="email"
+            className="w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-3 px-0 bg-transparent outline-none placeholder:text-surface-dim"
+            placeholder="jean.dupont@exemple.fr"
+            type="email"
+            autoComplete="email"
+            required
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="font-label-md text-label-md text-primary" htmlFor="commune">
+            Commune du chantier
+          </label>
+          <input
+            id="commune"
+            name="commune"
+            className="w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-3 px-0 bg-transparent outline-none placeholder:text-surface-dim"
+            placeholder="Libourne"
+            type="text"
+            autoComplete="address-level2"
+            required
+          />
+        </div>
+      </div>
       <div className="space-y-2">
         <label className="font-label-md text-label-md text-primary" htmlFor="message">
           Dites-nous en plus
@@ -129,7 +159,7 @@ export default function ContactForm({ pageLabel }: { pageLabel?: string }) {
           id="message"
           name="message"
           className="w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-3 px-0 bg-transparent outline-none placeholder:text-surface-dim resize-none"
-          placeholder="Dimensions, essence de bois souhaitée, commune…"
+          placeholder="Dimensions, essence de bois souhaitée, accès au chantier…"
           rows={4}
           required
         />

@@ -1,6 +1,11 @@
 import { Resend } from 'resend';
 import { CONTACT } from '@/lib/data/navigation';
 
+/** Resend rejette l'envoi entier si l'en-tête Reply-To est malformé. On ne le
+ *  pose donc qu'après ce contrôle : mieux vaut un lead sans adresse de réponse
+ *  qu'un lead perdu. */
+const EMAIL_PLAUSIBLE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
 export async function POST(request: Request) {
   let body: Record<string, unknown>;
   try {
@@ -9,7 +14,10 @@ export async function POST(request: Request) {
     return Response.json({ error: 'Corps de requête JSON invalide.' }, { status: 400 });
   }
 
-  const { nom, tel, message, projet, budget, source } = body as Record<string, string | undefined>;
+  const { nom, tel, email, commune, message, projet, budget, source } = body as Record<
+    string,
+    string | undefined
+  >;
 
   if (!nom?.trim() || !tel?.trim() || !message?.trim()) {
     return Response.json(
@@ -27,6 +35,12 @@ export async function POST(request: Request) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
+  const libelleProjet = projet ?? 'Projet non précisé';
+  const objet = commune?.trim()
+    ? `Nouvelle demande de devis : ${libelleProjet}, ${commune.trim()}`
+    : `Nouvelle demande de devis : ${libelleProjet}`;
+  const repondreA = email?.trim();
+
   try {
     const { error } = await resend.emails.send({
       // Domaine lesprit-bois.fr vérifié sur Resend (DKIM/SPF/DMARC) : envoi depuis
@@ -34,12 +48,15 @@ export async function POST(request: Request) {
       // destinataire (dont lespritbois33@gmail.com défini dans CONTACT.email).
       from: "L'Esprit Bois <contact@lesprit-bois.fr>",
       to: CONTACT.email,
-      subject: `Nouvelle demande de devis : ${projet ?? 'Projet non précisé'}`,
+      ...(repondreA && EMAIL_PLAUSIBLE.test(repondreA) ? { replyTo: repondreA } : {}),
+      subject: objet,
       text: [
         `Projet : ${projet ?? 'Non précisé'}`,
         `Budget estimé : ${budget ?? 'Non précisé'}`,
+        `Commune : ${commune?.trim() || 'Non précisée'}`,
         `Nom : ${nom}`,
         `Téléphone : ${tel}`,
+        `E-mail : ${repondreA || 'Non précisé'}`,
         '',
         'Message :',
         message,
@@ -49,8 +66,10 @@ export async function POST(request: Request) {
         '',
         `        <p><strong>Projet :</strong> ${projet ?? 'Non précisé'}</p>`,
         `        <p><strong>Budget estimé :</strong> ${budget ?? 'Non précisé'}</p>`,
+        `        <p><strong>Commune :</strong> ${commune?.trim() || 'Non précisée'}</p>`,
         `        <p><strong>Nom :</strong> ${nom}</p>`,
         `        <p><strong>Téléphone :</strong> ${tel}</p>`,
+        `        <p><strong>E-mail :</strong> ${repondreA || 'Non précisé'}</p>`,
         `        <p><strong>Message :</strong><br/>${message.replace(/\n/g, '<br/>')}</p>`,
         ...(source ? [`        <p><strong>Origine :</strong> ${source}</p>`] : []),
         '      ',

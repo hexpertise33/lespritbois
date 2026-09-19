@@ -119,6 +119,36 @@ export default function DevisForm({
           />
         </div>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-2">
+          <label className="font-label-md text-label-md text-primary" htmlFor={`email-${instanceId}`}>
+            E-mail
+          </label>
+          <input
+            id={`email-${instanceId}`}
+            name="email"
+            className="w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-3 px-0 bg-transparent outline-none placeholder:text-surface-dim"
+            placeholder="jean.dupont@exemple.fr"
+            type="email"
+            autoComplete="email"
+            required
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="font-label-md text-label-md text-primary" htmlFor={`commune-${instanceId}`}>
+            Commune du chantier
+          </label>
+          <input
+            id={`commune-${instanceId}`}
+            name="commune"
+            className="w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-3 px-0 bg-transparent outline-none placeholder:text-surface-dim"
+            placeholder="Libourne"
+            type="text"
+            autoComplete="address-level2"
+            required
+          />
+        </div>
+      </div>
       <div className="space-y-2">
         <label className="font-label-md text-label-md text-primary" htmlFor={`budget-${instanceId}`}>
           Budget estimé
@@ -143,7 +173,7 @@ export default function DevisForm({
           id={`message-${instanceId}`}
           name="message"
           className="w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-3 px-0 bg-transparent outline-none placeholder:text-surface-dim resize-none"
-          placeholder="Dimensions, essence de bois souhaitée, commune…"
+          placeholder="Dimensions, essence de bois souhaitée, accès au chantier…"
           rows={3}
           required
         />

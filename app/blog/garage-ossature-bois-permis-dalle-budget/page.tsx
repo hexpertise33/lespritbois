@@ -509,8 +509,11 @@ export default function ArticleGarageOssatureBoisPage() {
                 <strong className="text-primary font-semibold">
                   ces valeurs dépendent du sol et de sa portance, et ne se décident pas depuis un article
                 </strong>. Entre les terrains argileux du Libournais, sujets au retrait-gonflement, et un sol graveleux stable, le
-                dimensionnement n&apos;a rien à voir. C&apos;est l&apos;étude de sol, ou à défaut une reconnaissance
-                sérieuse du terrain, qui fixe la structure de la dalle. Ce qui est en revanche systématique :
+                dimensionnement n&apos;a rien à voir. C&apos;est{' '}
+                <a href="/blog/sol-argileux-gironde-etude-de-sol-extension" className={lienInterne}>
+                  l&apos;étude de sol, obligatoire en zone d&apos;argile moyenne ou forte
+                </a>
+                , ou à défaut une reconnaissance sérieuse du terrain, qui fixe la structure de la dalle. Ce qui est en revanche systématique :
               </p>
               <ul className="space-y-3 mb-5">
                 {[

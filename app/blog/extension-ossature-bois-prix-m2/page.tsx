@@ -352,8 +352,11 @@ export default function ArticleExtensionOssatureBoisPage() {
                 haut de gamme. C&apos;est le prix d&apos;un vrai agrandissement, isolé et fini, prêt à vivre.
               </strong>{' '}
               Mais le prix au m² ne dit pas tout, et il n&apos;explique pas pourquoi, sur nos chantiers en Gironde,
-              l&apos;ossature bois s&apos;impose de plus en plus pour agrandir plutôt que déménager : sa légèreté allège
-              les fondations sur nos sols argileux, son chantier est court et propre, son isolation est remarquable et
+              l&apos;ossature bois s&apos;impose de plus en plus pour agrandir plutôt que déménager : sa légèreté allège{' '}
+              <a href="/blog/sol-argileux-gironde-etude-de-sol-extension" className={lienInterne}>
+                les fondations que l&apos;argile impose en Gironde
+              </a>
+              , son chantier est court et propre, son isolation est remarquable et
               son bilan carbone joue en votre faveur avec la RE2020. Voici comment décider, chiffres et délais réels à
               l&apos;appui.
             </p>

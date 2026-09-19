@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'sol-argileux-gironde-etude-de-sol-extension',
+    titre:
+      "Sol argileux en Gironde : l'étude de sol avant de construire une extension",
+    extrait:
+      "En Gironde, ce qui décide d'une extension n'est pas le plan mais le sol : en zone d'exposition moyenne ou forte au retrait-gonflement des argiles, l'étude géotechnique de conception est exigée avant de conclure le contrat, et l'extension n'y échappe qu'à deux conditions réunies, moins de 20 m² et désolidarisée de la maison existante. Ce que l'argile fait vraiment au bâti, comment vérifier son adresse plutôt que sa commune, ce que change l'arrêté applicable depuis le 1er juillet 2026, pourquoi l'ossature bois allège les solutions sans jamais dispenser de l'étude, et ce qu'on écrit au devis : le guide d'un constructeur à ossature bois à Libourne, en Gironde.",
+    date: '2026-09-19',
+    categorie: 'Guide · Ossature bois',
+    image:
+      '/images/blog/sol-argileux-gironde-etude-de-sol-extension/extension-ossature-bois-accolee-maison-pierre-gironde.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'poser-pergola-aluminium-terrasse-bois-existante',
     titre: 'Poser une pergola aluminium sur une terrasse en bois existante',
     extrait:

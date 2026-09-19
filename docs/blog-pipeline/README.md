@@ -377,6 +377,115 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 19/09/2026 : publié, indexation demandée, réserve alu intacte (D et E).**
+Test de cadence passé : aucune entrée du 19/09 ni du 18/09 dans `lib/data/blog.ts`,
+la plus récente étant le 14/09. Cinq jours sans article, la routine s'est
+rattrapée toute seule comme prévu.
+
+**Pourquoi un sujet bois, réserve non servie.** Les 13/09 et 14/09 étaient tous
+deux aluminium, et la réserve ne contient plus que des angles alu (D et E).
+L'alternance appelait le bois : veille courte, réserve **laissée intacte**, même
+décision qu'au run du 11/09. D et E restent disponibles pour les prochains
+créneaux alu.
+
+Publié : `sol-argileux-gironde-etude-de-sol-extension`, « Sol argileux en
+Gironde : l'étude de sol avant de construire ». Commit `041ba3d`, deploy version
+`48d442f6-645d-4b13-aad5-b733c1ae0d09`, **200 confirmé trois fois**, cinq images
+vérifiées en 200, `datePublished` servi = `2026-09-19`, présence dans
+`/sitemap.xml` vérifiée, et les deux liens rétroactifs vérifiés présents dans le
+HTML servi.
+
+**Le trou était franc, et mesuré avant d'écrire.** Sur les 43 articles en ligne,
+« géotechnique » n'apparaissait **nulle part**, « étude de sol » dans deux
+fichiers seulement, et « retrait-gonflement » dans quatre, toujours en mention
+d'une ligne (« l'argile du Libournais commande les fondations ») jamais
+développée. C'est pourtant la première question structurelle en Gironde, et le
+sujet sert `/constructions-bois` et `/constructeur-ossature-bois-gironde`.
+
+**Base réglementaire vérifiée sur sources primaires, réutilisable telle quelle.**
+⚠️ Piège évité : les articles **R112-5 à R112-10 du CCH, que renvoient encore
+beaucoup de blogs et de résultats de recherche, ont été abrogés** par le décret
+n° 2021-872 du 30 juin 2021 (recodification). La numérotation en vigueur est
+**R132-3 à R132-8**, section « Prévention des risques liés aux sols argileux ».
+Ne jamais citer la numérotation en R112.
+
+- **R132-3** : quatre catégories d'exposition (forte, moyenne, faible,
+  résiduelle) ; **seules « moyenne » et « forte »** déclenchent les obligations.
+- **R132-4** : contenu de l'étude géotechnique **préalable** (celle du vendeur
+  d'un terrain non bâti constructible, dite G1).
+- **R132-5** : **étude géotechnique de conception** (dite G2), qui fixe les
+  prescriptions constructives adaptées au sol et au projet.
+- **R132-6**, cité entre guillemets dans l'article : « La durée de validité de
+  l'étude géotechnique préalable [...] est de trente ans si aucun remaniement du
+  sol n'a été effectué. »
+- ⭐ **R132-7**, le cœur de l'article : les extensions échappent aux obligations
+  « sous réserve que la superficie du projet soit inférieure à 20 m2 **et** que
+  la nouvelle construction soit désolidarisée du bâtiment existant ». **Les deux
+  conditions sont cumulatives** : une extension accolée n'est jamais exclue, même
+  petite. À ne pas confondre avec les 20 m² de l'urbanisme, qui sont un tout
+  autre seuil ; l'article le dit explicitement et lie vers
+  `autorisation-urbanisme-abri-carport-pergola-2026`.
+- **R132-8** : techniques particulières de construction, à défaut d'étude.
+- **Arrêté du 9 janvier 2026** : met à jour la carte des zones exposées,
+  applicable aux promesses de vente et contrats de construction **conclus à
+  compter du 1er juillet 2026**, donc déjà en vigueur. C'est l'élément
+  d'actualité. Confirmé par le Cerema. Amont : loi ELAN art. 68, décret
+  n° 2019-495 du 22 mai 2019, arrêté du 22 juillet 2020.
+
+Trois liens externes, un par ressource :
+[ecologie.gouv.fr](https://www.ecologie.gouv.fr/politiques-publiques/retrait-gonflement-argiles-construction),
+[Légifrance, section R132-3 à R132-8](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000043818703/2021-07-01),
+[Géorisques](https://www.georisques.gouv.fr/).
+
+🚫 **Aucun pourcentage, aucun chiffre girondin.** Les « 55 % du territoire »,
+« 61,5 % des maisons individuelles » et « 4 000 communes reclassées » circulent
+partout mais **la page du Cerema n'en donne aucun** : écartés. Même chose pour la
+part exposée de la Gironde et le nombre de communes en catastrophe naturelle,
+qui ne viennent que de blogs commerciaux. L'article traite l'ampleur
+qualitativement et **renvoie le lecteur à la vérification de sa propre adresse
+sur Géorisques**, seule réponse honnête. Aucune profondeur de fondation, aucune
+section, aucune distance aux arbres, aucun prix (budget renvoyé vers
+`extension-ossature-bois-prix-m2`).
+
+**Posture tenue : l'étude de sol n'est pas notre métier.** C'est un bureau
+d'études géotechnique, tiers indépendant, qui la réalise et qui tranche ; nous
+construisons avec ses prescriptions. Même posture que l'article surélévation.
+Aucun type de fondation n'est promis avant étude : la section 6 présente
+l'éventail comme des réponses que l'étude choisit.
+
+✅ **Iconographie : cinq photos maison, zéro banque d'images, zéro IA.** Le fonds
+`chantiers/` a fourni de quoi illustrer entièrement un sujet ossature bois, rien
+n'a été pris dans `source-adefrance/` (dossier hétérogène). La COVER est un
+**recadrage inédit** (1200 × 646) de
+`chantiers/extension-ossature-bois-bardage-douglas-maison-pierre-gironde.webp`,
+déposé sous le dossier du slug : l'original correspondait exactement au cadrage
+voulu mais était **déjà servi six fois** dans le corps d'autres pages, le score
+le plus haut du fonds. Contrôle anti-doublon étendu du 11/09 appliqué. Aucune
+commune n'est citée dans les légendes, seulement « en Gironde », faute de
+confirmation sur ces lots.
+
+ℹ️ **Deux légendes réécrites** par l'iconographe : elles décrivaient des
+dispositifs invisibles sur la photo. Et le cadrage « murs en atelier ou au
+levage » n'existe pas dans le fonds, remplacé par le volume accolé fermé sous
+pare-pluie. C'est la leçon du 13/09, à nouveau vérifiée : **demander des cadrages,
+pas des dispositifs précis.**
+
+⚠️ **Écart de brief à noter** : le brief annonçait 6 emplacements image, le
+rédacteur n'en avait posé que 5 (1 COVER + 4 figures). Les 5 sont résolus, aucun
+marqueur ne subsiste, mais le compte annoncé au sous-agent suivant doit être
+relu plutôt que recopié du brief.
+
+**Étape 8 bis, les deux gestes ont abouti.** IndexNow : **200**. Search Console :
+**« Indexation demandée » vue à l'écran**, avec le message « Cette URL a été
+ajoutée à une file d'attente d'exploration prioritaire ». Mode d'emploi inchangé
+et toujours valable : `/u/1/` + `resource_id=https%3A%2F%2Flesprit-bois.fr%2F`,
+clic dans le champ d'inspection **à x ≈ 460, y ≈ 20 dans un cadre 1568 × 676**,
+saisie, Entrée, une vingtaine de secondes d'inspection, puis « DEMANDER UNE
+INDEXATION » **à x ≈ 1090, y ≈ 234**, et une trentaine de secondes avant la
+confirmation. L'inspection a renvoyé « Cette URL n'a pas été indexée par
+Google », « Aucun sitemap référent détecté », « Aucune page d'origine
+détectée » : comportement normal d'une page d'une heure.
+
 **Run du 14/09/2026 : publié HORS CADENCE sur demande explicite, réserve entamée (C consommé).**
 ⚠️ **Le test de cadence n'est pas passé, et c'est assumé.** `lib/data/blog.ts`
 portait une entrée du 13/09, donc la question 2 du test répondait « oui » : le run
@@ -2143,6 +2252,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-11 | publié  | Isolation d'une ossature bois : quel isolant entre les montants ? | isolation-ossature-bois-entre-montants |
 | 2026-09-13 | publié  | Où part l'eau de votre pergola ? L'évacuation des eaux pluviales | evacuation-eaux-pluviales-pergola-carport |
 | 2026-09-14 | publié  | Poser une pergola aluminium sur une terrasse en bois existante | poser-pergola-aluminium-terrasse-bois-existante |
+| 2026-09-19 | publié  | Sol argileux en Gironde : l'étude de sol avant de construire une extension | sol-argileux-gironde-etude-de-sol-extension |
 
 ## Idées de sujets en réserve
 

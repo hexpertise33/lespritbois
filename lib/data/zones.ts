@@ -170,7 +170,7 @@ export const ZONES: Zone[] = [
       'pergola Entre-deux-Mers, carport Entre-deux-Mers, terrasse bois Entre-deux-Mers, pergola Créon, carport Rauzan, terrasse Moulon, artisan bois Entre-deux-Mers',
     h1: 'Pergolas, carports et terrasses en Entre-deux-Mers',
     chapo:
-      "Cinq de nos douze chantiers documentés sont en Entre-deux-Mers. C'est le secteur où nous posons le plus, et celui dont les terrains nous ont le plus appris.",
+      "Cinq de nos treize chantiers documentés sont en Entre-deux-Mers. C'est le secteur où nous posons le plus, et celui dont les terrains nous ont le plus appris.",
     /* Couverture changée le 24/08/2026. La précédente était une photo en
        portrait (825 × 1100) : dans un bandeau large, `object-cover` n'en gardait
        qu'une bande centrale, la façade, et le voile du héros achevait de la

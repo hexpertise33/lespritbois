@@ -17,14 +17,14 @@ const PROJET = 'Projet vu depuis les réalisations';
 const PAGE_LABEL = '/realisations';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nos réalisations en Gironde : douze chantiers racontés",
+  title: "Nos réalisations en Gironde : treize chantiers racontés",
   description:
-    'Carport à Capian, extension à Clérac, maison ossature bois à Rauzan, terrasse à Lacanau : douze chantiers avec leur contrainte, leurs matériaux et leur durée.',
+    'Carport à Capian, extension à Clérac, maison ossature bois à Rauzan, terrasse à Lacanau : treize chantiers avec leur contrainte, leurs matériaux et leur durée.',
   keywords:
     "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan",
   path: '/realisations',
   ogImage: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
-  ogTitle: 'Nos chantiers, racontés : douze communes autour de Libourne',
+  ogTitle: 'Nos chantiers, racontés : treize communes autour de Libourne',
   ville: 'Libourne',
 });
 
@@ -81,6 +81,56 @@ const CARPORTS_COURTS = [
 /** Galerie. Chaque vignette est un ouvrage réalisé par l'entreprise ou une pièce
  *  exposée sur son dépôt, les visuels fournisseur en ont été retirés. */
 const GALERIE: Vignette[] = [
+  {
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-1.webp',
+    w: 736,
+    h: 982,
+    cat: 'constructions',
+    categorie: 'Constructions bois',
+    titre: 'Pignon terminé en douglas',
+    lieu: 'Saint-Martin-du-Bois',
+    alt: "Bâtiment de jardin en ossature bois vu de pignon, bardage douglas vertical et frise découpée sous la toiture en tuiles, à Saint-Martin-du-Bois",
+  },
+  {
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-2.webp',
+    w: 1360,
+    h: 1020,
+    cat: 'constructions',
+    categorie: 'Constructions bois',
+    titre: 'Bardage douglas vertical',
+    lieu: 'Saint-Martin-du-Bois',
+    alt: "Bardage douglas vertical posé sur un bâtiment de jardin en ossature bois, débords de toit et ouvertures en attente de menuiseries, à Saint-Martin-du-Bois",
+  },
+  {
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-3.webp',
+    w: 736,
+    h: 982,
+    cat: 'constructions',
+    categorie: 'Constructions bois',
+    titre: 'Faîtage et closoir ventilé',
+    lieu: 'Saint-Martin-du-Bois',
+    alt: "Pose des tuiles de faîtage sur une couverture en terre cuite, closoir ventilé en place, chantier à Saint-Martin-du-Bois",
+  },
+  {
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-4.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'constructions',
+    categorie: 'Constructions bois',
+    titre: 'Charpente apparente',
+    lieu: 'Saint-Martin-du-Bois',
+    alt: "Intérieur d'un bâtiment de jardin en ossature bois, solives et volige apparentes, murs habillés de leur membrane, à Saint-Martin-du-Bois",
+  },
+  {
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-5.webp',
+    w: 982,
+    h: 736,
+    cat: 'constructions',
+    categorie: 'Constructions bois',
+    titre: 'Pare-pluie et contre-lattage',
+    lieu: 'Saint-Martin-du-Bois',
+    alt: "Ossature bois habillée de son pare-pluie et de ses tasseaux de contre-lattage, chevrons débordants en attente de couverture, à Saint-Martin-du-Bois",
+  },
   {
     src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
     w: 1600,
@@ -385,7 +435,7 @@ export default function RealisationsPage() {
               Nos réalisations à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Douze chantiers racontés
+              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Treize chantiers racontés
               avec leur commune, leur contrainte et leur durée.
             </p>
           </div>
@@ -432,7 +482,7 @@ export default function RealisationsPage() {
                 Ce que nous avons bâti
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Douze chantiers, douze contraintes différentes
+                Treize chantiers, treize contraintes différentes
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Un carport pour trois voitures sur un terrain en pente à{' '}

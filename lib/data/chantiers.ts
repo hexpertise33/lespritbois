@@ -23,6 +23,27 @@ export type Chantier = {
 
 export const CHANTIERS: Chantier[] = [
   {
+    id: 'saint-martin-du-bois',
+    commune: 'Saint-Martin-du-Bois',
+    categorie: 'Construction bois',
+    titre: "Un bâtiment de jardin mené de l'ossature aux tuiles",
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-1.webp',
+    w: 736,
+    h: 982,
+    alt: "Bâtiment de jardin en ossature bois vu de pignon, bardage douglas vertical et couverture en tuiles de terre cuite, à Saint-Martin-du-Bois",
+    faits: [
+      { label: 'Ouvrage', valeur: 'Bâtiment de jardin en ossature bois' },
+      { label: 'Structure', valeur: 'Ossature bois sur dalle béton, charpente apparente' },
+      { label: 'Enveloppe', valeur: "Pare-pluie, lame d'air ventilée, bardage douglas vertical" },
+      { label: 'Couverture', valeur: 'Tuiles de terre cuite, closoir ventilé en faîtage' },
+    ],
+    paragraphes: [
+      "Le chantier part d'une dalle béton et d'une ossature bois montée sur place. Les montants sont habillés d'un pare-pluie, puis de tasseaux verticaux qui ménagent la lame d'air. C'est elle qui laisse le bardage sécher par l'arrière, et sans elle un bardage bois pose des problèmes au bout de quelques hivers.",
+      "La charpente est laissée apparente à l'intérieur, solives et volige visibles depuis le sol. Ce choix ne se rattrape pas après coup : il impose de soigner les coupes et les assemblages au moment du montage, puisque rien ne sera caché par un plafond.",
+      "Dehors, le bardage est en douglas posé à la verticale, avec une frise découpée en partie haute du pignon. La couverture est en tuiles de terre cuite de teinte vieillie, avec un closoir ventilé sous les tuiles de faîtage pour laisser la sous-toiture respirer. Les chevrons débordent largement : ce débord protège le bardage de la pluie, et c'est la première chose qui allonge la vie d'une façade en bois.",
+    ],
+  },
+  {
     id: 'saint-pey-de-castets',
     commune: 'Saint-Pey-de-Castets',
     categorie: 'Pergola',

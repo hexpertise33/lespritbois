@@ -377,6 +377,42 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 24/09/2026 : publié, indexation demandée, angle D consommé (reste E).**
+Test de cadence passé : aucune entrée du 24/09 ni du 23/09, la plus récente
+étant le 19/09. Alternance respectée (19/09 bois → 24/09 alu). Publié :
+`remplacer-veranda-ancienne-aluminium-renovation`, « Remplacer une vieille
+véranda par de l'aluminium en Gironde » (title). Commit `b9d60e7`, version
+Cloudflare `94cccc99-393a-42d6-b9c8-e5a360fc0c3c`, **200 confirmé trois fois**,
+six images en 200, `datePublished` servi = `2026-09-24`, présent dans le
+sitemap, deux liens rétroactifs vérifiés dans le HTML servi (depuis
+`veranda-aluminium-isolation-urbanisme-budget`, passage sur la condensation des
+anciennes vérandas, et `renover-terrasse-bois-existante`, passage « à
+l'identique » des formalités). IndexNow **200**. Search Console : **« Indexation
+demandée » vue à l'écran** (même mode d'emploi, `/u/1/`, clic champ en haut).
+
+**Sources vérifiées, réutilisables** : repérage amiante avant travaux (RAT)
+obligatoire depuis le 19/07/2019 pour le donneur d'ordre, **particulier compris**
+(arrêté du 16 juillet 2019, art. R4412-97 code du travail, décret n° 2017-899),
+norme NF X 46-020, sanction jusqu'à 9 000 € ; formulé « maison construite avant
+1997 ». Réfection à l'identique vs modification de l'aspect extérieur → DP
+(R*421-17, fiche F17578). Aucun prix, Uw, garantie ni DTU.
+
+**Images** : 3 recadrages inédits du chantier pergola alu de
+Saint-Pey-de-Castets (originaux `contenu-source/pergola photo/WhatsApp…`,
+même jardin que `realisations/*`), 3 photos Pexels (cover 7061662, 35600234,
+20280067). L'entreprise n'a **aucune photo de véranda** : les figures maison sont
+légendées « pergola ». À combler si un chantier véranda est photographié.
+
+⚠️ **Incident de deploy (~5 min de 500 en prod, résolu).** Un commit local non
+poussé du 20/09 (`7c19465`, réalisation Saint-Martin-du-Bois) traînait sur
+`main` ; pour ne pas le publier à la place de David, le deploy a été fait depuis
+un worktree à `origin/main` + l'article. Premier `npm run deploy` avec
+`node_modules` **symlinké** vers le dépôt : bundle cassé, 500 stable y compris
+sur workers.dev. Rollback sur `48d442f6`, puis `npm ci` réel dans le worktree,
+`opennextjs-cloudflare upload`, preview testée 3 × 200, promotion. **Ne jamais
+symlinker node_modules pour un build OpenNext.** `7c19465` reste **non poussé et
+non déployé** : à David de décider.
+
 **Run du 19/09/2026 : publié, indexation demandée, réserve alu intacte (D et E).**
 Test de cadence passé : aucune entrée du 19/09 ni du 18/09 dans `lib/data/blog.ts`,
 la plus récente étant le 14/09. Cinq jours sans article, la routine s'est
@@ -2253,6 +2289,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-13 | publié  | Où part l'eau de votre pergola ? L'évacuation des eaux pluviales | evacuation-eaux-pluviales-pergola-carport |
 | 2026-09-14 | publié  | Poser une pergola aluminium sur une terrasse en bois existante | poser-pergola-aluminium-terrasse-bois-existante |
 | 2026-09-19 | publié  | Sol argileux en Gironde : l'étude de sol avant de construire une extension | sol-argileux-gironde-etude-de-sol-extension |
+| 2026-09-24 | publié  | Remplacer une véranda ancienne par de l'aluminium : ce qu'on garde, ce qui part | remplacer-veranda-ancienne-aluminium-renovation |
 
 ## Idées de sujets en réserve
 
@@ -2384,7 +2421,12 @@ construit la terrasse, il ne pose rien dessus.
 - **Étape 4 bis** : liens depuis `terrasse-bois-structure-plots-lambourdes` et
   `comparer-devis-pergola-postes-prix`.
 
-### D. Remplacer une véranda ou une pergola vieillissante par de l'aluminium
+### ~~D. Remplacer une véranda ou une pergola vieillissante par de l'aluminium~~ ✅ PUBLIÉ le 24/09/2026
+
+> Consommé par le run du 24/09 sous le slug prévu,
+> `remplacer-veranda-ancienne-aluminium-renovation`. Statut `publié`, cet angle
+> n'est plus en réserve. Compte rendu en tête de fichier. **Reste E** (délai
+> d'un chantier alu). Le prochain créneau devrait être bois (24/09 alu).
 
 **Pendant alu de `renover-terrasse-bois-existante`**, qui n'a pas d'équivalent
 côté aluminium. Marché réel : les vérandas posées dans les années 1990 arrivent

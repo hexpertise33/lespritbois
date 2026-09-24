@@ -17,6 +17,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'remplacer-veranda-ancienne-aluminium-renovation',
+    titre:
+      "Remplacer une véranda ancienne par de l'aluminium : ce qu'on garde, ce qui part",
+    extrait:
+      "Remplacer une véranda, ce n'est pas reconstruire à zéro : la valeur d'une rénovation se joue sur ce qu'on garde, la dalle et le muret d'allège survivant souvent à condition de les faire vérifier, la structure, la toiture et l'étanchéité presque jamais. Les signes de fin de vie, la dépose et le repérage amiante obligatoire avant travaux sur une maison d'avant 1997, le raccord à la façade, la reprise sur une dalle qu'on n'a pas coulée, la frontière entre réfection à l'identique et déclaration préalable, le budget face à un ouvrage neuf et le cas de la vieille pergola : le guide d'un artisan à Libourne, en Gironde.",
+    date: '2026-09-24',
+    categorie: 'Guide · Vérandas aluminium',
+    image:
+      '/images/blog/remplacer-veranda-ancienne-aluminium-renovation/veranda-vitree-adossee-maison-jardin.webp',
+    imageLargeur: 1200,
+    imageHauteur: 800,
+  },
+  {
     slug: 'sol-argileux-gironde-etude-de-sol-extension',
     titre:
       "Sol argileux en Gironde : l'étude de sol avant de construire une extension",

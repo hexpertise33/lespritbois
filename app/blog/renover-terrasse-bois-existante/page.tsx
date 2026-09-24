@@ -596,7 +596,11 @@ export default function ArticleRenoverTerrasseBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Côté formalités : remettre en état une terrasse existante à l&apos;identique relève de l&apos;entretien
-                et n&apos;appelle en principe aucune démarche. C&apos;est la{' '}
+                et n&apos;appelle en principe aucune démarche, la même frontière que l&apos;on retrouve quand on veut{' '}
+                <a href="/blog/remplacer-veranda-ancienne-aluminium-renovation" className={lienInterne}>
+                  remplacer une véranda ancienne par de l&apos;aluminium
+                </a>
+                . C&apos;est la{' '}
                 <em>modification</em> de l&apos;ouvrage, agrandissement de l&apos;emprise, surélévation, ajout
                 d&apos;une couverture, qui peut déclencher une{' '}
                 <a

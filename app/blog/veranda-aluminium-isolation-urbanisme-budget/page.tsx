@@ -499,7 +499,11 @@ export default function ArticleVerandaAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 L&apos;aluminium a un défaut connu : c&apos;est un excellent conducteur. Brut, un profilé transmet
                 intégralement le froid extérieur vers l&apos;intérieur, d&apos;où les ruissellements de condensation
-                des anciennes vérandas et cette sensation de paroi glacée en janvier. La réponse technique est la{' '}
+                des anciennes vérandas (l&apos;un des signes qui poussent à{' '}
+                <a href="/blog/remplacer-veranda-ancienne-aluminium-renovation" className={lienInterne}>
+                  remplacer une véranda ancienne par de l&apos;aluminium
+                </a>
+                ) et cette sensation de paroi glacée en janvier. La réponse technique est la{' '}
                 <strong className="text-primary font-semibold">rupture de pont thermique</strong> : le profilé est
                 composé de deux parties, l&apos;une extérieure et l&apos;autre intérieure, reliées par des{' '}
                 <strong className="text-primary font-semibold">barrettes en polyamide</strong> qui interrompent le

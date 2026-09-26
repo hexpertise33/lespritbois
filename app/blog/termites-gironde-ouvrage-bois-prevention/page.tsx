@@ -705,7 +705,11 @@ export default function ArticleTermitesGirondePage() {
                 <a href="/constructions-bois" className={lienInterne}>
                   constructions bois
                 </a>{' '}
-                aux petits ouvrages de jardin. Vous pouvez en voir la traduction concrète dans{' '}
+                aux petits ouvrages de jardin, et ils recoupent presque point par point{' '}
+                <a href="/blog/ossature-bois-risque-incendie-gironde" className={lienInterne}>
+                  ce qui protège une ossature bois face au feu de forêt en Gironde
+                </a>
+                , où une façade dégagée et une lame d&apos;air propre comptent tout autant. Vous pouvez en voir la traduction concrète dans{' '}
                 <a href="/realisations" className={lienInterne}>
                   nos réalisations en Gironde
                 </a>{' '}

@@ -614,7 +614,13 @@ export default function ArticleAbriBuchesPage() {
                 Ensuite, le mur bloque une face entière de la pile : le séchage se fait sur trois côtés au lieu de
                 quatre, et l&apos;humidité relâchée par le bois se plaque contre l&apos;enduit, qu&apos;elle finit par
                 marquer. Enfin, un tas serré contre une façade est un abri idéal pour tout ce qui rampe et grignote, et
-                que vous n&apos;avez aucune envie de voir passer sous la porte.
+                que vous n&apos;avez aucune envie de voir passer sous la porte. Et en lisière de pins, c&apos;est une
+                réserve de combustible plaquée contre le mur, l&apos;un des premiers détails que nous regardons quand
+                nous étudions{' '}
+                <a href="/blog/ossature-bois-risque-incendie-gironde" className={lienInterne}>
+                  ce qui protège une maison en ossature bois du risque incendie en Gironde
+                </a>
+                .
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Ce que nous cherchons quand nous implantons un abri à bûches sur un terrain :

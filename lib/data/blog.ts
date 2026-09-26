@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'ossature-bois-risque-incendie-gironde',
+    titre:
+      'Une maison en ossature bois brûle-t-elle plus vite ? Ce que le risque incendie change en Gironde',
+    extrait:
+      "Le bois est combustible, mais une maison à ossature bois bien conçue ne se comporte pas moins bien au feu qu'une autre construction : ce qui la protège, c'est la paroi, avec ses parements, son isolant et ses recoupements, et non le matériau de structure pris seul. En Gironde, le vrai sujet est le feu de forêt venu de l'extérieur : combustion lente et couche carbonisée, réaction et résistance au feu, obligations légales de débroussaillement sur 50 m, détails de façade en lisière de pins, PPRIF et assurance, le guide d'un constructeur à ossature bois à Libourne, en Gironde.",
+    date: '2026-09-26',
+    categorie: 'Guide · Ossature bois',
+    image: '/images/source-adefrance/IMG-20240712-WA0032.webp',
+    imageLargeur: 1600,
+    imageHauteur: 1200,
+  },
+  {
     slug: 'remplacer-veranda-ancienne-aluminium-renovation',
     titre:
       "Remplacer une véranda ancienne par de l'aluminium : ce qu'on garde, ce qui part",

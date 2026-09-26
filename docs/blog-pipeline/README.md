@@ -377,6 +377,50 @@ règle « Bassin d'Arcachon : zone ouverte sans chantier livré » vaut aussi po
 l'iconographie. Vérifier que la COVER retenue n'est pas déjà la cover d'un autre
 article alu.
 
+**Run du 26/09/2026 : publié, indexation demandée, réserve alu intacte (reste E).**
+Test de cadence passé : aucune entrée du 26/09 ni du 25/09, la plus récente
+étant le 24/09 (alu). L'alternance appelait le bois : veille courte, **angle E
+laissé en réserve** pour le prochain créneau alu (il reste le seul angle en
+réserve).
+
+Publié : `ossature-bois-risque-incendie-gironde`, « Ossature bois et incendie en
+Gironde : ce qui protège vraiment » (title). Trou mesuré avant d'écrire :
+« incendie » et « feux » n'apparaissaient dans **aucun** des 46 articles.
+Commit `8c9bdf7`, version Cloudflare `8a44f643-03c9-4795-a72a-a0f4ff53b0be`,
+**200 confirmé trois fois** (article, deux articles maillés, accueil, /blog),
+six images en 200, `datePublished` servi = `2026-09-26`, présent dans le sitemap,
+les deux liens rétroactifs vérifiés dans le HTML servi : depuis
+`abri-buches-bois-stockage-sechage` (le tas de bûches contre la façade, réserve
+de combustible en lisière de pins) et `termites-gironde-ouvrage-bois-prevention`
+(dernier paragraphe, principes de conception). IndexNow **200**. Search Console :
+**« Indexation demandée » vue à l'écran** (même mode d'emploi, `/u/1/`, clic
+champ en haut aux coordonnées).
+
+**Sources vérifiées, réutilisables** (gironde.gouv.fr, page OLD) : OLD dans les
+bois, forêts et landes de plus de 0,5 ha et une bande de 200 m autour ; 50 m
+autour des constructions et 6 m de part et d'autre des voies privées ; en zone U,
+tout le terrain ; le propriétaire de la construction débroussaille même chez le
+voisin (accord valable 3 ans) ; arbres à moins de 3 m des constructions coupés,
+aucune branche à moins de 2,5 m du sol ; **arrêté préfectoral du 17/10/2025** ;
+contravention jusqu'à 1 500 €, franchise d'assurance majorée jusqu'à 5 000 €.
+Côté feu : bois massif D-s2,d0 par défaut (sous conditions d'épaisseur et de
+densité), vitesse de carbonisation écrite « moins d'un millimètre par minute »,
+sans valeur précise. PPRIF cité prudemment, sans commune.
+
+**Images** : cover = chantier maison `source-adefrance/IMG-20240712-WA0032.webp`
+(extension bardée, baie coulissante noire ; reflet du photographe dans la vitre,
+à remplacer si une meilleure photo arrive), figures maison déjà vues ailleurs
+(isolant fibre, pare-pluie et tasseaux, extension douglas), deux Pexels
+(29510796 bois carbonisé, 18508968 maison sous les pins, non géolocalisée).
+Aucune photo ne montre une grille de pied de bardage : la légende décrit la lame
+d'air ouverte sans prétendre montrer la grille. **Aucun chantier maison n'est
+présenté comme en lisière de forêt.**
+
+ℹ️ Deploy fait depuis un worktree à `origin/main` (avec `npm ci` réel, pas de
+symlink), parce que le commit local `65dce83` (réalisation Saint-Martin-du-Bois,
+ex-`7c19465`) est **toujours non poussé** : il n'est ni publié ni déployé, c'est
+à David de décider.
+
 **Run du 24/09/2026 : publié, indexation demandée, angle D consommé (reste E).**
 Test de cadence passé : aucune entrée du 24/09 ni du 23/09, la plus récente
 étant le 19/09. Alternance respectée (19/09 bois → 24/09 alu). Publié :
@@ -2290,6 +2334,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-14 | publié  | Poser une pergola aluminium sur une terrasse en bois existante | poser-pergola-aluminium-terrasse-bois-existante |
 | 2026-09-19 | publié  | Sol argileux en Gironde : l'étude de sol avant de construire une extension | sol-argileux-gironde-etude-de-sol-extension |
 | 2026-09-24 | publié  | Remplacer une véranda ancienne par de l'aluminium : ce qu'on garde, ce qui part | remplacer-veranda-ancienne-aluminium-renovation |
+| 2026-09-26 | publié  | Une maison en ossature bois brûle-t-elle plus vite ? Ce que le risque incendie change en Gironde | ossature-bois-risque-incendie-gironde |
 
 ## Idées de sujets en réserve
 
@@ -2452,6 +2497,9 @@ en fin de vie en Gironde.
   et `renover-terrasse-bois-existante`.
 
 ### E. Combien de temps prend un chantier aluminium, et où passe le délai
+
+> Toujours en réserve au 26/09 (le run du 26/09 a publié un sujet bois pour
+> l'alternance). **Prochain créneau : le 28/09**, alu attendu : prendre E.
 
 **Angle « coulisses » que le blog n'a jamais pris**, alors que la question tombe
 à chaque devis signé. Utile aussi en réassurance : il montre qu'on maîtrise une

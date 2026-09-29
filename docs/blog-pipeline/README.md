@@ -2335,6 +2335,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-19 | publié  | Sol argileux en Gironde : l'étude de sol avant de construire une extension | sol-argileux-gironde-etude-de-sol-extension |
 | 2026-09-24 | publié  | Remplacer une véranda ancienne par de l'aluminium : ce qu'on garde, ce qui part | remplacer-veranda-ancienne-aluminium-renovation |
 | 2026-09-26 | publié  | Une maison en ossature bois brûle-t-elle plus vite ? Ce que le risque incendie change en Gironde | ossature-bois-risque-incendie-gironde |
+| 2026-09-29 | publié  | Pergola aluminium : la pose prend deux jours, alors où passent les semaines ? | delai-chantier-pergola-aluminium-fabrication-pose |
 
 ## Idées de sujets en réserve
 
@@ -2496,10 +2497,30 @@ en fin de vie en Gironde.
 - **Étape 4 bis** : liens depuis `veranda-aluminium-isolation-urbanisme-budget`
   et `renover-terrasse-bois-existante`.
 
-### E. Combien de temps prend un chantier aluminium, et où passe le délai
+### ~~E. Combien de temps prend un chantier aluminium, et où passe le délai~~ ✅ PUBLIÉ le 29/09/2026
 
-> Toujours en réserve au 26/09 (le run du 26/09 a publié un sujet bois pour
-> l'alternance). **Prochain créneau : le 28/09**, alu attendu : prendre E.
+> Consommé par le run du 29/09 sous le slug prévu,
+> `delai-chantier-pergola-aluminium-fabrication-pose`. Statut `publié`. **La
+> réserve est de nouveau VIDE** : le prochain run (01/10 au plus tôt) devra faire
+> sa veille web, et devrait prendre un sujet **bois** (29/09 alu).
+>
+> Compte rendu du run du 29/09 : le run du 28/09 n'a rien publié (aucune entrée
+> datée du 28/09 ; pas de trace de ce run). Article rédigé sans aucun délai de
+> fabrication chiffré (« plusieurs semaines, écrit sur notre devis ») ; seuls
+> chiffres : Montussan 2 jours de pose, Saint-Pey-de-Castets 3 jours, DP instruite
+> en 1 mois (2 en secteur protégé), affichage et recours des tiers de 2 mois
+> (service-public F17578). Cover : `source-adefrance/construction-pool-house-aluminium-libourne.webp`
+> (Montussan, 768 × 512, un peu juste pour un hero). Images du corps : deux Pexels
+> (thermolaquage en cabine, massif béton), `construction-pool-house-aluminium-libourne-3.webp`
+> (bicoloration, sans commune : sa voisine `-4` porte un filigrane LI-SU, donc
+> possible visuel fournisseur), et `pergola-terrasse-bois-libourne-4.webp` (pose en
+> cours, « en Gironde »). Maillage 4 bis : liens depuis
+> `comparer-devis-pergola-postes-prix` (phrase sur le délai d'une teinte hors
+> gamme) et `garanties-sav-pergola-veranda-aluminium` (paragraphe sur la
+> réception). Prod : 200 (version Cloudflare `ec1bf2f7`), liens entrants présents
+> dans le HTML servi, présent dans le sitemap. **IndexNow 200. Search Console :
+> « Indexation demandée » confirmée à l'écran** (u/1, propriété
+> `https://lesprit-bois.fr/`, chemin champ d'inspection en haut, sans souci).
 
 **Angle « coulisses » que le blog n'a jamais pris**, alors que la question tombe
 à chaque devis signé. Utile aussi en réassurance : il montre qu'on maîtrise une

@@ -412,7 +412,10 @@ export default function ArticleGarantiesSavPergolaAluminiumPage() {
                 Retenez surtout le mot qui commande tout le tableau :{' '}
                 <strong className="text-primary font-semibold">la réception</strong>. C&apos;est elle qui déclenche les
                 compteurs, et c&apos;est un acte écrit, daté, signé des deux côtés, avec ou sans réserves. Beaucoup de
-                chantiers de pergola se terminent par une poignée de main et un virement, sans document de réception.
+                chantiers de pergola, dont{' '}
+                <a href="/blog/delai-chantier-pergola-aluminium-fabrication-pose" className={lienInterne}>
+                  la pose elle-même ne dure que deux ou trois jours
+                </a>, se terminent par une poignée de main et un virement, sans document de réception.
                 Le jour où il faut faire jouer une garantie, personne ne sait plus quand elle a commencé, et c&apos;est
                 au client de le prouver.
               </p>

@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'delai-chantier-pergola-aluminium-fabrication-pose',
+    titre: 'Pergola aluminium : la pose prend deux jours, alors où passent les semaines ?',
+    extrait:
+      "La pose d'une pergola aluminium se compte en jours, deux pour une pergola isolée, trois pour une pergola adossée équipée de stores sur nos chantiers en Gironde, mais le délai du projet se compte en semaines. Ce qui fait attendre, c'est l'autorisation d'urbanisme, avec son affichage et le délai de recours des tiers, puis la fabrication sur mesure des profilés et leur thermolaquage : les étapes, l'effet d'une teinte hors stock, ce qui se prépare pendant l'attente, le déroulé de la pose et ce qui décale vraiment un chantier, le guide d'un artisan à Libourne.",
+    date: '2026-09-29',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/source-adefrance/construction-pool-house-aluminium-libourne.webp',
+    imageLargeur: 768,
+    imageHauteur: 512,
+  },
+  {
     slug: 'ossature-bois-risque-incendie-gironde',
     titre:
       'Une maison en ossature bois brûle-t-elle plus vite ? Ce que le risque incendie change en Gironde',

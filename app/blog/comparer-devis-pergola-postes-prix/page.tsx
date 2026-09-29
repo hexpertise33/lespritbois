@@ -553,7 +553,11 @@ export default function ArticleComparerDevisPergolaPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Dernier point rarement lu : le thermolaquage. Une teinte RAL standard n&apos;a pas le même coût
-                ni le même délai qu&apos;une teinte hors gamme, et une pergola bicolore, une teinte à
+                ni le même{' '}
+                <a href="/blog/delai-chantier-pergola-aluminium-fabrication-pose" className={lienInterne}>
+                  délai de fabrication avant la pose
+                </a>{' '}
+                qu&apos;une teinte hors gamme, et une pergola bicolore, une teinte à
                 l&apos;extérieur, une autre en sous-face, se commande différemment. Si l&apos;un des trois devis vous
                 paraît anormalement bas et que la teinte n&apos;y figure pas, c&apos;est souvent qu&apos;elle est
                 comptée en supplément.

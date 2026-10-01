@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'ossature-bois-chantier-hiver-pluie',
+    titre:
+      'Construire en ossature bois en automne et en hiver : ce que la pluie fait vraiment au chantier',
+    extrait:
+      "La pluie sur une ossature en cours de levage n'est pas un drame : un bois mouillé en surface sèche, tant qu'on le laisse sécher. Ce qui abîme un chantier d'hiver, c'est de refermer la paroi côté intérieur sur un bois ou un isolant encore humide : le seuil de 18 % à l'assemblage, l'ordre qui protège jusqu'à la mise hors d'eau, le béton par temps froid et ce que l'hiver change vraiment en Gironde, le guide d'un artisan à Libourne.",
+    date: '2026-10-01',
+    categorie: 'Guide · Ossature bois',
+    image: '/images/blog/ossature-bois-chantier-hiver-pluie/ossature-bois-hiver-pare-pluie-toiture-ciel-gris.webp',
+    imageLargeur: 1200,
+    imageHauteur: 800,
+  },
+  {
     slug: 'delai-chantier-pergola-aluminium-fabrication-pose',
     titre: 'Pergola aluminium : la pose prend deux jours, alors où passent les semaines ?',
     extrait:

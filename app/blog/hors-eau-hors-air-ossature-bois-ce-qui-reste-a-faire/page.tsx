@@ -350,7 +350,10 @@ export default function ArticleHorsEauHorsAirPage() {
                 pluie n&apos;entre plus par le haut. Les fondations sont coulées, l&apos;ossature est levée et
                 contreventée, la charpente est en place, la couverture est posée et les eaux pluviales sont évacuées. Le
                 bâtiment est couvert, mais il est encore ouvert : les baies sont des trous, le vent traverse, et sur nos
-                chantiers girondins c&apos;est souvent la première fois qu&apos;on peut travailler à l&apos;abri.
+                chantiers girondins c&apos;est souvent la première fois qu&apos;on peut{' '}
+                <a href="/blog/ossature-bois-chantier-hiver-pluie" className={lienInterne}>
+                  travailler à l&apos;abri de la pluie d&apos;hiver
+                </a>.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">Hors d&apos;air</strong>, c&apos;est le moment où

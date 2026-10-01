@@ -664,8 +664,10 @@ export default function ArticleSurelevationOssatureBoisPage() {
                 Vient enfin le choix de la période, qui n&apos;est pas un détail. On ne lance pas une surélévation
                 n&apos;importe quand dans l&apos;année : la fenêtre où l&apos;on ouvre la toiture doit tomber dans une
                 saison raisonnablement clémente, et l&apos;idéal en Gironde est de caler la dépose entre la fin du
-                printemps et le début de l&apos;automne. Cela ne veut pas dire qu&apos;on ne surélève pas en hiver, cela
-                veut dire qu&apos;on ne promet pas la météo : bâchage sérieux, suivi des prévisions au jour le jour, et
+                printemps et le début de l&apos;automne. Cela ne veut pas dire qu&apos;on ne surélève pas{' '}
+                <a href="/blog/ossature-bois-chantier-hiver-pluie" className={lienInterne}>
+                  en hiver, sous la pluie girondine
+                </a>, cela veut dire qu&apos;on ne promet pas la météo : bâchage sérieux, suivi des prévisions au jour le jour, et
                 acceptation de décaler la dépose de quarante-huit heures plutôt que d&apos;ouvrir la veille d&apos;un
                 coup de vent.
               </p>

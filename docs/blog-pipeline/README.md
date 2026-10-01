@@ -2336,6 +2336,39 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-24 | publié  | Remplacer une véranda ancienne par de l'aluminium : ce qu'on garde, ce qui part | remplacer-veranda-ancienne-aluminium-renovation |
 | 2026-09-26 | publié  | Une maison en ossature bois brûle-t-elle plus vite ? Ce que le risque incendie change en Gironde | ossature-bois-risque-incendie-gironde |
 | 2026-09-29 | publié  | Pergola aluminium : la pose prend deux jours, alors où passent les semaines ? | delai-chantier-pergola-aluminium-fabrication-pose |
+| 2026-10-01 | publié  | Construire en ossature bois en automne et en hiver : ce que la pluie fait vraiment au chantier | ossature-bois-chantier-hiver-pluie |
+
+**Run du 01/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
+Test de cadence passé : aucune entrée du 01/10 ni du 30/09, la plus récente étant
+le 29/09 (alu). Réserve vide, l'alternance appelait le bois : veille courte, angle
+saisonnier jamais traité (aucun article ne parlait du chantier d'ossature sous la
+pluie ; la surélévation n'y consacrait que deux lignes).
+
+Publié : `ossature-bois-chantier-hiver-pluie`, « Ossature bois en hiver : la pluie
+abîme-t-elle le chantier ? » (title, 60 caractères). Thèse : la pluie mouille, elle
+n'abîme pas ; le risque est de refermer la paroi côté intérieur sur un bois ou un
+isolant humide. Commit `10c1fc6`, version Cloudflare `c7e5f9c2`, **200 confirmé
+trois fois** (article, deux articles maillés, /blog, accueil), six images en 200,
+`datePublished` servi = `2026-10-01`, présent dans le sitemap. Maillage 4 bis :
+liens depuis `surelevation-ossature-bois-maison` (« on ne surélève pas en hiver »)
+et `hors-eau-hors-air-ossature-bois-ce-qui-reste-a-faire` (« travailler à l'abri »),
+vérifiés dans le HTML servi. **IndexNow 200. Search Console : « Indexation
+demandée » vue à l'écran** (`/u/1/`, champ d'inspection en haut, sans souci).
+
+**Sources vérifiées, réutilisables** : guide UICB/AQC « Construction bois et gestion
+de l'humidité en phase chantier » (v1 du 24/04/2020), qui cite le NF DTU 31.1 P1-1 :
+humidité des éléments d'ossature ≤ 18 % à l'assemblage, écart max 4 % entre deux
+éléments ; risque fongique au-delà de 20 % sur une longue durée. Béton : précautions
+dès 5 °C ambiant ou chute prévue sous 5 °C dans les 24 h (Heidelberg Materials).
+
+**Images** : cover et deux figures = photos de chantier maison inédites tirées de
+`contenu-source/photos-chantiers-non-publiees/` (**communes inconnues**, aucune
+localisation écrite ; à demander à David pour gagner un signal local), dalle de
+Génissac recadrée, extension toit plat déjà dans `public/images/chantiers/`, et un
+humidimètre Wikimedia Commons (Hrco, **CC BY-SA 4.0**, crédit dans la légende).
+
+ℹ️ **Prochain run** : la réserve est vide, veille obligatoire ; le 01/10 étant bois,
+le suivant devrait prendre un sujet **aluminium**.
 
 ## Idées de sujets en réserve
 

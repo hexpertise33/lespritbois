@@ -487,7 +487,11 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Reste la tenue au vent, sujet sur lequel on lit beaucoup d&apos;approximations. Nous ne citerons pas de
+                Reste la tenue au vent, sujet sur lequel on lit beaucoup d&apos;approximations (nous détaillons à part{' '}
+                <a href="/blog/pergola-aluminium-tempete-vent" className={lienInterne}>
+                  ce qui fait tenir une pergola aluminium face aux tempêtes
+                </a>
+                , ancrage et gestes compris). Nous ne citerons pas de
                 vitesse en kilomètres-heure : la seule question utile à poser à un fabricant est{' '}
                 <strong className="text-primary font-semibold">
                   quelle classe de résistance au vent a été testée sur ce modèle, dans quelle dimension, et pouvez-vous

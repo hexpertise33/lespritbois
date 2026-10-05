@@ -386,7 +386,12 @@ export default function ArticlePergolaSurTerrasseBoisPage() {
                 <strong className="text-primary font-semibold">
                   Les ancrages d&apos;une pergola travaillent donc aussi à l&apos;arrachement
                 </strong>
-                , en va-et-vient, sur des rafales qui reviennent des dizaines de fois par an. Une vis plantée dans une
+                , en va-et-vient, sur des rafales qui reviennent des dizaines de fois par an (c&apos;est d&apos;ailleurs
+                l&apos;ancrage, bien avant les profilés, qui{' '}
+                <a href="/blog/pergola-aluminium-tempete-vent" className={lienInterne}>
+                  décide de la tenue d&apos;une pergola aluminium pendant une tempête
+                </a>
+                ). Une vis plantée dans une
                 lambourde résiste très mal à ce mouvement alterné : le trou s&apos;ovalise, la fixation prend du jeu,
                 l&apos;eau entre dans le jeu, et le bois s&apos;altère précisément là où il travaille le plus. Le
                 montage peut très bien passer un été. Il ne passe pas dix hivers.

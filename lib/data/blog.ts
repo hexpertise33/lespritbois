@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'pergola-aluminium-tempete-vent',
+    titre:
+      'Pergola et carport aluminium face aux tempêtes : ce qui les fait tenir, et les bons réflexes en Gironde',
+    extrait:
+      "Une pergola ou un carport aluminium bien conçu ne s'envole pas avec sa structure : il cède par son ancrage, par une toile ou un store qui fait voile, ou par un automatisme sur lequel on a compté à tort. Ancrage, dimensionnement au vent, position des lames, check-list avant l'alerte et démarches d'assurance après la tempête : le guide d'un artisan à Libourne.",
+    date: '2026-10-05',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/blog/pergola-aluminium-tempete-vent/pergola-aluminium-ciel-charge-saint-pey-de-castets.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'ossature-bois-chantier-hiver-pluie',
     titre:
       'Construire en ossature bois en automne et en hiver : ce que la pluie fait vraiment au chantier',

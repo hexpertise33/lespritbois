@@ -2337,6 +2337,45 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-26 | publié  | Une maison en ossature bois brûle-t-elle plus vite ? Ce que le risque incendie change en Gironde | ossature-bois-risque-incendie-gironde |
 | 2026-09-29 | publié  | Pergola aluminium : la pose prend deux jours, alors où passent les semaines ? | delai-chantier-pergola-aluminium-fabrication-pose |
 | 2026-10-01 | publié  | Construire en ossature bois en automne et en hiver : ce que la pluie fait vraiment au chantier | ossature-bois-chantier-hiver-pluie |
+| 2026-10-05 | publié  | Pergola et carport aluminium face aux tempêtes : ce qui les fait tenir, et les bons réflexes en Gironde | pergola-aluminium-tempete-vent |
+
+**Run du 05/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
+Test de cadence passé : aucune entrée du 05/10 ni du 04/10, la plus récente étant
+le 01/10 (bois). Pas de trace d'article entre le 02 et le 04/10 (runs sans
+publication ou non déclenchés). Réserve vide, l'alternance appelait l'aluminium :
+angle saisonnier trouvé par recoupement, le mot « tempête » n'apparaissant dans
+aucun article (le vent n'était traité qu'en passant dans le guide bioclimatique,
+la pose sur terrasse bois et la clôture alu).
+
+Publié : `pergola-aluminium-tempete-vent`, title « Pergola aluminium et tempête en
+Gironde : ce qui la fait tenir ». Thèse : une pergola alu bien conçue cède par ses
+points faibles (ancrage, ce qui fait voile, automatisme sans courant), pas par ses
+profilés. Commit `cfbb5cd`, version Cloudflare `60eeb5dc`, **200 confirmé trois
+fois** (article, deux articles maillés, /blog, accueil), sept images en 200,
+`datePublished` servi = `2026-10-05`, présent dans le sitemap. Maillage 4 bis :
+liens depuis `poser-pergola-aluminium-terrasse-bois-existante` (paragraphe sur
+l'arrachement et les rafales) et `pergola-bioclimatique-aluminium-guide` (« Reste
+la tenue au vent »), vérifiés dans le HTML servi. **IndexNow 200. Search Console :
+« Indexation demandée » vue à l'écran** (`/u/1/`, champ d'inspection en haut).
+
+**Sources vérifiées, réutilisables** : ANIL, « Les assurances liées aux
+intempéries » : garantie tempête dans la multirisque habitation (Code des
+assurances L122-7), déclaration sous **cinq jours ouvrés** après constatation,
+attestation météo ou autres bâtiments de bonne construction endommagés dans un
+rayon de 5 km, vérandas, stores et aménagements extérieurs souvent exclus.
+Eurocode 1 vent (NF EN 1991-1-4) : quatre zones en métropole. ⚠️ **La zone de la
+Gironde n'a pas été vérifiée** : ne pas la citer sans source.
+
+**Images** : cover = recadrage paysage (1200 × 646, légèrement agrandi) de la
+pergola alu de Saint-Pey-de-Castets (`pergola-terrasse-bois-libourne-2.webp`) ;
+store zip maison de Saint-Pey-de-Castets ; trois visuels fournisseur LI-SU
+(`Pergolas-aluminium-Libourne-3/4/8`, `Carport-aluminium-Libourne-3`), sans
+géolocalisation ; arbre brisé Pexels 38468405 (David Kanigan, licence Pexels),
+présenté comme scène générique. Aucune photo de platine de pied de poteau alu
+disponible : à photographier sur un prochain chantier.
+
+ℹ️ **Prochain run** : réserve vide, veille obligatoire ; le 05/10 étant alu, le
+suivant devrait prendre un sujet **bois**. Prochain créneau possible : le 07/10.
 
 **Run du 01/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
 Test de cadence passé : aucune entrée du 01/10 ni du 30/09, la plus récente étant

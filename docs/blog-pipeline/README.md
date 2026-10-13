@@ -2338,6 +2338,53 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-09-29 | publié  | Pergola aluminium : la pose prend deux jours, alors où passent les semaines ? | delai-chantier-pergola-aluminium-fabrication-pose |
 | 2026-10-01 | publié  | Construire en ossature bois en automne et en hiver : ce que la pluie fait vraiment au chantier | ossature-bois-chantier-hiver-pluie |
 | 2026-10-05 | publié  | Pergola et carport aluminium face aux tempêtes : ce qui les fait tenir, et les bons réflexes en Gironde | pergola-aluminium-tempete-vent |
+| 2026-10-13 | publié  | Pergola en bois : l'essence, les sections et les pieds de poteaux qui la font durer | pergola-bois-essence-sections-poteaux |
+
+**Run du 13/10/2026 : publié, indexation Search Console NON demandée, réserve toujours VIDE.**
+Test de cadence passé : aucune entrée du 13/10 ni du 12/10, la plus récente étant
+le 05/10 (alu). Aucun article entre le 06 et le 12/10 (runs non déclenchés ou sans
+publication). Réserve vide, l'alternance appelait le bois : angle trouvé par
+recoupement, le blog n'ayant aucun guide de conception de pergola **bois** (seul le
+comparatif `pergola-bois-ou-bioclimatique` traite le sujet, sous l'angle du choix de
+matière).
+
+Publié : `pergola-bois-essence-sections-poteaux`, title « Pergola bois en Gironde :
+essence, sections et pieds de poteaux » (63 caractères). Thèse : une pergola bois
+vieillit mal par ses pieds de poteaux, ses sections trop justes et son bois de bout
+exposé, bien plus que par son essence. Aucune section, portée ni garde au sol
+chiffrée. Commit `0e16a08`, version Cloudflare `357c07e7`, **200 confirmé trois
+fois** (article, deux articles maillés, /blog, accueil), six images en 200,
+`datePublished` servi = `2026-10-13`, présent dans le sitemap. Maillage 4 bis :
+liens depuis `pergola-bois-ou-bioclimatique` (paragraphe « quelle différence de
+fond ») et `traiter-bois-exterieur-avant-hiver` (carport, pergola et abri « bien
+conçus »), vérifiés dans le HTML servi. **IndexNow 200.**
+
+⚠️ **Search Console : demande d'indexation NON faite.** L'extension Claude in Chrome
+ne répondait pas (« Claude in Chrome is not connected », deux essais) : Chrome fermé
+ou Mac en veille au moment du run. À faire à la main : inspecter
+`https://lesprit-bois.fr/blog/pergola-bois-essence-sections-poteaux` sur
+`https://search.google.com/u/1/search-console?resource_id=https%3A%2F%2Flesprit-bois.fr%2F`
+puis « Demander une indexation ».
+
+**Sources vérifiées, réutilisables** : fiche produit BMR de France Bois Forêt (2 à 5
+lamelles collées, section max 280 × 280 mm, employé à la place du massif de forte
+section pour limiter fentes et déformations) ; fiche pathologie AQC C03 sur le
+lamellé-collé (fentes des essences à fort retrait tangentiel exposées à la chaleur).
+⚠️ La garde au sol d'un pied de poteau n'a trouvé qu'une source commerciale
+(Hornbach, 10 cm) : ne pas la citer comme une règle.
+
+**Images** : cover = recadrage paysage (1100 × 592) de la pergola bois d'Arveyres
+(`/images/pergola-bois-massif-terrasse.webp`, photo déjà employée sur l'accueil et
+dans le comparatif, mais fichier de cover inédit) ; détail des têtes de poteaux
+recadré de la même photo (540 px de large, un peu doux) ; pergola d'exposition du
+dépôt des Billaux (`source-adefrance/Pergolas-bois-Libourne.webp`, pieds métalliques
+sur plots béton) ; gerces : Unsplash Fvtoe4S4Fzw (Mohamed B.) ; lamellé-collé :
+Wikimedia Commons « Laminated wood.jpg » (メルビル, **CC BY-SA 3.0**) ; allée de
+pergola fleurie : Pexels 36410012 (Gene Samit). Aucune photo d'un poteau scellé et
+pourri : à photographier sur un prochain chantier de rénovation.
+
+ℹ️ **Prochain run** : réserve vide, veille obligatoire ; le 13/10 étant bois, le
+suivant devrait prendre un sujet **aluminium**. Prochain créneau possible : le 15/10.
 
 **Run du 05/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
 Test de cadence passé : aucune entrée du 05/10 ni du 04/10, la plus récente étant

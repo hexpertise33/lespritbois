@@ -567,8 +567,12 @@ export default function ArticleTraiterBoisAvantHiverPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 <strong className="text-primary font-semibold">Le carport, la pergola et l&apos;abri de jardin</strong>,
                 enfin, sont les ouvrages les moins demandeurs, à une condition : qu&apos;ils aient été bien conçus. Une
-                structure ventilée, une toiture qui évacue, des poteaux désolidarisés du sol par des pieds métalliques,
-                et le traitement de surface redevient un choix esthétique. Ce qui compte, sur ces ouvrages, c&apos;est le
+                structure ventilée, une toiture qui évacue, des poteaux désolidarisés du sol par des pieds métalliques
+                (le détail est dans notre guide sur{' '}
+                <a href="/blog/pergola-bois-essence-sections-poteaux" className={lienInterne}>
+                  l&apos;essence, les sections et les pieds de poteaux d&apos;une pergola en bois
+                </a>
+                ), et le traitement de surface redevient un choix esthétique. Ce qui compte, sur ces ouvrages, c&apos;est le
                 contrôle d&apos;automne : dégager les feuilles de la couverture et des évacuations, et inspecter les
                 pieds de poteaux. Même logique pour{' '}
                 <a href="/blog/abri-buches-bois-stockage-sechage" className={lienInterne}>

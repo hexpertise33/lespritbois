@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'pergola-bois-essence-sections-poteaux',
+    titre:
+      "Pergola en bois : l'essence, les sections et les pieds de poteaux qui la font durer",
+    extrait:
+      "Une pergola en bois qui vieillit mal pèche rarement par son essence : ce sont des pieds de poteaux qui gardent l'eau, des sections trop justes pour la portée et du bois de bout exposé qui l'abîment. Douglas, mélèze, chêne ou pin autoclave, BMR ou lamellé-collé, pieds de poteaux et protection des têtes : ce que nous vérifions sur nos pergolas bois en Gironde.",
+    date: '2026-10-13',
+    categorie: 'Guide · Pergola bois',
+    image: '/images/blog/pergola-bois-essence-sections-poteaux/pergola-bois-teintee-terrasse-arveyres.webp',
+    imageLargeur: 1100,
+    imageHauteur: 592,
+  },
+  {
     slug: 'pergola-aluminium-tempete-vent',
     titre:
       'Pergola et carport aluminium face aux tempêtes : ce qui les fait tenir, et les bons réflexes en Gironde',

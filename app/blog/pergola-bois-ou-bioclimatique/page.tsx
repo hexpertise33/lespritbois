@@ -351,7 +351,12 @@ export default function ArticlePergolaBoisBioclimatiquePage() {
                 est une structure massive et fixe : des poteaux et une charpente en{' '}
                 <strong className="text-primary font-semibold">douglas, mélèze ou chêne</strong>, coiffés d&apos;une
                 toiture (lames fixes, toile tendue, panneaux ou végétalisation). Elle se dessine sur mesure et
-                s&apos;intègre à l&apos;architecture existante.
+                s&apos;intègre à l&apos;architecture existante. Sa durée de vie tient d&apos;ailleurs moins à
+                l&apos;essence qu&apos;à sa conception :{' '}
+                <a href="/blog/pergola-bois-essence-sections-poteaux" className={lienInterne}>
+                  les sections et les pieds de poteaux d&apos;une pergola bois
+                </a>{' '}
+                comptent davantage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La <strong className="text-primary font-semibold">pergola bioclimatique</strong> est une structure en{' '}

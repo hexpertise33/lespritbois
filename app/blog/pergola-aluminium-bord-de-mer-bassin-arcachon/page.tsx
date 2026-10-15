@@ -432,12 +432,16 @@ export default function ArticlePergolaAluminiumBordDeMerPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-6 mb-5">
                 Une précision de méthode, parce qu&apos;elle nous paraît due :{' '}
                 <strong className="text-primary font-semibold">
-                  nous travaillons sur le Bassin d&apos;Arcachon, mais nos chantiers n&apos;y sont pas encore publiés.
+                  nous travaillons sur le Bassin d&apos;Arcachon, mais nous n&apos;y avons pas encore publié de
+                  pergola.
                 </strong>{' '}
-                Les réalisations montrées sur ce site se situent à Libourne, dans le Libournais et en Gironde
-                intérieure. Ce que vous lisez ici, ce sont les exigences que nous portons au devis auprès de nos
-                fournisseurs et notre manière de poser en bord d&apos;eau, pas une référence de front de bassin
-                photographiée pour l&apos;occasion. Nous ouvrons d&apos;ailleurs une{' '}
+                Notre chantier documenté sur le Bassin est une{' '}
+                <a href="/realisations" className={lienInterne}>
+                  surélévation en ossature bois au Pyla-sur-Mer
+                </a>
+                . Ce que vous lisez ici, ce sont les exigences que nous portons au devis auprès de nos fournisseurs et
+                notre manière de poser en bord d&apos;eau, pas une référence de pergola photographiée pour
+                l&apos;occasion. Nous ouvrons d&apos;ailleurs une{' '}
                 <a href="/agence-la-teste-de-buch" className={lienInterne}>
                   agence à La Teste-de-Buch
                 </a>{' '}

@@ -120,7 +120,12 @@ export default function AgenceLaTestePage() {
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 L&apos;agence ne marque pas notre arrivée sur le Bassin : elle rapproche une activité qui existe
-                déjà. Vous n&apos;avez pas besoin d&apos;attendre janvier pour nous confier votre projet.
+                déjà. Vous n&apos;avez pas besoin d&apos;attendre janvier pour nous confier votre projet. Exemple
+                récent :{' '}
+                <a href="/realisations" className="text-secondary-dark font-semibold hover:underline">
+                  un étage en ossature bois ajouté à une maison du Pyla-sur-Mer
+                </a>
+                .
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

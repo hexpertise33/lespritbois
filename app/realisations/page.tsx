@@ -17,14 +17,14 @@ const PROJET = 'Projet vu depuis les réalisations';
 const PAGE_LABEL = '/realisations';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nos réalisations en Gironde : treize chantiers racontés",
+  title: "Nos réalisations en Gironde : quatorze chantiers racontés",
   description:
-    'Carport à Capian, extension à Clérac, maison ossature bois à Rauzan, terrasse à Lacanau : treize chantiers avec leur contrainte, leurs matériaux et leur durée.',
+    'Surélévation au Pyla, carport à Capian, extension à Clérac, maison ossature bois à Rauzan : quatorze chantiers avec leur contrainte et leurs matériaux.',
   keywords:
-    "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan",
+    "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan, surélévation ossature bois Pyla-sur-Mer",
   path: '/realisations',
   ogImage: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
-  ogTitle: 'Nos chantiers, racontés : treize communes autour de Libourne',
+  ogTitle: 'Nos chantiers, racontés : du Libournais au Bassin d\'Arcachon',
   ville: 'Libourne',
 });
 
@@ -81,6 +81,66 @@ const CARPORTS_COURTS = [
 /** Galerie. Chaque vignette est un ouvrage réalisé par l'entreprise ou une pièce
  *  exposée sur son dépôt, les visuels fournisseur en ont été retirés. */
 const GALERIE: Vignette[] = [
+  {
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-1.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Surélévation terminée',
+    lieu: 'Pyla-sur-Mer',
+    alt: "Vue d'ensemble d'une surélévation en ossature bois à bardage vertical blanc, toiture-terrasse en dalles sur plots et garde-corps, sous les pins du Pyla-sur-Mer à La Teste-de-Buch",
+  },
+  {
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-2.webp',
+    w: 867,
+    h: 1156,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Terrasse face au Bassin',
+    lieu: 'Pyla-sur-Mer',
+    alt: "Toiture-terrasse en dalles grand format sur plots le long d'une surélévation en bois, Bassin d'Arcachon visible entre les pins, au Pyla-sur-Mer",
+  },
+  {
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-3.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Toiture-terrasse en dalles sur plots',
+    lieu: 'Pyla-sur-Mer',
+    alt: "Grande toiture-terrasse en dalles grises posées sur plots devant une surélévation, au Pyla-sur-Mer à La Teste-de-Buch",
+  },
+  {
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-4.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Bardage vertical à relief bois',
+    lieu: 'Pyla-sur-Mer',
+    alt: "Bardage vertical blanc à relief bois autour de deux fenêtres, sur une surélévation en ossature bois au Pyla-sur-Mer",
+  },
+  {
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-5.webp',
+    w: 1200,
+    h: 1600,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: "Coursive le long de l'étage",
+    lieu: 'Pyla-sur-Mer',
+    alt: "Coursive en dalles sur plots longeant le bardage blanc d'une surélévation, acrotère et garde-corps à droite, au Pyla-sur-Mer",
+  },
+  {
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-6.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: "L'étage vu depuis le jardin",
+    lieu: 'Pyla-sur-Mer',
+    alt: "Surélévation en ossature bois à bardage blanc vue depuis le jardin, au-dessus du niveau existant, au Pyla-sur-Mer à La Teste-de-Buch",
+  },
   {
     src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-1.webp',
     w: 736,
@@ -435,7 +495,7 @@ export default function RealisationsPage() {
               Nos réalisations à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Treize chantiers racontés
+              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Quatorze chantiers racontés
               avec leur commune, leur contrainte et leur durée.
             </p>
           </div>
@@ -482,10 +542,12 @@ export default function RealisationsPage() {
                 Ce que nous avons bâti
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Treize chantiers, treize contraintes différentes
+                Quatorze chantiers, quatorze contraintes différentes
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                Un carport pour trois voitures sur un terrain en pente à{' '}
+                Un étage en ossature bois ajouté à une maison du{' '}
+                <strong className="text-primary font-semibold">Pyla-sur-Mer</strong>, un carport pour trois voitures
+                sur un terrain en pente à{' '}
                 <strong className="text-primary font-semibold">Capian</strong>, une extension greffée sur une grange
                 en pierre à <strong className="text-primary font-semibold">Clérac</strong>, une terrasse posée sur le
                 sable à <strong className="text-primary font-semibold">Lacanau</strong>, une maison de 150 m² à{' '}

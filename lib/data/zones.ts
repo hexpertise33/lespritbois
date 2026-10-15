@@ -12,9 +12,10 @@
 // attendez le premier chantier.
 //
 // Bassin d'Arcachon : l'entreprise y a déjà rendez-vous et chantiers
-// (confirmé le 15/10/2026) et y ouvre une agence en janvier 2027. Ses
-// chantiers du Bassin ne sont pas encore publiés : les pages ne doivent ni les
-// nier ni en inventer, elles en parlent au présent, sans commune ni ouvrage.
+// (confirmé le 15/10/2026) et y ouvre une agence en janvier 2027. Premier
+// chantier du Bassin publié le 15/10/2026 : la surélévation du Pyla-sur-Mer
+// (id 'pyla-sur-mer'). Les pages n'en citent pas d'autre tant qu'il n'est pas
+// documenté.
 // =========================================================================
 
 import type { Avis } from '@/lib/data/avis';
@@ -571,10 +572,10 @@ export const ZONES: Zone[] = [
           'Montussan, couverture en panneau isolé : sous une simple plaque, un espace plein sud devient un four.',
       },
     ],
-    chantiers: ['lacanau'],
-    chantiersTitre: 'Un chantier sur sol sableux, à Lacanau',
+    chantiers: ['pyla-sur-mer', 'lacanau'],
+    chantiersTitre: 'Nos chantiers sur le littoral',
     chantiersIntro:
-      "Nos chantiers du Bassin ne sont pas encore publiés sur ce site. Celui-ci est à Lacanau, sur la côte océane : c'est une terrasse et non une pergola, mais le sol y pose exactement la même question d'ancrage, et c'est ce que vous devriez demander à tout artisan qui vient chez vous.",
+      "Au Pyla-sur-Mer, nous avons ajouté un étage en ossature bois à une maison et refait la toiture-terrasse qui l'entoure, face au Bassin. À Lacanau, sur la côte océane, une terrasse sur sable pose la même question qu'une pergola : sur quoi fonder, et c'est ce que vous devriez demander à tout artisan qui vient chez vous.",
     guides: [
       {
         slug: 'choisir-teinte-ral-aluminium',
@@ -770,10 +771,10 @@ export const ZONES: Zone[] = [
           'Moulon, ce n\'est pas le littoral, mais c\'est le même travail de rive au millimètre le long du bassin.',
       },
     ],
-    chantiers: ['lacanau'],
-    chantiersTitre: 'Notre terrasse posée sur le sable',
+    chantiers: ['pyla-sur-mer', 'lacanau'],
+    chantiersTitre: 'Deux terrasses, deux supports',
     chantiersIntro:
-      "Lacanau est sur la côte océane et non sur le Bassin : nous ne prétendrons pas le contraire, et nos chantiers du Bassin ne sont pas encore publiés sur ce site. Mais c'est le même sable et la même question de portance, et ce chantier la montre mieux qu'un discours.",
+      "Au Pyla-sur-Mer, une toiture-terrasse en dalles sur plots, posée sur une étanchéité autour d'une surélévation : ici, la terrasse sert de toit au niveau du dessous. À Lacanau, sur la côte océane et non sur le Bassin, une terrasse bois posée sur le sable et fondée sur vis. Deux supports, deux réponses différentes.",
     guides: [
       {
         slug: 'terrasse-bois-structure-plots-lambourdes',
@@ -1023,10 +1024,10 @@ export const ZONES: Zone[] = [
           "Rauzan : une maison de 150 m² mêlant ossature bois et maçonnerie. L'extension et la maison neuve sont le même métier.",
       },
     ],
-    chantiers: ['genissac', 'clerac', 'rauzan'],
+    chantiers: ['pyla-sur-mer', 'genissac', 'clerac', 'rauzan'],
     chantiersTitre: 'Nos extensions et nos maisons à ossature bois',
     chantiersIntro:
-      "Nos chantiers du Bassin ne sont pas encore publiés sur ce site : ceux-ci sont à l'intérieur des terres. En voici trois parmi ceux que nous documentons, du raccord sur un bâti ancien à la maison complète de 150 m².",
+      "Au Pyla-sur-Mer, nous avons ajouté un étage entier en ossature bois à une maison existante. Les trois autres chantiers sont à l'intérieur des terres, du raccord sur un bâti ancien à la maison complète de 150 m².",
     guides: [
       {
         slug: 'extension-ossature-bois-prix-m2',
@@ -1143,8 +1144,7 @@ export const ZONES: Zone[] = [
       "Nous travaillons déjà sur le Bassin, rendez-vous, relevés et chantiers, et nous y ouvrons une agence à La Teste-de-Buch en janvier 2027. Voici ce que le terrain impose, ouvrage par ouvrage.",
     /* Seule couverture du site qui montre un lieu et non un ouvrage. C'est
        assumé : cette page est une page mère, elle annonce un secteur. L'alt le
-       dit explicitement pour qu'on ne puisse pas la lire comme une réalisation :
-       nos chantiers du Bassin ne sont pas encore publiés. Photo fournie par David, libre de droits (confirmé le 25/08/2026). */
+       dit explicitement pour qu'on ne puisse pas la lire comme une réalisation. Photo fournie par David, libre de droits (confirmé le 25/08/2026). */
     cover: '/images/bassin-arcachon-passes-dune-du-pilat.jpg',
     coverW: 1400,
     coverH: 933,
@@ -1210,10 +1210,10 @@ export const ZONES: Zone[] = [
           'Moulon, plage de piscine et pool house : le même soin de rive que sur une terrasse de bord de mer.',
       },
     ],
-    chantiers: ['lacanau'],
-    chantiersTitre: 'Un chantier sur sol sableux, à Lacanau',
+    chantiers: ['pyla-sur-mer', 'lacanau'],
+    chantiersTitre: 'Nos chantiers sur le littoral',
     chantiersIntro:
-      "Nos chantiers du Bassin ne sont pas encore publiés sur ce site. Celui-ci est à Lacanau, sur la côte océane : ce n'est pas le Bassin, mais le sol y pose exactement la même question, et c'est celle qu'il faut poser à tout artisan qui vient chez vous.",
+      "Au Pyla-sur-Mer, une surélévation en ossature bois et la toiture-terrasse qui l'entoure, face au Bassin. À Lacanau, sur la côte océane, une terrasse posée sur le sable : ce n'est pas le Bassin, mais le sol y pose la même question, et c'est celle qu'il faut poser à tout artisan qui vient chez vous.",
     guides: [
       {
         slug: 'autorisation-urbanisme-abri-carport-pergola-2026',

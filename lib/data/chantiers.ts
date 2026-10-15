@@ -23,6 +23,28 @@ export type Chantier = {
 
 export const CHANTIERS: Chantier[] = [
   {
+    id: 'pyla-sur-mer',
+    commune: 'La Teste-de-Buch',
+    categorie: 'Extension ossature bois',
+    titre: 'Ajouter un étage en bois à une maison du Pyla',
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-1.webp',
+    w: 1600,
+    h: 1200,
+    alt: "Surélévation en ossature bois à bardage vertical blanc, entourée d'une toiture-terrasse en dalles sur plots, sous les pins du Pyla-sur-Mer à La Teste-de-Buch",
+    faits: [
+      { label: 'Ouvrage', valeur: 'Surélévation en ossature bois' },
+      { label: 'Enveloppe', valeur: 'Bardage vertical, finition blanche' },
+      { label: 'Toiture-terrasse', valeur: 'Étanchéité, dalles sur plots' },
+      { label: 'Secteur', valeur: "Pyla-sur-Mer, Bassin d'Arcachon" },
+    ],
+    paragraphes: [
+      "Au Pyla-sur-Mer, sur la commune de La Teste-de-Buch, la maison gagne un étage entier. Nous avons monté les murs en ossature bois, posé le bardage, refait l'étanchéité de la terrasse qui entoure le nouvel étage, puis couvert cette terrasse de dalles sur plots.",
+      "Pour une surélévation, l'ossature bois a un argument que les autres systèmes n'ont pas : sa légèreté. Le nouvel étage charge beaucoup moins les murs et les fondations existants qu'une maçonnerie, et il se monte vite, ce qui compte quand le reste de la maison est déjà là, en dessous.",
+      "La terrasse qui court autour de l'étage sert de toiture au niveau inférieur. L'étanchéité passe donc avant tout le reste, relevée en pied de mur et sous les couvertines des acrotères. Les dalles grand format reposent ensuite sur des plots : l'eau s'écoule librement dessous jusqu'aux évacuations, et une dalle se soulève sans toucher à la membrane.",
+      "Dehors, le bardage est posé à la verticale, en lames à relief bois de finition blanche. Depuis la terrasse, la vue passe au-dessus des pins jusqu'au Bassin.",
+    ],
+  },
+  {
     id: 'saint-martin-du-bois',
     commune: 'Saint-Martin-du-Bois',
     categorie: 'Construction bois',

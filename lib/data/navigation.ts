@@ -56,6 +56,28 @@ export const GOOGLE = {
   avis: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
 } as const;
 
+/** Agence du Bassin d'Arcachon, ouverture en janvier 2027.
+ *
+ *  Tant qu'elle n'est pas ouverte, elle n'apparaît PAS dans les données
+ *  structurées : déclarer un établissement fermé contredirait la fiche Google.
+ *  Pas de téléphone ni d'horaires propres pour l'instant, la page renvoie au
+ *  numéro de `CONTACT`. La bascule de janvier est décrite pas à pas dans
+ *  docs/bascule-agence-la-teste.md. */
+export const AGENCE_LA_TESTE = {
+  nom: 'Agence de La Teste-de-Buch',
+  slug: '/agence-la-teste-de-buch',
+  rue: '29 allée des Mousserons',
+  codePostal: '33260',
+  ville: 'La Teste-de-Buch',
+  adresseComplete: '29 allée des Mousserons, 33260 La Teste-de-Buch',
+  /** Libellé affiché tant que l'agence n'est pas ouverte. */
+  ouverture: 'janvier 2027',
+  itineraire:
+    'https://www.google.com/maps/dir/?api=1&destination=29+all%C3%A9e+des+Mousserons%2C+33260+La+Teste-de-Buch',
+  carte:
+    'https://www.google.com/maps/search/?api=1&query=29+all%C3%A9e+des+Mousserons%2C+33260+La+Teste-de-Buch',
+} as const;
+
 /** Profils externes à déclarer dans le `sameAs` de l'entité.
  *
  *  Le `sameAs` sert à corroborer l'entité ailleurs que sur son propre site :

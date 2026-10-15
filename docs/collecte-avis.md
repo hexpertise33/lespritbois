@@ -9,25 +9,17 @@ Ce document contient ce qu'il faut pour le faire, rien de plus.
 
 ---
 
-## 1. Récupérer le lien direct (5 minutes, une seule fois)
+## 1. Le lien direct
 
-Le site pointe aujourd'hui vers la fiche Google, où le client doit encore
-trouver le bouton « Rédiger un avis ». Deux clics au lieu d'un, et chaque clic
-perdu coûte des avis.
+Récupéré le 15/10/2026 dans la fiche (« Demander des avis », compte Google
+adefrance033) et branché sur le site (`GOOGLE.avis` dans
+[`lib/data/navigation.ts`](../lib/data/navigation.ts)). Il ouvre directement
+le formulaire de notation :
 
-Le lien court officiel ouvre directement le formulaire de notation :
+**https://g.page/r/CdowfVdKkdTBEBM/review**
 
-1. Ouvrir le tableau de bord **Google Business Profile** (google.com/business,
-   avec le compte qui gère la fiche).
-2. **Demander des avis** → **Partager le formulaire d'avis**.
-3. Copier le lien, de la forme `https://g.page/r/XXXXXXXXXXXX/review`.
-
-Puis remplacer la valeur de `avis` dans
-[`lib/data/navigation.ts`](../lib/data/navigation.ts) — le bouton « Laisser un
-avis » de l'accueil s'y réfère, ainsi que les messages ci-dessous.
-
-Ce lien ne peut pas être reconstruit depuis l'identifiant public de la fiche :
-il faut passer par le tableau de bord.
+Le même écran propose un QR code (clic droit → « Enregistrer l'image sous ») :
+utile imprimé au dos d'une carte de visite ou d'un devis.
 
 ---
 
@@ -92,6 +84,30 @@ la fiche de 6 à une dizaine d'avis. C'est le seul chantier de cette liste que
 je ne peux pas faire à votre place : je n'ai pas les coordonnées de vos
 clients, et écrire en votre nom à des tiers n'est pas quelque chose que je fais
 sans votre validation message par message.
+
+---
+
+## 3 bis. Priorité Bassin d'Arcachon (avant l'ouverture de janvier 2027)
+
+L'agence de La Teste-de-Buch ouvre en janvier. Pour la carte Google de La
+Teste, Arcachon ou Gujan, un avis d'un client **du Bassin** pèse plus lourd que
+n'importe quel autre : c'est la preuve locale que les pages du site affirment
+sans pouvoir encore la montrer.
+
+À solliciter en premier : tous les clients du Bassin déjà livrés, puis chaque
+nouveau chantier du Bassin le jour de la réception.
+
+> Bonjour {prénom}, David de L'Esprit Bois. J'espère que {la pergola / la
+> terrasse} vous plaît. Nous ouvrons une agence à La Teste-de-Buch en janvier,
+> et l'avis de nos clients du Bassin compte beaucoup pour les voisins qui
+> hésitent à nous appeler. Si le chantier vous a convenu, deux minutes suffisent
+> : https://g.page/r/CdowfVdKkdTBEBM/review
+> Merci à vous !
+
+Le client écrit ce qu'il veut. On ne lui dicte pas le texte et on ne lui
+demande pas de citer sa commune : un avis rédigé à la place du client est
+contraire aux règles de Google. S'il parle naturellement de l'ouvrage et de
+l'endroit, c'est tant mieux.
 
 ---
 

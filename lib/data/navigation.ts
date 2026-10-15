@@ -44,16 +44,11 @@ export const GOOGLE = {
   /** L'établissement situé sur une carte. Sert de `hasMap` dans les données
    *  structurées : `fiche` est une page de résultats, pas une carte. */
   carte: 'https://www.google.com/maps/search/?api=1&query=1+Aux+Pradasses%2C+33500+Les+Billaux',
-  /** Lien « laisser un avis ». Pointe pour l'instant sur la fiche, où le bouton
-   *  « Rédiger un avis » se trouve, soit deux clics pour le client.
-   *
-   *  À REMPLACER par le lien court officiel, de la forme
-   *  https://g.page/r/XXXXXXXXXXXX/review, qui ouvre directement le formulaire
-   *  de notation en un clic. Il se récupère dans le tableau de bord Google
-   *  Business Profile : « Demander des avis » → « Partager le formulaire
-   *  d'avis ». Il ne peut pas être reconstruit depuis l'identifiant public de
-   *  la fiche, d'où ce repli. Voir docs/collecte-avis.md. */
-  avis: 'https://www.google.com/search?kgmid=/g/11l2gggj7p',
+  /** Lien « laisser un avis » : le lien court officiel, qui ouvre directement
+   *  le formulaire de notation en un clic. Récupéré le 15/10/2026 dans « Demander
+   *  des avis » de la fiche (compte Google adefrance033, qui gère la fiche
+   *  L'ESPRIT BOIS). Voir docs/collecte-avis.md. */
+  avis: 'https://g.page/r/CdowfVdKkdTBEBM/review',
 } as const;
 
 /** Agence du Bassin d'Arcachon, ouverture en janvier 2027.

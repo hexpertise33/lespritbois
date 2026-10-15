@@ -487,7 +487,7 @@ export const ZONES: Zone[] = [
       h: 900,
       alt: "Pergola et terrasse bois attenantes à une maison, ouvrage réalisé par L'Esprit Bois en Gironde",
     },
-    title: "Pergola sur le Bassin d'Arcachon : vent, embruns, site classé",
+    title: "Pergola bioclimatique à La Teste-de-Buch et sur le Bassin",
     description:
       "Pergola bioclimatique ou aluminium sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
     keywords:

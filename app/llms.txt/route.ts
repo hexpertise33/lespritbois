@@ -25,7 +25,7 @@ export function GET() {
 
 > Charpentier et constructeur bois installé aux Billaux (33500), à cinq minutes de Libourne, en Gironde. Conception, fabrication en atelier et pose par les mêmes équipes, sans sous-traitance. Entreprise qualifiée Qualibat, ouvrages couverts par une garantie décennale assurée par SMABTP.
 
-Zone d'intervention : Libourne et le Libournais (Les Billaux, Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), et plus largement la Gironde jusqu'à la métropole bordelaise. Pour les pergolas, l'entreprise se déplace également sur le Bassin d'Arcachon (La Teste-de-Buch, Arcachon, Gujan-Mestras, Le Teich), où elle n'a pas encore de chantier livré.
+Zone d'intervention : Libourne et le Libournais (Les Billaux, Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), et plus largement la Gironde jusqu'à la métropole bordelaise. L'entreprise intervient également sur le Bassin d'Arcachon (rendez-vous, relevés, chantiers) et y ouvre une agence au 29 allée des Mousserons, 33260 La Teste-de-Buch, en janvier 2027 : ${base}/agence-la-teste-de-buch.
 
 Contact : 05 57 40 65 80, lespritbois33@gmail.com, 1 Aux Pradasses, 33500 Les Billaux.
 
@@ -40,6 +40,7 @@ Contact : 05 57 40 65 80, lespritbois33@gmail.com, 1 Aux Pradasses, 33500 Les Bi
 - Zones d'intervention détaillées, chacune adossée à des chantiers réellement livrés dans le secteur :
 ${zones}
 - [Qui sommes-nous](${base}/qui-sommes-nous) : l'entreprise, l'atelier et l'auteur des guides.
+- [Agence de La Teste-de-Buch](${base}/agence-la-teste-de-buch) : bureau du Bassin d'Arcachon, 29 allée des Mousserons, 33260 La Teste-de-Buch, ouverture en janvier 2027.
 - [Contact](${base}/contact) : adresse, horaires, formulaire de demande d'étude.
 
 ## Guides techniques

@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from '@/components/ContactForm';
-import { CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
+import { AGENCE_LA_TESTE, CONTACT, ENTREPRISE_REF, GOOGLE } from '@/lib/data/navigation';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Contact, charpentier à Libourne (33)',
@@ -169,6 +169,30 @@ export default function ContactPage() {
                 </p>
               </article>
             </div>
+
+            {/* Agence du Bassin, annoncée avant son ouverture : voir AGENCE_LA_TESTE. */}
+            <a
+              href={AGENCE_LA_TESTE.slug}
+              className="mt-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8 bg-primary text-white rounded-2xl p-8 hover:bg-primary/90 transition-all group"
+            >
+              <span className="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">location_on</span>
+              <span className="flex-1">
+                <span className="block font-label-md text-label-md uppercase tracking-widest text-secondary mb-2">
+                  Nouvelle agence · ouverture {AGENCE_LA_TESTE.ouverture}
+                </span>
+                <span className="block font-headline-sm text-headline-sm text-white mb-1">
+                  {AGENCE_LA_TESTE.adresseComplete}
+                </span>
+                <span className="block text-on-primary-container text-body-md">
+                  Nous intervenons déjà sur le Bassin d&apos;Arcachon : rendez-vous, relevés et chantiers. L&apos;agence
+                  nous y installe.
+                </span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md group-hover:gap-2.5 transition-all">
+                Découvrir l&apos;agence
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+              </span>
+            </a>
           </div>
         </section>
 

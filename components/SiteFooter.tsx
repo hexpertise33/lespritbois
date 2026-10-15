@@ -1,4 +1,4 @@
-import { CONTACT, RESEAUX } from '@/lib/data/navigation';
+import { CONTACT, RESEAUX, AGENCE_LA_TESTE } from '@/lib/data/navigation';
 
 const lien =
   'text-on-surface-variant hover:text-secondary-dark hover:translate-x-1 transition-all duration-200 inline-block';
@@ -69,6 +69,11 @@ export default function SiteFooter() {
               </li>
               <li>{CONTACT.adresseComplete}</li>
               <li>{CONTACT.horaires}</li>
+              <li>
+                <a className="hover:text-secondary-dark transition-colors" href={AGENCE_LA_TESTE.slug}>
+                  Nouvelle agence : {AGENCE_LA_TESTE.ville} (janv. 2027)
+                </a>
+              </li>
             </ul>
           </address>
           <div className="mt-8 flex gap-4">

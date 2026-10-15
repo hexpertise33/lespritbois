@@ -6,7 +6,7 @@ import SiteFooter from '@/components/SiteFooter';
 import DevisStickyBar from '@/components/DevisStickyBar';
 import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import ContactForm from '@/components/ContactForm';
-import { AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
+import { AGENCE_LA_TESTE, AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
 import { AVIS } from '@/lib/data/avis';
 import Etoiles from '@/components/Etoiles';
 import { ZONES } from '@/lib/data/zones';
@@ -526,6 +526,36 @@ export default function HomePage() {
                 <p className="text-on-surface-variant text-body-md">De l'étude à la pose, sans sous-traitance</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Agence du Bassin, annoncée avant son ouverture (voir AGENCE_LA_TESTE et
+            docs/bascule-agence-la-teste.md). Placée haut : c'est le lien le plus
+            fort que la page agence reçoive du site. */}
+        <section className="bg-surface" aria-label="Nouvelle agence">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 pt-10">
+            <a
+              href={AGENCE_LA_TESTE.slug}
+              className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 bg-primary text-white rounded-2xl p-8 hover:bg-primary/90 transition-all group"
+            >
+              <span className="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">location_on</span>
+              <span className="flex-1">
+                <span className="block font-label-md text-label-md uppercase tracking-widest text-secondary mb-2">
+                  Nouvelle agence · ouverture {AGENCE_LA_TESTE.ouverture}
+                </span>
+                <span className="block font-headline-sm text-headline-sm text-white mb-1">
+                  L&apos;Esprit Bois s&apos;installe à {AGENCE_LA_TESTE.ville}
+                </span>
+                <span className="block text-on-primary-container text-body-md">
+                  Nous travaillons déjà sur tout le Bassin d&apos;Arcachon. L&apos;agence nous
+                  rapproche de vous.
+                </span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md group-hover:gap-2.5 transition-all">
+                Découvrir l&apos;agence
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+              </span>
+            </a>
           </div>
         </section>
 

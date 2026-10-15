@@ -18,6 +18,7 @@ Spec d'origine : `docs/superpowers/specs/2026-10-15-agence-la-teste-design.md`.
 - [ ] `lib/data/zones.ts`, constante `ACCES_PREFIXE` et textes du Bassin : remplacer « nous y ouvrons une agence … en janvier 2027 » par « notre agence de La Teste-de-Buch » (`grep -n "2027" lib/data/zones.ts`).
 - [ ] `components/SiteFooter.tsx` : remplacer « Nouvelle agence : … (janv. 2027) » par l'adresse complète de l'agence, sous celle de l'atelier.
 - [ ] `app/contact/page.tsx` : passer l'encart de l'agence au présent et y ajouter ses horaires.
+- [ ] `app/page.tsx`, bandeau « Nouvelle agence » sous le bandeau de confiance : retirer « ouverture … », passer « s'installe » à « est installée » ou le remplacer par l'adresse et les horaires.
 - [ ] `app/llms.txt/route.ts` : retirer « en janvier 2027 ».
 - [ ] `app/blog/pergola-aluminium-bord-de-mer-bassin-arcachon/page.tsx` : « Nous ouvrons d'ailleurs une agence … en janvier 2027 » devient « Notre agence de La Teste-de-Buch … ».
 - [ ] Contrôle final : `grep -rn "2027\|janv\." app components lib` ne doit plus renvoyer de mention d'ouverture à venir.

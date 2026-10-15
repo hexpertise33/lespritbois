@@ -183,7 +183,7 @@ export default function AgenceLaTestePage() {
                 29 allée des Mousserons, La Teste-de-Buch
               </h2>
               <address className="not-italic font-body-lg text-body-lg text-on-surface-variant mb-6">
-                L&apos;Esprit Bois, {AGENCE_LA_TESTE.nom.toLowerCase()}
+                L&apos;Esprit Bois, agence de {AGENCE_LA_TESTE.ville}
                 <br />
                 {AGENCE_LA_TESTE.rue}
                 <br />

@@ -432,12 +432,16 @@ export default function ArticlePergolaAluminiumBordDeMerPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mt-6 mb-5">
                 Une précision de méthode, parce qu&apos;elle nous paraît due :{' '}
                 <strong className="text-primary font-semibold">
-                  nous n&apos;avons pas encore de chantier livré au Bassin d&apos;Arcachon.
+                  nous travaillons sur le Bassin d&apos;Arcachon, mais nos chantiers n&apos;y sont pas encore publiés.
                 </strong>{' '}
-                Nos réalisations se situent à Libourne, dans le Libournais et en Gironde intérieure. Ce que vous lisez
-                ici n&apos;est donc pas un retour d&apos;expérience littoral déguisé : ce sont les exigences que nous
-                portons au devis auprès de nos fournisseurs et notre manière de poser, transposées à une implantation en
-                bord d&apos;eau. Nous préférons le dire plutôt que d&apos;inventer une référence de front de bassin.
+                Les réalisations montrées sur ce site se situent à Libourne, dans le Libournais et en Gironde
+                intérieure. Ce que vous lisez ici, ce sont les exigences que nous portons au devis auprès de nos
+                fournisseurs et notre manière de poser en bord d&apos;eau, pas une référence de front de bassin
+                photographiée pour l&apos;occasion. Nous ouvrons d&apos;ailleurs une{' '}
+                <a href="/agence-la-teste-de-buch" className={lienInterne}>
+                  agence à La Teste-de-Buch
+                </a>{' '}
+                en janvier 2027.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Notre zone d&apos;intervention couvre bien le secteur : nous détaillons nos prestations sur la page{' '}

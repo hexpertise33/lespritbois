@@ -258,8 +258,8 @@ export default function PageZone({ zone }: { zone: Zone }) {
       "@context": "https://schema.org",
       "@type": "ItemList",
       // Le nom de la liste énumère les communes réellement livrées, jamais la
-      // zone de la page : sur le Bassin d'Arcachon nous n'avons pas encore de
-      // chantier, et les exemples montrés sont à l'intérieur des terres. Nommer
+      // zone de la page : sur le Bassin d'Arcachon, nos chantiers ne sont pas
+      // encore publiés et les exemples montrés sont ailleurs. Nommer
       // la liste d'après la zone y affirmerait le contraire dans les données
       // structurées, alors que le texte visible dit l'inverse.
       name: `Chantiers réalisés : ${[...new Set(chantiers.map((c) => c.commune))].join(", ")}`,
@@ -1006,11 +1006,18 @@ export default function PageZone({ zone }: { zone: Zone }) {
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-3xl">
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
-                Depuis l&apos;atelier des Billaux
+                {zone.accesTitre ?? "Depuis l'atelier des Billaux"}
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
                 {zone.acces}
               </p>
+              {zone.accesLien ? (
+                <p className="font-body-lg text-body-lg mb-8">
+                  <a href={zone.accesLien.href} className={lienInterne}>
+                    {zone.accesLien.texte}
+                  </a>
+                </p>
+              ) : null}
               <p className="font-body-md text-body-md text-on-surface-variant">
                 Communes citées sur cette page : {zone.communes.join(", ")}. Nos
                 gammes complètes sont détaillées sur{" "}

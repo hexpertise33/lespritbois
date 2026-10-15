@@ -10,9 +10,24 @@
 // page sans chantier de la zone est une doorway page, que Google traite comme
 // telle. Si vous voulez couvrir un secteur où nous n'avons pas encore posé,
 // attendez le premier chantier.
+//
+// Bassin d'Arcachon : l'entreprise y a déjà rendez-vous et chantiers
+// (confirmé le 15/10/2026) et y ouvre une agence en janvier 2027. Ses
+// chantiers du Bassin ne sont pas encore publiés : les pages ne doivent ni les
+// nier ni en inventer, elles en parlent au présent, sans commune ni ouvrage.
 // =========================================================================
 
 import type { Avis } from '@/lib/data/avis';
+import { AGENCE_LA_TESTE } from '@/lib/data/navigation';
+
+/** Ouverture de la section accès des pages du Bassin. Une seule phrase pour les
+ *  quatre pages : en janvier, c'est ici qu'on passe au passé composé. */
+const ACCES_PREFIXE = `Nous intervenons déjà sur tout le Bassin, et nous y ouvrons une agence au ${AGENCE_LA_TESTE.rue}, à ${AGENCE_LA_TESTE.ville}, en ${AGENCE_LA_TESTE.ouverture}. `;
+
+const ACCES_LIEN = {
+  href: AGENCE_LA_TESTE.slug,
+  texte: `Notre agence de ${AGENCE_LA_TESTE.ville}`,
+};
 
 export type Zone = {
   slug: string;
@@ -135,6 +150,11 @@ export type Zone = {
   chantiersIntro?: string;
   /** Distance et temps depuis l'atelier des Billaux, vérifiés à la carte. */
   acces: string;
+  /** Titre de la section accès. Par défaut « Depuis l'atelier des Billaux » ;
+   *  le Bassin le remplace depuis l'annonce de l'agence de La Teste-de-Buch. */
+  accesTitre?: string;
+  /** Lien affiché sous le texte d'accès, vers une page d'agence. */
+  accesLien?: { href: string; texte: string };
   /** Guides du blog à rattacher au secteur.
    *
    *  Search Console, 22/08/2026 : huit pages sont « détectées, actuellement non
@@ -474,7 +494,7 @@ export const ZONES: Zone[] = [
     accent: 'sur mesure',
     h1: "Pergolas sur mesure sur le Bassin d'Arcachon",
     chapo:
-      "Nous nous déplaçons sur le Bassin pour les pergolas. Autant le dire tout de suite : nous n'y avons pas encore posé, voici donc ce que nous savons du terrain, pas une liste de références que nous n'avons pas.",
+      "Nous travaillons déjà sur le Bassin, rendez-vous, relevés et chantiers, et nous y ouvrons une agence à La Teste-de-Buch en janvier 2027. Voici ce que le terrain change à une pergola, et ce que nous en faisons.",
     cover: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
     coverW: 1200,
     coverH: 900,
@@ -552,9 +572,9 @@ export const ZONES: Zone[] = [
       },
     ],
     chantiers: ['lacanau'],
-    chantiersTitre: 'Notre chantier littoral le plus proche',
+    chantiersTitre: 'Un chantier sur sol sableux, à Lacanau',
     chantiersIntro:
-      "Nous n'avons pas encore de pergola posée sur le Bassin. Notre référence côtière est à Lacanau, sur la côte océane : ce n'est pas le Bassin, et c'est une terrasse et non une pergola, mais le sol y pose exactement la même question, et c'est ce que vous devriez demander à tout artisan qui vient chez vous.",
+      "Nos chantiers du Bassin ne sont pas encore publiés sur ce site. Celui-ci est à Lacanau, sur la côte océane : c'est une terrasse et non une pergola, mais le sol y pose exactement la même question d'ancrage, et c'est ce que vous devriez demander à tout artisan qui vient chez vous.",
     guides: [
       {
         slug: 'choisir-teinte-ral-aluminium',
@@ -576,11 +596,13 @@ export const ZONES: Zone[] = [
       },
     ],
     acces:
-      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Le relevé et le devis sont gratuits, déplacement compris, nous ne facturons pas la distance, nous en tenons compte dans l'organisation du chantier, en préparant davantage en atelier pour réduire le nombre de journées sur place.",
+      ACCES_PREFIXE + "Le relevé et le devis sont gratuits, déplacement compris. La fabrication reste à notre atelier des Billaux, près de Libourne : nous préparons un maximum en atelier pour réduire le nombre de journées sur place.",
+    accesTitre: 'Sur le Bassin, et bientôt à La Teste-de-Buch',
+    accesLien: ACCES_LIEN,
     faq: [
       {
-        q: 'Vous déplacez-vous vraiment jusqu’au Bassin ?',
-        r: "Oui, pour les pergolas. C'est une zone que nous voulons développer, et nous préférons l'annoncer plutôt que de le laisser deviner. Le relevé et le devis sont gratuits, déplacement compris. En revanche nous ne vous dirons pas que nous y avons vingt chantiers : nous n'y avons pas encore posé, et vous le verriez au premier rendez-vous.",
+        q: 'Intervenez-vous sur tout le Bassin ?',
+        r: "Oui. Nous y faisons déjà rendez-vous, relevés et chantiers, de La Teste-de-Buch au Cap-Ferret, et nous ouvrons une agence à La Teste-de-Buch en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris : vous n'avez pas besoin d'attendre l'ouverture pour nous appeler.",
       },
       {
         q: 'Une pergola tient-elle au vent du Bassin ?',
@@ -604,10 +626,10 @@ export const ZONES: Zone[] = [
   // -----------------------------------------------------------------------
   // Terrasses bois, Bassin d'Arcachon.
   //
-  // Deuxième page d'offre du secteur, ouverte le 24/08/2026 avant le carport
-  // parce que c'est la seule offre pour laquelle l'entreprise a une preuve
-  // littorale réelle : Lacanau, sur sable, en vis de fondation. La page le dit
-  // et ne prétend pas que Lacanau soit le Bassin.
+  // Deuxième page d'offre du secteur, ouverte le 24/08/2026 avant le carport.
+  // Sa preuve photographiée est Lacanau, sur sable, en vis de fondation : la
+  // page le dit et ne prétend pas que Lacanau soit le Bassin, où l'entreprise
+  // travaille par ailleurs (chantiers non publiés à ce jour).
   // -----------------------------------------------------------------------
   {
     slug: 'terrasse-bois-bassin-arcachon',
@@ -666,7 +688,7 @@ export const ZONES: Zone[] = [
     accent: 'sur mesure',
     h1: "Terrasses bois sur mesure sur le Bassin d'Arcachon",
     chapo:
-      "Nous n'avons pas encore posé de terrasse sur le Bassin. Mais nous en avons posé une sur le sable, à Lacanau : c'est la même question de portance, et c'est elle qui commande tout le reste.",
+      "Sur le Bassin, une terrasse se joue sous le platelage : le sable porte inégalement, et c'est cette question de portance qui commande tout le reste. Nous y travaillons déjà, et nous y ouvrons une agence à La Teste-de-Buch en janvier 2027.",
     /* Couverture en paysage : le bandeau du héros est deux fois plus large que
        haut, une photo en portrait y perdrait la moitié de sa hauteur (voir
        `verifieCouvertures` en bas de ce fichier). Celle-ci montre la vis de
@@ -751,7 +773,7 @@ export const ZONES: Zone[] = [
     chantiers: ['lacanau'],
     chantiersTitre: 'Notre terrasse posée sur le sable',
     chantiersIntro:
-      "Lacanau est sur la côte océane et non sur le Bassin : nous ne prétendrons pas le contraire. Mais c'est le même sable et la même question de portance, et c'est le seul chantier que nous puissions vous montrer pour en parler.",
+      "Lacanau est sur la côte océane et non sur le Bassin : nous ne prétendrons pas le contraire, et nos chantiers du Bassin ne sont pas encore publiés sur ce site. Mais c'est le même sable et la même question de portance, et ce chantier la montre mieux qu'un discours.",
     guides: [
       {
         slug: 'terrasse-bois-structure-plots-lambourdes',
@@ -773,7 +795,9 @@ export const ZONES: Zone[] = [
       },
     ],
     acces:
-      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Le relevé et le devis sont gratuits, déplacement compris. Sur une terrasse, ce relevé sert d'abord à une chose : savoir sur quoi on va fonder. C'est la seule question qui coûte cher si on y répond après la pose.",
+      ACCES_PREFIXE + "Le relevé et le devis sont gratuits, déplacement compris. Sur une terrasse, ce relevé sert d'abord à une chose : savoir sur quoi on va fonder. C'est la seule question qui coûte cher si on y répond après la pose.",
+    accesTitre: 'Sur le Bassin, et bientôt à La Teste-de-Buch',
+    accesLien: ACCES_LIEN,
     faq: [
       {
         q: 'Faut-il une autorisation pour une terrasse à Arcachon ou au Cap-Ferret ?',
@@ -788,8 +812,8 @@ export const ZONES: Zone[] = [
         r: "La question de l'essence arrive après celle de la mise en œuvre, et c'est souvent l'inverse qu'on entend. Le sel n'attaque pas le bois : il attaque les fixations, d'où l'inox A4 plutôt que l'A2. Ce qui use le platelage en bord de mer, c'est l'UV et l'alternance humide-sec. Un pin traité correctement posé et ventilé tiendra mieux qu'un bois exotique posé sur une sous-face qui ne respire pas. Notre guide par essence détaille les cas.",
       },
       {
-        q: 'Vous déplacez-vous jusqu’au Bassin pour une terrasse ?',
-        r: "Oui, et nous le disons franchement : c'est un secteur que nous voulons développer, où nous n'avons pas encore posé. Le relevé et le devis sont gratuits, déplacement compris. Vous ne trouverez pas ici de liste de références locales, parce qu'elle n'existe pas encore, vous trouverez le chantier de Lacanau, sur sable, et ce que nous en avons appris.",
+        q: 'Posez-vous des terrasses sur tout le Bassin ?',
+        r: "Oui. Nous y faisons déjà rendez-vous, relevés et chantiers, et nous ouvrons une agence à La Teste-de-Buch en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris. Sur le sable, c'est ce relevé qui décide de la fondation : nous le faisons avant de chiffrer, jamais après.",
       },
     ],
   },
@@ -1002,7 +1026,7 @@ export const ZONES: Zone[] = [
     chantiers: ['genissac', 'clerac', 'rauzan'],
     chantiersTitre: 'Nos extensions et nos maisons à ossature bois',
     chantiersIntro:
-      "Nous n'avons pas encore construit sur le Bassin, et nous préférons l'écrire : les chantiers ci-dessous sont à l'intérieur des terres. En voici trois parmi ceux que nous documentons, du raccord sur un bâti ancien à la maison complète de 150 m².",
+      "Nos chantiers du Bassin ne sont pas encore publiés sur ce site : ceux-ci sont à l'intérieur des terres. En voici trois parmi ceux que nous documentons, du raccord sur un bâti ancien à la maison complète de 150 m².",
     guides: [
       {
         slug: 'extension-ossature-bois-prix-m2',
@@ -1024,7 +1048,9 @@ export const ZONES: Zone[] = [
       },
     ],
     acces:
-      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Sur une extension comme sur une maison, cette distance se gère en préparant davantage en atelier : l'ossature est taillée et assemblée à blanc chez nous, puis levée sur place en quelques jours. Le relevé et l'étude de faisabilité sont gratuits, déplacement compris.",
+      ACCES_PREFIXE + "Sur une extension comme sur une maison, la fabrication reste à notre atelier des Billaux : l'ossature y est taillée et assemblée à blanc, puis levée sur place en quelques jours. Le relevé et l'étude de faisabilité sont gratuits, déplacement compris.",
+    accesTitre: 'Sur le Bassin, et bientôt à La Teste-de-Buch',
+    accesLien: ACCES_LIEN,
     faq: [
       {
         q: 'Peut-on agrandir une maison située près du rivage du Bassin ?',
@@ -1114,12 +1140,11 @@ export const ZONES: Zone[] = [
     accent: 'sur mesure',
     h1: "Aménagements extérieurs bois sur mesure sur le Bassin d'Arcachon",
     chapo:
-      "Nous nous déplaçons sur le Bassin depuis notre atelier des Billaux. Nous n'y avons pas encore posé, et nous préférons l'écrire : voici ce que le terrain impose, ouvrage par ouvrage, plutôt qu'une liste de références que nous n'avons pas.",
+      "Nous travaillons déjà sur le Bassin, rendez-vous, relevés et chantiers, et nous y ouvrons une agence à La Teste-de-Buch en janvier 2027. Voici ce que le terrain impose, ouvrage par ouvrage.",
     /* Seule couverture du site qui montre un lieu et non un ouvrage. C'est
        assumé : cette page est une page mère, elle annonce un secteur. L'alt le
-       dit explicitement pour qu'on ne puisse pas la lire comme une réalisation,
-       la page reposant tout entière sur le fait que nous n'y avons pas encore
-       posé. Photo fournie par David, libre de droits (confirmé le 25/08/2026). */
+       dit explicitement pour qu'on ne puisse pas la lire comme une réalisation :
+       nos chantiers du Bassin ne sont pas encore publiés. Photo fournie par David, libre de droits (confirmé le 25/08/2026). */
     cover: '/images/bassin-arcachon-passes-dune-du-pilat.jpg',
     coverW: 1400,
     coverH: 933,
@@ -1186,9 +1211,9 @@ export const ZONES: Zone[] = [
       },
     ],
     chantiers: ['lacanau'],
-    chantiersTitre: 'Notre chantier littoral le plus proche',
+    chantiersTitre: 'Un chantier sur sol sableux, à Lacanau',
     chantiersIntro:
-      "Nous n'avons pas encore de chantier sur le Bassin. Notre référence côtière est à Lacanau, sur la côte océane, ce n'est pas le Bassin, et c'est une terrasse. Mais le sol y pose exactement la même question, et c'est celle qu'il faut poser à tout artisan qui se déplace chez vous.",
+      "Nos chantiers du Bassin ne sont pas encore publiés sur ce site. Celui-ci est à Lacanau, sur la côte océane : ce n'est pas le Bassin, mais le sol y pose exactement la même question, et c'est celle qu'il faut poser à tout artisan qui vient chez vous.",
     guides: [
       {
         slug: 'autorisation-urbanisme-abri-carport-pergola-2026',
@@ -1210,19 +1235,21 @@ export const ZONES: Zone[] = [
       },
     ],
     acces:
-      "L'atelier est aux Billaux, près de Libourne : comptez un peu plus d'une heure de route jusqu'au Bassin. Le relevé et le devis sont gratuits, déplacement compris, nous ne facturons pas la distance, nous en tenons compte dans l'organisation du chantier, en préparant davantage en atelier pour réduire le nombre de journées sur place.",
+      ACCES_PREFIXE + "Le relevé et le devis sont gratuits, déplacement compris. La fabrication reste à notre atelier des Billaux, près de Libourne : nous préparons un maximum en atelier pour réduire le nombre de journées sur place.",
+    accesTitre: 'Sur le Bassin, et bientôt à La Teste-de-Buch',
+    accesLien: ACCES_LIEN,
     faq: [
       {
-        q: 'Intervenez-vous vraiment sur le Bassin d’Arcachon ?',
-        r: "Oui, et nous préférons annoncer la situation plutôt que de la laisser deviner : c'est un secteur que nous développons, où nous n'avons pas encore posé. Le relevé et le devis sont gratuits, déplacement compris. Ce que vous ne trouverez pas ici, c'est une liste de vingt références locales, vous le verriez au premier rendez-vous.",
+        q: 'Intervenez-vous sur le Bassin d’Arcachon ?',
+        r: "Oui, nous y travaillons déjà : rendez-vous, relevés et chantiers, sur toutes les communes du Bassin. Nous y ouvrons une agence au 29 allée des Mousserons, à La Teste-de-Buch, en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris.",
       },
       {
         q: 'Quels ouvrages réalisez-vous sur le secteur ?',
-        r: "Pergolas et terrasses bois pour l'instant, chacune traitée sur sa propre page parce que le Bassin ne leur pose pas les mêmes problèmes. Carports et extensions à ossature bois font partie de nos gammes et nous les réalisons ailleurs en Gironde ; nous ouvrirons leurs pages pour le Bassin quand nous aurons de quoi les écrire autrement qu'en généralités.",
+        r: "Pergolas, terrasses bois, extensions et maisons à ossature bois, chacune traitée sur sa propre page parce que le Bassin ne leur pose pas les mêmes problèmes. Les carports font aussi partie de nos gammes : parlez-nous de votre projet.",
       },
       {
-        q: 'Le déplacement depuis Libourne est-il facturé ?',
-        r: "Non. Comptez un peu plus d'une heure de route depuis notre atelier des Billaux : le relevé et le devis restent gratuits, déplacement compris. La distance ne se retrouve pas en ligne sur le devis, elle se retrouve dans l'organisation, nous préparons davantage en atelier pour réduire le nombre de journées sur place.",
+        q: 'Le déplacement est-il facturé ?',
+        r: "Non. Le relevé et le devis sont gratuits, déplacement compris, aujourd'hui comme après l'ouverture de l'agence de La Teste-de-Buch en janvier 2027. La fabrication se fait à notre atelier des Billaux : nous y préparons un maximum pour réduire le nombre de journées sur place.",
       },
       {
         q: 'Faut-il une autorisation pour un ouvrage extérieur sur le Bassin ?',

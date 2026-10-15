@@ -23,6 +23,29 @@ export type Chantier = {
 
 export const CHANTIERS: Chantier[] = [
   {
+    id: 'libourne-carport-trapeze',
+    commune: 'Libourne',
+    categorie: 'Carport',
+    titre: 'Un carport en trapèze, taillé pour sa limite de propriété',
+    src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
+    w: 1448,
+    h: 1086,
+    alt: "Carport bois raboté adossé au pignon en pierre d'une maison, ferme apparente, sous-face en lambris et couverture en tuiles, à Libourne",
+    faits: [
+      { label: 'Ouvrage', valeur: 'Carport bois adossé, en limite de propriété' },
+      { label: 'Emprise', valeur: 'En trapèze, sans angle droit' },
+      { label: 'Fabrication', valeur: 'Bois raboté, taillé et assemblé dans notre dépôt' },
+      { label: 'Finition', valeur: 'Sous-face en lambris bois, couverture en tuiles' },
+      { label: 'Durée', valeur: '6 jours' },
+    ],
+    paragraphes: [
+      "À Libourne, le carport s'adosse au pignon en pierre de la maison, sur une emprise en trapèze et en limite de propriété. Aucun angle n'y est droit : la charpente ne pouvait pas sortir d'un catalogue.",
+      "Toute la structure est en bois raboté, taillée et assemblée dans notre dépôt à partir du relevé, puis levée sur place. C'est là que se règle la difficulté du trapèze : chaque pièce part à sa cote, et la limite de propriété est tenue sans que rien ne déborde chez le voisin.",
+      "La ferme et les jambes de force restent apparentes, et toute la sous-face est habillée de lambris bois. Vu d'en dessous, le carport se lit comme une charpente finie plutôt que comme un abri. La couverture est en tuiles de terre cuite, comme la maison, avec une gouttière et une descente qui ramènent l'eau le long de la façade.",
+      'Six jours de chantier, de la taille à la pose.',
+    ],
+  },
+  {
     id: 'pyla-sur-mer',
     commune: 'La Teste-de-Buch',
     categorie: 'Extension ossature bois',

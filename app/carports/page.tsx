@@ -382,6 +382,21 @@ const ETAPES = [
 /* Galerie : uniquement des ouvrages que nous avons réalisés. */
 const GALERIE = [
   {
+    src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
+    alt: "Carport bois raboté adossé au pignon en pierre d'une maison, ferme apparente et couverture en tuiles, à Libourne",
+    legende: 'Libourne, carport en trapèze en limite de propriété',
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-3.webp',
+    alt: 'Ferme de carport en bois raboté avec poinçon et jambes de force apparents, sous-face en lambris, à Libourne',
+    legende: 'Libourne, ferme apparente et sous-face en lambris',
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-2.webp',
+    alt: 'Carport bois vu de côté, couverture en tuiles de terre cuite et gouttière en rive, à Libourne',
+    legende: 'Libourne, couverture en tuiles comme la maison',
+  },
+  {
     src: '/images/source-adefrance/Carport-bois-Libourne-2.webp',
     alt: "Carport bois adossé à la façade au coucher du soleil, charpente apparente, à Lugon-et-l'Île-du-Carnay",
     legende: 'Charpente adossée, contre-jour de fin de journée',
@@ -1306,6 +1321,8 @@ export default function CarportsPage() {
               Carports réalisés à Libourne et en Gironde
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
+              Notre dernier chantier, un carport bois en trapèze adossé à une maison en pierre de Libourne, est raconté sur notre{' '}
+              <a href="/realisations" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">page réalisations</a>.
               Le carport pour trois voitures sur terrain en pente de Capian, et les autres chantiers du secteur, sont détaillés sur notre page <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergolas et carports en Entre-deux-Mers</a>.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

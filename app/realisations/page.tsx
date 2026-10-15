@@ -17,11 +17,11 @@ const PROJET = 'Projet vu depuis les réalisations';
 const PAGE_LABEL = '/realisations';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nos réalisations en Gironde : quatorze chantiers racontés",
+  title: "Nos réalisations en Gironde : quinze chantiers racontés",
   description:
-    'Surélévation au Pyla, carport à Capian, extension à Clérac, maison ossature bois à Rauzan : quatorze chantiers avec leur contrainte et leurs matériaux.',
+    'Carport à Libourne, surélévation au Pyla, extension à Clérac, maison ossature bois à Rauzan : quinze chantiers avec leur contrainte et leurs matériaux.',
   keywords:
-    "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan, surélévation ossature bois Pyla-sur-Mer",
+    "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan, surélévation ossature bois Pyla-sur-Mer, carport bois Libourne",
   path: '/realisations',
   ogImage: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
   ogTitle: 'Nos chantiers, racontés : du Libournais au Bassin d\'Arcachon',
@@ -81,6 +81,76 @@ const CARPORTS_COURTS = [
 /** Galerie. Chaque vignette est un ouvrage réalisé par l'entreprise ou une pièce
  *  exposée sur son dépôt, les visuels fournisseur en ont été retirés. */
 const GALERIE: Vignette[] = [
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
+    w: 1448,
+    h: 1086,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Carport bois adossé au pignon',
+    lieu: 'Libourne',
+    alt: "Carport bois raboté adossé au pignon en pierre d'une maison, ferme apparente et couverture en tuiles, à Libourne",
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-2.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Vue de côté, gouttière en rive',
+    lieu: 'Libourne',
+    alt: "Carport bois vu de côté, couverture en tuiles de terre cuite et gouttière en rive, adossé à une maison en pierre à Libourne",
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-3.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Ferme apparente en façade',
+    lieu: 'Libourne',
+    alt: "Ferme de carport en bois raboté avec poinçon et jambes de force apparents, sous-face en lambris, à Libourne",
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-4.webp',
+    w: 1200,
+    h: 1600,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Pignon et jambes de force',
+    lieu: 'Libourne',
+    alt: "Pignon d'un carport bois en limite de propriété, ferme et jambes de force apparentes devant un mur en pierre, à Libourne",
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-5.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Sous-face en lambris bois',
+    lieu: 'Libourne',
+    alt: "Sous-face d'un carport habillée de lambris bois, pannes apparentes, contre un mur en pierre à Libourne",
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-6.webp',
+    w: 1600,
+    h: 1200,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Lambris et pannes apparentes',
+    lieu: 'Libourne',
+    alt: "Lambris bois et pannes en bois raboté vus depuis l'intérieur d'un carport, à Libourne",
+  },
+  {
+    src: '/images/realisations/carport-bois-trapeze-libourne-7.webp',
+    w: 1200,
+    h: 1600,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Descente le long de la façade',
+    lieu: 'Libourne',
+    alt: "Gouttière et descente du carport le long de la façade d'une maison en pierre, sous-face en lambris visible, à Libourne",
+  },
   {
     src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-1.webp',
     w: 1600,
@@ -495,7 +565,7 @@ export default function RealisationsPage() {
               Nos réalisations à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Quatorze chantiers racontés
+              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Quinze chantiers racontés
               avec leur commune, leur contrainte et leur durée.
             </p>
           </div>
@@ -542,7 +612,7 @@ export default function RealisationsPage() {
                 Ce que nous avons bâti
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Quatorze chantiers, quatorze contraintes différentes
+                Quinze chantiers, quinze contraintes différentes
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Un étage en ossature bois ajouté à une maison du{' '}

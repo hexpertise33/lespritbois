@@ -289,6 +289,18 @@ export default function ContactPage() {
                   <span className="material-symbols-outlined text-[18px]" aria-hidden="true">open_in_new</span>
                 </a>
               </div>
+              <p className="font-body-md text-body-md text-on-surface-variant mt-6">
+                Nous avons travaillé pour vous ?{' '}
+                <a
+                  href={GOOGLE.avis}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary-dark font-semibold underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  Laissez-nous un avis Google
+                </a>
+                , cela prend deux minutes et aide les prochains clients à nous trouver.
+              </p>
             </div>
 
             <div className="bg-surface-container-low rounded-2xl p-8 border border-surface-variant">

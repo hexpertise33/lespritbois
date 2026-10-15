@@ -124,6 +124,17 @@ const jsonld = [
       { '@type': 'City', name: 'La Teste-de-Buch' },
       { '@type': 'City', name: 'Arcachon' },
       { '@type': 'City', name: 'Gujan-Mestras' },
+      { '@type': 'City', name: 'Le Teich' },
+      { '@type': 'City', name: 'Biganos' },
+      { '@type': 'City', name: 'Andernos-les-Bains' },
+      { '@type': 'City', name: 'Lège-Cap-Ferret' },
+      { '@type': 'City', name: 'Saint-Pey-de-Castets' },
+      { '@type': 'City', name: 'Montussan' },
+      { '@type': 'City', name: 'Moulon' },
+      { '@type': 'City', name: 'Génissac' },
+      { '@type': 'City', name: 'Arveyres' },
+      { '@type': 'City', name: 'Saint-Denis-de-Pile' },
+      { '@type': 'City', name: 'Lacanau' },
       { '@type': 'AdministrativeArea', name: 'Gironde' },
       { '@type': 'AdministrativeArea', name: 'Nouvelle-Aquitaine' },
     ],
@@ -891,7 +902,7 @@ export default function HomePage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Tout ce que nous faisons, c'est notre métier, du sol au toit :{' '}
                 <a
-                  href="#solutions"
+                  href="/terrasses-bois"
                   className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
                 >
                   terrasses
@@ -924,6 +935,23 @@ export default function HomePage() {
                   constructions bois
                 </a>
                 .
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mt-6">
+                Autour de l&apos;atelier, nous posons aussi bien une{' '}
+                <a
+                  href="/pergolas"
+                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  pergola bioclimatique à Libourne
+                </a>{' '}
+                qu&apos;une{' '}
+                <a
+                  href="/terrasses-bois"
+                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                >
+                  terrasse bois à Libourne
+                </a>{' '}
+                ou dans le Libournais, avec la même équipe du relevé à la pose.
               </p>
             </div>
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">

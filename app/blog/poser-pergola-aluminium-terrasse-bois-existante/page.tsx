@@ -489,7 +489,12 @@ export default function ArticlePergolaSurTerrasseBoisPage() {
                 <a href="https://www.fcba.fr/" className={lienInterne} target="_blank" rel="noopener noreferrer">
                   l&apos;institut technologique FCBA
                 </a>
-                ). Notre façon de faire tient en quelques principes simples.
+                ). Si c&apos;est la terrasse elle-même qui est fatiguée, mieux vaut la reprendre avant de poser quoi
+                que ce soit dessus : c&apos;est un chantier que nous menons aussi, détaillé sur notre page{' '}
+                <a href="/terrasses-bois" className={lienInterne}>
+                  terrasse bois à Libourne
+                </a>
+                . Notre façon de faire tient en quelques principes simples.
               </p>
               <ul className="space-y-3 mb-5">
                 {[

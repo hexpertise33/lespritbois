@@ -91,8 +91,8 @@ const jsonld = [
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 44.9517,
-      longitude: -0.2372,
+      latitude: 44.952534,
+      longitude: -0.239327,
     },
     /** Pointeur vers la fiche de l'établissement sur une carte. Complète `geo`,
      *  qui donne les coordonnées mais ne relie pas l'entité à sa fiche. */

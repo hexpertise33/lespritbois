@@ -595,7 +595,7 @@ export default function ArticleOssatureBoisHiverPage() {
                 Notre atelier est aux Billaux, à côté de Libourne : une distance courte entre l&apos;atelier et le
                 chantier permet de recaler une livraison rapidement quand la météo tourne. C&apos;est ainsi que nous
                 menons nos{' '}
-                <a href="/constructions-bois" className={lienInterne}>
+                <a href="/constructeur-ossature-bois-gironde" className={lienInterne}>
                   constructions et extensions à ossature bois en Gironde
                 </a>,{' '}
                 en automne comme au printemps.

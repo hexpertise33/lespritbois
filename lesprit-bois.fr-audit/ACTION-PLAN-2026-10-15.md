@@ -15,7 +15,7 @@ Les actions sont classées par impact attendu. Pour chacune : qui agit, et ce qu
 
 ## Haut
 
-3. **Obtenir des liens d'autres sites** (l'entreprise, avec mon aide pour les textes)
+3. **Obtenir des liens d'autres sites** (l'entreprise). Messages prêts le 16/10 dans docs/netlinking-demandes.md : 9 cibles et 4 modèles (fournisseur, organisme, mairie, communiqué de presse pour l'agence).
    - C'est ce qui manque à /pergolas (position 57) et /carports (64).
    - Fournisseurs : fiche « installateur » chez le fabricant des pergolas et du bois.
    - Organismes : Qualibat (annuaire des entreprises qualifiées), CAPEB ou FFB Gironde, CCI Libourne.
@@ -29,12 +29,12 @@ Les actions sont classées par impact attendu. Pour chacune : qui agit, et ce qu
    - Répondre à chaque avis en citant l'ouvrage et la commune.
 
 5. **Pousser les requêtes proches de la première page** (moi)
-   - ✅ FAIT le 15/10 (commit bfd5ce5) : liens « pergola bioclimatique à Libourne » et « terrasse bois à Libourne » depuis l'accueil ; le lien « terrasses » de l'accueil mène maintenant à /terrasses-bois. Reste à faire : les mêmes liens depuis les articles de blog qui se classent bien.
+   - ✅ FAIT le 15/10 (commit bfd5ce5) : liens « pergola bioclimatique à Libourne » et « terrasse bois à Libourne » depuis l'accueil ; le lien « terrasses » de l'accueil mène maintenant à /terrasses-bois. ✅ FAIT le 16/10 (commit c6526bd) : les articles ossature-bois-chantier-hiver-pluie et poser-pergola-aluminium-terrasse-bois-existante renvoient vers /constructeur-ossature-bois-gironde et /terrasses-bois. Les trois autres articles qui rapportent avaient déjà leurs liens.
    - « maison bois gironde » (14) et « constructeur maison bois gironde » (18) : c'est l'accueil qui se classe. Décision à prendre : faire entrer « constructeur bois » dans le titre de l'accueil, ou créer une page dédiée « maison bois en Gironde » qui s'appuie sur le chantier de Rauzan (150 m²).
 
 6. **Corriger les données structurées de l'accueil** (moi)
    - `geo` : passer de 4 à 6 décimales, avec les coordonnées exactes du repère de la fiche Google (à relever dans la fiche).
-   - ✅ FAIT le 15/10 (commit bfd5ce5) : `areaServed` passe à 29 zones (communes des chantiers publiés, Bassin compris). Reste à faire : `geo`, qui demande les coordonnées exactes.
+   - ✅ FAIT le 15/10 (commit bfd5ce5) : `areaServed` passe à 29 zones (communes des chantiers publiés, Bassin compris). ✅ `geo` FAIT le 16/10 : 44.952534 / -0.239327, relevé sur le repère de la fiche Google, soit environ 180 m d'écart avec l'ancienne valeur. ⚠️ Horaires à trancher par l'entreprise : la fiche Google affiche une coupure de 12 h à 13 h, le site indique 8 h à 17 h en continu.
 
 ## Moyen
 
@@ -51,7 +51,7 @@ Les actions sont classées par impact attendu. Pour chacune : qui agit, et ce qu
 
 10. **Blog : consolider sans geler** (moi)
     - Le blog fait maintenant environ 30 % des clics. On garde la cadence de deux articles par semaine.
-    - On fusionne seulement les articles à zéro impression : entretien-aluminium, plage-piscine, veranda-aluminium, bureau-jardin, avec redirection 301 vers l'article proche qui se classe.
+    - Fusions non faites le 16/10, volontairement. Les 4 articles à zéro impression (publiés du 01 au 19/08) ne nuisent pas au site, la suppression est irréversible, et deux mois est un délai court pour un domaine jeune. À réévaluer fin novembre, décision de l'entreprise.
     - Rafraîchir les 5 articles qui rapportent : date de mise à jour, liens vers les pages commerciales.
 
 ## Bas

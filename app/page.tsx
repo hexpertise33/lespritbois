@@ -4,12 +4,12 @@ import JsonLd from '@/components/JsonLd';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import DevisStickyBar from '@/components/DevisStickyBar';
-import DevisDesktopPopup from '@/components/DevisDesktopPopup';
 import ContactForm from '@/components/ContactForm';
 import { AGENCE_LA_TESTE, AUTEUR, AUTEUR_ID, ENTREPRISE_ID, GOOGLE, SAME_AS } from '@/lib/data/navigation';
 import { AVIS } from '@/lib/data/avis';
 import Etoiles from '@/components/Etoiles';
-import { ZONES } from '@/lib/data/zones';
+import { getZone } from '@/lib/data/zones';
+import { CHANTIERS } from '@/lib/data/chantiers';
 
 export const metadata: Metadata = buildMetadata({
   title: "L'Esprit Bois | Créateur d'espaces extérieurs à Libourne",
@@ -346,6 +346,59 @@ const GAMMES = [
   },
 ];
 
+/* Catalogue de l'accueil : une carte par métier, photographiée sur un vrai
+   chantier, avec une preuve (commune et durée) reprise de lib/data/chantiers.ts. */
+const FAMILLES = [
+  {
+    famille: 'Pergolas',
+    href: '/pergolas',
+    promesse: 'Profitez de la terrasse du printemps à l’automne, à l’ombre que vous choisissez.',
+    preuve: 'Saint-Pey-de-Castets : pergola aluminium posée en 3 jours',
+    cta: 'Voir les pergolas',
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    w: 1600,
+    h: 900,
+    alt: 'Pergola aluminium adossée posée par L’Esprit Bois à Saint-Pey-de-Castets, sur une terrasse bois',
+    produits: GAMMES[0].produits,
+  },
+  {
+    famille: 'Carports',
+    href: '/carports',
+    promesse: 'Votre voiture à l’abri, sans construire un garage, même sur un terrain biscornu.',
+    preuve: 'Libourne : carport bois en trapèze, 6 jours',
+    cta: 'Voir les carports',
+    src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
+    w: 1448,
+    h: 1086,
+    alt: 'Carport bois raboté adossé au pignon en pierre d’une maison, ferme apparente, à Libourne',
+    produits: GAMMES[1].produits,
+  },
+  {
+    famille: 'Terrasses et extérieurs',
+    href: '/amenagement-exterieur',
+    promesse: 'Une terrasse qui reste droite et saine, et tout ce qui prolonge la maison vers le jardin.',
+    preuve: 'Moulon : terrasse et tour de piscine, 10 jours',
+    cta: 'Voir les aménagements',
+    src: '/images/terrasse-bois-pool-house-noir.webp',
+    w: 736,
+    h: 981,
+    alt: 'Terrasse bois et tour de piscine réalisés à Moulon',
+    produits: GAMMES[2].produits,
+  },
+  {
+    famille: 'Constructions bois',
+    href: '/constructions-bois',
+    promesse: 'Gagnez une pièce, un étage ou bâtissez la maison entière, en ossature bois.',
+    preuve: 'Rauzan : maison et garage de 150 m², 1 mois et demi',
+    cta: 'Voir les constructions',
+    src: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
+    w: 900,
+    h: 1200,
+    alt: 'Maison à ossature bois bardée à Rauzan, menuiseries posées',
+    produits: GAMMES[3].produits,
+  },
+];
+
 /* Aperçu de réalisations : un échantillon des quatre métiers. */
 const APERCU = [
   {
@@ -435,17 +488,53 @@ function CarteAvis({ nom, texte }: { nom: string; texte: string }) {
   );
 }
 
+/* Les quatre secteurs de l'accueil. Une carte par secteur, et non une par
+   page de zone : la version en ligne empile les sept pages et répète quatre
+   fois le même texte pour le Bassin. */
+const _e2m = getZone('pergola-carport-entre-deux-mers')!;
+const _ossature = getZone('constructeur-ossature-bois-gironde')!;
+const _bdx = getZone('amenagement-exterieur-bordeaux-metropole')!;
+const _bassin = getZone('bassin-arcachon')!;
+const SECTEURS = [
+  {
+    href: '/' + _e2m.slug,
+    titre: 'Libournais et Entre-deux-Mers',
+    texte: "Coteaux, terrains en pente et chais : notre secteur d'origine.",
+    src: _e2m.cover, w: _e2m.coverW, h: _e2m.coverH, alt: _e2m.coverAlt,
+    badge: null as string | null,
+  },
+  {
+    href: '/' + _ossature.slug,
+    titre: 'Ossature bois en Gironde',
+    texte: 'Extensions et maisons, conçues et assemblées à l’atelier.',
+    src: _ossature.cover, w: _ossature.coverW, h: _ossature.coverH, alt: _ossature.coverAlt,
+    badge: null as string | null,
+  },
+  {
+    href: '/' + _bdx.slug,
+    titre: 'Bordeaux Métropole',
+    texte: 'Cours fermées et accès étroits : du sur-mesure en ville.',
+    src: _bdx.cover, w: _bdx.coverW, h: _bdx.coverH, alt: _bdx.coverAlt,
+    badge: null as string | null,
+  },
+  {
+    href: '/' + _bassin.slug,
+    titre: "Bassin d'Arcachon",
+    texte: 'Sable, vent et sel : déjà des chantiers, bientôt une agence.',
+    src: '/images/realisations/surelevation-ossature-bois-pyla-la-teste-1.webp', w: 1600, h: 1200,
+    alt: "Surélévation en ossature bois au Pyla-sur-Mer, sous les pins, à La Teste-de-Buch",
+    badge: `Agence à La Teste · ${AGENCE_LA_TESTE.ouverture}` as string | null,
+  },
+];
+
 export default function HomePage() {
   return (
     <>
       <JsonLd data={jsonld} />
       <SiteNav page="accueil" />
       <main id="contenu">
-        {/* Hero */}
-        <header
-          data-devis-hero
-          className="relative min-h-screen flex items-center pt-24 overflow-hidden"
-        >
+        {/* 1. Accroche concrète : ce que nous faisons, où, et pourquoi nous croire */}
+        <header data-devis-hero className="relative min-h-screen flex items-center pt-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               width="1200"
@@ -462,15 +551,14 @@ export default function HomePage() {
           <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 w-full">
             <div className="max-w-2xl text-white">
               <span className="inline-block px-4 py-1.5 bg-white/5 backdrop-blur-md rounded-full text-label-md font-label-md mb-6 border border-secondary/50 text-secondary-fixed">
-                Artisans charpentiers · Libourne, Gironde
+                Charpentier et constructeur bois · Les Billaux, près de Libourne
               </span>
               <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">
-                Créateur d'<span className="italic text-secondary-fixed font-semibold">espaces extérieurs</span> qui
-                traversent le temps.
+                Votre projet bois, <span className="italic text-secondary-fixed font-semibold">dessiné et taillé</span> dans notre atelier.
               </h1>
               <p className="font-body-lg text-body-lg mb-10 text-white/85 leading-relaxed">
-                Terrasses, pergolas, carports, bardages et constructions bois. Nous concevons, nous fabriquons et
-                nous posons nous-mêmes, à Libourne et dans toute la Gironde.
+                Pergolas, carports, terrasses, extensions et maisons à ossature bois, en Gironde et sur le Bassin
+                d&apos;Arcachon. Une seule équipe, du relevé à la pose.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -487,59 +575,32 @@ export default function HomePage() {
                   05 57 40 65 80
                 </a>
               </div>
-
-              <div className="mt-16 flex items-center gap-12">
-                <div className="flex flex-col">
-                  <span className="font-headline-sm text-headline-sm text-white">20 ans</span>
-                  <span className="font-label-md text-label-md uppercase tracking-wider text-white/70">
-                    D'expérience du bois
-                  </span>
-                </div>
-                <div className="h-10 w-[1px] bg-secondary/60"></div>
-                <div className="flex flex-col">
-                  <span className="font-headline-sm text-headline-sm text-white">100 %</span>
-                  <span className="font-label-md text-label-md uppercase tracking-wider text-white/70">
-                    Sur mesure
-                  </span>
-                </div>
-              </div>
+              <ul className="mt-12 flex flex-wrap gap-3">
+                <li className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-md text-label-md">
+                  <span className="material-symbols-outlined text-secondary-fixed text-[18px]" aria-hidden="true">verified</span>
+                  Qualifié Qualibat
+                </li>
+                <li className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-md text-label-md">
+                  <span className="material-symbols-outlined text-secondary-fixed text-[18px]" aria-hidden="true">shield</span>
+                  Garantie décennale
+                </li>
+                <li>
+                  <a
+                    href={GOOGLE.fiche}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-md text-label-md hover:bg-white/20 transition-all"
+                  >
+                    <LogoGoogle className="w-4 h-4" />
+                    5,0 sur Google
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </header>
 
-        {/* Bandeau de confiance */}
-        <section className="bg-surface border-b border-surface-variant" aria-label="Nos garanties">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">verified</span>
-              <div>
-                <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Qualifiés Qualibat
-                </p>
-                <p className="text-on-surface-variant text-body-md">La qualification reconnue du bâtiment</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">shield</span>
-              <div>
-                <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Garantie décennale
-                </p>
-                <p className="text-on-surface-variant text-body-md">Vos ouvrages couverts pendant 10 ans</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-secondary-dark text-3xl shrink-0" aria-hidden="true">handshake</span>
-              <div>
-                <p className="font-label-md text-label-md text-primary uppercase tracking-widest">
-                  Un seul interlocuteur
-                </p>
-                <p className="text-on-surface-variant text-body-md">De l'étude à la pose, sans sous-traitance</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        {/* 2. Catalogue, repris tel quel */}
         {/* Agence du Bassin, annoncée avant son ouverture (voir AGENCE_LA_TESTE et
             docs/bascule-agence-la-teste.md). Placée haut : c'est le lien le plus
             fort que la page agence reçoive du site. */}
@@ -608,12 +669,16 @@ export default function HomePage() {
                     <h3 className="font-headline-md text-headline-md text-[30px] leading-tight text-primary mb-3">
                       {g.famille}
                     </h3>
-                    <p className="text-on-surface-variant text-body-md mb-6">{g.accroche}</p>
+                    <p className="text-on-surface-variant text-body-md mb-3">{FAMILLES[i].promesse}</p>
+                    <p className="inline-flex items-start gap-1.5 text-secondary-dark font-label-md text-label-md mb-6">
+                      <span className="material-symbols-outlined text-[18px] mt-px" aria-hidden="true">location_on</span>
+                      {FAMILLES[i].preuve}
+                    </p>
                     <a
                       href={g.href}
-                      className="inline-flex items-center gap-2 w-fit border border-primary/25 text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                      className="inline-flex items-center gap-2 w-fit whitespace-nowrap bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
                     >
-                      Voir la gamme
+                      {FAMILLES[i].cta}
                       <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
                     </a>
                   </div>
@@ -621,28 +686,23 @@ export default function HomePage() {
                   <ul className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-4 list-none p-0 m-0">
                     {g.produits.map((p) => (
                       <li key={p.nom}>
-                        <a
-                          href={p.href}
-                          className="group relative block aspect-[4/3] rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500"
-                        >
-                          <img
-                            width={p.w}
-                            height={p.h}
-                            loading="lazy"
-                            decoding="async"
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                            src={p.src}
-                            alt={p.alt}
-                          />
-                          <span
-                            aria-hidden="true"
-                            className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/25 to-transparent group-hover:via-primary/45 transition-colors duration-500"
-                          ></span>
-                          <span className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-between gap-2 text-white">
-                            <span className="font-headline-sm text-headline-sm text-[18px] leading-tight">
+                        <a href={p.href} className="group block">
+                          <span className="block aspect-[4/3] rounded-2xl overflow-hidden bg-surface-variant">
+                            <img
+                              width={p.w}
+                              height={p.h}
+                              loading="lazy"
+                              decoding="async"
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              src={p.src}
+                              alt={p.alt}
+                            />
+                          </span>
+                          <span className="mt-3 flex items-center justify-between gap-2">
+                            <span className="font-headline-sm text-headline-sm text-[19px] leading-tight text-primary group-hover:text-secondary-dark transition-colors">
                               {p.nom}
                             </span>
-                            <span className="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
+                            <span className="material-symbols-outlined text-secondary-dark text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                               arrow_forward
                             </span>
                           </span>
@@ -656,132 +716,149 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Relais de conversion après la vitrine */}
-        <section className="bg-surface border-y border-surface-variant">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-              <h2 className="font-headline-sm text-headline-sm text-primary mb-2">
-                Vous ne savez pas encore quelle solution convient ?
-              </h2>
-              <p className="text-on-surface-variant text-body-md">
-                Envoyez-nous une photo de votre terrain ou de votre terrasse : nous vous disons ce qui est possible,
-                et à quel budget.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-              <a
-                href="#quote"
-                className="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 text-center"
-              >
-                Demander mon étude gratuite
-              </a>
-              <a
-                href="tel:+33557406580"
-                className="border border-primary/25 text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all text-center"
-              >
-                05 57 40 65 80
-              </a>
-            </div>
-          </div>
-        </section>
 
-        {/* Aperçu de réalisations */}
+
+        {/* 3. Derniers chantiers, en grand : la preuve par la photo */}
         <section className="py-section-padding bg-surface" id="realisations">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
               <div className="max-w-2xl">
                 <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
-                  Nos chantiers
+                  Nos derniers chantiers
                 </span>
                 <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-4">
-                  Ce que nous avons posé en Gironde
+                  Sortis de notre atelier, posés chez nos clients
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant">
-                  Des ouvrages réellement sortis de notre atelier, pas des images de catalogue.
+                  Chaque chantier avec sa commune et sa contrainte. Pas une image de catalogue.
                 </p>
               </div>
               <a
                 href="/realisations"
                 className="shrink-0 inline-flex items-center gap-2 border border-primary/25 text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all"
               >
-                Voir toutes nos réalisations
+                Les {CHANTIERS.length + 4} chantiers racontés
                 <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
               </a>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {APERCU.map((p) => (
-                <figure key={p.src} className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+              {CHANTIERS.slice(0, 5).map((c, i) => (
+                <a
+                  key={c.id}
+                  href="/realisations"
+                  className={`group relative overflow-hidden rounded-2xl ${
+                    i < 2 ? 'md:col-span-3 aspect-[4/3]' : 'md:col-span-2 aspect-[4/3]'
+                  }`}
+                >
                   <img
-                    width={p.w}
-                    height={p.h}
+                    width={c.w}
+                    height={c.h}
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    src={p.src}
-                    alt={p.alt}
+                    src={c.src}
+                    alt={c.alt}
                   />
-                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 to-transparent p-5 pt-12 text-white font-label-md text-label-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {p.legende}
-                  </figcaption>
-                </figure>
+                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent p-6 pt-16 text-white">
+                    <span className="block font-label-md text-label-md uppercase tracking-widest text-secondary-fixed mb-1 text-xs">
+                      {c.commune}
+                    </span>
+                    <span className={`block leading-snug ${i < 2 ? 'font-headline-sm text-headline-sm' : 'font-title-lg text-title-lg'}`}>{c.titre}</span>
+                  </span>
+                </a>
               ))}
             </div>
           </div>
         </section>
-        {/* Zones d'intervention, chaque secteur a sa page, adossée à ses chantiers */}
-        <section className="py-20 md:py-24 bg-surface-container-low" id="zones">
+
+        {/* 4. Zones : quatre secteurs en image, au lieu de sept pavés de texte */}
+        <section className="py-section-padding bg-surface-container-low" id="zones">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-2xl mb-12">
               <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
                 Où nous intervenons
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-4">
-                Trois secteurs, trois façons de travailler
+                De Libourne au Bassin d&apos;Arcachon
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Un coteau de l&apos;Entre-deux-Mers, une grange en pierre à reprendre, une cour
-                fermée en ville : le terrain change l&apos;ouvrage bien plus que le catalogue. Chaque
-                secteur a sa page, avec les chantiers que nous y avons livrés.
+                Autour de l&apos;atelier, nous posons aussi bien une{' '}
+                <a href="/pergolas" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">
+                  pergola bioclimatique à Libourne
+                </a>{' '}
+                qu&apos;une{' '}
+                <a href="/terrasses-bois" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">
+                  terrasse bois à Libourne
+                </a>
+                . Plus loin, chaque secteur a sa page, avec ses contraintes et ses chantiers.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {ZONES.map((z) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {SECTEURS.map((s) => (
                 <a
-                  key={z.slug}
-                  href={`/${z.slug}`}
-                  className="group block bg-surface rounded-2xl p-8 border border-outline-variant hover:border-secondary transition-colors"
+                  key={s.href}
+                  href={s.href}
+                  className="group relative overflow-hidden rounded-2xl min-h-[440px] block"
                 >
-                  <h3 className="font-title-lg text-title-lg text-primary mb-3 group-hover:text-secondary-dark transition-colors">
-                    {z.h1}
-                  </h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant mb-5">{z.chapo}</p>
-                  <p className="font-label-md text-label-md text-secondary-dark inline-flex items-center gap-2">
-                    {z.communes.slice(0, 4).join(', ')}…
-                    <span
-                      className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
-                      aria-hidden="true"
-                    >
-                      arrow_forward
+                  <img
+                    width={s.w}
+                    height={s.h}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    src={s.src}
+                    alt={s.alt}
+                  />
+                  <span className="absolute inset-0 bg-gradient-to-t from-primary via-primary/75 to-primary/10"></span>
+                  {s.badge ? (
+                    <span className="absolute top-4 left-4 bg-secondary text-primary px-3 py-1.5 rounded-full font-label-md text-label-md">
+                      {s.badge}
                     </span>
-                  </p>
+                  ) : null}
+                  <span className="absolute inset-x-0 bottom-0 p-6 text-white">
+                    <span className="block font-title-lg text-title-lg mb-2">{s.titre}</span>
+                    <span className="block text-body-md text-white/80 mb-4">{s.texte}</span>
+                    <span className="inline-flex items-center gap-1.5 font-label-md text-label-md text-secondary-fixed group-hover:gap-2.5 transition-all">
+                      Voir le secteur
+                      <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                    </span>
+                  </span>
                 </a>
               ))}
             </div>
+            <p className="mt-8 font-body-md text-body-md text-on-surface-variant">
+              Sur le Bassin d&apos;Arcachon :{' '}
+              <a href="/pergola-bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">
+                pergola à La Teste-de-Buch
+              </a>
+              ,{' '}
+              <a href="/terrasse-bois-bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">
+                terrasse bois sur le Bassin
+              </a>{' '}
+              et{' '}
+              <a href="/extension-ossature-bois-bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">
+                extension ou surélévation en ossature bois
+              </a>
+              .
+            </p>
           </div>
         </section>
+
+        {/* 5. Méthode et garanties, réunies (remplace « Qui sommes-nous » et les chiffres) */}
         {/* Notre méthode */}
         <section id="methode" className="py-section-padding bg-primary text-white overflow-hidden">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div>
                 <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
-                  Notre méthode
+                  Un savoir-faire intégré, du premier croquis à la dernière lame
                 </span>
                 <h2 className="font-headline-md text-headline-md mt-4 mb-8">
-                  Un savoir-faire intégré, du premier croquis à la dernière lame
+                  Charpentiers et constructeurs bois à Libourne
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-primary-container mb-12">
-                  Nous ne sommes pas de simples revendeurs. Nous concevons, fabriquons et posons nous-mêmes nos
+                  Installés au 1 Aux Pradasses, aux Billaux, à cinq minutes de Libourne, nous ne sommes pas de
+                  simples revendeurs. Nous concevons, fabriquons et posons nous-mêmes nos
                   ouvrages : c'est la seule façon de répondre de ce qu'on pose.
                 </p>
                 <div className="space-y-8">
@@ -876,130 +953,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Qui sommes-nous */}
-        <section className="py-section-padding bg-surface" id="matiere">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
-                Qui sommes-nous
-              </span>
-              <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Charpentiers et constructeurs bois à Libourne
-              </h2>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                Installés au <strong className="text-primary font-semibold">1 Aux Pradasses, aux Billaux</strong>, à
-                cinq minutes de <strong className="text-primary font-semibold">Libourne</strong>, nous ne sommes pas
-                des revendeurs. Nous concevons, nous fabriquons, nous posons, et nous répondons de ce que nous
-                posons. Chaque essence (douglas, mélèze, red cedar, chêne) est choisie pour sa durabilité naturelle
-                et sa beauté.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                Entreprise <strong className="text-primary font-semibold">Qualifiée Qualibat</strong>, nous couvrons
-                chaque ouvrage par notre <strong className="text-primary font-semibold">garantie décennale</strong>.
-                Un seul interlocuteur, de l'étude à la pose, sans sous-traitance : c'est la seule façon de répondre
-                de ce qu'on pose.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Tout ce que nous faisons, c'est notre métier, du sol au toit :{' '}
-                <a
-                  href="/terrasses-bois"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  terrasses
-                </a>
-                ,{' '}
-                <a
-                  href="/pergolas"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  pergolas
-                </a>
-                ,{' '}
-                <a
-                  href="/carports"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  carports
-                </a>, bardages,{' '}
-                <a
-                  href="/devis-extension"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  extensions de maison en bois
-                </a>{' '}
-                et{' '}
-                <a
-                  href="/constructions-bois"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  constructions bois
-                </a>
-                .
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mt-6">
-                Autour de l&apos;atelier, nous posons aussi bien une{' '}
-                <a
-                  href="/pergolas"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  pergola bioclimatique à Libourne
-                </a>{' '}
-                qu&apos;une{' '}
-                <a
-                  href="/terrasses-bois"
-                  className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
-                >
-                  terrasse bois à Libourne
-                </a>{' '}
-                ou dans le Libournais, avec la même équipe du relevé à la pose.
-              </p>
-            </div>
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                width="1400"
-                height="1050"
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover"
-                src="/images/source-adefrance/WhatsApp-Image-2024-08-13-a-15.28.15_3b74f9f0.webp"
-                alt="Charpentier de L'Esprit Bois posant une ossature bois sur un chantier en Gironde"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Chiffres */}
-        <section className="py-section-padding bg-primary text-white">
-          <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
-              <div>
-                <p className="font-display-lg text-[56px] leading-none text-secondary">20</p>
-                <p className="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-4">
-                  ans d'expérience du bois
-                </p>
-              </div>
-              <div>
-                <p className="font-display-lg text-[56px] leading-none text-secondary">100 %</p>
-                <p className="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-4">
-                  sur mesure
-                </p>
-              </div>
-              <div>
-                <p className="font-display-lg text-[56px] leading-none text-secondary">33</p>
-                <p className="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-4">
-                  Gironde &amp; alentours
-                </p>
-              </div>
-              <div>
-                <p className="font-display-lg text-[56px] leading-none text-secondary">0</p>
-                <p className="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-4">
-                  sous-traitance
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        {/* 6. Avis, repris tel quel */}
         {/* Avis clients */}
         <section className="py-section-padding bg-surface-container-low overflow-hidden" aria-labelledby="avis-titre">
           <div className="max-w-container-max mx-auto px-6 md:px-16 flex flex-col items-center mb-12">
@@ -1050,36 +1004,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Relais de conversion avant le formulaire */}
-        <section className="bg-primary text-white">
-          <div className="max-w-container-max mx-auto px-6 md:px-16 py-14 flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="max-w-2xl">
-              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
-                Parlons-en
-              </span>
-              <h2 className="font-headline-md text-headline-md mt-3 mb-3">Votre projet commence par un relevé</h2>
-              <p className="text-on-primary-container font-body-lg text-body-lg">
-                Nous venons mesurer, regarder l&apos;orientation et la nature du sol. C&apos;est gratuit, sans
-                engagement, et vous repartez avec un devis détaillé poste par poste sous 48h.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-              <a
-                href="#quote"
-                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center"
-              >
-                Demander mon étude gratuite
-              </a>
-              <a
-                href="tel:+33557406580"
-                className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all text-center"
-              >
-                05 57 40 65 80
-              </a>
-            </div>
-          </div>
-        </section>
 
+        {/* 7. Formulaire, repris tel quel */}
         {/* Contact */}
         <section className="py-section-padding bg-surface-container-low" id="quote">
           <div className="max-w-5xl mx-auto px-6">
@@ -1131,7 +1057,6 @@ export default function HomePage() {
       </main>
       <SiteFooter />
       <DevisStickyBar ancre="#quote" />
-      <DevisDesktopPopup pageLabel="/" ancre="#quote" />
     </>
   );
 }

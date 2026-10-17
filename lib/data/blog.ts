@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'fixer-pergola-aluminium-facade',
+    titre: 'Pergola aluminium adossée : ce que votre façade doit pouvoir porter',
+    extrait:
+      "Sur une pergola aluminium adossée, le profilé de tête vissé en façade reprend une part du poids et surtout l'arrachement au vent : ce n'est pas la pergola qui décide de la fixation, c'est le mur. Pierre calcaire, parpaing, brique creuse, isolation par l'extérieur ou ossature bois, raccord étanche, et poteaux côté façade quand le mur ne peut pas porter : la méthode d'un artisan à Libourne.",
+    date: '2026-10-17',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/blog/fixer-pergola-aluminium-facade/pergola-aluminium-accolee-facade-enduite-saint-pey-de-castets.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'pergola-bois-essence-sections-poteaux',
     titre:
       "Pergola en bois : l'essence, les sections et les pieds de poteaux qui la font durer",

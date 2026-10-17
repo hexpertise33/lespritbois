@@ -601,7 +601,11 @@ export default function ArticleComparerDevisPergolaPage() {
                 adossée se fixe par un profilé en façade, et ce point demande une étanchéité soignée : c&apos;est là que
                 se jouent les infiltrations, pas au milieu de la toiture. Selon la maison, il faut composer avec un
                 débord de toit, une gouttière existante à recouper ou à déposer, un mur en pierre, un enduit récent ou
-                une isolation par l&apos;extérieur qu&apos;on ne perce pas à la légère.
+                une isolation par l&apos;extérieur qu&apos;on ne perce pas à la légère (voir{' '}
+                <a href="/blog/fixer-pergola-aluminium-facade" className={lienInterne}>
+                  ce que chaque type de façade impose à la fixation d&apos;une pergola adossée
+                </a>
+                ).
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Sur nos chantiers du Libournais et de l&apos;Entre-deux-Mers, ces trois façades se croisent dans la même

@@ -382,7 +382,12 @@ export default function ArticlePergolaAluminiumTempetePage() {
                 Une <strong className="text-primary font-semibold">pergola adossée</strong> et une{' '}
                 <strong className="text-primary font-semibold">pergola autoportée</strong> ne travaillent pas pareil.
                 L&apos;adossée reprend une partie des efforts par sa fixation en façade : le mur doit être sain et la
-                fixation adaptée à sa nature (parpaing, brique, pierre, béton). Une lisse vissée dans un enduit ou dans
+                fixation adaptée à sa nature (parpaing, brique, pierre, béton), comme nous l&apos;expliquons dans
+                notre guide pour{' '}
+                <a href="/blog/fixer-pergola-aluminium-facade" className={lienInterne}>
+                  fixer une pergola aluminium sur la façade selon le type de mur
+                </a>
+                . Une lisse vissée dans un enduit ou dans
                 une maçonnerie qui s&apos;effrite est un point de rupture annoncé. L&apos;autoportée, elle, ne compte
                 que sur ses poteaux : chacun de ses appuis doit être capable de résister seul à l&apos;arrachement.
               </p>

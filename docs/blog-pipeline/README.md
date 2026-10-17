@@ -2339,6 +2339,45 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-01 | publié  | Construire en ossature bois en automne et en hiver : ce que la pluie fait vraiment au chantier | ossature-bois-chantier-hiver-pluie |
 | 2026-10-05 | publié  | Pergola et carport aluminium face aux tempêtes : ce qui les fait tenir, et les bons réflexes en Gironde | pergola-aluminium-tempete-vent |
 | 2026-10-13 | publié  | Pergola en bois : l'essence, les sections et les pieds de poteaux qui la font durer | pergola-bois-essence-sections-poteaux |
+| 2026-10-17 | publié  | Pergola aluminium adossée : ce que votre façade doit pouvoir porter | fixer-pergola-aluminium-facade |
+
+**Run du 17/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
+Test de cadence passé : aucune entrée du 17/10 ni du 16/10, la plus récente étant
+le 13/10 (bois). Réserve vide, l'alternance appelait l'aluminium : angle trouvé par
+recoupement. La fixation en façade d'une pergola adossée n'était traitée qu'en une
+ou deux phrases (tempête, devis, guide bioclimatique) ; les cas isolation par
+l'extérieur et ossature bois ne l'étaient pas du tout.
+
+Publié : `fixer-pergola-aluminium-facade`, title « Fixer une pergola alu sur la
+façade : le guide Gironde » (54 caractères), H1 « Pergola aluminium adossée : ce que
+votre façade doit pouvoir porter ». Thèse : ce n'est pas la pergola qui décide de la
+fixation, c'est le mur ; quand il ne porte pas, des poteaux côté façade. Aucune
+charge, cote de cheville, épaisseur d'isolant ni numéro d'avis technique cités.
+Commit `0b04d18`, version Cloudflare `6eb79e89`, **200 confirmé trois fois**
+(article, deux articles maillés, /blog, accueil), six images en 200,
+`datePublished` servi = `2026-10-17`, présent dans le sitemap. Maillage 4 bis :
+liens depuis `pergola-aluminium-tempete-vent` (paragraphe adossée / autoportée) et
+`comparer-devis-pergola-postes-prix` (paragraphe « raccord à la façade »), vérifiés
+dans le HTML servi. **IndexNow 200. Search Console : « Indexation demandée » vue à
+l'écran** (`/u/1/`, champ d'inspection en haut, sans souci).
+
+**Sources vérifiées, réutilisables** : rupteurs de pont thermique pour charges
+lourdes à travers une ITE (entretoise + tige composite + scellement chimique,
+posables avant ou après l'ITE, sous ATex CSTB, fiche Batiproduits IT-Fix) ;
+scellement chimique en matériau creux avec tamis, résine vinylester en extérieur
+(fiches fabricants de chevilles). Les valeurs de charge de ces fiches ne sont pas à
+citer.
+
+**Images** : cover et deux figures = recadrages inédits de photos du chantier de
+Saint-Pey-de-Castets (originaux `contenu-source/pergola photo/WhatsApp Image
+2026-07-03 at 12.11.53 (1)`, `12.11.54 (2)`, `12.12.18`) ; profilé de tête = visuel
+fournisseur LI-SU `Pergolas-aluminium-Libourne-8.webp`, sans commune ; trois
+Wikimedia Commons **CC BY-SA 3.0** (moellons, Coyau ; brique alvéolaire, Kozuch ;
+ITE, Handwerker), crédit en légende. Aucune photo maison d'un profilé de tête fixé
+au mur : à photographier sur un prochain chantier.
+
+ℹ️ **Prochain run** : réserve vide, veille obligatoire ; le 17/10 étant alu, le
+suivant devrait prendre un sujet **bois**. Prochain créneau possible : le 19/10.
 
 **Run du 13/10/2026 : publié, indexation Search Console NON demandée, réserve toujours VIDE.**
 Test de cadence passé : aucune entrée du 13/10 ni du 12/10, la plus récente étant

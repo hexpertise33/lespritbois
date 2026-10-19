@@ -2340,6 +2340,42 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-05 | publié  | Pergola et carport aluminium face aux tempêtes : ce qui les fait tenir, et les bons réflexes en Gironde | pergola-aluminium-tempete-vent |
 | 2026-10-13 | publié  | Pergola en bois : l'essence, les sections et les pieds de poteaux qui la font durer | pergola-bois-essence-sections-poteaux |
 | 2026-10-17 | publié  | Pergola aluminium adossée : ce que votre façade doit pouvoir porter | fixer-pergola-aluminium-facade |
+| 2026-10-19 | publié  | Sur quoi poser un abri de jardin en bois : dalle, plots, longrines ou vis de fondation ? | fondation-abri-jardin-bois-dalle-plots |
+
+**Run du 19/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
+Test de cadence passé : aucune entrée du 19/10 ni du 18/10, la plus récente étant
+le 17/10 (alu). Réserve vide, l'alternance appelait le bois : angle trouvé par
+recoupement. Le support d'un abri n'était traité qu'en un conseil d'une ligne dans
+`abri-jardin-bois-kit-ou-sur-mesure` (« dalle ou plots drainés ») ; aucun article ne
+comparait dalle, plots/longrines et vis de fondation.
+
+Publié : `fondation-abri-jardin-bois-dalle-plots`, title « Fondation d'abri de
+jardin bois : dalle ou plots ? Gironde » (58 caractères), H1 « Sur quoi poser un abri
+de jardin en bois : dalle, plots, longrines ou vis de fondation ? ». Thèse : ce qui
+use un abri, c'est le bas des parois resté humide, pas l'essence ; dalle si l'abri
+devient une pièce, plots et longrines sur lit drainé par défaut, vis en pente ou
+sol argileux, jamais à même la terre. Aucune profondeur, épaisseur, charge ni prix
+cités. Commit `74ca161`, version Cloudflare `c26b58b8`, **200 confirmé trois fois**
+(article, deux articles maillés, /blog, accueil), six images en 200,
+`datePublished` servi = `2026-10-19`, présent dans le sitemap. Maillage 4 bis :
+liens depuis `abri-jardin-bois-kit-ou-sur-mesure` (conseil « dalle ou plots
+drainés ») et `bureau-jardin-bois-studio-reglementation-budget` (« fondations
+modestes »), vérifiés dans le HTML servi. **IndexNow 200. Search Console :
+« Indexation demandée » vue à l'écran** (`/u/1/`, champ d'inspection en haut).
+
+**Sources vérifiées** : seuils abri 5 m² / 20 m² (DP) et relèvement possible en zone
+U, formulés prudemment avec renvoi à service-public F17578 ; taxe d'aménagement sans
+taux (F23263). Une dalle ne dispense d'aucune formalité (analyse d'avocats).
+
+**Images** : cover et une figure = studio de jardin de Saint-Martin-du-Bois
+(`/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-2.webp` et
+`-5.webp`) ; dalle = photo du garage déjà publiée ; trois Wikimedia Commons CC BY-SA
+(abri à même le sol, Philip Halling ; vis de fondation, Sandra Thornton ; solives
+sur base, Guywall), crédit en légende. **Aucune photo maison d'un abri de jardin ni
+de ses plots** : à photographier sur un prochain chantier.
+
+ℹ️ **Prochain run** : réserve vide, veille obligatoire ; le 19/10 étant bois, le
+suivant devrait prendre un sujet **aluminium**. Prochain créneau possible : le 21/10.
 
 **Run du 17/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
 Test de cadence passé : aucune entrée du 17/10 ni du 16/10, la plus récente étant

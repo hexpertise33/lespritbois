@@ -417,7 +417,10 @@ export default function ArticleAbriJardinBoisPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Notre conseil, si vous partez sur un kit : montez d&apos;une gamme sur l&apos;épaisseur des madriers,
-                posez-le impérativement sur une dalle ou des plots drainés, et appliquez un traitement dès la première
+                posez-le impérativement sur une{' '}
+                <a href="/blog/fondation-abri-jardin-bois-dalle-plots" className={lienInterne}>
+                  dalle ou des plots drainés, selon votre sol et l&apos;usage de l&apos;abri
+                </a>, et appliquez un traitement dès la première
                 année. C&apos;est ce qui sépare un kit qui dure d&apos;un kit qui se déforme.
               </p>
             </section>

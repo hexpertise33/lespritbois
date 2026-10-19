@@ -17,6 +17,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'fondation-abri-jardin-bois-dalle-plots',
+    titre:
+      'Sur quoi poser un abri de jardin en bois : dalle, plots, longrines ou vis de fondation ?',
+    extrait:
+      "Un abri de jardin en bois se pose sur une dalle béton s'il devient une pièce (atelier, bureau, autoportée), sur plots béton et longrines au-dessus d'un lit de graviers drainé pour le rangement, et sur vis de fondation en pente ou en sol argileux, jamais à même la terre. Ce qui l'use, c'est le bas des parois resté humide, pas l'essence : comment nous choisissons le support selon le sol, l'usage et la taille, autour de Libourne.",
+    date: '2026-10-19',
+    categorie: 'Guide · Abri de jardin',
+    image: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-2.webp',
+    imageLargeur: 1360,
+    imageHauteur: 1020,
+  },
+  {
     slug: 'fixer-pergola-aluminium-facade',
     titre: 'Pergola aluminium adossée : ce que votre façade doit pouvoir porter',
     extrait:

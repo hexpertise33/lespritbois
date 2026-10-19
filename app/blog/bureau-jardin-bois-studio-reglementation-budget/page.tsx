@@ -715,8 +715,11 @@ export default function ArticleBureauJardinBoisPage() {
                 Ossature, bardage et implantation dans le jardin
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                L&apos;ossature bois est la technique naturelle pour ce type d&apos;ouvrage : légère, elle demande des
-                fondations modestes ; préfabriquée en atelier, elle se monte vite sur le terrain ; et elle loge
+                L&apos;ossature bois est la technique naturelle pour ce type d&apos;ouvrage : légère, elle demande des{' '}
+                <a href="/blog/fondation-abri-jardin-bois-dalle-plots" className={lienInterne}>
+                  fondations modestes, dalle, plots ou vis selon le terrain
+                </a>{' '}
+                ; préfabriquée en atelier, elle se monte vite sur le terrain ; et elle loge
                 l&apos;isolant dans son épaisseur au lieu de l&apos;ajouter par-dessus. C&apos;est aussi ce qui permet de
                 construire au fond d&apos;un jardin sans faire entrer d&apos;engin lourd entre la maison et la clôture.
               </p>

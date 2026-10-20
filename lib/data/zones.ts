@@ -472,6 +472,7 @@ export const ZONES: Zone[] = [
       'Gujan-Mestras',
       'Le Teich',
       'Biganos',
+      'Audenge',
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
@@ -487,13 +488,16 @@ export const ZONES: Zone[] = [
       h: 900,
       alt: "Pergola et terrasse bois attenantes à une maison, ouvrage réalisé par L'Esprit Bois en Gironde",
     },
-    title: "Pergola bioclimatique à La Teste-de-Buch et sur le Bassin",
+    /* « bois » ajouté le 20/10/2026 : « pergola bois arcachon » est 16e et
+       « pergola bois bassin arcachon » 27e (Search Console 90 j), alors que la
+       page ne parlait que d'aluminium. */
+    title: "Pergola bioclimatique ou bois à La Teste et sur le Bassin",
     description:
-      "Pergola bioclimatique ou aluminium sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
+      "Pergola bioclimatique, aluminium ou bois sur le Bassin d'Arcachon : ce que le vent, les embruns et les sites classés changent à la structure et au dossier.",
     keywords:
-      "pergola Bassin d'Arcachon, pergola La Teste-de-Buch, pergola bioclimatique Arcachon, pergola Gujan-Mestras, pergola Cap-Ferret, store extérieur Bassin d'Arcachon",
+      "pergola Bassin d'Arcachon, pergola La Teste-de-Buch, pergola bioclimatique Arcachon, pergola bois Arcachon, pergola Gujan-Mestras, pergola Cap-Ferret, store extérieur Bassin d'Arcachon",
     accent: 'sur mesure',
-    h1: "Pergolas sur mesure sur le Bassin d'Arcachon",
+    h1: "Pergolas bioclimatiques et bois sur mesure sur le Bassin d'Arcachon",
     chapo:
       "Nous travaillons déjà sur le Bassin, rendez-vous, relevés et chantiers, et nous y ouvrons une agence à La Teste-de-Buch en janvier 2027. Voici ce que le terrain change à une pergola, et ce que nous en faisons.",
     cover: '/images/realisations/pergola-aluminium-store-zip-libourne-2.webp',
@@ -571,6 +575,14 @@ export const ZONES: Zone[] = [
         legende:
           'Montussan, couverture en panneau isolé : sous une simple plaque, un espace plein sud devient un four.',
       },
+      {
+        src: '/images/pergola-bois-massif-terrasse.webp',
+        w: 1100,
+        h: 1100,
+        alt: "Pergola en bois massif sur terrasse, réalisation de L'Esprit Bois à Arveyres",
+        legende:
+          "Arveyres, pergola bois massif : ce n'est pas le Bassin, mais c'est la même charpente, pieds de poteaux décollés du sol.",
+      },
     ],
     chantiers: ['pyla-sur-mer', 'lacanau'],
     chantiersTitre: 'Nos chantiers sur le littoral',
@@ -603,7 +615,7 @@ export const ZONES: Zone[] = [
     faq: [
       {
         q: 'Intervenez-vous sur tout le Bassin ?',
-        r: "Oui. Nous y faisons déjà rendez-vous, relevés et chantiers, de La Teste-de-Buch au Cap-Ferret, et nous ouvrons une agence à La Teste-de-Buch en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris : vous n'avez pas besoin d'attendre l'ouverture pour nous appeler.",
+        r: "Oui. Nous y faisons déjà rendez-vous, relevés et chantiers, à La Teste-de-Buch, Arcachon, Gujan-Mestras, Le Teich, Biganos, Audenge, Andernos-les-Bains et jusqu'au Cap-Ferret, et nous ouvrons une agence à La Teste-de-Buch en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris : vous n'avez pas besoin d'attendre l'ouverture pour nous appeler.",
       },
       {
         q: 'Une pergola tient-elle au vent du Bassin ?',
@@ -616,6 +628,10 @@ export const ZONES: Zone[] = [
       {
         q: 'Une pergola bioclimatique demande-t-elle de l’entretien ici ?',
         r: "Un peu plus qu'à l'intérieur des terres, et pas là où on l'attend. La structure en aluminium thermolaqué ne demande rien d'autre qu'un lavage. Ce qui demande de l'attention, c'est l'évacuation de l'eau : elle passe par les poteaux, en sections étroites, et sous pinède elle reçoit des aiguilles de pin et du pollen. Un coup d'œil deux fois par an suffit, à condition que la pergola ait été posée avec des accès de nettoyage. Demandez ce point avant de signer, il ne figure sur aucun devis.",
+      },
+      {
+        q: 'Une pergola en bois tient-elle en bord de mer ?',
+        r: "Oui, si on la conçoit pour. Nous la taillons en douglas, en mélèze ou en red cedar, et nous décollons systématiquement les pieds de poteaux du sol : c'est ce détail qui décide de sa durée de vie. Comme pour une terrasse, le sel ne s'attaque pas au bois mais à la visserie, d'où l'inox A4 en ambiance marine. Le bois grisera, c'est sa patine ; l'ancrage, lui, se dimensionne au vent exactement comme pour une pergola aluminium. Nous en avons posé une en bois massif à Arveyres.",
       },
       {
         q: 'L’aluminium résiste-t-il aux embruns ?',
@@ -661,6 +677,7 @@ export const ZONES: Zone[] = [
       'Gujan-Mestras',
       'Le Teich',
       'Biganos',
+      'Audenge',
       'Andernos-les-Bains',
       'Lège-Cap-Ferret',
     ],
@@ -678,9 +695,9 @@ export const ZONES: Zone[] = [
     },
     /* La demande est communale et non régionale : « terrasse bois la teste de
        buch » 64 impressions, « terrasse bois arcachon » 55, « terrasse bois
-       gujan mestras » 11, quand le titre ne nommait aucune commune. Cap Ferret
-       pèse 44 impressions mais ne figure pas dans `communes` : ne pas le
-       revendiquer tant qu'il n'y est pas. */
+       gujan mestras » 11, quand le titre ne nommait aucune commune. Lège-Cap-Ferret
+       et Audenge figurent désormais dans `communes` (Audenge ajoutée le
+       20/10/2026, recherchée sur la page pergola). */
     title: "Terrasse bois La Teste, Arcachon, Gujan : le sable et le sel",
     description:
       "Terrasse bois à La Teste-de-Buch, Arcachon et Gujan-Mestras : pourquoi le sable ne porte pas, ce que le sel fait aux fixations, et quand déclarer.",
@@ -813,8 +830,12 @@ export const ZONES: Zone[] = [
         r: "La question de l'essence arrive après celle de la mise en œuvre, et c'est souvent l'inverse qu'on entend. Le sel n'attaque pas le bois : il attaque les fixations, d'où l'inox A4 plutôt que l'A2. Ce qui use le platelage en bord de mer, c'est l'UV et l'alternance humide-sec. Un pin traité correctement posé et ventilé tiendra mieux qu'un bois exotique posé sur une sous-face qui ne respire pas. Notre guide par essence détaille les cas.",
       },
       {
+        q: 'Une terrasse en bois exotique autour d’une piscine, sur le Bassin ?',
+        r: "C'est le cas où un bois dense comme l'ipé se justifie : naturellement en classe 4 à 5, il ne grise pas comme un résineux, ne donne pas d'échardes pieds nus et tient au bord d'une eau chlorée. Nous avons posé une plage de piscine complète en ipé à Moulon, la lame de rive affleurant la margelle sur toute la longueur. Sur le Bassin, deux choses s'ajoutent : une fondation adaptée au sable et une visserie en inox A4. Nous construisons tout autour du bassin, pas le bassin lui-même.",
+      },
+      {
         q: 'Posez-vous des terrasses sur tout le Bassin ?',
-        r: "Oui. Nous y faisons déjà rendez-vous, relevés et chantiers, et nous ouvrons une agence à La Teste-de-Buch en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris. Sur le sable, c'est ce relevé qui décide de la fondation : nous le faisons avant de chiffrer, jamais après.",
+        r: "Oui. Nous y faisons déjà rendez-vous, relevés et chantiers, à La Teste-de-Buch, Arcachon, Gujan-Mestras, Le Teich, Biganos, Audenge, Andernos-les-Bains et jusqu'au Cap-Ferret, et nous ouvrons une agence à La Teste-de-Buch en janvier 2027. Le relevé et le devis sont gratuits, déplacement compris. Sur le sable, c'est ce relevé qui décide de la fondation : nous le faisons avant de chiffrer, jamais après.",
       },
     ],
   },

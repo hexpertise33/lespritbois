@@ -640,7 +640,8 @@ export default function ArticleGarantiesSavPergolaAluminiumPage() {
                 les papiers de la maison, pas dans le garage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Nous intervenons aussi sur des pergolas et des carports en aluminium que nous n&apos;avons pas posés,
+                Nous intervenons aussi, en{' '}
+                <a href="/reparation-pergola" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">réparation de pergola</a>, sur des pergolas et des carports en aluminium que nous n&apos;avons pas posés,
                 à Libourne et dans le reste de la Gironde, à condition de pouvoir identifier la gamme et
                 d&apos;approvisionner la pièce. Et quand la gamme n&apos;est plus suivie, nous le disons : mieux vaut
                 étudier le remplacement d&apos;un mécanisme complet que multiplier les visites sur une pièce

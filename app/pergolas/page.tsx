@@ -1579,6 +1579,11 @@ export default function PergolasPage() {
                 consacrons une page, et nous ouvrons notre{' '}
                 <a href="/agence-la-teste-de-buch" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">agence de La Teste-de-Buch</a> en janvier 2027.
               </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mt-6">
+                Votre pergola est déjà posée et ne fonctionne plus ? Nous assurons aussi la{' '}
+                <a href="/reparation-pergola" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">réparation de pergolas bioclimatiques</a>,
+                y compris celles posées par une autre entreprise.
+              </p>
             </div>
             <div>
               <h3 className="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">

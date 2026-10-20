@@ -32,6 +32,7 @@ Contact : 05 57 40 65 80, lespritbois33@gmail.com, 1 Aux Pradasses, 33500 Les Bi
 ## Nos gammes
 
 - [Pergolas](${base}/pergolas) : bioclimatique à lames orientables, aluminium à toiture fixe (polycarbonate, panneau isolant, vitrage), bois massif. Adossées ou autoportées, avec stores ZIP, éclairage intégré et claustras en option.
+- [Réparation de pergola](${base}/reparation-pergola) : dépannage de pergolas bioclimatiques et de carports en aluminium, y compris posés par une autre entreprise (moteur, capteurs, vérins de lames, store zip, joints et évacuations), à Libourne et en Gironde.
 - [Carports](${base}/carports) : bois (toiture plate, bac acier ou tuile), aluminium thermolaqué, solaire photovoltaïque. Adossés ou autoportés.
 - [Aménagement extérieur](${base}/amenagement-exterieur) : terrasses bois sur plots ou lambourdes, pool houses, abris de jardin, cuisines d'été, claustras et bardages.
 - [Terrasses bois](${base}/terrasses-bois) : terrasse sur plots réglables ou lambourdes, plage de piscine et abords de bassin, terrasse sur sol instable. Page dédiée, distincte de l'aménagement extérieur.

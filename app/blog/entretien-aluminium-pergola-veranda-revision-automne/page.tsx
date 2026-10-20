@@ -747,7 +747,8 @@ export default function ArticleEntretienAluminiumPage() {
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Nous intervenons sur les ouvrages que nous avons posés comme sur ceux d&apos;autres entreprises, à
-                Libourne et dans toute la Gironde. Vous pouvez voir le type d&apos;ouvrages dont nous parlons dans{' '}
+                Libourne et dans toute la Gironde : voir notre page{' '}
+                <a href="/reparation-pergola" className={lienInterne}>réparation de pergola</a>. Vous pouvez voir le type d&apos;ouvrages dont nous parlons dans{' '}
                 <a href="/realisations" className={lienInterne}>nos réalisations</a>, et découvrir notre travail sur les{' '}
                 <a href="/pergolas" className={lienInterne}>pergolas en aluminium</a> ainsi que sur les{' '}
                 <a href="/carports" className={lienInterne}>carports</a>, dont la couverture et les évacuations demandent

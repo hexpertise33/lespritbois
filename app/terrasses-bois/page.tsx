@@ -25,7 +25,7 @@ const PAGE_LABEL = '/terrasses-bois';
 export const metadata: Metadata = buildMetadata({
   title: 'Terrasse en bois sur mesure à Libourne et en Gironde',
   description:
-    "Terrasse bois sur plots ou lambourdes, plage de piscine, sol sableux : conception et pose par nos équipes à Libourne et en Gironde. Deux chantiers racontés.",
+    "Terrasse bois sur plots ou sur vis, en pin traité, douglas ou ipé, plage de piscine : conception et pose par nos équipes à Libourne et en Gironde.",
   keywords:
     'terrasse bois Libourne, terrasse bois Gironde, plage de piscine bois, terrasse ipé, terrasse sur plots, terrasse pin maritime, terrassier bois Libourne',
   path: '/terrasses-bois',
@@ -50,6 +50,10 @@ const FAQ = [
   {
     q: 'Combien de temps dure une terrasse en bois ?',
     r: "Sur nos chantiers girondins, une terrasse bien ventilée par-dessous et nettoyée une fois par an se tient quinze à vingt ans, essence selon, c'est notre observation, pas une garantie. Ce qui la tue prématurément, c'est presque toujours l'eau qui stagne sous les lames, pas le soleil. Quand elle vieillit, tout n'est pas à refaire : notre guide sur la rénovation explique comment décider entre poncer, changer les lames et tout déposer.",
+  },
+  {
+    q: 'Faut-il une autorisation pour construire une terrasse en bois ?',
+    r: "Une terrasse de plain-pied non couverte ne demande le plus souvent aucune formalité. Surélevée, couverte ou créant de l'emprise au sol au-delà d'un seuil, elle peut nécessiter une déclaration préalable. Les seuils dépendent du PLU de votre commune, et un secteur protégé change encore la donne : nous les vérifions avant de chiffrer.",
   },
   {
     q: 'Intervenez-vous au bord d’une piscine ?',
@@ -84,6 +88,7 @@ const jsonld = [
       { '@type': 'City', name: 'Les Billaux' },
       { '@type': 'City', name: 'Moulon' },
       { '@type': 'City', name: 'Lacanau' },
+      { '@type': 'City', name: 'Saint-Pey-de-Castets' },
       { '@type': 'AdministrativeArea', name: 'Gironde' },
     ],
     description:
@@ -130,6 +135,117 @@ const jsonld = [
       acceptedAnswer: { '@type': 'Answer', text: f.r },
     })),
   },
+];
+
+/* Sections ajoutées le 20/10/2026 sur les requêtes réelles de la page (Search
+   Console 90 j) : « terrasse sur plots gironde » 26e, « terrasse pin gironde » 28e,
+   « terrasse bois libourne » 12e. Les chiffres viennent de nos guides
+   terrasse-bois-structure-plots-lambourdes, quel-bois-pour-terrasse-exterieure et
+   bois-local-pin-maritime-douglas-gironde, rien n'est inventé ici. */
+const STRUCTURES = [
+  {
+    icone: 'tune',
+    titre: 'Sur plots réglables',
+    texte:
+      "Quand le sol porte (dalle, terrain stabilisé), les plots rattrapent la pente et ventilent la sous-face sans toucher au terrain. Un plot ne vaut que ce que vaut le sol dessous : nous le vérifions au relevé.",
+  },
+  {
+    icone: 'construction',
+    titre: 'Sur vis de fondation',
+    texte:
+      "Sable du littoral, remblai, terrain qui imposerait un décaissement : les vis sont vissées jusqu'à trouver de la résistance, chaque pied réglable indépendamment. C'est la fondation de notre terrasse de Lacanau.",
+  },
+  {
+    icone: 'straighten',
+    titre: 'Lambourdes et platelage',
+    texte:
+      "Entraxe des lambourdes calé sur le NF DTU 51.4 et la lame, le plus souvent 40 à 50 cm. Un jeu de 3 à 5 mm entre lames pour que l'eau parte et que le bois travaille. Jamais de lambourde à même la terre.",
+  },
+];
+
+const ESSENCES = [
+  {
+    titre: 'Pin maritime traité',
+    texte:
+      "Le bois local par excellence : les Landes de Gascogne commencent à quelques dizaines de kilomètres de Libourne. Peu durable naturellement mais très imprégnable, il atteint la classe d'emploi 4 traité en autoclave. Exigez la mention CTB B+ sur le devis. C'est l'option la plus économique.",
+    lien: { href: '/blog/bois-local-pin-maritime-douglas-gironde', texte: 'Le bois local en Gironde' },
+  },
+  {
+    titre: 'Douglas ou mélèze',
+    texte:
+      "Deux résineux naturellement durables en classe 3. Le douglas, brun rosé, offre un très bon rapport qualité-prix ; le mélèze, plus dense, est un peu plus stable. Le choix se joue sur la teinte et l'exposition.",
+    lien: { href: '/blog/quel-bois-pour-terrasse-exterieure', texte: 'Le guide des essences' },
+  },
+  {
+    titre: 'Ipé et bois denses',
+    texte:
+      "Classe 4 à 5 naturellement, il ne grise pas comme un résineux, ne donne pas d'échardes pieds nus et tient au bord d'une eau chlorée. Plus dense, plus dur et plus cher, il s'impose autour d'une piscine, comme à Moulon.",
+    lien: { href: '/blog/plage-piscine-bois-essences-pose', texte: 'La plage de piscine en bois' },
+  },
+];
+
+/* Uniquement nos chantiers. Les trois premières sont prises sur le chantier de
+   Lacanau (même maison, même sable que la fiche), les deux pergolas sur
+   terrasse à Saint-Pey-de-Castets. */
+const GALERIE = [
+  {
+    src: '/images/terrasse-bois-plots-gironde-1.webp',
+    w: 950,
+    h: 1267,
+    alt: 'Terrasse bois sur sol sableux le long d’une maison à bardage noir, chantier de Lacanau',
+    legende: 'Lacanau, terrasse sur vis dans le sable',
+  },
+  {
+    src: '/images/terrasse-bois-plots-gironde-3.webp',
+    w: 1000,
+    h: 1333,
+    alt: 'Angle de terrasse bois et plinthe de rive refermant la structure, chantier de Lacanau',
+    legende: 'Lacanau, plinthe de rive sur les quatre côtés',
+  },
+  {
+    src: '/images/terrasse-bois-plots-gironde-4.webp',
+    w: 850,
+    h: 1133,
+    alt: 'Terrasse bois sous un store, posée sur terrain sableux, chantier de Lacanau',
+    legende: 'Lacanau, la terrasse sous le store',
+  },
+  {
+    src: '/images/terrasse-bois-pool-house-libourne.webp',
+    w: 736,
+    h: 981,
+    alt: 'Plage de piscine en bois le long du bassin, pool house à bardage noir au fond',
+    legende: 'Plage de piscine le long du bassin',
+  },
+  {
+    src: '/images/realisations/terrasse-bois-pergola-aluminium-libourne-7.webp',
+    w: 825,
+    h: 1100,
+    alt: 'Terrasse bois sous une pergola aluminium, lames vues en enfilade, à Saint-Pey-de-Castets',
+    legende: 'Saint-Pey-de-Castets, terrasse sous pergola',
+  },
+  {
+    src: '/images/pergola-terrasse-bois-libourne-2.webp',
+    w: 900,
+    h: 1200,
+    alt: 'Grande terrasse bois sur structure, sous une pergola aluminium, à Saint-Pey-de-Castets',
+    legende: 'Saint-Pey-de-Castets, grande terrasse sur structure',
+  },
+];
+
+const COMMUNES = [
+  'Libourne',
+  'Les Billaux',
+  'Saint-Pey-de-Castets',
+  'Moulon',
+  'Saint-Émilion',
+  'Fronsac',
+  'Vayres',
+  'Izon',
+  'Branne',
+  'Créon',
+  'Bordeaux',
+  'Lacanau',
+  'La Teste-de-Buch',
 ];
 
 const lienInterne =
@@ -179,7 +295,7 @@ export default function TerrassesBoisPage() {
               Notre savoir-faire
             </span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
-              Terrasses bois à Libourne et en Gironde
+              Terrasse bois sur mesure à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
               Une terrasse se pense par-dessous. Ce qu&apos;on voit, ce sont les lames ; ce qui décide
@@ -240,7 +356,65 @@ export default function TerrassesBoisPage() {
           </div>
         </section>
 
-        <section className="py-20 md:py-28 bg-surface-container">
+
+        <section className="py-20 md:py-28 bg-surface-container" id="structure">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Terrasse sur plots, sur vis ou sur lambourdes
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                La structure se décide au relevé, sol à l&apos;appui. Trois réponses, selon ce que le
+                terrain porte et ce qu&apos;il faut rattraper.
+              </p>
+            </div>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {STRUCTURES.map((st) => (
+                <li key={st.titre} className="bg-surface rounded-2xl p-8 border border-surface-variant">
+                  <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4" aria-hidden="true">
+                    {st.icone}
+                  </span>
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{st.titre}</h3>
+                  <p className="text-on-surface-variant text-body-md">{st.texte}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-10 max-w-3xl">
+              Le détail, du choix du plot au double lambourdage, est dans notre{' '}
+              <a href="/blog/terrasse-bois-structure-plots-lambourdes" className={lienInterne}>
+                guide de la structure d&apos;une terrasse
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface" id="essences">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Pin, douglas ou ipé : quel bois pour votre terrasse en Gironde ?
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                L&apos;essence se choisit sur l&apos;usage et sur le budget. Quelle qu&apos;elle soit,
+                c&apos;est la ventilation de la sous-face qui décide si la terrasse atteint le haut ou le
+                bas de sa durée de vie.
+              </p>
+            </div>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {ESSENCES.map((e) => (
+                <li key={e.titre} className="rounded-2xl p-8 border border-surface-variant bg-surface-container-low">
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{e.titre}</h3>
+                  <p className="text-on-surface-variant text-body-md mb-4">{e.texte}</p>
+                  <a href={e.lien.href} className={lienInterne}>
+                    {e.lien.texte}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+        <section className="py-20 md:py-28 bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-4">
               Deux terrasses, deux problèmes qui n&apos;avaient rien à voir
@@ -301,7 +475,80 @@ export default function TerrassesBoisPage() {
           </div>
         </section>
 
+
+        <section className="py-20 md:py-28 bg-surface-container" id="realisations-terrasses">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-12">
+              Terrasses bois réalisées en Gironde
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {GALERIE.map((g) => (
+                <figure key={g.src} className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+                  <img
+                    width={g.w}
+                    height={g.h}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    src={g.src}
+                    alt={g.alt}
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 to-transparent p-5 pt-12 text-white font-label-md text-label-md">
+                    {g.legende}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28 bg-surface">
+          <div className="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Votre terrasse bois à Libourne et partout en Gironde
+              </h2>
+              <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
+                <p>
+                  Notre atelier est aux Billaux, à cinq minutes de Libourne. Nous venons voir le sol
+                  avant de chiffrer, et c&apos;est la même équipe qui pose.
+                </p>
+                <p>
+                  Nos terrasses sont posées dans le Libournais et en{' '}
+                  <a href="/pergola-carport-entre-deux-mers" className={lienInterne}>
+                    Entre-deux-Mers
+                  </a>
+                  , à Moulon ou Saint-Pey-de-Castets, jusqu&apos;à la{' '}
+                  <a href="/amenagement-exterieur-bordeaux-metropole" className={lienInterne}>
+                    métropole bordelaise
+                  </a>
+                  . Sur le littoral, de Lacanau au{' '}
+                  <a href="/terrasse-bois-bassin-arcachon" className={lienInterne}>
+                    Bassin d&apos;Arcachon
+                  </a>
+                  , le sable impose une fondation sur vis : nous y consacrons une page.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">
+                Communes desservies
+              </h3>
+              <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant text-body-md">
+                {COMMUNES.map((c) => (
+                  <li key={c} className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-secondary-dark text-[18px]" aria-hidden="true">
+                      location_on
+                    </span>
+                    {c}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface-container-low">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-12">
               Questions fréquentes

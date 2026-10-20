@@ -363,12 +363,16 @@ const ETAPES = [
   },
 ];
 
-/* Galerie : chantiers réels en priorité, puis références de gamme. */
+/* Galerie : chantiers réels en priorité, puis références de gamme. La pergola
+   bois d'Arveyres y entre le 20/10/2026 : la galerie ne montrait que de
+   l'aluminium, alors que « pergolas bois gironde » est l'une des requêtes de la page.
+   Les photos realisations/* sont à Saint-Pey-de-Castets (les noms de fichiers
+   disent « libourne », à tort). */
 const GALERIE = [
   {
     src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
-    alt: "Pergola aluminium anthracite adossée à une maison, vue en enfilade sur la terrasse bois, réalisée par L'Esprit Bois",
-    legende: 'Pergola aluminium adossée et terrasse bois, Libournais',
+    alt: "Pergola aluminium anthracite adossée à une maison, vue en enfilade sur la terrasse bois, réalisée par L'Esprit Bois à Saint-Pey-de-Castets",
+    legende: 'Saint-Pey-de-Castets, pergola aluminium adossée et terrasse bois',
     w: 1600,
     h: 900,
   },
@@ -408,10 +412,10 @@ const GALERIE = [
     h: 1333,
   },
   {
-    src: '/images/realisations/pergola-aluminium-toit-polycarbonate-libourne-4.webp',
-    alt: 'Pergola aluminium adossée à toiture polycarbonate, raccord à la façade vu depuis la terrasse',
-    legende: 'Raccord à la façade, même chantier',
-    w: 825,
+    src: '/images/pergola-bois-massif-terrasse.webp',
+    alt: "Pergola en bois massif sur terrasse, réalisée par L'Esprit Bois à Arveyres",
+    legende: 'Arveyres, pergola bois massif',
+    w: 1100,
     h: 1100,
   },
   {
@@ -430,19 +434,26 @@ const GALERIE = [
   },
 ];
 
+/* Saint-Pey-de-Castets, Arveyres, Génissac et Rauzan : communes où nous avons
+   posé une pergola (galerie, page Entre-deux-Mers). La Teste-de-Buch accueille
+   notre agence en janvier 2027. */
 const COMMUNES = [
   'Libourne',
   'Les Billaux',
+  'Saint-Pey-de-Castets',
+  'Arveyres',
+  'Génissac',
+  'Rauzan',
   'Saint-Émilion',
-  'Coutras',
   'Fronsac',
   'Vayres',
   'Izon',
   'Saint-Denis-de-Pile',
   'Castillon-la-Bataille',
-  'Guîtres',
   'Branne',
+  'Créon',
   'Bordeaux',
+  'La Teste-de-Buch',
 ];
 
 export default function PergolasPage() {
@@ -478,8 +489,12 @@ export default function PergolasPage() {
             <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
               Lumière &amp; Ombre
             </span>
+            {/* H1 aligné sur les requêtes réelles (Search Console 90 j au 20/10/2026) :
+                « pergola bioclimatique libourne » est 10e et « pergolas bois gironde »
+                38e, alors que l'ancien H1 ne contenait ni « bioclimatique » ni « bois ».
+                Le title, qui porte déjà « Libourne », reste inchangé. */}
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
-              Pergolas sur mesure à Libourne et en Gironde
+              Pergola bioclimatique et pergola bois sur mesure en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl mb-8">
               Bioclimatique à lames orientables, aluminium à toiture fixe ou bois massif : trois familles de
@@ -971,13 +986,13 @@ export default function PergolasPage() {
               <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
                 <div className="col-span-2 aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    width="1200"
-                    height="800"
+                    width="1100"
+                    height="1100"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/images/pergola-bois-charpente-massive-patine.webp"
-                    alt="Charpente de pergola en bois massif aux assemblages contreventés, bois grisaillé par les années"
+                    src="/images/pergola-bois-massif-terrasse.webp"
+                    alt="Pergola en bois massif sur terrasse, réalisée par L'Esprit Bois à Arveyres, en Gironde"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
@@ -1543,7 +1558,7 @@ export default function PergolasPage() {
                 Zone d'intervention
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Votre pergola à Libourne et dans tout le Libournais
+                Votre pergola partout en Gironde
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Notre atelier est basé au{' '}
@@ -1551,9 +1566,18 @@ export default function PergolasPage() {
                 minutes de Libourne. Nous venons relever votre terrasse, étudier son orientation, et nous restons
                 joignables après la pose.
               </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                Nos pergolas sont posées dans le Libournais, à Arveyres, et en{' '}
+                <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">Entre-deux-Mers</a>, à Saint-Pey-de-Castets,
+                Génissac ou Rauzan. Nous intervenons plus largement dans toute la Gironde, jusqu'à la{' '}
+                <a href="/amenagement-exterieur-bordeaux-metropole" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">métropole bordelaise</a>.
+              </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Nous intervenons dans tout le Libournais et plus largement en Gironde, jusqu'à la métropole
-                bordelaise.
+                Pour une{' '}
+                <a href="/pergola-bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">pergola bioclimatique ou bois sur le Bassin d'Arcachon</a>,
+                de La Teste-de-Buch à Andernos-les-Bains, le vent et les embruns changent la conception : nous y
+                consacrons une page, et nous ouvrons notre{' '}
+                <a href="/agence-la-teste-de-buch" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">agence de La Teste-de-Buch</a> en janvier 2027.
               </p>
             </div>
             <div>

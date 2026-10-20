@@ -24,7 +24,9 @@ export const metadata: Metadata = buildMetadata({
   keywords:
     'carport Libourne, carport Gironde, carport bois, carport aluminium, carport solaire, abri voiture Libourne, carport toiture plate, carport bac acier, carport adossé, carport autoporté',
   path: '/carports',
-  ogImage: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
+  /* Un de nos chantiers (Lugon-et-l'Île-du-Carnay), et non plus le visuel
+     fournisseur aluminium : c'est l'image qui s'affiche au partage du lien. */
+  ogImage: '/images/source-adefrance/Carport-bois-Libourne-1.webp',
   ogTitle: 'Carports sur mesure en Gironde : bois, aluminium, solaire',
   ville: 'Libourne',
 });
@@ -184,6 +186,14 @@ const jsonld = [
       },
       {
         '@type': 'Question',
+        name: 'Peut-on abriter un camping-car sous un carport bois ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Oui, c'est d'abord une question de hauteur. La plupart des camping-cars mesurent entre 2,80 et 3,20 mètres de haut : il faut donc prévoir une hauteur libre sous traverse de l'ordre de 3,50 mètres, et une longueur de 7 à 8 mètres. La charpente, les poteaux et les fondations sont dimensionnés pour cette portée, et la surface couverte peut faire passer le projet de la déclaration préalable au permis de construire. Nous relevons le véhicule et le terrain avant de figer les cotes.",
+        },
+      },
+      {
+        '@type': 'Question',
         name: "Qu'est-ce qu'un carport solaire ?",
         acceptedAnswer: {
           '@type': 'Answer',
@@ -219,7 +229,7 @@ const jsonld = [
         name: 'Intervenez-vous en dehors de Libourne ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui. Basés aux Billaux, nous intervenons dans tout le Libournais (Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne) et plus largement en Gironde, jusqu'à la métropole bordelaise.",
+          text: "Oui. Basés aux Billaux, nous intervenons dans tout le Libournais (Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), en Entre-deux-Mers et plus largement en Gironde, jusqu'à la métropole bordelaise. Sur le Bassin d'Arcachon, nous assurons déjà rendez-vous et chantiers, et ouvrons une agence à La Teste-de-Buch en janvier 2027.",
         },
       },
     ],
@@ -379,7 +389,12 @@ const ETAPES = [
   },
 ];
 
-/* Galerie : uniquement des ouvrages que nous avons réalisés. */
+/* Galerie : uniquement des ouvrages que nous avons réalisés. Les quatre
+   « Carport-aluminium-Libourne-* » en ont été retirés le 20/10/2026 : ce sont des
+   visuels du fournisseur LI-SU, pas nos chantiers. Ils restent dans la section
+   aluminium, où ils illustrent la gamme sans revendiquer de chantier.
+   Communes : tableau des chantiers réels (les noms de fichiers disent tous
+   « Libourne », à tort). */
 const GALERIE = [
   {
     src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
@@ -402,60 +417,52 @@ const GALERIE = [
     legende: 'Charpente adossée, contre-jour de fin de journée',
   },
   {
-    src: '/images/source-adefrance/Carport-aluminium-Libourne-1.webp',
-    alt: 'Carport aluminium sur mesure à toiture plate, adossé à un bardage bois à claire-voie',
-    legende: 'Carport aluminium à toiture plate',
-  },
-  {
     src: '/images/source-adefrance/carport-bois-libourne.webp',
-    alt: 'Carport bois autoporté à toiture plate et sous-face claire, réalisé en Gironde',
-    legende: 'Carport bois autoporté, toiture plate',
+    alt: 'Carport bois autoporté à toiture plate et sous-face claire, à Saint-Denis-de-Pile',
+    legende: 'Saint-Denis-de-Pile, carport autoporté à toiture plate',
   },
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-5.webp',
-    alt: 'Carport bois avec toiture bac acier, à Lagorce',
-    legende: 'Grande charpente bois, toiture bac acier',
+    alt: 'Grand carport bois autoporté avec toiture bac acier, à Lagorce',
+    legende: 'Lagorce, grande charpente bois et bac acier',
   },
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
-    alt: 'Carport bois autoporté à toiture plate abritant deux voitures, Gironde',
-    legende: 'Carport bois autoporté, deux véhicules',
+    alt: 'Carport bois autoporté à toiture plate abritant deux voitures, à Arveyres',
+    legende: 'Arveyres, carport bois pour deux voitures',
   },
   {
-    src: '/images/source-adefrance/Carport-aluminium-Libourne-3.webp',
-    alt: 'Carport aluminium thermolaqué avec éclairage intégré',
-    legende: 'Éclairage intégré à la structure',
+    src: '/images/source-adefrance/Carport-bois-Libourne-3.webp',
+    alt: 'Carport bois autoporté à couverture bac acier, à Capian',
+    legende: 'Capian, carport bois autoporté',
   },
   {
     src: '/images/source-adefrance/Carport-bois-Libourne-1.webp',
-    alt: 'Carport bois adossé le long d’une maison girondine, poteaux et pannes apparents',
-    legende: 'Carport bois en longueur, le long de la maison',
-  },
-  {
-    src: '/images/source-adefrance/Carport-aluminium-Libourne-2.webp',
-    alt: 'Carport aluminium contemporain à toiture plate abritant deux véhicules',
-    legende: 'Carport aluminium double',
-  },
-  {
-    src: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
-    alt: 'Carport aluminium anthracite abritant deux voitures, vue depuis le jardin',
-    legende: 'Carport aluminium, vue depuis le jardin',
+    alt: "Carport bois adossé le long d'une maison, poteaux et pannes apparents, à Lugon-et-l'Île-du-Carnay",
+    legende: "Lugon-et-l'Île-du-Carnay, carport en longueur le long de la maison",
   },
 ];
 
+/* Les cinq premières après Libourne sont des communes où nous avons posé un
+   carport (cf. GALERIE) ; La Teste-de-Buch accueille notre agence en janvier 2027
+   et nous y travaillons déjà. */
 const COMMUNES = [
   'Libourne',
   'Les Billaux',
+  'Arveyres',
+  'Saint-Denis-de-Pile',
+  'Lagorce',
+  'Capian',
+  "Lugon-et-l'Île-du-Carnay",
   'Saint-Émilion',
   'Coutras',
   'Fronsac',
   'Vayres',
   'Izon',
-  'Saint-Denis-de-Pile',
   'Castillon-la-Bataille',
-  'Guîtres',
   'Branne',
   'Bordeaux',
+  'La Teste-de-Buch',
 ];
 
 export default function CarportsPage() {
@@ -491,12 +498,16 @@ export default function CarportsPage() {
             <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">
               Structure &amp; Protection
             </span>
+            {/* H1 aligné sur le titre et sur la requête dominante (« carport bois
+                gironde », Search Console 90 j au 20/10/2026) : l'ancien H1 disait
+                « Libourne », que les internautes ne tapent presque pas. */}
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white mt-4 mb-6 max-w-4xl">
-              Carports sur mesure à Libourne et en Gironde
+              Carport bois sur mesure en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl mb-8">
-              Carport bois, carport aluminium ou carport solaire : trois familles d'abris, conçus, fabriqués et posés
-              par la même équipe.
+              Adossé ou autoporté, pour une voiture, deux voitures ou un camping-car : conçu, taillé dans notre
+              atelier des Billaux et posé par la même équipe. Nous proposons aussi le carport aluminium et le
+              carport solaire.
             </p>
 
             {/* Raccourcis de gamme */}
@@ -1318,7 +1329,7 @@ export default function CarportsPage() {
               Nos chantiers
             </span>
             <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-12">
-              Carports réalisés à Libourne et en Gironde
+              Carports bois réalisés en Gironde
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">
               Notre dernier chantier, un carport bois en trapèze adossé à une maison en pierre de Libourne, est raconté sur notre{' '}
@@ -1378,17 +1389,26 @@ export default function CarportsPage() {
                 Zone d'intervention
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Votre carport à Libourne et dans tout le Libournais
+                Votre carport bois partout en Gironde
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Notre atelier est basé au{' '}
                 <strong className="text-primary font-semibold">1 Aux Pradasses, 33500 Les Billaux</strong>, à cinq
-                minutes de Libourne. Cette proximité change tout : nous venons relever votre terrain, nous suivons le
-                chantier au quotidien, et nous restons joignables après la pose.
+                minutes de Libourne. C'est là que la charpente est taillée et assemblée, avant d'être posée chez
+                vous par la même équipe : nous venons relever votre terrain, nous suivons le chantier, et nous
+                restons joignables après la pose.
+              </p>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                Nos carports sont posés dans le Libournais, à Arveyres, Saint-Denis-de-Pile ou Lagorce, et en{' '}
+                <a href="/pergola-carport-entre-deux-mers" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">Entre-deux-Mers</a>,
+                à Capian. Nous intervenons plus largement dans toute la Gironde, jusqu'à la métropole bordelaise.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Nous intervenons dans tout le Libournais et plus largement en Gironde, jusqu'à la métropole
-                bordelaise.
+                Sur le{' '}
+                <a href="/bassin-arcachon" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">Bassin d'Arcachon</a>,
+                nous assurons déjà rendez-vous et chantiers, et ouvrons notre{' '}
+                <a href="/agence-la-teste-de-buch" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">agence de La Teste-de-Buch</a>{' '}
+                en janvier 2027.
               </p>
             </div>
             <div>
@@ -1550,6 +1570,27 @@ export default function CarportsPage() {
               <details className="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
                 <summary className="flex justify-between items-center cursor-pointer list-none">
                   <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
+                    Peut-on abriter un camping-car sous un carport bois ?
+                  </h3>
+                  <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
+                    expand_more
+                  </span>
+                </summary>
+                <p className="text-on-surface-variant text-body-md mt-4">
+                  Oui, c'est d'abord une question de hauteur. La plupart des camping-cars mesurent entre{' '}
+                  <strong className="text-primary font-semibold">2,80 et 3,20 mètres</strong> de haut : il faut donc
+                  prévoir une hauteur libre sous traverse de l'ordre de 3,50 mètres, et une longueur de 7 à 8
+                  mètres. La charpente, les poteaux et les fondations sont dimensionnés pour cette portée, et la
+                  surface couverte peut faire passer le projet de la déclaration préalable au permis de construire.
+                  Nous relevons le véhicule et le terrain avant de figer les cotes ; notre guide des{' '}
+                  <a href="/blog/dimensions-carport-taille-hauteur" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">dimensions d'un carport</a>{' '}
+                  détaille les autres cas.
+                </p>
+              </details>
+
+              <details className="group bg-white rounded-xl border border-surface-variant p-6 open:shadow-lg transition-shadow">
+                <summary className="flex justify-between items-center cursor-pointer list-none">
+                  <h3 className="font-headline-sm text-headline-sm text-primary pr-6">
                     Qu'est-ce qu'un carport solaire ?
                   </h3>
                   <span className="material-symbols-outlined text-secondary-dark shrink-0 group-open:rotate-180 transition-transform" aria-hidden="true">
@@ -1632,8 +1673,9 @@ export default function CarportsPage() {
                 </summary>
                 <p className="text-on-surface-variant text-body-md mt-4">
                   Oui. Basés aux Billaux, nous couvrons tout le Libournais (Saint-Émilion, Coutras, Fronsac, Vayres,
-                  Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne) et plus largement la Gironde,
-                  jusqu'à la métropole bordelaise.
+                  Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne), l'Entre-deux-Mers et plus
+                  largement la Gironde, jusqu'à la métropole bordelaise. Sur le Bassin d'Arcachon, nous assurons
+                  déjà rendez-vous et chantiers, et ouvrons une agence à La Teste-de-Buch en janvier 2027.
                 </p>
               </details>
             </div>

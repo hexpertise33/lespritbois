@@ -204,7 +204,7 @@ const jsonld = [
             '@type': 'Service',
             name: 'Constructions bois',
             description:
-              "Maison ossature bois, maison en A, extension, surélévation, abri et dépendance, livrés hors d'eau hors d'air.",
+              "Maison ossature bois, maison en A, extension, surélévation, garage et abri de jardin sur mesure, sur tout support. Tous types de toit : toit plat et étanchéité, bac acier, plaque sous tuile, tuile. Livrés hors d'eau hors d'air.",
           },
         },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Terrasses bois' } },
@@ -344,6 +344,37 @@ const GAMMES = [
       },
     ],
   },
+  {
+    famille: 'Garages & abris de jardin',
+    href: '/garages-abris-jardin',
+    accroche: 'Créés sur mesure, sur tout support, sous le toit de votre choix.',
+    produits: [
+      {
+        nom: 'Garage bois',
+        href: '/garages-abris-jardin#garages',
+        src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-2.webp',
+        alt: 'Garage bois à toit plat, bardage gris et porte-fenêtre aluminium',
+        w: 900,
+        h: 1200,
+      },
+      {
+        nom: 'Abri de jardin',
+        href: '/garages-abris-jardin#abris',
+        src: '/images/garages-abris/abri-jardin-sur-mesure-porte-fenetre-1.webp',
+        alt: 'Abri de jardin sur mesure, bardage beige et porte-fenêtre double',
+        w: 900,
+        h: 1200,
+      },
+      {
+        nom: 'Toit plat, bac acier ou tuile',
+        href: '/garages-abris-jardin#toitures',
+        src: '/images/garages-abris/toit-plat-etancheite-membrane-1.webp',
+        alt: 'Toit plat couvert d’une membrane d’étanchéité, accolé à une maison en tuiles',
+        w: 1600,
+        h: 739,
+      },
+    ],
+  },
 ];
 
 /* Catalogue de l'accueil : une carte par métier, photographiée sur un vrai
@@ -396,6 +427,18 @@ const FAMILLES = [
     h: 1200,
     alt: 'Maison à ossature bois bardée à Rauzan, menuiseries posées',
     produits: GAMMES[3].produits,
+  },
+  {
+    famille: 'Garages & abris de jardin',
+    href: '/garages-abris-jardin',
+    promesse: 'Un garage ou un abri dessiné pour votre terrain, sur tout support, avec le toit de votre choix : toit plat, bac acier, plaque sous tuile ou tuile.',
+    preuve: 'Garage bois à toit plat, livré clos et couvert',
+    cta: 'Voir garages et abris',
+    src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-1.webp',
+    w: 1600,
+    h: 739,
+    alt: 'Garage bois sur mesure à toit plat, bardage gris',
+    produits: GAMMES[4].produits,
   },
 ];
 
@@ -641,7 +684,7 @@ export default function HomePage() {
                 </span>
                 <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous fabriquons</h2>
                 <p className="font-body-md text-body-md text-on-surface-variant">
-                  Quatre familles, douze ouvrages, tous sur mesure et posés par nos équipes.
+                  Cinq familles, quinze ouvrages, tous sur mesure et posés par nos équipes.
                 </p>
               </div>
               <a

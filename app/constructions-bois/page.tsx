@@ -16,7 +16,7 @@ const PAGE_LABEL = '/constructions-bois';
 export const metadata: Metadata = buildMetadata({
   title: "Construction bois & extension à Libourne | L'Esprit Bois",
   description:
-    "Maisons ossature bois, maisons en A, extensions, surélévations, pool houses et abris. Livrés hors d'eau hors d'air à Libourne et en Gironde.",
+    "Maisons ossature bois et en A, extensions, garages et abris de jardin sur mesure, tous types de toit. Livrés hors d'eau hors d'air en Gironde.",
   keywords:
     'construction bois Libourne, extension ossature bois Gironde, surélévation bois, maison en A, pool house, hors d\'eau hors d\'air',
   path: '/constructions-bois',
@@ -229,12 +229,12 @@ const CATALOGUE = [
     h: 981,
   },
   {
-    nom: 'Abri & d\u00e9pendance',
-    href: '#nos-constructions',
-    src: '/images/bardage-bois-douglas-gironde.webp',
-    alt: 'Abri bois bard\u00e9 en douglas accol\u00e9 \u00e0 une d\u00e9pendance en pierre, Gironde',
-    w: 1000,
-    h: 1333,
+    nom: 'Garage & abri de jardin',
+    href: '/garages-abris-jardin',
+    src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-1.webp',
+    alt: 'B\u00e2timent de jardin sur mesure en ossature bois, bardage douglas et tuiles, \u00e0 Saint-Martin-du-Bois',
+    w: 736,
+    h: 982,
   },
 ];
 
@@ -442,12 +442,16 @@ export default function ConstructionsBoisPage() {
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
-                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">cottage</span>
-                <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Abri &amp; dépendance</h3>
+                <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">garage_home</span>
+                <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Garage &amp; abri de jardin</h3>
                 <p className="text-on-surface-variant text-body-md">
-                  Atelier, bureau de jardin, remise, garage. Une petite construction se rate aussi facilement qu'une
-                  grande : même méthode, même soin.
+                  Créés sur mesure, sur tout support : dalle, plots ou terrain en pente. Garage, abri de jardin,
+                  atelier, bureau de jardin, avec le toit de votre choix. Même méthode, même soin qu'une maison.
                 </p>
+                <a href="/garages-abris-jardin" className="mt-4 inline-flex items-center gap-1 text-secondary-dark font-label-md text-label-md hover:underline underline-offset-4">
+                  Voir garages et abris
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">
                 <span className="material-symbols-outlined text-secondary-dark text-4xl mb-4 block" aria-hidden="true">add_home</span>

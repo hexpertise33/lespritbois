@@ -37,6 +37,7 @@ export default function SiteFooter() {
           <ul className="space-y-4">
             <li><a className={lien} href="/carports">Carports</a></li>
             <li><a className={lien} href="/pergolas">Pergolas</a></li>
+            <li><a className={lien} href="/garages-abris-jardin">Garages et abris de jardin</a></li>
             <li><a className={lien} href="/amenagement-exterieur">Aménagement extérieur</a></li>
             <li><a className={lien} href="/constructions-bois">Constructions bois</a></li>
           </ul>

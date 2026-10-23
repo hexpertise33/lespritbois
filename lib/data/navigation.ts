@@ -98,6 +98,9 @@ export type Onglet = {
   url: string;
   /** Intitulé complet, quand `titre` est abrégé faute de place dans la barre. */
   titreLong?: string;
+  /** Intitulé affiché à la place de `titre` entre 1024 et 1279 px, où la barre
+   *  n'a plus de marge (voir ONGLETS). */
+  titreCourt?: string;
 };
 
 /** Onglets de la barre de navigation, dans l'ordre d'affichage.
@@ -110,10 +113,21 @@ export type Onglet = {
  *  Le libellé « Aménagement extérieur » (177 px) est volontairement abrégé en
  *  « Aménagements » (114 px). Tout onglet ajouté ou rallongé mange cette marge :
  *  revérifier à 1024 px avant d'y toucher.
+ *
+ *  Depuis l'ajout de « Garages & abris » (23/10/2026), la marge à 1024 px tombe
+ *  à zéro avec le libellé complet : l'onglet s'y affiche en « Garages »
+ *  (`titreCourt`), et en entier à partir de 1280 px.
  */
 export const ONGLETS: Onglet[] = [
   { cle: 'carports', titre: 'Carports', url: '/carports' },
   { cle: 'pergolas', titre: 'Pergolas', url: '/pergolas' },
+  {
+    cle: 'garages-abris-jardin',
+    titre: 'Garages & abris',
+    titreCourt: 'Garages',
+    url: '/garages-abris-jardin',
+    titreLong: 'Garages et abris de jardin',
+  },
   {
     cle: 'amenagement-exterieur',
     titre: 'Aménagements',

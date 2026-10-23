@@ -25,6 +25,7 @@ const RUBRIQUES: { titre: string; liens: Lien[] }[] = [
       { titre: 'Carports', url: '/carports' },
       { titre: 'Pergolas', url: '/pergolas' },
       { titre: 'Réparation de pergola', url: '/reparation-pergola' },
+      { titre: 'Garages et abris de jardin', url: '/garages-abris-jardin' },
       { titre: 'Aménagement extérieur', url: '/amenagement-exterieur' },
       { titre: 'Terrasses bois', url: '/terrasses-bois' },
       { titre: 'Constructions bois', url: '/constructions-bois' },

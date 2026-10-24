@@ -344,7 +344,12 @@ export default function ArticleRemplacerVerandaPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Un seul de ces signes se répare souvent. Trois ou quatre à la fois, sur une structure dont on ne trouve
+                Un seul de ces signes se répare souvent, et la buée d&apos;hiver vient parfois de l&apos;usage plus que
+                des profilés : savoir{' '}
+                <a href="/blog/condensation-veranda-aluminium-hiver" className={lienInterne}>
+                  lire où apparaît la condensation dans une véranda
+                </a>{' '}
+                évite de remplacer pour rien. Trois ou quatre à la fois, sur une structure dont on ne trouve
                 plus les pièces, c&apos;est une véranda qui coûte chaque année un peu plus pour un confort qui baisse.
                 C&apos;est à ce moment-là que la question du remplacement devient rationnelle, et pas seulement
                 esthétique.

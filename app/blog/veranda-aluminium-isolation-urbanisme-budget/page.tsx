@@ -512,7 +512,11 @@ export default function ArticleVerandaAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est le premier point à vérifier sur un devis, et il ne se voit pas sur une photo. Une véranda
                 sans rupture de pont thermique peut être très bien fabriquée par ailleurs : elle restera inconfortable
-                et sujette à la condensation dès qu&apos;elle est chauffée. Sur nos projets, plus la barrette est large
+                et{' '}
+                <a href="/blog/condensation-veranda-aluminium-hiver" className={lienInterne}>
+                  sujette à la condensation dès qu&apos;elle est chauffée
+                </a>
+                . Sur nos projets, plus la barrette est large
                 et travaillée, meilleur est le comportement de la véranda, et plus les menuiseries résistent aux écarts
                 de température entre une face plein sud et une face nord.
               </p>

@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'condensation-veranda-aluminium-hiver',
+    titre: "Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle",
+    extrait:
+      "La buée dans une véranda n'est pas d'abord un défaut : c'est l'air humide de la maison qui vient toucher la paroi la plus froide du logement. Pour savoir quoi faire, on regarde où l'eau apparaît : linge, plantes, cuisine ouverte et ventilation se corrigent sans travaux, alors que des profilés sans rupture de pont thermique, un simple vitrage ou une vieille toiture polycarbonate ne se corrigent pas à la marge. La méthode d'un artisan à Libourne.",
+    date: '2026-10-24',
+    categorie: 'Guide · Vérandas aluminium',
+    image: '/images/blog/condensation-veranda-aluminium-hiver/buee-vitrages-profiles-metalliques-piece-vitree-hiver.webp',
+    imageLargeur: 1600,
+    imageHauteur: 1067,
+  },
+  {
     slug: 'fondation-abri-jardin-bois-dalle-plots',
     titre:
       'Sur quoi poser un abri de jardin en bois : dalle, plots, longrines ou vis de fondation ?',

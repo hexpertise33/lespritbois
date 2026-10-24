@@ -2341,6 +2341,40 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-13 | publié  | Pergola en bois : l'essence, les sections et les pieds de poteaux qui la font durer | pergola-bois-essence-sections-poteaux |
 | 2026-10-17 | publié  | Pergola aluminium adossée : ce que votre façade doit pouvoir porter | fixer-pergola-aluminium-facade |
 | 2026-10-19 | publié  | Sur quoi poser un abri de jardin en bois : dalle, plots, longrines ou vis de fondation ? | fondation-abri-jardin-bois-dalle-plots |
+| 2026-10-24 | publié  | Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle | condensation-veranda-aluminium-hiver |
+
+**Run du 24/10/2026 : publié après reprise d'un brouillon cassé, indexation demandée.**
+Le run automatique du 22-23/10 a rédigé `condensation-veranda-aluminium-hiver`
+(page datée du 22/10, 7 marqueurs `__IMAGE_A_SOURCER__`, deux liens rétroactifs
+posés mais non commités) puis s'est arrêté sans images ni entrée `blog.ts`, en
+laissant une **erreur de syntaxe** (apostrophe de « d'appoint » dans une chaîne
+entre apostrophes, ligne 450) qui faisait échouer `tsc`, `npm run build` et
+`npm run deploy` depuis ce dépôt. Corrigé le 24/10 sans toucher au texte, puis
+publié à la main sur demande de David via `/rediger-article`, daté du 24/10.
+
+Publié : title « Condensation dans la véranda en hiver : causes et remèdes », H1
+« Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la
+structure qui parle ». Thèse : on lit où apparaît l'eau ; usage et ventilation se
+corrigent sans travaux, pont thermique, simple vitrage ou vieux polycarbonate non.
+Aucun seuil réglementaire cité, donc pas de lien de source. Commit `2fd19af`,
+version Cloudflare `23e67768`, **200 confirmé trois fois**, sept images en 200,
+`datePublished` servi = `2026-10-24`, présent dans le sitemap et sur /blog.
+Maillage 4 bis : liens depuis `veranda-aluminium-isolation-urbanisme-budget`
+(« sujette à la condensation dès qu'elle est chauffée ») et
+`remplacer-veranda-ancienne-aluminium-renovation` (« lire où apparaît la
+condensation »), vérifiés dans le HTML servi. **IndexNow 200. Search Console :
+« Indexation demandée » vue à l'écran** (`/u/1/`).
+
+**Images** : six libres de droits (cinq Pexels, une Wikimedia Commons CC BY-SA 3.0
+de Michiel1972, crédit en légende à conserver) et une seule photo de chantier,
+le raccord de la pergola de Saint-Pey-de-Castets. Cover = serre embuée Pexels,
+alt prudent (« pièce vitrée à profilés métalliques »). **Aucune photo maison de
+véranda embuée** : à prendre cet hiver pour remplacer la cover.
+
+ℹ️ **Prochain run** : dernier article alu (24/10) ; le suivant devrait être **bois**.
+⚠️ Leçon : un run qui s'interrompt après la rédaction laisse un brouillon non
+commité qui casse le build de tout le monde. Lancer `npx tsc --noEmit -p .`
+juste après l'étape de rédaction.
 
 **Run du 19/10/2026 : publié, indexation demandée, réserve toujours VIDE.**
 Test de cadence passé : aucune entrée du 19/10 ni du 18/10, la plus récente étant

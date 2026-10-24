@@ -73,6 +73,9 @@ const jsonld = [
     name: 'Garage bois et abri de jardin sur mesure en Gironde',
     areaServed: [
       { '@type': 'City', name: 'Libourne' },
+      { '@type': 'City', name: 'Arveyres' },
+      { '@type': 'City', name: 'Saint-André-de-Cubzac' },
+      { '@type': 'City', name: 'La Teste-de-Buch' },
       { '@type': 'AdministrativeArea', name: 'Gironde' },
     ],
     provider: ENTREPRISE_REF,
@@ -100,24 +103,25 @@ const jsonld = [
   },
 ];
 
-/* Photos de chantiers fournies par l'entreprise le 23/10/2026.
-   TODO : les communes de ces chantiers restent à obtenir ; n'en inventer aucune. */
+/* Photos de chantiers fournies par l'entreprise le 23/10/2026. Communes
+   confirmées le 24/10/2026 : garage à Libourne, abri à Arveyres, toits plats à
+   Saint-André-de-Cubzac, carport bac acier à La Teste-de-Buch. */
 type Photo = { src: string; alt: string; w: number; h: number };
 
 const GARAGE: Photo[] = [
-  { src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-2.webp', alt: 'Garage bois à toit plat, bardage gris et porte-fenêtre aluminium, vu de trois quarts', w: 900, h: 1200 },
-  { src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-3.webp', alt: 'Façade d’un garage bois à toit plat, ouverture de porte réservée', w: 900, h: 1200 },
-  { src: '/images/garages-abris/garage-bois-membrane-toit-plat-6.webp', alt: 'Membrane d’étanchéité posée sur le toit plat d’un garage bois', w: 900, h: 1200 },
-  { src: '/images/garages-abris/garage-bois-charpente-interieure-5.webp', alt: 'Intérieur d’un garage bois, charpente et panneaux de contreventement', w: 900, h: 1200 },
-  { src: '/images/garages-abris/garage-bois-porte-fenetre-4.webp', alt: 'Porte-fenêtre aluminium gris anthracite posée dans le bardage d’un garage bois', w: 554, h: 1200 },
+  { src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-2.webp', alt: 'Garage bois à toit plat, bardage gris et porte-fenêtre aluminium, vu de trois quarts, à Libourne', w: 900, h: 1200 },
+  { src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-3.webp', alt: 'Façade d’un garage bois à toit plat, ouverture de porte réservée, à Libourne', w: 900, h: 1200 },
+  { src: '/images/garages-abris/garage-bois-membrane-toit-plat-6.webp', alt: 'Membrane d’étanchéité posée sur le toit plat d’un garage bois, à Libourne', w: 900, h: 1200 },
+  { src: '/images/garages-abris/garage-bois-charpente-interieure-5.webp', alt: 'Intérieur d’un garage bois, charpente et panneaux de contreventement, à Libourne', w: 900, h: 1200 },
+  { src: '/images/garages-abris/garage-bois-porte-fenetre-4.webp', alt: 'Porte-fenêtre aluminium gris anthracite posée dans le bardage d’un garage bois, à Libourne', w: 554, h: 1200 },
 ];
 
 const ABRI: Photo[] = [
-  { src: '/images/garages-abris/abri-jardin-sur-mesure-porte-fenetre-1.webp', alt: 'Abri de jardin sur mesure, bardage beige et porte-fenêtre double', w: 900, h: 1200 },
-  { src: '/images/garages-abris/abri-jardin-sur-mesure-pignon-3.webp', alt: 'Pignon bardé d’un abri de jardin sur mesure à toit plat', w: 900, h: 1200 },
-  { src: '/images/garages-abris/abri-jardin-toit-plat-membrane-5.webp', alt: 'Toit plat d’un abri de jardin couvert d’une membrane d’étanchéité, vu de dessus', w: 900, h: 1200 },
-  { src: '/images/garages-abris/abri-jardin-sur-mesure-facade-2.webp', alt: 'Façade vitrée d’un abri de jardin sur mesure, bardage vertical beige', w: 900, h: 1200 },
-  { src: '/images/garages-abris/abri-jardin-sur-mesure-finitions-4.webp', alt: 'Abri de jardin terminé, rive de toit et porte-fenêtre blanche', w: 900, h: 1200 },
+  { src: '/images/garages-abris/abri-jardin-sur-mesure-porte-fenetre-1.webp', alt: 'Abri de jardin sur mesure, bardage beige et porte-fenêtre double, à Arveyres', w: 900, h: 1200 },
+  { src: '/images/garages-abris/abri-jardin-sur-mesure-pignon-3.webp', alt: 'Pignon bardé d’un abri de jardin sur mesure à toit plat, à Arveyres', w: 900, h: 1200 },
+  { src: '/images/garages-abris/abri-jardin-toit-plat-membrane-5.webp', alt: 'Toit plat d’un abri de jardin couvert d’une membrane d’étanchéité, vu de dessus, à Arveyres', w: 900, h: 1200 },
+  { src: '/images/garages-abris/abri-jardin-sur-mesure-facade-2.webp', alt: 'Façade vitrée d’un abri de jardin sur mesure, bardage vertical beige, à Arveyres', w: 900, h: 1200 },
+  { src: '/images/garages-abris/abri-jardin-sur-mesure-finitions-4.webp', alt: 'Abri de jardin terminé, rive de toit et porte-fenêtre blanche, à Arveyres', w: 900, h: 1200 },
 ];
 
 const TOITS = [
@@ -125,7 +129,8 @@ const TOITS = [
     nom: 'Toit plat & étanchéité',
     texte: "Une ligne basse et contemporaine. Membrane d'étanchéité, relevés et évacuations soignés.",
     src: '/images/garages-abris/toit-plat-etancheite-membrane-1.webp',
-    alt: 'Toit plat couvert d’une membrane d’étanchéité, accolé à une maison en tuiles',
+    alt: 'Toit plat couvert d’une membrane d’étanchéité, accolé à une maison en tuiles, à Saint-André-de-Cubzac',
+    lieu: 'Saint-André-de-Cubzac',
     w: 1600,
     h: 739,
   },
@@ -133,7 +138,8 @@ const TOITS = [
     nom: 'Bac acier',
     texte: 'Léger, rapide à poser, à l’aise en faible pente. Le choix courant pour un garage ou un carport.',
     src: '/images/garages-abris/couverture-bac-acier-pose-2.webp',
-    alt: 'Couverture en bac acier gris anthracite en cours de pose',
+    alt: 'Couverture en bac acier gris anthracite d’un carport bois en cours de pose, à La Teste-de-Buch',
+    lieu: 'La Teste-de-Buch',
     w: 900,
     h: 1200,
   },
@@ -142,6 +148,7 @@ const TOITS = [
     texte: 'Une plaque support étanche sous la tuile : un toit traditionnel, doublement protégé.',
     src: '/images/realisations/studio-jardin-ossature-bois-saint-martin-du-bois-3.webp',
     alt: 'Pose de tuiles de terre cuite sur un bâtiment de jardin en ossature bois, à Saint-Martin-du-Bois',
+    lieu: 'Saint-Martin-du-Bois',
     w: 736,
     h: 982,
   },
@@ -150,6 +157,7 @@ const TOITS = [
     texte: 'La couverture girondine, pour que l’ouvrage fasse famille avec la maison.',
     src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
     alt: 'Carport bois couvert en tuiles, adossé au pignon en pierre d’une maison, à Libourne',
+    lieu: 'Libourne',
     w: 1448,
     h: 1086,
   },
@@ -214,7 +222,7 @@ export default function GaragesAbrisJardinPage() {
               decoding="async"
               className="w-full h-full object-cover"
               src="/images/garages-abris/garage-bois-toit-plat-bardage-gris-1.webp"
-              alt="Garage bois sur mesure à toit plat, bardage gris et porte-fenêtre aluminium, réalisé par L'Esprit Bois"
+              alt="Garage bois sur mesure à toit plat, bardage gris et porte-fenêtre aluminium, réalisé par L'Esprit Bois à Libourne"
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
@@ -310,6 +318,10 @@ export default function GaragesAbrisJardinPage() {
                   'Bardage et menuiseries assortis à la maison',
                 ]}
               />
+              <p className="inline-flex items-center gap-1.5 text-secondary-dark font-label-md text-label-md mb-6">
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">location_on</span>
+                Libourne : garage à toit plat, bardage gris
+              </p>
               <a
                 href="#devis-bas"
                 className="inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
@@ -349,6 +361,10 @@ export default function GaragesAbrisJardinPage() {
                   'Posé sur dalle, plots ou longrines',
                 ]}
               />
+              <p className="inline-flex items-center gap-1.5 text-secondary-dark font-label-md text-label-md mb-6">
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">location_on</span>
+                Arveyres : abri à toit plat, portes-fenêtres
+              </p>
               <a
                 href="#devis-bas"
                 className="inline-flex items-center gap-2 bg-primary text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95"
@@ -388,6 +404,10 @@ export default function GaragesAbrisJardinPage() {
                     />
                   </div>
                   <div className="p-6">
+                    <p className="inline-flex items-center gap-1 text-secondary-dark text-[13px] font-semibold mb-2">
+                      <span className="material-symbols-outlined text-[16px]" aria-hidden="true">location_on</span>
+                      {t.lieu}
+                    </p>
                     <h3 className="font-headline-sm text-headline-sm text-primary mb-2">{t.nom}</h3>
                     <p className="text-on-surface-variant text-body-md">{t.texte}</p>
                   </div>

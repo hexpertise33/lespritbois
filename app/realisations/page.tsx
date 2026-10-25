@@ -17,9 +17,9 @@ const PROJET = 'Projet vu depuis les réalisations';
 const PAGE_LABEL = '/realisations';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nos réalisations en Gironde : quinze chantiers racontés",
+  title: "Nos réalisations en Gironde : seize chantiers racontés",
   description:
-    'Carport à Libourne, surélévation au Pyla, extension à Clérac, maison ossature bois à Rauzan : quinze chantiers avec leur contrainte et leurs matériaux.',
+    'Carport à Libourne, surélévation au Pyla, extension à Clérac, maison ossature bois à Rauzan : seize chantiers avec leur contrainte et leurs matériaux.',
   keywords:
     "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan, surélévation ossature bois Pyla-sur-Mer, carport bois Libourne",
   path: '/realisations',
@@ -81,6 +81,46 @@ const CARPORTS_COURTS = [
 /** Galerie. Chaque vignette est un ouvrage réalisé par l'entreprise ou une pièce
  *  exposée sur son dépôt, les visuels fournisseur en ont été retirés. */
 const GALERIE: Vignette[] = [
+  {
+    src: '/images/realisations/carport-aluminium-led-les-billaux-1.webp',
+    w: 480,
+    h: 360,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Carport aluminium 3 × 5 m',
+    lieu: 'Les Billaux',
+    alt: "Carport aluminium anthracite sur quatre poteaux devant le showroom L'Esprit Bois, aux Billaux",
+  },
+  {
+    src: '/images/realisations/carport-aluminium-led-les-billaux-2.webp',
+    w: 480,
+    h: 360,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Vue de trois-quarts',
+    lieu: 'Les Billaux',
+    alt: "Carport aluminium anthracite vu de trois-quarts, toiture plate et poteaux carrés, aux Billaux",
+  },
+  {
+    src: '/images/realisations/carport-aluminium-led-les-billaux-3.webp',
+    w: 480,
+    h: 360,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Vue de côté',
+    lieu: 'Les Billaux',
+    alt: "Carport aluminium anthracite de 3 mètres sur 5 vu de côté, sur sol gravillonné, aux Billaux",
+  },
+  {
+    src: '/images/realisations/carport-aluminium-led-les-billaux-4.webp',
+    w: 360,
+    h: 480,
+    cat: 'carports',
+    categorie: 'Carports',
+    titre: 'Sous-face de la toiture',
+    lieu: 'Les Billaux',
+    alt: "Sous-face de la toiture d'un carport aluminium vue d'en dessous, ceinture anthracite, aux Billaux",
+  },
   {
     src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',
     w: 1448,
@@ -567,7 +607,7 @@ export default function RealisationsPage() {
               Nos réalisations à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Quinze chantiers racontés
+              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Seize chantiers racontés
               avec leur commune, leur contrainte et leur durée.
             </p>
           </div>
@@ -614,7 +654,7 @@ export default function RealisationsPage() {
                 Ce que nous avons bâti
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Quinze chantiers, quinze contraintes différentes
+                Seize chantiers, seize contraintes différentes
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Un étage en ossature bois ajouté à une maison du{' '}

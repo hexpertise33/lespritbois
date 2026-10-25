@@ -23,6 +23,27 @@ export type Chantier = {
 
 export const CHANTIERS: Chantier[] = [
   {
+    id: 'les-billaux-carport-aluminium',
+    commune: 'Les Billaux',
+    categorie: 'Carport',
+    titre: 'Un carport aluminium 3 × 5 m, éclairage LED intégré',
+    src: '/images/realisations/carport-aluminium-led-les-billaux-1.webp',
+    w: 480,
+    h: 360,
+    alt: "Carport aluminium anthracite de 3 mètres sur 5 sur quatre poteaux, devant le showroom L'Esprit Bois aux Billaux",
+    faits: [
+      { label: 'Ouvrage', valeur: 'Carport aluminium, fourniture et pose' },
+      { label: 'Dimensions', valeur: '3 × 5 m' },
+      { label: 'Éclairage', valeur: 'LED intégrées à la structure' },
+      { label: 'Prix', valeur: 'À partir de 4 500 €, fourni et posé' },
+    ],
+    paragraphes: [
+      "Ce carport est posé devant notre showroom, aux Billaux. Il fait 3 mètres sur 5, de quoi abriter une voiture, et vous pouvez venir le voir avant de vous décider.",
+      "La structure est entièrement en aluminium thermolaqué anthracite : quatre poteaux, une ceinture périphérique et la toiture plate qu'elle porte. L'éclairage LED est intégré à la structure, sans câble apparent ni luminaire rapporté après coup.",
+      "Nous le proposons en fourniture et pose, à partir de 4 500 €.",
+    ],
+  },
+  {
     id: 'libourne-carport-trapeze',
     commune: 'Libourne',
     categorie: 'Carport',

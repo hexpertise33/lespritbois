@@ -83,8 +83,8 @@ const CARPORTS_COURTS = [
 const GALERIE: Vignette[] = [
   {
     src: '/images/realisations/carport-aluminium-led-les-billaux-1.webp',
-    w: 480,
-    h: 360,
+    w: 1600,
+    h: 1200,
     cat: 'carports',
     categorie: 'Carports',
     titre: 'Carport aluminium 3 × 5 m',
@@ -93,8 +93,8 @@ const GALERIE: Vignette[] = [
   },
   {
     src: '/images/realisations/carport-aluminium-led-les-billaux-2.webp',
-    w: 480,
-    h: 360,
+    w: 1600,
+    h: 1200,
     cat: 'carports',
     categorie: 'Carports',
     titre: 'Vue de trois-quarts',
@@ -103,23 +103,13 @@ const GALERIE: Vignette[] = [
   },
   {
     src: '/images/realisations/carport-aluminium-led-les-billaux-3.webp',
-    w: 480,
-    h: 360,
+    w: 1360,
+    h: 1020,
     cat: 'carports',
     categorie: 'Carports',
     titre: 'Vue de côté',
     lieu: 'Les Billaux',
     alt: "Carport aluminium anthracite de 3 mètres sur 5 vu de côté, sur sol gravillonné, aux Billaux",
-  },
-  {
-    src: '/images/realisations/carport-aluminium-led-les-billaux-4.webp',
-    w: 360,
-    h: 480,
-    cat: 'carports',
-    categorie: 'Carports',
-    titre: 'Sous-face de la toiture',
-    lieu: 'Les Billaux',
-    alt: "Sous-face de la toiture d'un carport aluminium vue d'en dessous, ceinture anthracite, aux Billaux",
   },
   {
     src: '/images/realisations/carport-bois-trapeze-libourne-1.webp',

@@ -28,8 +28,8 @@ export const CHANTIERS: Chantier[] = [
     categorie: 'Carport',
     titre: 'Un carport aluminium 3 × 5 m, éclairage LED intégré',
     src: '/images/realisations/carport-aluminium-led-les-billaux-1.webp',
-    w: 480,
-    h: 360,
+    w: 1600,
+    h: 1200,
     alt: "Carport aluminium anthracite de 3 mètres sur 5 sur quatre poteaux, devant le showroom L'Esprit Bois aux Billaux",
     faits: [
       { label: 'Ouvrage', valeur: 'Carport aluminium, fourniture et pose' },

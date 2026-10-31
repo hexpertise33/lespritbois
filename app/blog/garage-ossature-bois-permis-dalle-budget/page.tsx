@@ -568,7 +568,16 @@ export default function ArticleGarageOssatureBoisPage() {
                 volume sous rampant, utile pour stocker. Le{' '}
                 <strong className="text-primary font-semibold">toit plat ou monopente</strong> convient aux maisons
                 contemporaines et aux implantations contraintes en hauteur, sous réserve que le PLU l&apos;autorise et que
-                l&apos;étanchéité et les évacuations soient traitées sérieusement.
+                l&apos;étanchéité et les évacuations soient traitées sérieusement. Une{' '}
+                <a
+                  href="https://toitplataquitaine.com/services/etancheite-toit-plat-epdm/"
+                  className={lienInterne}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  étanchéité par membrane EPDM
+                </a>{' '}
+                est une solution courante sur ce type de toit.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Et dans les deux cas, un point que nous ne négocions pas :{' '}

@@ -107,6 +107,27 @@ export default function SiteFooter() {
           <span className="text-surface-dim mx-1">|</span> Carports <span className="text-surface-dim mx-1">|</span>
           Bardages
         </p>
+        <p className="mt-4 text-on-surface-variant text-sm text-center leading-relaxed">
+          Un projet de toiture ?{' '}
+          <a
+            className="hover:text-secondary-dark transition-colors underline underline-offset-4 decoration-surface-dim"
+            href="https://www.sasecotoit.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Écotoit, couverture et charpente
+          </a>{' '}
+          ou{' '}
+          <a
+            className="hover:text-secondary-dark transition-colors underline underline-offset-4 decoration-surface-dim"
+            href="https://toitplataquitaine.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Toit Plat d'Aquitaine, étanchéité des toits plats
+          </a>
+          .
+        </p>
       </div>
 
       <div className="max-w-container-max mx-auto px-6 md:px-16 mt-10 pt-8 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center gap-4">

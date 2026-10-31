@@ -608,7 +608,17 @@ export default function ConstructionsBoisPage() {
                 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Le raccord de couverture</h3>
                 <p className="text-on-surface-variant text-body-md">
                   Noue, solin, bande de rive : c'est là que l'eau cherche à entrer. Continuité de la couverture,
-                  pente respectée, et reprise des eaux pluviales sur le réseau existant.
+                  pente respectée, et reprise des eaux pluviales sur le réseau existant. Si la toiture de la maison
+                  doit être refaite au passage, voyez avec{' '}
+                  <a
+                    href="https://www.sasecotoit.fr/couverture-zinguerie/"
+                    className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Écotoit, couvreur zingueur à Libourne
+                  </a>
+                  .
                 </p>
               </article>
               <article className="bg-white rounded-xl p-8 border border-surface-variant shadow-sm hover:shadow-xl transition-shadow duration-500">

@@ -10,13 +10,13 @@ export default function SiteFooter() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 md:px-16 max-w-container-max mx-auto">
         <div className="md:col-span-1">
           <img
-            src="/logo-mark-clair.svg"
+            src="/logo-mark-nav.svg"
             alt=""
             aria-hidden="true"
-            width="139"
-            height="64"
+            width="236"
+            height="106"
             loading="lazy"
-            className="h-16 w-auto mb-5 -ml-2"
+            className="h-20 w-auto mb-5"
           />
           <div className="wordmark text-[22px] mb-3">
             <span className="text-primary">L'Esprit</span> <span className="text-secondary font-normal">Bois</span>

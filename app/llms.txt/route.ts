@@ -32,6 +32,7 @@ Contact : 05 57 40 65 80, lespritbois33@gmail.com, 1 Aux Pradasses, 33500 Les Bi
 ## Nos gammes
 
 - [Pergolas](${base}/pergolas) : bioclimatique à lames orientables, aluminium à toiture fixe (polycarbonate, panneau isolant, vitrage), bois massif. Adossées ou autoportées, avec stores ZIP, éclairage intégré et claustras en option.
+- [Vérandas](${base}/verandas) : vérandas aluminium sur mesure en trois gammes SOKO (Klassique, Kosy, Kontemporaine à toit plat), avec options de confort (vitrage de toiture à teinte variable, volets roulants intégrés, brise-soleil orientable). Étude, pose et suivi par L'Esprit Bois.
 - [Réparation de pergola](${base}/reparation-pergola) : dépannage de pergolas bioclimatiques et de carports en aluminium, y compris posés par une autre entreprise (moteur, capteurs, vérins de lames, store zip, joints et évacuations), à Libourne et en Gironde.
 - [Carports](${base}/carports) : bois (toiture plate, bac acier ou tuile), aluminium thermolaqué, solaire photovoltaïque. Adossés ou autoportés.
 - [Aménagement extérieur](${base}/amenagement-exterieur) : terrasses bois sur plots ou lambourdes, pool houses, abris de jardin, cuisines d'été, claustras et bardages.
@@ -59,6 +60,7 @@ ${guides}
 - Les prix indiqués dans les guides sont des ordres de grandeur pour la Gironde, datés dans chaque article, pas des tarifs de l'entreprise. L'Esprit Bois ne publie pas de tarif au mètre carré : chaque devis suit un relevé sur site.
 - Sur les extensions et constructions, l'entreprise livre hors d'eau hors d'air et ne réalise pas le second œuvre.
 - Les pergolas et carports aluminium sont fabriqués par le partenaire français Li-Su des Temps et posés par L'Esprit Bois.
+- Les vérandas aluminium sont fabriquées par le partenaire français SOKO (Vendée) et posées par L'Esprit Bois.
 
 ## Contact
 

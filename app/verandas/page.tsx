@@ -20,7 +20,8 @@ import { CONTACT, ENTREPRISE_REF, SITE } from '@/lib/data/navigation';
  *
  *  Photos : toutes viennent de soko.fr (pages gamme, 01/11/2026) et restent
  *  signalées « Photo du fabricant ». Les mentions légales de SOKO exigent un
- *  accord préalable : ne pas publier sans l'autorisation de SOKO. Ce ne sont pas
+ *  accord préalable : publiées le 01/11/2026 sur décision de l'entreprise, l'accord
+ *  écrit de SOKO reste à obtenir. Ce ne sont pas
  *  nos chantiers ni des chantiers girondins : l'alt ne doit jamais le laisser
  *  croire. */
 

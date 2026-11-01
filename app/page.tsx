@@ -214,183 +214,25 @@ const jsonld = [
   },
 ];
 
-/* ---------------------------------------------------------------------------
-   Le catalogue, groupé par famille : le nom de la famille tient la colonne
-   de gauche, ses produits défilent en face. Quatre blocs de trois plutôt
-   que douze vignettes à plat, qui se lisaient comme un mur d'images.
---------------------------------------------------------------------------- */
-const GAMMES = [
-  {
-    famille: 'Pergolas',
-    href: '/pergolas',
-    accroche: "L'ombre choisie, la lumière maîtrisée.",
-    produits: [
-      {
-        nom: 'Bioclimatique',
-        href: '/pergolas#pergola-bioclimatique',
-        src: '/images/source-adefrance/Pergolas-aluminium-Libourne-9.webp',
-        alt: 'Pergola bioclimatique à lames orientables au-dessus d’un salon de jardin',
-        w: 768,
-        h: 512,
-      },
-      {
-        nom: 'Aluminium',
-        href: '/pergolas#pergola-aluminium',
-        src: '/images/pergola-terrasse-bois-libourne-1.webp',
-        alt: 'Pergola aluminium anthracite adossée à une maison, sur terrasse bois',
-        w: 1200,
-        h: 900,
-      },
-      {
-        nom: 'Bois massif',
-        href: '/pergolas#pergola-bois',
-        src: '/images/pergola-bois-chevrons-enfilade.webp',
-        alt: 'Pergola en bois massif à chevrons apparents vue en enfilade au-dessus d’une allée',
-        w: 800,
-        h: 1200,
-      },
-    ],
-  },
-  {
-    famille: 'Carports',
-    href: '/carports',
-    accroche: "L'abri du véhicule, sans les fondations d'un garage.",
-    produits: [
-      {
-        nom: 'Bois',
-        href: '/carports#carport-bois',
-        src: '/images/source-adefrance/Carport-bois-Libourne-6.webp',
-        alt: 'Carport bois autoporté à toiture plate abritant deux voitures',
-        w: 1200,
-        h: 646,
-      },
-      {
-        nom: 'Aluminium',
-        href: '/carports#carport-aluminium',
-        src: '/images/source-adefrance/Carport-aluminium-Libourne-4.webp',
-        alt: 'Carport aluminium anthracite abritant deux voitures',
-        w: 1200,
-        h: 646,
-      },
-      {
-        nom: 'Solaire',
-        href: '/carports#carport-solaire',
-        src: '/images/carport-solaire-lisudestemps.webp',
-        alt: 'Structure aluminium à toiture photovoltaïque, panneaux solaires visibles',
-        w: 1400,
-        h: 1050,
-      },
-    ],
-  },
-  {
-    famille: 'Aménagement extérieur',
-    href: '/amenagement-exterieur',
-    accroche: 'Tout ce qui prolonge la maison vers le jardin.',
-    produits: [
-      {
-        nom: 'Terrasse bois',
-        href: '/terrasses-bois',
-        src: '/images/terrasse-bois-plots-gironde-1.webp',
-        alt: 'Terrasse en bois sur plots posée le long d’une maison en Gironde',
-        w: 950,
-        h: 1267,
-      },
-      {
-        nom: 'Pool house',
-        href: '/amenagement-exterieur',
-        src: '/images/terrasse-bois-pool-house-libourne.webp',
-        alt: 'Pool house bois et terrasse au bord d’une piscine, Libournais',
-        w: 736,
-        h: 981,
-      },
-      {
-        nom: 'Bardage bois',
-        href: '/amenagement-exterieur',
-        src: '/images/bardage-bois-douglas-gironde.webp',
-        alt: 'Bardage bois douglas à claire-voie verticale posé sur une dépendance en pierre, Gironde',
-        w: 1000,
-        h: 1333,
-      },
-    ],
-  },
-  {
-    famille: 'Constructions bois',
-    href: '/constructions-bois',
-    accroche: "Notre métier d'origine, livré hors d'eau hors d'air.",
-    produits: [
-      {
-        nom: 'Ossature bois',
-        href: '/constructions-bois',
-        src: '/images/source-adefrance/IMG-20250129-WA0077-opt.webp',
-        alt: 'Construction à ossature bois bardée, menuiseries posées, mise hors d’air',
-        w: 900,
-        h: 1200,
-      },
-      {
-        nom: 'Maison en A',
-        href: '/constructions-bois',
-        src: '/images/source-adefrance/mais-en-a-accueil.webp',
-        alt: 'Maison en A à ossature bois construite aux Billaux',
-        w: 768,
-        h: 512,
-      },
-      {
-        nom: 'Extension & surélévation',
-        href: '/devis-extension',
-        src: '/images/source-adefrance/aggrandissement-accueil.webp',
-        alt: 'Extension bois bardée accolée à un bâtiment en pierre, Gironde',
-        w: 768,
-        h: 512,
-      },
-    ],
-  },
-  {
-    famille: 'Garages & abris de jardin',
-    href: '/garages-abris-jardin',
-    accroche: 'Créés sur mesure, sur tout support, sous le toit de votre choix.',
-    produits: [
-      {
-        nom: 'Garage bois',
-        href: '/garages-abris-jardin#garages',
-        src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-2.webp',
-        alt: 'Garage bois à toit plat, bardage gris et porte-fenêtre aluminium, à Libourne',
-        w: 900,
-        h: 1200,
-      },
-      {
-        nom: 'Abri de jardin',
-        href: '/garages-abris-jardin#abris',
-        src: '/images/garages-abris/abri-jardin-sur-mesure-porte-fenetre-1.webp',
-        alt: 'Abri de jardin sur mesure, bardage beige et porte-fenêtre double, à Arveyres',
-        w: 900,
-        h: 1200,
-      },
-      {
-        nom: 'Toit plat, bac acier ou tuile',
-        href: '/garages-abris-jardin#toitures',
-        src: '/images/garages-abris/toit-plat-etancheite-membrane-1.webp',
-        alt: 'Toit plat couvert d’une membrane d’étanchéité, accolé à une maison en tuiles, à Saint-André-de-Cubzac',
-        w: 1600,
-        h: 739,
-      },
-    ],
-  },
-];
-
-/* Catalogue de l'accueil : une carte par métier, photographiée sur un vrai
-   chantier, avec une preuve (commune et durée) reprise de lib/data/chantiers.ts. */
+/* Catalogue de l'accueil, dans l'ordre des volets : une famille par volet,
+   photographiée sur un vrai chantier avec sa preuve (commune et durée, reprises
+   de lib/data/chantiers.ts). Les vérandas, fabriquées par SOKO, font exception. */
 const FAMILLES = [
   {
-    famille: 'Pergolas',
-    href: '/pergolas',
-    promesse: 'Profitez de la terrasse du printemps à l’automne, à l’ombre que vous choisissez.',
-    preuve: 'Saint-Pey-de-Castets : pergola aluminium posée en 3 jours',
-    cta: 'Voir les pergolas',
-    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    famille: 'Vérandas',
+    href: '/verandas',
+    promesse: 'Une pièce en plus, ouverte sur le jardin. Fabriquées en Vendée par notre partenaire SOKO, étudiées avec vous et posées par nos équipes.',
+    preuve: 'Véranda Klassique SOKO. Photo du fabricant.',
+    cta: 'Voir les vérandas',
+    src: '/images/verandas/veranda-klassique-soko.webp',
     w: 1600,
-    h: 900,
-    alt: 'Pergola aluminium adossée posée par L’Esprit Bois à Saint-Pey-de-Castets, sur une terrasse bois',
-    produits: GAMMES[0].produits,
+    h: 795,
+    alt: 'Véranda Klassique SOKO en aluminium gris anthracite adossée à une maison blanche, grandes baies coulissantes ouvertes sur une terrasse en bois',
+    produits: [
+      { nom: 'Klassique', href: '/verandas#klassique' },
+      { nom: 'Kosy', href: '/verandas#kosy' },
+      { nom: 'Kontemporaine', href: '/verandas#kontemporaine' },
+    ],
   },
   {
     famille: 'Carports',
@@ -402,19 +244,27 @@ const FAMILLES = [
     w: 1448,
     h: 1086,
     alt: 'Carport bois raboté adossé au pignon en pierre d’une maison, ferme apparente, à Libourne',
-    produits: GAMMES[1].produits,
+    produits: [
+      { nom: 'Bois', href: '/carports#carport-bois' },
+      { nom: 'Aluminium', href: '/carports#carport-aluminium' },
+      { nom: 'Solaire', href: '/carports#carport-solaire' },
+    ],
   },
   {
-    famille: 'Terrasses et extérieurs',
-    href: '/amenagement-exterieur',
-    promesse: 'Une terrasse qui reste droite et saine, et tout ce qui prolonge la maison vers le jardin.',
-    preuve: 'Moulon : terrasse et tour de piscine, 10 jours',
-    cta: 'Voir les aménagements',
-    src: '/images/terrasse-bois-pool-house-noir.webp',
-    w: 736,
-    h: 981,
-    alt: 'Terrasse bois et tour de piscine réalisés à Moulon',
-    produits: GAMMES[2].produits,
+    famille: 'Pergolas',
+    href: '/pergolas',
+    promesse: 'Profitez de la terrasse du printemps à l’automne, à l’ombre que vous choisissez.',
+    preuve: 'Saint-Pey-de-Castets : pergola aluminium posée en 3 jours',
+    cta: 'Voir les pergolas',
+    src: '/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp',
+    w: 1600,
+    h: 900,
+    alt: 'Pergola aluminium adossée posée par L’Esprit Bois à Saint-Pey-de-Castets, sur une terrasse bois',
+    produits: [
+      { nom: 'Bioclimatique', href: '/pergolas#pergola-bioclimatique' },
+      { nom: 'Aluminium', href: '/pergolas#pergola-aluminium' },
+      { nom: 'Bois massif', href: '/pergolas#pergola-bois' },
+    ],
   },
   {
     famille: 'Constructions bois',
@@ -426,19 +276,43 @@ const FAMILLES = [
     w: 900,
     h: 1200,
     alt: 'Maison à ossature bois bardée à Rauzan, menuiseries posées',
-    produits: GAMMES[3].produits,
+    produits: [
+      { nom: 'Ossature bois', href: '/constructions-bois' },
+      { nom: 'Maison en A', href: '/constructions-bois' },
+      { nom: 'Extension & surélévation', href: '/devis-extension' },
+    ],
+  },
+  {
+    famille: 'Aménagement extérieur',
+    href: '/amenagement-exterieur',
+    promesse: 'Une terrasse qui reste droite et saine, et tout ce qui prolonge la maison vers le jardin.',
+    preuve: 'Moulon : terrasse et tour de piscine, 10 jours',
+    cta: 'Voir les aménagements',
+    src: '/images/terrasse-bois-pool-house-noir.webp',
+    w: 736,
+    h: 981,
+    alt: 'Terrasse bois et tour de piscine réalisés à Moulon',
+    produits: [
+      { nom: 'Terrasse bois', href: '/terrasses-bois' },
+      { nom: 'Pool house', href: '/amenagement-exterieur' },
+      { nom: 'Bardage bois', href: '/amenagement-exterieur' },
+    ],
   },
   {
     famille: 'Garages & abris de jardin',
     href: '/garages-abris-jardin',
-    promesse: 'Un garage ou un abri dessiné pour votre terrain, sur tout support, avec le toit de votre choix : toit plat, bac acier, plaque sous tuile ou tuile.',
+    promesse: 'Un garage ou un abri dessiné pour votre terrain, sur tout support, avec le toit de votre choix.',
     preuve: 'Libourne : garage bois à toit plat, livré clos et couvert',
     cta: 'Voir garages et abris',
-    src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-1.webp',
-    w: 1600,
-    h: 739,
-    alt: 'Garage bois sur mesure à toit plat, bardage gris, à Libourne',
-    produits: GAMMES[4].produits,
+    src: '/images/garages-abris/garage-bois-toit-plat-bardage-gris-2.webp',
+    w: 900,
+    h: 1200,
+    alt: 'Garage bois à toit plat, bardage gris et porte-fenêtre aluminium, à Libourne',
+    produits: [
+      { nom: 'Garage bois', href: '/garages-abris-jardin#garages' },
+      { nom: 'Abri de jardin', href: '/garages-abris-jardin#abris' },
+      { nom: 'Toit plat, bac acier ou tuile', href: '/garages-abris-jardin#toitures' },
+    ],
   },
 ];
 
@@ -674,73 +548,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Vérandas : mises en avant à part, hors de « Ce que nous fabriquons », car
-            nous les posons mais c'est SOKO qui les fabrique. */}
-        <section className="bg-surface py-10" aria-labelledby="verandas-titre">
-          <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-surface-container rounded-2xl p-6 md:p-10 border border-surface-variant">
-              <figure>
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                  <img
-                    width={1600}
-                    height={795}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover"
-                    src="/images/verandas/veranda-klassique-soko.webp"
-                    alt="Véranda Klassique SOKO en aluminium gris anthracite adossée à une maison blanche, grandes baies coulissantes ouvertes sur une terrasse en bois"
-                  />
-                </div>
-                <figcaption className="text-on-surface-variant text-[14px] mt-3 italic">
-                  Véranda Klassique SOKO. Photo du fabricant.
-                </figcaption>
-              </figure>
-              <div>
-                <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
-                  Une pièce en plus, ouverte sur le jardin
-                </span>
-                <h2 id="verandas-titre" className="font-headline-md text-headline-md text-primary mt-3 mb-4">
-                  Vérandas aluminium sur mesure
-                </h2>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-                  Fabriquées en Vendée par notre partenaire français SOKO, étudiées avec vous et posées
-                  par nos équipes, à Libourne et dans toute la Gironde. Trois gammes selon votre maison
-                  et l&apos;usage de la pièce.
-                </p>
-                <ul className="list-none p-0 m-0 mb-8 divide-y divide-surface-variant border-y border-surface-variant">
-                  {[
-                    { nom: 'Klassique', detail: 'lumineuse et personnalisable', href: '/verandas#klassique' },
-                    { nom: 'Kosy', detail: 'équipée pour toute l’année', href: '/verandas#kosy' },
-                    { nom: 'Kontemporaine', detail: 'l’extension à toit plat', href: '/verandas#kontemporaine' },
-                  ].map((g) => (
-                    <li key={g.nom}>
-                      <a href={g.href} className="group flex items-center justify-between gap-4 py-3">
-                        <span>
-                          <span className="font-semibold text-primary group-hover:text-secondary-dark transition-colors">
-                            {g.nom}
-                          </span>
-                          <span className="text-on-surface-variant text-body-md"> : {g.detail}</span>
-                        </span>
-                        <span className="material-symbols-outlined text-secondary-dark text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
-                          arrow_forward
-                        </span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="/verandas"
-                  className="inline-flex items-center gap-2 bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
-                >
-                  Découvrir les vérandas
-                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Nos produits : catalogue groupé par famille */}
+        {/* Nos produits : une famille par volet, le volet survolé s'ouvre.
+            Sans survol (téléphone, tablette), les volets s'empilent, ouverts. */}
         <section className="py-20 md:py-24 bg-surface-container-low" id="solutions">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
@@ -748,9 +557,9 @@ export default function HomePage() {
                 <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
                   Du sol au toit
                 </span>
-                <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous fabriquons</h2>
+                <h2 className="font-headline-md text-headline-md text-primary mt-3 mb-3">Ce que nous réalisons</h2>
                 <p className="font-body-md text-body-md text-on-surface-variant">
-                  Cinq familles, quinze ouvrages, tous sur mesure et posés par nos équipes.
+                  Six familles d&apos;ouvrages, tous sur mesure et posés par nos équipes.
                 </p>
               </div>
               <a
@@ -762,63 +571,33 @@ export default function HomePage() {
               </a>
             </div>
 
-            {/* Une famille par ligne : son nom tient la colonne de gauche,
-                ses trois produits défilent en face. */}
-            <div className="divide-y divide-surface-variant border-t border-surface-variant">
-              {GAMMES.map((g, i) => (
-                <div key={g.href} className="group/famille grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 py-10">
-                  <div className="lg:col-span-3 flex flex-col justify-center">
-                    {/* Index cuivre : donne le rythme et pose la famille avant les produits */}
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="font-display-lg text-[32px] leading-none text-secondary">
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
-                      <span aria-hidden="true" className="h-px flex-1 bg-secondary/35"></span>
-                    </div>
-                    <h3 className="font-headline-md text-headline-md text-[30px] leading-tight text-primary mb-3">
-                      {g.famille}
+            <div className="volets">
+              {FAMILLES.map((f) => (
+                <div key={f.href} className="volet">
+                  <img width={f.w} height={f.h} loading="lazy" decoding="async" src={f.src} alt={f.alt} />
+                  <div className="volet-texte">
+                    <h3 className="m-0">
+                      <a href={f.href} className="volet-nom font-headline-md">{f.famille}</a>
                     </h3>
-                    <p className="text-on-surface-variant text-body-md mb-3">{FAMILLES[i].promesse}</p>
-                    <p className="inline-flex items-start gap-1.5 text-secondary-dark font-label-md text-label-md mb-6">
-                      <span className="material-symbols-outlined text-[18px] mt-px" aria-hidden="true">location_on</span>
-                      {FAMILLES[i].preuve}
-                    </p>
-                    <a
-                      href={g.href}
-                      className="inline-flex items-center gap-2 w-fit whitespace-nowrap bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
-                    >
-                      {FAMILLES[i].cta}
-                      <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
-                    </a>
+                    <div className="volet-detail">
+                      <p className="volet-promesse">{f.promesse}</p>
+                      <ul className="volet-produits">
+                        {f.produits.map((p) => (
+                          <li key={p.nom}>
+                            <a href={p.href}>{p.nom}</a>
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="volet-preuve">{f.preuve}</p>
+                      <a
+                        href={f.href}
+                        className="inline-flex items-center gap-2 w-fit whitespace-nowrap bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
+                      >
+                        {f.cta}
+                        <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                      </a>
+                    </div>
                   </div>
-
-                  <ul className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-4 list-none p-0 m-0">
-                    {g.produits.map((p) => (
-                      <li key={p.nom}>
-                        <a href={p.href} className="group block">
-                          <span className="block aspect-[4/3] rounded-2xl overflow-hidden bg-surface-variant">
-                            <img
-                              width={p.w}
-                              height={p.h}
-                              loading="lazy"
-                              decoding="async"
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                              src={p.src}
-                              alt={p.alt}
-                            />
-                          </span>
-                          <span className="mt-3 flex items-center justify-between gap-2">
-                            <span className="font-headline-sm text-headline-sm text-[19px] leading-tight text-primary group-hover:text-secondary-dark transition-colors">
-                              {p.nom}
-                            </span>
-                            <span className="material-symbols-outlined text-secondary-dark text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
-                              arrow_forward
-                            </span>
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               ))}
             </div>

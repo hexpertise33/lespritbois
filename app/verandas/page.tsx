@@ -32,10 +32,10 @@ const PAGE_LABEL = '/verandas';
 
 /** Photo d'en-tête. Sans image, l'en-tête reste sur fond de marque. */
 const HERO: { src: string; w: number; h: number; alt: string } | null = {
-  src: '/images/verandas/veranda-soko-interieur-jardin.webp',
-  w: 1200,
-  h: 800,
-  alt: 'Intérieur d’une véranda SOKO à toiture en panneaux clairs, table de repas, baies coulissantes ouvertes de chaque côté sur un jardin arboré et une piscine',
+  src: '/images/verandas/veranda-kontemporaine-soko.webp',
+  w: 1600,
+  h: 795,
+  alt: 'Véranda Kontemporaine SOKO à toit plat et corniche gris anthracite, soubassement à lames grises et baies coulissantes, adossée à une maison en briques',
 };
 
 export const metadata: Metadata = buildMetadata({
@@ -177,10 +177,10 @@ const GAMMES: Gamme[] = [
     pourQui:
       'Maison récente ou d’architecture contemporaine, ou projet qui doit se lire comme une extension du séjour plus que comme une véranda.',
     image: {
-      src: '/images/verandas/veranda-kontemporaine-soko.webp',
-      w: 1600,
-      h: 795,
-      alt: 'Véranda Kontemporaine SOKO à toit plat et corniche gris anthracite, soubassement à lames grises et baies coulissantes, adossée à une maison en briques',
+      src: '/images/verandas/veranda-kontemporaine-plafond-plat-repas.webp',
+      w: 1202,
+      h: 800,
+      alt: 'Salle à manger dans une véranda Kontemporaine SOKO, plafond plat clair et grande baie vitrée ouverte sur le jardin',
     },
     galerie: [
       {
@@ -314,29 +314,34 @@ const PERSONNALISATION = [
   },
 ];
 
-const OPTIONS = [
+const OPTIONS: { titre: string; texte: string; image?: Photo }[] = [
   {
     titre: 'SageGlass',
+    image: { src: '/images/verandas/veranda-option-vitrage-toiture.webp', w: 400, h: 320, alt: 'Panneau vitré de toiture au plafond d’une véranda SOKO, ciel visible au travers' },
     texte:
       "Vitrage de toiture à teinte variable : sa teinte varie à la demande, pour laisser entrer plus ou moins de lumière et limiter la chaleur comme l'éblouissement. Transmission lumineuse de 1 à 58 %, transmission UV de 0 %.",
   },
   {
     titre: 'Rolax',
+    image: { src: '/images/verandas/veranda-option-toiture-verre-rolax.webp', w: 400, h: 320, alt: 'Toiture en verre à structure rouge d’une véranda SOKO, vue de l’intérieur vers le ciel' },
     texte:
       "Volet roulant de toiture motorisé, pour les toitures en verre : il économise du chauffage en hiver et fait écran à l'effet de serre l'été.",
   },
   {
     titre: 'Éclairage d’ambiance',
+    image: { src: '/images/verandas/veranda-option-spot-led-chevron.webp', w: 400, h: 320, alt: 'Spot LED encastré dans un chevron gris anthracite d’une véranda SOKO' },
     texte:
       'Des spots LED réglables en direction et en intensité, logés dans les chevrons ou le panneau de toiture.',
   },
   {
     titre: 'Murs et murets à ossature bois',
+    image: { src: '/images/verandas/veranda-option-mur-lames-grises.webp', w: 400, h: 320, alt: 'Angle de véranda SOKO habillé d’un module à lames grises, à côté de baies coulissantes' },
     texte:
       "À la place d'un mur ou muret maçonné, des modules à ossature bois avec lames extérieures en cinq coloris. Notre métier d'origine, au service de la véranda.",
   },
   {
     titre: 'Décoration de toiture et de façade',
+    image: { src: '/images/verandas/veranda-option-crete-toiture.webp', w: 400, h: 320, alt: 'Crête décorative en métal noir sur le faîtage d’une véranda SOKO, feuillages en arrière-plan' },
     texte:
       'Flammes, crêtes et fleurons en toiture ; soubassements, impostes, cintres aluminium, bandes sablées ou petit-bois en façade.',
   },
@@ -350,22 +355,6 @@ const OPTIONS = [
     texte:
       'Volets, brise-soleil, volet de toiture et éclairage se commandent d’une seule télécommande, avec des scénarios programmés. Pratique quand on veut fermer la véranda depuis le séjour.',
   },
-];
-
-const SOMMAIRE = [
-  { href: '#usages', label: 'Usages' },
-  { href: '#styles', label: 'Styles' },
-  { href: '#gammes', label: 'Les 3 gammes' },
-  { href: '#comparatif', label: 'Comparatif' },
-  { href: '#toitures', label: 'Toitures' },
-  { href: '#personnalisation', label: 'Personnalisation' },
-  { href: '#options', label: 'Options' },
-  { href: '#confort', label: 'Orientation et confort' },
-  { href: '#terrasse', label: 'Sur une terrasse' },
-  { href: '#budget', label: 'Budget' },
-  { href: '#demarches', label: 'Démarches' },
-  { href: '#deroulement', label: 'Déroulement' },
-  { href: '#entretien', label: 'Entretien' },
 ];
 
 const USAGES = [
@@ -688,6 +677,54 @@ const jsonld = [
   },
 ];
 
+type Photo = { src: string; w: number; h: number; alt: string };
+
+const PHOTOS_USAGES: Photo[] = [
+  { src: '/images/verandas/veranda-sejour-chaise-longue-verriere.webp', w: 535, h: 800, alt: 'Séjour dans une véranda SOKO, chaise longue bleue sous une toiture vitrée, parquet clair' },
+  { src: '/images/verandas/veranda-table-repas-toiture-vitree.webp', w: 533, h: 800, alt: 'Table de repas et fauteuils en rotin sous la toiture vitrée d’une véranda SOKO, jardin en arrière-plan' },
+  { src: '/images/verandas/veranda-blanche-salle-a-manger-puits-lumiere.webp', w: 536, h: 800, alt: 'Salle à manger dans une véranda SOKO blanche, puits de lumière au plafond et ouverture sur le jardin' },
+  { src: '/images/verandas/veranda-salle-a-manger-mur-brique.webp', w: 1202, h: 800, alt: 'Table ronde en bois et fauteuils dans une véranda SOKO adossée à un mur de briques, plafond à spots intégrés' },
+];
+const PHOTOS_STYLES: Photo[] = [
+  { src: '/images/verandas/veranda-rouge-toiture-vitree-allee-bois.webp', w: 536, h: 800, alt: 'Véranda SOKO rouge à toiture en partie vitrée, adossée à une maison, allée en bois au premier plan' },
+  { src: '/images/verandas/veranda-anthracite-maison-traditionnelle.webp', w: 535, h: 800, alt: 'Véranda SOKO gris anthracite adossée à une maison traditionnelle à lucarnes, jardin en pente' },
+  { src: '/images/verandas/veranda-toit-plat-baies-sol-bois.webp', w: 552, h: 800, alt: 'Intérieur d’une véranda SOKO à plafond plat et puits de lumière, longue baie vitrée sur le jardin' },
+];
+const PHOTOS_TOITURES: Photo[] = [
+  { src: '/images/verandas/veranda-plafond-plat-puits-lumiere-table.webp', w: 533, h: 800, alt: 'Table de repas sous un grand puits de lumière dans une véranda SOKO à plafond plat' },
+  { src: '/images/verandas/veranda-puits-de-lumiere-plafond.webp', w: 400, h: 320, alt: 'Puits de lumière à trois travées vitrées dans le plafond plat d’une véranda SOKO' },
+  { src: '/images/verandas/veranda-dome-vitre-plafond.webp', w: 400, h: 320, alt: 'Dôme vitré au centre du plafond plat d’une véranda SOKO, salon d’angle en dessous' },
+];
+const PHOTOS_CONFORT: Photo[] = [
+  { src: '/images/verandas/veranda-brise-soleil-orientable-detail.webp', w: 400, h: 320, alt: 'Lames de brise-soleil orientable en aluminium devant le vitrage d’une véranda SOKO à structure rouge' },
+  { src: '/images/verandas/veranda-volets-roulants-integres-exterieur.webp', w: 400, h: 320, alt: 'Volets roulants intégrés, à demi baissés, sur une véranda SOKO gris anthracite adossée à une maison en briques' },
+  { src: '/images/verandas/veranda-coulissants-anthracite-jardin.webp', w: 535, h: 800, alt: 'Grandes baies coulissantes gris anthracite d’une véranda SOKO, vues de l’extérieur le long du jardin' },
+];
+
+/** Bande de photos sous un texte : évite les longues sections sans illustration. */
+function BandePhotos({ photos }: { photos: Photo[] }) {
+  return (
+    <figure className="mt-12">
+      <div className={`grid grid-cols-2 gap-3 md:gap-4 ${photos.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4'}`}>
+        {photos.map((ph) => (
+          <div key={ph.src} className="aspect-square rounded-xl overflow-hidden">
+            <img
+              width={ph.w}
+              height={ph.h}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover"
+              src={ph.src}
+              alt={ph.alt}
+            />
+          </div>
+        ))}
+      </div>
+      <figcaption className="text-on-surface-variant text-[14px] mt-3 italic">Photos du fabricant.</figcaption>
+    </figure>
+  );
+}
+
 const lienInterne =
   'text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors';
 
@@ -761,7 +798,8 @@ export default function VerandasPage() {
 
         <section className="py-20 md:py-28 bg-surface">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div>
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-8">
                 Nous posons, SOKO fabrique
               </h2>
@@ -801,29 +839,24 @@ export default function VerandasPage() {
                   </span>
                 </a>
               </div>
+              </div>
+              <figure>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    width={1200}
+                    height={800}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                    src="/images/verandas/veranda-soko-interieur-jardin.webp"
+                    alt="Intérieur d’une véranda SOKO à toiture en panneaux clairs, table de repas, baies coulissantes ouvertes de chaque côté sur un jardin arboré et une piscine"
+                  />
+                </div>
+                <figcaption className="text-on-surface-variant text-[14px] mt-3 italic">Photo du fabricant.</figcaption>
+              </figure>
             </div>
           </div>
         </section>
-
-        <nav aria-label="Sur cette page" className="bg-surface pb-16">
-          <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <p className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant mb-4">
-              Sur cette page
-            </p>
-            <ul className="flex flex-wrap gap-3">
-              {SOMMAIRE.map((l) => (
-                <li key={l.href}>
-                  <a
-                    href={l.href}
-                    className="inline-block border border-outline-variant rounded-full px-4 py-2 font-label-md text-label-md text-primary hover:bg-primary hover:text-white transition-colors"
-                  >
-                    {l.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </nav>
 
         <section className="py-20 md:py-28 bg-surface-container-low" id="usages">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
@@ -849,6 +882,7 @@ export default function VerandasPage() {
                 </li>
               ))}
             </ul>
+            <BandePhotos photos={PHOTOS_USAGES} />
           </div>
         </section>
 
@@ -871,6 +905,7 @@ export default function VerandasPage() {
                 </div>
               ))}
             </dl>
+            <BandePhotos photos={PHOTOS_STYLES} />
           </div>
         </section>
 
@@ -1106,6 +1141,7 @@ export default function VerandasPage() {
                 </tbody>
               </table>
             </div>
+            <BandePhotos photos={PHOTOS_TOITURES} />
           </div>
         </section>
 
@@ -1148,15 +1184,29 @@ export default function VerandasPage() {
                 toute saison.
               </p>
             </div>
-            <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+            <dl className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
               {OPTIONS.map((o) => (
                 <div key={o.titre} className="border-t border-outline-variant pt-6">
+                  {o.image && (
+                    <img
+                      width={o.image.w}
+                      height={o.image.h}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full aspect-[5/4] object-cover rounded-xl mb-4"
+                      src={o.image.src}
+                      alt={o.image.alt}
+                    />
+                  )}
                   <dt className="font-headline-sm text-headline-sm text-primary mb-2">{o.titre}</dt>
                   <dd className="font-body-md text-body-md text-on-surface-variant">{o.texte}</dd>
                 </div>
               ))}
             </dl>
-            <p className="font-body-md text-body-md text-on-surface-variant mt-12 max-w-3xl">
+            <p className="font-body-md text-body-md text-on-surface-variant mt-4 max-w-3xl">
+              Photos du fabricant.
+            </p>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-8 max-w-3xl">
               Pour la teinte, notre guide{' '}
               <a href="/blog/choisir-teinte-ral-aluminium" className={lienInterne}>
                 choisir la teinte RAL d&apos;un ouvrage en aluminium
@@ -1197,12 +1247,14 @@ export default function VerandasPage() {
                 </div>
               ))}
             </dl>
+            <BandePhotos photos={PHOTOS_CONFORT} />
           </div>
         </section>
 
         <section className="py-20 md:py-28 bg-surface-container-low" id="terrasse">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
-            <div className="max-w-3xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div>
               <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
                 Transformer votre terrasse en véranda
               </h2>
@@ -1219,6 +1271,21 @@ export default function VerandasPage() {
                   le contrôlons au relevé, terrasse en béton comme terrasse en bois, avant de chiffrer.
                 </p>
               </div>
+            </div>
+              <figure>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    width={533}
+                    height={800}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                    src="/images/verandas/veranda-toit-plat-terrasse-bois.webp"
+                    alt="Véranda SOKO à toit plat et baies vitrées sombres, le long d’une terrasse en bois et d’une pelouse"
+                  />
+                </div>
+                <figcaption className="text-on-surface-variant text-[14px] mt-3 italic">Photo du fabricant.</figcaption>
+              </figure>
             </div>
           </div>
         </section>

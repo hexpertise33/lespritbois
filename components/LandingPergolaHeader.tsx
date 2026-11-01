@@ -27,7 +27,7 @@ export default function LandingPergolaHeader() {
           />
           <div className="wordmark text-[18px] leading-none">
             <span className="text-primary">L&apos;Esprit</span>{' '}
-            <span className="text-secondary font-normal">Bois</span>
+            <span className="text-secondary font-normal">Bois &amp; Alu</span>
           </div>
           <p className="wordmark text-[9px] tracking-[0.2em] text-on-surface-variant mt-1">
             Créateur d&apos;espaces extérieurs

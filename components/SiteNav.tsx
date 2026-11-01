@@ -69,10 +69,10 @@ export default function SiteNav({
       <div
         className={`flex justify-between items-center px-6 md:px-16 ${dense ? 'py-4' : 'py-6'} max-w-container-max mx-auto`}
       >
-        <a href="/" className="flex items-center gap-3 shrink-0" aria-label="L'Esprit Bois, accueil">
-          <img src="/logo-mark-nav.svg" alt="" aria-hidden="true" width="98" height="44" className="h-10 md:h-11 w-auto" />
-          <span className="wordmark text-[19px] whitespace-nowrap lg:hidden xl:inline">
-            <span className="text-primary">L'Esprit</span> <span className="text-secondary font-normal">Bois</span>
+        <a href="/" className="flex items-center gap-2 md:gap-3 shrink-0" aria-label="L'Esprit Bois, accueil">
+          <img src="/logo-mark-nav.svg" alt="" aria-hidden="true" width="98" height="44" className="h-8 min-[360px]:h-9 md:h-11 w-auto" />
+          <span className="wordmark text-[13px] min-[360px]:text-[16px] md:text-[19px] xl:text-[17px] whitespace-nowrap lg:hidden xl:inline">
+            <span className="text-primary">L'Esprit</span> <span className="text-secondary font-normal">Bois &amp; Alu</span>
           </span>
         </a>
 

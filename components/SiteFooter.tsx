@@ -18,8 +18,8 @@ export default function SiteFooter() {
             loading="lazy"
             className="h-20 w-auto mb-5"
           />
-          <div className="wordmark text-[22px] mb-3">
-            <span className="text-primary">L'Esprit</span> <span className="text-secondary font-normal">Bois</span>
+          <div className="wordmark text-[22px] xl:text-[20px] mb-3">
+            <span className="text-primary">L'Esprit</span> <span className="text-secondary font-normal whitespace-nowrap">Bois &amp; Alu</span>
           </div>
           <div className="flex items-center gap-3 filet-cuivre mb-6 max-w-[260px]">
             <span className="wordmark text-[10px] tracking-[0.2em] text-on-surface-variant">

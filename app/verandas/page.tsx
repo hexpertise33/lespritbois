@@ -58,6 +58,7 @@ type Gamme = {
   points: string[];
   pourQui: string;
   image?: { src: string; w: number; h: number; alt: string };
+  galerie?: { src: string; w: number; h: number; alt: string }[];
 };
 
 const GAMMES: Gamme[] = [
@@ -83,6 +84,32 @@ const GAMMES: Gamme[] = [
       h: 795,
       alt: 'Véranda Klassique SOKO en aluminium gris anthracite adossée à une maison blanche, grandes baies coulissantes ouvertes sur une terrasse en bois',
     },
+    galerie: [
+      {
+        src: '/images/verandas/veranda-klassique-toit-monopente-grandes-baies.webp',
+        w: 1200,
+        h: 800,
+        alt: 'Véranda Klassique SOKO gris anthracite, baies coulissantes ouvertes sur un salon de jardin, vue depuis une terrasse en dalles',
+      },
+      {
+        src: '/images/verandas/veranda-klassique-toit-pavillon-piscine.webp',
+        w: 533,
+        h: 800,
+        alt: 'Véranda Klassique SOKO claire à toiture en pointe, adossée à une maison en pierre et ouverte sur une piscine',
+      },
+      {
+        src: '/images/verandas/veranda-klassique-toiture-rayonnante-vitree.webp',
+        w: 1200,
+        h: 800,
+        alt: 'Intérieur d’une véranda Klassique SOKO à toiture rayonnante vitrée et profilés sombres, deux fauteuils face à une terrasse',
+      },
+      {
+        src: '/images/verandas/veranda-klassique-rotonde-vitree.webp',
+        w: 535,
+        h: 800,
+        alt: 'Véranda Klassique SOKO en rotonde, toiture vitrée à pans et structure gris anthracite, vue depuis une terrasse dallée',
+      },
+    ],
   },
   {
     id: 'kosy',
@@ -106,6 +133,32 @@ const GAMMES: Gamme[] = [
       h: 795,
       alt: 'Intérieur d’une véranda Kosy SOKO à toiture rayonnante : brise-soleil orientables devant les baies, puits de lumière et table de repas, jardin et piscine en arrière-plan',
     },
+    galerie: [
+      {
+        src: '/images/verandas/veranda-kosy-baies-ouvertes-terrasse.webp',
+        w: 1217,
+        h: 800,
+        alt: 'Véranda Kosy SOKO gris anthracite, baies coulissantes ouvertes sur une terrasse dallée avec salon de jardin en bois',
+      },
+      {
+        src: '/images/verandas/veranda-kosy-volets-roulants-blanche.webp',
+        w: 1202,
+        h: 800,
+        alt: 'Véranda Kosy SOKO blanche, toit plat, soubassements à lames et volets roulants à demi fermés, côté jardin',
+      },
+      {
+        src: '/images/verandas/veranda-kosy-brise-soleil-rouge.webp',
+        w: 1200,
+        h: 800,
+        alt: 'Intérieur d’une véranda Kosy SOKO à structure rouge, brise-soleil orientables devant les baies et grande table ronde en bois',
+      },
+      {
+        src: '/images/verandas/veranda-kosy-salon-volets-roulants.webp',
+        w: 1202,
+        h: 800,
+        alt: 'Salon aménagé dans une véranda Kosy SOKO, plafond clair à spots intégrés et volets roulants à demi baissés',
+      },
+    ],
   },
   {
     id: 'kontemporaine',
@@ -129,6 +182,32 @@ const GAMMES: Gamme[] = [
       h: 795,
       alt: 'Véranda Kontemporaine SOKO à toit plat et corniche gris anthracite, soubassement à lames grises et baies coulissantes, adossée à une maison en briques',
     },
+    galerie: [
+      {
+        src: '/images/verandas/veranda-kontemporaine-dome-vitre-salon.webp',
+        w: 1208,
+        h: 800,
+        alt: 'Intérieur d’une véranda Kontemporaine SOKO, plafond plat avec dôme vitré au-dessus d’un salon d’angle et d’une table ronde',
+      },
+      {
+        src: '/images/verandas/veranda-kontemporaine-toit-plat-noir.webp',
+        w: 1200,
+        h: 800,
+        alt: 'Véranda Kontemporaine SOKO à toit plat et profilés sombres, adossée à une maison en briques, sur une terrasse en bois',
+      },
+      {
+        src: '/images/verandas/veranda-kontemporaine-longue-facade-vitree.webp',
+        w: 1196,
+        h: 800,
+        alt: 'Véranda Kontemporaine SOKO à toit plat et longue façade vitrée, posée en hauteur avec terrasse et marches côté jardin',
+      },
+      {
+        src: '/images/verandas/veranda-kontemporaine-maison-pierre.webp',
+        w: 535,
+        h: 800,
+        alt: 'Véranda Kontemporaine SOKO à toit plat et grandes baies, adossée au pignon d’une maison en pierre, côté jardin',
+      },
+    ],
   },
 ];
 
@@ -868,6 +947,36 @@ export default function VerandasPage() {
                       ))}
                     </ul>
                   </div>
+                  {g.galerie && (
+                    <figure className="lg:col-span-2">
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+                        {g.galerie.map((ph) => (
+                          <div key={ph.src} className="aspect-square rounded-xl overflow-hidden">
+                            <img
+                              width={ph.w}
+                              height={ph.h}
+                              loading="lazy"
+                              decoding="async"
+                              className="w-full h-full object-cover"
+                              src={ph.src}
+                              alt={ph.alt}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                      <figcaption className="text-on-surface-variant text-[14px] mt-3 italic">
+                        Réalisations de la gamme {g.nom}. Photos du fabricant.{' '}
+                        <a
+                          href={`https://www.soko.fr/les-produits/veranda-${g.id}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={lienInterne}
+                        >
+                          Voir la gamme {g.nom} sur soko.fr
+                        </a>
+                      </figcaption>
+                    </figure>
+                  )}
                 </article>
               ))}
             </div>

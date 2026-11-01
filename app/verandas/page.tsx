@@ -18,9 +18,11 @@ import { CONTACT, ENTREPRISE_REF, SITE } from '@/lib/data/navigation';
  *  n'est avancé. SOKO publie des fourchettes au m² indicatives, sans options :
  *  elles ne sont pas reprises, car elles ne valent pas un prix posé chez nous.
  *
- *  Pas de photo pour l'instant : les mentions légales de SOKO exigent un accord
- *  préalable. Les photos sont prêtes sur la branche locale
- *  feature/verandas-photos-soko, à fusionner une fois l'accord obtenu. */
+ *  Photos : toutes viennent de soko.fr (pages gamme, 01/11/2026) et restent
+ *  signalées « Photo du fabricant ». Les mentions légales de SOKO exigent un
+ *  accord préalable : ne pas publier sans l'autorisation de SOKO. Ce ne sont pas
+ *  nos chantiers ni des chantiers girondins : l'alt ne doit jamais le laisser
+ *  croire. */
 
 /* Étiquettes d'attribution : sans elles, un lead de cette page arriverait
    indistinct de ceux de la landing publicitaire. */
@@ -28,7 +30,12 @@ const PROJET = 'Véranda';
 const PAGE_LABEL = '/verandas';
 
 /** Photo d'en-tête. Sans image, l'en-tête reste sur fond de marque. */
-const HERO: { src: string; w: number; h: number; alt: string } | null = null;
+const HERO: { src: string; w: number; h: number; alt: string } | null = {
+  src: '/images/verandas/veranda-soko-interieur-jardin.webp',
+  w: 1200,
+  h: 800,
+  alt: 'Intérieur d’une véranda SOKO à toiture en panneaux clairs, table de repas, baies coulissantes ouvertes de chaque côté sur un jardin arboré et une piscine',
+};
 
 export const metadata: Metadata = buildMetadata({
   title: 'Véranda aluminium sur mesure à Libourne et en Gironde',
@@ -37,7 +44,7 @@ export const metadata: Metadata = buildMetadata({
   keywords:
     'véranda Libourne, véranda Gironde, véranda aluminium, véranda toit plat, véranda sur mesure, extension véranda, SOKO véranda, véranda Saint-Émilion',
   path: '/verandas',
-  ogImage: '/images/pergola-terrasse-bois-libourne-1.webp',
+  ogImage: '/images/verandas/veranda-klassique-soko.webp',
   ogTitle: 'Vérandas aluminium sur mesure à Libourne (33)',
   ville: 'Libourne',
 });
@@ -69,6 +76,12 @@ const GAMMES: Gamme[] = [
     ],
     pourQui:
       "Maison de caractère, jardin d'hiver, ou projet où l'on veut maîtriser le budget sans renoncer à l'isolation.",
+    image: {
+      src: '/images/verandas/veranda-klassique-soko.webp',
+      w: 1600,
+      h: 795,
+      alt: 'Véranda Klassique SOKO en aluminium gris anthracite adossée à une maison blanche, grandes baies coulissantes ouvertes sur une terrasse en bois',
+    },
   },
   {
     id: 'kosy',
@@ -86,6 +99,12 @@ const GAMMES: Gamme[] = [
     ],
     pourQui:
       'Véranda qui sert de pièce à vivre en toute saison, ou orientée plein sud où la maîtrise du soleil et la sécurité comptent.',
+    image: {
+      src: '/images/verandas/veranda-kosy-soko.webp',
+      w: 1600,
+      h: 795,
+      alt: 'Intérieur d’une véranda Kosy SOKO à toiture rayonnante : brise-soleil orientables devant les baies, puits de lumière et table de repas, jardin et piscine en arrière-plan',
+    },
   },
   {
     id: 'kontemporaine',
@@ -103,6 +122,12 @@ const GAMMES: Gamme[] = [
     ],
     pourQui:
       'Maison récente ou d’architecture contemporaine, ou projet qui doit se lire comme une extension du séjour plus que comme une véranda.',
+    image: {
+      src: '/images/verandas/veranda-kontemporaine-soko.webp',
+      w: 1600,
+      h: 795,
+      alt: 'Véranda Kontemporaine SOKO à toit plat et corniche gris anthracite, soubassement à lames grises et baies coulissantes, adossée à une maison en briques',
+    },
   },
 ];
 

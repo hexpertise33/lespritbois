@@ -679,6 +679,22 @@ export default function HomePage() {
         <section className="bg-surface py-10" aria-labelledby="verandas-titre">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-surface-container rounded-2xl p-6 md:p-10 border border-surface-variant">
+              <figure>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                  <img
+                    width={1600}
+                    height={795}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                    src="/images/verandas/veranda-klassique-soko.webp"
+                    alt="Véranda Klassique SOKO en aluminium gris anthracite adossée à une maison blanche, grandes baies coulissantes ouvertes sur une terrasse en bois"
+                  />
+                </div>
+                <figcaption className="text-on-surface-variant text-[14px] mt-3 italic">
+                  Véranda Klassique SOKO. Photo du fabricant.
+                </figcaption>
+              </figure>
               <div>
                 <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
                   Une pièce en plus, ouverte sur le jardin
@@ -686,21 +702,12 @@ export default function HomePage() {
                 <h2 id="verandas-titre" className="font-headline-md text-headline-md text-primary mt-3 mb-4">
                   Vérandas aluminium sur mesure
                 </h2>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-8">
+                <p className="font-body-md text-body-md text-on-surface-variant mb-6">
                   Fabriquées en Vendée par notre partenaire français SOKO, étudiées avec vous et posées
                   par nos équipes, à Libourne et dans toute la Gironde. Trois gammes selon votre maison
                   et l&apos;usage de la pièce.
                 </p>
-                <a
-                  href="/verandas"
-                  className="inline-flex items-center gap-2 bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
-                >
-                  Découvrir les vérandas
-                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
-                </a>
-              </div>
-              <div>
-                <ul className="list-none p-0 m-0 divide-y divide-surface-variant border-y border-surface-variant">
+                <ul className="list-none p-0 m-0 mb-8 divide-y divide-surface-variant border-y border-surface-variant">
                   {[
                     { nom: 'Klassique', detail: 'lumineuse et personnalisable', href: '/verandas#klassique' },
                     { nom: 'Kosy', detail: 'équipée pour toute l’année', href: '/verandas#kosy' },
@@ -721,6 +728,13 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
+                <a
+                  href="/verandas"
+                  className="inline-flex items-center gap-2 bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
+                >
+                  Découvrir les vérandas
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
               </div>
             </div>
           </div>

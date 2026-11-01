@@ -13,21 +13,21 @@ import { CONTACT, ENTREPRISE_REF, SITE } from '@/lib/data/navigation';
  *  Les vérandas sont fabriquées par le partenaire français SOKO (Vendée) et
  *  posées par L'Esprit Bois, selon le même partage que les pergolas et carports
  *  aluminium avec Li-Su des Temps. Tout ce qui est décrit ici vient des pages
- *  gamme de soko.fr (Klassique, Kosy, Kontemporaine), relues le 01/11/2026 :
- *  aucun prix, aucun coefficient ni aucune durée de garantie n'est avancé, SOKO
- *  n'en publie pas et nous ne les inventons pas.
+ *  gamme et conseils de soko.fr, relues le 01/11/2026 et réécrites : on reprend
+ *  les faits, jamais les phrases. Aucun prix, coefficient ni durée de garantie
+ *  n'est avancé. SOKO publie des fourchettes au m² indicatives, sans options :
+ *  elles ne sont pas reprises, car elles ne valent pas un prix posé chez nous.
  *
- *  Pas de photo pour l'instant : on n'affiche que des chantiers réels ou des
- *  photos fabricant autorisées. Pour en ajouter, renseigner `image` dans GAMMES
- *  (le bloc est déjà prévu) et `HERO`. */
+ *  Pas de photo pour l'instant : les mentions légales de SOKO exigent un accord
+ *  préalable. Les photos sont prêtes sur la branche locale
+ *  feature/verandas-photos-soko, à fusionner une fois l'accord obtenu. */
 
 /* Étiquettes d'attribution : sans elles, un lead de cette page arriverait
    indistinct de ceux de la landing publicitaire. */
 const PROJET = 'Véranda';
 const PAGE_LABEL = '/verandas';
 
-/** Photo d'en-tête : à renseigner quand une image autorisée est disponible.
- *  Sans image, l'en-tête reste sur fond de marque. */
+/** Photo d'en-tête. Sans image, l'en-tête reste sur fond de marque. */
 const HERO: { src: string; w: number; h: number; alt: string } | null = null;
 
 export const metadata: Metadata = buildMetadata({
@@ -75,7 +75,7 @@ const GAMMES: Gamme[] = [
     nom: 'Kosy',
     accroche: 'La véranda équipée, confortable été comme hiver',
     intro: [
-      "La gamme Kosy s'équipe à la demande. Sa particularité : un coffre intégré directement dans la structure, qui accueille des protections de façade, volets roulants ou brise-soleil orientable, invisibles en position ouverte.",
+      "Sur la Kosy, chacun choisit ses équipements. Ce qui la distingue : la structure comporte d'origine un coffre, qui reçoit des protections de façade, volets roulants ou brise-soleil orientable, invisibles en position ouverte.",
       "On maîtrise ainsi la lumière et la température sans rien accrocher après coup, et on renforce la sécurité de la pièce. Avec un système domotique, ces équipements se pilotent à distance.",
     ],
     points: [
@@ -93,7 +93,7 @@ const GAMMES: Gamme[] = [
     accroche: "L'extension à toit plat, design et performante",
     intro: [
       "La gamme Kontemporaine reprend le concept de la véranda-extension : un toit plat à l'extérieur, qui reprend les codes de l'architecture moderne, et un plafond plat à l'intérieur, comme dans une pièce de la maison.",
-      "Le double plafond renforce l'isolation thermique et phonique. La toiture plate extérieure est composée d'une ossature bois avec membrane d'étanchéité, et peut recevoir un puits de lumière ou un dôme vitré là où l'on veut de la lumière, quelle que soit l'orientation.",
+      "Le double plafond renforce l'isolation thermique et phonique. La toiture plate extérieure est composée d'une ossature bois avec membrane d'étanchéité, et peut recevoir un dôme vitré ou un puits de lumière à l'endroit choisi, sans dépendre de l'orientation.",
     ],
     points: [
       'Toit plat extérieur et plafond plat intérieur : l’effet pièce de la maison, pas l’effet véranda',
@@ -108,19 +108,19 @@ const GAMMES: Gamme[] = [
 
 const SOCLE = [
   {
-    icone: 'architecture',
+    icone: 'precision_manufacturing',
     titre: 'Aluminium à rupture de pont thermique totale',
     texte:
       "Le même profilé sur les trois gammes : léger, solide, résistant à la corrosion, et recyclable à 100 %. La rupture de pont thermique est totale, ce qui fait la différence l'hiver sur la paroi froide.",
   },
   {
-    icone: 'window',
+    icone: 'layers',
     titre: 'Double vitrage à isolation renforcée de série',
     texte:
       "Tous les vitrages de façade sont à isolation thermique renforcée avec argon. Des traitements supplémentaires sont possibles selon l'usage et l'orientation de la véranda.",
   },
   {
-    icone: 'lock',
+    icone: 'shield',
     titre: 'Fermeture 4 points de série',
     texte:
       "Les ouvrants sont équipés de systèmes de fermeture 4 points, pour l'étanchéité comme pour la sécurité.",
@@ -174,7 +174,7 @@ const COMPARATIF: { critere: string; klassique: string; kosy: string; kontempora
 
 const PERSONNALISATION = [
   {
-    icone: 'square_foot',
+    icone: 'straighten',
     titre: 'La dimension',
     texte: 'Carrée, rectangulaire ou en L, au millimètre selon votre maison.',
   },
@@ -182,7 +182,7 @@ const PERSONNALISATION = [
     icone: 'palette',
     titre: 'La couleur',
     texte:
-      "Nuancier standard (gris anthracite, gris architecte, gris givre, ivoire clair, blanc pur, noir sable) ou toute autre teinte sur demande.",
+      "Nuancier standard (gris anthracite, gris architecte, gris givre, ivoire clair, blanc pur, noir sable), ou toute teinte RAL, satinée, mate, métallisée ou texturée, sur demande.",
   },
   {
     icone: 'roofing',
@@ -191,18 +191,18 @@ const PERSONNALISATION = [
       'Monopente, double pente, rayonnante, victorienne, en L avec noue ou arêtier, et toit plat avec ou sans dôme.',
   },
   {
-    icone: 'view_headline',
+    icone: 'horizontal_rule',
     titre: 'La corniche',
     texte: 'Trois corniches au choix : classique, moderne ou double moderne.',
   },
   {
-    icone: 'grid_view',
+    icone: 'grid_goldenratio',
     titre: 'Le remplissage de toiture',
     texte:
-      'Polycarbonate de 32 à 55 mm, panneau sandwich acoustique de 32 à 66 mm, ou double vitrage feuilleté 44.2 avec différents traitements.',
+      'Polycarbonate, panneau sandwich acoustique ou double vitrage feuilleté 44.2 : le comparatif des toitures, plus haut, détaille ce que chacun change.',
   },
   {
-    icone: 'sensor_door',
+    icone: 'door_sliding',
     titre: 'Les ouvrants de façade',
     texte:
       'Coulissants de 2 à 6 vantaux, portes simples, doubles ou tiercées, fenêtres oscillo-battantes ou à soufflet.',
@@ -213,7 +213,7 @@ const OPTIONS = [
   {
     titre: 'SageGlass',
     texte:
-      "Vitrage de toiture à teinte variable : il se fonce ou s'éclaircit à volonté pour moduler la lumière, se protéger de la chaleur et de l'éblouissement. Transmission lumineuse de 1 à 58 %, transmission UV de 0 %.",
+      "Vitrage de toiture à teinte variable : sa teinte varie à la demande, pour laisser entrer plus ou moins de lumière et limiter la chaleur comme l'éblouissement. Transmission lumineuse de 1 à 58 %, transmission UV de 0 %.",
   },
   {
     titre: 'Rolax',
@@ -223,7 +223,7 @@ const OPTIONS = [
   {
     titre: 'Éclairage d’ambiance',
     texte:
-      'Spots LED orientables et à variateur d’intensité, intégrés aux chevrons ou au panneau de toiture.',
+      'Des spots LED réglables en direction et en intensité, logés dans les chevrons ou le panneau de toiture.',
   },
   {
     titre: 'Murs et murets à ossature bois',
@@ -239,6 +239,214 @@ const OPTIONS = [
     titre: 'Toiture à isolation renforcée',
     texte:
       'Double panneau Sokotop ultra isolant et membrane phonique, pour une isolation acoustique supérieure.',
+  },
+  {
+    titre: 'Pilotage à distance',
+    texte:
+      'Volets, brise-soleil, volet de toiture et éclairage se commandent d’une seule télécommande, avec des scénarios programmés. Pratique quand on veut fermer la véranda depuis le séjour.',
+  },
+];
+
+const SOMMAIRE = [
+  { href: '#usages', label: 'Usages' },
+  { href: '#styles', label: 'Styles' },
+  { href: '#gammes', label: 'Les 3 gammes' },
+  { href: '#comparatif', label: 'Comparatif' },
+  { href: '#toitures', label: 'Toitures' },
+  { href: '#personnalisation', label: 'Personnalisation' },
+  { href: '#options', label: 'Options' },
+  { href: '#confort', label: 'Orientation et confort' },
+  { href: '#terrasse', label: 'Sur une terrasse' },
+  { href: '#budget', label: 'Budget' },
+  { href: '#demarches', label: 'Démarches' },
+  { href: '#deroulement', label: 'Déroulement' },
+  { href: '#entretien', label: 'Entretien' },
+];
+
+const USAGES = [
+  {
+    titre: 'Un séjour agrandi',
+    texte:
+      'Le cas le plus courant : on gagne une pièce de vie sans déménager. Prévoyez un mobilier plutôt bas, pour ne pas boucher la vue qui justifie le projet.',
+  },
+  {
+    titre: 'Une salle à manger',
+    texte:
+      'Une grande table, le jardin de chaque côté. Une toiture qui alterne panneaux et verre évite d’avoir le soleil de midi dans l’assiette.',
+  },
+  {
+    titre: 'Une cuisine',
+    texte:
+      'Possible, à condition de le prévoir dès l’étude : extraction mécanique pour les vapeurs et les odeurs, et un mur assez solide pour porter les meubles et l’électroménager.',
+  },
+  {
+    titre: 'Un jardin d’hiver',
+    texte:
+      'Contrairement à une serre, c’est une vraie pièce rattachée à la maison : les plantes passent l’hiver hors gel et à la lumière, et on y prend le café. Elle doit être bien ventilée.',
+  },
+  {
+    titre: 'Un espace piscine ou spa',
+    texte:
+      'L’humidité change la donne : la ventilation mécanique devient indispensable, et les matériaux se choisissent en conséquence. Le verre en toiture convient bien à ce type de volume.',
+  },
+  {
+    titre: 'Un commerce',
+    texte:
+      'Salle de restaurant, salon d’hiver, surface de vente : la véranda ajoute des places ou des mètres linéaires et se voit de la rue. Les règles d’accueil du public sont à vérifier au cas par cas.',
+  },
+];
+
+const STYLES = [
+  {
+    titre: 'Le toit plat contemporain',
+    texte:
+      'Lignes droites, plafond plat à l’intérieur, effet loft. C’est la gamme Kontemporaine, avec dôme vitré ou puits de lumière pour compenser l’absence de toiture transparente.',
+  },
+  {
+    titre: 'La verrière',
+    texte:
+      'Toiture entièrement vitrée, ciel dégagé, lumière maximale. Elle s’accorde aussi bien à une maison ancienne qu’à une maison récente, mais demande une vraie protection solaire sous nos étés.',
+  },
+  {
+    titre: 'L’atelier d’artiste',
+    texte:
+      'Grand volume, grandes hauteurs d’ouverture, et un décor assumé : petits-bois, traverses, soubassements aluminium, fleurons. Il se plaît surtout au nord, où la lumière reste régulière.',
+  },
+  {
+    titre: 'Le jardin d’hiver traditionnel',
+    texte:
+      'Toiture rayonnante ou victorienne, impostes cintrées, crête de toit. Pour une maison de pierre du Libournais, c’est souvent la forme qui s’intègre le plus naturellement.',
+  },
+];
+
+const TOITURES = [
+  {
+    nom: 'Double vitrage feuilleté',
+    lumiere: 'Maximale',
+    atout: 'L’effet verrière, idéal pour un jardin d’hiver ou un espace piscine',
+    limite: 'Contrôle solaire ou protection mobile à prévoir (Rolax, SageGlass)',
+  },
+  {
+    nom: 'Polycarbonate 32 à 55 mm',
+    lumiere: 'Diffuse, finition vénitien ou opale',
+    atout: 'Léger, épais et l’option la plus abordable',
+    limite: 'Isole moins bien qu’un panneau plein, à réserver aux expositions modérées',
+  },
+  {
+    nom: 'Panneau sandwich 32 à 66 mm',
+    lumiere: 'Aucune, panneau opaque',
+    atout: 'Isolation et acoustique ; dessus ardoise ou tuile, dessous blanc',
+    limite: 'À combiner avec des travées de verre pour garder de la lumière',
+  },
+  {
+    nom: 'Double panneau Sokotop',
+    lumiere: 'Aucune, panneau opaque',
+    atout: 'SOKO annonce 50 % d’isolation thermique et phonique en plus qu’une toiture classique',
+    limite: 'Option, à arbitrer selon l’usage de la pièce',
+  },
+  {
+    nom: 'Toit plat isolé (Kontemporaine)',
+    lumiere: 'Par puits de lumière ou dôme vitré',
+    atout: 'Ossature bois, membrane d’étanchéité et plafond doublé, proches d’une pièce de la maison',
+    limite: 'Réservé à la gamme Kontemporaine',
+  },
+];
+
+const ORIENTATIONS = [
+  {
+    titre: 'Sud et sud-ouest',
+    texte:
+      'Très agréable au printemps et à l’automne, mais la pièce surchauffe l’été sans protection solaire. En Gironde, sur une grande surface vitrée, on ne fait pas l’impasse dessus.',
+  },
+  {
+    titre: 'Est',
+    texte:
+      'Le soleil du matin, puis de l’ombre quand la chaleur monte. C’est souvent le meilleur compromis pour une salle à manger ou une cuisine.',
+  },
+  {
+    titre: 'Nord',
+    texte:
+      'Peu de soleil direct, une lumière égale toute la journée, et un abri contre le vent dominant. La toiture et le chauffage doivent alors compter davantage en hiver.',
+  },
+];
+
+const CONFORT = [
+  {
+    titre: 'Ventiler',
+    texte:
+      'Des aérateurs en partie basse font entrer l’air frais, des ouvrants en partie haute évacuent l’air chaud. Si cela ne suffit pas, un extracteur motorisé prend le relais en toiture. Avec une pièce humide ou une cuisine, il devient indispensable. C’est aussi la première défense contre la condensation.',
+  },
+  {
+    titre: 'Chauffer',
+    texte:
+      'Pour une pièce occupée toute l’année, il faut le prévoir comme ailleurs dans la maison. Prolonger le chauffage central est simple si la chaudière a la puissance nécessaire. Le plancher chauffant, plus lent à réagir, donne une chaleur très régulière et se décide avant de couler le sol.',
+  },
+  {
+    titre: 'Lire une fiche de vitrage',
+    texte:
+      'Trois valeurs suffisent : le coefficient U (pertes de chaleur, le plus bas possible), le facteur solaire g (chaleur du soleil qui entre, à garder bas sur une façade très exposée) et la transmission lumineuse TL (lumière qui passe). On les arbitre selon l’orientation.',
+  },
+  {
+    titre: 'Choisir la couleur',
+    texte:
+      'La teinte du crépi ou des menuiseries existantes pour se fondre dans la maison, le gris anthracite ou le blanc pour une valeur sûre à la revente. Un contraste franc fonctionne aussi, à condition de l’assumer.',
+  },
+];
+
+const POSTES_BUDGET = [
+  {
+    titre: 'La véranda elle-même',
+    texte: 'Surface, forme, gamme, type de toiture, traitement des vitrages et nombre de vantaux.',
+  },
+  {
+    titre: 'Les options de confort',
+    texte:
+      'Volets roulants, brise-soleil, volet de toiture, SageGlass, éclairage, panneaux renforcés : elles pèsent vite, on les choisit selon l’exposition réelle.',
+  },
+  {
+    titre: 'Les travaux autour',
+    texte:
+      'Terrassement, dalle, muret maçonné, électricité, revêtement de sol, chauffage et ventilation. C’est le poste le plus souvent oublié dans les premiers calculs.',
+  },
+  {
+    titre: 'La pose',
+    texte:
+      'Une véranda doit rester étanche et sûre pendant des années : la main-d’œuvre fait partie du prix et ne se juge pas à part de la qualité de pose.',
+  },
+  {
+    titre: 'La fiscalité',
+    texte:
+      'Votre base de taxe foncière augmente avec la surface créée, et une taxe d’aménagement peut être due au-delà de 5 m². À intégrer dès le départ.',
+  },
+];
+
+const DEMARCHES = [
+  { surface: 'Moins de 5 m²', dossier: 'Aucune formalité, sauf en secteur protégé' },
+  { surface: 'De 5 à 20 m²', dossier: 'Déclaration préalable' },
+  {
+    surface: 'De 20 à 40 m² en zone urbaine d’un PLU',
+    dossier: 'Déclaration préalable, si le total maison et véranda reste sous 150 m²',
+  },
+  { surface: 'Au-delà, ou hors de ces conditions', dossier: 'Permis de construire' },
+  { surface: 'Total maison et véranda au-dessus de 150 m²', dossier: 'Permis de construire avec architecte' },
+];
+
+const ENTRETIEN = [
+  {
+    titre: 'Au moins deux lavages par an',
+    texte: 'Éponge douce, eau tiède et un peu de liquide vaisselle, puis rinçage à l’eau claire.',
+  },
+  {
+    titre: 'Les taches plus tenaces',
+    texte: 'Bicarbonate de soude dilué sur les zones moyennement sales, blanc de Meudon sur les plus encrassées.',
+  },
+  {
+    titre: 'Ce qu’il ne faut jamais utiliser',
+    texte: 'Javel, détergents agressifs, paille de fer ou papier émeri : ils marquent le laquage pour de bon.',
+  },
+  {
+    titre: 'Sans oublier le reste',
+    texte: 'Toiture, vitrages, rails de coulissants et volets roulants se nettoient aussi. Des rails propres, ce sont des ouvrants qui glissent.',
   },
 ];
 
@@ -280,7 +488,7 @@ const FAQ = [
   },
   {
     q: 'Faut-il une autorisation pour installer une véranda ?',
-    r: "Une véranda crée de la surface et de l'emprise au sol : selon sa taille et selon le PLU de votre commune, elle relève d'une déclaration préalable ou d'un permis de construire. Un secteur protégé change encore la donne. Nous vérifions ce qui s'applique à votre terrain avant de chiffrer, et nous vous orientons sur les démarches.",
+    r: "Une véranda crée de la surface et de l'emprise au sol. De 5 à 20 m², une déclaration préalable suffit, et jusqu'à 40 m² en zone urbaine d'un PLU si le total reste sous 150 m². Au-delà, il faut un permis de construire, avec architecte si le total dépasse 150 m². Un secteur protégé change encore la donne. Nous vérifions ce qui s'applique à votre terrain avant de chiffrer, et nous vous orientons sur les démarches.",
   },
   {
     q: "Une véranda est-elle trop chaude l'été ou trop froide l'hiver ?",
@@ -289,6 +497,26 @@ const FAQ = [
   {
     q: 'Combien coûte une véranda ?',
     r: "Nous ne publions pas de tarif au mètre carré : le prix dépend des dimensions, de la gamme, de la toiture, des ouvrants et des options, et chaque devis suit un relevé sur place. Notre guide sur la véranda en aluminium donne des ordres de grandeur pour la Gironde, datés. Le relevé et le devis sont gratuits.",
+  },
+  {
+    q: 'Peut-on construire une véranda sur une terrasse existante ?',
+    r: "Souvent, et c'est même un bon point de départ : l'accès depuis la maison existe déjà et l'exposition a fait ses preuves. Mais la véranda doit reposer sur un support solide, de niveau et protégé des remontées d'humidité. Nous contrôlons cela au relevé, avant de chiffrer.",
+  },
+  {
+    q: 'Quelle est la meilleure orientation pour une véranda ?',
+    r: "Il n'y en a pas une seule : tout dépend de l'usage. L'est donne le soleil du matin et de l'ombre l'après-midi. Le sud et le sud-ouest sont agréables en demi-saison mais imposent une protection solaire l'été. Le nord offre une lumière régulière et demande plus d'attention à l'isolation.",
+  },
+  {
+    q: 'Faut-il chauffer une véranda ?',
+    r: "Pour un usage au printemps et à l'automne, pas forcément. Pour une pièce occupée toute l'année, oui, comme le reste de la maison. Le besoin dépend de la surface, de la hauteur, de l'isolation et de l'orientation. Prolonger le chauffage central ou installer un plancher chauffant sont les deux pistes les plus courantes.",
+  },
+  {
+    q: 'Faut-il déclarer une véranda aux impôts ?',
+    r: "Oui. La surface créée se déclare aux impôts dans les 90 jours suivant la fin des travaux, et elle fait évoluer la taxe foncière. Une taxe d'aménagement peut aussi être due. Les modalités et les éventuelles exonérations dépendent de votre situation : votre centre des impôts ou votre mairie vous renseignera.",
+  },
+  {
+    q: 'Comment entretenir une véranda en aluminium ?',
+    r: "Deux lavages par an à l'eau tiède savonneuse suffisent en général, suivis d'un rinçage à l'eau claire. Pas de javel ni d'abrasif, qui marquent le laquage. Pensez aussi aux rails des coulissants, aux vitrages et aux volets roulants.",
   },
 ];
 
@@ -383,6 +611,8 @@ export default function VerandasPage() {
                 alt={HERO.alt}
               />
               <div className="absolute inset-0 hero-interne"></div>
+              {/* Sur mobile le texte couvre toute la largeur : le voile doit tenir jusqu'à droite. */}
+              <div className="absolute inset-0 bg-black/35 md:hidden"></div>
             </div>
           )}
           <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
@@ -420,6 +650,7 @@ export default function VerandasPage() {
                 Voir les trois gammes
               </a>
             </div>
+            {HERO && <p className="text-white/70 text-[14px] mt-8 italic">Photo du fabricant.</p>}
           </div>
         </header>
 
@@ -466,6 +697,75 @@ export default function VerandasPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        <nav aria-label="Sur cette page" className="bg-surface pb-16">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <p className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant mb-4">
+              Sur cette page
+            </p>
+            <ul className="flex flex-wrap gap-3">
+              {SOMMAIRE.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className="inline-block border border-outline-variant rounded-full px-4 py-2 font-label-md text-label-md text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+
+        <section className="py-20 md:py-28 bg-surface-container-low" id="usages">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                Avant de choisir
+              </span>
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mt-4 mb-6">
+                À quoi va servir votre véranda ?
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                C&apos;est la première question que nous posons. Vous êtes à l&apos;étroit, vous ne
+                voulez pas déménager, et une extension maçonnée vous fermerait sur le jardin. Mais une
+                véranda occupée au printemps ne se conçoit pas comme une cuisine utilisée douze mois
+                par an : l&apos;usage décide de la toiture, de la ventilation et du chauffage.
+              </p>
+            </div>
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {USAGES.map((u) => (
+                <li key={u.titre} className="rounded-2xl p-8 border border-surface-variant bg-surface">
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{u.titre}</h3>
+                  <p className="text-on-surface-variant text-body-md">{u.texte}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface" id="styles">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Quatre styles, selon votre maison
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                L&apos;aluminium autorise des profilés fins et des formes complexes : la véranda peut
+                prolonger l&apos;architecture de la maison, ou trancher avec elle.
+              </p>
+            </div>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              {STYLES.map((st) => (
+                <div key={st.titre} className="border-t border-outline-variant pt-6">
+                  <dt className="font-headline-sm text-headline-sm text-primary mb-2">{st.titre}</dt>
+                  <dd className="font-body-md text-body-md text-on-surface-variant">{st.texte}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
 
@@ -628,6 +928,52 @@ export default function VerandasPage() {
           </div>
         </section>
 
+        <section className="py-20 md:py-28 bg-surface-container-low" id="toitures">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Quelle toiture pour votre véranda ?
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                C&apos;est le choix qui pèse le plus sur le confort, parce que c&apos;est par le haut
+                que la chaleur entre l&apos;été et s&apos;échappe l&apos;hiver. La solution la plus
+                demandée aujourd&apos;hui alterne panneaux pleins et travées de verre : on garde la
+                lumière en limitant les apports solaires.
+              </p>
+            </div>
+            <div className="overflow-x-auto rounded-2xl border border-surface-variant bg-white">
+              <table className="w-full text-left border-collapse min-w-[820px]">
+                <caption className="sr-only">Comparatif des toitures de véranda</caption>
+                <thead>
+                  <tr className="bg-surface-container-low border-b border-surface-variant">
+                    {['Toiture', 'Lumière', 'Atout', 'À prévoir'].map((c) => (
+                      <th
+                        key={c}
+                        scope="col"
+                        className="py-5 px-6 font-label-md text-label-md uppercase tracking-widest text-on-surface-variant"
+                      >
+                        {c}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="text-on-surface-variant text-body-md">
+                  {TOITURES.map((t) => (
+                    <tr key={t.nom} className="border-b border-surface-variant last:border-b-0">
+                      <th scope="row" className="py-5 px-6 text-primary font-semibold text-left">
+                        {t.nom}
+                      </th>
+                      <td className="py-5 px-6">{t.lumiere}</td>
+                      <td className="py-5 px-6">{t.atout}</td>
+                      <td className="py-5 px-6">{t.limite}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28 bg-surface" id="personnalisation">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-3xl mb-12">
@@ -689,6 +1035,124 @@ export default function VerandasPage() {
           </div>
         </section>
 
+        <section className="py-20 md:py-28 bg-surface" id="confort">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Orientation et confort : ce qui se décide dès l&apos;étude
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Une véranda agréable toute l&apos;année ne tient pas à un équipement, mais à la
+                cohérence entre l&apos;exposition, la toiture, le vitrage et l&apos;usage.
+              </p>
+            </div>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+              {ORIENTATIONS.map((o) => (
+                <li key={o.titre} className="bg-surface-container rounded-2xl p-8 border border-surface-variant">
+                  <h3 className="font-headline-sm text-headline-sm text-primary mb-3">{o.titre}</h3>
+                  <p className="text-on-surface-variant text-body-md">{o.texte}</p>
+                </li>
+              ))}
+            </ul>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              {CONFORT.map((c) => (
+                <div key={c.titre} className="border-t border-outline-variant pt-6">
+                  <dt className="font-headline-sm text-headline-sm text-primary mb-2">{c.titre}</dt>
+                  <dd className="font-body-md text-body-md text-on-surface-variant">{c.texte}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface-container-low" id="terrasse">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Transformer votre terrasse en véranda
+              </h2>
+              <div className="font-body-lg text-body-lg text-on-surface-variant space-y-6">
+                <p>
+                  C&apos;est souvent l&apos;emplacement le plus logique : la porte est déjà là,
+                  l&apos;exposition a fait ses preuves et il y a moins d&apos;ouvertures à créer dans
+                  la maison.
+                </p>
+                <p>
+                  Tout dépend de ce qu&apos;il y a dessous. La véranda doit reposer sur un support
+                  solide, de niveau, qui ne laisse pas remonter l&apos;humidité. Une dalle saine peut
+                  parfois servir de base et limiter la maçonnerie ; sinon, il faut la reprendre. Nous
+                  le contrôlons au relevé, terrasse en béton comme terrasse en bois, avant de chiffrer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface" id="budget">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Ce qui fait le prix d&apos;une véranda
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Un prix au mètre carré ne dit pas grand-chose avant le relevé. Voici les cinq postes
+                à regarder pour comparer deux devis et ne pas découvrir de dépense en cours de route.
+              </p>
+            </div>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              {POSTES_BUDGET.map((b) => (
+                <div key={b.titre} className="border-t border-outline-variant pt-6">
+                  <dt className="font-headline-sm text-headline-sm text-primary mb-2">{b.titre}</dt>
+                  <dd className="font-body-md text-body-md text-on-surface-variant">{b.texte}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface-container-low" id="demarches">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Déclaration préalable ou permis de construire ?
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                Le seuil se calcule sur l&apos;emprise au sol et la surface de plancher créées. Ce
+                tableau donne la règle générale : le PLU de votre commune, ou un secteur protégé,
+                peut ajouter des contraintes, notamment autour de Saint-Émilion.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-surface-variant bg-white overflow-hidden">
+              <table className="w-full text-left border-collapse">
+                <caption className="sr-only">Formalité selon la surface de la véranda</caption>
+                <thead>
+                  <tr className="bg-surface-container-low border-b border-surface-variant">
+                    <th scope="col" className="py-4 px-4 md:px-6 font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">
+                      Surface créée
+                    </th>
+                    <th scope="col" className="py-4 px-4 md:px-6 font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">
+                      Dossier
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-on-surface-variant text-body-md">
+                  {DEMARCHES.map((d) => (
+                    <tr key={d.surface} className="border-b border-surface-variant last:border-b-0">
+                      <th scope="row" className="py-4 px-4 md:px-6 text-primary font-semibold text-left align-top">
+                        {d.surface}
+                      </th>
+                      <td className="py-4 px-4 md:px-6 align-top">{d.dossier}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-8 max-w-3xl">
+              Une fois les travaux terminés, la surface créée se déclare aux impôts dans les 90 jours.
+            </p>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28 bg-surface" id="deroulement">
           <div className="max-w-container-max mx-auto px-6 md:px-16">
             <div className="max-w-3xl mb-12">
@@ -707,6 +1171,35 @@ export default function VerandasPage() {
                 </li>
               ))}
             </ol>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-surface-container-low" id="entretien">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="max-w-3xl mb-12">
+              <h2 className="font-display-md text-display-md-mobile md:text-display-md text-on-surface mb-6">
+                Entretenir sa véranda aluminium
+              </h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant">
+                L&apos;aluminium thermolaqué demande peu d&apos;entretien, mais pas aucun, surtout sous
+                les pins ou près du Bassin.
+              </p>
+            </div>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              {ENTRETIEN.map((e) => (
+                <div key={e.titre} className="border-t border-outline-variant pt-6">
+                  <dt className="font-headline-sm text-headline-sm text-primary mb-2">{e.titre}</dt>
+                  <dd className="font-body-md text-body-md text-on-surface-variant">{e.texte}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-12 max-w-3xl">
+              Notre guide sur{' '}
+              <a href="/blog/entretien-aluminium-pergola-veranda-revision-automne" className={lienInterne}>
+                l&apos;entretien de l&apos;aluminium et la révision d&apos;automne
+              </a>{' '}
+              détaille le calendrier.
+            </p>
           </div>
         </section>
 

@@ -674,6 +674,58 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Vérandas : mises en avant à part, hors de « Ce que nous fabriquons », car
+            nous les posons mais c'est SOKO qui les fabrique. */}
+        <section className="bg-surface py-10" aria-labelledby="verandas-titre">
+          <div className="max-w-container-max mx-auto px-6 md:px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-surface-container rounded-2xl p-6 md:p-10 border border-surface-variant">
+              <div>
+                <span className="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-dark">
+                  Une pièce en plus, ouverte sur le jardin
+                </span>
+                <h2 id="verandas-titre" className="font-headline-md text-headline-md text-primary mt-3 mb-4">
+                  Vérandas aluminium sur mesure
+                </h2>
+                <p className="font-body-md text-body-md text-on-surface-variant mb-8">
+                  Fabriquées en Vendée par notre partenaire français SOKO, étudiées avec vous et posées
+                  par nos équipes, à Libourne et dans toute la Gironde. Trois gammes selon votre maison
+                  et l&apos;usage de la pièce.
+                </p>
+                <a
+                  href="/verandas"
+                  className="inline-flex items-center gap-2 bg-secondary text-primary px-5 py-3 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-colors"
+                >
+                  Découvrir les vérandas
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+              <div>
+                <ul className="list-none p-0 m-0 divide-y divide-surface-variant border-y border-surface-variant">
+                  {[
+                    { nom: 'Klassique', detail: 'lumineuse et personnalisable', href: '/verandas#klassique' },
+                    { nom: 'Kosy', detail: 'équipée pour toute l’année', href: '/verandas#kosy' },
+                    { nom: 'Kontemporaine', detail: 'l’extension à toit plat', href: '/verandas#kontemporaine' },
+                  ].map((g) => (
+                    <li key={g.nom}>
+                      <a href={g.href} className="group flex items-center justify-between gap-4 py-3">
+                        <span>
+                          <span className="font-semibold text-primary group-hover:text-secondary-dark transition-colors">
+                            {g.nom}
+                          </span>
+                          <span className="text-on-surface-variant text-body-md"> : {g.detail}</span>
+                        </span>
+                        <span className="material-symbols-outlined text-secondary-dark text-[20px] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
+                          arrow_forward
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Nos produits : catalogue groupé par famille */}
         <section className="py-20 md:py-24 bg-surface-container-low" id="solutions">
           <div className="max-w-container-max mx-auto px-6 md:px-16">

@@ -80,25 +80,11 @@ export default function SiteNav({
           {ONGLETS.map((o) =>
             o.cle === page ? (
               <a key={o.cle} className={actif} href={o.url} aria-current="page" aria-label={o.titreLong}>
-                {o.titreCourt ? (
-                  <>
-                    <span className="xl:hidden">{o.titreCourt}</span>
-                    <span className="hidden xl:inline">{o.titre}</span>
-                  </>
-                ) : (
-                  o.titre
-                )}
+                {o.titreCourt ?? o.titre}
               </a>
             ) : (
               <a key={o.cle} className={inactif} href={o.url} aria-label={o.titreLong}>
-                {o.titreCourt ? (
-                  <>
-                    <span className="xl:hidden">{o.titreCourt}</span>
-                    <span className="hidden xl:inline">{o.titre}</span>
-                  </>
-                ) : (
-                  o.titre
-                )}
+                {o.titreCourt ?? o.titre}
               </a>
             )
           )}

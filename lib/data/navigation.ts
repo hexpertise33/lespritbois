@@ -98,8 +98,8 @@ export type Onglet = {
   url: string;
   /** Intitulé complet, quand `titre` est abrégé faute de place dans la barre. */
   titreLong?: string;
-  /** Intitulé affiché à la place de `titre` entre 1024 et 1279 px, où la barre
-   *  n'a plus de marge (voir ONGLETS). */
+  /** Intitulé affiché à la place de `titre` dans la barre desktop, qui n'a plus
+   *  de marge (voir ONGLETS). */
   titreCourt?: string;
 };
 
@@ -117,10 +117,16 @@ export type Onglet = {
  *  Depuis l'ajout de « Garages & abris » (23/10/2026), la marge à 1024 px tombe
  *  à zéro avec le libellé complet : l'onglet s'y affiche en « Garages »
  *  (`titreCourt`), et en entier à partir de 1280 px.
+ *
+ *  L'onglet « Vérandas » (01/11/2026) prend 68 px de plus. Le conteneur étant
+ *  plafonné et le wordmark revenant à 1280 px, les libellés complets ne tiennent
+ *  à aucune largeur : la barre affiche `titreCourt` partout (« Garages », « Bois »),
+ *  `titreLong` reste en aria-label et le menu burger garde les intitulés complets.
  */
 export const ONGLETS: Onglet[] = [
   { cle: 'carports', titre: 'Carports', url: '/carports' },
   { cle: 'pergolas', titre: 'Pergolas', url: '/pergolas' },
+  { cle: 'verandas', titre: 'Vérandas', url: '/verandas' },
   {
     cle: 'garages-abris-jardin',
     titre: 'Garages & abris',
@@ -134,7 +140,13 @@ export const ONGLETS: Onglet[] = [
     url: '/amenagement-exterieur',
     titreLong: 'Aménagement extérieur',
   },
-  { cle: 'constructions-bois', titre: 'Constructions bois', url: '/constructions-bois' },
+  {
+    cle: 'constructions-bois',
+    titre: 'Constructions bois',
+    titreCourt: 'Bois',
+    url: '/constructions-bois',
+    titreLong: 'Constructions bois',
+  },
   { cle: 'realisations', titre: 'Réalisations', url: '/realisations' },
   { cle: 'blog', titre: 'Blog', url: '/blog' },
 ];

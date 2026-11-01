@@ -2344,6 +2344,11 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-24 | publié  | Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle | condensation-veranda-aluminium-hiver |
 | 2026-11-01 | publié  | Extension en ossature bois : le raccord avec la maison, là où tout se joue | raccord-extension-ossature-bois-maison-existante |
 
+**Run du 01/11/2026 : publié après validation de David.** Reprise du brouillon
+préparé le 31/10, redaté au 01/11. 200 aux trois contrôles, IndexNow 200, indexation
+Search Console demandée (confirmation vue à l'écran). ⚠️ Toujours non vérifié : la
+localisation en Gironde des photos Etienne citée dans les `alt` de cet article.
+
 **Run du 31/10/2026 et nouvelle règle de validation unique.** Aucun article du 25
 au 30/10 : le planificateur a refusé la tâche (`global_limit`, 3 places occupées
 par des sessions restées ouvertes), visible dans `~/Library/Logs/Claude/main*.log`.

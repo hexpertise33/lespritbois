@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'raccord-extension-ossature-bois-maison-existante',
+    titre: 'Extension en ossature bois : le raccord avec la maison, là où tout se joue',
+    extrait:
+      "Une extension et une maison ne bougent pas de la même façon : un bon raccord ne cherche donc pas à les souder, il les laisse vivre chacune de son côté et rend le joint étanche, isolé et invisible. Ce guide détaille les quatre endroits où il se traite, le sol, le mur, le toit et l'ouverture, et ce qu'il faut retrouver sur le devis en Gironde.",
+    date: '2026-11-01',
+    categorie: 'Guide · Ossature bois',
+    image: '/images/blog/raccord-extension-ossature-bois-maison-existante/extension-ossature-bois-toit-plat-accolee-maison-gironde.jpg',
+    imageLargeur: 1600,
+    imageHauteur: 1200,
+  },
+  {
     slug: 'condensation-veranda-aluminium-hiver',
     titre: "Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle",
     extrait:

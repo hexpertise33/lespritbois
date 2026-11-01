@@ -2342,6 +2342,18 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-17 | publié  | Pergola aluminium adossée : ce que votre façade doit pouvoir porter | fixer-pergola-aluminium-facade |
 | 2026-10-19 | publié  | Sur quoi poser un abri de jardin en bois : dalle, plots, longrines ou vis de fondation ? | fondation-abri-jardin-bois-dalle-plots |
 | 2026-10-24 | publié  | Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle | condensation-veranda-aluminium-hiver |
+| 2026-11-01 | publié  | Extension en ossature bois : le raccord avec la maison, là où tout se joue | raccord-extension-ossature-bois-maison-existante |
+
+**Run du 31/10/2026 et nouvelle règle de validation unique.** Aucun article du 25
+au 30/10 : le planificateur a refusé la tâche (`global_limit`, 3 places occupées
+par des sessions restées ouvertes), visible dans `~/Library/Logs/Claude/main*.log`.
+David a demandé le 31/10 une seule validation par article : la routine prépare tout
+sans rien commiter, présente l'article, et son « oui » lance
+`scripts/publier-article.sh`. Détail en tête du SKILL.md de la tâche. Sans réserve,
+angle trouvé par recoupement, 100 % photos maison (Cluzeau et Etienne). ⚠️ Les photos
+Etienne ne sont pas localisées : le lot contient une photo située à Clérac
+(Charente-Maritime), alors que des fichiers Etienne en ligne portent `-gironde`.
+Prochain article : **aluminium**.
 
 **Run du 24/10/2026 : publié après reprise d'un brouillon cassé, indexation demandée.**
 Le run automatique du 22-23/10 a rédigé `condensation-veranda-aluminium-hiver`

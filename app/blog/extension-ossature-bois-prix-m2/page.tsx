@@ -712,7 +712,11 @@ export default function ArticleExtensionOssatureBoisPage() {
                 Notre approche de l&apos;extension bois en Gironde
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                Agrandir une maison, c&apos;est ouvrir un mur porteur, raccorder une toiture, faire dialoguer du neuf
+                Agrandir une maison, c&apos;est ouvrir un mur porteur,{' '}
+                <a href="/blog/raccord-extension-ossature-bois-maison-existante" className={lienInterne}>
+                  raccorder la toiture et les murs à la maison existante
+                </a>
+                , faire dialoguer du neuf
                 avec de l&apos;ancien : c&apos;est autrement plus engageant que poser un abri au fond du jardin.
                 Entre Libourne, Saint-Émilion, Les Billaux et la rive droite, notre méthode tient en quelques principes
                 appris sur le terrain :

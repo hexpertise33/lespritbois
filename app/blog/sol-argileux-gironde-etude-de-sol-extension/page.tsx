@@ -636,7 +636,11 @@ export default function ArticleSolArgileuxEtudeDeSolPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 Une fois les fondations arrêtées, tout le reste en découle : le niveau du plancher, la mise hors
-                d&apos;eau du bas de la structure, le raccord avec l&apos;existant. Nous détaillons ces points de
+                d&apos;eau du bas de la structure,{' '}
+                <a href="/blog/raccord-extension-ossature-bois-maison-existante" className={lienInterne}>
+                  le raccord de l&apos;extension avec la maison existante
+                </a>
+                . Nous détaillons ces points de
                 jonction dans notre guide sur{' '}
                 <a href="/blog/garage-ossature-bois-permis-dalle-budget" className={lienInterne}>
                   la dalle et la lisse basse d&apos;un ouvrage à ossature bois

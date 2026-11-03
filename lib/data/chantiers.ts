@@ -23,6 +23,25 @@ export type Chantier = {
 
 export const CHANTIERS: Chantier[] = [
   {
+    id: 'saint-germain-du-puch-bardage-metal',
+    commune: 'Saint-Germain-du-Puch',
+    categorie: 'Extension ossature bois',
+    titre: 'Un bardage métal aspect bois sur une surélévation',
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-1.webp',
+    w: 1200,
+    h: 1600,
+    alt: "Surélévation habillée d'un bardage métal vertical aspect bois, au-dessus d'une toiture en tuiles et d'une terrasse couverte, à Saint-Germain-du-Puch",
+    faits: [
+      { label: 'Ouvrage', valeur: 'Surélévation et bardage métal' },
+      { label: 'Bardage', valeur: 'Métal sur mesure, marque ONWOOD' },
+      { label: 'Pose', valeur: 'Lames verticales, finition aspect bois' },
+    ],
+    paragraphes: [
+      "À Saint-Germain-du-Puch, nous avons réalisé la surélévation de la maison, puis nous l'avons habillée d'un bardage métal ONWOOD fabriqué sur mesure.",
+      "Les lames sont posées à la verticale, dans une finition aspect bois qui tranche avec les façades enduites de la maison. Le bardage descend jusqu'aux toitures en tuiles qui bordent le nouvel étage et s'arrête à leur rencontre.",
+    ],
+  },
+  {
     id: 'les-billaux-carport-aluminium',
     commune: 'Les Billaux',
     categorie: 'Carport',

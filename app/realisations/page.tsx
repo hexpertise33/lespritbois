@@ -17,9 +17,9 @@ const PROJET = 'Projet vu depuis les réalisations';
 const PAGE_LABEL = '/realisations';
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nos réalisations en Gironde : seize chantiers racontés",
+  title: "Nos réalisations en Gironde : dix-sept chantiers racontés",
   description:
-    'Carport à Libourne, surélévation au Pyla, extension à Clérac, maison ossature bois à Rauzan : seize chantiers avec leur contrainte et leurs matériaux.',
+    'Carport à Libourne, surélévation au Pyla, extension à Clérac, maison ossature bois à Rauzan : dix-sept chantiers avec leur contrainte et leurs matériaux.',
   keywords:
     "réalisations L'Esprit Bois, chantiers Libourne, carport Capian, extension bois Clérac, maison ossature bois Rauzan, terrasse Lacanau, pergola Montussan, surélévation ossature bois Pyla-sur-Mer, carport bois Libourne",
   path: '/realisations',
@@ -81,6 +81,66 @@ const CARPORTS_COURTS = [
 /** Galerie. Chaque vignette est un ouvrage réalisé par l'entreprise ou une pièce
  *  exposée sur son dépôt, les visuels fournisseur en ont été retirés. */
 const GALERIE: Vignette[] = [
+  {
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-1.webp',
+    w: 1200,
+    h: 1600,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Surélévation en bardage métal',
+    lieu: 'Saint-Germain-du-Puch',
+    alt: "Surélévation habillée d'un bardage métal vertical aspect bois, au-dessus d'une toiture en tuiles et d'une terrasse couverte, à Saint-Germain-du-Puch",
+  },
+  {
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-2.webp',
+    w: 867,
+    h: 1156,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Façade au-dessus de la toiture',
+    lieu: 'Saint-Germain-du-Puch',
+    alt: "Façade de surélévation en bardage métal vertical aspect bois avec fenêtre blanche, au-dessus d'une toiture en tuiles, à Saint-Germain-du-Puch",
+  },
+  {
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-3.webp',
+    w: 1200,
+    h: 1600,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: "Angle sous le débord de toit",
+    lieu: 'Saint-Germain-du-Puch',
+    alt: "Angle d'une surélévation en bardage métal aspect bois sous le débord de toit, échafaudage le long de la façade, à Saint-Germain-du-Puch",
+  },
+  {
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-4.webp',
+    w: 1200,
+    h: 1600,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Pan de bardage vertical',
+    lieu: 'Saint-Germain-du-Puch',
+    alt: "Pan de bardage métal vertical aspect bois d'une surélévation, posé au-dessus des tuiles, à Saint-Germain-du-Puch",
+  },
+  {
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-5.webp',
+    w: 1020,
+    h: 1360,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Rencontre avec la façade enduite',
+    lieu: 'Saint-Germain-du-Puch',
+    alt: "Bardage métal aspect bois d'une surélévation rencontrant une façade enduite et une toiture en tuiles, à Saint-Germain-du-Puch",
+  },
+  {
+    src: '/images/realisations/bardage-metal-surelevation-saint-germain-du-puch-6.webp',
+    w: 867,
+    h: 1156,
+    cat: 'extensions',
+    categorie: 'Extensions',
+    titre: 'Vue depuis le jardin',
+    lieu: 'Saint-Germain-du-Puch',
+    alt: "Surélévation en bardage aspect bois vue depuis le jardin, au-dessus d'une maison enduite, à Saint-Germain-du-Puch",
+  },
   {
     src: '/images/realisations/carport-aluminium-led-les-billaux-1.webp',
     w: 1600,
@@ -597,7 +657,7 @@ export default function RealisationsPage() {
               Nos réalisations à Libourne et en Gironde
             </h1>
             <p className="font-body-lg text-body-lg text-white/85 max-w-2xl">
-              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Seize chantiers racontés
+              Carports, pergolas, terrasses, extensions et constructions à ossature bois. Dix-sept chantiers racontés
               avec leur commune, leur contrainte et leur durée.
             </p>
           </div>
@@ -644,7 +704,7 @@ export default function RealisationsPage() {
                 Ce que nous avons bâti
               </span>
               <h2 className="font-headline-md text-headline-md text-primary mt-4 mb-6">
-                Seize chantiers, seize contraintes différentes
+                Dix-sept chantiers, dix-sept contraintes différentes
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
                 Un étage en ossature bois ajouté à une maison du{' '}

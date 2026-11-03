@@ -2343,6 +2343,18 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-19 | publié  | Sur quoi poser un abri de jardin en bois : dalle, plots, longrines ou vis de fondation ? | fondation-abri-jardin-bois-dalle-plots |
 | 2026-10-24 | publié  | Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle | condensation-veranda-aluminium-hiver |
 | 2026-11-01 | publié  | Extension en ossature bois : le raccord avec la maison, là où tout se joue | raccord-extension-ossature-bois-maison-existante |
+| 2026-11-03 | publié  | Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium | veranda-sur-terrasse-existante-dalle |
+
+**Run du 03/11/2026 : publié après validation de David.** Images : cover et vue
+intérieure de véranda en libre de droits (Unsplash, profilés blancs, matière non
+affirmée), aucune photo maison de véranda disponible. Test de cadence
+passé sur la version commitée (aucune entrée du 03/11 ni du 02/11). Le 01/11 étant
+bois, sujet aluminium. Réserve vide : angle trouvé par recoupement, le sol sous une
+véranda neuve n'étant traité que pour le remplacement d'une ancienne véranda.
+Maillage 4 bis : liens depuis `veranda-aluminium-isolation-urbanisme-budget`
+(« Reste le support ») et `remplacer-veranda-ancienne-aluminium-renovation`
+(« Reposer sur une dalle qu'on n'a pas coulée »). Seule source : taxe d'aménagement
+(economie.gouv.fr, F23263), sans montant. Aucune épaisseur, charge, DTU ni prix.
 
 **Run du 01/11/2026 : publié après validation de David.** Reprise du brouillon
 préparé le 31/10, redaté au 01/11. 200 aux trois contrôles, IndexNow 200, indexation

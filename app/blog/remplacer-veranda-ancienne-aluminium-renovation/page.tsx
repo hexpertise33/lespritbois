@@ -544,6 +544,10 @@ export default function ArticleRemplacerVerandaPage() {
                 <a href="/blog/poser-pergola-aluminium-terrasse-bois-existante" className={lienInterne}>
                   poser une pergola aluminium sur une terrasse existante
                 </a>{' '}
+                ou pour{' '}
+                <a href="/blog/veranda-sur-terrasse-existante-dalle" className={lienInterne}>
+                  installer une véranda neuve sur une terrasse carrelée
+                </a>{' '}
                 : la charge doit descendre jusqu&apos;à quelque chose qui ne bouge pas, et on ne le suppose jamais, on
                 le vérifie.
               </p>

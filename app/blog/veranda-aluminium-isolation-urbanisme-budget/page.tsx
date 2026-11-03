@@ -641,8 +641,11 @@ export default function ArticleVerandaAluminiumPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Reste le support. Une véranda repose sur une dalle et des fondations dimensionnées pour porter la
-                structure et les vitrages, donc sur une étude du sol et des niveaux, avec un soubassement qui met le
+                Reste le support. Une véranda repose sur{' '}
+                <a href="/blog/veranda-sur-terrasse-existante-dalle" className={lienInterne}>
+                  une dalle et des fondations dimensionnées pour porter la structure et les vitrages
+                </a>
+                , donc sur une étude du sol et des niveaux, avec un soubassement qui met le
                 seuil hors d&apos;eau. En Gironde, entre sols argileux sujets au retrait-gonflement et terrains en
                 pente, ce poste n&apos;est jamais une formalité : c&apos;est souvent lui qui explique l&apos;écart entre
                 deux devis. Nous le traitons dans la continuité de nos autres ouvrages d&apos;

@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'veranda-sur-terrasse-existante-dalle',
+    titre: "Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium",
+    extrait:
+      "Une véranda aluminium ne se pose pas sur une terrasse, elle se pose sur une dalle : votre terrasse existante ne peut jouer ce rôle que si elle passe quatre examens, la portance des rives, l'absence de mouvement, une pente et un niveau compatibles avec le seuil de la maison, et un sol que l'on peut isoler. Sinon on la reprend ou on la démolit, et c'est souvent ce poste qui décide du confort de la pièce en Gironde.",
+    date: '2026-11-03',
+    categorie: 'Guide · Vérandas aluminium',
+    image: '/images/blog/veranda-sur-terrasse-existante-dalle/veranda-structure-blanche-accolee-maison-vue-jardin.webp',
+    imageLargeur: 1200,
+    imageHauteur: 800,
+  },
+  {
     slug: 'raccord-extension-ossature-bois-maison-existante',
     titre: 'Extension en ossature bois : le raccord avec la maison, là où tout se joue',
     extrait:

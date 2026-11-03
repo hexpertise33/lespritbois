@@ -2347,7 +2347,10 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 
 **Run du 03/11/2026 : publié après validation de David.** Images : cover et vue
 intérieure de véranda en libre de droits (Unsplash, profilés blancs, matière non
-affirmée), aucune photo maison de véranda disponible. Test de cadence
+affirmée), aucune photo maison de véranda disponible. Commit `b88c871`, version
+Cloudflare `64a0aa79`, **200 confirmé trois fois**, images et deux articles maillés
+en 200. **IndexNow 200. Search Console : « Indexation demandée » vue à l'écran**
+(`/u/1/`, champ d'inspection en haut). Prochain article : **bois**. Test de cadence
 passé sur la version commitée (aucune entrée du 03/11 ni du 02/11). Le 01/11 étant
 bois, sujet aluminium. Réserve vide : angle trouvé par recoupement, le sol sous une
 véranda neuve n'étant traité que pour le remplacement d'une ancienne véranda.

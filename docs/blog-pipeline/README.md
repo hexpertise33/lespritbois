@@ -2346,7 +2346,9 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-03 | publié  | Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium | veranda-sur-terrasse-existante-dalle |
 | 2026-11-05 | publié  | Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ? | renover-bardage-bois-facade |
 
-**Run du 05/11/2026 : publié après validation de David.** Test de cadence
+**Run du 05/11/2026 : publié après validation de David.** Commit `dcf1595`,
+version Cloudflare `0f767f03`, **200 confirmé trois fois**. **IndexNow 200. Search
+Console : « Indexation demandée » vue à l'écran** (`/u/1/`, loupe en haut). Test de cadence
 passé sur la version commitée (aucune entrée du 05/11 ni du 04/11). Le 03/11 étant
 alu, sujet bois. Réserve vide : angle trouvé par recoupement, aucun article ne
 traitant la rénovation d'un bardage existant (`bardage-bois-facade-essences-pose`

@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'renover-bardage-bois-facade',
+    titre: 'Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ?',
+    extrait:
+      "Gris, noirci ou verdi, un bardage bois se nettoie : la couleur n'est presque jamais le problème. Ce qui décide entre nettoyer, remplacer des lames ou tout refaire, c'est l'état du pied de bardage, de la lame d'air, des tasseaux et du pare-pluie, le diagnostic d'un artisan à Libourne, en Gironde.",
+    date: '2026-11-05',
+    categorie: 'Guide · Bardage bois',
+    image: '/images/blog/renover-bardage-bois-facade/facade-bardage-bois-grise-lames-voilees.webp',
+    imageLargeur: 1200,
+    imageHauteur: 750,
+  },
+  {
     slug: 'veranda-sur-terrasse-existante-dalle',
     titre: "Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium",
     extrait:

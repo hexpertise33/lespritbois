@@ -2344,6 +2344,20 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-10-24 | publié  | Condensation dans une véranda en hiver : d'où vient la buée, et quand c'est la structure qui parle | condensation-veranda-aluminium-hiver |
 | 2026-11-01 | publié  | Extension en ossature bois : le raccord avec la maison, là où tout se joue | raccord-extension-ossature-bois-maison-existante |
 | 2026-11-03 | publié  | Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium | veranda-sur-terrasse-existante-dalle |
+| 2026-11-05 | publié  | Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ? | renover-bardage-bois-facade |
+
+**Run du 05/11/2026 : publié après validation de David.** Test de cadence
+passé sur la version commitée (aucune entrée du 05/11 ni du 04/11). Le 03/11 étant
+alu, sujet bois. Réserve vide : angle trouvé par recoupement, aucun article ne
+traitant la rénovation d'un bardage existant (`bardage-bois-facade-essences-pose`
+couvre la pose neuve, `traiter-bois-exterieur-avant-hiver` les produits). Seule
+source : R*421-17 / F17578, sans chiffre. Maillage 4 bis : liens depuis
+`bardage-bois-facade-essences-pose` (« Un bardage gris n'est pas un bardage
+abîmé ») et `traiter-bois-exterieur-avant-hiver` (points singuliers du bardage).
+Images : cover et figures 1 à 3 Pexels (16218524, 38071063, 20015796, 35651411),
+figure 4 Flickr NPS CC BY 2.0 (bardeaux, crédit en légende), figure 5 chantier
+maison (pare-pluie, commune inconnue). **Aucune photo maison de bardage abîmé** :
+à photographier sur un prochain chantier de rénovation. Prochain article : **alu**.
 
 **Run du 03/11/2026 : publié après validation de David.** Images : cover et vue
 intérieure de véranda en libre de droits (Unsplash, profilés blancs, matière non

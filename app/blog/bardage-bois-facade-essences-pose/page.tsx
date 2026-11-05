@@ -536,7 +536,12 @@ export default function ArticleBardageBoisFacadePage() {
                 </strong>{' '}
                 Le gris est la réaction naturelle du bois aux UV et à la pluie. Il ne concerne que les premiers dixièmes
                 de millimètre de la surface et n&apos;entame en rien la solidité des lames. Un bardage gris n&apos;est
-                pas un bardage abîmé : c&apos;est un bardage qui a vécu quelques hivers.
+                pas un bardage abîmé : c&apos;est un bardage qui a vécu quelques hivers, et les vrais signes
+                d&apos;usure se lisent ailleurs, comme on le détaille pour{' '}
+                <a href="/blog/renover-bardage-bois-facade" className={lienInterne}>
+                  rénover un bardage bois abîmé
+                </a>
+                .
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 Ce qui se décide, en réalité, c&apos;est votre rapport à cette évolution. Quatre postures se tiennent :

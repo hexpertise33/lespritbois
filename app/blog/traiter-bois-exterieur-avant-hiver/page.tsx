@@ -550,7 +550,11 @@ export default function ArticleTraiterBoisAvantHiverPage() {
                 <a href="/blog/bardage-bois-facade-essences-pose" className={lienInterne}>
                   bardage bois en façade
                 </a>{' '}
-                : bas de bardage, appuis de fenêtre, retours de tableau.
+                : bas de bardage, appuis de fenêtre, retours de tableau, les premiers endroits à examiner pour{' '}
+                <a href="/blog/renover-bardage-bois-facade" className={lienInterne}>
+                  diagnostiquer un bardage bois abîmé
+                </a>
+                .
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 <strong className="text-primary font-semibold">La clôture et le brise-vue</strong> forment un cas à part.

@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'store-banne-ou-pergola-bioclimatique',
+    titre: "Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames",
+    extrait:
+      "Un store banne fait de l'ombre mais se replie au premier vent et sous l'averse ; une pergola bioclimatique aluminium couvre la terrasse au soleil comme sous la pluie, au prix d'un ouvrage, d'une étude et d'une formalité d'urbanisme. Vent, pluie, chaleur, façade, entretien : quand garder la toile et quand passer aux lames, le verdict d'un artisan à Libourne (Gironde).",
+    date: '2026-11-07',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/blog/store-banne-ou-pergola-bioclimatique/pergola-bioclimatique-lames-orientables-terrasse-couverte.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'renover-bardage-bois-facade',
     titre: 'Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ?',
     extrait:

@@ -527,7 +527,11 @@ export default function ArticleTerrasseBoisCaniculePage() {
                 </a>
                 . Le store banne est plus léger, rétractable et beaucoup moins engageant, mais il se rentre au vent :
                 utile, il ne protège pas la terrasse quand elle en aurait le plus besoin, lors des coups de vent
-                d&apos;orage. La voile d&apos;ombrage reste l&apos;option économique et démontable, à condition
+                d&apos;orage (c&apos;est tout l&apos;enjeu du choix entre{' '}
+                <a href="/blog/store-banne-ou-pergola-bioclimatique" className={lienInterne}>
+                  store banne et pergola bioclimatique
+                </a>
+                ). La voile d&apos;ombrage reste l&apos;option économique et démontable, à condition
                 d&apos;avoir des points d&apos;ancrage réellement solides.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">

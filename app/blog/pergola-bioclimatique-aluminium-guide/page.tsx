@@ -393,7 +393,12 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 C&apos;est la différence de fond avec les deux autres familles de pergolas : une pergola à{' '}
                 <strong className="text-primary font-semibold">toile</strong> se replie mais n&apos;offre qu&apos;un
-                réglage tout ou rien, et sa toile vieillit ; une pergola à{' '}
+                réglage tout ou rien, et sa toile vieillit (la même limite que celle d&apos;un store banne, que nous
+                comparons à la bioclimatique dans{' '}
+                <a href="/blog/store-banne-ou-pergola-bioclimatique" className={lienInterne}>
+                  store banne ou pergola bioclimatique
+                </a>
+                ) ; une pergola à{' '}
                 <strong className="text-primary font-semibold">toiture fixe</strong> (panneaux, tuiles, bac acier)
                 protège bien mais plonge la pièce voisine dans l&apos;ombre toute l&apos;année, à moins de jouer sur le
                 matériau du couvert : c&apos;est tout l&apos;objet de notre guide sur{' '}

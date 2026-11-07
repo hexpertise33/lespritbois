@@ -2345,6 +2345,23 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-01 | publié  | Extension en ossature bois : le raccord avec la maison, là où tout se joue | raccord-extension-ossature-bois-maison-existante |
 | 2026-11-03 | publié  | Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium | veranda-sur-terrasse-existante-dalle |
 | 2026-11-05 | publié  | Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ? | renover-bardage-bois-facade |
+| 2026-11-07 | publié  | Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames | store-banne-ou-pergola-bioclimatique |
+
+**Run du 07/11/2026 : préparé, en attente de validation de David.** Test de cadence
+passé sur la version commitée (aucune entrée du 07/11 ni du 06/11). Le 05/11 étant
+bois, sujet aluminium. Réserve vide : angle trouvé par recoupement, aucun article ne
+comparant store banne et pergola bioclimatique (seules mentions : une ligne du guide
+canicule et une du guide bioclimatique). Sources : NF EN 13561 (classes de résistance
+au vent 0 à 3, sans vitesse chiffrée), R*421-17 / F17578 pour la déclaration
+préalable du store banne. Aucun prix ni seuil. Le texte ne dit pas si nous vendons
+des stores bannes. Maillage 4 bis : liens depuis `proteger-terrasse-bois-canicule-entretien-ete`
+(« il se rentre au vent ») et `pergola-bioclimatique-aluminium-guide` (pergola à toile,
+« sa toile vieillit »). Images : cover Pexels 33993508 (terrasse de restaurant, sans
+lieu), store banne Unsplash EhFVTo6r9Yk, contre-plongée Wikimedia CC BY-SA 4.0
+(AgostiniJulien, crédit en légende), deux visuels fabricant LI-SU, un détail du
+chantier de Saint-Pey-de-Castets (toiture en panneaux). **Aucune photo maison de
+pergola bioclimatique à lames** : à photographier sur un prochain chantier.
+Prochain article : **bois**.
 
 **Run du 05/11/2026 : publié après validation de David.** Commit `dcf1595`,
 version Cloudflare `0f767f03`, **200 confirmé trois fois**. **IndexNow 200. Search

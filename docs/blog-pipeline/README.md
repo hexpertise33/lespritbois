@@ -2347,7 +2347,9 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-05 | publié  | Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ? | renover-bardage-bois-facade |
 | 2026-11-07 | publié  | Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames | store-banne-ou-pergola-bioclimatique |
 
-**Run du 07/11/2026 : préparé, en attente de validation de David.** Test de cadence
+**Run du 07/11/2026 : publié après validation de David.** Commit `94682e4`,
+version Cloudflare `3e0df18a`, **200 confirmé trois fois**. **IndexNow 200. Search
+Console : « Indexation demandée » vue à l'écran** (`/u/1/`, champ d'inspection en haut). Test de cadence
 passé sur la version commitée (aucune entrée du 07/11 ni du 06/11). Le 05/11 étant
 bois, sujet aluminium. Réserve vide : angle trouvé par recoupement, aucun article ne
 comparant store banne et pergola bioclimatique (seules mentions : une ligne du guide

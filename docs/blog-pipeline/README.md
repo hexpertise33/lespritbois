@@ -2350,6 +2350,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 
 **Run du 09/11/2026 : publié sans relecture préalable, sur instruction explicite de
 David en conversation** (« débrouille-toi tout seul jusqu'à la fin », redit deux fois).
+Commit `05f2d7e`, **200 confirmé trois fois**, **IndexNow 200, Search Console :
+« Indexation demandée » vue à l'écran** (`/u/1/`, champ d'inspection en haut).
 Test de cadence passé sur la version commitée (aucune entrée du 09/11 ni du 08/11).
 Le 07/11 étant alu, sujet bois. Réserve vide : angle trouvé par recoupement, la forme
 du toit d'une extension n'étant évoquée qu'en une ligne (garage, véranda ou extension)

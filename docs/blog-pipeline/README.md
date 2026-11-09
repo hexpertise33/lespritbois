@@ -2346,6 +2346,25 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-03 | publié  | Poser une véranda sur sa terrasse existante : ce que le sol doit valoir avant l'aluminium | veranda-sur-terrasse-existante-dalle |
 | 2026-11-05 | publié  | Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ? | renover-bardage-bois-facade |
 | 2026-11-07 | publié  | Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames | store-banne-ou-pergola-bioclimatique |
+| 2026-11-09 | publié  | Extension en ossature bois : toit plat, monopente ou deux pentes ? | toiture-extension-ossature-bois-toit-plat-ou-pente |
+
+**Run du 09/11/2026 : publié sans relecture préalable, sur instruction explicite de
+David en conversation** (« débrouille-toi tout seul jusqu'à la fin », redit deux fois).
+Test de cadence passé sur la version commitée (aucune entrée du 09/11 ni du 08/11).
+Le 07/11 étant alu, sujet bois. Réserve vide : angle trouvé par recoupement, la forme
+du toit d'une extension n'étant évoquée qu'en une ligne (garage, véranda ou extension)
+et le raccord de toit plat traité seulement côté mur dans l'article du 01/11.
+Sources : NF DTU 43.4 (toitures inaccessibles uniquement, toiture chaude ou froide,
+page FFB « Toitures terrasses bois ») ; L111-16 / L111-17 du code de l'urbanisme
+(rapport du 120e Congrès des notaires). Aucune pente, épaisseur, durée ni prix.
+Maillage 4 bis : liens depuis `veranda-ou-extension-ossature-bois` (« grande liberté
+de toiture ») et `garage-ossature-bois-permis-dalle-budget` (« toit plat ou
+monopente »). Images : 100 % photos maison ; cover = recadrage inédit de
+`garages-abris/toit-plat-etancheite-membrane-1.webp` (Saint-André-de-Cubzac, commune
+déjà attestée sur `/garages-abris-jardin`). ⚠️ La figure monopente
+(`source-adefrance/aggrandissement-accueil.webp`) ne fait que 768 px ; aucune photo
+maison d'une extension à deux pentes : la figure 4 montre la reprise de couverture
+de Génissac. Prochain article : **aluminium**.
 
 **Run du 07/11/2026 : publié après validation de David.** Commit `94682e4`,
 version Cloudflare `3e0df18a`, **200 confirmé trois fois**. **IndexNow 200. Search

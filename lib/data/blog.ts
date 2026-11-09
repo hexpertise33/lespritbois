@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'toiture-extension-ossature-bois-toit-plat-ou-pente',
+    titre: 'Extension en ossature bois : toit plat, monopente ou deux pentes ?',
+    extrait:
+      "La forme du toit d'une extension en ossature bois se lit sur la maison existante : toit plat quand la hauteur manque sous l'égout ou les fenêtres, monopente quand elle existe, deux pentes quand l'extension prolonge un pignon. Le PLU de votre commune peut ensuite trancher, et un toit plat n'est ni moins cher ni plus fragile par défaut.",
+    date: '2026-11-09',
+    categorie: 'Guide · Ossature bois',
+    image: '/images/blog/toiture-extension-ossature-bois-toit-plat-ou-pente/toit-plat-membrane-extension-entre-toitures-tuiles.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'store-banne-ou-pergola-bioclimatique',
     titre: "Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames",
     extrait:

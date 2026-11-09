@@ -568,7 +568,11 @@ export default function ArticleGarageOssatureBoisPage() {
                 volume sous rampant, utile pour stocker. Le{' '}
                 <strong className="text-primary font-semibold">toit plat ou monopente</strong> convient aux maisons
                 contemporaines et aux implantations contraintes en hauteur, sous réserve que le PLU l&apos;autorise et que
-                l&apos;étanchéité et les évacuations soient traitées sérieusement. Une{' '}
+                l&apos;étanchéité et les évacuations soient traitées sérieusement (c&apos;est le même arbitrage que pour{' '}
+                <a href="/blog/toiture-extension-ossature-bois-toit-plat-ou-pente" className={lienInterne}>
+                  le toit d&apos;une extension en ossature bois, plat ou en pente
+                </a>
+                ). Une{' '}
                 <a
                   href="https://toitplataquitaine.com/services/etancheite-toit-plat-epdm/"
                   className={lienInterne}

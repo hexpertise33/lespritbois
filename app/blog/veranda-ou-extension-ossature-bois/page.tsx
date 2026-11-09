@@ -480,7 +480,11 @@ export default function ArticleVerandaOuExtensionBoisPage() {
                 L&apos;<strong className="text-primary font-semibold">extension en ossature bois</strong> joue une tout
                 autre partition. Elle offre une enveloppe isolée homogène (murs, toiture et plancher traités avec la
                 même logique), des murs porteurs contre lesquels on peut tout poser, une grande liberté de toiture
-                (toit plat, monopente, prolongement de la pente existante), un vrai sur-mesure au centimètre puisque
+                (
+                <a href="/blog/toiture-extension-ossature-bois-toit-plat-ou-pente" className={lienInterne}>
+                  toit plat, monopente ou prolongement de la pente existante
+                </a>
+                ), un vrai sur-mesure au centimètre puisque
                 l&apos;ossature se dessine avant d&apos;être fabriquée, et un bilan carbone favorable, le bois stockant
                 du carbone au lieu d&apos;en émettre pour être produit.
               </p>

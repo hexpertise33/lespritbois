@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import ChampPiege from '@/components/ChampPiege';
+import { CHAMP_PIEGE, MESSAGE_LIEN_REFUSE, contientLien, piegeRempli } from '@/lib/antispam';
 import { reportFormConversion } from '@/lib/gtag';
 
 type Etat = 'idle' | 'loading' | 'success' | 'error';
@@ -23,6 +25,16 @@ export default function ContactForm({ pageLabel }: { pageLabel?: string }) {
 
     try {
       const donnees = Object.fromEntries(new FormData(e.currentTarget));
+
+      // Robot : on affiche le message de réussite sans rien envoyer et, surtout,
+      // sans déclencher la conversion Google Ads.
+      if (piegeRempli(donnees[CHAMP_PIEGE])) {
+        setEtat('success');
+        return;
+      }
+      if (contientLien(donnees.message)) {
+        throw new Error(MESSAGE_LIEN_REFUSE);
+      }
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -34,7 +46,9 @@ export default function ContactForm({ pageLabel }: { pageLabel?: string }) {
         throw new Error(data?.error ?? "Une erreur est survenue lors de l'envoi.");
       }
 
+      const reponse = (await res.json().catch(() => null)) as { ignore?: boolean } | null;
       setEtat('success');
+      if (reponse?.ignore) return;
       // Conversion Google Ads : le formulaire a bien été envoyé.
       reportFormConversion();
     } catch (err) {
@@ -57,6 +71,7 @@ export default function ContactForm({ pageLabel }: { pageLabel?: string }) {
 
   return (
     <form className="space-y-8" onSubmit={onSubmit}>
+      <ChampPiege />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-2">
           <label className="font-label-md text-label-md text-primary" htmlFor="projet">

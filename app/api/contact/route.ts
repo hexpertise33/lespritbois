@@ -1,5 +1,6 @@
 import { Resend } from 'resend';
 import { CONTACT } from '@/lib/data/navigation';
+import { CHAMP_PIEGE, MESSAGE_LIEN_REFUSE, contientLien, piegeRempli } from '@/lib/antispam';
 
 /** Resend rejette l'envoi entier si l'en-tête Reply-To est malformé. On ne le
  *  pose donc qu'après ce contrôle : mieux vaut un lead sans adresse de réponse
@@ -19,11 +20,23 @@ export async function POST(request: Request) {
     string | undefined
   >;
 
+  // Robot pris au piège : on répond « ok » pour qu'il ne réessaie pas, sans rien
+  // envoyer. `ignore` dit aux formulaires de ne pas compter de conversion.
+  if (piegeRempli((body as Record<string, unknown>)[CHAMP_PIEGE])) {
+    return Response.json({ ok: true, ignore: true });
+  }
+
   if (!nom?.trim() || !tel?.trim() || !message?.trim()) {
     return Response.json(
       { error: 'Les champs nom, téléphone et message sont obligatoires.' },
       { status: 400 }
     );
+  }
+
+  // Un lien dans la demande : quasi toujours un spam publicitaire. Refus
+  // explicite plutôt que silencieux, pour qu'un vrai client puisse corriger.
+  if ([nom, message, commune].some(contientLien)) {
+    return Response.json({ error: MESSAGE_LIEN_REFUSE }, { status: 400 });
   }
 
   if (!process.env.RESEND_API_KEY) {

@@ -100,7 +100,7 @@ const ETAPES = [
     icone: "construction",
     titre: "Le montage et les finitions",
     texte:
-      "La même équipe lève, couvre, bardage et finitions. Hors d'eau hors d'air ou clé en main, vous choisissez où nous nous arrêtons.",
+      "La même équipe lève, couvre, barde et pose les menuiseries extérieures, jusqu'à la mise hors d'eau hors d'air. Le second œuvre revient ensuite aux artisans de votre choix.",
   },
   {
     icone: "shield",

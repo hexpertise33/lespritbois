@@ -37,11 +37,11 @@ const FAQ = [
   },
   {
     q: "Livrez-vous hors d'eau hors d'air ou clé en main ?",
-    r: "Les deux, et c'est à décider au départ. Le hors d'eau hors d'air est notre mission par défaut : vous confiez le second œuvre à vos propres artisans. Le clé en main se convient dès le devis, pas en cours de chantier. Clérac a été livrée hors d'eau hors d'air, Génissac et Rauzan sont allées jusqu'aux finitions.",
+    r: "Hors d'eau hors d'air, c'est notre mission : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Nous ne faisons pas de clé en main : le second œuvre (cloisons, électricité, plomberie, chauffage, revêtements) revient aux artisans de votre choix, ce qui vous laisse la main sur les finitions et sur leur budget.",
   },
   {
     q: "Combien de temps dure le chantier ?",
-    r: "Trois semaines à Clérac en hors d'eau hors d'air, un mois à Génissac en clé en main, un mois et demi à Rauzan pour une maison de 150 m² finie. Ces durées sont celles du chantier lui-même, une fois la conception arrêtée et l'autorisation d'urbanisme obtenue.",
+    r: "Trois semaines à Clérac, un mois à Génissac, un mois et demi à Rauzan pour une maison de 150 m². Ces durées sont celles du chantier lui-même, une fois la conception arrêtée et l'autorisation d'urbanisme obtenue.",
   },
   {
     q: "Peut-on greffer une extension bois sur une maison en pierre ?",
@@ -245,7 +245,7 @@ const CHANTIERS = [
     titre: 'Garder la toiture, malgré ses écarts',
     texte:
       "Le client tenait à conserver sa toiture. Elle avait bougé : les relevés ne donnaient pas les mêmes cotes d'un bout à l'autre du rampant. Poser une ossature sur des cotes théoriques aurait produit un décalage visible dès la première panne. Nous avons relevé point par point avant de dessiner, puis absorbé les écarts dans la structure plutôt que dans les finitions.",
-    duree: 'Un mois, livrée clé en main',
+    duree: 'Un mois de chantier',
     src: '/images/blog/extension-ossature-bois-prix-m2/extension-ossature-bois-chantier-gironde.jpg',
     w: 1200,
     h: 900,
@@ -257,7 +257,7 @@ const CHANTIERS = [
     titre: 'Quand agrandir devient construire',
     texte:
       "Il ne s'agissait plus d'agrandir mais de bâtir : 150 m² de maison et garage, mêlant ossature bois et maçonnerie traditionnelle. Faire cohabiter deux modes constructifs suppose de caler très tôt les niveaux finis et les épaisseurs d'enveloppe. Ce qui n'est pas arbitré au dessin se rattrape en fin de chantier, et se rattrape mal.",
-    duree: 'Un mois et demi, livrée clé en main',
+    duree: 'Un mois et demi de chantier',
     src: '/images/chantiers/ossature-bois-bardage-douglas-facade-tuiles-gironde.webp',
     w: 1200,
     h: 900,
@@ -286,9 +286,9 @@ const ETAPES = [
   },
   {
     icone: 'handshake',
-    titre: 'On lève, on ferme, on vous rend les clés',
+    titre: 'On lève, on ferme, on vous passe la main',
     texte:
-      "Levage en quelques jours, puis mise hors d'eau hors d'air. Selon ce qui a été convenu, on s'arrête là ou on va jusqu'aux finitions.",
+      "Levage en quelques jours, puis mise hors d'eau hors d'air. Notre intervention s'arrête là : le second œuvre revient aux artisans de votre choix.",
   },
 ] as const;
 

@@ -355,11 +355,11 @@ export const ZONES: Zone[] = [
       },
     ],
     acces:
-      "Nous concevons et réalisons depuis l'atelier des Billaux, près de Libourne, et intervenons dans toute la Gironde. Sur les extensions et les constructions, nous livrons hors d'eau hors d'air ; le second œuvre revient aux artisans du client, sauf mission clé en main convenue au départ.",
+      "Nous concevons et réalisons depuis l'atelier des Billaux, près de Libourne, et intervenons dans toute la Gironde. Sur les extensions et les constructions, nous livrons hors d'eau hors d'air ; le second œuvre revient aux artisans du client.",
     faq: [
       {
         q: 'Construisez-vous des maisons bois neuves, ou seulement des extensions ?',
-        r: "Les deux. À Rauzan, nous avons conçu et construit un ensemble de 150 m², maison et garage, en ossature bois associée à une partie maçonnée, livré fini après un mois et demi de chantier. Aux Billaux, à côté de notre atelier, nous avons construit une maison en A à ossature bois. Génissac et Clérac montrent l'autre versant du métier : l'extension greffée sur une maison existante.",
+        r: "Les deux. À Rauzan, nous avons conçu et construit un ensemble de 150 m², maison et garage, en ossature bois associée à une partie maçonnée, en un mois et demi de chantier. Aux Billaux, à côté de notre atelier, nous avons construit une maison en A à ossature bois. Génissac et Clérac montrent l'autre versant du métier : l'extension greffée sur une maison existante.",
       },
       {
         q: 'Une maison à ossature bois convient-elle aux sols argileux de Gironde ?',
@@ -371,11 +371,11 @@ export const ZONES: Zone[] = [
       },
       {
         q: 'Livrez-vous hors d’eau hors d’air ou clé en main ?',
-        r: "Les deux existent dans nos chantiers. Clérac a été livrée hors d'eau hors d'air, Génissac et Rauzan sont allées jusqu'aux finitions. Le hors d'eau hors d'air est notre mission par défaut : il permet au client de confier le second œuvre à ses propres artisans. Le clé en main se convient au départ, pas en cours de route.",
+        r: "Hors d'eau hors d'air, c'est notre mission : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Nous ne faisons pas de clé en main : le second œuvre (cloisons, électricité, plomberie, chauffage, revêtements) revient aux artisans de votre choix, ce qui vous laisse la main sur les finitions et sur leur budget.",
       },
       {
         q: 'Combien de temps dure une extension à ossature bois ?',
-        r: "Trois semaines à Clérac en hors d'eau hors d'air, un mois à Génissac en clé en main, un mois et demi à Rauzan pour une maison de 150 m² finie. Ces durées sont celles du chantier, une fois la conception arrêtée et les autorisations obtenues.",
+        r: "Trois semaines à Clérac, un mois à Génissac, un mois et demi à Rauzan pour une maison de 150 m². Ces durées sont celles du chantier, une fois la conception arrêtée et les autorisations obtenues.",
       },
       {
         q: 'Peut-on greffer une extension bois sur une maison en pierre ?',
@@ -977,9 +977,9 @@ export const ZONES: Zone[] = [
         },
         {
           icone: 'check_circle',
-          titre: 'Jusqu\'où nous allons, vous le décidez',
+          titre: 'Jusqu\'où nous allons : hors d\'eau hors d\'air',
           texte:
-            "Hors d'eau hors d'air isolation comprise, et le second œuvre revient aux artisans de votre choix. Ou clé en main, finitions intérieures comprises, comme à Génissac et à Rauzan. Les deux se chiffrent, et le devis dit exactement ce que couvre chacun.",
+            "Fondations, ossature, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Le second œuvre revient aux artisans de votre choix : nous ne faisons pas de clé en main, et le devis dit exactement ce qu'il couvre.",
         },
       ],
     },
@@ -1120,7 +1120,7 @@ export const ZONES: Zone[] = [
       },
       {
         q: 'Construisez-vous aussi des maisons neuves, ou seulement des extensions ?',
-        r: "Les deux, et c'est le même métier. Notre chantier de Rauzan est une maison de 150 m² mêlant ossature bois et maçonnerie, conçue et réalisée par nos équipes. Dans les deux cas tout est sur mesure : la structure est en ossature bois, la toiture est traditionnelle ou en toit plat, l'isolation est en fibre de bois ou dans l'isolant de votre choix, et la finition extérieure se décide entre bardage bois, bardage métal, fibro-ciment et enduit. Nous posons aussi les menuiseries, en bois, en PVC ou en aluminium. Nous livrons hors d'eau hors d'air isolation comprise, ou clé en main si vous préférez.",
+        r: "Les deux, et c'est le même métier. Notre chantier de Rauzan est une maison de 150 m² mêlant ossature bois et maçonnerie, conçue et réalisée par nos équipes. Dans les deux cas tout est sur mesure : la structure est en ossature bois, la toiture est traditionnelle ou en toit plat, l'isolation est en fibre de bois ou dans l'isolant de votre choix, et la finition extérieure se décide entre bardage bois, bardage métal, fibro-ciment et enduit. Nous posons aussi les menuiseries, en bois, en PVC ou en aluminium. Nous livrons hors d'eau hors d'air isolation comprise ; le second œuvre revient ensuite aux artisans de votre choix.",
       },
       {
         q: 'Combien de temps dure le chantier, à une heure de votre atelier ?',

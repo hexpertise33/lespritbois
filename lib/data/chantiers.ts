@@ -182,13 +182,13 @@ export const CHANTIERS: Chantier[] = [
     h: 1100,
     alt: "Baie vitrée coulissante posée dans un bardage bois teinté, extension à ossature bois réalisée à Génissac",
     faits: [
-      { label: 'Ouvrage', valeur: 'Extension à ossature bois, clé en main' },
+      { label: 'Ouvrage', valeur: 'Extension à ossature bois' },
       { label: 'Particularité', valeur: 'Toiture existante conservée' },
       { label: 'Menuiserie', valeur: 'Baie coulissante toute hauteur' },
       { label: 'Durée', valeur: '1 mois' },
     ],
     paragraphes: [
-      "À Génissac, le client voulait une extension livrée clé en main, finitions comprises, et tenait à conserver la toiture existante plutôt qu'à la refaire.",
+      "À Génissac, le client tenait à conserver la toiture existante plutôt qu'à la refaire.",
       "C'est ce deuxième point qui a fait le chantier. La charpente en place avait bougé : elle n'était plus d'aplomb, et les relevés ne donnaient pas les mêmes cotes d'un bout à l'autre du rampant. Poser une ossature neuve sur des cotes théoriques aurait produit un décalage visible dès la première panne, impossible à rattraper ensuite.",
       "Nous avons donc relevé la toiture point par point avant de dessiner quoi que ce soit, puis absorbé les différences dans la structure neuve plutôt que dans les finitions. C'est plus long en préparation, mais c'est la seule manière d'obtenir un raccord qui paraît droit à l'œil une fois le chantier fini.",
       "L'extension est bardée en bois teinté et s'ouvre sur le jardin par une baie coulissante toute hauteur. Un mois de travail, de la conception aux finitions.",
@@ -206,14 +206,14 @@ export const CHANTIERS: Chantier[] = [
     faits: [
       { label: 'Ouvrage', valeur: 'Maison et garage, ensemble de 150 m²' },
       { label: 'Structure', valeur: 'Ossature bois et volume traditionnel' },
-      { label: 'Mission', valeur: 'Conception et réalisation jusqu\'aux finitions intérieures' },
+      { label: 'Mission', valeur: 'Conception et réalisation' },
       { label: 'Durée', valeur: '1 mois et demi' },
     ],
     paragraphes: [
-      "À Rauzan, il ne s'agissait pas d'agrandir mais de construire : un ensemble de 150 m², maison et garage, dont nous avons assuré la conception et la réalisation complètes, jusqu'aux finitions intérieures.",
+      "À Rauzan, il ne s'agissait pas d'agrandir mais de construire : un ensemble de 150 m², maison et garage, dont nous avons assuré la conception et la réalisation.",
       "Le projet mêle deux modes constructifs. L'essentiel du volume est en ossature bois. Une partie a été traitée en maçonnerie traditionnelle, là où le programme et le terrain le demandaient. Faire cohabiter les deux sur un même bâtiment suppose de caler très tôt les niveaux finis, les épaisseurs d'enveloppe et les points de raccord : ce qui n'est pas arbitré au dessin se rattrape en fin de chantier, et se rattrape mal.",
       "La façade est bardée en bois vertical, la couverture en tuiles, les menuiseries en aluminium noir.",
-      "Un mois et demi de chantier pour une maison livrée finie, avec un seul interlocuteur du premier plan à la dernière plinthe.",
+      "Un mois et demi de chantier, avec un seul interlocuteur du premier plan à la mise hors d'eau hors d'air.",
     ],
   },
   {

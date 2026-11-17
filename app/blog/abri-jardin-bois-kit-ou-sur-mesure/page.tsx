@@ -657,7 +657,7 @@ export default function ArticleAbriJardinBoisPage() {
                 Concrètement : nous venons voir le terrain, nous relevons les niveaux et l&apos;exposition, nous
                 conseillons l&apos;essence selon la classe d&apos;emploi, nous vérifions le PLU et montons le dossier de
                 déclaration préalable, puis nous fabriquons et posons un abri ancré pour durer. Un seul interlocuteur, de
-                l&apos;étude à la clé en main.
+                l&apos;étude à la pose.
               </p>
             </section>
           </div>

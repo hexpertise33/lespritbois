@@ -277,7 +277,7 @@ const FAMILLES = [
     h: 1200,
     alt: 'Maison à ossature bois bardée à Rauzan, menuiseries posées',
     produits: [
-      { nom: 'Ossature bois', href: '/constructions-bois' },
+      { nom: 'Maison ossature bois', href: '/constructeur-ossature-bois-gironde' },
       { nom: 'Maison en A', href: '/constructions-bois' },
       { nom: 'Extension & surélévation', href: '/devis-extension' },
     ],
@@ -422,8 +422,8 @@ const SECTEURS = [
   },
   {
     href: '/' + _ossature.slug,
-    titre: 'Ossature bois en Gironde',
-    texte: 'Extensions et maisons, conçues et assemblées à l’atelier.',
+    titre: 'Maisons bois en Gironde',
+    texte: 'Maisons et extensions à ossature bois, conçues et assemblées à l’atelier.',
     src: _ossature.cover, w: _ossature.coverW, h: _ossature.coverH, alt: _ossature.coverAlt,
     badge: null as string | null,
   },

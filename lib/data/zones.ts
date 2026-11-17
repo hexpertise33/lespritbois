@@ -265,14 +265,14 @@ export const ZONES: Zone[] = [
     article: 'en',
     projet: 'Ossature bois, Gironde',
     communes: ['Génissac', 'Rauzan', 'Libourne', 'Les Billaux', 'Coutras', 'Castillon-la-Bataille'],
-    title: 'Constructeur ossature bois en Gironde : extension et maison',
+    title: 'Constructeur maison bois en Gironde : ossature et extension',
     description:
-      "Extension et maison à ossature bois en Gironde : les chantiers de Génissac et Rauzan racontés en détail, du raccord sur l'existant à la maison de 150 m².",
+      "Constructeur de maisons bois et d'extensions à ossature bois en Gironde (33), près de Libourne : trois chantiers racontés, dont une maison de 150 m².",
     keywords:
-      'constructeur ossature bois Gironde, extension ossature bois Gironde, maison ossature bois Gironde, extension bois Libourne, constructeur bois Gironde, surélévation bois Gironde',
-    h1: 'Constructeur à ossature bois en Gironde',
+      'constructeur maison bois Gironde, maison bois Gironde, maison ossature bois Gironde, ossature bois 33, constructeur ossature bois Gironde, extension ossature bois Gironde, maison ossature bois Gironde, extension bois Libourne, constructeur bois Gironde, surélévation bois Gironde',
+    h1: 'Constructeur de maisons et d’extensions à ossature bois en Gironde',
     chapo:
-      "Une extension et une maison ne se jugent pas sur un catalogue mais sur des raccords. Voici trois chantiers (deux en Gironde, un juste de l'autre côté de la limite départementale) avec le point dur de chacun.",
+      "Maison neuve ou extension, une ossature bois ne se juge pas sur un catalogue mais sur ses raccords. Voici trois chantiers (deux en Gironde, un juste de l'autre côté de la limite départementale) avec le point dur de chacun.",
     cover: '/images/ossature-bois-isolation-fibre-gironde.webp',
     coverW: 1200,
     coverH: 900,
@@ -312,6 +312,14 @@ export const ZONES: Zone[] = [
         legende:
           'Génissac, plus tard : bardage et baie posés, terrasse en ferraillage. Les écarts du relevé ont été absorbés dans la structure, pas dans les finitions.',
       },
+      {
+        src: '/images/source-adefrance/mais-en-a-accueil.webp',
+        w: 768,
+        h: 512,
+        alt: "Maison en A à ossature bois construite par L'Esprit Bois aux Billaux, près de Libourne",
+        legende:
+          "Les Billaux, à côté de l'atelier : une maison en A. Murs et toiture ne font qu'un, la charpente descend jusqu'au sol.",
+      },
     ],
     chantiers: ['clerac', 'genissac', 'rauzan'],
     guides: [
@@ -333,10 +341,34 @@ export const ZONES: Zone[] = [
         pourquoi:
           'Ce que valent les essences de Nouvelle-Aquitaine en structure et en bardage.',
       },
+      {
+        slug: 'sol-argileux-gironde-etude-de-sol-extension',
+        titre: "Sol argileux en Gironde : l'étude de sol avant de construire",
+        pourquoi:
+          "Quand l'étude géotechnique est obligatoire, qui la fait, et ce que la légèreté de l'ossature bois change ou ne change pas.",
+      },
+      {
+        slug: 'termites-gironde-ouvrage-bois-prevention',
+        titre: 'Termites en Gironde : protéger un ouvrage bois',
+        pourquoi:
+          'Tout le département est en zone de surveillance : la prévention se joue à la conception, pas au produit de traitement.',
+      },
     ],
     acces:
       "Nous concevons et réalisons depuis l'atelier des Billaux, près de Libourne, et intervenons dans toute la Gironde. Sur les extensions et les constructions, nous livrons hors d'eau hors d'air ; le second œuvre revient aux artisans du client, sauf mission clé en main convenue au départ.",
     faq: [
+      {
+        q: 'Construisez-vous des maisons bois neuves, ou seulement des extensions ?',
+        r: "Les deux. À Rauzan, nous avons conçu et construit un ensemble de 150 m², maison et garage, en ossature bois associée à une partie maçonnée, livré fini après un mois et demi de chantier. Aux Billaux, à côté de notre atelier, nous avons construit une maison en A à ossature bois. Génissac et Clérac montrent l'autre versant du métier : l'extension greffée sur une maison existante.",
+      },
+      {
+        q: 'Une maison à ossature bois convient-elle aux sols argileux de Gironde ?',
+        r: "Oui, et c'est même un atout : l'ossature bois est légère et sollicite moins le terrain, ce qui allège souvent les fondations. Elle ne dispense pas pour autant de l'étude de sol : si la parcelle est en zone d'exposition moyenne ou forte au retrait-gonflement des argiles, l'étude géotechnique est obligatoire, quel que soit le matériau. Elle est réalisée par un bureau d'études indépendant, et nous construisons avec ses prescriptions.",
+      },
+      {
+        q: 'Et les termites, pour une construction bois en Gironde ?',
+        r: "Toute la Gironde est concernée : l'arrêté préfectoral du 12 février 2001 en fait une zone de surveillance et de lutte contre les termites, sur l'ensemble du département. La protection se joue d'abord à la conception : rupture de capillarité entre le sol et le bois, garde au sol, sous-faces ventilées, aucun bois ni débris laissé au contact de la terre. Le traitement de préservation adapté à la classe d'emploi vient en complément, jamais à la place.",
+      },
       {
         q: 'Livrez-vous hors d’eau hors d’air ou clé en main ?',
         r: "Les deux existent dans nos chantiers. Clérac a été livrée hors d'eau hors d'air, Génissac et Rauzan sont allées jusqu'aux finitions. Le hors d'eau hors d'air est notre mission par défaut : il permet au client de confier le second œuvre à ses propres artisans. Le clé en main se convient au départ, pas en cours de route.",

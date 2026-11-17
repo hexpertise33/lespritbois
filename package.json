@@ -14,8 +14,8 @@
     "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.20.13",
-    "next": "^16.4.2",
+    "@opennextjs/cloudflare": "^1.20.17",
+    "next": "^16.4.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "resend": "^4.0.0"
@@ -31,8 +31,8 @@
   },
   "allowScripts": {
     "fsevents@2.3.3": true,
-    "sharp@0.34.5": true,
     "esbuild@0.28.2": true,
-    "workerd@1.20261019.1": true
+    "sharp@0.35.5": true,
+    "workerd@1.20261117.1": true
   }
 }

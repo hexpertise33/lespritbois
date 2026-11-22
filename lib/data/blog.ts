@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'pergola-baie-vitree-lumiere-hiver',
+    titre: 'Une pergola devant la baie vitrée : la maison sera-t-elle plus sombre en hiver ?',
+    extrait:
+      "Couvrir une terrasse adossée, c'est couvrir la baie de la pièce de vie : la crainte de perdre la lumière en hiver est légitime, mais elle se règle à la conception. Orientation de la baie, type de couverture, avancée et hauteur, lames orientables ouvertes l'hiver et teintes claires : ce que nous regardons avant de dessiner une pergola à Libourne et en Gironde.",
+    date: '2026-11-22',
+    categorie: 'Guide · Pergolas aluminium',
+    image: '/images/blog/pergola-baie-vitree-lumiere-hiver/pergola-metallique-facade-baies-vitrees-ombres-soleil.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'toiture-extension-ossature-bois-toit-plat-ou-pente',
     titre: 'Extension en ossature bois : toit plat, monopente ou deux pentes ?',
     extrait:

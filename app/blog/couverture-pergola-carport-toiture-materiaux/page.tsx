@@ -420,7 +420,11 @@ export default function ArticleCouverturePergolaCarportPage() {
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 La <strong className="text-primary font-semibold">lumière</strong> est le critère le plus visible, et le
-                plus sous-estimé : couvrir une terrasse adossée, c&apos;est aussi assombrir la pièce qui donne dessus.
+                plus sous-estimé : couvrir une terrasse adossée, c&apos;est aussi{' '}
+                <a href="/blog/pergola-baie-vitree-lumiere-hiver" className={lienInterne}>
+                  assombrir la pièce qui donne dessus, surtout en hiver
+                </a>
+                .
                 Une cuisine qui prenait le jour par une baie vitrée peut se retrouver sombre à l&apos;année si la
                 couverture est opaque. La <strong className="text-primary font-semibold">chaleur</strong> ne se règle pas
                 comme la lumière : une couverture peut être parfaitement transparente et transformer le dessous en serre,

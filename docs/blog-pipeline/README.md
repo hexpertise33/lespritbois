@@ -2347,6 +2347,7 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-05 | publié  | Rénover un bardage bois abîmé : nettoyer, changer des lames ou tout refaire ? | renover-bardage-bois-facade |
 | 2026-11-07 | publié  | Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames | store-banne-ou-pergola-bioclimatique |
 | 2026-11-09 | publié  | Extension en ossature bois : toit plat, monopente ou deux pentes ? | toiture-extension-ossature-bois-toit-plat-ou-pente |
+| 2026-11-22 | publié  | Une pergola devant la baie vitrée : la maison sera-t-elle plus sombre en hiver ? | pergola-baie-vitree-lumiere-hiver |
 
 **Run du 09/11/2026 : publié sans relecture préalable, sur instruction explicite de
 David en conversation** (« débrouille-toi tout seul jusqu'à la fin », redit deux fois).

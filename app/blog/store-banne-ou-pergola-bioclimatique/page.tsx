@@ -475,7 +475,11 @@ export default function ArticleStoreBanneOuPergolaBioclimatiquePage() {
                 il assombrit aussi la pièce derrière la baie. Les lames se règlent à l&apos;angle près pour suivre le
                 soleil, et s&apos;ouvrent en grand en hiver pour laisser entrer la lumière dans la maison. Attention
                 quand même : une pergola fixe devant une baie reste une toiture, même ouverte. Si la pièce manque déjà
-                de jour, on en parle avant.
+                de jour, on en parle avant :{' '}
+                <a href="/blog/pergola-baie-vitree-lumiere-hiver" className={lienInterne}>
+                  garder la lumière d&apos;hiver derrière une pergola
+                </a>{' '}
+                se règle à la conception.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
                 <strong className="text-primary font-semibold">Le bruit.</strong> C&apos;est le revers honnête des lames

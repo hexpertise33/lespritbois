@@ -2349,6 +2349,18 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-09 | publié  | Extension en ossature bois : toit plat, monopente ou deux pentes ? | toiture-extension-ossature-bois-toit-plat-ou-pente |
 | 2026-11-22 | publié  | Une pergola devant la baie vitrée : la maison sera-t-elle plus sombre en hiver ? | pergola-baie-vitree-lumiere-hiver |
 
+**Run du 22/11/2026 : publié après validation de David.** Commit `12b1ecb`,
+version Cloudflare `a914f15a`, **200 confirmé trois fois**. **IndexNow 200, Search
+Console : « Indexation demandée » vue à l'écran** (`/u/1/`, champ d'inspection en haut).
+Test de cadence passé sur la version commitée (dernière entrée : 09/11). Article
+préparé le 18/11, resté non validé, repris et redaté au 22/11 dans `blog.ts`, le hero
+et le JSON-LD. Maillage 4 bis : liens depuis
+`couverture-pergola-carport-toiture-materiaux` et `store-banne-ou-pergola-bioclimatique`,
+vérifiés dans le HTML servi. Hauteurs solaires calculées (22° et 69° à Libourne), aucun
+prix ni seuil. Images : cover Pexels 7587884, une figure Pexels, une Wikimedia CC BY-SA
+4.0 (Belgacem-eljia, crédit en légende), deux photos du chantier de Saint-Pey-de-Castets,
+un visuel fournisseur LI-SU. Prochain article : **bois**.
+
 **Run du 09/11/2026 : publié sans relecture préalable, sur instruction explicite de
 David en conversation** (« débrouille-toi tout seul jusqu'à la fin », redit deux fois).
 Commit `05f2d7e`, **200 confirmé trois fois**, **IndexNow 200, Search Console :

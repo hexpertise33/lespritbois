@@ -8,6 +8,10 @@ import { reportFormConversion, reportLeadGenerated } from '@/lib/gtag';
 type Etat = 'idle' | 'loading' | 'success' | 'error';
 type InstanceId = 'haut' | 'milieu' | 'bas';
 
+/** Texte envoyé quand le formulaire court part sans message : l'API exige un
+ *  message, et le lead doit rester lisible dans la boîte de réception. */
+const MESSAGE_RAPPEL = 'Demande de rappel (formulaire court en haut de page, pas de message).';
+
 const PARAMETRES_SUIVIS = ['utm_source', 'utm_medium', 'utm_campaign', 'gclid'] as const;
 
 /**
@@ -38,11 +42,20 @@ export default function DevisForm({
   instanceId,
   projet,
   pageLabel,
+  variante = 'complet',
+  exempleProjet = 'Dimensions, délai, contraintes du terrain…',
 }: {
   instanceId: InstanceId;
   projet: string;
   pageLabel: string;
+  /** « court » : nom, téléphone, commune et un message facultatif, pour le haut
+   *  des pages d'annonces (ajouté le 26/11/2026 : le seul formulaire des pages
+   *  carports et vérandas était tout en bas d'une très longue page). */
+  variante?: 'complet' | 'court';
+  /** Exemple affiché dans le champ « Votre projet » de la variante courte. */
+  exempleProjet?: string;
 }) {
+  const court = variante === 'court';
   const [etat, setEtat] = useState<Etat>('idle');
   const [erreur, setErreur] = useState<string | null>(null);
 
@@ -53,6 +66,9 @@ export default function DevisForm({
 
     try {
       const donnees = Object.fromEntries(new FormData(e.currentTarget));
+      if (court && typeof donnees.message === 'string' && donnees.message.trim() === '') {
+        donnees.message = MESSAGE_RAPPEL;
+      }
 
       // Robot : on affiche le message de réussite sans rien envoyer et, surtout,
       // sans déclencher la conversion Google Ads.
@@ -93,13 +109,81 @@ export default function DevisForm({
 
   if (etat === 'success') {
     return (
-      <div className="space-y-4 text-center py-12">
+      <div className={`space-y-4 text-center ${court ? 'py-6' : 'py-12'}`}>
         <span className="material-symbols-outlined text-secondary-dark text-5xl" aria-hidden="true">check_circle</span>
         <h3 className="font-headline-sm text-headline-sm text-primary">Merci pour votre demande !</h3>
         <p className="text-on-surface-variant font-body-md text-body-md">
-          Nous revenons vers vous sous 48h avec une première estimation.
+          {court
+            ? 'Nous vous rappelons sous 48h pour parler de votre projet.'
+            : 'Nous revenons vers vous sous 48h avec une première estimation.'}
         </p>
       </div>
+    );
+  }
+
+  const champ =
+    'w-full border-b-2 border-surface-variant focus:border-secondary transition-colors py-2.5 px-0 bg-transparent outline-none placeholder:text-surface-dim';
+
+  if (court) {
+    return (
+      <form className="space-y-4 text-on-surface" onSubmit={onSubmit}>
+        <ChampPiege />
+        <div className="space-y-1">
+          <label className="font-label-md text-label-md text-primary" htmlFor={`nom-${instanceId}`}>
+            Nom
+          </label>
+          <input id={`nom-${instanceId}`} name="nom" className={champ} placeholder="Jean Dupont" type="text" autoComplete="name" required />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="space-y-1">
+            <label className="font-label-md text-label-md text-primary" htmlFor={`tel-${instanceId}`}>
+              Téléphone
+            </label>
+            <input id={`tel-${instanceId}`} name="tel" className={champ} placeholder="06 00 00 00 00" type="tel" autoComplete="tel" required />
+          </div>
+          <div className="space-y-1">
+            <label className="font-label-md text-label-md text-primary" htmlFor={`commune-${instanceId}`}>
+              Commune
+            </label>
+            <input
+              id={`commune-${instanceId}`}
+              name="commune"
+              className={champ}
+              placeholder="Libourne"
+              type="text"
+              autoComplete="address-level2"
+              required
+            />
+          </div>
+        </div>
+        <div className="space-y-1">
+          <label className="font-label-md text-label-md text-primary" htmlFor={`message-${instanceId}`}>
+            Votre projet <span className="text-on-surface-variant font-normal">(facultatif)</span>
+          </label>
+          <textarea
+            id={`message-${instanceId}`}
+            name="message"
+            className={`${champ} resize-none`}
+            placeholder={exempleProjet}
+            rows={2}
+          />
+        </div>
+        <button
+          className="w-full bg-primary text-on-primary py-4 rounded-xl font-label-md text-label-md shadow-lg hover:bg-secondary hover:text-primary transition-all disabled:opacity-60"
+          type="submit"
+          disabled={etat === 'loading'}
+        >
+          {etat === 'loading' ? 'Envoi en cours…' : 'Être rappelé gratuitement'}
+        </button>
+        {etat === 'error' && erreur && (
+          <p className="text-center text-sm text-red-600" role="alert">
+            {erreur}
+          </p>
+        )}
+        <p className="text-center text-xs text-on-surface-variant">
+          Sans engagement. Vos coordonnées ne servent qu&apos;à vous rappeler.
+        </p>
+      </form>
     );
   }
 

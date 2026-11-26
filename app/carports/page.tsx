@@ -487,7 +487,8 @@ export default function CarportsPage() {
             />
             <div className="absolute inset-0 hero-interne"></div>
           </div>
-          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
+          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 lg:grid lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-12 lg:items-center">
+            <div>
             <p className="font-label-md text-label-md text-white/60 mb-6">
               <a href="/" className="hover:text-secondary-fixed transition-colors">
                 Accueil
@@ -531,17 +532,17 @@ export default function CarportsPage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#devis-bas"
-                className="bg-secondary text-primary px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-secondary-fixed transition-all active:scale-95 shimmer-effect text-center"
-              >
-                Demander mon étude gratuite
-              </a>
-              <a
                 href="tel:+33557406580"
                 className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-5 rounded-xl font-label-md text-label-md hover:bg-white/20 transition-all text-center"
               >
                 05 57 40 65 80
               </a>
+            </div>
+            </div>
+            <div id="devis-haut" className="mt-12 lg:mt-0 bg-surface rounded-2xl p-6 md:p-8 shadow-2xl scroll-mt-28">
+              <p className="font-headline-sm text-headline-sm text-primary mb-1">Être rappelé sous 48h</p>
+              <p className="text-on-surface-variant text-body-md mb-5">Devis gratuit, sans engagement.</p>
+              <DevisForm instanceId="haut" projet={PROJET} pageLabel={PAGE_LABEL} variante="court" exempleProjet="Nombre de voitures, adossé ou autoporté, délai…" />
             </div>
           </div>
         </header>

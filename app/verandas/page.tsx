@@ -757,7 +757,8 @@ export default function VerandasPage() {
               <div className="absolute inset-0 bg-black/35 md:hidden"></div>
             </div>
           )}
-          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16">
+          <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-16 lg:grid lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-12 lg:items-center">
+            <div>
             <p className="font-label-md text-label-md text-white/60 mb-6">
               <a href="/" className="hover:text-secondary-fixed transition-colors">
                 Accueil
@@ -780,12 +781,6 @@ export default function VerandasPage() {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="#devis-bas"
-                className="inline-flex items-center gap-2 bg-secondary text-primary px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-white transition-colors"
-              >
-                Demander un devis gratuit
-              </a>
-              <a
                 href="#gammes"
                 className="inline-flex items-center gap-2 border border-white/30 text-white px-7 py-4 rounded-xl font-label-md text-label-md hover:bg-white hover:text-primary transition-colors"
               >
@@ -793,6 +788,12 @@ export default function VerandasPage() {
               </a>
             </div>
             {HERO && <p className="text-white/70 text-[14px] mt-8 italic">Photo du fabricant.</p>}
+            </div>
+            <div id="devis-haut" className="mt-12 lg:mt-0 bg-surface rounded-2xl p-6 md:p-8 shadow-2xl scroll-mt-28">
+              <p className="font-headline-sm text-headline-sm text-primary mb-1">Être rappelé sous 48h</p>
+              <p className="text-on-surface-variant text-body-md mb-5">Devis gratuit, sans engagement.</p>
+              <DevisForm instanceId="haut" projet={PROJET} pageLabel={PAGE_LABEL} variante="court" exempleProjet="Surface, pièce à agrandir, délai…" />
+            </div>
           </div>
         </header>
 

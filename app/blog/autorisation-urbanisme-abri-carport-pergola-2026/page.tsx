@@ -572,7 +572,12 @@ export default function ArticleAutorisationUrbanisme2026Page() {
                 </strong>,
                 sa zone, son règlement de lotissement et sa proximité éventuelle avec un monument ou un site
                 classé. Autour de Libourne, entre communes rurales, zones urbaines et abords du site UNESCO de
-                Saint-Émilion, deux terrains voisins peuvent relever de régimes différents.
+                Saint-Émilion, deux terrains voisins peuvent relever de régimes différents. Dans les communes de La Cali,
+                un règlement unique s&apos;applique désormais : nous détaillons{' '}
+                <a href="/blog/plui-libournais-extension-bois" className={lienInterne}>
+                  ce que le PLUi du Libournais change pour une extension bois
+                </a>
+                .
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
                 C&apos;est pourquoi nous <strong className="text-primary font-semibold">vérifions au cas par cas</strong>{' '}

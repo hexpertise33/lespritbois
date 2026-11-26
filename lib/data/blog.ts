@@ -17,6 +17,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'plui-libournais-extension-bois',
+    titre: 'Extension bois dans le Libournais : ce que le nouveau PLUi change à votre projet',
+    extrait:
+      "Dans les 45 communes de La Cali, le PLUi approuvé le 26 février 2026 admet le bardage bois à lames verticales dans les zones UB, UC, UD, UH, A et N, Pomerol ayant ses propres règles. Emprise, pleine terre, toit plat, zones agricoles, annexes et modification déjà engagée : ce qu'il faut lire avant de dessiner une extension en ossature bois à Libourne et dans le Libournais, en Gironde.",
+    date: '2026-11-26',
+    categorie: 'Guide · Ossature bois',
+    image: '/images/blog/plui-libournais-extension-bois/bardage-bois-lames-verticales-pignon-ossature-bois.webp',
+    imageLargeur: 1200,
+    imageHauteur: 646,
+  },
+  {
     slug: 'pergola-baie-vitree-lumiere-hiver',
     titre: 'Une pergola devant la baie vitrée : la maison sera-t-elle plus sombre en hiver ?',
     extrait:

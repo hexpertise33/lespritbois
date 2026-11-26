@@ -2348,6 +2348,8 @@ Statuts : `idée` · `proposé` · `publié` · `écarté`.
 | 2026-11-07 | publié  | Store banne ou pergola bioclimatique : ce qu'on gagne vraiment à remplacer la toile par des lames | store-banne-ou-pergola-bioclimatique |
 | 2026-11-09 | publié  | Extension en ossature bois : toit plat, monopente ou deux pentes ? | toiture-extension-ossature-bois-toit-plat-ou-pente |
 | 2026-11-22 | publié  | Une pergola devant la baie vitrée : la maison sera-t-elle plus sombre en hiver ? | pergola-baie-vitree-lumiere-hiver |
+| 2026-11-26 | proposé | Extension bois dans le Libournais : ce que le nouveau PLUi change à votre projet | plui-libournais-extension-bois |
+| 2026-11-22 | proposé | Pergola bioclimatique et gel : pourquoi vos lames bougent seules, et pourquoi ne pas les forcer | pergola-bioclimatique-gel-neige-lames |
 
 **Run du 22/11/2026 : publié après validation de David.** Commit `12b1ecb`,
 version Cloudflare `a914f15a`, **200 confirmé trois fois**. **IndexNow 200, Search

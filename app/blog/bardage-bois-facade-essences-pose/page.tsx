@@ -514,7 +514,12 @@ export default function ArticleBardageBoisFacadePage() {
                 visuellement le bâtiment et reste la pose la plus courante ; le{' '}
                 <strong className="text-primary font-semibold">vertical</strong> élance une façade, évacue
                 remarquablement bien l&apos;eau de ruissellement, mais impose une ossature croisée derrière. Ce choix a
-                donc une conséquence directe sur la structure de pose, et parfois sur le budget.
+                donc une conséquence directe sur la structure de pose, et parfois sur le budget. Autour de Libourne, il
+                n&apos;est pas toujours libre : vérifiez d&apos;abord{' '}
+                <a href="/blog/plui-libournais-extension-bois" className={lienInterne}>
+                  les zones du PLUi du Libournais où le bardage bois se pose à la verticale
+                </a>
+                .
               </p>
             </section>
 

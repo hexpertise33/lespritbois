@@ -1,0 +1,283 @@
+{
+ "summary": {
+  "health_score": 96,
+  "business_type": "Local Service — charpentier / constructeur bois (SAB + atelier), Les Billaux (33500), zone Libourne + Gironde",
+  "top_findings": [
+   "16 meta descriptions > 160 car. (jusqu'a 259), toutes sur des articles de blog recents",
+   "6 titles > 65 car., dont un a 90 car.",
+   "187 ligatures d'icones Material Symbols polluent les ancres de liens (aucun aria-hidden)",
+   "sameAs limite a 2 URL : aucune corroboration externe de l'entite (ni GBP, ni Qualibat, ni PagesJaunes)",
+   "L'auteur des 33 articles n'existe comme entite nulle part : pas de page auteur, pas de @id, pas de sameAs"
+  ],
+  "quick_wins": [
+   "Garde-fou de longueur title/meta dans lib/metadata.ts (15 min, empeche la derive de revenir)",
+   "aria-hidden=true sur les icones : 187 ancres nettoyees en un changement (10 min)",
+   "Corriger l'article date du 2026-08-23 (demain) (5 min)",
+   "Installer les cles API Google : debloque CrUX/GSC/GA4, angle mort actuel (30 min)",
+   "Passer /devis-pergola de noindex,nofollow a noindex,follow (2 min)"
+  ],
+  "health_score_initial": 88,
+  "statut": "Phases 2, 3 et 4 exécutées et déployées le 22/08/2026, plus le travail issu des données Search Console lues le jour même. 49 pages, 0 erreur, 0 balise hors bornes, 0 icône nue, 0 image sans alt. Reste : clés API Google, relecture des pages de zone par David, fiche PagesJaunes au bon nom, relance des avis, accès GA4."
+ },
+ "categories": [
+  {
+   "name": "Technical SEO",
+   "score": 98,
+   "what_works": [
+    "45/45 pages en 200, aucune erreur",
+    "Canonical exacte sur 100% des pages",
+    "Sitemap et crawl alignes 45/45",
+    "robots meta index,follow,max-image-preview:large partout",
+    "HSTS, CSP bloquante, X-Content-Type-Options, Permissions-Policy",
+    "404 francaise, TTFB 59-206 ms"
+   ],
+   "findings": [
+    {
+     "title": "Article publie a la date de demain",
+     "severity": "Medium",
+     "description": "/blog/claustra-bois-separation-jardin porte datePublished et dateModified au 2026-08-23 alors que nous sommes le 22/08. Present tel quel dans le sitemap et affiche a l'ecran.",
+     "recommendation": "Ramener la date au 22/08 et ajouter un controle dans la routine refusant toute date > aujourd'hui."
+    },
+    {
+     "title": "6 fichiers dupliques par iCloud dans le depot",
+     "severity": "Medium",
+     "description": "components/LandingPergola*{Header,StickyBar,Form,Footer} 2.tsx, app/devis-pergola/page 2.tsx, docs/blog-pipeline/README 2.md. Code mort non route.",
+     "recommendation": "git rm apres verification des dates de modification de chaque paire."
+    },
+    {
+     "title": "/devis-pergola en noindex, nofollow",
+     "severity": "Low",
+     "description": "Le nofollow prive /pergolas et /contact du signal des liens de la landing Ads.",
+     "recommendation": "Passer a noindex, follow."
+    }
+   ]
+  },
+  {
+   "name": "Content Quality",
+   "score": 94,
+   "what_works": [
+    "33 articles de 2000 a 3900 mots, sources officielles citees (service-public.gouv.fr, FCBA, CSTB)",
+    "/realisations : 12 etudes de cas de chantiers reels, 2496 mots",
+    "FAQPage sur 37 pages, 232 questions"
+   ],
+   "findings": [
+    {
+     "title": "L'auteur des 33 articles n'existe comme entite nulle part",
+     "severity": "High",
+     "description": "Chaque BlogPosting declare Person 'David Bertrand' sans @id, url ni sameAs. Aucun noeud Person sur /qui-sommes-nous, aucune page auteur. E-E-A-T affirme dans 33 fichiers, verifiable dans zero.",
+     "recommendation": "Creer /auteur/david-bertrand et referencer un unique noeud Person par @id depuis les 33 articles."
+    },
+    {
+     "title": "20 articles en 23 jours, 0 page commerciale",
+     "severity": "Medium",
+     "description": "Cadence quasi quotidienne depuis le 31/07. 33 articles pour 5 pages de gamme. Les articles recents ne recoivent que 2-3 liens internes contextuels contre 19-45 pour les pages de gamme.",
+     "recommendation": "Passer a 2 articles/semaine, reaffecter le temps aux pages de zone, ajouter une etape de maillage retroactif a chaque publication."
+    }
+   ]
+  },
+  {
+   "name": "On-Page SEO",
+   "score": 97,
+   "what_works": [
+    "1 H1 par page sur 45/45",
+    "Titles et H1 des pages de gamme correctement localises Libourne + Gironde",
+    "Maillage interne dense vers les pages de gamme (19 a 45 liens contextuels entrants)",
+    "0 lien mort"
+   ],
+   "findings": [
+    {
+     "title": "16 meta descriptions depassent 160 caracteres",
+     "severity": "High",
+     "description": "Jusqu'a 259 car. (fermer-pergola-bioclimatique-hiver-rideau-verre), 230, 218, 210, 199... Les 16 sont des articles de blog recents ; les pages ecrites a la main sont dans les clous. L'audit du 02/08 signalait deja 'meta 161, a surveiller'.",
+     "recommendation": "Reecrire les 16 et poser un garde-fou de longueur dans buildMetadata (echec du build en dev hors bornes 110-160)."
+    },
+    {
+     "title": "6 titles depassent 65 caracteres, dont un a 90",
+     "severity": "High",
+     "description": "protection-solaire-brise-soleil-orientable : 90 car., tronque a '...protection solaire en Gi...' — la marque disparait du SERP.",
+     "recommendation": "Reecrire sous 65 car. et couvrir par le meme garde-fou."
+    },
+    {
+     "title": "187 ligatures d'icones polluent les ancres de liens",
+     "severity": "High",
+     "description": "Les Material Symbols sont des ligatures textuelles sans aria-hidden : les ancres reelles sont 'Voir la gamme arrow_forward', 'Ossature bois arrow_forward'. 36 occurrences sur la seule page d'accueil, 187 au total, 1 seul aria-hidden sur tout le site.",
+     "recommendation": "aria-hidden=true sur le span d'icone : 187 ancres nettoyees et fin de l'annonce 'arrow forward' par les lecteurs d'ecran."
+    },
+    {
+     "title": "13 meta descriptions sous 110 caracteres",
+     "severity": "Low",
+     "description": "/pergolas 106, /carports 108, /plan-du-site 93, /mentions-legales 100. Surface de SERP perdue, sans risque.",
+     "recommendation": "Etoffer a 150-158 car. avec un benefice concret et la commune."
+    }
+   ]
+  },
+  {
+   "name": "Schema / Structured Data",
+   "score": 98,
+   "what_works": [
+    "GeneralContractor + AggregateRating 5/5 (6 avis) + 6 Review",
+    "BreadcrumbList sur 41 pages, FAQPage sur 37, BlogPosting sur 33",
+    "Service/Offer/OfferCatalog, EducationalOccupationalCredential (Qualibat)",
+    "GeoCoordinates, OpeningHoursSpecification, PostalAddress, ContactPoint"
+   ],
+   "findings": [
+    {
+     "title": "sameAs limite a 2 URL, hasMap absent",
+     "severity": "High",
+     "description": "Seuls Facebook et Instagram. Ni fiche Google Business Profile, ni Qualibat, ni PagesJaunes, ni LinkedIn. L'entite ne se verifie que par son propre site. Seul High reste ouvert depuis le 01/08.",
+     "recommendation": "Ajouter l'URL GBP (place_id), Qualibat, PagesJaunes, LinkedIn au sameAs, et renseigner hasMap."
+    },
+    {
+     "title": "about des BlogPosting en chaines de caracteres",
+     "severity": "Low",
+     "description": "['carport bois','abri voiture',...] plutot que des entites Thing.",
+     "recommendation": "Passer a des objets Thing pour une meilleure exploitation par les moteurs IA."
+    }
+   ]
+  },
+  {
+   "name": "Performance (CWV)",
+   "score": 94,
+   "what_works": [
+    "Mesure Chromium headless mobile 375x812, 4G bridee 1,6 Mb/s, CPU x4 : LCP 1140 ms (accueil), 424 ms (/pergolas), 992 ms (article)",
+    "CLS <= 0,017 partout, TBT <= 37 ms",
+    "TTFB 59-206 ms, Cloudflare, cache s-maxage=300 + SWR",
+    "JS 149 Ko compresse dont 40 Ko de polyfills en noModule (ignores par les navigateurs modernes)"
+   ],
+   "findings": [
+    {
+     "title": "Aucune donnee de terrain (CrUX / GSC / GA4)",
+     "severity": "Medium",
+     "description": "google_auth.py --check retourne 'Credential Tier: -1 -- No credentials configured'. Les CWV rapportees sont labo. L'audit du 02/08 promettait un croise qualite x positions x trafic : toujours impossible 3 semaines plus tard.",
+     "recommendation": "Installer ~/.config/claude-seo/google-api.json avec une cle Google Cloud (PageSpeed + CrUX actives), puis l'OAuth pour GSC/GA4."
+    },
+    {
+     "title": "4 polices woff2 prechargees, 136 Ko",
+     "severity": "Low",
+     "description": "Plus lourd que les images du premier ecran (225 Ko mobile, dont l'image LCP).",
+     "recommendation": "Reduire a 2-3 familles prechargees."
+    }
+   ]
+  },
+  {
+   "name": "AI Search Readiness",
+   "score": 96,
+   "what_works": [
+    "llms.txt dynamique, a jour a la minute, description d'entite exemplaire avec communes nommees",
+    "RSS complet, FAQPage sur 37 pages (232 Q/R citables)",
+    "Contenu source (service-public.gouv.fr, FCBA, CSTB) : matiere citable par un moteur IA",
+    "robots.txt ouvert a tous les agents"
+   ],
+   "findings": [
+    {
+     "title": "Autorite non corroboree hors du site",
+     "severity": "High",
+     "description": "sameAs a 2 URL, pas d'entite auteur, aucun canal externe (YouTube, LinkedIn, presse, annuaire metier). Un moteur IA n'a aucune source tierce pour confirmer ce que le site affirme.",
+     "recommendation": "Page auteur + sameAs complet (§3.1 et §3.2 du plan d'action) : c'est le meme correctif qui sert l'E-E-A-T et le GEO."
+    }
+   ]
+  },
+  {
+   "name": "Images",
+   "score": 95,
+   "what_works": [
+    "459 images : 0 sans alt, 0 sans width/height, 370 en lazy",
+    "38 images OG distinctes sur 45 pages",
+    "Image LCP en fetchPriority=high",
+    "Legendes et communes verifiees (travail des 5 derniers commits)"
+   ],
+   "findings": [
+    {
+     "title": "Aucun srcset : images servies en pleine resolution a tous les ecrans",
+     "severity": "Medium",
+     "description": "next.config.mjs porte images:{unoptimized:true}, 0 attribut srcset sur tout le site. Accueil desktop : 2,2 Mo en 17 images. L'image LCP (1200x800, 160 Ko) est servie a un ecran de 375 px, soit ~4x trop de pixels. Le lazy limite l'impact sur la LCP (1,14 s mesure), donc non urgent.",
+     "recommendation": "Generer 3 largeurs (480/960/1440) au build avec sizes, ou activer Cloudflare Image Resizing. Gain ~60% de data mobile."
+    },
+    {
+     "title": "Fichiers lourds residuels",
+     "severity": "Low",
+     "description": "pergola-bois-chevrons-enfilade.jpg 193 Ko (seul JPG non converti), 2 webp source-adefrance > 220 Ko.",
+     "recommendation": "Convertir en WebP et recompresser."
+    }
+   ]
+  },
+  {
+   "name": "Local SEO (hors ponderation)",
+   "score": 78,
+   "what_works": [
+    "NAP coherent (1 Aux Pradasses, 33500 Les Billaux), GeoCoordinates, OpeningHoursSpecification",
+    "/contact avec itineraire Google Maps",
+    "AggregateRating 5/5 balise, 6 Review en JSON-LD",
+    "Libourne cite 225 fois sur 45 pages, Les Billaux 69 fois"
+   ],
+   "findings": [
+    {
+     "title": "Zero page ciblant une commune autre que Libourne",
+     "severity": "Medium",
+     "description": "Bordeaux cite 6 fois sur tout le site, uniquement dans la formule 'jusqu'a la metropole bordelaise'. Jamais cites : Creon, Blaye, Langon, Merignac, Pessac, Arcachon. areaServed s'arrete a City:Libourne + AdministrativeArea:Gironde, alors que /realisations raconte des chantiers a Capian, Clerac, Rauzan et Lacanau.",
+     "recommendation": "Ouvrir 3 pages de zone adossees a de vrais chantiers documentes (pergola Bordeaux, terrasse Saint-Emilion, ossature bois Gironde) et enrichir areaServed. Interdiction absolue de dupliquer un gabarit : sans chantier reel, c'est une doorway page."
+    },
+    {
+     "title": "6 avis Google, inchange depuis le 01/08",
+     "severity": "Low",
+     "description": "docs/collecte-avis.md existe mais n'a rien produit en 3 semaines. Le volume d'avis est le facteur n1 du classement dans le pack local.",
+     "recommendation": "SMS avec lien direct a la reception de chaque chantier. Objectif 15 avis fin octobre."
+    }
+   ]
+  }
+ ],
+ "action_plan": {
+  "phases": [
+   {
+    "name": "Phase 1 : Reprendre la mesure",
+    "timeframe": "30 min, en premier",
+    "items": [
+     "Installer ~/.config/claude-seo/google-api.json (cle PageSpeed + CrUX)",
+     "OAuth Search Console et GA4 via google_auth.py --auth",
+     "Verifier l'indexation des 45 URL via gsc_inspect.py"
+    ]
+   },
+   {
+    "name": "Phase 2 : Arreter la derive",
+    "timeframe": "2 h, semaine du 24 aout",
+    "items": [
+     "Garde-fou de longueur title/meta dans lib/metadata.ts (echec du build en dev)",
+     "Reecrire les 16 metas et 6 titles hors bornes",
+     "Corriger la date de l'article du 2026-08-23 + controle anti-date-future dans la routine",
+     "aria-hidden=true sur les icones Material Symbols (187 ancres)",
+     "git rm les 6 fichiers dupliques par iCloud",
+     "/devis-pergola : noindex,nofollow -> noindex,follow"
+    ]
+   },
+   {
+    "name": "Phase 3 : Les gains qui rapportent",
+    "timeframe": "Semaines 35-37",
+    "items": [
+     "Creer /auteur/david-bertrand et referencer un noeud Person unique par @id depuis les 33 articles",
+     "Completer sameAs (GBP, Qualibat, PagesJaunes, LinkedIn) et ajouter hasMap",
+     "Ouvrir 3 pages de zone adossees a de vrais chantiers + enrichir areaServed",
+     "Passer la routine de 7 a 2 articles/semaine + maillage retroactif a chaque publication",
+     "Relancer la collecte d'avis, objectif 15 fin octobre"
+    ]
+   },
+   {
+    "name": "Phase 4 : Confort et finitions",
+    "timeframe": "Backlog",
+    "items": [
+     "srcset responsive 480/960/1440 ou Cloudflare Image Resizing",
+     "Convertir pergola-bois-chevrons-enfilade.jpg en WebP, recompresser 2 webp > 220 Ko",
+     "Reduire a 2-3 les polices prechargees",
+     "about des BlogPosting en entites Thing",
+     "Lien contextuel vers /plan-du-site"
+    ]
+   }
+  ]
+ },
+ "artifacts": {
+  "findings_dir": "findings/",
+  "screenshots_dir": "screenshots/",
+  "crawl": "crawl-2026-08-22.json",
+  "report": "AUDIT-2026-08-22.md",
+  "action_plan": "ACTION-PLAN-2026-08-22.md"
+ }
+}

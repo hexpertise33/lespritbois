@@ -1,0 +1,1002 @@
+{
+ "ordre": [
+  "https://lesprit-bois.fr/",
+  "https://lesprit-bois.fr",
+  "https://lesprit-bois.fr/carports",
+  "https://lesprit-bois.fr/pergolas",
+  "https://lesprit-bois.fr/amenagement-exterieur",
+  "https://lesprit-bois.fr/constructions-bois",
+  "https://lesprit-bois.fr/realisations",
+  "https://lesprit-bois.fr/blog",
+  "https://lesprit-bois.fr/mentions-legales",
+  "https://lesprit-bois.fr/politique-de-confidentialite",
+  "https://lesprit-bois.fr/plan-du-site",
+  "https://lesprit-bois.fr/blog/carport-bois-guide",
+  "https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026",
+  "https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique",
+  "https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif",
+  "https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide",
+  "https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde",
+  "https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose",
+  "https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation",
+  "https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure",
+  "https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2",
+  "https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide",
+  "https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete",
+  "https://lesprit-bois.fr/blog/pool-house-bois-guide",
+  "https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure"
+ ],
+ "pages": {
+  "https://lesprit-bois.fr/": {
+   "status": 200,
+   "ms": 174,
+   "final": "https://lesprit-bois.fr/",
+   "bytes": 168907,
+   "title": "L&#x27;Esprit Bois | Créateur d&#x27;espaces extérieurs à Libourne",
+   "meta_desc": "Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Entreprise certifiée Qualibat, garantie décennale.",
+   "canonical": "https://lesprit-bois.fr",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "L&#x27;Esprit Bois | Créateur d&#x27;espaces extérieurs à Libourne",
+   "og_image": "https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp",
+   "h1": [
+    "Créateur d&#x27;espaces extérieurs qui traversent le temps."
+   ],
+   "h2": [
+    "Ce que nous fabriquons",
+    "Vous ne savez pas encore quelle solution convient ?",
+    "Ce que nous avons posé en Gironde",
+    "Un savoir-faire intégré, du premier croquis à la dernière lame",
+    "Charpentiers et constructeurs bois à Libourne",
+    "Avis clients : 5,0 sur 5 d&#x27;après 6 avis Google",
+    "Votre projet commence par un relevé",
+    "Démarrons votre projet ensemble"
+   ],
+   "h3_n": 7,
+   "imgs": 24,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 22,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"L'Esprit Bois\",\"url\":\"https://lesprit-bois.fr/\",\"inLanguage\":\"fr-FR\"}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"description\":\"Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.\",\"url\":\"https://lesprit-bois.fr/\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"image\":\"https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp\",\"priceRange\":\"€€\",\"sameAs\":[\"https://www.facebook.com/Eprisbois33\"],\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":44.9517,\"longitude\":-0.2372},\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"08:00\",\"closes\":\"17:00\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Libourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Nouvelle-Aquitaine\"}],\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Nos savoir-faire\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergolas sur mesure\",\"description\":\"Pergola bioclimatique à lames orientables, pergola aluminium à toiture fixe, pergola bois massif.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carports sur mesure\",\"description\":\"Carport bois (toiture plate, bac acier ou tuile), carport aluminium thermolaqué, carport solaire photovoltaïque.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Aménagement extérieur\",\"description\":\"Terrasses bois, pool houses, abris de jardin, cuisines d'été, claustras et bardages.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Constructions bois\",\"description\":\"Maison ossature bois, maison en A, extension, surélévation, abri et dépendance, livrés hors d'eau hors d'air.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Terrasses bois\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Bardages bois\"}}]}}"
+   ],
+   "mots": 1292,
+   "liens_int": 37,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr": {
+   "status": 200,
+   "ms": 587,
+   "final": "https://lesprit-bois.fr",
+   "bytes": 168907,
+   "title": "L&#x27;Esprit Bois | Créateur d&#x27;espaces extérieurs à Libourne",
+   "meta_desc": "Terrasses, pergolas, carports, bardages et constructions bois sur mesure à Libourne et en Gironde. Entreprise certifiée Qualibat, garantie décennale.",
+   "canonical": "https://lesprit-bois.fr",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "L&#x27;Esprit Bois | Créateur d&#x27;espaces extérieurs à Libourne",
+   "og_image": "https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp",
+   "h1": [
+    "Créateur d&#x27;espaces extérieurs qui traversent le temps."
+   ],
+   "h2": [
+    "Ce que nous fabriquons",
+    "Vous ne savez pas encore quelle solution convient ?",
+    "Ce que nous avons posé en Gironde",
+    "Un savoir-faire intégré, du premier croquis à la dernière lame",
+    "Charpentiers et constructeurs bois à Libourne",
+    "Avis clients : 5,0 sur 5 d&#x27;après 6 avis Google",
+    "Votre projet commence par un relevé",
+    "Démarrons votre projet ensemble"
+   ],
+   "h3_n": 7,
+   "imgs": 24,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 22,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"L'Esprit Bois\",\"url\":\"https://lesprit-bois.fr/\",\"inLanguage\":\"fr-FR\"}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"description\":\"Créateur d'espaces extérieurs à Libourne : terrasses, pergolas, carports, bardages, extensions et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.\",\"url\":\"https://lesprit-bois.fr/\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"image\":\"https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp\",\"priceRange\":\"€€\",\"sameAs\":[\"https://www.facebook.com/Eprisbois33\"],\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":44.9517,\"longitude\":-0.2372},\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"08:00\",\"closes\":\"17:00\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Libourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Nouvelle-Aquitaine\"}],\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Nos savoir-faire\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergolas sur mesure\",\"description\":\"Pergola bioclimatique à lames orientables, pergola aluminium à toiture fixe, pergola bois massif.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carports sur mesure\",\"description\":\"Carport bois (toiture plate, bac acier ou tuile), carport aluminium thermolaqué, carport solaire photovoltaïque.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Aménagement extérieur\",\"description\":\"Terrasses bois, pool houses, abris de jardin, cuisines d'été, claustras et bardages.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Constructions bois\",\"description\":\"Maison ossature bois, maison en A, extension, surélévation, abri et dépendance, livrés hors d'eau hors d'air.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Terrasses bois\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Bardages bois\"}}]}}"
+   ],
+   "mots": 1292,
+   "liens_int": 37,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/carports": {
+   "status": 200,
+   "ms": 166,
+   "final": "https://lesprit-bois.fr/carports",
+   "bytes": 210190,
+   "title": "Carport bois, aluminium &amp; solaire à Libourne (33) | L&#x27;Esprit Bois",
+   "meta_desc": "Notre gamme de carports sur mesure : bois (toiture plate, bac acier, tuile), aluminium thermolaqué et carport solaire photovoltaïque. Éclairage, claustras, teintes RAL. Conception et pose à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/carports",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Carports sur mesure à Libourne (33) : bois, aluminium, solaire",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/Carport-aluminium-Libourne-4.webp",
+   "h1": [
+    "Carports sur mesure à Libourne et en Gironde"
+   ],
+   "h2": [
+    "Trois familles de carports, un même sur-mesure",
+    "Carport bois : chaleur naturelle et robustesse",
+    "Carport aluminium sur mesure",
+    "Carport solaire : abritez votre voiture, produisez votre électricité",
+    "Adossé à la maison ou autoporté ?",
+    "Ce qui transforme un abri en vrai usage quotidien",
+    "Bois, aluminium ou solaire : le comparatif",
+    "Vous hésitez encore entre deux gammes ?",
+    "Un abri qui devient un élément d&#x27;architecture",
+    "De votre appel à la première voiture garée dessous",
+    "Carports réalisés à Libourne et en Gironde",
+    "Votre carport à Libourne et dans tout le Libournais",
+    "Ce qu&#x27;on nous demande avant de construire un carport",
+    "Un projet de carport à Libourne ou en Gironde ?"
+   ],
+   "h3_n": 36,
+   "imgs": 22,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 20,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Carports\",\"item\":\"https://lesprit-bois.fr/carports\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"serviceType\":\"Conception, fabrication et pose de carports sur mesure\",\"name\":\"Carport sur mesure à Libourne et en Gironde\",\"areaServed\":[{\"@type\":\"City\",\"name\":\"Libourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Nouvelle-Aquitaine\"}],\"provider\":{\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"description\":\"Créateur d'espaces extérieurs : carports, pergolas, terrasses, bardages et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"}},\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Gamme de carports\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carport bois sur mesure\",\"description\":\"Charpente en douglas, mélèze, red cedar ou chêne, autoportée ou adossée, poteaux sur platines inox.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carport bois toiture plate\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carport bois toiture bac acier\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carport bois toiture tuile\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carport aluminium thermolaqué sur mesure\",\"description\":\"Structure aluminium et visserie inox, sans entretien, grandes portées, toiture isolante.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Carport solaire photovoltaïque\",\"description\":\"Carport dont la toiture reçoit des panneaux photovoltaïques, l'étanchéité étant assurée par la toiture elle-même.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Équipements de carport : éclairage intégré, claustras brise-vue, attente pour borne de recharge\"}}]}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation d'urbanisme pour un carport ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le plus souvent oui. Un carport crée de l'emprise au sol : selon la surface, il relève d'une déclaration préalable de travaux ou d'un permis de construire. Les seuils varient d'une commune à l'autre, dépendent du PLU et évoluent dans le temps ; un secteur protégé change encore la donne. Nous les vérifions sur pièces et montons le dossier pour vous.\"}},{\"@type\":\"Question\",\"name\":\"Quel bois choisir pour un carport en Gironde ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nous travaillons le douglas, le mélèze, le red cedar et le chêne, choisis selon l'exposition de la structure et la fonction de chaque pièce. En Gironde, le climat océanique impose une attention particulière à la ventilation de la structure et au traitement des pieds de poteaux. Nous arrêtons l'essence avec vous, au vu de votre maison.\"}},{\"@type\":\"Question\",\"name\":\"Toiture plate, bac acier ou tuile : laquelle choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La toiture plate offre une ligne contemporaine et peut être végétalisée. Le bac acier est léger, économique et se pose rapidement, avec un large choix de coloris. La tuile s'accorde à la couverture de la maison mais demande une charpente plus dimensionnée. Le choix dépend de votre maison, de votre budget et du PLU.\"}},{\"@type\":\"Question\",\"name\":\"Carport bois ou carport aluminium : lequel choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le bois apporte chaleur et matière, s'accorde au bâti girondin ancien et demande un entretien périodique. L'aluminium thermolaqué offre des lignes tendues, de grandes portées avec peu de poteaux et aucun entretien. Le bois se décline en trois toitures, l'aluminium se pose plus vite et sert aussi d'abri de terrasse. Le choix dépend de votre façade, de la place disponible et du budget.\"}},{\"@type\":\"Question\",\"name\":\"Adossé ou autoporté : quelle implantation pour un carport ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le carport adossé prend appui sur la façade ou sur le mur du garage : moins de poteaux, une ligne plus nette, et un cheminement à l'abri jusqu'à la porte d'entrée. L'autoporté repose sur ses propres poteaux et se pose n'importe où sur le terrain, sans dépendre de l'état de la façade ni du débord de toiture. Nous tranchons au relevé, après avoir regardé l'accès, la pente et le sens de manœuvre.\"}},{\"@type\":\"Question\",\"name\":\"Quelles dimensions prévoir pour une ou deux voitures ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En pratique, on compte de l'ordre de 3 mètres de large sur 5 mètres de long pour une voiture, et 5,5 à 6 mètres de large pour deux véhicules côte à côte. Ce ne sont que des ordres de grandeur : la bonne dimension dépend de votre véhicule, de l'ouverture des portières, du passage à laisser sur les côtés et de la manœuvre d'accès. Nous relevons le terrain avant de figer les cotes.\"}},{\"@type\":\"Question\",\"name\":\"Qu'est-ce qu'un carport solaire ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"C'est un carport dont la toiture accueille des panneaux photovoltaïques. Chez notre partenaire, l'étanchéité est assurée par la toiture elle-même, et non par les panneaux solaires : vous restez donc libre du nombre de modules installés. Les panneaux photovoltaïques ne sont pas fournis avec la structure ; leur dimensionnement et leur raccordement se font avec votre installateur électricien.\"}},{\"@type\":\"Question\",\"name\":\"Peut-on installer une borne de recharge sous le carport ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, à condition de le prévoir à la conception. Nous intégrons l'attente électrique dans la structure — fourreau, passage de câble, emplacement du support — pour que la borne soit posée proprement, sans goulotte apparente. La fourniture, le raccordement et la mise en service de la borne relèvent de votre électricien.\"}},{\"@type\":\"Question\",\"name\":\"Combien coûte un carport sur mesure ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le prix dépend de la surface abritée, du matériau de la structure, de la toiture retenue (bac acier, membrane, tuile, photovoltaïque), des équipements ajoutés et de la nature du sol, car un carport se fonde. Nous ne pratiquons pas le tarif au mètre carré affiché : nous relevons votre terrain et remettons un devis détaillé, poste par poste.\"}},{\"@type\":\"Question\",\"name\":\"Êtes-vous certifiés et assurés ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.\"}},{\"@type\":\"Question\",\"name\":\"Intervenez-vous en dehors de Libourne ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. Basés aux Billaux, nous intervenons dans tout le Libournais (Saint-Émilion, Coutras, Fronsac, Vayres, Izon, Saint-Denis-de-Pile, Castillon-la-Bataille, Guîtres, Branne) et plus largement en Gironde, jusqu'à la métropole bordelaise.\"}}]}"
+   ],
+   "mots": 2962,
+   "liens_int": 30,
+   "liens_ext": 4
+  },
+  "https://lesprit-bois.fr/pergolas": {
+   "status": 200,
+   "ms": 204,
+   "final": "https://lesprit-bois.fr/pergolas",
+   "bytes": 226009,
+   "title": "Pergola bioclimatique, aluminium &amp; bois à Libourne (33) | L&#x27;Esprit Bois",
+   "meta_desc": "Notre gamme de pergolas sur mesure : bioclimatique à lames orientables, aluminium à toiture fixe (polycarbonate, panneau isolé, vitrage), bois massif, toile et claire-voie. Stores ZIP, éclairage, coloris RAL. Pose à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/pergolas",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Pergolas sur mesure à Libourne (33) : bioclimatique, aluminium, bois",
+   "og_image": "https://lesprit-bois.fr/images/realisations/pergola-aluminium-terrasse-bois-libourne-1.webp",
+   "h1": [
+    "Pergolas sur mesure à Libourne et en Gironde"
+   ],
+   "h2": [
+    "Trois familles de pergolas, un même sur-mesure",
+    "Pergola bioclimatique à lames orientables",
+    "Pergola aluminium à toiture fixe",
+    "Pergola bois massif",
+    "Adossée à la maison ou autoportée ?",
+    "Ce qui transforme une pergola en pièce à vivre",
+    "Bois, aluminium fixe ou bioclimatique : le comparatif",
+    "Vous hésitez encore entre deux gammes ?",
+    "L&#x27;ombre choisie, la lumière maîtrisée",
+    "De votre appel à la première soirée dessous",
+    "Pergolas réalisées à Libourne et en Gironde",
+    "Votre pergola à Libourne et dans tout le Libournais",
+    "Ce qu&#x27;on nous demande avant d&#x27;installer une pergola",
+    "Un projet de pergola à Libourne ou en Gironde ?"
+   ],
+   "h3_n": 35,
+   "imgs": 25,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 23,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pergolas\",\"item\":\"https://lesprit-bois.fr/pergolas\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"serviceType\":\"Conception, fabrication et pose de pergolas sur mesure\",\"name\":\"Pergola sur mesure à Libourne et en Gironde\",\"areaServed\":[{\"@type\":\"City\",\"name\":\"Libourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Nouvelle-Aquitaine\"}],\"provider\":{\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"description\":\"Créateur d'espaces extérieurs : pergolas, carports, terrasses, bardages et constructions bois. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"}},\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Gamme de pergolas\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergola bioclimatique aluminium à lames orientables\",\"description\":\"Toiture composée de lames aluminium orientables, motorisées ou manuelles, pour régler l'ombre, la ventilation et la protection contre la pluie.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergola aluminium à toiture fixe\",\"description\":\"Structure aluminium thermolaquée avec couverture polycarbonate translucide, panneau sandwich isolant ou vitrage, adossée ou autoportée.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergola bois massif\",\"description\":\"Charpente en douglas, mélèze ou red cedar, assemblages traditionnels, couverture claire-voie, lames fixes ou toile.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergola à toile rétractable et claire-voie\",\"description\":\"Ombrage souple par toile tendue ou rétractable et brise-soleil claire-voie, en bois ou en aluminium.\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergola adossée à la maison\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pergola autoportée\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Équipements de pergola : stores ZIP, éclairage LED, claustras brise-vue, motorisation\"}}]}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Comment fonctionne une pergola bioclimatique ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Sa toiture est composée de lames en aluminium orientables. Lames ouvertes, l'air circule et la chaleur s'échappe. Lames fermées, vous êtes couvert de la pluie et du soleil. C'est cette orientation qui règle l'ombre, la ventilation et la lumière au fil de la journée.\"}},{\"@type\":\"Question\",\"name\":\"Quelle différence entre une pergola bioclimatique et une pergola aluminium à toiture fixe ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La bioclimatique a des lames orientables : vous réglez l'ombre et la ventilation à la demande. La pergola aluminium à toiture fixe garde une couverture permanente (polycarbonate translucide, panneau isolant ou vitrage) : elle abrite en continu, laisse passer plus ou moins de lumière selon la couverture choisie, et coûte généralement moins cher puisqu'elle n'a ni mécanisme ni motorisation. Les deux se posent adossées ou autoportées, dans les mêmes teintes.\"}},{\"@type\":\"Question\",\"name\":\"Une pergola bioclimatique protège-t-elle vraiment de la pluie ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Lames fermées, oui. La toiture est conçue pour que l'eau s'écoule sans stagner, et le profil des lames évite les infiltrations aux extrémités. L'eau est ensuite reprise par un système d'évacuation adapté à votre façade. Ce n'est pas pour autant une toiture au sens de la construction : c'est un ouvrage couvert, pas une couverture. Nous vous montrons concrètement ce que cela implique lors du rendez-vous.\"}},{\"@type\":\"Question\",\"name\":\"Peut-on fermer les côtés d'une pergola ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, partiellement ou totalement. Les stores ZIP, guidés dans des coulisses latérales, coupent le vent, le soleil rasant et les vis-à-vis tout en laissant la vue. Il existe aussi des claustras brise-vue en bois ou en lames aluminium, et des vitrages coulissants pour fermer davantage. Ces équipements se posent à la construction ou s'ajoutent plus tard, à condition d'avoir prévu la structure.\"}},{\"@type\":\"Question\",\"name\":\"Pergola bois ou pergola aluminium : laquelle choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le bois massif apporte chaleur et matière, s'accorde aux maisons girondines traditionnelles et demande un entretien régulier. L'aluminium offre de grandes portées, aucun entretien et, en version bioclimatique, le pilotage des lames, pour une esthétique contemporaine. Le choix dépend de votre maison, de l'usage souhaité et du budget.\"}},{\"@type\":\"Question\",\"name\":\"Adossée ou autoportée : quelle implantation choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La pergola adossée prend appui sur la façade : elle prolonge la maison, protège la baie vitrée et demande moins de poteaux. L'autoportée repose sur ses quatre poteaux et se pose où vous voulez : au bord de la piscine, au fond du jardin, sur une terrasse détachée. Le choix dépend de l'état de la façade, du débord de toiture existant et de l'endroit où vous voulez de l'ombre l'après-midi.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation d'urbanisme pour une pergola ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le plus souvent oui. Une pergola qui crée de l'emprise au sol relève d'une déclaration préalable de travaux, voire d'un permis de construire selon la surface. En secteur protégé (abords d'un monument historique, site classé), une autorisation est requise même pour de petites surfaces. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces et montons le dossier.\"}},{\"@type\":\"Question\",\"name\":\"Combien coûte une pergola sur mesure ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le prix dépend de quatre choses : la surface couverte, le type de couverture (claire-voie bois, polycarbonate, panneau isolant, lames orientables motorisées), les équipements ajoutés (stores ZIP, éclairage, claustras) et la nature du support, car une pergola se fonde. Nous ne pratiquons pas le tarif au mètre carré affiché : nous relevons votre terrasse et nous vous remettons un devis détaillé, poste par poste.\"}},{\"@type\":\"Question\",\"name\":\"Jusqu'à quelle taille peut-on aller ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La pergola est fabriquée sur mesure, aux dimensions de votre terrasse. Au-delà d'une certaine largeur, un poteau intermédiaire devient nécessaire, ce qui change l'implantation et parfois l'usage de l'espace. Nous relevons votre terrasse, puis nous vous disons ce qui est possible et à quel endroit poser les poteaux.\"}},{\"@type\":\"Question\",\"name\":\"Êtes-vous certifiés et assurés ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale. Les structures aluminium de notre partenaire Li-Su des Temps bénéficient par ailleurs d'une garantie fabricant, dont les modalités vous sont précisées avec le devis.\"}}]}"
+   ],
+   "mots": 3156,
+   "liens_int": 32,
+   "liens_ext": 4
+  },
+  "https://lesprit-bois.fr/amenagement-exterieur": {
+   "status": 200,
+   "ms": 194,
+   "final": "https://lesprit-bois.fr/amenagement-exterieur",
+   "bytes": 121789,
+   "title": "Aménagement extérieur à Libourne (33) | L&#x27;Esprit Bois",
+   "meta_desc": "Terrasses bois, pool houses, abris de jardin, abords de bassin et cuisines d&#x27;été. Conception et pose sur mesure à Libourne et dans toute la Gironde.",
+   "canonical": "https://lesprit-bois.fr/amenagement-exterieur",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Aménagement extérieur à Libourne (33)",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/construction-pool-house-aluminium-libourne-2.webp",
+   "h1": [
+    "Aménagement extérieur à Libourne et en Gironde"
+   ],
+   "h2": [
+    "Ce que nous aménageons",
+    "Terrasses bois",
+    "Pool houses",
+    "Nous ne construisons pas la piscine. Nous construisons tout autour.",
+    "Abris, dépendances et cuisines d&#x27;été",
+    "Un projet qui mêle plusieurs ouvrages ?",
+    "Aménagements extérieurs réalisés en Gironde",
+    "Votre extérieur à Libourne et dans tout le Libournais",
+    "Un jardin n&#x27;est pas une addition d&#x27;ouvrages",
+    "Ce qu&#x27;on nous demande avant d&#x27;aménager un extérieur",
+    "Un projet d&#x27;aménagement extérieur ?"
+   ],
+   "h3_n": 13,
+   "imgs": 19,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 17,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Aménagement extérieur\",\"item\":\"https://lesprit-bois.fr/amenagement-exterieur\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"serviceType\":\"Aménagement extérieur en bois : terrasses, pool houses, abris de jardin\",\"name\":\"Aménagement extérieur à Libourne et en Gironde\",\"areaServed\":[{\"@type\":\"City\",\"name\":\"Libourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Nouvelle-Aquitaine\"}],\"provider\":{\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"description\":\"Créateur d'espaces extérieurs : terrasses, pool houses, abris de jardin, abords de bassin, pergolas et carports. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"}},\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Prestations d'aménagement extérieur\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Terrasse bois sur structure ventilée\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pool house bois ou aluminium\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Abri de jardin et dépendance\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Abords de bassin et plage de piscine\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Cuisine d'été et espace repas extérieur\"}}]}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Que comprend un aménagement extérieur ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Tout ce qui structure la vie dehors : la terrasse qui prolonge le séjour, le pool house qui abrite l'été, l'abri de jardin qui range, les abords du bassin qui relient la piscine à la maison, la cuisine d'été qui fait sortir les repas. Nous dessinons l'ensemble comme un projet, pas comme une addition d'ouvrages.\"}},{\"@type\":\"Question\",\"name\":\"Construisez-vous la piscine ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non. Le bassin relève du métier de pisciniste. Nous en habillons les abords : plage de piscine, terrasse bois autour du bassin, caillebotis, habillage de margelles, pool house. Nous travaillons volontiers en coordination avec votre pisciniste, avant ou après ses travaux.\"}},{\"@type\":\"Question\",\"name\":\"Quelle essence de bois pour une terrasse en Gironde ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nous travaillons le douglas, le mélèze, le red cedar et le chêne. Le climat océanique du Libournais, l'exposition de votre terrasse, sa proximité avec un bassin et l'entretien que vous êtes prêt à consentir orientent le choix bien plus que le catalogue. Nous en discutons sur place, devant votre terrain.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour un pool house ou un abri de jardin ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le plus souvent oui, dès lors que la construction crée de l'emprise au sol. Selon la surface, une déclaration préalable de travaux suffit, ou un permis de construire devient nécessaire. En secteur protégé, une autorisation est requise même pour de petites surfaces. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces et montons le dossier pour vous.\"}},{\"@type\":\"Question\",\"name\":\"Jusqu'où va votre intervention sur un pool house ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nous livrons le pool house hors d'eau, hors d'air : fondations, ossature, couverture, bardage, menuiseries extérieures posées et étanchéité à l'air traitée. Le second œuvre (cloisons, électricité, plomberie, revêtements) n'est pas compris, et nous le disons avant de signer plutôt qu'à la réception.\"}},{\"@type\":\"Question\",\"name\":\"Êtes-vous certifiés et assurés ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale.\"}}]}"
+   ],
+   "mots": 1365,
+   "liens_int": 29,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/constructions-bois": {
+   "status": 200,
+   "ms": 178,
+   "final": "https://lesprit-bois.fr/constructions-bois",
+   "bytes": 156872,
+   "title": "Construction bois &amp; extension à Libourne | L&#x27;Esprit Bois",
+   "meta_desc": "Maisons ossature bois, maisons en A, extensions, surélévations, pool houses et abris. Livrés hors d&#x27;eau hors d&#x27;air à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/constructions-bois",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Construction bois &amp; extension à Libourne (33)",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/mais-en-a-accueil.webp",
+   "h1": [
+    "Construction bois et extension à Libourne et en Gironde"
+   ],
+   "h2": [
+    "Ce que nous construisons",
+    "Le détail de chaque ouvrage",
+    "Hors d&#x27;eau, hors d&#x27;air : ce que nous livrons",
+    "L&#x27;intégration à l&#x27;existant, millimètre par millimètre",
+    "Un matériau de structure qui pousse",
+    "Du terrain à la mise hors d&#x27;air",
+    "Urbanisme et RE2020 : nous vérifions avant de dessiner",
+    "Un terrain, une idée, un doute sur la faisabilité ?",
+    "Constructions réalisées à Libourne et en Gironde",
+    "Votre construction bois à Libourne et dans tout le Libournais",
+    "Construire en bois, du croquis au hors d&#x27;air",
+    "Ce qu&#x27;on nous demande avant de construire",
+    "Un projet de construction bois à Libourne ou en Gironde ?"
+   ],
+   "h3_n": 32,
+   "imgs": 12,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 10,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Constructions bois\",\"item\":\"https://lesprit-bois.fr/constructions-bois\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"serviceType\":\"Construction, extension et surélévation à ossature bois livrées hors d'eau hors d'air\",\"name\":\"Construction bois et extension à Libourne et en Gironde\",\"areaServed\":[{\"@type\":\"City\",\"name\":\"Libourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Nouvelle-Aquitaine\"}],\"provider\":{\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"description\":\"Constructeur bois : maisons à ossature bois, maisons en A, pool houses, abris et dépendances, livrés hors d'eau hors d'air. Entreprise certifiée Qualibat, ouvrages couverts par une garantie décennale.\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"}},\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Nos constructions bois\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Maison à ossature bois\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Maison en A\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Pool house bois ou aluminium\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Extension à ossature bois\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Surélévation à ossature bois\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Abri de jardin et dépendance\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Livraison hors d'eau hors d'air\"}}]}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Qu'est-ce qu'une maison à ossature bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une construction dont la structure porteuse est faite de montants en bois, contreventés par des panneaux, et remplis d'isolant. Les murs sont préfabriqués en atelier puis levés sur site. Le chantier est sec, rapide, et les murs sont fins à performance égale, ce qui laisse davantage de surface habitable pour une même emprise au sol.\"}},{\"@type\":\"Question\",\"name\":\"Qu'est-ce qu'une maison en A ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une construction dont les murs et la toiture ne font qu'un : la charpente descend jusqu'au sol et dessine un A. Cette géométrie évacue naturellement l'eau, réduit les surfaces de façade exposées, et crée un volume intérieur à double hauteur. C'est une construction bois par excellence, et l'une de nos spécialités.\"}},{\"@type\":\"Question\",\"name\":\"Jusqu'où va votre intervention ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nous livrons votre construction hors d'eau, hors d'air : fondations, ossature, charpente, couverture, bardage, menuiseries extérieures, isolation et étanchéité à l'air. Notre intervention s'arrête là. Nous ne réalisons pas le second œuvre (cloisons, électricité, plomberie, chauffage, revêtements et peinture) que vous confiez aux artisans de votre choix.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il un permis de construire pour un pool house ou un abri ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le plus souvent une autorisation est nécessaire, car ces constructions créent de l'emprise au sol. Selon la surface, il s'agit d'une déclaration préalable de travaux ou d'un permis de construire, et un secteur protégé change la donne. Les seuils dépendent du PLU de votre commune et évoluent : nous les vérifions sur pièces, puis nous montons le dossier et suivons l'instruction.\"}},{\"@type\":\"Question\",\"name\":\"Une construction en bois dure-t-elle vraiment ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, à condition d'être bien conçue. Le bois ne craint pas l'humidité de l'air, il craint l'eau qui stagne. Tout se joue donc dans la conception : pieds de structure décollés du sol, pare-pluie, lame d'air ventilée derrière le bardage, débords de toiture, évacuation des eaux maîtrisée. Des ouvrages bois centenaires tiennent debout partout en France.\"}},{\"@type\":\"Question\",\"name\":\"Comment garantissez-vous l'intégration à la maison existante ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Par un relevé précis de l'existant avant tout dessin : niveaux, alignements d'égout de toit et de faîtage, hauteurs d'allèges. Puis par le traitement des points sensibles : raccord de couverture, désolidarisation structurelle pour absorber les tassements différentiels, continuité de l'isolation et de la membrane d'étanchéité à l'air à la jonction, reprise des eaux pluviales et choix de la peau extérieure.\"}},{\"@type\":\"Question\",\"name\":\"Peut-on surélever n'importe quelle maison ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non. Une surélévation ajoute des charges : elle suppose une étude de structure vérifiant la capacité des murs porteurs et des fondations existantes. La légèreté de l'ossature bois est précisément ce qui rend l'opération possible là où le béton serait exclu. Le PLU peut par ailleurs limiter la hauteur constructible.\"}},{\"@type\":\"Question\",\"name\":\"Mon extension est-elle soumise à la RE2020 ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cela dépend de la surface créée : plus l'extension est grande, plus les exigences se renforcent, jusqu'à l'application complète de la RE2020. Deux principes sont constants : la réglementation ne vise que la partie nouvelle, et les extensions successives d'une même maison se cumulent. Les seuils exacts évoluent. Nous vérifions ceux en vigueur pour votre projet et vous les expliquons au rendez-vous.\"}},{\"@type\":\"Question\",\"name\":\"Êtes-vous certifiés et assurés ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. L'Esprit Bois est une entreprise certifiée Qualibat, la qualification de référence du bâtiment, et chacun de nos ouvrages est couvert par notre garantie décennale : la structure que nous posons est garantie dix ans à compter de la réception du chantier.\"}}]}"
+   ],
+   "mots": 2204,
+   "liens_int": 27,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/realisations": {
+   "status": 200,
+   "ms": 185,
+   "final": "https://lesprit-bois.fr/realisations",
+   "bytes": 103237,
+   "title": "Réalisations : carports, pergolas, bois | L&#x27;Esprit Bois",
+   "meta_desc": "Nos chantiers en Gironde : carports bois et aluminium, pergolas bioclimatiques, extensions ossature bois, pool houses, maisons en A et bardages. Libourne (33).",
+   "canonical": "https://lesprit-bois.fr/realisations",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Nos réalisations à Libourne et en Gironde",
+   "og_image": "https://lesprit-bois.fr/images/terrasse-bois-pool-house-noir.webp",
+   "h1": [
+    "Nos réalisations à Libourne et en Gironde"
+   ],
+   "h2": [
+    "Quatorze chantiers, une même exigence",
+    "Nos chantiers à Libourne et dans tout le Libournais",
+    "Votre projet, notre prochain chantier"
+   ],
+   "h3_n": 1,
+   "imgs": 25,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 23,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Réalisations\",\"item\":\"https://lesprit-bois.fr/realisations\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"CollectionPage\",\"name\":\"Réalisations de L'Esprit Bois\",\"description\":\"Carports, pergolas, extensions, constructions bois et bardages réalisés à Libourne et en Gironde.\",\"about\":{\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\",\"telephone\":\"+33557406580\",\"email\":\"lespritbois33@gmail.com\",\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"certification\",\"name\":\"Qualibat\"},\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"1 Aux Pradasses\",\"postalCode\":\"33500\",\"addressLocality\":\"Les Billaux\",\"addressRegion\":\"Gironde\",\"addressCountry\":\"FR\"}},\"mainEntity\":{\"@type\":\"ItemList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Carport aluminium contemporain, Gironde\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Carport bois adossé, Libourne\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pergola bioclimatique, Libourne\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Pergola bois massif, Gironde\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"Extension bardée bois sur maison en pierre, Gironde\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"Surélévation à ossature bois, Gironde\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"Extension vitrée sur jardin, Libournais\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"Pool house et terrasse bois, Libourne\"},{\"@type\":\"ListItem\",\"position\":9,\"name\":\"Pool house aluminium, Libourne\"},{\"@type\":\"ListItem\",\"position\":10,\"name\":\"Maison en A sur mesure, Les Billaux\"},{\"@type\":\"ListItem\",\"position\":11,\"name\":\"Extension bardée bois et baie vitrée, Gironde\"},{\"@type\":\"ListItem\",\"position\":12,\"name\":\"Bardage red cedar en claire-voie, Gironde\"}]}}"
+   ],
+   "mots": 539,
+   "liens_int": 28,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog": {
+   "status": 200,
+   "ms": 599,
+   "final": "https://lesprit-bois.fr/blog",
+   "bytes": 78945,
+   "title": "Blog | L&#x27;Esprit Bois, charpentiers à Libourne",
+   "meta_desc": "Conseils, retours de chantier et actualités autour du bois, des terrasses, pergolas, carports et constructions bois à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Blog | L&#x27;Esprit Bois",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/Magasin-materiaux-bois-libourne.webp",
+   "h1": [
+    "Conseils et retours de chantier"
+   ],
+   "h2": [
+    "Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style)",
+    "Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026",
+    "Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut vraiment la filière Nouvelle-Aquitaine ?",
+    "Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ?",
+    "Poulailler en bois : réglementation 2026, bien-être des poules et bonne implantation",
+    "Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête (budget, essence, durée)",
+    "Extension en ossature bois : prix au m², délais et avantages en 2026",
+    "Clôture et brise-vue en bois : quelle essence, quelle hauteur autorisée et quel budget en 2026 ?",
+    "Protéger sa terrasse en bois de la canicule : le guide d&#x27;entretien d&#x27;été",
+    "Pool-house en bois : réglementation, usages et budget 2026",
+    "Abri de jardin, carport, pergola : quelle autorisation d&#x27;urbanisme en 2026 ?",
+    "Pergola bois ou pergola bioclimatique : comment choisir ?",
+    "Carport en bois : bien le choisir et l&#x27;intégrer à sa maison",
+    "Quel bois choisir pour une terrasse extérieure ? Le guide par essence"
+   ],
+   "h3_n": 0,
+   "imgs": 17,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 14,
+   "imgs_lazy": 15,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Blog\",\"name\":\"Blog L'Esprit Bois\",\"description\":\"Conseils, retours de chantier et actualités autour du bois, des terrasses, pergolas, carports et constructions bois à Libourne et en Gironde.\",\"url\":\"https://lesprit-bois.fr/blog\",\"publisher\":{\"@type\":\"GeneralContractor\",\"name\":\"L'Esprit Bois\"}}"
+   ],
+   "mots": 1076,
+   "liens_int": 38,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/mentions-legales": {
+   "status": 200,
+   "ms": 133,
+   "final": "https://lesprit-bois.fr/mentions-legales",
+   "bytes": 36142,
+   "title": "Mentions légales | L&#x27;Esprit Bois",
+   "meta_desc": "Mentions légales du site L&#x27;Esprit Bois : éditeur, hébergeur, propriété intellectuelle et assurances.",
+   "canonical": "https://lesprit-bois.fr/mentions-legales",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Mentions légales",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/mais-en-a-accueil.webp",
+   "h1": [
+    "Mentions légales"
+   ],
+   "h2": [
+    "Éditeur du site",
+    "Directeur de la publication",
+    "Hébergement",
+    "Assurances",
+    "Propriété intellectuelle",
+    "Données personnelles"
+   ],
+   "h3_n": 0,
+   "imgs": 2,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 1,
+   "jsonld": [],
+   "mots": 361,
+   "liens_int": 25,
+   "liens_ext": 3
+  },
+  "https://lesprit-bois.fr/politique-de-confidentialite": {
+   "status": 200,
+   "ms": 161,
+   "final": "https://lesprit-bois.fr/politique-de-confidentialite",
+   "bytes": 37015,
+   "title": "Politique de confidentialité | L&#x27;Esprit Bois",
+   "meta_desc": "Politique de confidentialité de L&#x27;Esprit Bois : quelles données sont collectées, dans quel but, combien de temps et comment exercer vos droits.",
+   "canonical": "https://lesprit-bois.fr/politique-de-confidentialite",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Politique de confidentialité",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/mais-en-a-accueil.webp",
+   "h1": [
+    "Politique de confidentialité"
+   ],
+   "h2": [
+    "Responsable du traitement",
+    "Données collectées et finalité",
+    "Base légale",
+    "Durée de conservation",
+    "Destinataires",
+    "Cookies",
+    "Vos droits"
+   ],
+   "h3_n": 0,
+   "imgs": 2,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 1,
+   "jsonld": [],
+   "mots": 411,
+   "liens_int": 24,
+   "liens_ext": 3
+  },
+  "https://lesprit-bois.fr/plan-du-site": {
+   "status": 200,
+   "ms": 569,
+   "final": "https://lesprit-bois.fr/plan-du-site",
+   "bytes": 44781,
+   "title": "Plan du site | L&#x27;Esprit Bois",
+   "meta_desc": "Plan du site L&#x27;Esprit Bois : accédez à toutes les pages et articles du site en un coup d&#x27;œil.",
+   "canonical": "https://lesprit-bois.fr/plan-du-site",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Plan du site",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/mais-en-a-accueil.webp",
+   "h1": [
+    "Plan du site"
+   ],
+   "h2": [
+    "Savoir-faire",
+    "L&#x27;entreprise",
+    "Informations",
+    "Articles du blog"
+   ],
+   "h3_n": 0,
+   "imgs": 2,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 1,
+   "jsonld": [],
+   "mots": 339,
+   "liens_int": 47,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/carport-bois-guide": {
+   "status": 200,
+   "ms": 155,
+   "final": "https://lesprit-bois.fr/blog/carport-bois-guide",
+   "bytes": 106244,
+   "title": "Carport bois : le choisir et l&#x27;intégrer | L&#x27;Esprit Bois",
+   "meta_desc": "Carport bois ou garage ? Adossé ou autoportant, essences, toiture, budget et autorisation : le guide pour abriter votre voiture en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/carport-bois-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Carport en bois : bien le choisir et l&#x27;intégrer à sa maison",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/Carport-bois-Libourne-1.webp",
+   "h1": [
+    "Carport en bois : bien le choisir et l&#x27;intégrer à sa maison"
+   ],
+   "h2": [
+    "Carport ou abri fermé : quelle solution pour abriter sa voiture ?",
+    "Carport adossé ou autoportant : lequel pour votre terrain ?",
+    "Quel bois choisir pour un carport durable ?",
+    "Quelle toiture pour un carport : tuiles, bac acier ou végétalisée ?",
+    "Comment bien intégrer un carport à l&#x27;architecture de la maison ?",
+    "Faut-il une autorisation d&#x27;urbanisme pour un carport ?",
+    "Quel budget prévoir pour un carport en bois ?",
+    "Comment entretenir un carport en bois dans le temps ?",
+    "Carport en bois : vos questions",
+    "Un carport pensé pour votre maison"
+   ],
+   "h3_n": 6,
+   "imgs": 7,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 5,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Carport en bois\",\"item\":\"https://lesprit-bois.fr/blog/carport-bois-guide\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Carport en bois : bien le choisir et l'intégrer à sa maison\",\"description\":\"Carport bois ou garage ? Adossé ou autoportant, essences, toiture, intégration architecturale, autorisation d'urbanisme, budget et entretien : le guide complet pour abriter votre voiture en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/source-adefrance/Carport-bois-Libourne-1.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-09\",\"dateModified\":\"2026-07-09\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/carport-bois-guide\"},\"about\":[\"carport bois\",\"abri voiture\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Carport ou garage : que choisir pour abriter sa voiture ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le carport protège efficacement la voiture de la pluie, du soleil et des feuilles pour un budget bien inférieur à un garage maçonné, tout en restant ouvert et lumineux. Le garage fermé apporte la sécurité et le rangement, mais coûte plus cher et alourdit le bâti. Le carport bois est le bon compromis quand on veut abriter sans construire un volume fermé.\"}},{\"@type\":\"Question\",\"name\":\"Carport adossé ou autoportant : quelle différence ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le carport adossé s'appuie sur un mur de la maison : il coûte moins cher, s'intègre dans le prolongement de l'habitation et abrite souvent un accès direct à la porte. L'autoportant repose sur ses propres poteaux et se pose n'importe où dans le jardin, indépendamment de la maison. Le choix dépend de la configuration du terrain et de la distance entre la place de stationnement et la maison.\"}},{\"@type\":\"Question\",\"name\":\"Quel bois choisir pour un carport ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un carport demande une essence durable exposée aux intempéries : le douglas et le mélèze offrent un excellent rapport durabilité-prix en bois local, le chêne un feuillu noble pour les projets haut de gamme, le pin autoclave une solution économique. La structure porteuse et l'ancrage au sol comptent autant que l'essence pour la longévité de l'ouvrage.\"}},{\"@type\":\"Question\",\"name\":\"Quelle toiture pour un carport en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Les tuiles offrent la meilleure intégration avec une maison couverte en tuiles et une longévité maximale, mais pèsent plus lourd sur la structure. Le bac acier est léger, économique et rapide à poser. La toiture végétalisée séduit pour son esthétique et son isolation, à condition d'une structure et d'une étanchéité prévues pour. Le choix se fait selon la maison, le budget et l'aspect recherché.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour installer un carport ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un carport crée de l'emprise au sol : selon la surface créée et le PLU de votre commune, une déclaration préalable de travaux ou un permis de construire peut être nécessaire. Les règles varient d'une commune à l'autre et selon la zone. Nous vérifions ces formalités avant d'engager le projet.\"}},{\"@type\":\"Question\",\"name\":\"Un carport en bois demande-t-il beaucoup d’entretien ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Peu, si l'essence est bien choisie et la structure ventilée. Un bois naturellement durable peut griser sans perdre en solidité. Pour conserver la teinte d'origine, on applique un saturateur à renouveler tous les deux à trois ans environ. L'entretien courant consiste surtout à dégager les feuilles de la toiture et à vérifier les évacuations d'eau.\"}}]}"
+   ],
+   "mots": 2272,
+   "liens_int": 30,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026": {
+   "status": 200,
+   "ms": 182,
+   "final": "https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026",
+   "bytes": 106012,
+   "title": "Autorisation d&#x27;urbanisme abri, carport, pergola en 2026 | L&#x27;Esprit Bois",
+   "meta_desc": "Déclaration préalable ou permis de construire ? Seuils d&#x27;emprise au sol, CERFA 16702, secteurs protégés : le guide 2026 pour abri de jardin, carport et pergola en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Abri de jardin, carport, pergola : quelle autorisation d&#x27;urbanisme en 2026 ?",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/Carport-bois-Libourne-3.webp",
+   "h1": [
+    "Abri de jardin, carport, pergola : quelle autorisation d&#x27;urbanisme en 2026 ?"
+   ],
+   "h2": [
+    "Faut-il une autorisation ? Le principe de l&#x27;emprise au sol",
+    "Les seuils 2026 : moins de 5 m², de 5 à 20 m², au-delà de 20 m²",
+    "Le cas de l&#x27;extension : le seuil relevé à 40 m² en zone U",
+    "Secteurs protégés et ABF : la règle plus stricte autour de Libourne et Saint-Émilion",
+    "Le nouveau formulaire CERFA n°16702 et la procédure de dépôt",
+    "Délais d&#x27;instruction et principe de l&#x27;accord tacite",
+    "Comment nous gérons ces formalités pour vous en Gironde",
+    "Autorisation d&#x27;urbanisme 2026 : vos questions",
+    "Un projet serein commence par un dossier en règle"
+   ],
+   "h3_n": 6,
+   "imgs": 8,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 6,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Autorisation d'urbanisme 2026\",\"item\":\"https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Abri de jardin, carport, pergola : quelle autorisation d'urbanisme en 2026 ?\",\"description\":\"Emprise au sol, seuils de 5, 20 et 40 m², secteurs protégés et Architecte des Bâtiments de France, nouveau CERFA n°16702, délais d'instruction : le guide complet des formalités d'urbanisme 2026 pour abri de jardin, carport et pergola en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/source-adefrance/Carport-bois-Libourne-3.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-11\",\"dateModified\":\"2026-07-11\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/autorisation-urbanisme-abri-carport-pergola-2026\"},\"about\":[\"urbanisme\",\"déclaration préalable\",\"permis de construire\",\"abri de jardin\",\"carport\",\"pergola\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour installer un abri de jardin, un carport ou une pergola ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cela dépend de l'emprise au sol créée, c'est-à-dire de la projection verticale de la construction, poteaux compris. En dessous de 5 m², aucune formalité n'est requise. Entre 5 et 20 m², une déclaration préalable de travaux est nécessaire. Au-delà de 20 m², il faut un permis de construire. Ces seuils s'appliquent au cas général ; le PLU de votre commune peut prévoir des règles plus strictes.\"}},{\"@type\":\"Question\",\"name\":\"Quels sont les seuils d'emprise au sol en 2026 pour un abri, un carport ou une pergola ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Jusqu'à 5 m² d'emprise au sol : aucune formalité. De plus de 5 m² à 20 m² : déclaration préalable (formulaire CERFA n°16702). Au-delà de 20 m² : permis de construire. En zone U d'une commune couverte par un PLU, si l'ouvrage est considéré comme une extension du bâti existant, le seuil de déclaration préalable est relevé à 40 m² ; au-delà, un permis de construire est requis.\"}},{\"@type\":\"Question\",\"name\":\"Qu'est-ce que le seuil de 40 m² pour une extension en zone U ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Quand le terrain se trouve en zone U d'une commune dotée d'un PLU et que la mairie considère la construction projetée comme une extension du bâti existant (accolée à la maison, dans son prolongement), le seuil de déclaration préalable passe de 20 à 40 m² d'emprise au sol. Au-delà de 40 m², un permis de construire devient nécessaire. C'est la mairie qui qualifie ou non l'ouvrage d'extension.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation particulière près de Saint-Émilion ou d'un monument historique ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. Dans les abords de monuments historiques et les sites classés, comme le périmètre UNESCO de Saint-Émilion, la déclaration préalable est obligatoire dès 5 m² d'emprise au sol et jusqu'à 20 m² ; au-delà, un permis de construire est requis. Le dossier est en plus soumis à l'avis de l'Architecte des Bâtiments de France, ce qui allonge le délai d'instruction à deux mois.\"}},{\"@type\":\"Question\",\"name\":\"Quel formulaire utiliser pour une déclaration préalable de travaux en 2026 ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Depuis janvier 2026, le CERFA n°16702 est le seul formulaire valide pour une déclaration préalable de travaux concernant une construction nouvelle comme un abri de jardin, un carport ou une pergola. Il se dépose en quatre exemplaires à la mairie du lieu des travaux, accompagné d'un plan de situation, d'un plan de masse et, selon les cas, d'une représentation de l'aspect extérieur.\"}},{\"@type\":\"Question\",\"name\":\"Combien de temps dure l'instruction d'une déclaration préalable et que se passe-t-il en l'absence de réponse ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le délai d'instruction d'une déclaration préalable est d'un mois dans le cas général, porté à deux mois en secteur protégé pour permettre la consultation de l'Architecte des Bâtiments de France. Si la mairie ne répond pas dans ce délai, le silence vaut accord tacite : le projet peut être réalisé, sous réserve d'en conserver la preuve (récépissé de dépôt et calcul du délai).\"}}]}"
+   ],
+   "mots": 2327,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique": {
+   "status": 200,
+   "ms": 392,
+   "final": "https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique",
+   "bytes": 104474,
+   "title": "Pergola bois ou bioclimatique : comment choisir ? | L&#x27;Esprit Bois",
+   "meta_desc": "Pergola bois sur mesure ou bioclimatique alu à lames orientables ? Comparatif, cas d&#x27;usage, budget et entretien pour bien choisir en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Pergola bois ou pergola bioclimatique : comment choisir ?",
+   "og_image": "https://lesprit-bois.fr/images/pergola-bioclimatique-lisudestemps.webp",
+   "h1": [
+    "Pergola bois ou pergola bioclimatique : comment choisir ?"
+   ],
+   "h2": [
+    "Pergola bois, pergola bioclimatique : quelle différence de fond ?",
+    "Le comparatif honnête, point par point",
+    "Dans quels cas la pergola bois est-elle le bon choix ?",
+    "Quand la pergola bioclimatique prend-elle l&#x27;avantage ?",
+    "Comment intégrer la pergola à la terrasse et à la maison ?",
+    "Quel budget prévoir pour une pergola bois ou bioclimatique ?",
+    "Quel entretien pour l&#x27;une et pour l&#x27;autre ?",
+    "Pergola bois ou bioclimatique ?",
+    "Le bon ouvrage pour votre terrasse"
+   ],
+   "h3_n": 6,
+   "imgs": 8,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 6,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pergola bois ou bioclimatique\",\"item\":\"https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Pergola bois ou pergola bioclimatique : comment choisir ?\",\"description\":\"Pergola en bois sur mesure ou pergola bioclimatique aluminium à lames orientables ? Comparatif honnête, cas d'usage, budget 2025-2026 et entretien pour choisir en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/pergola-bioclimatique-lisudestemps.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-09\",\"dateModified\":\"2026-07-09\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/pergola-bois-ou-bioclimatique\"},\"about\":[\"pergola bois\",\"pergola bioclimatique\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Quelle est la différence entre une pergola en bois et une pergola bioclimatique ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une pergola en bois est une structure fixe, chaleureuse et sur mesure, couverte d'une toiture (lames fixes, toile, panneaux) qui s'intègre à l'architecture. Une pergola bioclimatique est une structure en aluminium dont les lames de toit sont orientables et souvent motorisées, ce qui permet de moduler l'ombre, la ventilation et la fermeture au fil de la journée.\"}},{\"@type\":\"Question\",\"name\":\"La pergola bioclimatique est-elle plus chère que la pergola en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En fourchettes de marché 2025-2026, une pergola bioclimatique motorisée démarre plus haut qu'une pergola bois de dimensions équivalentes, car la mécanique des lames et la motorisation pèsent lourd. Une pergola bois sur mesure peut toutefois rejoindre ce budget selon l'essence et les finitions. Seul un devis établi sur place engage un prix.\"}},{\"@type\":\"Question\",\"name\":\"Une pergola bioclimatique peut-elle être en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le terme « bioclimatique » désigne le principe des lames orientables, presque toujours réalisé en aluminium pour la précision de la mécanique. On peut cependant marier les deux univers : une ossature ou un habillage bois avec une couverture technique, pour la chaleur du bois et le confort du réglable.\"}},{\"@type\":\"Question\",\"name\":\"Quel entretien pour une pergola en bois ou bioclimatique ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une pergola en bois se nettoie et se protège périodiquement : un saturateur ou une lasure tous les deux ans environ selon l'essence et l'exposition. Une pergola bioclimatique aluminium demande surtout un nettoyage régulier et un contrôle occasionnel de la motorisation et des joints ; l'aluminium ne pourrit pas mais la mécanique reste à surveiller.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour installer une pergola ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Selon la surface couverte, l'adossement à la maison et le PLU de votre commune, une déclaration préalable de travaux ou un permis de construire peut être requis. Les seuils et les règles varient d'une commune à l'autre : nous les vérifions avant d'engager le projet.\"}},{\"@type\":\"Question\",\"name\":\"Quelle pergola choisir pour une terrasse en Gironde ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Tout dépend de l'usage et du style. Pour prolonger une maison en pierre ou une terrasse en bois avec chaleur et intégration, la pergola bois s'impose. Pour un confort piloté au bouton, une ombre modulable et une esthétique contemporaine, la bioclimatique prend l'avantage. Nous décidons devant votre terrain, en fonction de l'exposition et de l'architecture.\"}}]}"
+   ],
+   "mots": 1978,
+   "liens_int": 30,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif": {
+   "status": 200,
+   "ms": 218,
+   "final": "https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif",
+   "bytes": 122859,
+   "title": "Carport aluminium ou bois : comparatif 2026 en Gironde | L&#x27;Esprit Bois",
+   "meta_desc": "Budget 2026, entretien, portées et style : nous vendons et posons les deux matières. Le comparatif honnête carport aluminium / carport bois, avec verdict par profil, à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style)",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/Carport-aluminium-Libourne-4.webp",
+   "h1": [
+    "Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style)"
+   ],
+   "h2": [
+    "Carport aluminium ou bois : notre réponse en une minute",
+    "Structure, portées et emprise : ce que chaque matière permet vraiment",
+    "Style et intégration : chaleur du bois, discrétion de l&#x27;aluminium thermolaqué",
+    "Entretien : le vrai écart sur quinze à vingt ans",
+    "Budget 2026 : ce que coûte chaque solution, posée",
+    "Couverture, évacuation des eaux et options (éclairage, panneaux latéraux, occultation)",
+    "Urbanisme à Libourne et en Gironde : les formalités à ne pas oublier",
+    "Nos recommandations selon votre maison et votre usage",
+    "Carport aluminium ou bois : vos questions",
+    "Les deux matières, un seul artisan"
+   ],
+   "h3_n": 5,
+   "imgs": 9,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 7,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Carport aluminium ou bois\",\"item\":\"https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Carport aluminium ou carport bois : le comparatif de décision (budget, entretien, style)\",\"description\":\"Portées et emprise, style et thermolaquage, entretien sur quinze à vingt ans, budget 2026 posé, couverture et évacuation des eaux, urbanisme : le comparatif de décision entre carport aluminium et carport bois, avec une recommandation nette par profil de projet, par un artisan à Libourne (Gironde).\",\"image\":\"https://lesprit-bois.fr/images/source-adefrance/Carport-aluminium-Libourne-4.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-31\",\"dateModified\":\"2026-07-31\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/carport-aluminium-ou-bois-comparatif\"},\"about\":[\"carport aluminium\",\"carport bois\",\"abri voiture\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Carport aluminium ou bois : lequel dure le plus longtemps ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Les deux durent très longtemps quand ils sont bien conçus, mais pas de la même façon. L'aluminium ne pourrit pas et ne se déforme pas : sa durée de vie dépend surtout de la tenue du thermolaquage et de la qualité des assemblages. Le bois, en essence adaptée et avec des poteaux désolidarisés du sol par des pieds métalliques, tient tout aussi longtemps, à condition d'un entretien régulier ou d'accepter le grisaillement. La vraie différence n'est pas la longévité, c'est le travail à fournir pour l'obtenir.\"}},{\"@type\":\"Question\",\"name\":\"Un carport aluminium demande-t-il vraiment zéro entretien ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Presque, mais pas tout à fait. Un carport aluminium thermolaqué se contente d'un lavage à l'eau savonneuse une à deux fois par an, sans ponçage, sans lasure et sans saturateur. En revanche, les évacuations d'eau intégrées aux poteaux et les chéneaux doivent être dégagés des feuilles et des mousses, sinon ils débordent. C'est le seul entretien réellement obligatoire, et il prend une trentaine de minutes par an.\"}},{\"@type\":\"Question\",\"name\":\"Quel est le prix d'un carport aluminium posé en 2026 ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En ordre de grandeur 2026, comptez environ 3 000 à 6 500 € TTC posé pour un carport aluminium une place, et 5 500 à 10 000 € TTC pour deux places, davantage en sur-mesure avec options (éclairage intégré, panneaux latéraux, occultation, lames orientables). Attention : ces montants concernent la structure posée. La dalle ou les plots béton, le terrassement, le raccordement des eaux pluviales et la taxe d'aménagement s'ajoutent et pèsent lourd dans le budget réel.\"}},{\"@type\":\"Question\",\"name\":\"Un carport aluminium résiste-t-il au vent et à la neige en Gironde ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, à condition que la structure soit dimensionnée pour les charges de neige et de vent de votre zone, et correctement ancrée sur un support béton. Un carport aluminium n'est pas résistant « par nature » : ce sont la section des profilés, le nombre de poteaux, la portée retenue et la fixation au sol qui font la tenue. C'est exactement le même raisonnement qu'en bois, et c'est ce que nous vérifions au moment du devis.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation d'urbanisme différente selon la matière ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non. L'urbanisme ne regarde pas la matière mais l'emprise au sol créée : les seuils de déclaration préalable et de permis de construire sont les mêmes pour un carport aluminium et pour un carport bois. Seule l'instruction peut différer en secteur protégé ou aux abords d'un monument historique, où l'architecte des Bâtiments de France se prononce sur l'aspect, la teinte et le matériau. Le PLU de votre commune peut également imposer des règles d'aspect.\"}}]}"
+   ],
+   "mots": 3066,
+   "liens_int": 31,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide": {
+   "status": 200,
+   "ms": 180,
+   "final": "https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide",
+   "bytes": 133471,
+   "title": "Pergola bioclimatique aluminium : le guide 2026 | L&#x27;Esprit Bois",
+   "meta_desc": "Lames orientables, motorisation, thermolaquage, teinte RAL, urbanisme et budget 2026 : le guide complet de la pergola bioclimatique en aluminium à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp",
+   "h1": [
+    "Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026"
+   ],
+   "h2": [
+    "Comment fonctionne vraiment une pergola bioclimatique ?",
+    "Adossée, autoportante ou en îlot : quelle implantation ?",
+    "Ce qui sépare une bonne pergola alu d&#x27;une pergola bas de gamme",
+    "Motorisation, capteurs et domotique : jusqu&#x27;où aller ?",
+    "Choisir la teinte : nuancier RAL, mat ou sablé",
+    "Stores zip, panneaux, éclairage : les options qui changent l&#x27;usage",
+    "Faut-il une autorisation d&#x27;urbanisme pour une pergola bioclimatique ?",
+    "Budget 2026 et entretien d&#x27;une pergola aluminium",
+    "Pergola bioclimatique aluminium : vos questions",
+    "Une pergola réglée sur votre terrasse, pas sur un catalogue"
+   ],
+   "h3_n": 6,
+   "imgs": 10,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 8,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pergola bioclimatique aluminium\",\"item\":\"https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Pergola bioclimatique en aluminium : lames orientables, motorisation et budget en 2026\",\"description\":\"Comment fonctionne une pergola bioclimatique en aluminium, ce qui distingue une bonne structure d'une pergola bas de gamme, jusqu'où motoriser, quelle teinte RAL choisir, quelles formalités d'urbanisme et quel budget prévoir en 2026, par un artisan à Libourne (Gironde).\",\"image\":\"https://lesprit-bois.fr/images/source-adefrance/Pergolas-aluminium-Libourne-3.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-30\",\"dateModified\":\"2026-07-30\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/pergola-bioclimatique-aluminium-guide\"},\"about\":[\"pergola bioclimatique\",\"aluminium\",\"lames orientables\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Une pergola bioclimatique protège-t-elle vraiment de la pluie ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, lames fermées, une pergola bioclimatique de qualité forme une toiture qui collecte l'eau et l'évacue par des chéneaux périphériques puis par les poteaux. C'est la qualité de l'étanchéité entre les lames et du circuit d'évacuation qui fait la différence : sur les modèles bas de gamme, l'eau finit par ruisseler ou goutter à la jonction des lames. Une pergola reste toutefois un ouvrage ouvert sur les côtés : par pluie battante et vent de travers, la terrasse peut recevoir des embruns.\"}},{\"@type\":\"Question\",\"name\":\"Lames orientables motorisées ou manuelles : que choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La commande manuelle par manivelle suffit sur une petite pergola dont on règle les lames une ou deux fois par jour, et elle coûte moins cher. La motorisation devient vraiment utile au-delà de trois mètres de portée, sur une terrasse qu'on utilise tous les jours, et surtout dès qu'on ajoute un capteur de pluie ou de vent : les lames se referment ou se remettent à plat toutes seules quand personne n'est là. Notre conseil : si vous ne motorisez pas tout de suite, faites au moins passer l'alimentation électrique pendant le chantier.\"}},{\"@type\":\"Question\",\"name\":\"Quel budget prévoir pour une pergola bioclimatique aluminium posée ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Les fourchettes de marché 2026, pose comprise, se situent le plus souvent entre 400 et 900 € du m² selon la gamme et les équipements. En ordre de grandeur : environ 2 500 à 4 500 € pour une pergola aluminium 3 × 3 m à lames manuelles, plutôt 4 500 à 8 500 € pour un modèle d'environ 4 × 3 m à lames motorisées avec capteurs et éclairage LED, et au-delà pour les grandes portées, les stores zip et les finitions poussées. Seul un devis établi après relevé sur place engage réellement.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une déclaration préalable pour une pergola bioclimatique ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une pergola bioclimatique crée de l'emprise au sol : en règle générale, aucune formalité en dessous de 5 m², une déclaration préalable de 5 à 20 m² et un permis de construire au-delà de 20 m². Mais le PLU de votre commune peut être plus contraignant, et en secteur protégé ou aux abords d'un monument historique une déclaration préalable peut être exigée dès le premier mètre carré. Nous vérifions le PLU et montons le dossier avant d'engager le chantier.\"}},{\"@type\":\"Question\",\"name\":\"Une pergola en aluminium demande-t-elle de l’entretien ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Très peu, et c'est son principal atout : un lavage à l'eau savonneuse une à deux fois par an suffit, sans produit abrasif ni nettoyeur haute pression sur les joints. Il faut en revanche penser à contrôler les évacuations et les chéneaux à l'automne, dépoussiérer les rails des stores et vérifier les articulations des lames et la motorisation. Contrairement au bois, un aluminium thermolaqué ne demande aucune remise en peinture périodique.\"}},{\"@type\":\"Question\",\"name\":\"Peut-on fermer les côtés de la pergola plus tard ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, à condition de l'avoir anticipé : stores verticaux zippés, panneaux coulissants à lames ou vitrages coulissants se posent après coup si la structure a été dimensionnée et pré-équipée pour les recevoir. Attention en revanche au point de bascule : une pergola entièrement refermée par des vitrages ne s'utilise plus comme une pergola mais comme une véranda, avec des conséquences réglementaires et thermiques différentes. Mieux vaut en parler dès la conception.\"}}]}"
+   ],
+   "mots": 3414,
+   "liens_int": 30,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde": {
+   "status": 200,
+   "ms": 148,
+   "final": "https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde",
+   "bytes": 115700,
+   "title": "Bois local en Gironde : pin maritime, douglas, châtaignier | L&#x27;Esprit Bois",
+   "meta_desc": "Bois local Gironde : pin maritime des Landes, douglas de Nouvelle-Aquitaine, châtaignier. Origine, durabilité, label Bois de France et arbitrages honnêtes par un artisan à Libourne.",
+   "canonical": "https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Bois local en Gironde : pin maritime, douglas et châtaignier",
+   "og_image": "https://lesprit-bois.fr/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg",
+   "h1": [
+    "Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut vraiment la filière Nouvelle-Aquitaine ?"
+   ],
+   "h2": [
+    "Bois local, bois français, bois certifié : trois choses différentes",
+    "La Nouvelle-Aquitaine, première région forestière de France",
+    "Le pin maritime : l&#x27;essence girondine par excellence",
+    "Le douglas : charpente et bardage sans traitement chimique",
+    "Chêne et châtaignier : les feuillus qu&#x27;on oublie",
+    "Comment vérifier réellement l&#x27;origine du bois qu&#x27;on vous livre",
+    "Ce qu&#x27;on utilise vraiment sur nos chantiers autour de Libourne",
+    "Bois local en Gironde : vos questions",
+    "Le bon bois, au bon endroit, le plus près possible"
+   ],
+   "h3_n": 6,
+   "imgs": 7,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 5,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Bois local en Gironde\",\"item\":\"https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Bois local en Gironde : pin maritime, douglas et châtaignier, que vaut vraiment la filière Nouvelle-Aquitaine ?\",\"description\":\"Pin maritime des Landes de Gascogne, douglas de la partie limousine, chêne et châtaignier : ce que recouvre vraiment le bois local en Gironde, comment vérifier l'origine du bois qu'on vous livre (label Bois de France, CTB B+, classes d'emploi) et quand une autre essence reste le bon choix.\",\"image\":\"https://lesprit-bois.fr/images/blog/bois-local-pin-maritime-douglas-gironde/foret-pins-maritimes-bois-local-gironde.jpg\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-29\",\"dateModified\":\"2026-07-29\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/bois-local-pin-maritime-douglas-gironde\"},\"about\":[\"bois local\",\"pin maritime\",\"douglas\",\"châtaignier\",\"filière bois Nouvelle-Aquitaine\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Quel est le bois vraiment local en Gironde ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"C'est d'abord le pin maritime : le massif des Landes de Gascogne, environ 974 000 hectares plantés à plus de 80 % en pin maritime, commence à quelques dizaines de kilomètres au sud-ouest de Libourne. Viennent ensuite le douglas, dont l'essentiel de la ressource régionale se trouve dans la partie limousine de la Nouvelle-Aquitaine, puis les feuillus régionaux, chêne et châtaignier, dont la région est la première ressource de France.\"}},{\"@type\":\"Question\",\"name\":\"Le bois local est-il moins cher que le bois importé ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pas automatiquement. Le pin maritime traité reste l'option la plus économique de notre gamme, mais le douglas se situe au-dessus, et le châtaignier en sciage soigné peut coûter cher, notamment parce que les grandes sections sont plus rares. Le vrai avantage du local se joue plutôt sur les délais d'approvisionnement, la disponibilité des sections et la traçabilité que sur le prix affiché.\"}},{\"@type\":\"Question\",\"name\":\"Les labels PEFC et FSC garantissent-ils que le bois est français ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non, et c'est la confusion la plus fréquente. PEFC et FSC certifient la gestion durable de la forêt d'origine, pas sa localisation géographique : un bois certifié PEFC peut venir de très loin. Pour une garantie d'origine française, c'est le label Bois de France, lancé en janvier 2020 par la Fédération Nationale du Bois, qui trace la provenance de la forêt au produit fini.\"}},{\"@type\":\"Question\",\"name\":\"Le pin maritime traité autoclave convient-il pour une terrasse ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, à condition d'exiger un traitement sérieux. Le pin maritime a une durabilité naturelle faible mais il est très imprégnable : traité en autoclave, il peut atteindre la classe d'emploi 4, celle du contact avec le sol ou l'eau douce. Demandez la mention CTB B+ sur le devis et sur les documents de livraison : le sigle CTB seul ne suffit pas à qualifier le traitement.\"}},{\"@type\":\"Question\",\"name\":\"Douglas ou châtaignier pour un bardage en Gironde ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le douglas est le choix le plus courant : son duramen est naturellement durable en classe d'emploi 3, hors contact du sol, à condition de purger l'aubier, et il se trouve facilement en longueurs de bardage. Le châtaignier est naturellement durable lui aussi et très beau en façade, mais sa disponibilité et ses sections sont plus contraintes et son prix plus élevé. Le châtaignier reste imbattable sur les piquets et les clôtures.\"}},{\"@type\":\"Question\",\"name\":\"Comment vérifier l’origine du bois sur un devis ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un devis honnête mentionne quatre choses : l'essence précise, la classe d'emploi visée, le traitement éventuel avec sa certification, et la provenance du bois ou de la scierie. Vous pouvez demander à votre artisan le nom du fournisseur, la scierie de transformation et, le cas échéant, la certification Bois de France. Un professionnel qui travaille réellement en filière locale répond sans difficulté à ces questions.\"}}]}"
+   ],
+   "mots": 2861,
+   "liens_int": 34,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose": {
+   "status": 200,
+   "ms": 196,
+   "final": "https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose",
+   "bytes": 134807,
+   "title": "Bardage bois façade : essences, pose et prix 2026 | L&#x27;Esprit Bois",
+   "meta_desc": "Douglas, mélèze, red cedar ou pin traité, claire-voie ou recouvrement, lame d&#x27;air ventilée, déclaration préalable et prix au m² : le guide du bardage bois à Libourne et en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ?",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/IMG-20250303-WA0044-1.jpg",
+   "h1": [
+    "Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ?"
+   ],
+   "h2": [
+    "Bardage bois : ce qu&#x27;il apporte vraiment à une façade",
+    "Quelle essence choisir : douglas, mélèze, red cedar ou pin traité",
+    "Classe d&#x27;emploi 3 : la case à cocher avant tout le reste",
+    "Claire-voie, à recouvrement ou à rainure et languette : le style dicte la pose",
+    "Le grisaillement : l&#x27;accepter, le retarder ou le devancer",
+    "Les règles de pose qui font durer une façade",
+    "Faut-il une autorisation pour poser un bardage ?",
+    "Budget 2026 : combien coûte un bardage bois posé",
+    "Notre approche du bardage bois à Libourne et en Gironde",
+    "Bardage bois en façade : vos questions",
+    "Une façade bois qui vieillit bien, c&#x27;est une façade qui respire"
+   ],
+   "h3_n": 6,
+   "imgs": 8,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 6,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Bardage bois en façade\",\"item\":\"https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Bardage bois en façade : quelle essence, quelle pose et quel budget en 2026 ?\",\"description\":\"Choisir un bardage bois pour sa façade : comparatif des essences (douglas, mélèze, red cedar, pin traité), classe d'emploi 3, pose claire-voie ou à recouvrement, lame d'air ventilée selon le NF DTU 41.2, déclaration préalable et budget au m² posé, à Libourne et en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/source-adefrance/IMG-20250303-WA0044-1.jpg\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-28\",\"dateModified\":\"2026-07-28\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/bardage-bois-facade-essences-pose\"},\"about\":[\"bardage bois\",\"façade bois\",\"construction bois\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Quelle essence choisir pour un bardage bois en façade ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le douglas et le mélèze sont les deux valeurs sûres : durabilité naturelle satisfaisante en classe d'emploi 3, teintes chaudes, disponibilité correcte. Le pin maritime ou le sapin traité restent la solution la plus économique, à condition d'un traitement qui les amène en classe 3. Le red cedar offre la meilleure stabilité et un très beau brun rouge, mais c'est un bois importé, nettement plus cher. En Gironde, le pin maritime et le douglas ont l'avantage de venir de filières de Nouvelle-Aquitaine.\"}},{\"@type\":\"Question\",\"name\":\"Quel est le prix d’un bardage bois au m² posé en 2026 ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En fourniture et pose comprises, on constate en 2026 des ordres de grandeur d'environ 90 à 150 €/m² pour un bardage douglas, 120 à 200 €/m² pour du mélèze et 200 à 350 €/m² pour du red cedar, le pin maritime ou le sapin traité formant l'entrée de gamme. Ces fourchettes sont indicatives : l'état du support, la hauteur de façade, l'échafaudage et les finitions (angles, encadrements de baies, grilles de ventilation) font bouger le prix autant que l'essence.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une déclaration préalable pour poser un bardage bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui : poser un bardage modifie l'aspect extérieur de la façade, ce qui relève d'une déclaration préalable de travaux. Le délai d'instruction est d'un mois, porté à deux mois en périmètre des Bâtiments de France ou en site patrimonial remarquable, où l'avis de l'architecte des Bâtiments de France est obligatoire et peut imposer teintes et matériaux. Le dossier présente la façade concernée, le matériau, la teinte, le sens de pose et l'intégration au bâti. Il faut toujours vérifier le PLU de sa commune.\"}},{\"@type\":\"Question\",\"name\":\"Pourquoi faut-il une lame d’air ventilée derrière un bardage bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Parce que c'est elle qui fait sécher le bois et le mur. Le NF DTU 41.2, norme de référence des revêtements extérieurs en bois, prévoit une lame d'air ventilée d'au moins 20 mm entre le bardage et le mur, créée par des tasseaux en simple ou double ossature, avec un pare-pluie derrière. Cette lame d'air n'est réellement ventilée que si elle dispose d'une entrée d'air en partie basse et d'une sortie en partie haute débouchant à l'extérieur. Sans cela, l'humidité se condense et le bois se dégrade prématurément.\"}},{\"@type\":\"Question\",\"name\":\"Qu’est-ce que la classe d’emploi 3 et pourquoi concerne-t-elle un bardage ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La classe d'emploi 3 correspond à un bois utilisé à l'extérieur, hors contact du sol, exposé à une humidification fréquente : c'est exactement la situation d'un bardage de façade. On distingue la classe 3.1 pour une exposition normale et la classe 3.2 pour les expositions sévères, comme le bord de mer à moins de 3 km ou la montagne au-dessus de 900 m. Le Libournais, en Gironde intérieure, relève d'une exposition normale : la classe 3.1 y suffit dans la très grande majorité des cas.\"}},{\"@type\":\"Question\",\"name\":\"Peut-on empêcher un bardage bois de griser ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non, on peut seulement retarder le grisaillement ou le devancer. Le gris est l'évolution naturelle du bois exposé aux UV et à la pluie : il ne touche que la surface et n'entame pas la solidité des lames. Un saturateur conserve la teinte quelques années et se renouvelle, une lasure demande un entretien plus contraignant, un bardage pré-grisé ou brûlé assume l'aspect final dès la pose. Aucune finition n'est définitive : le vrai choix est d'accepter la patine ou d'accepter un entretien récurrent.\"}}]}"
+   ],
+   "mots": 3744,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation": {
+   "status": 200,
+   "ms": 194,
+   "final": "https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation",
+   "bytes": 104657,
+   "title": "Poulailler en bois : réglementation 2026 et implantation | L&#x27;Esprit Bois",
+   "meta_desc": "Poulailler en bois : moins de 5 m² sans formalité, déclaration préalable de 5 à 20 m², déclaration des volailles en mairie obligatoire. Dimensionnement, essences et implantation, par un artisan à Libourne (Gironde).",
+   "canonical": "https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Poulailler en bois : réglementation 2026, bien-être des poules et implantation",
+   "og_image": "https://lesprit-bois.fr/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg",
+   "h1": [
+    "Poulailler en bois : réglementation 2026, bien-être des poules et bonne implantation"
+   ],
+   "h2": [
+    "Faut-il une autorisation pour un poulailler ?",
+    "La déclaration en mairie des volailles : l&#x27;obligation qu&#x27;on oublie",
+    "Bien dimensionner : combien de poules, quelle surface, quel parcours",
+    "Quel bois pour un poulailler qui dure ?",
+    "Où l&#x27;implanter : distance aux voisins, ensoleillement, vent, prédateurs",
+    "Poulailler kit ou sur mesure : ce que change le travail d&#x27;un artisan",
+    "Entretien et hivernage : litière, ventilation, désinfection",
+    "Poulailler en bois : vos questions",
+    "Un poulailler pensé pour durer et pour vos poules"
+   ],
+   "h3_n": 5,
+   "imgs": 6,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 4,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Poulailler en bois\",\"item\":\"https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Poulailler en bois : réglementation 2026, bien-être des poules et implantation\",\"description\":\"Réglementation d'urbanisme (seuils 5 et 20 m²), déclaration obligatoire des volailles en mairie, dimensionnement au bien-être des poules, essences durables et bonne implantation : le guide complet du poulailler en bois en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/blog/poulailler-bois-reglementation-implantation/poulailler-bois-cover.jpg\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-26\",\"dateModified\":\"2026-07-26\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/poulailler-bois-reglementation-implantation\"},\"about\":[\"poulailler bois\",\"réglementation poulailler\",\"bien-être des poules\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour installer un poulailler en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En dessous de 5 m² d'emprise au sol, aucune formalité d'urbanisme n'est requise. De 5 à 20 m², une déclaration préalable en mairie s'impose (instruction environ un mois). Au-delà de 20 m², c'est un permis de construire. Au-delà de 5 m² clos et couvert, une taxe d'aménagement peut s'appliquer, et le PLU comme le Code civil encadrent la hauteur et l'implantation en limite de propriété.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il déclarer ses poules en mairie, même une seule ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. Depuis les mesures de lutte contre l'influenza aviaire, tout détenteur de volailles doit se déclarer, même pour une seule poule, via le formulaire Cerfa n° 15472*02 ou par télédéclaration sur mesdemarches.agriculture.gouv.fr. Cette déclaration sanitaire est distincte de l'urbanisme. L'absence de déclaration constitue une contravention de 4e classe, punie jusqu'à 750 €.\"}},{\"@type\":\"Question\",\"name\":\"Combien de poules pour quelle surface de poulailler ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Comptez au minimum environ 0,25 m² par poule à l'intérieur de l'abri, en visant plus pour leur confort, et un parcours extérieur d'environ 4 m² par poule. Prévoyez environ 20 cm de perchoir par poule et un pondoir pour 3 à 4 poules. Pour 4 à 6 poules de jardin, un poulailler d'environ 1,5 à 2 m² avec un parcours clos généreux constitue une bonne base.\"}},{\"@type\":\"Question\",\"name\":\"Quel budget pour un poulailler en bois sur mesure ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un poulailler en kit d'entrée de gamme démarre à quelques centaines d'euros, mais sa durée de vie est limitée. Un poulailler en bois sur mesure, en essence durable, avec parcours clos, protection contre les prédateurs et ventilation étudiée, représente un budget plus élevé qui se justifie par sa longévité et le bien-être des poules. Seul un devis établi sur place, selon la surface et l'implantation, chiffre honnêtement votre projet.\"}},{\"@type\":\"Question\",\"name\":\"Comment entretenir un poulailler en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Renouvelez régulièrement la litière et nettoyez le poulailler à fond au moins deux fois par an, avec une désinfection à chaque grand nettoyage. Assurez une ventilation haute permanente, sans courant d'air au niveau des perchoirs. Avant l'hiver, vérifiez l'étanchéité de la toiture, l'état du bois et des grillages, et renforcez la litière pour garder les poules au sec. Un saturateur tous les deux à trois ans conserve la teinte du bois.\"}}]}"
+   ],
+   "mots": 2156,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure": {
+   "status": 200,
+   "ms": 152,
+   "final": "https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure",
+   "bytes": 111209,
+   "title": "Abri de jardin bois : kit ou sur-mesure ? Comparatif honnête | L&#x27;Esprit Bois",
+   "meta_desc": "Kit ou sur-mesure pour votre abri de jardin en bois ? Budget 2026, essence, durée de vie, réglementation et implantation : le comparatif honnête d&#x27;un artisan à Libourne, en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête",
+   "og_image": "https://lesprit-bois.fr/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-cover.jpg",
+   "h1": [
+    "Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête"
+   ],
+   "h2": [
+    "Kit ou sur-mesure : la réponse en une minute",
+    "L&#x27;abri en kit : pour qui, à quel prix, quelles limites",
+    "L&#x27;abri sur-mesure : ce que l&#x27;artisan change (essence, dimensions, intégration)",
+    "Quelle essence pour durer ? Douglas, pin classe 4, red cedar et classes d&#x27;emploi",
+    "Budget 2026 comparé : du kit 4 m² au sur-mesure monté",
+    "Réglementation express : seuils de surface, taxe d&#x27;aménagement, distances",
+    "Bien l&#x27;implanter dans un jardin en Gironde (sol, orientation, humidité)",
+    "Notre façon de faire à Libourne",
+    "Abri de jardin en bois : vos questions",
+    "Un abri de jardin pensé pour durer, en Gironde"
+   ],
+   "h3_n": 6,
+   "imgs": 6,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 4,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Abri de jardin bois : kit ou sur-mesure\",\"item\":\"https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Abri de jardin en bois : kit ou sur-mesure ? Le comparatif honnête\",\"description\":\"Kit ou sur-mesure pour un abri de jardin en bois : budget 2026, essence et classes d'emploi, durée de vie, réglementation et implantation en Gironde. Le comparatif de décision d'un artisan à Libourne.\",\"image\":\"https://lesprit-bois.fr/images/blog/abri-jardin-bois-kit-ou-sur-mesure/abri-jardin-bois-cover.jpg\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-26\",\"dateModified\":\"2026-07-26\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/abri-jardin-bois-kit-ou-sur-mesure\"},\"about\":[\"abri de jardin bois\",\"abri de jardin sur mesure\",\"abri de jardin en kit\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Abri de jardin en kit ou sur-mesure : lequel choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le kit gagne sur le prix et le délai : il convient pour un besoin de rangement simple, sur une petite surface, avec un budget serré. Le sur-mesure gagne sur la durée de vie et l'intégration : dimensions libres, essence choisie, ancrage soigné et raccord avec la maison ou le jardin. Le bon choix dépend de la surface visée, du budget et du temps que vous comptez garder l'abri.\"}},{\"@type\":\"Question\",\"name\":\"Quel est le prix d’un abri de jardin en bois en 2026 ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un abri en kit d'environ 4 m² démarre autour de 600 € en bois brut, hors dalle et hors pose. Un abri sur-mesure monté par un artisan coûte nettement plus : à titre d'exemple, un abri bois d'environ 15 m² posé peut avoisiner 5 600 € TTC, dalle, montage, déclaration préalable et taxe comprises. Un modèle composite de 20 m² dépasse souvent 8 000 €. Ce sont des ordres de grandeur : seul un devis sur place chiffre honnêtement.\"}},{\"@type\":\"Question\",\"name\":\"Quelle essence de bois pour un abri de jardin qui dure ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Il faut une essence adaptée à la classe d'emploi 3 pour le bardage et la charpente exposés, et classe 4 pour tout ce qui touche le sol. Le douglas offre un très bon rapport durabilité-prix en bois local, le pin traité autoclave classe 4 sécurise les parties basses, le red cedar est haut de gamme mais plus cher. Sur les kits d'entrée de gamme, l'épicéa non traité impose un entretien vigilant sous peine de durée de vie limitée.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour installer un abri de jardin ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En principe, en dessous de 5 m² d'emprise au sol aucune formalité n'est due, entre 5 et 20 m² une déclaration préalable de travaux est requise, et au-delà de 20 m² un permis de construire. Le PLU de votre commune peut durcir ces règles, et une taxe d'aménagement au taux communal (souvent 1 à 5 %) s'applique dès la déclaration préalable. Nous vérifions ces formalités avant d'engager le projet.\"}},{\"@type\":\"Question\",\"name\":\"Combien de temps dure un abri de jardin en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Tout dépend de l'essence, du montage et de l'entretien. Un kit d'entrée de gamme mal posé sur un sol humide peut fatiguer en quelques années, tandis qu'un abri en douglas ou en pin classe 4, posé sur une dalle drainée et entretenu, tient facilement quinze à vingt ans. L'ancrage au sol et la ventilation comptent autant que l'essence.\"}},{\"@type\":\"Question\",\"name\":\"À quelle fréquence entretenir un abri de jardin en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pour conserver la teinte, on applique un saturateur environ une fois par an les deux à trois premières années, puis tous les deux à trois ans selon l'exposition. On peut aussi laisser le bois griser naturellement sans perte de solidité. L'essentiel est de dégager la toiture des feuilles et de vérifier que l'eau ne stagne jamais au pied des parois.\"}}]}"
+   ],
+   "mots": 2607,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2": {
+   "status": 200,
+   "ms": 155,
+   "final": "https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2",
+   "bytes": 127556,
+   "title": "Extension ossature bois : prix au m², délais et avantages 2026 | L&#x27;Esprit Bois",
+   "meta_desc": "Comptez 1 700 à 2 500 €/m² pour une extension ossature bois sur mesure en 2026. Prix, délais, autorisations, RE2020 et bois local : le guide d&#x27;un artisan en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Extension en ossature bois : prix au m², délais et avantages en 2026",
+   "og_image": "https://lesprit-bois.fr/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp",
+   "h1": [
+    "Extension en ossature bois : prix au m², délais et avantages en 2026"
+   ],
+   "h2": [
+    "Extension ossature bois : le prix au m² en 2026",
+    "Pourquoi l&#x27;ossature bois pour agrandir : légèreté, rapidité, isolation",
+    "Ce qui fait varier le prix : surface, toiture, finitions, sol",
+    "Combien de temps sur le chantier ? Les étapes et les délais réels",
+    "Autorisations : déclaration préalable, permis, seuils et RE2020",
+    "Le bois local : pin maritime et douglas de Nouvelle-Aquitaine",
+    "Ossature bois vs parpaing : le comparatif honnête",
+    "Notre approche de l&#x27;extension bois en Gironde",
+    "Extension en ossature bois : vos questions",
+    "Agrandir plutôt que déménager, en bois"
+   ],
+   "h3_n": 6,
+   "imgs": 7,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 5,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Extension en ossature bois\",\"item\":\"https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Extension en ossature bois : prix au m², délais et avantages en 2026\",\"description\":\"Prix au m² d'une extension ossature bois en 2026 (1 700 à 2 500 €/m² sur mesure), avantages (légèreté, rapidité, isolation, bilan carbone), délais de chantier, autorisations et seuils d'urbanisme, RE2020, bois local pin maritime et douglas, et comparatif honnête ossature bois contre parpaing : le guide complet pour agrandir sa maison en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/source-adefrance/WhatsApp-Image-2025-05-02-a-13.59.24_f4a63f6d-opt.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-23\",\"dateModified\":\"2026-07-23\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/extension-ossature-bois-prix-m2\"},\"about\":[\"extension ossature bois\",\"agrandissement maison\",\"construction bois\",\"RE2020\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Quel est le prix au m² d'une extension en ossature bois en 2026 ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Comptez le plus souvent entre 1 700 et 2 500 €/m² pour une extension ossature bois sur mesure posée, tout compris, en 2026. Une entrée de gamme aux prestations simples peut démarrer autour de 1 500 €/m², tandis qu'un projet haut de gamme (grandes baies, toiture terrasse, finitions poussées, terrain difficile) dépasse 2 500 à 3 000 €/m². Ces fourchettes sont des ordres de grandeur : le juste prix dépend de la surface, de la toiture, des finitions et de la nature du sol. Seul un devis établi sur place engage.\"}},{\"@type\":\"Question\",\"name\":\"Pourquoi choisir l'ossature bois pour agrandir sa maison ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"L'ossature bois est légère : elle réduit les fondations, ce qui est précieux sur les sols argileux du Libournais. Le chantier est court et propre (préfabrication en atelier, filière sèche, peu de gravats), l'isolation thermique et acoustique est excellente à épaisseur de mur réduite, et le bilan carbone est favorable. Le bois est aussi le matériau qui se marie le mieux avec une maison existante, ancienne ou contemporaine.\"}},{\"@type\":\"Question\",\"name\":\"Combien de temps dure le chantier d'une extension ossature bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Sur le terrain, comptez le plus souvent 2 à 4 mois entre le début du chantier et la livraison, selon la surface et le niveau de finition. L'ossature elle-même, préfabriquée en atelier, se lève en quelques jours et la maison est mise hors d'eau et hors d'air très vite. Le second œuvre (isolation, cloisons, électricité, revêtements, raccords avec l'existant) occupe l'essentiel du planning. À cela s'ajoute l'instruction du dossier d'urbanisme en amont : environ un mois pour une déclaration préalable, deux à trois mois pour un permis de construire.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il un permis de construire pour une extension en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cela dépend de la surface créée. Jusqu'à 20 m² d'emprise au sol ou de surface de plancher, une déclaration préalable suffit ; ce seuil est relevé à 40 m² pour une extension accolée à une maison existante en zone urbaine couverte par un PLU. Au-delà, un permis de construire est nécessaire. Enfin, le recours à un architecte devient obligatoire dès que la surface totale de la maison dépasse 150 m² après travaux. Le PLU de votre commune prime toujours et peut imposer des règles plus strictes.\"}},{\"@type\":\"Question\",\"name\":\"La RE2020 s'applique-t-elle à une extension ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui, selon la surface de l'extension. Les petites extensions relèvent d'exigences allégées, mais dès qu'une certaine surface est franchie, l'extension doit respecter les exigences de la RE2020 en matière d'isolation, de confort d'été et d'empreinte carbone des matériaux. C'est justement là que l'ossature bois est avantagée : matériau biosourcé à faible empreinte carbone et excellente performance thermique, elle coche naturellement les cases que la réglementation valorise.\"}},{\"@type\":\"Question\",\"name\":\"Ossature bois ou parpaing : quelle solution pour une extension ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"L'ossature bois offre un chantier plus rapide et propre, des fondations allégées, une meilleure isolation à épaisseur égale et un bien meilleur bilan carbone ; le parpaing reste parfois un peu moins cher au m² sur des projets simples et rassure ceux qui veulent du « lourd ». Sur une extension, où l'on cherche à limiter les fondations, à raccourcir le chantier et à gagner de la surface habitable sans épaissir les murs, l'ossature bois s'impose le plus souvent. Le bon choix dépend du terrain, de l'existant et de vos priorités.\"}}]}"
+   ],
+   "mots": 3063,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide": {
+   "status": 200,
+   "ms": 147,
+   "final": "https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide",
+   "bytes": 108379,
+   "title": "Clôture et brise-vue en bois : essence, hauteur autorisée et budget 2026 | L&#x27;Esprit Bois",
+   "meta_desc": "Quelle hauteur de clôture ai-je le droit de poser ? PLU, Code civil, déclaration préalable, essences durables, styles et budget au mètre linéaire : le guide clôture bois en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Clôture et brise-vue en bois : hauteur autorisée, essence et budget 2026",
+   "og_image": "https://lesprit-bois.fr/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-horizontales-jardin-gironde.webp",
+   "h1": [
+    "Clôture et brise-vue en bois : quelle essence, quelle hauteur autorisée et quel budget en 2026 ?"
+   ],
+   "h2": [
+    "Quelle hauteur de clôture ai-je le droit de poser ?",
+    "Faut-il une déclaration préalable pour une clôture ?",
+    "Quelle essence choisir pour une clôture qui dure ?",
+    "Claire-voie, panneau plein, ganivelle : quel style pour quel besoin ?",
+    "Bien poser sa clôture : poteaux, scellement et alignement",
+    "Quel budget prévoir au mètre linéaire en 2026 ?",
+    "Comment garder un brise-vue bois net dans le temps ?",
+    "Clôture et brise-vue en bois : vos questions",
+    "Une clôture pensée pour votre terrain"
+   ],
+   "h3_n": 5,
+   "imgs": 8,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 6,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Clôture et brise-vue en bois\",\"item\":\"https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Clôture et brise-vue en bois : hauteur autorisée, essence et budget 2026\",\"description\":\"Hauteur autorisée par le PLU et le Code civil, déclaration préalable, essences durables (douglas, mélèze, pin maritime local), styles claire-voie ou panneau plein, pose et budget au mètre linéaire : le guide complet pour une clôture bois en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/blog/cloture-brise-vue-bois-guide/cloture-bois-lames-horizontales-jardin-gironde.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-21\",\"dateModified\":\"2026-07-21\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/cloture-brise-vue-bois-guide\"},\"about\":[\"clôture en bois\",\"brise-vue bois\",\"aménagement extérieur\",\"réglementation PLU\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Quelle hauteur de clôture ai-je le droit de poser en limite séparative ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"C'est d'abord le PLU de votre commune qui fixe la hauteur maximale, souvent entre 1,80 m et 2,00 m en limite séparative. À défaut de règle locale, le Code civil impose une hauteur minimale de 2,60 m dans les communes de moins de 50 000 habitants et 3,20 m au-delà, mais ces valeurs sont des maximums rarement atteints en pratique. Le bon réflexe est de consulter le règlement d'urbanisme en mairie avant de poser.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une déclaration préalable pour une clôture ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pas systématiquement, mais souvent. Une déclaration préalable est obligatoire lorsque le PLU ou le conseil municipal l'impose, dans les secteurs protégés (abords d'un monument historique, site classé, périmètre soumis à l'avis de l'Architecte des Bâtiments de France) et parfois en lotissement. Comme les règles varient d'une commune à l'autre, nous vérifions ces formalités avant tout chantier.\"}},{\"@type\":\"Question\",\"name\":\"Quelle essence de bois choisir pour une clôture sans traitement chimique ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le douglas et le mélèze sont naturellement durables en classe d'emploi 3 (bois exposé à la pluie hors contact permanent avec le sol) sans traitement chimique. Le pin maritime, issu de la filière Nouvelle-Aquitaine, est un choix local pertinent mais demande un traitement autoclave pour durer. Pour une clôture, la règle d'or est de désolidariser le bois du sol : les poteaux ne doivent jamais être noyés directement dans le béton.\"}},{\"@type\":\"Question\",\"name\":\"Quel budget prévoir au mètre linéaire pour une clôture en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En fourniture, comptez environ 35 à 120 € du mètre linéaire selon l'essence, le style (claire-voie, panneau plein, ganivelle) et la hauteur, auxquels s'ajoute la pose entre 20 et 70 € du mètre linéaire selon la nature du sol et le type de scellement. Un panneau plein occultant en mélèze coûte logiquement plus qu'une claire-voie basse en pin. Seul un relevé sur place permet de chiffrer honnêtement votre linéaire.\"}},{\"@type\":\"Question\",\"name\":\"Quel entretien pour garder une clôture bois nette dans le temps ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une clôture bois demande peu d'entretien si l'essence est durable et les poteaux désolidarisés du sol. Pour conserver la teinte d'origine, on applique un saturateur ou une lasure tous les 3 à 5 ans. Si vous préférez laisser le bois griser, la patine argentée n'altère pas sa solidité ; un dégrisage ponctuel suffit à retrouver un aspect net. L'essentiel se joue à la conception, pas dans l'entretien.\"}}]}"
+   ],
+   "mots": 2348,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete": {
+   "status": 200,
+   "ms": 189,
+   "final": "https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete",
+   "bytes": 120419,
+   "title": "Protéger sa terrasse en bois de la canicule | L&#x27;Esprit Bois",
+   "meta_desc": "Saturateur, ombre, nettoyage : comment protéger une terrasse en bois des fortes chaleurs et des UV. Le guide d&#x27;entretien d&#x27;été d&#x27;un artisan à Libourne, en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Protéger sa terrasse en bois de la canicule : le guide d&#x27;entretien d&#x27;été",
+   "og_image": "https://lesprit-bois.fr/images/terrasse-bois-plots-gironde-2.webp",
+   "h1": [
+    "Protéger sa terrasse en bois de la canicule : le guide d&#x27;entretien d&#x27;été"
+   ],
+   "h2": [
+    "Pourquoi l&#x27;été est la saison la plus agressive pour une terrasse en bois",
+    "Grisaillement, fissures, échauffement : ce que le soleil fait vraiment au bois",
+    "Le saturateur : quand l&#x27;appliquer, et pourquoi surtout pas en pleine canicule",
+    "Créer de l&#x27;ombre : pergola, store, voile d&#x27;ombrage, orientation",
+    "Les bons gestes d&#x27;entretien estival (et ceux qui abîment)",
+    "Quelle essence supporte le mieux la chaleur",
+    "Ce qu&#x27;on a appris sur nos terrasses en Gironde",
+    "Terrasse en bois et fortes chaleurs : vos questions",
+    "Une terrasse qui traverse les étés"
+   ],
+   "h3_n": 6,
+   "imgs": 7,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 5,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Protéger sa terrasse en bois de la canicule\",\"item\":\"https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Protéger sa terrasse en bois de la canicule : le guide d'entretien d'été\",\"description\":\"Ce que le soleil fait vraiment au bois, quand appliquer un saturateur (et pourquoi jamais sur une lame brûlante), comment créer de l'ombre entre pergola, store banne et voile, et les gestes de nettoyage à proscrire : le guide d'entretien estival d'une terrasse en bois en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/terrasse-bois-plots-gironde-2.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-20\",\"dateModified\":\"2026-07-20\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/proteger-terrasse-bois-canicule-entretien-ete\"},\"about\":[\"terrasse bois\",\"entretien du bois\",\"saturateur\",\"ombrage\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Faut-il traiter sa terrasse en bois en plein été ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ce n'est pas la meilleure période. Un saturateur s'applique sur un bois propre, sec et froid : sur une lame chauffée par le soleil, le produit sèche en surface avant d'avoir pénétré, ne nourrit pas le bois et laisse des traces et des surépaisseurs. Si vous devez absolument intervenir en été, travaillez tôt le matin ou en fin de journée, sur une partie à l'ombre depuis plusieurs heures, et jamais avant un orage annoncé. Le mieux reste d'attendre le printemps ou le début d'automne.\"}},{\"@type\":\"Question\",\"name\":\"Une terrasse en bois devenue grise est-elle abîmée ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non. Le grisaillement est un phénomène de surface, purement esthétique, provoqué par les UV : il ne touche que quelques dixièmes de millimètre et n'altère ni la solidité, ni la durabilité des lames. Beaucoup de clients nous appellent pour une terrasse qu'ils croient morte alors qu'elle est parfaitement saine. Les vrais signaux d'alerte sont ailleurs : fissures ouvertes, échardes, lames qui se creusent en gouttière, jeu dans les fixations ou lambourdes molles.\"}},{\"@type\":\"Question\",\"name\":\"À quelle fréquence appliquer un saturateur sur une terrasse en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En ordre de grandeur, tous les 1 à 2 ans, mais c'est l'exposition qui décide, pas le calendrier. Une terrasse plein sud, sans ombre et très piétinée, demandera un passage annuel ; une terrasse orientée nord ou protégée par une pergola tiendra deux ans, parfois davantage. Le bon indicateur est le bois lui-même : quand une goutte d'eau ne perle plus et pénètre immédiatement, la protection est épuisée.\"}},{\"@type\":\"Question\",\"name\":\"Peut-on nettoyer une terrasse en bois au nettoyeur haute pression ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nous le déconseillons franchement. La haute pression creuse le bois de printemps, plus tendre que le bois d'été, ouvre les fibres en surface et laisse un aspect pelucheux qui retient l'eau et la salissure. Résultat : la terrasse regrise plus vite qu'avant et devient rugueuse sous les pieds nus. De l'eau, une brosse souple et un balayage dans le sens de la fibre suffisent dans la quasi-totalité des cas.\"}},{\"@type\":\"Question\",\"name\":\"Comment éviter qu’une terrasse en bois chauffe trop au soleil ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le seul levier qui traite la cause, c'est l'ombre : pergola, store banne, voile d'ombrage ou simplement un arbre bien placé. Le choix de la lame joue aussi, un bois clair restant nettement moins chaud sous le pied qu'un bois foncé ou qu'un composite. Enfin, une terrasse ventilée sous les lames évacue mieux la chaleur accumulée qu'une terrasse posée à même une dalle étanche.\"}},{\"@type\":\"Question\",\"name\":\"Quelle est la meilleure période pour entretenir sa terrasse en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le printemps, une fois les dernières pluies passées et avant les fortes chaleurs, ou le début d'automne quand les températures redescendent mais que le bois est encore sec. Dans les deux cas, on vise un bois sec depuis plusieurs jours, une journée sans pluie annoncée dans les 48 heures et des lames qui ne sont pas exposées au soleil direct au moment de l'application. L'été convient très bien, en revanche, pour le nettoyage doux et le contrôle des fixations.\"}}]}"
+   ],
+   "mots": 3179,
+   "liens_int": 31,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/pool-house-bois-guide": {
+   "status": 200,
+   "ms": 169,
+   "final": "https://lesprit-bois.fr/blog/pool-house-bois-guide",
+   "bytes": 124836,
+   "title": "Pool-house bois : réglementation, usages et budget 2026 | L&#x27;Esprit Bois",
+   "meta_desc": "Quelle autorisation pour un pool-house en 2026 ? Seuils 5/20 m², primauté du PLU, usages réels, implantation, matériaux et budget : le guide d&#x27;un artisan en Gironde.",
+   "canonical": "https://lesprit-bois.fr/blog/pool-house-bois-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Pool-house en bois : réglementation, usages et budget 2026",
+   "og_image": "https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp",
+   "h1": [
+    "Pool-house en bois : réglementation, usages et budget 2026"
+   ],
+   "h2": [
+    "Pool-house : quelle autorisation d&#x27;urbanisme en 2026 ?",
+    "Les 4 usages d&#x27;un pool-house (et celui qu&#x27;on oublie toujours)",
+    "Où l&#x27;implanter ? Distance au bassin, orientation, vis-à-vis",
+    "Bois, aluminium ou mixte : ce que nous posons et pourquoi",
+    "Ouvert, semi-fermé ou fermé : le choix qui conditionne tout le reste",
+    "Budget 2026 : du kit au sur-mesure, ce qui fait vraiment monter la facture",
+    "Nos pool-houses en Gironde : ce qu&#x27;on a appris sur le terrain",
+    "Pool-house en bois : vos questions",
+    "Un pool-house pensé pour votre bassin"
+   ],
+   "h3_n": 6,
+   "imgs": 7,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 5,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pool-house en bois\",\"item\":\"https://lesprit-bois.fr/blog/pool-house-bois-guide\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Pool-house en bois : réglementation, usages et budget 2026\",\"description\":\"Autorisation d'urbanisme (seuils 5 et 20 m², primauté du PLU, cas de l'extension accolée à 40 m²), quatre usages réels dont le local technique, implantation par rapport au bassin, bois ou aluminium, et budget 2026 du kit au sur-mesure : le guide complet du pool-house en Gironde.\",\"image\":\"https://lesprit-bois.fr/images/pool-house-bois-terrasse-piscine-libourne.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-16\",\"dateModified\":\"2026-07-16\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/pool-house-bois-guide\"},\"about\":[\"pool house bois\",\"piscine\",\"aménagement extérieur\",\"urbanisme\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour construire un pool-house ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cela dépend de l'emprise au sol créée. En dessous de 5 m², aucune formalité. De 5 à 20 m², une déclaration préalable de travaux. Au-delà de 20 m², un permis de construire. Le seuil relevé à 40 m² ne concerne que les extensions accolées à une maison existante en zone urbaine couverte par un PLU : un pool-house détaché au fond du jardin reste au seuil de 20 m². Dans tous les cas, le PLU de votre commune prime et peut imposer des règles plus strictes.\"}},{\"@type\":\"Question\",\"name\":\"Quelle différence entre un pool-house et un abri de piscine ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"L'abri de piscine couvre le bassin lui-même pour le sécuriser, le chauffer et limiter l'entretien : c'est un équipement posé sur la piscine. Le pool-house est une construction distincte, implantée à côté du bassin, qui abrite des personnes et des équipements : local technique, rangement, cuisine d'été, vestiaire ou douche. Les deux répondent à des besoins différents et relèvent de formalités d'urbanisme différentes.\"}},{\"@type\":\"Question\",\"name\":\"Quel budget prévoir pour un pool-house en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le marché s'étale de 5 000 € environ pour un kit simple à monter soi-même, à 30 000 € et plus pour un pool-house maçonné ou sur-mesure entièrement équipé. Un pool-house bois sur-mesure posé, de 12 à 20 m², avec local technique ventilé et un espace couvert, se situe le plus souvent entre 12 000 et 25 000 € selon les raccordements, la dalle et le niveau de finition. Ce sont des ordres de grandeur : seul un devis établi sur place après relevé du terrain engage.\"}},{\"@type\":\"Question\",\"name\":\"Pool-house en bois ou en aluminium : que choisir ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le bois offre la meilleure intégration au jardin, un excellent confort thermique et se travaille sur mesure sans contrainte de dimension : c'est notre matériau de référence. L'aluminium apporte des lignes fines, une teinte stable et un entretien quasi nul, particulièrement pertinent sur une maison contemporaine ou en bord de bassin très exposé. La solution mixte, structure bois et menuiseries aluminium, réunit souvent le meilleur des deux.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il amener l'eau et l'électricité dans un pool-house ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"L'électricité est presque toujours indispensable : la pompe de filtration, l'éclairage et les prises en dépendent. L'eau et l'évacuation ne se justifient que si le pool-house comporte un point d'eau, une douche, un WC ou une cuisine d'été. Le point capital est de trancher avant la dalle : passer les gaines et les attentes après coup oblige à casser, et c'est le regret le plus fréquent sur ce type de chantier.\"}},{\"@type\":\"Question\",\"name\":\"À quelle distance du bassin implanter un pool-house ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nous conseillons de laisser au minimum 1,50 à 2 mètres de plage entre le bassin et le pool-house, et davantage si un espace repas est prévu. Trop près, l'ouvrage reçoit les projections d'eau chlorée, gêne la circulation autour du bassin, complique l'entretien et peut porter ombre à l'eau au mauvais moment. Le PLU de votre commune fixe par ailleurs des reculs obligatoires par rapport aux limites de propriété, à vérifier avant toute implantation.\"}}]}"
+   ],
+   "mots": 3280,
+   "liens_int": 32,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure": {
+   "status": 200,
+   "ms": 157,
+   "final": "https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure",
+   "bytes": 95197,
+   "title": "Quel bois pour une terrasse extérieure ? | L&#x27;Esprit Bois",
+   "meta_desc": "Douglas, mélèze, red cedar, chêne ou bois exotique : quel bois choisir pour votre terrasse en Gironde ? Comparatif, classe d&#x27;emploi, prix et conseils de pose.",
+   "canonical": "https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "og_title": "Quel bois choisir pour une terrasse extérieure ?",
+   "og_image": "https://lesprit-bois.fr/images/terrasse-bois-plots-gironde-1.webp",
+   "h1": [
+    "Quel bois choisir pour une terrasse extérieure ? Le guide par essence"
+   ],
+   "h2": [
+    "Quelles sont les meilleures essences de bois pour une terrasse ?",
+    "Qu&#x27;est-ce que la classe d&#x27;emploi du bois, et pourquoi vise-t-on la classe 4 ?",
+    "Bois local ou bois exotique : que privilégier en Gironde ?",
+    "Quel bois choisir pour une terrasse qui ne grise pas ?",
+    "Quel budget prévoir pour une terrasse en bois ?",
+    "Comment poser une terrasse en bois qui dure vraiment ?",
+    "Quel bois pour une terrasse extérieure ?",
+    "Le bon bois, puis la bonne pose"
+   ],
+   "h3_n": 6,
+   "imgs": 3,
+   "imgs_sans_alt": 0,
+   "imgs_sans_dim": 0,
+   "imgs_lazy": 1,
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://lesprit-bois.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://lesprit-bois.fr/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Quel bois pour une terrasse extérieure ?\",\"item\":\"https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Quel bois choisir pour une terrasse extérieure ? Le guide par essence\",\"description\":\"Douglas, mélèze, red cedar, chêne ou bois exotique : quel bois choisir pour votre terrasse en Gironde ? Comparatif, classe d'emploi, prix et conseils de pose.\",\"image\":\"https://lesprit-bois.fr/images/terrasse-bois-plots-gironde-1.webp\",\"author\":{\"@type\":\"Person\",\"name\":\"David Bertrand\",\"jobTitle\":\"Expert bâtiment et créateur d'espaces extérieurs\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\"}},\"publisher\":{\"@type\":\"Organization\",\"name\":\"L'Esprit Bois\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://lesprit-bois.fr/logo-mark.svg\"}},\"datePublished\":\"2026-07-09\",\"dateModified\":\"2026-07-09\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://lesprit-bois.fr/blog/quel-bois-pour-terrasse-exterieure\"},\"about\":[\"terrasse bois\",\"essences de bois\",\"aménagement extérieur\"],\"areaServed\":{\"@type\":\"AdministrativeArea\",\"name\":\"Gironde\"}}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Quel est le bois le plus résistant pour une terrasse ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le bois le plus résistant est un bois exotique dense comme l'ipé ou le cumaru, naturellement de classe d'emploi 4 à 5, avec une durée de vie de 25 à 50 ans. En bois européen, le robinier est le plus durable (40 ans et plus) et constitue une alternative locale au bois exotique.\"}},{\"@type\":\"Question\",\"name\":\"Quel bois choisir pour une terrasse autour d’une piscine ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Près d'un bassin, privilégiez une essence de classe 4 tolérant l'humidité permanente et les éclaboussures, avec des lames antidérapantes et une structure qui accepte l'eau en continu. Les bois exotiques et le robinier conviennent bien ; L'Esprit Bois habille les abords de piscine mais ne construit pas le bassin.\"}},{\"@type\":\"Question\",\"name\":\"Douglas ou mélèze : lequel choisir pour une terrasse ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Les deux sont d'excellents résineux locaux, naturellement durables en classe 3. Le douglas offre une teinte brun rosé chaleureuse et un très bon rapport qualité-prix ; le mélèze est plus dense et un peu plus stable. Le choix se joue sur la teinte et l'exposition.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il traiter une terrasse en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cela dépend de l'essence et de l'aspect voulu. Un bois naturellement durable peut se passer de traitement et griser naturellement. Pour conserver la teinte d'origine, on applique un saturateur, à renouveler environ tous les deux ans.\"}},{\"@type\":\"Question\",\"name\":\"Quelle est la durée de vie d'une terrasse en bois ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De dix ans environ pour un pin autoclave à 40-50 ans pour un bois exotique ou du robinier, selon l'essence, l'exposition et l'entretien. La qualité de la pose (ventilation et drainage) détermine si la terrasse atteint le haut ou le bas de sa fourchette.\"}},{\"@type\":\"Question\",\"name\":\"Faut-il une autorisation pour construire une terrasse ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Une terrasse de plain-pied non couverte ne demande le plus souvent aucune formalité. Surélevée, couverte ou créant de l'emprise au sol au-delà d'un seuil, elle peut nécessiter une déclaration préalable. Les seuils dépendent du PLU communal.\"}}]}"
+   ],
+   "mots": 1880,
+   "liens_int": 28,
+   "liens_ext": 2
+  },
+  "https://lesprit-bois.fr/bardages": {
+   "error": "HTTP Error 404: Not Found"
+  }
+ }
+}

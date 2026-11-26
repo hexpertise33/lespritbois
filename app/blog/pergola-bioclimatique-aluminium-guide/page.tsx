@@ -758,7 +758,12 @@ export default function ArticlePergolaBioclimatiqueAluminiumPage() {
                 après relevé sur place nous engage.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-4">
-                L&apos;entretien, en revanche, est le grand argument de l&apos;aluminium, à condition de ne pas le
+                Quand une pergola déjà posée donne des signes de fatigue, lames qui forcent, moteur qui
+                cale ou eau qui ne s&apos;évacue plus, tout ne se remplace pas : voir{' '}
+                <a href="/reparation-pergola" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">
+                  réparation de pergola bioclimatique en Gironde
+                </a>
+                . L&apos;entretien, en revanche, est le grand argument de l&apos;aluminium, à condition de ne pas le
                 confondre avec « rien à faire » :
               </p>
               <ul className="space-y-3 mb-5">

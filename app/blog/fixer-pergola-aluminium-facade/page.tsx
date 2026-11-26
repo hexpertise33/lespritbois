@@ -669,7 +669,7 @@ export default function ArticleFixerPergolaAluminiumFacadePage() {
                 façade</strong>.
               </p>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-5">
-                La pergola devient alors autoportante, simplement accolée à la maison. Visuellement, elle reste collée
+                C&apos;est aussi la solution que nous retenons le plus souvent quand une fixation existante a déjà lâché, dans le cadre d&apos;une <a href="/reparation-pergola" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">réparation de pergola</a>. La pergola devient alors autoportante, simplement accolée à la maison. Visuellement, elle reste collée
                 au mur ; techniquement, elle ne lui demande plus rien. Ce que cela change :
               </p>
               <ul className="space-y-3 mb-5">

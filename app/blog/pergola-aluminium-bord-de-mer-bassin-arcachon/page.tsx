@@ -638,7 +638,7 @@ export default function ArticlePergolaAluminiumBordDeMerPage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Un mot sur la motorisation, qui inquiète souvent au littoral : le coffret électrique, les presse-étoupes
+                Sur un ouvrage déjà posé qui montre des points de corrosion, des coulures ou une motorisation capricieuse, le diagnostic se fait sur place : voir <a href="/reparation-pergola" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">réparation de pergola bioclimatique</a>. Un mot sur la motorisation, qui inquiète souvent au littoral : le coffret électrique, les presse-étoupes
                 et les passages de câbles se vérifient à l&apos;œil, de l&apos;extérieur, et ne s&apos;ouvrent pas
                 soi-même. Sur une pergola bioclimatique, ce sont les articulations et les axes de lames qui méritent le
                 rinçage, pas le moteur.

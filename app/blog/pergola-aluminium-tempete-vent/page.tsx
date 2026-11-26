@@ -575,7 +575,7 @@ export default function ArticlePergolaAluminiumTempetePage() {
                 ))}
               </ul>
               <p className="font-body-lg text-body-lg text-on-surface-variant">
-                Le point des évacuations est le plus souvent oublié. Nous lui avons consacré un article complet sur{' '}
+                Quand le coup de vent a déjà fait son travail, lame tordue, moteur qui refuse ou platine descellée, le sujet n&apos;est plus la prévention : voir <a href="/reparation-pergola" className="text-secondary-dark underline underline-offset-4 decoration-secondary/40 hover:decoration-secondary transition-colors">réparer une pergola bioclimatique en Gironde</a>. Le point des évacuations, lui, est le plus souvent oublié. Nous lui avons consacré un article complet sur{' '}
                 <a href="/blog/evacuation-eaux-pluviales-pergola-carport" className={lienInterne}>
                   l&apos;évacuation des eaux pluviales d&apos;une pergola ou d&apos;un carport
                 </a>
